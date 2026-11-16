@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 65,
+ "catalogName": "Blue Braids",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

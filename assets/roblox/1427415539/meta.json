@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 0,
+ "catalogName": "Artemis Saga Braid",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

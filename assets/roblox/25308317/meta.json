@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 75,
+ "catalogName": "Messy Amber Bun",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

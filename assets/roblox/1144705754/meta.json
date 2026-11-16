@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 0,
+ "catalogName": "Neon Rocker Hair",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

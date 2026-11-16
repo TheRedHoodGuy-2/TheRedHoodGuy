@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 100,
+ "catalogName": "The Count Vampire Hair",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

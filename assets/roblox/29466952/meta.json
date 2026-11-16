@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 77,
+ "catalogName": "Jet Black Bob with Bow",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

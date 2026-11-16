@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 150,
+ "catalogName": "Neon Wild Crazy Hair",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

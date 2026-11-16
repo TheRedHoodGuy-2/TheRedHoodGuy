@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 200,
+ "catalogName": "Zeus Beard",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

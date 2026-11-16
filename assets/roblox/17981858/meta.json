@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 200,
+ "catalogName": "Ye Olde Powdered Whig",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

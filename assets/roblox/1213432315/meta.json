@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 175,
+ "catalogName": "Frozen Snowflake Hair",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

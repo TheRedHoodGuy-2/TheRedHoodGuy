@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 100,
+ "catalogName": "Tarabyte's Long Braid",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

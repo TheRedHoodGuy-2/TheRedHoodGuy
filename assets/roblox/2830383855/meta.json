@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 125,
+ "catalogName": "Crimson Slicked Back Hair",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

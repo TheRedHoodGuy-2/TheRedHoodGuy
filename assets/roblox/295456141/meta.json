@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 150,
+ "catalogName": "Lost Boy of Summer Hair",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

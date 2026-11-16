@@ -122,7 +122,7 @@ export async function makeR6(spec = {}) {
     const meta = await (await fetch(url(`assets/roblox/${id}/meta.json`))).json(); const out = [];
     for (const p of meta.parts) {
       const gltf = await new GLTFLoader().loadAsync(url(`assets/roblox/${id}/${p.file}`)); const handle = new THREE.Group(); handle.add(gltf.scene);
-      gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; const m = o.material; o.material = new THREE.MeshStandardMaterial({ map: m.map || null, color: tint ? new THREE.Color(tint) : (m.map ? 0xffffff : new THREE.Color(...(p.color || [163, 162, 165]).map(v => v / 255))), roughness: .7, metalness: 0 }); if (o.material.map) o.material.map.colorSpace = THREE.SRGBColorSpace; } });
+      gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; const m = o.material; o.material = new THREE.MeshStandardMaterial({ map: m.map || null, color: tint ? new THREE.Color(tint) : (m.map ? 0xffffff : new THREE.Color(...(p.color || [163, 162, 165]).map(v => v / 255))), roughness: .7, metalness: 0, side: THREE.DoubleSide }); if (o.material.map) o.material.map.colorSpace = THREE.SRGBColorSpace; } });
       // line the handle's attachment up with the same-named attachment on the body
       let done = false;
       for (const a of p.attachments) for (const [pk, list] of Object.entries(ATTACH)) if (!done && list[a.name] && (!part || part === pk)) {

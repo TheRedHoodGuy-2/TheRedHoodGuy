@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": 0
+ "accessoryType": 0,
+ "creator": "Roblox",
+ "price": 0,
+ "catalogName": "Noir Rainbow Hair",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

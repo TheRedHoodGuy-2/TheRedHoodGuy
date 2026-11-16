@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 0,
+ "catalogName": "Radical Red Bob",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 150,
+ "catalogName": "Lost Boy of Winter",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }

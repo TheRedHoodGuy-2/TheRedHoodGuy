@@ -51,5 +51,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 75,
+ "catalogName": "Long Hair",
+ "assetTypeId": 41,
+ "forSale": true,
+ "free": false
 }

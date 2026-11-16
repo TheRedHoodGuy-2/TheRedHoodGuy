@@ -55,5 +55,11 @@
    ]
   }
  ],
- "accessoryType": null
+ "accessoryType": null,
+ "creator": "Roblox",
+ "price": 0,
+ "catalogName": "Cool Punk Kid Hair",
+ "assetTypeId": 41,
+ "forSale": false,
+ "free": false
 }
