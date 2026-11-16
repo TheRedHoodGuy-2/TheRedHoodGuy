@@ -3,8 +3,9 @@
 Status: DRAFT 2026-11-16. Becomes law when Xavier signs off the sheets in `docs/sheets/`.
 
 ## Body
-- `engine/r6.js` `makeR6(spec)`: six beveled blocks + a rounded head, exact Roblox R6 proportions, 1 stud = 0.34 m (1.7 m tall).
-  Bevel 0.075 stud on every edge. Fine moulded-plastic grain on skin and clothes (a shared tiling normal map). No skin glow
+- `engine/r6.js` `makeR6(spec)`: six beveled blocks + a rounded head, the exact shape of the male model Xavier supplied
+  (measured in Blender; outline overlap 99.7% front and side, sheet `docs/sheets/base_male_v2_vs_old.jpg`). 1 stud = 0.34 m.
+  Bevel 0.065 stud on every edge (the old model's chamfer width, ours is rounded). Fine moulded-plastic grain on skin and clothes (a shared tiling normal map). No skin glow
   (dropped by Xavier 2026-11-16). The reference channel uses plain unbeveled R6, so this is already a step above it.
 - Joints: `joints.root, neck, shoulderL/R, hipL/R` (Roblox space inside `rbx`; `root` is in metres, feet on y = 0, facing +Z).
 - Faces: `api.setFace(name)` from `engine/faces.js` (about 60 expressions, drawn, curved onto the head). Faces rework is PLAN item 6.

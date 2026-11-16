@@ -7,7 +7,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { face as drawFace } from './faces.js';
 
 export const STUD = 0.34;                       // 5 studs tall = 1.7 m
-export const HEAD_R = 0.625, HEAD_H = 1.25;     // head mesh scale 1.25
+export const HEAD_R = 0.6, HEAD_H = 1.2;        // measured from the male model Xavier supplied (explainer-kit 6910cb06): 1.2 wide, 1.2 tall
 const url = p => new URL(p, document.baseURI).href;
 
 // atlas layout (2048 x 2048), [x, y, w, h] per part face. Same layout as the mains' painted textures.
@@ -60,11 +60,11 @@ function block(part, w, h, d, bevel) {
   });
   geo.clearGroups(); return geo;
 }
-function headGeo(fillet = .26) {
-  const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 10;
+function headGeo(fx = .3, fy = .3) {   // the supplied model's head, measured exactly: radius .6, height 1.2, a round .3 fillet top and bottom (flat cap radius .3)
+  const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 16;
   pts.push(new THREE.Vector2(0.0001, -H));
-  for (let i = 0; i <= n; i++) { const a = -Math.PI / 2 + (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fillet + Math.cos(a) * fillet, -H + fillet + Math.sin(a) * fillet)); }
-  for (let i = 0; i <= n; i++) { const a = (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fillet + Math.cos(a) * fillet, H - fillet + Math.sin(a) * fillet)); }
+  for (let i = 0; i <= n; i++) { const a = -Math.PI / 2 + (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fx + Math.cos(a) * fx, -H + fy + Math.sin(a) * fy)); }
+  for (let i = 0; i <= n; i++) { const a = (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fx + Math.cos(a) * fx, H - fy + Math.sin(a) * fy)); }
   pts.push(new THREE.Vector2(0.0001, H));
   const g = new THREE.LatheGeometry(pts, 40); g.computeVertexNormals();
   // v by distance along the profile (the lathe spaces v by point count, which stretched the grain down the straight side)
@@ -88,7 +88,7 @@ export function blitTemplate(g, tpl, parts) {
 // spec: { skin, sex, face, body (atlas image path, e.g. the mains), shirt, pants (template image paths or canvases),
 //         paint(g, LAYOUT) (free painter on the atlas), hair: [assetId], accessories: [assetId], hairTint, bevel }
 export async function makeR6(spec = {}) {
-  let { skin = '#e6b48c', sex = 'm', bevel = .075 } = spec;
+  let { skin = '#e6b48c', sex = 'm', bevel = .065 } = spec;   // .065 stud = the chamfer width on the supplied model (ours is rounded, 4 segments)
   const root = new THREE.Group(), rbx = new THREE.Group(); root.add(rbx); rbx.scale.setScalar(STUD); rbx.rotation.y = Math.PI;
   // atlas
   const res = spec.res || ATLAS, c = document.createElement('canvas'); c.width = c.height = res; const g = c.getContext('2d'); g.scale(res / ATLAS, res / ATLAS);
@@ -120,7 +120,7 @@ export async function makeR6(spec = {}) {
   const facePatch = new THREE.Mesh(fg, faceMat); facePatch.renderOrder = 2; parts.head.add(facePatch);
   const api = { root, rbx, joints, parts, spec, bodyMat, skinMat, atlas: c, accessories: [] };
   api.setFace = (name = 'neutral') => { const t = drawFace(name, sex, 'ink'); t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; faceMat.map = t; faceMat.needsUpdate = true; api.faceName = name; };
-  api.setFace(spec.face || 'neutral');
+  if (spec.face === false) facePatch.visible = false; else api.setFace(spec.face || 'neutral');   // face: false = bare head (faces are their own checklist item)
   // catalog accessories (converted by tools/roblox/fetch.py into assets/roblox/<id>/)
   api.wear = async (id, { tint = null, part = null } = {}) => {
     const meta = await (await fetch(url(`assets/roblox/${id}/meta.json`))).json(); const out = [];

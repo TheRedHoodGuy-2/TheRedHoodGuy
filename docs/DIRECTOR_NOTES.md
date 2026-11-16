@@ -24,6 +24,11 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - Props are sized for R6 bodies; hand props fill the hand block, never tiny. Props face the right way.
 
 ## Models + props
+- 2026-11-16: the base male body must be EXACTLY the shape of the male model he supplied before (explainer-kit
+  `6910cb06-roblox_r6_rigged`), but built by us so bevels, edges and texture are ours to control. Measured and matched:
+  torso 2 x 2 x 1 studs, arms and legs 1 x 2 x 1, head radius .6, height 1.2, round .3 fillet, head centre at 4.5 studs.
+  Check any change against it with the outline overlap test (99.7%+).
+- 2026-11-16: no faces on anything until he gets to the faces item (`face: false`).
 - Research the real object first, then model its real parts, right from every angle the camera sees. No primitive stand-ins.
 - Gag items are fake-brand versions of real products, no real logos.
 - Text on props never touches the edges.
