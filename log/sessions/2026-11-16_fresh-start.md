@@ -62,3 +62,15 @@ No, my laptop is currently not the best. Instead of making things more complicat
 ## Claude, about 10:40
 
 Agreed and recorded: Three.js in the cloud is the renderer, the laptop test is cancelled, Blender finals wait for a new laptop. The new look gets built inside Three.js; Blender is used only in the cloud for asset prep. Still needed: the reference channel's name or link, and an OK to push.
+
+## Xavier, 10:40
+
+Gneef
+We don't really need surface glue, whatever. So it's not really important. So we can drop that. Um, And yeah, the name of the YouTuber is this. I have put it here. I wanted to say something, but I don't remember. Oh yeah, so what we're going to do is this is how we're going to do it because I really need to sleep right now, but I want to wake up to see you either working or being done. So I want us to like work on each of them one by one. Really work on it as per you go and do work. Just plan it out to the very minute detail. So you basically don't need me to sit up again. For each of the things we're working on, you're going to go back and forth until we're solidified what you need to do. And then when we've done that for everything, right, we're going to do a goal. That's going to be your goal. You're not going to stop working until you achieve that goal. That's when I'll reset my limits so that you can now start working until you achieve that goal. And the goal is when I wake up, I look at everything you've done, and I'm happy that I've done everything while I was sleeping. Yeah.
+
+## Claude, about 11:25
+
+Dropped the subsurface glow. Listed Gneef's 275 Shorts with views, asked for access to the Videos folder (granted),
+downloaded the 63 Shorts at 10M+ and the 12 newest through the laptop's connection, staged all 75 in the cloud.
+First look written to research/gneef_first_look.md: the videos are 2-minute premise stories with plain R6 characters;
+the polish is the world, light, story and pacing. Proposed the overnight goal and defaults; waiting for "go" and "push".

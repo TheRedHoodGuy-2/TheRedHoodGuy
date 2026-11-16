@@ -4,7 +4,7 @@ Status key: TODO, DOING, WAITING (on Xavier), DONE (date). One item is signed of
 
 | No. | Item | Output | Status |
 |---|---|---|---|
-| 1 | Reference study | `docs/FORMAT_BIBLE.md`: script formula, hooks, pacing, camera, light, posing, from every winning Short of the reference channel | WAITING: channel name, then the video files |
+| 1 | Reference study | `docs/FORMAT_BIBLE.md`: script formula, hooks, pacing, camera, light, posing, from every winning Short of the reference channel | DOING: channel is Gneef; 75 videos downloaded and staged 2026-11-16; first look in `research/gneef_first_look.md`; full study not done |
 | 2 | New repo, fresh rules | this repo | DOING: skeleton written 2026-11-16, not pushed yet |
 | 3 | Renderer decision | `docs/DECISIONS.md` | DONE 2026-11-16: Three.js in the cloud; Blender finals wait for a new laptop |
 | 4 | Base male + female v2 | bevels, proportions, skin (rough plastic, fine texture, subsurface glow), turntable for sign-off, `docs/CHARACTER.md` | TODO |
