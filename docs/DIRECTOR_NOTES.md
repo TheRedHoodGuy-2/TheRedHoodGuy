@@ -45,6 +45,11 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - A sound plays on the frame the thing really happens. Real sound bank only, never synthesized. No music.
 
 ## Process
+- 2026-11-16 (Xavier, angry, after an unattended run burned his credits): ONE checklist item at a time. Build a small piece,
+  show it, he approves or corrects, only then the next piece. Never build ahead on unapproved work, never batch items,
+  never run unattended unless he says so for that specific item. Say the rough cost before any long step.
+- 2026-11-16: his verdict on the first drafts: the street set and its bushes are trash, hair clips into heads on the cast sheet.
+  Drafts from that run are NOT approved and are not a base to build on until he signs each one off.
 - Never send a preview he has to find mistakes in: every frame is checked first, and stills at hand-picked times
   are not enough because they miss what happens between them.
 - First 2 seconds must move, with the hook on screen from frame 0.

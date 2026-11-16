@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// One still of a set with a cast and a camera: scene.html?spec=<json>
+// spec = { w, h, set: 'suburb', sun: { az, el }, cam: { p: [x,y,z], l: [x,y,z], fov }, cast: [ r6 spec + { at: [x,y,z], yaw, pose: { joint: [rx,ry,rz] } } ] }
+import * as THREE from 'three';
+import { makeR6 } from './engine/r6.js';
+import { makeRenderer, sky, daylight } from './engine/stage.js';
+const spec = JSON.parse(new URLSearchParams(location.search).get('spec') || '{}'), W = spec.w || 540, H = spec.h || 960;
+const renderer = makeRenderer(document.getElementById('c'), W, H), scene = new THREE.Scene(); sky(scene);
+const mod = await import(`./engine/sets/${spec.set || 'suburb'}.js`), build = Object.values(mod).find(f => typeof f === 'function' && /^build/.test(f.name));
+const refs = await build(scene, spec.setOptions || {});
+const cam = new THREE.PerspectiveCamera(spec.cam?.fov || 35, W / H, .1, 2000), cp = spec.cam?.p || [3, 1.6, 8], cl = spec.cam?.l || [0, 1.1, 0];
+cam.position.set(...cp); cam.lookAt(...cl);
+daylight(scene, { az: spec.sun?.az ?? 40, el: spec.sun?.el ?? 48, focus: new THREE.Vector3(...cl), size: spec.sun?.size ?? 26, mapSize: 4096 });
+window.CH = [];
+for (const cs of spec.cast || []) { const a = await makeR6(cs); a.root.position.set(...(cs.at || [0, 0, 0])); a.root.rotation.y = THREE.MathUtils.degToRad(cs.yaw ?? 0); scene.add(a.root); window.CH.push(a); for (const [k, r] of Object.entries(cs.pose || {})) a.joints[k].rotation.set(...r); }
+await new Promise(r => setTimeout(r, spec.wait ?? 1500));   // textures
+renderer.render(scene, cam); window.__dbg = { scene, cam, renderer, THREE, refs }; window.ready = true;
+</script>
