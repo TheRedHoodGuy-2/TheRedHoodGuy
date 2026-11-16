@@ -6,7 +6,7 @@ Status key: TODO, DOING, WAITING (on Xavier), DONE (date). One item is signed of
 |---|---|---|---|
 | 1 | Reference study | `docs/FORMAT_BIBLE.md`: script formula, hooks, pacing, camera, light, posing, from every winning Short of the reference channel | WAITING: channel name, then the video files |
 | 2 | New repo, fresh rules | this repo | DOING: skeleton written 2026-11-16, not pushed yet |
-| 3 | Renderer decision | laptop Eevee benchmark, then `docs/DECISIONS.md` | WAITING: a connected folder on the laptop, then he runs `tools/laptop/run_bench.bat` |
+| 3 | Renderer decision | `docs/DECISIONS.md` | DONE 2026-11-16: Three.js in the cloud; Blender finals wait for a new laptop |
 | 4 | Base male + female v2 | bevels, proportions, skin (rough plastic, fine texture, subsurface glow), turntable for sign-off, `docs/CHARACTER.md` | TODO |
 | 5 | Hair + clothing library | real modelled assets, fit system, wardrobe for the mains | TODO |
 | 6 | Faces | face system rework | TODO |

@@ -54,3 +54,11 @@ Found: the laptop bridge shell is a Linux VM, so it cannot start the Windows Ble
 Cloud baseline for the same benchmark scene: Eevee about 65 s a frame.
 Asked for: the reference channel's name or link; a folder on the laptop added to the chat with the two benchmark files
 in it, then run the .bat; an OK to push the skeleton and tag explainer-kit v1-final.
+
+## Xavier, 10:38
+
+No, my laptop is currently not the best. Instead of making things more complicated and involving Blender, let's keep using Cloud. Let's keep using 3JS or whatever we were using before, until I buy a new laptop that we can now finally use Blender on a graphics card.
+
+## Claude, about 10:40
+
+Agreed and recorded: Three.js in the cloud is the renderer, the laptop test is cancelled, Blender finals wait for a new laptop. The new look gets built inside Three.js; Blender is used only in the cloud for asset prep. Still needed: the reference channel's name or link, and an OK to push.

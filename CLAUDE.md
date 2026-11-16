@@ -38,5 +38,5 @@ Each standard is a doc that gets written when its checklist item is signed off, 
   never republished with our characters. A private calibration remake is allowed and is never posted.
 
 ## Where things run
-See `docs/DECISIONS.md` (renderer). Cloud workspace: 2 CPU cores, no GPU. Xavier's laptop: ThinkPad T14s, Ryzen 7 PRO 4750U,
-Radeon integrated graphics, Windows, his only computer, so always take the safest route on it.
+Everything renders in the cloud workspace with Three.js (2 CPU cores, no GPU). See `docs/DECISIONS.md`. Nothing runs on
+Xavier's laptop (his only computer, not strong enough); Blender finals wait until he buys one with a graphics card.

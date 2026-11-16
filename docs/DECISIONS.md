@@ -16,7 +16,7 @@
   action, word-timed transcript, audio. Same information for about a tenth of the usage.
 - Promising views.
 
-## 2026-11-16 Renderer (OPEN until the laptop benchmark)
+## 2026-11-16 Renderer: SETTLED, Three.js in the cloud
 Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip install bpy`, R6 rig with bevels + subsurface skin:
 | Renderer | Per frame at 1080x1920 | 600-frame video |
 |---|---|---|
@@ -29,7 +29,11 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 - Blender finals only make sense on the laptop's Radeon chip. `tools/laptop/run_bench.bat` measures it.
 - The laptop bridge shell is a Linux VM, not Windows: it cannot start the installed Blender. So laptop renders need a
   small render agent Xavier starts on Windows (a .bat that runs Blender on jobs dropped in a shared folder).
-- Default until measured: Blender as the asset factory, Three.js as the camera.
+- Xavier 2026-11-16: the laptop is not good enough and he does not want the extra complication. Stay on Three.js in the
+  cloud until he buys a laptop with a graphics card; revisit Blender finals then (`tools/laptop/` is kept for that day,
+  the benchmark was never run).
+- So: Three.js is the camera. The look (bevels, rough-plastic skin with fine texture, faked subsurface glow, baked light)
+  is built inside Three.js. Blender is only used silently in the cloud for asset prep (import, bevel, subdivide, bake, export).
 
 ## 2026-11-16 Reference videos
 - From the cloud, YouTube lets Claude list a channel's Shorts with view counts, but blocks downloads (bot check).
