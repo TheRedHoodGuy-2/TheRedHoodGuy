@@ -1,0 +1,59 @@
+{
+ "id": 1665624114,
+ "class": "Accessory",
+ "name": "BlondeBraid",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 1926,
+   "tris": 642,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.150000021,
+      0.96999979,
+      0.0997277573
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.934,
+     -1.492,
+     -0.998
+    ],
+    [
+     0.934,
+     1.492,
+     0.998
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

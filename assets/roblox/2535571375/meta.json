@@ -1,0 +1,59 @@
+{
+ "id": 2535571375,
+ "class": "Accessory",
+ "name": "BallerinaBunAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 583,
+   "tris": 1030,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.1409928798675537,
+      -0.06854014843702316
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.328,
+     -0.453,
+     -0.44
+    ],
+    [
+     0.328,
+     0.453,
+     0.44
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

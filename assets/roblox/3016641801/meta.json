@@ -1,0 +1,59 @@
+{
+ "id": 3016641801,
+ "class": "Accessory",
+ "name": "WWERomanReigns_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 788,
+   "tris": 1194,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      3.6479350580880204e-16,
+      0.5606465339660645,
+      -0.09754934161901474
+     ],
+     "rot": [
+      1.0,
+      1.2246468525851679e-16,
+      -1.499759904157988e-32,
+      -1.2246468525851679e-16,
+      1.0,
+      -1.2246468525851679e-16,
+      0.0,
+      1.2246468525851679e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.687,
+     -0.653,
+     -0.462
+    ],
+    [
+     0.687,
+     0.653,
+     0.462
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

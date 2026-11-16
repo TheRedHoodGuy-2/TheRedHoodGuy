@@ -1,0 +1,55 @@
+{
+ "id": 17877340,
+ "class": "Accessory",
+ "name": "Ultra-Fabulous Hair Brown",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 1272,
+   "tris": 424,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.0999999046,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.75,
+     -0.791,
+     -0.782
+    ],
+    [
+     1.081,
+     0.828,
+     0.737
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

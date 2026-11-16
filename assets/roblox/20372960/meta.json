@@ -1,0 +1,55 @@
+{
+ "id": 20372960,
+ "class": "Accessory",
+ "name": "Bedhead",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 960,
+   "tris": 320,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65748007e-09,
+      -0.0300002098,
+      -0.0802722424
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.062,
+     -0.769,
+     -0.965
+    ],
+    [
+     1.062,
+     0.889,
+     1.006
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

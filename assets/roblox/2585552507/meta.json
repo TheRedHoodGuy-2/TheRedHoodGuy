@@ -1,0 +1,59 @@
+{
+ "id": 2585552507,
+ "class": "Accessory",
+ "name": "BarbarianMale_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 385,
+   "tris": 426,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.008590521290898323,
+      0.20848536491394043,
+      -0.08378301560878754
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.29,
+     -0.354,
+     -0.449
+    ],
+    [
+     0.29,
+     0.354,
+     0.449
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

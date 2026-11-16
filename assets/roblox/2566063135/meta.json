@@ -1,0 +1,59 @@
+{
+ "id": 2566063135,
+ "class": "Accessory",
+ "name": "DragonQueenHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 5052,
+   "tris": 1684,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.5,
+      -0.0500000007
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.034,
+     -1.509,
+     -1.013
+    ],
+    [
+     1.034,
+     1.509,
+     1.013
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

@@ -1,0 +1,59 @@
+{
+ "id": 2830382352,
+ "class": "Accessory",
+ "name": "FairytaleHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 2166,
+   "tris": 2148,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.0244545937,
+      0.803873539,
+      -0.228425384
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.759,
+     -1.328,
+     -0.946
+    ],
+    [
+     0.759,
+     1.328,
+     0.946
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

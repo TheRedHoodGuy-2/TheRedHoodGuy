@@ -1,0 +1,55 @@
+{
+ "id": 262467755,
+ "class": "Accessory",
+ "name": "LongHairHeadBand",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 2280,
+   "tris": 760,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.999476433,
+      -0.0102212727
+     ],
+     "rot": [
+      1.0,
+      7.87137289e-09,
+      4.24105195e-14,
+      -7.83231258e-09,
+      0.995037198,
+      0.0995037183,
+      7.83188625e-10,
+      -0.0995037183,
+      0.995037198
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.691,
+     -0.969,
+     -0.648
+    ],
+    [
+     0.691,
+     1.315,
+     0.947
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

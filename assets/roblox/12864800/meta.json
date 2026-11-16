@@ -1,0 +1,55 @@
+{
+ "id": 12864800,
+ "class": "Accessory",
+ "name": "JE Hair Gray",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 1800,
+   "tris": 600,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0100000082,
+      0.199999809,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.63,
+     -0.664,
+     -0.686
+    ],
+    [
+     0.652,
+     0.53,
+     0.715
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

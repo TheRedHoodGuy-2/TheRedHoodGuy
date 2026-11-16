@@ -58,6 +58,8 @@ def convert(aid):
             if h['class'] == 'MeshPart':
                 mid = rbxm.asset_id(pr.get('MeshId') or pr.get('MeshContent')); tid = rbxm.asset_id(pr.get('TextureID') or pr.get('TextureContent'))
                 size = pr.get('size') or pr.get('Size'); init = pr.get('InitialSize'); scale = np.array(size) / np.array(init) if size and init else np.ones(3); off = np.zeros(3)
+                sa = next((k for k in kids(h) if k['class'] == 'SurfaceAppearance'), None)   # newer items keep the colour texture here
+                if not tid and sa: tid = rbxm.asset_id(sa['props'].get('ColorMap') or sa['props'].get('ColorMapContent'))
             elif sm:
                 mid = rbxm.asset_id(sm['props'].get('MeshId')); tid = rbxm.asset_id(sm['props'].get('TextureId')); scale = np.array(sm['props'].get('Scale', (1, 1, 1))); off = np.array(sm['props'].get('Offset', (0, 0, 0)))
             else: continue
@@ -75,8 +77,9 @@ def convert(aid):
             tm.export(os.path.join(d, name))
             atts = [{'name': k['props'].get('Name'), 'pos': list(k['props']['CFrame']['pos']), 'rot': k['props']['CFrame']['rot']} for k in kids(h) if k['class'] == 'Attachment' and 'CFrame' in k['props']]
             col = pr.get('Color3uint8'); vc = sm['props'].get('VertexColor') if sm else None
+            layered = any(k['class'] == 'WrapLayer' for k in kids(h))   # made for the newer, smaller heads: the engine scales it up to fit the classic head
             meta['parts'].append({'file': name, 'texture': tex, 'meshVersion': m['version'], 'verts': int(len(v)), 'tris': int(len(m['f'])), 'attachments': atts,
-                                  'color': list(col) if col else None, 'vertexColor': list(vc) if vc else None, 'bounds': [v.min(0).round(3).tolist(), v.max(0).round(3).tolist()]})
+                                  'layered': layered, 'color': list(col) if col else None, 'vertexColor': list(vc) if vc else None, 'bounds': [v.min(0).round(3).tolist(), v.max(0).round(3).tolist()]})
         meta['accessoryType'] = top['props'].get('AccessoryType')
     json.dump(meta, open(os.path.join(d, 'meta.json'), 'w'), indent=1); return meta
 

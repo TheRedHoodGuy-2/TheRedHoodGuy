@@ -87,9 +87,9 @@ export async function makeR6(spec = {}) {
   let { skin = '#e6b48c', sex = 'm', bevel = .075 } = spec;
   const root = new THREE.Group(), rbx = new THREE.Group(); root.add(rbx); rbx.scale.setScalar(STUD); rbx.rotation.y = Math.PI;
   // atlas
-  const c = document.createElement('canvas'); c.width = c.height = ATLAS; const g = c.getContext('2d');
+  const res = spec.res || ATLAS, c = document.createElement('canvas'); c.width = c.height = res; const g = c.getContext('2d'); g.scale(res / ATLAS, res / ATLAS);
   g.fillStyle = css(skin); g.fillRect(0, 0, ATLAS, ATLAS);
-  if (spec.body) { g.drawImage(await img(spec.body), 0, 0, ATLAS, ATLAS); if (!spec.skin) { const d = g.getImageData(1900, 1900, 1, 1).data; skin = `rgb(${d[0]},${d[1]},${d[2]})`; } }
+  if (spec.body) { g.drawImage(await img(spec.body), 0, 0, ATLAS, ATLAS); if (!spec.skin) { const d = g.getImageData(Math.floor(1900 * res / ATLAS), Math.floor(1900 * res / ATLAS), 1, 1).data; skin = `rgb(${d[0]},${d[1]},${d[2]})`; } }
   if (spec.pants) blitTemplate(g, typeof spec.pants === 'string' ? await img(spec.pants) : spec.pants, ['torso', 'legL', 'legR']);
   if (spec.shirt) blitTemplate(g, typeof spec.shirt === 'string' ? await img(spec.shirt) : spec.shirt, ['torso', 'armL', 'armR']);
   if (spec.paint) spec.paint(g, LAYOUT);
@@ -127,7 +127,8 @@ export async function makeR6(spec = {}) {
       let done = false;
       for (const a of p.attachments) for (const [pk, list] of Object.entries(ATTACH)) if (!done && list[a.name] && (!part || part === pk)) {
         const r = a.rot || [1, 0, 0, 0, 1, 0, 0, 0, 1], A = new THREE.Matrix4().set(r[0], r[1], r[2], a.pos[0], r[3], r[4], r[5], a.pos[1], r[6], r[7], r[8], a.pos[2], 0, 0, 0, 1);
-        const B = new THREE.Matrix4().makeTranslation(...list[a.name]); handle.applyMatrix4(B.multiply(A.invert())); parts[pk].add(handle); done = true;
+        const B = new THREE.Matrix4().makeTranslation(...list[a.name]); if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
+        handle.applyMatrix4(B.multiply(A.invert())); parts[pk].add(handle); done = true;
       }
       if (!done) { handle.position.set(0, .6, 0); parts.head.add(handle); }
       out.push(handle); api.accessories.push({ id, handle, meta: p });

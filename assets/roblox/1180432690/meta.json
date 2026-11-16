@@ -1,0 +1,59 @@
+{
+ "id": 1180432690,
+ "class": "Accessory",
+ "name": "GalaxyBoy",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 5298,
+   "tris": 1766,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.00343048573,
+      0.221153259,
+      -0.078420639
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.677,
+     -0.655,
+     -0.898
+    ],
+    [
+     0.677,
+     0.619,
+     0.822
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

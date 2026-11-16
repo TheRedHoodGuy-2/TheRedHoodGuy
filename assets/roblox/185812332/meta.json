@@ -1,0 +1,55 @@
+{
+ "id": 185812332,
+ "class": "Accessory",
+ "name": "BlondeBoyHair2",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 5529,
+   "tris": 1843,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0600000061,
+      0.259999752,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.904,
+     -0.56,
+     -0.749
+    ],
+    [
+     0.904,
+     0.56,
+     0.749
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

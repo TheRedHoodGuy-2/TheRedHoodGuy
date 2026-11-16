@@ -1,0 +1,55 @@
+{
+ "id": 218673862,
+ "class": "Accessory",
+ "name": "SciFiBoyHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 3546,
+   "tris": 1182,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.199999988,
+      0.400000095,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.888,
+     -0.841,
+     -0.807
+    ],
+    [
+     0.888,
+     0.841,
+     0.807
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

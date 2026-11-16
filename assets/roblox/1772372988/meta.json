@@ -1,0 +1,59 @@
+{
+ "id": 1772372988,
+ "class": "Accessory",
+ "name": "Blue_GirlHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 3288,
+   "tris": 1096,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.900000095,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.794,
+     -1.269,
+     -0.862
+    ],
+    [
+     0.794,
+     1.269,
+     0.862
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

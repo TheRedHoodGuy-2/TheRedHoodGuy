@@ -1,0 +1,59 @@
+{
+ "id": 2979709182,
+ "class": "Accessory",
+ "name": "VaporMax_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 1004,
+   "tris": 1428,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.00017446279525756836,
+      0.3630244731903076,
+      -0.028283007442951202
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.678,
+     -0.629,
+     -0.666
+    ],
+    [
+     0.678,
+     0.629,
+     0.666
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

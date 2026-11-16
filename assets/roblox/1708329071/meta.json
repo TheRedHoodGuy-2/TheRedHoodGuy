@@ -1,0 +1,59 @@
+{
+ "id": 1708329071,
+ "class": "Accessory",
+ "name": "GirlAnimeHair_Black",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 6849,
+   "tris": 2283,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      1.14999986,
+      -0.850272238
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.995,
+     -1.495,
+     -1.606
+    ],
+    [
+     0.995,
+     1.495,
+     1.606
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

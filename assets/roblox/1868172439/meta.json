@@ -1,0 +1,59 @@
+{
+ "id": 1868172439,
+ "class": "Accessory",
+ "name": "NoLongerRadHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 6552,
+   "tris": 2184,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.449999988,
+      0.0
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.96,
+     -0.921,
+     -0.926
+    ],
+    [
+     0.96,
+     0.921,
+     0.926
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

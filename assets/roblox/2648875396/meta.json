@@ -1,0 +1,59 @@
+{
+ "id": 2648875396,
+ "class": "Accessory",
+ "name": "HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 449,
+   "tris": 708,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.035343099385499954,
+      0.5206449031829834,
+      -0.09766136109828949
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.885,
+     -0.942,
+     -0.893
+    ],
+    [
+     0.885,
+     0.942,
+     0.893
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

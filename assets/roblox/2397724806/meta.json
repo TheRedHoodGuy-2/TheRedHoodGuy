@@ -1,0 +1,59 @@
+{
+ "id": 2397724806,
+ "class": "Accessory",
+ "name": "Mans Vampire Hair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 4086,
+   "tris": 1362,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.300000012,
+      -0.0500000007
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.745,
+     -0.766,
+     -0.812
+    ],
+    [
+     0.745,
+     0.766,
+     0.812
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

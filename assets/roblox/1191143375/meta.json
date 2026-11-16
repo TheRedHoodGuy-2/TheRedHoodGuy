@@ -1,0 +1,59 @@
+{
+ "id": 1191143375,
+ "class": "Accessory",
+ "name": "CoolBraids",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 3114,
+   "tris": 1038,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      1.0,
+      -0.180000007
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.91,
+     -1.159,
+     -0.787
+    ],
+    [
+     0.91,
+     1.159,
+     0.787
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

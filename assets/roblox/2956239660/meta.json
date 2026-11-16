@@ -1,0 +1,59 @@
+{
+ "id": 2956239660,
+ "class": "Accessory",
+ "name": "LongRedHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 838,
+   "tris": 1330,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.00837624073,
+      0.928572655,
+      -0.184735298
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.841,
+     -1.261,
+     -0.838
+    ],
+    [
+     0.841,
+     1.261,
+     0.838
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

@@ -1,0 +1,55 @@
+{
+ "id": 138762448,
+ "class": "Accessory",
+ "name": "GoldenChristmasHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 5658,
+   "tris": 1886,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.00499999104,
+      0.480000019,
+      -0.15027225
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.769,
+     -0.687,
+     -0.824
+    ],
+    [
+     0.769,
+     0.687,
+     0.824
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

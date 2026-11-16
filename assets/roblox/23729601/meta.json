@@ -1,0 +1,55 @@
+{
+ "id": 23729601,
+ "class": "Accessory",
+ "name": "Lady Hair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 2268,
+   "tris": 756,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.349999905,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.677,
+     -0.52,
+     -0.64
+    ],
+    [
+     0.677,
+     0.518,
+     0.639
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

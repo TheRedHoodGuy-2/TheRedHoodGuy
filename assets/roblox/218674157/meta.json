@@ -1,0 +1,55 @@
+{
+ "id": 218674157,
+ "class": "Accessory",
+ "name": "SciFiPigtails",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 7056,
+   "tris": 2352,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.299999714,
+      -0.050272245
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.463,
+     -0.713,
+     -0.806
+    ],
+    [
+     1.463,
+     0.713,
+     0.806
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

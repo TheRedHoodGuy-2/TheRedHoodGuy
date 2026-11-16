@@ -1,0 +1,55 @@
+{
+ "id": 11721354,
+ "class": "Accessory",
+ "name": "Pigtails",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 2154,
+   "tris": 718,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65748007e-09,
+      0.400000095,
+      -0.100272246
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.301,
+     -0.656,
+     -0.707
+    ],
+    [
+     1.306,
+     0.625,
+     0.602
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

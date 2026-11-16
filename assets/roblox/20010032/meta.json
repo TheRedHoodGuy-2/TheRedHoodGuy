@@ -1,0 +1,55 @@
+{
+ "id": 20010032,
+ "class": "Accessory",
+ "name": "Sideswept Bangs",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 2676,
+   "tris": 892,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.120053358,
+      0.400000095,
+      -0.0702669546
+     ],
+     "rot": [
+      0.980619192,
+      7.71882025e-09,
+      -0.19592391,
+      -7.87137555e-09,
+      1.0,
+      -4.4408921e-16,
+      0.19592391,
+      1.54219071e-09,
+      0.980619192
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.775,
+     -0.602,
+     -0.821
+    ],
+    [
+     0.827,
+     0.69,
+     0.818
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

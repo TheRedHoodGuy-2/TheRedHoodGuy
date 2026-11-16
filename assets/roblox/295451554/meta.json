@@ -1,0 +1,55 @@
+{
+ "id": 295451554,
+ "class": "Accessory",
+ "name": "CoolAquaHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 2250,
+   "tris": 750,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65748007e-09,
+      0.449999809,
+      -0.100272246
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.774,
+     -0.866,
+     -0.832
+    ],
+    [
+     0.774,
+     0.866,
+     0.832
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

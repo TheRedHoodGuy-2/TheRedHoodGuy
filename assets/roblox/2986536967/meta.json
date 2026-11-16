@@ -1,0 +1,59 @@
+{
+ "id": 2986536967,
+ "class": "Accessory",
+ "name": "AlbinoSpidergirl_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 866,
+   "tris": 1092,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.23694241046905518,
+      -0.018815970048308372
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.685,
+     -0.495,
+     -0.428
+    ],
+    [
+     0.685,
+     0.495,
+     0.428
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

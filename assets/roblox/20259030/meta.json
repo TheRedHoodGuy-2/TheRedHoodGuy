@@ -1,0 +1,55 @@
+{
+ "id": 20259030,
+ "class": "Accessory",
+ "name": "Braids",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 390,
+   "tris": 130,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      1.12999988,
+      -0.0302722435
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.483,
+     -1.462,
+     -0.582
+    ],
+    [
+     0.483,
+     1.351,
+     0.682
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

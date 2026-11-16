@@ -1,0 +1,59 @@
+{
+ "id": 2904413892,
+ "class": "Accessory",
+ "name": "GoblinBomber_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 219,
+   "tris": 412,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -1.4770508e-07,
+      0.132498264,
+      0.494577736
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.364,
+     -0.268,
+     -0.562
+    ],
+    [
+     0.364,
+     0.268,
+     0.562
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

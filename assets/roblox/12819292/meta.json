@@ -1,0 +1,55 @@
+{
+ "id": 12819292,
+ "class": "Accessory",
+ "name": "Brown LongHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 1908,
+   "tris": 636,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65748007e-09,
+      0.499476433,
+      -0.0102212727
+     ],
+     "rot": [
+      1.0,
+      7.87137289e-09,
+      4.24105195e-14,
+      -7.83231258e-09,
+      0.995037198,
+      0.0995037183,
+      7.83188625e-10,
+      -0.0995037183,
+      0.995037198
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.716,
+     -0.75,
+     -0.636
+    ],
+    [
+     0.716,
+     0.782,
+     0.804
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

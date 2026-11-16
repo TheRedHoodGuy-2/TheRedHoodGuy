@@ -1,0 +1,59 @@
+{
+ "id": 1744250468,
+ "class": "Accessory",
+ "name": "SilverStars&MoonHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 7350,
+   "tris": 2450,
+   "attachments": [
+    {
+     "name": "HatAttachment",
+     "pos": [
+      0.0,
+      0.400000006,
+      0.0
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.126,
+     -1.039,
+     -1.019
+    ],
+    [
+     1.126,
+     0.939,
+     1.119
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

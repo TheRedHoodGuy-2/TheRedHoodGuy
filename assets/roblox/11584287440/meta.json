@@ -5,7 +5,7 @@
  "parts": [
   {
    "file": "model.glb",
-   "texture": null,
+   "texture": "texture.png",
    "meshVersion": "4.01",
    "verts": 3698,
    "tris": 2754,
@@ -30,6 +30,7 @@
      ]
     }
    ],
+   "layered": true,
    "color": [
     163,
     162,

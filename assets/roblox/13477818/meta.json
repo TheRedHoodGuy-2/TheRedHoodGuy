@@ -1,0 +1,55 @@
+{
+ "id": 13477818,
+ "class": "Accessory",
+ "name": "BoyNormalHair1",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 1950,
+   "tris": 650,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.249947071,
+      -0.0632707775
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      2.12052598e-14,
+      -7.86783616e-09,
+      0.999550402,
+      0.0299865119,
+      2.36013875e-10,
+      -0.0299865119,
+      0.999550402
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.651,
+     -0.556,
+     -0.716
+    ],
+    [
+     0.653,
+     0.556,
+     0.716
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

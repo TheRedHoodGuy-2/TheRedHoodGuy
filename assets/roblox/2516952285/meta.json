@@ -1,0 +1,59 @@
+{
+ "id": 2516952285,
+ "class": "Accessory",
+ "name": "MummyCheerleader_HairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 1952,
+   "tris": 2772,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -1.4952809929861848e-17,
+      -0.00930333137512207,
+      -0.10102218389511108
+     ],
+     "rot": [
+      1.0,
+      -8.850776306035743e-18,
+      1.1088626764769763e-16,
+      8.850776306035743e-18,
+      1.0,
+      9.814295088866398e-34,
+      -1.1088626764769763e-16,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.72,
+     -0.243,
+     -0.253
+    ],
+    [
+     0.72,
+     0.243,
+     0.253
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

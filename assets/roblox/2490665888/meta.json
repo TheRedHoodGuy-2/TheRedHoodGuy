@@ -1,0 +1,59 @@
+{
+ "id": 2490665888,
+ "class": "Accessory",
+ "name": "CityLifeMan_ShortHairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 512,
+   "tris": 750,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -1.477050801668156e-07,
+      0.31008052825927734,
+      0.018286414444446564
+     ],
+     "rot": [
+      1.0,
+      -8.850776306035743e-18,
+      1.1088626764769763e-16,
+      8.850776306035743e-18,
+      1.0,
+      9.814295088866398e-34,
+      -1.1088626764769763e-16,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.339,
+     -0.424,
+     -0.411
+    ],
+    [
+     0.339,
+     0.424,
+     0.411
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

@@ -1,0 +1,59 @@
+{
+ "id": 1492205990,
+ "class": "Accessory",
+ "name": "zeus",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 6732,
+   "tris": 2244,
+   "attachments": [
+    {
+     "name": "FaceCenterAttachment",
+     "pos": [
+      -0.00999999978,
+      -0.100000001,
+      -0.075000003
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.219,
+     -1.092,
+     -0.99
+    ],
+    [
+     1.219,
+     1.092,
+     0.99
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

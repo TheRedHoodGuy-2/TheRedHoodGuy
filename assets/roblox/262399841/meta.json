@@ -1,0 +1,55 @@
+{
+ "id": 262399841,
+ "class": "Accessory",
+ "name": "RainbowNeonHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 4758,
+   "tris": 1586,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.02999999,
+      0.449999809,
+      -0.100272246
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.934,
+     -0.796,
+     -0.895
+    ],
+    [
+     0.934,
+     0.796,
+     0.895
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

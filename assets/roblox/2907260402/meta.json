@@ -1,0 +1,59 @@
+{
+ "id": 2907260402,
+ "class": "Accessory",
+ "name": "DarkageHairAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 1523,
+   "tris": 1618,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.026525259,
+      0.785297394,
+      -0.158211708
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.888,
+     -1.418,
+     -0.914
+    ],
+    [
+     0.888,
+     1.418,
+     0.914
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

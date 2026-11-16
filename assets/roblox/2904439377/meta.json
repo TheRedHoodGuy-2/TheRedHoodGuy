@@ -1,0 +1,59 @@
+{
+ "id": 2904439377,
+ "class": "Accessory",
+ "name": "Leprechaun_BeardAccessory",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "2.00",
+   "verts": 1318,
+   "tris": 954,
+   "attachments": [
+    {
+     "name": "FaceCenterAttachment",
+     "pos": [
+      0.00348167261,
+      -0.0559809208,
+      0.0831422061
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.398,
+     -0.528,
+     -0.476
+    ],
+    [
+     0.398,
+     0.528,
+     0.476
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

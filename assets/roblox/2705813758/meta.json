@@ -1,0 +1,59 @@
+{
+ "id": 2705813758,
+ "class": "Accessory",
+ "name": "NeonGirlHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 5961,
+   "tris": 1987,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.0631408691,
+      0.952833176,
+      -0.157256126
+     ],
+     "rot": [
+      0.999562263,
+      0.0,
+      -0.029588677,
+      0.0,
+      1.0,
+      0.0,
+      0.029588677,
+      0.0,
+      0.999562263
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.947,
+     -1.382,
+     -0.86
+    ],
+    [
+     0.947,
+     1.382,
+     0.86
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

@@ -1,0 +1,55 @@
+{
+ "id": 185893592,
+ "class": "Accessory",
+ "name": "CurlyHairWithBow",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 6834,
+   "tris": 2278,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.0199999902,
+      0.75,
+      -0.40027225
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.158,
+     -1.614,
+     -1.101
+    ],
+    [
+     1.158,
+     1.614,
+     1.101
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}
