@@ -23,6 +23,8 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 | Three.js (explainer-kit, SwiftShader) | about 7 s | about 70 min |
 | Blender Eevee (software GL), bare character | 68 s | 11+ hours |
 | Blender Cycles CPU | about 4 min (61 s at 540x960, 48 samples) | about 40 hours |
+- Same script as the laptop benchmark (`tools/laptop/bench_eevee.py`: character + 190-object room, 3 lights) in the cloud:
+  Eevee 58 to 66 s a frame at 1080x1920 on llvmpipe (software GL). That is the number the laptop has to beat.
 - Blender in the cloud is fine for stills and asset work (import, bevel, subdivide, bake, export), not for finals.
 - Blender finals only make sense on the laptop's Radeon chip. `tools/laptop/run_bench.bat` measures it.
 - The laptop bridge shell is a Linux VM, not Windows: it cannot start the installed Blender. So laptop renders need a
