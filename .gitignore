@@ -1,0 +1,10 @@
+node_modules/
+out/
+frames*/
+*.wav
+tools/models/
+tools/laptop/bench_*.png
+tools/laptop/bench_log.txt
+reference/**/*.mp4
+reference/**/*.webm
+__pycache__/
