@@ -66,7 +66,11 @@ function headGeo(fillet = .26) {
   for (let i = 0; i <= n; i++) { const a = -Math.PI / 2 + (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fillet + Math.cos(a) * fillet, -H + fillet + Math.sin(a) * fillet)); }
   for (let i = 0; i <= n; i++) { const a = (i / n) * Math.PI / 2; pts.push(new THREE.Vector2(R - fillet + Math.cos(a) * fillet, H - fillet + Math.sin(a) * fillet)); }
   pts.push(new THREE.Vector2(0.0001, H));
-  const g = new THREE.LatheGeometry(pts, 40); g.computeVertexNormals(); return g;
+  const g = new THREE.LatheGeometry(pts, 40); g.computeVertexNormals();
+  // v by distance along the profile (the lathe spaces v by point count, which stretched the grain down the straight side)
+  const len = [0]; for (let i = 1; i < pts.length; i++) len.push(len[i - 1] + pts[i].distanceTo(pts[i - 1]));
+  const uv = g.attributes.uv; for (let k = 0; k < uv.count; k++) uv.setY(k, len[k % pts.length] / len[len.length - 1]);
+  return g;
 }
 
 const img = src => new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = () => no(new Error('image ' + src)); i.src = url(src); });
