@@ -1,0 +1,54 @@
+{
+ "id": 12228927,
+ "class": "Accessory",
+ "name": "SpikyHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 3552,
+   "tris": 1184,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      -0.200000286,
+      -0.000272244215
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.7,
+     -0.52,
+     -0.582
+    ],
+    [
+     0.7,
+     0.472,
+     0.735
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

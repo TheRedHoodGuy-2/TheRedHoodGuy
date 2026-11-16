@@ -1,0 +1,58 @@
+{
+ "id": 1213432315,
+ "class": "Accessory",
+ "name": "StarHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 6420,
+   "tris": 2140,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.349999994,
+      0.0
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      3.02998127e-15,
+      -7.87137555e-09,
+      1.0,
+      -4.1444258e-16,
+      -3.02998127e-15,
+      4.14442554e-16,
+      1.0
+     ]
+    }
+   ],
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.971,
+     -0.848,
+     -0.898
+    ],
+    [
+     0.971,
+     0.852,
+     0.9
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

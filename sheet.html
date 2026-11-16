@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#fff}canvas{display:block}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// Character sheet: sheet.html?spec=<json>  spec = { w, h, cols, yaw: [deg...], cam: {...}, chars: [ r6 spec + { label } ] }
+import * as THREE from 'three';
+import { makeR6, STUD } from './engine/r6.js';
+import { makeRenderer, sky, daylight } from './engine/stage.js';
+const q = new URLSearchParams(location.search), spec = JSON.parse(q.get('spec') || '{}');
+const W = spec.w || 1600, H = spec.h || 900, canvas = document.getElementById('c');
+const renderer = makeRenderer(canvas, W, H), scene = new THREE.Scene(); sky(scene);
+const chars = spec.chars || [{}], cols = spec.cols || chars.length, gap = spec.gap || 1.9, rows = Math.ceil(chars.length / cols);
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.MeshStandardMaterial({ color: spec.floor || '#8f9aa3', roughness: .9 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+daylight(scene, { az: spec.az ?? 30, el: spec.el ?? 50, size: Math.max(6, cols * gap * .7) });
+window.CH = [];
+for (const [i, cs] of chars.entries()) {
+  const a = await makeR6(cs); const cx = (i % cols - (cols - 1) / 2) * gap, cz = -Math.floor(i / cols) * (spec.rowGap || 3.2);
+  a.root.position.set(cx, 0, cz); a.root.rotation.y = THREE.MathUtils.degToRad(cs.yaw ?? 0); scene.add(a.root); window.CH.push(a);
+  if (cs.pose) for (const [k, r] of Object.entries(cs.pose)) a.joints[k].rotation.set(...r);
+}
+const cam = new THREE.PerspectiveCamera(spec.fov || 30, W / H, .1, 2000), c = spec.cam || {};
+const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad((spec.fov || 30) / 2)) * (W / H)); const dist = c.dist || (cols * gap * .5 + .3) / Math.tan(hfov / 2);
+cam.position.set(c.x ?? 0, c.y ?? 1.35, c.z ?? dist); cam.lookAt(c.lx ?? 0, c.ly ?? .95, c.lz ?? -(rows - 1) * (spec.rowGap || 3.2) / 2);
+renderer.render(scene, cam); window.__dbg = { scene, cam, renderer, THREE }; window.ready = true;
+</script>
