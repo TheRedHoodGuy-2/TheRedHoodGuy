@@ -88,7 +88,7 @@ export function blitTemplate(g, tpl, parts) {
 // spec: { skin, sex, face, body (atlas image path, e.g. the mains), shirt, pants (template image paths or canvases),
 //         paint(g, LAYOUT) (free painter on the atlas), hair: [assetId], accessories: [assetId], hairTint, bevel }
 export async function makeR6(spec = {}) {
-  let { skin = '#e6b48c', sex = 'm', bevel = .12, grain: gk = 2, shine = 1 } = spec;   // bevel .12 (C) and grain x2 (between B and C): Xavier's picks 2026-11-17
+  let { skin = '#e6b48c', sex = 'm', bevel = .12, grain: gk = 2, shine = 1.2 } = spec;   // bevel .12 (C) and grain x2 (between B and C): Xavier's picks 2026-11-17; shine 1.2 (between B and C, nearer B)
   const root = new THREE.Group(), rbx = new THREE.Group(); root.add(rbx); rbx.scale.setScalar(STUD); rbx.rotation.y = Math.PI;
   // atlas
   const res = spec.res || ATLAS, c = document.createElement('canvas'); c.width = c.height = res; const g = c.getContext('2d'); g.scale(res / ATLAS, res / ATLAS);
