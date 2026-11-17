@@ -19,3 +19,5 @@ Status key: TODO, DOING, WAITING (on Xavier), DONE (date). One item is signed of
 Measure: the first storytime videos are compared with the tickle benchmark (69.6% stayed) before more gets built on top.
 
 Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_cloud_over_your_head.md`, `03_tied_to_your_front_door.md` (about 400 words, 92 s each).
+
+2026-11-17: base male SHAPE approved by Xavier (v2, matched to his supplied model). Next on the same body: bevel size (options A .03 / B .065 / C .12), then grain strength.
