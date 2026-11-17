@@ -20,4 +20,5 @@ Measure: the first storytime videos are compared with the tickle benchmark (69.6
 
 Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_cloud_over_your_head.md`, `03_tied_to_your_front_door.md` (about 400 words, 92 s each).
 
-2026-11-17: base male SHAPE approved by Xavier (v2, matched to his supplied model). Bevel: C (.12 stud) picked by Xavier 2026-11-17, now the default. Grain: x2 (between B and C) picked 2026-11-17, now default. Shine: 1.2 (between B and C, nearer B) picked 2026-11-17. BASE MALE: all settings picked, final sheet docs/sheets/base_male_final.jpg, waiting for his OK. Next item after it: base female (ask first).
+2026-11-17: base male SHAPE approved by Xavier (v2, matched to his supplied model). Bevel: C (.12 stud) picked by Xavier 2026-11-17, now the default. Grain: x2 (between B and C) picked 2026-11-17, now default. Shine: 1.2 (between B and C, nearer B) picked 2026-11-17. BASE MALE: all settings picked, final sheet docs/sheets/base_male_final.jpg, APPROVED 2026-11-17.
+2026-11-17: base female v1 built to his supplied female model (explainer-kit df1cc521: same as male + hourglass torso), same bevel / grain / shine. Overlap 99.8% front and side. Waiting for his OK.

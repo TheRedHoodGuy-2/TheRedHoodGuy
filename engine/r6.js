@@ -48,8 +48,38 @@ function grain() {
 }
 
 const FACE_OF_GROUP = ['right', 'left', 'top', 'bottom', 'back', 'front'];   // BoxGeometry groups: +x -x +y -y +z -z, in Roblox space
-function block(part, w, h, d, bevel) {
-  const geo = new RoundedBoxGeometry(w, h, d, 4, bevel), uv = geo.attributes.uv, idx = geo.index, seen = new Set();
+// a rounded box with rows of vertices down the flat sides too (RoundedBoxGeometry has none there, so it cannot be bent)
+function gridRoundedBox(w, h, d, r, rows) {
+  const k = 4, n = 2 * k + 1, ny = 2 * k + rows, g = new THREE.BoxGeometry(1, 1, 1, n, ny, n), P = g.attributes.position;
+  const map = (t, half, cnt) => {   // grid index -> position: k rows inside each bevel band, the rest spread over the flat
+    const i = Math.round((t + .5) * cnt), j = Math.min(i, cnt - i), side = i * 2 < cnt ? -1 : 1;
+    if (j <= k) return side * (half - r + r * (k - j) / k);
+    return -(half - r) + (i - k) / (cnt - 2 * k) * 2 * (half - r);
+  };
+  // UVs must follow the real positions (the box spaces them by grid index, which squashed the flat middle into 1/9 of the texture)
+  const UV = g.attributes.uv, AX = [[2, 1], [2, 1], [0, 2], [0, 2], [0, 1], [0, 1]], dims = [w, h, d];
+  g.groups.forEach((gr, gi) => { for (let q = gr.start; q < gr.start + gr.count; q++) {
+    const i = g.index.getX(q), t = [P.getX(i), P.getY(i), P.getZ(i)], m = [map(t[0], w / 2, n), map(t[1], h / 2, ny), map(t[2], d / 2, n)];
+    const fix = (val, a) => Math.abs(val - (t[a] + .5)) < 1e-5 ? m[a] / dims[a] + .5 : .5 - m[a] / dims[a];
+    UV.setXY(i, fix(UV.getX(i), AX[gi][0]), fix(UV.getY(i), AX[gi][1]));
+  } });
+  for (let i = 0; i < P.count; i++) {
+    const v = new THREE.Vector3(map(P.getX(i), w / 2, n), map(P.getY(i), h / 2, ny), map(P.getZ(i), d / 2, n));
+    const inner = new THREE.Vector3(THREE.MathUtils.clamp(v.x, -w / 2 + r, w / 2 - r), THREE.MathUtils.clamp(v.y, -h / 2 + r, h / 2 - r), THREE.MathUtils.clamp(v.z, -d / 2 + r, d / 2 - r));
+    const dir = v.clone().sub(inner); if (dir.lengthSq() > 1e-12) v.copy(inner.add(dir.normalize().multiplyScalar(r)));
+    P.setXYZ(i, v.x, v.y, v.z);
+  }
+  return g;
+}
+// smooth normals across the duplicated face-border vertices (same position = same normal), so bevels have no crease
+function smoothNormals(g) {
+  g.computeVertexNormals(); const P = g.attributes.position, N = g.attributes.normal, acc = new Map(), key = i => `${P.getX(i).toFixed(4)},${P.getY(i).toFixed(4)},${P.getZ(i).toFixed(4)}`;
+  for (let i = 0; i < P.count; i++) { const kk = key(i), a = acc.get(kk) || [0, 0, 0]; a[0] += N.getX(i); a[1] += N.getY(i); a[2] += N.getZ(i); acc.set(kk, a); }
+  for (let i = 0; i < P.count; i++) { const a = acc.get(key(i)), l = Math.hypot(...a) || 1; N.setXYZ(i, a[0] / l, a[1] / l, a[2] / l); }
+  return g;
+}
+function block(part, w, h, d, bevel, rows = 0) {
+  const geo = rows ? gridRoundedBox(w, h, d, bevel, rows) : new RoundedBoxGeometry(w, h, d, 4, bevel), uv = geo.attributes.uv, idx = geo.index, seen = new Set();
   geo.groups.forEach((gr, gi) => {
     const f = FACE_OF_GROUP[gi], [x, y, rw, rh] = LAYOUT[part][f], flip = f === 'top' || f === 'bottom';
     for (let k = gr.start; k < gr.start + gr.count; k++) {
@@ -59,6 +89,14 @@ function block(part, w, h, d, bevel) {
     }
   });
   geo.clearGroups(); return geo;
+}
+// female torso: the supplied female model (explainer-kit df1cc521), measured 2026-11-17. Full 2 x 1 at the hips (bottom .064)
+// and from .492 above the middle to the top; pinched to a waist .754 up from the bottom: 70% as wide, 68% as deep.
+function femaleTorso(g) {
+  const P = g.attributes.position, f = y => y <= -.936 ? 1 : y <= -.246 ? 1 - .3 * (y + .936) / .69 : y <= .492 ? .7 + .3 * (y + .246) / .738 : 1;
+  const fz = y => 1 - (1 - f(y)) * 32 / 30;   // depth pinches to .68 when width is at .70
+  for (let i = 0; i < P.count; i++) { const y = P.getY(i); P.setX(i, P.getX(i) * f(y)); P.setZ(i, P.getZ(i) * fz(y)); }
+  return smoothNormals(g);
 }
 function headGeo(fx = .3, fy = .3) {   // the supplied model's head, measured exactly: radius .6, height 1.2, a round .3 fillet top and bottom (flat cap radius .3)
   const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 16;
@@ -108,7 +146,8 @@ export async function makeR6(spec = {}) {
   const joints = { root: J('root'), neck: J('neck'), shoulderR: J('shoulderR'), shoulderL: J('shoulderL'), hipR: J('hipR'), hipL: J('hipL') };
   joints.root.position.set(0, 3, 0); rbx.add(joints.root);
   const parts = {};
-  parts.torso = mesh(block('torso', 2, 2, 1, bevel), bodyMat); joints.root.add(parts.torso);
+  const tg = sex === 'f' ? femaleTorso(block('torso', 2, 2, 1, bevel, 20)) : block('torso', 2, 2, 1, bevel);
+  parts.torso = mesh(tg, bodyMat); joints.root.add(parts.torso);
   const hang = (joint, pivot, part, key, w, off) => { joint.position.set(...pivot); joints.root.add(joint); parts[key] = mesh(block(part, w, 2, 1, bevel), bodyMat); parts[key].position.set(...off); joint.add(parts[key]); };
   hang(joints.shoulderR, [1, .5, 0], 'armR', 'armR', 1, [.5, -.5, 0]); hang(joints.shoulderL, [-1, .5, 0], 'armL', 'armL', 1, [-.5, -.5, 0]);
   hang(joints.hipR, [.5, -1, 0], 'legR', 'legR', 1, [0, -1, 0]); hang(joints.hipL, [-.5, -1, 0], 'legL', 'legL', 1, [0, -1, 0]);
