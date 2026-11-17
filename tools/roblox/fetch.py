@@ -10,6 +10,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 OUT = os.path.join(ROOT, 'assets', 'roblox'); CACHE = os.path.expanduser('~/.cache/rbx'); os.makedirs(CACHE, exist_ok=True)
 S = requests.Session(); S.headers['User-Agent'] = 'Roblox/WinInet'
 
+_CK = os.path.expanduser('~/.rbx_cookie')   # a throwaway account's login cookie, kept OUTSIDE the repo; unlocks community items
+if os.path.exists(_CK): S.cookies.set('.ROBLOSECURITY', open(_CK).read().strip(), domain='.roblox.com')
 def raw(aid):
     p = os.path.join(CACHE, str(aid))
     if os.path.exists(p): return open(p, 'rb').read()

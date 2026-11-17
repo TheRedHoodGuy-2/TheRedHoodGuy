@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// Measures every hair on the base head (head-local studs: head is 1.2 cube centred at 0). window.check(ids) -> [{id, box, flags}]
+import * as THREE from 'three'; import { makeR6 } from './engine/r6.js';
+const a = await makeR6({ face: false, res: 64 });
+window.check = async ids => { const out = [];
+  for (const id of ids) { let r = { id };
+    try { const hs = await a.wear(id); a.parts.head.updateMatrixWorld(true); const inv = a.parts.head.matrixWorld.clone().invert(), b = new THREE.Box3();
+      for (const h of hs) h.traverse(o => { if (o.isMesh) { o.geometry.computeBoundingBox(); b.union(o.geometry.boundingBox.clone().applyMatrix4(o.matrixWorld).applyMatrix4(inv)); } });
+      r.box = [b.min.toArray().map(v => +v.toFixed(3)), b.max.toArray().map(v => +v.toFixed(3))];
+      for (const h of hs) { h.parent.remove(h); h.traverse(o => { if (o.isMesh) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); } }); } a.accessories.length = 0;
+    } catch (e) { r.err = String(e).slice(0, 120); }
+    out.push(r); }
+  return out; };
+window.ready = true;
+</script>

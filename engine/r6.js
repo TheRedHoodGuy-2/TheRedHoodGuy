@@ -134,6 +134,10 @@ export async function makeR6(spec = {}) {
   if (spec.body) { g.drawImage(await img(spec.body), 0, 0, ATLAS, ATLAS); if (!spec.skin) { const d = g.getImageData(Math.floor(1900 * res / ATLAS), Math.floor(1900 * res / ATLAS), 1, 1).data; skin = `rgb(${d[0]},${d[1]},${d[2]})`; } }
   if (spec.pants) blitTemplate(g, typeof spec.pants === 'string' ? await img(spec.pants) : spec.pants, ['torso', 'legL', 'legR']);
   if (spec.shirt) blitTemplate(g, typeof spec.shirt === 'string' ? await img(spec.shirt) : spec.shirt, ['torso', 'armL', 'armR']);
+  if (spec.tshirt) {   // classic T-shirt: a square decal on the torso front, over the shirt (Roblox draws it at the template's torso-front square)
+    const t = typeof spec.tshirt === 'string' ? await img(spec.tshirt) : spec.tshirt, c = document.createElement('canvas'); c.width = 585; c.height = 559;
+    c.getContext('2d').drawImage(t, 231, 74, 128, 128); blitTemplate(g, c, ['torso']);
+  }
   if (spec.paint) spec.paint(g, LAYOUT);
   const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace; map.anisotropy = 4;
   const nrm = grain().clone(); nrm.needsUpdate = true; nrm.repeat.set(26, 26);
