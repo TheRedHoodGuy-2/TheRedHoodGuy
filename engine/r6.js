@@ -88,7 +88,7 @@ export function blitTemplate(g, tpl, parts) {
 // spec: { skin, sex, face, body (atlas image path, e.g. the mains), shirt, pants (template image paths or canvases),
 //         paint(g, LAYOUT) (free painter on the atlas), hair: [assetId], accessories: [assetId], hairTint, bevel }
 export async function makeR6(spec = {}) {
-  let { skin = '#e6b48c', sex = 'm', bevel = .065 } = spec;   // .065 stud = the chamfer width on the supplied model (ours is rounded, 4 segments)
+  let { skin = '#e6b48c', sex = 'm', bevel = .12, grain: gk = 1 } = spec;   // bevel .12 stud: Xavier's pick 2026-11-17 (option C). gk scales the plastic grain
   const root = new THREE.Group(), rbx = new THREE.Group(); root.add(rbx); rbx.scale.setScalar(STUD); rbx.rotation.y = Math.PI;
   // atlas
   const res = spec.res || ATLAS, c = document.createElement('canvas'); c.width = c.height = res; const g = c.getContext('2d'); g.scale(res / ATLAS, res / ATLAS);
@@ -99,9 +99,9 @@ export async function makeR6(spec = {}) {
   if (spec.paint) spec.paint(g, LAYOUT);
   const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace; map.anisotropy = 4;
   const nrm = grain().clone(); nrm.needsUpdate = true; nrm.repeat.set(26, 26);
-  const bodyMat = new THREE.MeshStandardMaterial({ map, roughness: .62, metalness: 0, normalMap: nrm, normalScale: new THREE.Vector2(.22, .22) });
+  const bodyMat = new THREE.MeshStandardMaterial({ map, roughness: .62, metalness: 0, normalMap: nrm, normalScale: new THREE.Vector2(.22 * gk, .22 * gk) });
   const hn = grain().clone(); hn.needsUpdate = true; hn.repeat.set(10, 5);
-  const skinMat = new THREE.MeshStandardMaterial({ color: new THREE.Color(css(skin)), roughness: .55, metalness: 0, normalMap: hn, normalScale: new THREE.Vector2(.2, .2) });
+  const skinMat = new THREE.MeshStandardMaterial({ color: new THREE.Color(css(skin)), roughness: .55, metalness: 0, normalMap: hn, normalScale: new THREE.Vector2(.2 * gk, .2 * gk) });
   const mesh = (geo, mat) => { const m = new THREE.Mesh(geo, mat); m.castShadow = m.receiveShadow = true; return m; };
   // joints (pivots) in Roblox space; each part mesh hangs off its joint
   const J = n => { const o = new THREE.Group(); o.name = n; return o; };
