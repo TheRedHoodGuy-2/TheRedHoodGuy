@@ -15,7 +15,7 @@ def raw(aid):
     if os.path.exists(p): return open(p, 'rb').read()
     for attempt in range(4):
         r = S.get('https://assetdelivery.roblox.com/v1/asset/', params={'id': aid}, timeout=40)
-        if r.status_code == 200: break
+        if r.status_code in (200, 401, 403, 404): break   # 401 = item needs a login: retrying never helps
         time.sleep(2 + attempt * 3)
     r.raise_for_status(); d = r.content
     if d[:2] == b'\x1f\x8b': d = gzip.decompress(d)

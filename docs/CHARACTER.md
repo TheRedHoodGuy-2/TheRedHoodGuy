@@ -19,7 +19,7 @@ Status: DRAFT 2026-11-16. Becomes law when Xavier signs off the sheets in `docs/
 - `python3 tools/roblox/fetch.py search "<words>" <type> <limit> Roblox` then `... get <id> <id>` converts an item into
   `assets/roblox/<id>/` (model.glb + texture.png + meta.json). Types: 41 hair, 8 hat, 11 shirt, 12 pants, 42 to 47 other accessories.
 - Works from the cloud with no login for avatar items. Community MODELS (props, buildings) need a login and are NOT reachable.
-- RULE: only items whose creator is "Roblox" (official, free or near free). Community creators sell their clothing and hair;
+- 2026-11-17 Xavier: pull ALL catalog hair, community items included; rights are his call. (Replaces the Roblox-only rule.)
   taking those files without buying them is not ours to do. `meta.json` records creator and price for every item.
 - In the library on 2026-11-16: 98 official hair / accessories (sheets: `docs/sheets/hair_0..3.jpg`), 9 shirts, 12 pants.
 - Known limits: 3 "layered" items made for the newer heads sit inside the classic head (11572095427, 11584287440,

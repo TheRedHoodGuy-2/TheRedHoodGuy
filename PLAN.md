@@ -22,3 +22,5 @@ Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_clo
 
 2026-11-17: base male SHAPE approved by Xavier (v2, matched to his supplied model). Bevel: C (.12 stud) picked by Xavier 2026-11-17, now the default. Grain: x2 (between B and C) picked 2026-11-17, now default. Shine: 1.2 (between B and C, nearer B) picked 2026-11-17. BASE MALE: all settings picked, final sheet docs/sheets/base_male_final.jpg, APPROVED 2026-11-17.
 2026-11-17: base female v1 built to his supplied female model (explainer-kit df1cc521: same as male + hourglass torso), same bevel / grain / shine. Overlap 99.8% front and side. Waiting for his OK.
+
+2026-11-17: HAIR SOURCING. Xavier: pull every hair, rights are between him and his lawyer. Crawled 3,791 hairs from the Roblox catalog (35 style keywords), converted 1,549 (about 2,200 newer community items need a Roblox login to download; 12 were empty). Gallery: https://claude.ai/artifact/NQcdHob7Tkopb36erUx1AS (33 sheets, most favourited first). Not fitted yet: some sit inside or float off the head.

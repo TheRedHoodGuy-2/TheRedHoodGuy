@@ -8,3 +8,4 @@ tools/laptop/bench_log.txt
 reference/**/*.mp4
 reference/**/*.webm
 __pycache__/
+/assets/roblox/
