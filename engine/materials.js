@@ -7,10 +7,11 @@
 // Meshes need world-scale UVs: use worldUV(geometry) on boxes / planes (one UV unit = one metre).
 import * as THREE from 'three';
 const url = p => new URL(p, document.baseURI).href;
-const TL = new THREE.TextureLoader(), cache = new Map();
+const TL = new THREE.TextureLoader(), cache = new Map(), pending = [];
+export const texReady = () => Promise.all(pending);   // await before a still: unloaded maps render black
 function tex(path, srgb, repeat) {
   const k = path + repeat;
-  if (!cache.has(k)) { const t = TL.load(url(path)); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 8; if (srgb) t.colorSpace = THREE.SRGBColorSpace; t.repeat.set(repeat, repeat); cache.set(k, t); }
+  if (!cache.has(k)) { let done; pending.push(new Promise(r => done = r)); const t = TL.load(url(path), done, undefined, done); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 8; if (srgb) t.colorSpace = THREE.SRGBColorSpace; t.repeat.set(repeat, repeat); cache.set(k, t); }
   return cache.get(k);
 }
 export const LIB = {
@@ -35,6 +36,10 @@ export const LIB = {
   fabric_pattern: { dir: 'ph/fabric_pattern_05', kind: 'natural', size: .6, rough: 1, normal: 1, note: 'patterned fabric (curtains, rug)' },
   jacquard:       { dir: 'ph/quatrefoil_jacquard_fabric', kind: 'tint', size: .9, color: '#b85c4a', rough: 1, normal: 1, note: 'woven upholstery' },
   denim:          { dir: 'ph/denim_fabric', kind: 'tint', size: .4, color: '#3e5a86', rough: 1, normal: 1, note: 'denim / heavy cotton' },
+  boucle:         { dir: 'ph/curly_teddy_natural', kind: 'tint', size: .3, color: '#efe6d6', rough: 1, normal: 1.4, note: 'wool boucle (modern sofas, chairs)' },
+  linen:          { dir: 'ph/rough_linen', kind: 'tint', size: .5, color: '#d8c3a5', rough: 1, normal: 1, note: 'rough linen (bedding, curtains, lamp shades)' },
+  jute:           { dir: 'ph/hessian_380', kind: 'tint', size: .5, color: '#c9ad84', rough: 1, normal: 1.6, note: 'jute / hessian weave (rugs, baskets)' },
+  velvet:         { dir: 'ph/velour_velvet', kind: 'tint', size: .5, color: '#6f7b4f', rough: 1, normal: .6, note: 'velvet (armchairs, cushions; use sheen)' },
   knit:           { dir: 'gen/knit', kind: 'tint', size: .6, color: '#d9d4ea', rough: 1, normal: 1.2, note: 'knit (bedding, sweaters: Gneef look)' },
 };
 export function mat(name, o = {}) {

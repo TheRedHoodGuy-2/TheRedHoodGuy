@@ -1,0 +1,27 @@
+{
+ "id": 5673452350,
+ "name": "Airzly's Lamp",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~Metal~9fa1ac",
+  "mat~Neon~b19749",
+  "mat~Neon~dd870e",
+  "mat~Plastic~717171",
+  "mat~Plastic~838383",
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~616161",
+  "mat~SmoothPlastic~717171",
+  "mat~SmoothPlastic~838383",
+  "mat~SmoothPlastic~a3a2a5"
+ ],
+ "parts": 21,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 3,
+ "warnings": []
+}

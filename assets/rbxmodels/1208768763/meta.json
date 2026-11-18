@@ -1,0 +1,22 @@
+{
+ "id": 1208768763,
+ "name": "Modern Couch",
+ "size_m": [
+  1.292,
+  1.381,
+  3.16
+ ],
+ "materials": [
+  "mat~Pebble~1b2a35",
+  "mat~Slate~1b2a35",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~WoodPlanks~1b2a35"
+ ],
+ "parts": 13,
+ "skipped_invisible": 3,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 2,
+ "warnings": []
+}

@@ -217,3 +217,9 @@ Next phase: 7 faces / face animation / lip sync.
 - research/house_design.md: real US plans (room sizes, bedrooms upstairs, 9 ft ceilings) + 2026 interior trends, cited.
 - houseboard.html -> docs/sheets/house_A_board.jpg (warm modern, guy's family), house_B_board.jpg (soft organic, daughter's family).
 - Self-check fixes before sending: stairs now stack floor to floor, no empty upstairs corners, House A garage made car-sized (was 3 x 2.5 m).
+
+## 2026-11-18 18:50 World step 2 started: House A living room furniture (awaiting Xavier)
+- engine/designs/houseA.js PIECES (one builder per piece, re-coloured to the board palette); furnboard.html renders them next to R6.
+- Sheet: docs/sheets/houseA_living_furniture_v1.jpg. Sources: store sofa 11652583496 (repainted), Poly Haven armchair / console / plant / pillows, modelled table, rug, arc lamp, TV, art.
+- New: materials boucle (curly_teddy_natural; wool_boucle is actually PLAID, not used), linen, jute, velvet; loadRbx paint option; ph swap option; texReady() (unloaded maps rendered black in stills).
+- Poly Haven sofas are all Victorian / classic: unusable for modern houses. Store sofas mostly blocky; 11652583496 is the only good modern one found.

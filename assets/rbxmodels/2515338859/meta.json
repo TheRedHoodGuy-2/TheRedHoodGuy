@@ -1,0 +1,20 @@
+{
+ "id": 2515338859,
+ "name": "Model",
+ "size_m": [
+  0.816,
+  1.936,
+  0.816
+ ],
+ "materials": [
+  "mat~Metal~a3a2a5",
+  "mat~Metal~f8f8f8",
+  "mat~Neon~efb838~t4",
+  "mat~Sand~edeaea~t4"
+ ],
+ "parts": 7,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

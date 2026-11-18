@@ -258,5 +258,125 @@
   ],
   "parts": 15,
   "unions_skipped": 0
+ },
+ "111356234833337": {
+  "name": "Modern Sofa (4 Seats)",
+  "size_m": [
+   5.989,
+   1.713,
+   1.237
+  ],
+  "parts": 11,
+  "unions_skipped": 0
+ },
+ "107966026031875": {
+  "name": "Sofa",
+  "size_m": [
+   3.876,
+   1.166,
+   1.519
+  ],
+  "parts": 6,
+  "unions_skipped": 0
+ },
+ "97679285570226": {
+  "name": "Sofa",
+  "size_m": [
+   4.345,
+   1.994,
+   2.127
+  ],
+  "parts": 1,
+  "unions_skipped": 0
+ },
+ "17203147978": {
+  "name": "Model",
+  "size_m": [
+   1.533,
+   1.459,
+   3.931
+  ],
+  "parts": 15,
+  "unions_skipped": 0
+ },
+ "1208768763": {
+  "name": "Modern Couch",
+  "size_m": [
+   1.292,
+   1.381,
+   3.16
+  ],
+  "parts": 13,
+  "unions_skipped": 0
+ },
+ "86819337564484": {
+  "name": "Model",
+  "size_m": [
+   3.004,
+   1.179,
+   1.359
+  ],
+  "parts": 2,
+  "unions_skipped": 0
+ },
+ "93917946667338": {
+  "name": "Model",
+  "size_m": [
+   6.921,
+   2.299,
+   12.899
+  ],
+  "parts": 28,
+  "unions_skipped": 0
+ },
+ "16017752481": {
+  "name": "Modern Floor Lamp_Cork",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "2515338859": {
+  "name": "Model",
+  "size_m": [
+   0.816,
+   1.936,
+   0.816
+  ],
+  "parts": 7,
+  "unions_skipped": 0
+ },
+ "77080156610489": {
+  "name": "Model",
+  "size_m": [
+   0.441,
+   0.908,
+   0.441
+  ],
+  "parts": 12,
+  "unions_skipped": 3
+ },
+ "8661932376": {
+  "name": "Model",
+  "size_m": [
+   2.856,
+   3.108,
+   1.983
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "5673452350": {
+  "name": "Airzly's Lamp",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 21,
+  "unions_skipped": 0
  }
 }

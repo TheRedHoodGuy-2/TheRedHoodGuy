@@ -24,9 +24,10 @@ export function reskin(name, size = 1) {
   if (alpha < 1 || kind === 'glass') { m.transparent = true; m.opacity = Math.min(m.opacity ?? 1, kind === 'glass' ? Math.min(.25, alpha) : alpha); m.depthWrite = false; }
   cache.set(k, m); return m;
 }
-export async function loadRbx(id, { yaw = 0, scale = 1 } = {}) {
+// paint: { '<builder hex>' | '*': THREE.Material | { color, kind } } re-colours a pulled model to OUR design palette
+export async function loadRbx(id, { yaw = 0, scale = 1, paint = null } = {}) {
   const g = await new GLTFLoader().loadAsync(new URL(`assets/rbxmodels/${id}/model.glb`, document.baseURI).href), o = new THREE.Group(); o.add(g.scene);
   g.scene.traverse(m => { if (!m.isMesh) return; const n = m.name.startsWith('mat~') ? m.name : (m.parent?.name || '');
-    let geo = m.geometry.index ? m.geometry.toNonIndexed() : m.geometry; geo.computeVertexNormals(); { const N = geo.attributes.normal.array; for (let i = 0; i < N.length; i++) if (!Number.isFinite(N[i])) N[i] = i % 3 === 1 ? 1 : 0; } m.geometry = worldUV(geo); /* flat normals: Roblox parts are hard-edged */ m.material = n.startsWith('mat~') ? reskin(n) : m.material; m.castShadow = !m.material.transparent; m.receiveShadow = true; });   /* glass and see-through parts never block the sun */
+    let geo = m.geometry.index ? m.geometry.toNonIndexed() : m.geometry; geo.computeVertexNormals(); { const N = geo.attributes.normal.array; for (let i = 0; i < N.length; i++) if (!Number.isFinite(N[i])) N[i] = i % 3 === 1 ? 1 : 0; } m.geometry = worldUV(geo); /* flat normals: Roblox parts are hard-edged */ m.material = n.startsWith('mat~') ? reskin(n) : m.material; if (paint) { const hx = n.split('~')[2], p = paint[hx] ?? paint['*']; if (p) m.material = p.isMaterial ? p : reskin(`mat~${p.kind || n.split('~')[1]}~${p.color.replace('#', '')}`); } m.castShadow = !m.material.transparent; m.receiveShadow = true; });   /* glass and see-through parts never block the sun */
   o.rotation.y = yaw; o.scale.setScalar(scale); return o;
 }

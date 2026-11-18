@@ -12,9 +12,10 @@ export const at = (o, x, y, z, ry = 0) => { o.position.set(x, y, z); o.rotation.
 
 // a Poly Haven model, scaled; materials keep their scanned maps
 const gl = new GLTFLoader();
-export async function ph(id, { scale = 1, tint = null, rough = null } = {}) {
+// swap: { '<gltf material name>': THREE.Material } replaces a scanned material with one of ours (e.g. cushions -> olive velvet)
+export async function ph(id, { scale = 1, tint = null, rough = null, swap = null } = {}) {
   const g = await gl.loadAsync(`assets/ph/${id}/${id}.gltf`); const o = g.scene; o.scale.setScalar(scale);
-  o.traverse(m => { if (m.isMesh) { m.castShadow = m.receiveShadow = true; if (tint) m.material.color.multiply(new THREE.Color(tint)); if (rough != null) m.material.roughness = rough; } });
+  o.traverse(m => { if (m.isMesh) { m.castShadow = m.receiveShadow = true; if (swap && swap[m.material.name]) { m.geometry = worldUV(m.geometry.clone()); m.material = swap[m.material.name]; return; } if (tint) m.material.color.multiply(new THREE.Color(tint)); if (rough != null) m.material.roughness = rough; } });
   return o;
 }
 

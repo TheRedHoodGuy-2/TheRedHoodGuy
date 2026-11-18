@@ -1,0 +1,20 @@
+{
+ "id": 16017752481,
+ "name": "Modern Floor Lamp_Cork",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~Metal~bc9b5d",
+  "mat~Neon~eab892",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~Wood~1b2a35"
+ ],
+ "parts": 5,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

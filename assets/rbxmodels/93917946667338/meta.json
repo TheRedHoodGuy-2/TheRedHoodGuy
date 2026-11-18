@@ -1,0 +1,27 @@
+{
+ "id": 93917946667338,
+ "name": "Model",
+ "size_m": [
+  6.921,
+  2.299,
+  12.899
+ ],
+ "materials": [
+  "mat~Grass~2c651d",
+  "mat~Neon~a3a2a5",
+  "mat~Plastic~1b2a35",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~6c584b",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~c6c6c6",
+  "mat~SmoothPlastic~d5d5d5",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~f8f8f8~t8"
+ ],
+ "parts": 28,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 1,
+ "warnings": []
+}

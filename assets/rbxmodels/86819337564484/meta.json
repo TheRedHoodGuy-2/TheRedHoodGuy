@@ -1,0 +1,17 @@
+{
+ "id": 86819337564484,
+ "name": "Model",
+ "size_m": [
+  3.004,
+  1.179,
+  1.359
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 2,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

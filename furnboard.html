@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// furnboard.html?spec={ids:[piece names], cols, w, h}: a house design's furniture pieces, each next to our R6 (1.7 m)
+import * as THREE from 'three';
+import { PIECES } from './engine/designs/houseA.js';
+import { texReady } from './engine/materials.js';
+import { makeR6 } from './engine/r6.js';
+const spec = JSON.parse(new URLSearchParams(location.search).get('spec') || '{}'), W = spec.w || 1600, H = spec.h || 900, ids = spec.ids;
+const R = new THREE.WebGLRenderer({ canvas: document.getElementById('c'), antialias: true, preserveDrawingBuffer: true }); R.setSize(W, H); R.outputColorSpace = THREE.SRGBColorSpace; R.toneMapping = THREE.NeutralToneMapping; R.shadowMap.enabled = true;
+const cols = spec.cols || 4, rows = Math.ceil(ids.length / cols), cw = W / cols, ch = H / rows; R.setScissorTest(true); R.setClearColor('#efe9df');
+const guy = await makeR6({ face: false, res: 256, skin: '#c68a62' });
+window.info = []; const cells = [];
+for (const [i, id] of ids.entries()) {
+  const scene = new THREE.Scene(); scene.add(new THREE.HemisphereLight('#dfe6f0', '#5a4a3a', 1.1)); const d = new THREE.DirectionalLight('#fff1dd', 2.6); d.position.set(3, 6, 5); d.castShadow = true; d.shadow.mapSize.set(2048, 2048); Object.assign(d.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 }); scene.add(d);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(30, 30), new THREE.MeshStandardMaterial({ color: '#d9cdb8', roughness: .9 })); fl.rotation.x = -Math.PI / 2; fl.receiveShadow = true; scene.add(fl);
+  const o = await PIECES[id](); scene.add(o); const b = new THREE.Box3().setFromObject(o), s = b.getSize(new THREE.Vector3());
+  const g = guy.root.clone(true); g.position.set(b.max.x + .5, 0, 0); scene.add(g);
+  window.info.push([id, s.toArray().map(v => +v.toFixed(2))]);
+  const cx = (b.min.x + b.max.x + 1.2) / 2, wid = b.max.x + 1.2 - b.min.x, r = Math.max(wid * 1.75, s.y * 1.6, 2.4), cam = new THREE.PerspectiveCamera(30, cw / ch, .05, 100);
+  cam.position.set(cx + r * .45, r * .7, (b.min.z + b.max.z) / 2 + r * 1.9); cam.lookAt(cx, s.y * .4, (b.min.z + b.max.z) / 2);
+  cells.push([scene, cam, (i % cols) * cw, H - (Math.floor(i / cols) + 1) * ch]);
+}
+await texReady(); await new Promise(r => setTimeout(r, 300));
+for (const [scene, cam, x, y] of cells) { R.setViewport(x, y, cw, ch); R.setScissor(x, y, cw, ch); R.render(scene, cam); }
+window.ready = true;
+</script>

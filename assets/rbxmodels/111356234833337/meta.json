@@ -1,0 +1,20 @@
+{
+ "id": 111356234833337,
+ "name": "Modern Sofa (4 Seats)",
+ "size_m": [
+  5.989,
+  1.713,
+  1.237
+ ],
+ "materials": [
+  "mat~Plastic~111111",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~f8f8f8",
+  "mat~SmoothPlastic~a3a2a5"
+ ],
+ "parts": 11,
+ "skipped_invisible": 4,
+ "unions_skipped": 0,
+ "decals": 23,
+ "warnings": []
+}

@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// phsheet.html?spec={ids:[...], scale, cols, w, h}: Poly Haven models at studio scale, each next to our R6 (1.7 m)
+import * as THREE from 'three';
+import { ph } from './engine/build.js';
+import { makeR6 } from './engine/r6.js';
+const spec = JSON.parse(new URLSearchParams(location.search).get('spec') || '{}'), W = spec.w || 1600, H = spec.h || 900, ids = spec.ids;
+const R = new THREE.WebGLRenderer({ canvas: document.getElementById('c'), antialias: true, preserveDrawingBuffer: true }); R.setSize(W, H); R.outputColorSpace = THREE.SRGBColorSpace; R.toneMapping = THREE.NeutralToneMapping; R.shadowMap.enabled = true;
+const cols = spec.cols || 4, rows = Math.ceil(ids.length / cols), cw = W / cols, ch = H / rows; R.setScissorTest(true); R.setClearColor('#3a3f48');
+const guy = await makeR6({ face: false, res: 256, skin: '#c68a62' });
+window.info = [];
+for (const [i, id] of ids.entries()) {
+  const scene = new THREE.Scene(); scene.add(new THREE.HemisphereLight('#dfe6f0', '#5a4a3a', 1.1)); const d = new THREE.DirectionalLight('#fff1dd', 2.6); d.position.set(3, 6, 5); d.castShadow = true; d.shadow.mapSize.set(2048, 2048); Object.assign(d.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 }); scene.add(d);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(30, 30), new THREE.MeshStandardMaterial({ color: '#8f8a82', roughness: .9 })); fl.rotation.x = -Math.PI / 2; fl.receiveShadow = true; scene.add(fl);
+  const o = await ph(id, { scale: spec.scale || 1.45 }); scene.add(o); const b = new THREE.Box3().setFromObject(o), s = b.getSize(new THREE.Vector3());
+  const g = guy.root.clone(true); g.position.set(b.max.x + .5, 0, 0); scene.add(g);
+  window.info.push([id, s.toArray().map(v => +v.toFixed(2))]);
+  const r = Math.max(s.x + 1.2, s.y * 1.3, 2.2), cam = new THREE.PerspectiveCamera(30, cw / ch, .05, 100); cam.position.set(r * .9 + .4, r * .7, r * 1.9); cam.lookAt(.3, s.y * .4, 0);
+  const x = (i % cols) * cw, y = H - (Math.floor(i / cols) + 1) * ch; R.setViewport(x, y, cw, ch); R.setScissor(x, y, cw, ch); R.render(scene, cam);
+}
+window.ready = true;
+</script>

@@ -1,0 +1,17 @@
+{
+ "id": 97679285570226,
+ "name": "Sofa",
+ "size_m": [
+  4.345,
+  1.994,
+  2.127
+ ],
+ "materials": [
+  "mat~Fabric~a3a2a5"
+ ],
+ "parts": 1,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

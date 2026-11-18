@@ -1,0 +1,18 @@
+{
+ "id": 8661932376,
+ "name": "Model",
+ "size_m": [
+  2.856,
+  3.108,
+  1.983
+ ],
+ "materials": [
+  "mat~Neon~afaf8c",
+  "mat~SmoothPlastic~8b8a8c"
+ ],
+ "parts": 8,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}
