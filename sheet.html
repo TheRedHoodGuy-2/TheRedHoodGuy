@@ -18,7 +18,11 @@ for (const [i, cs] of chars.entries()) {
     const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js'); const g = (await new GLTFLoader().loadAsync(new URL(cs.glb, document.baseURI).href)).scene, root = new THREE.Group(); root.add(g);
     g.traverse(o => { if (o.isMesh) { o.material = new THREE.MeshStandardMaterial({ color: cs.skin || '#e6b48c', roughness: .55 }); o.castShadow = o.receiveShadow = true; } });
     const b = new THREE.Box3().setFromObject(g), k = (cs.height || 1.734) / (b.max.y - b.min.y); g.scale.setScalar(k); g.position.set(-(b.min.x + b.max.x) / 2 * k, -b.min.y * k, -(b.min.z + b.max.z) / 2 * k); a = { root, joints: {}, parts: {} };
-  } else a = await makeR6(cs);
+  } else {   // an item that will not load in 25 s (huge or broken file) is left off so one bad item cannot kill the sheet
+    const slow = new Promise(r => setTimeout(() => r(null), 25000));
+    a = await Promise.race([makeR6(cs).catch(() => null), slow]);
+    if (!a) { const bare = { ...cs }; delete bare.accessories; delete bare.hair; a = await makeR6(bare); }
+  }
   const cx = (i % cols - (cols - 1) / 2) * gap, cz = -Math.floor(i / cols) * (spec.rowGap || 3.2);
   a.root.position.set(cx, 0, cz); a.root.rotation.y = THREE.MathUtils.degToRad(cs.yaw ?? 0); scene.add(a.root); window.CH.push(a);
   if (cs.pose) for (const [k, r] of Object.entries(cs.pose)) a.joints[k].rotation.set(...r);

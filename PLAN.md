@@ -24,3 +24,10 @@ Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_clo
 2026-11-17: base female v1 built to his supplied female model (explainer-kit df1cc521: same as male + hourglass torso), same bevel / grain / shine. Overlap 99.8% front and side. Waiting for his OK.
 
 2026-11-17: HAIR SOURCING. Xavier: pull every hair, rights are between him and his lawyer. Crawled 3,791 hairs from the Roblox catalog (35 style keywords), converted 1,549 (about 2,200 newer community items need a Roblox login to download; 12 were empty). Gallery: https://claude.ai/artifact/NQcdHob7Tkopb36erUx1AS (33 sheets, most favourited first). Not fitted yet: some sit inside or float off the head.
+
+2026-11-18: LIBRARY PULL (Xavier asked for every hair, outfit and accessory; login cookie of a throwaway account kept in ~/.rbx_cookie, never in the repo)
+- Hair: 3,769 converted, 3,729 good (male 1,153, female 2,342, both 234), 62 rejected. https://claude.ai/artifact/NQcdHob7Tkopb36erUx1AS
+- Flat clothing: 6,723 (shirts 4,056, pants 2,639, T-shirts 28), sorted male / female / both by name. https://claude.ai/artifact/R4Nmqi7e3FNbtSeoeAPwKP
+- Accessories: 4,507 (hats 1,856, face 652, front 606, back 527, neck 490, shoulder 215, waist 161). https://claude.ai/artifact/WYFcg6U5fNY7Dve7L9eCGi
+- 3D layered clothing: 2,499 of 12,958 found (top by favourites; disk limit). Made for the slim R15 body, NOT fitted to R6 yet. https://claude.ai/artifact/P955JRMdynQ5jaSdZ2NN7k
+- Sorting is by name keywords + hair length: rough, Xavier corrects by number.

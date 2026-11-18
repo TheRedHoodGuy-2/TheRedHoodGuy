@@ -8,18 +8,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); spec = json.
 F = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 13); f2 = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 11)
 SKIN = '#e6b48c'; NEUTRAL_SHIRT = 'assets/clothing/plain_white_shirt.png'; NEUTRAL_PANTS = 'assets/clothing/plain_grey_pants.png'
 def char(mode, i, sex):
-    c = {'res': 128, 'skin': SKIN, 'face': False, 'yaw': 28, 'sex': sex}
+    c = {'res': 256, 'skin': SKIN, 'face': False, 'yaw': 28, 'sex': sex}
     if mode == 'hair': c.update(hair=[i], res=64)
     elif mode == 'shirt': c.update(shirt=f'assets/roblox/{i}/texture.png', pants=NEUTRAL_PANTS)
-    elif mode == 'pants': c.update(pants=f'assets/roblox/{i}/texture.png', shirt=NEUTRAL_SHIRT)
+    elif mode == 'pants': c.update(pants=f'assets/roblox/{i}/texture.png')   # no shirt: it would cover the pants' waistband and tops of dresses
     elif mode == 'tshirt': c.update(tshirt=f'assets/roblox/{i}/texture.png', shirt=NEUTRAL_SHIRT, pants=NEUTRAL_PANTS)
-    else: c.update(accessories=[i], shirt=NEUTRAL_SHIRT, pants=NEUTRAL_PANTS)
+    else: c.update(accessories=[i], shirt=NEUTRAL_SHIRT, pants=NEUTRAL_PANTS, yaw=200 if mode == 'acc_back' else 28)
     return c
-GRID = {'hair': {'cw': 1.0, 'ch': 1.35, 'cy': 1.38, 'headOnly': True}, 'acc': {'cw': 1.9, 'ch': 2.2, 'cy': .95}}
+GRID = {'hair': {'cw': 1.0, 'ch': 1.35, 'cy': 1.38, 'headOnly': True}, 'acc': {'cw': 1.9, 'ch': 2.45, 'cy': .88}, 'acc_back': {'cw': 1.9, 'ch': 2.45, 'cy': .88}}
 body = []; cols, cw, chh, per = 8, 200, 270, 48; n_all = 0
 for sec in spec['sections']:
     mode = sec['mode']; items = sec['items']; tag = ''.join(ch for ch in sec['name'].lower() if ch.isalnum())
-    g = dict(GRID.get(mode, {'cw': 1.9, 'ch': 2.2, 'cy': .95}), bg='#e4e9ef'); sheets = []
+    g = dict(GRID.get(mode, {'cw': 1.9, 'ch': 2.45, 'cy': .88}), bg='#e4e9ef'); sheets = []
     for s in range(0, len(items), per):
         page = items[s:s + per]; name = f'{tag}_{s // per + 1:03d}.jpg'; sheets.append((name, s, len(page)))
         if os.path.exists(f'{out}/{name}'): continue
