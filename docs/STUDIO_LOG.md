@@ -179,3 +179,19 @@ blocks, triage by usability (normal / mid / odd; mid and odd kept aside), recolo
 colour-harmony check per outfit, skin-tone scale, hair colour set, bank file (name, sex, skin, hair, outfit, accessories,
 personality line) + one sheet of all 200. Faces added to the bank in the faces step.
 Next phase: 7 faces / face animation / lip sync.
+
+
+## 2026-11-18 overnight run (docs/OVERNIGHT_PLAN.md) — results waiting for Xavier
+- research/gneef_top20_scripts.md: Gneef top 20 broken down. KEY: his hits are 77-174 s (median 138 s), not 20 s; every
+  one opens at 0.0 s with "In this world/town..." + the rule and its cost. Length decision needed.
+- research/scripting_retention.md: hooks, retention engine, Reddit drama adaptation table, draft script checklist.
+- research/voice_options.md: Fish Audio (cheapest, has "Roblox" voices, API) vs ElevenLabs Creator $22. He decides.
+- research/render_speed.md: 11.5 -> ~9.6 s per final frame, look unchanged; tools/render.mjs (streamed, resumable),
+  tools/timing.mjs, tools/lookcheck.sh (preview = final: PASS).
+- Pose editor on the studio R6: https://claude.ai/artifact/Wodk7AKaH6PrU4eRtEMiWR ; docs/POSE_LESSONS.md.
+- Model pull: tools/roblox/models.py (Creator Store search + pull + re-skin), engine/rbxmodel.js, sheet
+  docs/sheets/models_v1.jpg. Unions not readable yet (models built from unions come out broken).
+- Clothing: sleeve snapping + automatic height fit (library/fit.json) + fit checker (tools/fitcheck.mjs,
+  library/fitcheck.jsonl) + usability pre-sort (tools/triage.py -> library/triage_auto.json) + visual check page
+  wearcheck.html. Still open: the armpit/hem tear when arms go up (needs real skin weights on garments).
+- research/scale.md + docs/sheets/scale_v1.jpg: scale standard DRAFT (1 stud = 0.34 m, door 4.5 x 7.5 st, etc).

@@ -124,7 +124,8 @@ function rigToLimbs(handle, parts, top = true) {
     for (let t = 0; t < idx.length; t += 3) {
       a.fromBufferAttribute(P, idx[t]).applyMatrix4(m); b.fromBufferAttribute(P, idx[t + 1]).applyMatrix4(m); c.fromBufferAttribute(P, idx[t + 2]).applyMatrix4(m);
       const x = (a.x + b.x + c.x) / 3, y = (a.y + b.y + c.y) / 3;
-      const k = y < -1.02 ? (top ? 'torso' : x >= 0 ? 'legR' : 'legL') : x > 1.02 ? 'armR' : x < -1.02 ? 'armL' : 'torso';   // a top's hem below the waist stays on the torso (it must not tear off with the legs)
+      const ax = 1.02;   // tried a wider cut low down (2026-11-18): it left the sleeve cuffs floating on the torso, so no
+      const k = y < -1.02 ? (top ? 'torso' : x >= 0 ? 'legR' : 'legL') : x > ax ? 'armR' : x < -ax ? 'armL' : 'torso';   // a top's hem below the waist stays on the torso (it must not tear off with the legs)
       buckets[k].push(idx[t], idx[t + 1], idx[t + 2]);
     }
     for (const [k, list] of Object.entries(buckets)) {
@@ -230,7 +231,9 @@ export async function makeR6(spec = {}) {
     if (!col) col = `rgb(${(p.color || [163, 162, 165]).join(',')})`;
     const t = document.createElement('canvas'); t.width = 585; t.height = 559; const tx = t.getContext('2d'); tx.fillStyle = col; tx.fillRect(0, 0, 585, 559);
     const bottom = (p.attachments || []).some(a => a.name.startsWith('Waist'));   // pants and skirts hang from the waist
-    blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']); map.needsUpdate = true;
+    blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']);
+    if (bottom) { g.fillStyle = '#26262a'; for (const lp of ['legL', 'legR']) { const [x, y, w, h] = LAYOUT[lp].bottom; g.fillRect(x, y, w, h); } }   // shoe soles: seen when sitting
+    map.needsUpdate = true;
   }
   api.wear = async (id, { tint = null, part = null, dy = null } = {}) => {
     if (dy == null) { FIT ??= await fetch(url('library/fit.json')).then(r => r.ok ? r.json() : {}).catch(() => ({})); dy = FIT[id]?.dy || 0; }   // per-garment height fix found by tools/fitcheck.mjs

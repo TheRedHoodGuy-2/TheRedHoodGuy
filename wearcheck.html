@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// wearcheck.html?spec={outfits:[[top, bottom], ...]}: each outfit standing / arms up / sitting, front 3/4 (the visual fit check)
+import * as THREE from 'three';
+import { makeR6 } from './engine/r6.js';
+const sp = JSON.parse(new URLSearchParams(location.search).get('spec') || '{}'), O = sp.outfits, W = 1500, H = 420 * O.length;
+const R = new THREE.WebGLRenderer({ canvas: document.getElementById('c'), antialias: true, preserveDrawingBuffer: true }); R.setSize(W, H); R.outputColorSpace = THREE.SRGBColorSpace; R.toneMapping = THREE.NeutralToneMapping; R.setScissorTest(true); R.setClearColor('#e4e9ef');
+const POSES = [j => {}, j => { j.shoulderL.rotation.z = -2.5; j.shoulderR.rotation.z = 2.5; }, j => { j.hipL.rotation.x = j.hipR.rotation.x = Math.PI / 2; j.shoulderR.rotation.x = .9; }];
+for (const [r, ids] of O.entries()) for (const [c, fn] of POSES.entries()) {
+  const scene = new THREE.Scene(); scene.add(new THREE.HemisphereLight('#fff', '#888', 1.6)); const d = new THREE.DirectionalLight('#fff', 2); d.position.set(3, 5, 6); scene.add(d);
+  const a = await makeR6({ res: 512, face: false, skin: '#c68a62' }); for (const id of ids) if (id) await a.wear(id); fn(a.joints); scene.add(a.root);
+  const cam = new THREE.PerspectiveCamera(28, (W / 3) / 420, .1, 50); cam.position.set(2.6, 1.6, 4.6); cam.lookAt(0, c === 2 ? .8 : 1.05, 0);
+  R.setViewport(c * W / 3, H - (r + 1) * 420, W / 3, 420); R.setScissor(c * W / 3, H - (r + 1) * 420, W / 3, 420); R.render(scene, cam);
+}
+window.ready = true;
+</script>
