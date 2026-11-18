@@ -89,3 +89,9 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - Style: MODERN houses and modern interiors. Research what a real modern bedroom / house looks like, then pull or
   make models to match.
 - Posing in the test still was basic on purpose; the old repo's posing lessons get applied in the animation step.
+
+## 2026-11-18 09:47 Every light must make sense for the story
+- The bedtime still had a bedside lamp on in daylight with nobody using it. Wrong: no practical light is on unless the
+  scene calls for it (night, someone switched it on). Nobody reads by a lamp in daylight. Think what a real person
+  in 2026 would have on.
+- Speed budget is very tight: block anything that costs render time without clear payoff.

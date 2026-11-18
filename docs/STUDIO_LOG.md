@@ -158,3 +158,7 @@ seat/lie/hold points + furniture clipping check; 6 9:16 framing standard for roo
 match final; 8 render speed budget; 9 outdoor backdrop for every window. Style = modern.
 Props: covered by env 2, 3, 5 (plus hand-prop size rule).
 Next phase being discussed: render pipeline + speed.
+Render foundations (agreed 09:47): measure cost per stage; compute static shadows/bounce once per shot (camera moves are
+fine, they don't change it); cheap or no practical-light shadows, and practicals only when motivated; preview = final
+check; resumable streamed frame renderer; tight speed budget (~10 s/final frame target); before/after proof for every
+speed fix. Next phase: camera (Xavier has ideas).
