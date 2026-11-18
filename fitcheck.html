@@ -18,7 +18,7 @@ function count() { const o = { torso: 0, arms: 0, legs: 0, cloth: 0 }; R.readRen
   return o; }
 async function measure(id, dy = null, only = null) {
   const a = await makeR6({ res: 64, face: false }); if (id) await a.wear(id, { dy });
-  a.parts.head.visible = false; for (const k of Object.keys(COL)) { a.parts[k].material = flat[k]; a.parts[k].scale.multiplyScalar(.96); }   // body drawn 4% smaller: a garment fitted flush must not lose to the body by depth fighting
+  a.parts.head.visible = false; for (const k of Object.keys(COL)) { a.parts[k].material = flat[k]; a.parts[k].geometry = a.parts[k].geometry.clone().scale(.95, .97, .95); }   // body drawn a bit smaller (the geometry only, not the clothes on it): a garment fitted flush must not lose to the body by depth fighting
   a.root.traverse(o => { if (o.isMesh && !Object.values(a.parts).includes(o)) { o.material = o.material.clone(); o.material.side = THREE.DoubleSide; } });
   scene.add(a.root); const out = {};
   for (const [pn, fn] of Object.entries(POSES)) { if (only && !only.includes(pn)) continue; for (const j of Object.values(a.joints)) j.rotation.set(0, 0, 0); fn(a.joints); a.root.updateMatrixWorld(true);
@@ -28,7 +28,7 @@ async function measure(id, dy = null, only = null) {
 }
 // try a range of heights and keep the one that covers the body best standing (bottoms: legs, tops: torso)
 async function best(id, isBottom) { let bestR = null, bestDy = 0, bestScore = 1e9;
-  for (const dy of isBottom ? [-.3, -.15, 0, .15, .3, .5] : [-.15, 0, .15]) { const r = await measure(id, dy, ['stand']), s = isBottom ? r.stand.legs : r.stand.torso + r.stand.arms * .3;
+  for (const dy of isBottom ? [-.45, -.3, -.15, 0, .15, .3, .45, .6] : [-.6, -.45, -.3, -.15, 0, .15, .3, .45, .6]) { const r = await measure(id, dy, ['stand']), s = isBottom ? r.stand.legs : r.stand.torso + r.stand.arms * .3;
     if (s < bestScore - 8) { bestScore = s; bestDy = dy; bestR = r; } }
   return { dy: bestDy, ...(await measure(id, bestDy)) }; }
 window.BARE = await measure(0); window.measure = measure; window.best = best; window.ready = true;
