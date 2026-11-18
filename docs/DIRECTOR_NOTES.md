@@ -156,3 +156,7 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 ## 2026-11-18 16:59 Clothing review notes (later, not now)
 - Look at EVERY garment Claude fitted one by one and judge whether it was done well (not just the automatic flags).
 - The triage gallery mixed male and female items: keep them separated (male / female / both) so they can be told apart.
+
+## 2026-11-18 17:24
+- Xavier loves the materials / textures in the room kit test (laminate floor, plaster walls, walnut door): keep that look.
+- Skin showing at the top of the arms on that flat sweater is probably the shirt's own style: not a bug to chase.
