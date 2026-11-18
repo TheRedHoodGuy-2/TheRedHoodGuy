@@ -67,7 +67,7 @@ Rules for this run (from Xavier, all binding):
 - [ ] Triage sheets: normal / in-between / odd (in-between + odd kept aside, never deleted), usability not print.
 - Output: tools + sheets for Xavier's picks. (Character bank of 100 m + 100 f comes AFTER his triage picks.)
 
-## 7. Scale sheet draft  [ ]
+## 7. Scale sheet draft  [x] DONE -> research/scale.md + docs/sheets/scale_v1.jpg (DRAFT)
 - [ ] Roblox and Gneef sizes (door, ceiling, seat, bed, table, counter, stairs, hand props ~ R6 hand block end)
       next to our R6; one sheet picture + table.
 - Output: research/scale.md + docs/sheets/scale_v1.jpg (DRAFT for approval).

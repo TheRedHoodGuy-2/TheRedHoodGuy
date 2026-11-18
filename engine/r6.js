@@ -129,12 +129,28 @@ function rigToLimbs(handle, parts, top = true) {
     }
     for (const [k, list] of Object.entries(buckets)) {
       if (!list.length || k === 'torso') continue;
-      const gg = new THREE.BufferGeometry(); for (const [n, at] of Object.entries(g.attributes)) gg.setAttribute(n, at); gg.setIndex(list);
+      const gg = new THREE.BufferGeometry(); for (const [n, at] of Object.entries(g.attributes)) gg.setAttribute(n, at.clone()); gg.setIndex(list);
       const piece = new THREE.Mesh(gg, o.material); piece.castShadow = piece.receiveShadow = true; o.parent.add(piece); piece.matrix.copy(o.matrix); piece.matrix.decompose(piece.position, piece.quaternion, piece.scale);
       parts[k].attach(piece);
+      if (k.startsWith('arm')) snapSleeve(piece);
     }
     g.setIndex(buckets.torso);
   }
+}
+// SLEEVE SNAP (2026-11-18): a sleeve rides exactly on its arm block. Centre the sleeve on the arm (x / z) when it was
+// modelled off-centre, then push any sleeve vertex that sits inside the arm out to just over the arm's surface.
+function snapSleeve(piece) {
+  piece.updateMatrix(); const m = piece.matrix.clone(), mi = m.clone().invert(), P = piece.geometry.attributes.position, v = new THREE.Vector3(), b = new THREE.Box3();
+  for (let i = 0; i < P.count; i++) b.expandByPoint(v.fromBufferAttribute(P, i).applyMatrix4(m));
+  const sz = b.getSize(new THREE.Vector3()), c = b.getCenter(new THREE.Vector3());
+  if (sz.x < 1.7 && sz.z < 1.7) { const dx = Math.abs(c.x) < .35 ? -c.x : 0, dz = Math.abs(c.z) < .35 ? -c.z : 0; piece.position.x += dx; piece.position.z += dz; piece.updateMatrix(); m.copy(piece.matrix); mi.copy(m).invert(); }
+  const PAD = .02; let moved = 0;
+  for (let i = 0; i < P.count; i++) { v.fromBufferAttribute(P, i).applyMatrix4(m);
+    if (Math.abs(v.x) < .5 + PAD && Math.abs(v.z) < .5 + PAD && v.y > -1 && v.y < 1) {
+      const dxp = .5 + PAD - Math.abs(v.x), dzp = .5 + PAD - Math.abs(v.z);
+      if (dxp < dzp) v.x = Math.sign(v.x || 1) * (.5 + PAD); else v.z = Math.sign(v.z || 1) * (.5 + PAD);
+      v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); moved++; } }
+  if (moved) { P.needsUpdate = true; piece.geometry.computeVertexNormals(); piece.geometry.computeBoundingSphere(); }
 }
 function headGeo(fx = .3, fy = .3) {   // the supplied model's head, measured exactly: radius .6, height 1.2, a round .3 fillet top and bottom (flat cap radius .3)
   const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 16;
@@ -163,6 +179,7 @@ export function blitTemplate(g, tpl, parts) {
 
 // spec: { skin, sex, face, body (atlas image path, e.g. the mains), shirt, pants (template image paths or canvases),
 //         paint(g, LAYOUT) (free painter on the atlas), hair: [assetId], accessories: [assetId], hairTint, bevel }
+let FIT = null;
 export async function makeR6(spec = {}) {
   let { skin = '#e6b48c', sex = 'm', bevel = .12, grain: gk = 2, shine = 1.2 } = spec;   // bevel .12 (C) and grain x2 (between B and C): Xavier's picks 2026-11-17; shine 1.2 (between B and C, nearer B)
   const root = new THREE.Group(), rbx = new THREE.Group(); root.add(rbx); rbx.scale.setScalar(STUD); rbx.rotation.y = Math.PI;
@@ -215,7 +232,8 @@ export async function makeR6(spec = {}) {
     const bottom = (p.attachments || []).some(a => a.name.startsWith('Waist'));   // pants and skirts hang from the waist
     blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']); map.needsUpdate = true;
   }
-  api.wear = async (id, { tint = null, part = null } = {}) => {
+  api.wear = async (id, { tint = null, part = null, dy = null } = {}) => {
+    if (dy == null) { FIT ??= await fetch(url('library/fit.json')).then(r => r.ok ? r.json() : {}).catch(() => ({})); dy = FIT[id]?.dy || 0; }   // per-garment height fix found by tools/fitcheck.mjs
     const meta = await (await fetch(url(`assets/roblox/${id}/meta.json`))).json(); const out = [];
     for (const p of meta.parts) {
       const gltf = await new GLTFLoader().loadAsync(url(`assets/roblox/${id}/${p.file}`)); const handle = new THREE.Group(); handle.add(gltf.scene);
@@ -225,7 +243,7 @@ export async function makeR6(spec = {}) {
       let done = false;
       for (const a of p.attachments) for (const [pk, list] of Object.entries(ATTACH)) if (!done && list[a.name] && (!part || part === pk)) {
         const r = a.rot || [1, 0, 0, 0, 1, 0, 0, 0, 1], A = new THREE.Matrix4().set(r[0], r[1], r[2], a.pos[0], r[3], r[4], r[5], a.pos[1], r[6], r[7], r[8], a.pos[2], 0, 0, 0, 1);
-        const B = new THREE.Matrix4().makeTranslation(...(p.layered && pk !== 'head' ? (a.name.startsWith('Waist') ? [0, -2, 0] : [0, 0, 0]) : list[a.name]))   /* 3D clothing is fitted by its cage, not its attachment: tops centre on the torso, bottoms on the legs */; if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
+        const B = new THREE.Matrix4().makeTranslation(...(p.layered && pk !== 'head' ? (a.name.startsWith('Waist') ? [0, -2 + dy, 0] : [0, dy, 0]) : list[a.name]))   /* 3D clothing is fitted by its cage, not its attachment: tops centre on the torso, bottoms on the legs */; if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
         handle.applyMatrix4(B.multiply(A.invert())); parts[pk].add(handle); done = true;
         if (p.layered && pk === 'torso') { pushOut(handle, parts.torso); await underlay(p, handle); rigToLimbs(handle, parts, !a.name.startsWith('Waist')); }   // 3D clothing: nothing of the body may poke through it
       }

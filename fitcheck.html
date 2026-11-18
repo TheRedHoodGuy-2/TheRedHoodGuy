@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// CLOTHING FIT CHECK (2026-11-18). For one 3D garment: put it on our R6 in three poses (standing, arms up, sitting),
+// paint the body flat colours (torso magenta, arms cyan, legs yellow, head hidden), look from the front and the back
+// and count how much body is still visible. Compared with the bare body, that says how well the garment covers what
+// it should, and whether it tears open when the body moves (hem strips, sleeves leaving the arm).
+import * as THREE from 'three';
+import { makeR6 } from './engine/r6.js';
+const S = 128, R = new THREE.WebGLRenderer({ canvas: document.getElementById('c'), preserveDrawingBuffer: true }); R.setSize(S, S * 1.25);
+const cam = new THREE.OrthographicCamera(-1.3, 1.3, 1.625, -1.625, .1, 20), scene = new THREE.Scene(); scene.add(new THREE.AmbientLight('#fff', 3));
+const COL = { torso: 0xff00ff, armL: 0x00ffff, armR: 0x00ffff, legL: 0xffff00, legR: 0xffff00 }, flat = {}; for (const [k, c] of Object.entries(COL)) flat[k] = new THREE.MeshBasicMaterial({ color: c });
+const POSES = { stand: () => {}, up: j => { j.shoulderL.rotation.z = -2.5; j.shoulderR.rotation.z = 2.5; }, sit: j => { j.hipL.rotation.x = j.hipR.rotation.x = Math.PI / 2; } };
+const px = new Uint8Array(S * S * 1.25 * 4);
+function count() { const o = { torso: 0, arms: 0, legs: 0, cloth: 0 }; R.readRenderTargetPixels ? 0 : 0; R.getContext().readPixels(0, 0, S, S * 1.25, 6408, 5121, px);
+  for (let i = 0; i < px.length; i += 4) { const r = px[i], g = px[i + 1], b = px[i + 2];
+    if (r > 240 && g < 15 && b > 240) o.torso++; else if (r < 15 && g > 240 && b > 240) o.arms++; else if (r > 240 && g > 240 && b < 15) o.legs++; else if (r + g + b > 3) o.cloth++; }
+  return o; }
+async function measure(id, dy = null, only = null) {
+  const a = await makeR6({ res: 64, face: false }); if (id) await a.wear(id, { dy });
+  a.parts.head.visible = false; for (const k of Object.keys(COL)) a.parts[k].material = flat[k];
+  a.root.traverse(o => { if (o.isMesh && !Object.values(a.parts).includes(o)) { o.material = o.material.clone(); o.material.side = THREE.DoubleSide; } });
+  scene.add(a.root); const out = {};
+  for (const [pn, fn] of Object.entries(POSES)) { if (only && !only.includes(pn)) continue; for (const j of Object.values(a.joints)) j.rotation.set(0, 0, 0); fn(a.joints); a.root.updateMatrixWorld(true);
+    const v = {}; for (const [vn, z] of [['front', 6], ['back', -6]]) { cam.position.set(0, 1.3, z); cam.lookAt(0, 1.3, 0); R.render(scene, cam); const c = count(); for (const k in c) v[k] = (v[k] || 0) + c[k]; }
+    out[pn] = v; }
+  scene.remove(a.root); return out;
+}
+// try a range of heights and keep the one that covers the body best standing (bottoms: legs, tops: torso)
+async function best(id, isBottom) { let bestR = null, bestDy = 0, bestScore = 1e9;
+  for (const dy of isBottom ? [-.3, -.15, 0, .15, .3, .5] : [-.15, 0, .15]) { const r = await measure(id, dy, ['stand']), s = isBottom ? r.stand.legs : r.stand.torso + r.stand.arms * .3;
+    if (s < bestScore - 8) { bestScore = s; bestDy = dy; bestR = r; } }
+  return { dy: bestDy, ...(await measure(id, bestDy)) }; }
+window.BARE = await measure(0); window.measure = measure; window.best = best; window.ready = true;
+</script>
