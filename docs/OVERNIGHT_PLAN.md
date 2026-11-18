@@ -12,7 +12,7 @@ Rules for this run (from Xavier, all binding):
 - Roblox cookie stays at ~/.rbx_cookie, never in the repo, logs or memory.
 - Push to GitHub ONLY at the end (item 8), then mirror to C:\Users\Luminmgmt\Documents\TheRedHoodGuy (access granted).
 
-## 1. Gneef top 20 script breakdown  [ ]
+## 1. Gneef top 20 script breakdown  [x] DONE -> research/gneef_top20_scripts.md
 - [ ] List Gneef's Shorts by views (yt-dlp via the laptop bridge: device_bash, cloud is bot-blocked). Pick the top 20.
 - [ ] Download audio (+ video if needed) to C:\Users\Luminmgmt\Videos\gneef_top20\, stage to the cloud.
 - [ ] Transcribe with word timestamps (tools/transcribe.py).
