@@ -28,6 +28,7 @@ for a in args:
                 save(files[k][res]['jpg']['url'], f'{k}.jpg')
                 if k == 'col_01' and 'Diffuse' not in files: save(files[k][res]['jpg']['url'], 'diffuse.jpg')
     else:
+        if 'gltf' not in files: print(a, 'no gltf, skipped'); continue
         g = files['gltf'][res]['gltf']; save(g['url'], f'{a}.gltf')
         for rel, v in g.get('include', {}).items(): save(v['url'], rel)
         if 'Alpha' in files and res in files['Alpha']: save(files['Alpha'][res]['jpg']['url'], f'textures/{a}_alpha_{res}.jpg')   # gltf jpgs carry no alpha; foliage needs this cut-out map

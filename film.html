@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style><canvas id="c"></canvas>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+// One graded still of a scene: film.html?spec={ scene: 'bedtime_story', w, h, opts: {...} }
+// scene file exports build(ctx) -> { camera, sun, before?, post: {...} }; the page captures a room reflection probe,
+// then renders through engine/post.js (shafts, bloom, DOF, tone map + grade).
+import * as THREE from 'three';
+import { makePost } from './engine/post.js';
+const spec = JSON.parse(new URLSearchParams(location.search).get('spec') || '{}'), W = spec.w || 540, H = spec.h || 960;
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('c'), antialias: false, preserveDrawingBuffer: true });
+renderer.setSize(W, H, false); renderer.setPixelRatio(1); renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const mod = await import(`./scenes/${spec.scene}.js`), S = await mod.build({ scene, renderer, W, H, opts: spec.opts || {} });
+await new Promise(r => setTimeout(r, spec.wait ?? 2500));   // textures
+// reflection / bounce probe: the room as seen from its middle (so varnish and glass reflect the real room)
+if (spec.probe !== false) {
+  const crt = new THREE.WebGLCubeRenderTarget(256, { type: THREE.HalfFloatType }), cc = new THREE.CubeCamera(.05, 100, crt); cc.position.set(...(spec.probeAt || [0, 1.4, -.4])); scene.add(cc);
+  renderer.toneMapping = THREE.NoToneMapping; S.before?.(); const hid = []; scene.traverse(o => { if (o.userData.noProbe && o.visible) { o.visible = false; hid.push(o); } }); cc.update(renderer, scene); hid.forEach(o => o.visible = true);
+  const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromCubemap(crt.texture).texture; scene.environmentIntensity = spec.envAmt ?? .35;
+}
+const post = makePost(renderer, scene, S.camera, W, H, Object.assign(S.post, spec.post || {}));
+S.before?.(); post.render(); S.before?.(); post.render();
+window.__dbg = { scene, S, THREE }; window.ready = true;
+</script>

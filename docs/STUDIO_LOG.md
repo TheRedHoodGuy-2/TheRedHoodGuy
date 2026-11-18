@@ -135,3 +135,14 @@ Reference
 - 11-17/18 Hair, flat clothing, accessories pulled (cookie). 3D clothing redone as R6-only. Pull-by-link tool.
 - 11-18 Roadmap set. Environment plan. Look study. Material library v1 + palettes v1 shown.
 - 11-18 This log created (Xavier: "save everything so you don't forget after compaction").
+
+
+## 2026-11-18 lighting step, scene 1 (bedtime story, autumn evening)
+- Built the "shader pack": engine/post.js (real volumetric shafts ray-marched through the sun shadow map, capped
+  3-level bloom so only real light sources glow, DOF from real depth, Khronos Neutral tone map + grade with split tone),
+  engine/build.js (bevelled boxes, cushions/pillows, draped blanket, pleated curtains, open book, lathe table lamp,
+  Poly Haven model loader), film.html + tools/still.mjs (one graded still of a scene file), scenes/bedtime_story.js.
+- Lighting is designed per scene (Xavier rule): sun through the window behind dad, lamp as the kid's practical,
+  warm room bounce, cool sky fill from the window, a hidden beauty key on the kid. Teal walls vs gold light.
+- Bug found and fixed: dust particles were baked into the room reflection probe and washed the whole frame.
+- Shown: docs/sheets/light_bedtime_v1.jpg. Next: his verdict, then the snowy winter night scene in the same room.

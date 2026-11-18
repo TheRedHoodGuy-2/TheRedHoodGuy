@@ -40,12 +40,15 @@ export const LIB = {
 export function mat(name, o = {}) {
   const L = LIB[name]; if (!L) throw new Error('no material ' + name);
   const size = o.size || L.size, rep = 1 / size, base = `assets/${L.dir}/`;
-  const m = new THREE.MeshStandardMaterial({
+  const phys = o.clearcoat || o.sheen, M = phys ? THREE.MeshPhysicalMaterial : THREE.MeshStandardMaterial;   // varnish = clearcoat, wool / velvet = sheen
+  const m = new M({
     map: tex(base + (L.kind === 'tint' ? 'detail.jpg' : 'diffuse.jpg'), true, rep),
     normalMap: tex(base + 'nor_gl.jpg', false, rep), roughnessMap: tex(base + 'rough.jpg', false, rep),
     roughness: o.rough ?? L.rough, metalness: 0,
   });
   const n = (o.normal ?? L.normal); m.normalScale.set(n, n);
+  if (o.clearcoat) { m.clearcoat = o.clearcoat; m.clearcoatRoughness = o.clearcoatRough ?? .18; }
+  if (o.sheen) { m.sheen = o.sheen; m.sheenRoughness = o.sheenRough ?? .6; m.sheenColor = new THREE.Color(o.sheenColor || '#ffffff'); }
   const c = o.color || (L.kind === 'tint' ? L.color : null); if (c) m.color.set(c).multiplyScalar(L.kind === 'tint' ? 1 / .85 : 1);
   return m;
 }

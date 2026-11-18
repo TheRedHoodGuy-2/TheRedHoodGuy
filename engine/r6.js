@@ -115,7 +115,7 @@ function pushOut(handle, torso) {
 }
 // 3D clothing is one rigid mesh; split its triangles by where they sit (torso space, studs) and hand each piece to the
 // body part under it, so sleeves follow the arms and trouser legs follow the legs when the character is posed.
-function rigToLimbs(handle, parts) {
+function rigToLimbs(handle, parts, top = true) {
   handle.updateMatrixWorld(true); const torso = parts.torso, m = new THREE.Matrix4(), a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
   const meshes = []; handle.traverse(o => { if (o.isMesh) meshes.push(o); });
   for (const o of meshes) {
@@ -124,7 +124,7 @@ function rigToLimbs(handle, parts) {
     for (let t = 0; t < idx.length; t += 3) {
       a.fromBufferAttribute(P, idx[t]).applyMatrix4(m); b.fromBufferAttribute(P, idx[t + 1]).applyMatrix4(m); c.fromBufferAttribute(P, idx[t + 2]).applyMatrix4(m);
       const x = (a.x + b.x + c.x) / 3, y = (a.y + b.y + c.y) / 3;
-      const k = y < -1.02 ? (x >= 0 ? 'legR' : 'legL') : x > 1.02 ? 'armR' : x < -1.02 ? 'armL' : 'torso';
+      const k = y < -1.02 ? (top ? 'torso' : x >= 0 ? 'legR' : 'legL') : x > 1.02 ? 'armR' : x < -1.02 ? 'armL' : 'torso';   // a top's hem below the waist stays on the torso (it must not tear off with the legs)
       buckets[k].push(idx[t], idx[t + 1], idx[t + 2]);
     }
     for (const [k, list] of Object.entries(buckets)) {
@@ -227,7 +227,7 @@ export async function makeR6(spec = {}) {
         const r = a.rot || [1, 0, 0, 0, 1, 0, 0, 0, 1], A = new THREE.Matrix4().set(r[0], r[1], r[2], a.pos[0], r[3], r[4], r[5], a.pos[1], r[6], r[7], r[8], a.pos[2], 0, 0, 0, 1);
         const B = new THREE.Matrix4().makeTranslation(...(p.layered && pk !== 'head' ? (a.name.startsWith('Waist') ? [0, -2, 0] : [0, 0, 0]) : list[a.name]))   /* 3D clothing is fitted by its cage, not its attachment: tops centre on the torso, bottoms on the legs */; if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
         handle.applyMatrix4(B.multiply(A.invert())); parts[pk].add(handle); done = true;
-        if (p.layered && pk === 'torso') { pushOut(handle, parts.torso); await underlay(p, handle); rigToLimbs(handle, parts); }   // 3D clothing: nothing of the body may poke through it
+        if (p.layered && pk === 'torso') { pushOut(handle, parts.torso); await underlay(p, handle); rigToLimbs(handle, parts, !a.name.startsWith('Waist')); }   // 3D clothing: nothing of the body may poke through it
       }
       if (!done) { handle.position.set(0, .6, 0); parts.head.add(handle); }
       out.push(handle); api.accessories.push({ id, handle, meta: p });

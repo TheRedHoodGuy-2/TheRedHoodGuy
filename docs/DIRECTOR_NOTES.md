@@ -73,3 +73,10 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   use our materials. Never model complex things from basic shapes.
 - Hand-held props for R6: about as big as the square end of the hand block.
 - 3D clothing issues to fix later: sleeves not lined up with the arm blocks (clipping), hem strip at the hip on raised arms.
+
+## 2026-11-18 08:53 Lighting is per SCENE, never a named template
+- Xavier: don't build "golden hour", "night" etc. as fixed presets. Each scene gets the light its story needs (bedtime
+  story on an autumn evening = low warm sun; snowy winter night = deep navy, cool and chill but still popping, never
+  desaturated). The test is: can Claude deliver what a given scene needs at that time.
+- His analogy: vanilla Minecraft vs shaders vs texture pack vs animation pack. Our work now = the SHADER layer
+  (volumetric light, bloom on real lights, DOF, grade), then textures, then animation.
