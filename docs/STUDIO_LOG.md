@@ -162,3 +162,8 @@ Render foundations (agreed 09:47): measure cost per stage; compute static shadow
 fine, they don't change it); cheap or no practical-light shadows, and practicals only when motivated; preview = final
 check; resumable streamed frame renderer; tight speed budget (~10 s/final frame target); before/after proof for every
 speed fix. Next phase: camera (Xavier has ideas).
+Camera foundations (agreed list, to build later): move library with smooth easing (no velocity pops, no jitter);
+continuous-path camera within a scene; scene changes = camera motion carries over + short dissolve (~0.25-0.35 s);
+event-reactive camera (impact shake, reveal push); one-focus rule per shot + R6 9:16 framing/headroom rules;
+frame-rate test 24 vs 30 vs 60 fps on one shot for Xavier to pick (60 = double render time).
+Next phase: 5 animation + posing.

@@ -95,3 +95,14 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   scene calls for it (night, someone switched it on). Nobody reads by a lamp in daylight. Think what a real person
   in 2026 would have on.
 - Speed budget is very tight: block anything that costs render time without clear payoff.
+
+## 2026-11-18 09:52 Speed budget wording + camera ideas
+- Correction: render time is ALLOWED to grow when a feature earns it; just keep minimizing it in mind. Don't block features.
+- Camera (Xavier's ideas, binding):
+  - Keep the viewer's eyes moving: something always moves (camera or people). Never a frozen camera.
+  - Every shot has one clear focus: the viewer knows what to look at.
+  - Buttery smooth camera: eased, gliding, clean, "feels like 120 fps". Shakes only as exaggeration on impacts.
+  - No erratic jumps: the camera feels like it glides on one continuous path through the scene. Changing scene/place:
+    the camera's framing and motion carry on and the WORLD changes under it, with a short fade/dissolve (not slow, not
+    a hard cut).
+  - The camera reacts to events (hit a table from a low "giant" angle -> small shake) so the viewer feels it.
