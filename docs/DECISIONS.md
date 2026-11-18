@@ -44,3 +44,5 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 - Voice: a "Roblox male" and a "Roblox girl" voice (the Roblox-style voices that go viral). Provider to set up.
 - Scale draft NOT approved: Xavier can't tell if it is accurate -> Claude must verify it against real Roblox maps / Gneef
   frames (measured, not guessed) before asking again.
+- 2026-11-18 17:18 Scale: v2 (measured from 47 real Roblox builds, research/scale.md) is the standard. Xavier left it
+  to Claude ("up to you"); Claude chose the measured version.
