@@ -18,7 +18,7 @@ function count() { const o = { torso: 0, arms: 0, legs: 0, cloth: 0 }; R.readRen
   return o; }
 async function measure(id, dy = null, only = null) {
   const a = await makeR6({ res: 64, face: false }); if (id) await a.wear(id, { dy });
-  a.parts.head.visible = false; for (const k of Object.keys(COL)) a.parts[k].material = flat[k];
+  a.parts.head.visible = false; for (const k of Object.keys(COL)) { a.parts[k].material = flat[k]; a.parts[k].scale.multiplyScalar(.96); }   // body drawn 4% smaller: a garment fitted flush must not lose to the body by depth fighting
   a.root.traverse(o => { if (o.isMesh && !Object.values(a.parts).includes(o)) { o.material = o.material.clone(); o.material.side = THREE.DoubleSide; } });
   scene.add(a.root); const out = {};
   for (const [pn, fn] of Object.entries(POSES)) { if (only && !only.includes(pn)) continue; for (const j of Object.values(a.joints)) j.rotation.set(0, 0, 0); fn(a.joints); a.root.updateMatrixWorld(true);

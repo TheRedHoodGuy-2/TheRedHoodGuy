@@ -125,7 +125,8 @@ function rigToLimbs(handle, parts, top = true) {
       a.fromBufferAttribute(P, idx[t]).applyMatrix4(m); b.fromBufferAttribute(P, idx[t + 1]).applyMatrix4(m); c.fromBufferAttribute(P, idx[t + 2]).applyMatrix4(m);
       const x = (a.x + b.x + c.x) / 3, y = (a.y + b.y + c.y) / 3;
       const ax = 1.02;   // tried a wider cut low down (2026-11-18): it left the sleeve cuffs floating on the torso, so no
-      const k = y < -1.02 ? (top ? 'torso' : x >= 0 ? 'legR' : 'legL') : x > ax ? 'armR' : x < -ax ? 'armL' : 'torso';   // a top's hem below the waist stays on the torso (it must not tear off with the legs)
+      const k = top ? (x > ax ? 'armR' : x < -ax ? 'armL' : 'torso')   // a top: anything out past the torso side is sleeve, cuffs included (they hang below the waist line)
+        : y < -1.02 ? (x >= 0 ? 'legR' : 'legL') : x > ax ? 'armR' : x < -ax ? 'armL' : 'torso';   // a top's hem below the waist stays on the torso (it must not tear off with the legs)
       buckets[k].push(idx[t], idx[t + 1], idx[t + 2]);
     }
     for (const [k, list] of Object.entries(buckets)) {

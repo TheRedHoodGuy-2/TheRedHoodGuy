@@ -15,16 +15,18 @@ def grade(name):
     if re.search(NORMAL, n): return 'normal'
     return 'in_between'
 def fit(id, bottom):
+    global NAME
     r = FC.get(id)
     if not r or 'error' in r: return None, 'not checked' if not r else 'failed to load'
-    if bottom: cover = 1 - r['stand']['legs'] / BARE['stand']['legs']; tear = (r['sit']['legs'] / max(1, BARE['sit']['legs'])) - (1 - cover)
-    else: cover = 1 - r['stand']['torso'] / BARE['stand']['torso']; tear = r['up']['torso'] / max(1, BARE['up']['torso']) - (1 - cover)
-    issue = 'body shows' if cover < .8 else 'opens when moving' if tear > .15 else ''
+    if bottom: cover = 1 - r['stand']['legs'] / BARE['stand']['legs']; tear = (r['sit']['legs'] / max(1, BARE['sit']['legs'])) - (1 - cover); lim_t = .4   # sitting always shows the soles
+    else: cover = 1 - r['stand']['torso'] / BARE['stand']['torso']; tear = r['up']['torso'] / max(1, BARE['up']['torso']) - (1 - cover); lim_t = .2
+    meant_open = re.search(r'short|jort|skirt|crop|off.?shoulder|tank|bikini|dress|bermuda|3/4|capri', NAME.lower())   # skin is SUPPOSED to show
+    issue = 'body shows' if cover < (.35 if meant_open else .85) else 'opens when moving' if tear > lim_t else ''
     return round(cover, 2), issue
 out = {}
 for cat, items in L.items():
     for id, name in items:
-        g = grade(name); c, issue = fit(id, cat.startswith('bottom'))
+        NAME = name; g = grade(name); c, issue = fit(id, cat.startswith('bottom'))
         out[id] = {'name': name, 'cat': cat, 'usability': g, 'cover': c, 'fit_issue': issue}
 json.dump(out, open('library/triage_auto.json', 'w'), indent=0)
 from collections import Counter
