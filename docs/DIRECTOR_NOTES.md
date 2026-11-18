@@ -160,3 +160,17 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 ## 2026-11-18 17:24
 - Xavier loves the materials / textures in the room kit test (laminate floor, plaster walls, walnut door): keep that look.
 - Skin showing at the top of the arms on that flat sweater is probably the shirt's own style: not a bug to chase.
+
+## 2026-11-18 17:38 Sets must be DESIGNED, not random assets
+- The placement test mixed random store pieces (a brown cardboard-looking armchair next to a grey sofa): no design.
+  "Modern house" means a designed home: find real modern house designs online and build sets that match them,
+  every room one coherent design (palette, materials, furniture family).
+- Build the full interiors of TWO different houses (houses don't all look the same):
+  1. a guy's family house (parents' bedroom + his bedroom),
+  2. a family house where a girl is the child (her room), so sets and colours are more diverse.
+  Rooms: living room/parlour, kitchen, dining, toilet, shower/bathroom, storage, basement, attic, bedrooms, upstairs +
+  downstairs (stairs, halls).
+- Then the outside: the house shells, the neighbourhood, the town. One town we always reuse, so it must be very well
+  planned: a proper map with school, police station, fire station etc. Other buildings are OUTER SHELLS only until a
+  story needs their inside. Ideally copy a real, good-looking neighbourhood (e.g. American) from a map.
+- Same standard as Gneef's world: a proper actual set. Pulled models are fine as long as they fit the design.
