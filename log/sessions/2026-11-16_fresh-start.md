@@ -92,3 +92,15 @@ Wait. Why are you already using all my fucking my all my credits? No, that's not
 
 Stopped everything. Owned the process mistake (batched all items behind one "go" instead of item-by-item approval). New rule
 written into DIRECTOR_NOTES. No scheduled tasks left. Proposed: one item at a time, starting with the base character.
+
+## 2026-11-17 to 11-18 (summary; full state in docs/STUDIO_LOG.md)
+Base male + female approved (shape, bevel C, grain between B/C, shine between B/C nearer B). Hair 3,729, flat clothing 6,723,
+accessories 4,507, R6 3D clothing 1,444 pulled into library pages (throwaway-account cookie, kept outside the repo). First 3D
+library (slim-body) rejected by Xavier and replaced. Roadmap set: environment -> props -> lighting/render -> camera -> animation
+-> clothing triage + 200-character bank -> faces -> scripts. Look study done. Material library v1 + palettes v1 shown.
+
+## Xavier, 2026-11-18 08:47 (key points)
+Colour is Claude's job by colour theory, not palettes he likes. Put a lot more thought into every detail, like a director
+(varnished floors? real bevels? woollier rug?). Every frame must look good: fix with backlight / rim / soft light, even
+invisible extra lights. Don't match clothes to rooms. Frames are still flat and washed out. Hand props about the size of the
+hand block's end. Save everything into a log file read every chat so nothing is lost after compaction.

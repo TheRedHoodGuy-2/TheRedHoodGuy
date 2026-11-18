@@ -1,0 +1,137 @@
+# STUDIO LOG: read this first, every chat, before doing anything
+
+The single "where are we" file for the TheRedHoodGuy studio. Written so a fresh Claude (or one whose chat was compacted)
+can pick up exactly where we left off. Update it at the end of every step. Newest status at the top of each section.
+
+Last updated: 2026-11-18 ~09:00 Lagos.
+
+---------------------------------------------------------------------------------------------------------------------------
+## 0. RIGHT NOW
+
+- Current phase: ENVIRONMENT (look of scenes). Step 2 (material library + colour rules) shown to Xavier on 2026-11-18:
+  `out/materials_v1.jpg`, `out/palettes_v1.jpg`. His feedback: colour is Claude's job by colour theory (not "palettes he likes");
+  frames still flat and washed out (same old problem); think harder about every detail (see section 2).
+- NEXT STEP (waiting for his go): LIGHTING in the plain test bedroom with two dressed characters: day, golden hour (sun shafts
+  through the window with floating dust that catches the light and shades inside the beam), night, lamp-light. Fix the washed
+  look (tone mapping drains saturation: switch it), add cinematography lights (key / fill / rim / bounce, "invisible" extra
+  lights that make a character look good without anyone asking where they come from). Also: knit and wallpaper patterns bigger
+  and stronger, walls more bump, consider varnished floor boards with real bevelled board edges, woolly rug with fibres.
+- Throwaway Roblox account cookie lives at `~/.rbx_cookie` (account TheRedHoodGuy_X). NEVER in the repo, logs or memory.
+  Xavier's main Roblox password was pasted in chat once: told him to change it; never used, never stored.
+- Nothing pushed to GitHub yet (repo TheRedHoodGuy-2/TheRedHoodGuy, all commits local). Push only when he says "push".
+
+---------------------------------------------------------------------------------------------------------------------------
+## 1. WHO / WHAT
+
+- Xavier = director and owner. Claude = co-director, architect, animator, builder ("my streamlined peace of mind").
+- Channel: YouTube @og.theredhoodguy (Roblox R6 animated Shorts). Old format: "why does my body do X" explainers, 1k to 18k
+  views. New direction: storytime / premium story Shorts modelled on the reference channel Gneef (median 4.3M views).
+  Xavier will explain the new niche, scripts and retention strategy LAST, after the studio is built.
+- Goal: Xavier says "new video" -> Claude writes script -> he approves -> Claude does voice, build, every check, low-quality
+  preview -> he approves -> final render -> post. 4 to 5 hours per video is fine if hands-off and the result is studio grade.
+- Repos: `TheRedHoodGuy-2/TheRedHoodGuy` (NEW studio, /home/claude/theredhoodguy) and `TheRedHoodGuy-2/explainer-kit`
+  (OLD pipeline, read-only reference, /home/claude/explainer-kit; its research on posing/animation lives there).
+- Renderer: Three.js in the cloud (2 CPU cores, no GPU, SwiftShader). Blender (pip bpy) only for asset prep / baking.
+  Blender finals wait until Xavier buys a laptop with a GPU. His laptop (ThinkPad T14s, Ryzen, integrated GPU, Windows,
+  his only computer) is used only as a download pipe (YouTube blocks the cloud; the laptop bridge has a Linux VM with
+  yt-dlp + node) via connected folder `C:\Users\Luminmgmt\Videos`.
+
+---------------------------------------------------------------------------------------------------------------------------
+## 2. HOW XAVIER WANTS CLAUDE TO WORK (binding, also in docs/DIRECTOR_NOTES.md)
+
+- ONE ITEM AT A TIME. Build a small piece, show one picture, he approves or corrects, only then the next. Never batch, never
+  run ahead on unapproved work, never run unattended unless he says so for that item. Say the rough time/cost before long steps.
+  (He was furious on 2026-11-16 when a "go" burned his credits on drafts he never approved.)
+- When he lists a long roadmap he is NOT saying "do it all now": do the next item only.
+- Think like a director about EVERY detail (2026-11-18): don't drop a rug and move on. Ask the questions a person / a director
+  would: should the floor be varnished? should the board edges be real bevels or is that overkill? should the rug be woollier,
+  with fibres? Is the wall rough like a real wall? Scratches on a table? These are things viewers don't consciously notice but
+  that make it feel real. Not every wall needs a pattern; every surface needs THOUGHT.
+- Colour is Claude's call by colour theory, not by asking Xavier to pick palettes he likes. Test every frame: does anything
+  clash? does it look beautiful? if not, what fixes it (backlight, rim, soft fill, bounce, a practical lamp)? Characters' clothes
+  are NOT matched to the room; the room and light are designed so any character reads well in it.
+- Lighting may cheat: add invisible lights purely so a character looks good, as long as nobody would ask where they came from.
+- Every frame must look cinematic, composed, never washed out, never flat, never "childish, blocky, AI-ish".
+- Complex models: never stacks of boxes / spheres. Pull real models (Roblox Creator Store with the cookie, Poly Haven, Sketchfab
+  if he provides a login cookie), strip their textures, apply our material library.
+- Prop scale for R6: hand-held props are about the size of the hand block's square end (never tiny).
+- Blunt, short, verdict-first replies. No em dashes. Never a yes-man.
+- Keep this log current; add every new note of his to docs/DIRECTOR_NOTES.md the same turn.
+
+---------------------------------------------------------------------------------------------------------------------------
+## 3. ROADMAP (Xavier's order, 2026-11-18)
+
+1. ENVIRONMENT look  <- WE ARE HERE
+   a. Look study: DONE (research/look_study_2026-11-18.md, out/look_study.jpg). Ours: even fill light, milky blacks (0.04 vs 0.00),
+      too bright (0.49 vs 0.31), pale (sat 0.38 vs 0.57), cold single hue, busy/noisy. Gneef: one light direction, deep shadows,
+      warm vs cool, rich colour, soft darker background, pattern/texture on surfaces.
+   b. Material library + colour rules: v1 SHOWN (engine/materials.js, 19 materials, `mat(name,{color,size})`, tint vs natural,
+      true-to-size tiling, worldUV). Feedback pending/partial (see section 0).
+   c. Lighting setups in the test bedroom with two dressed characters  <- NEXT
+   d. Test bedroom fully dressed, 3 camera spots.
+   e. Town map piece by piece (street, houses with VARIED believable colours, trees, grass, bench, sky/backdrop).
+2. PROPS (real models, our materials, R6 scale).
+3. LIGHTING / RENDER / COMPOSITING polish (no grainy AO: bake static light in cloud Blender; filmic tone map; glow on real
+   lights only; DOF; per-mood grade; no grain, no vignette).
+4. CAMERA movement and framing (Xavier has ideas).
+5. ANIMATION + POSING refine (start from explainer-kit research + new research).
+6. CLOTHING TRIAGE + CHARACTER BANK: rank every clothing item by USABILITY (casual real-life clothes; a 3D sweater with an ugly
+   print stays because we can swap the print): most normal = used, mid / least normal = set aside (not deleted). Then ~200
+   named characters, each with a personality and fixed outfit, kept in a character bank and reused; new ones added as needed.
+   Also fix: 3D sleeves not lined up with arm blocks (clipping), the hem strip that sticks out when an arm is raised.
+7. FACES, face animation, lip sync (later).
+8. SCRIPTS / FORMAT / RETENTION (Xavier explains last).
+
+---------------------------------------------------------------------------------------------------------------------------
+## 4. WHAT EXISTS (assets, tools, pages)
+
+Characters (docs/CHARACTER.md)
+- engine/r6.js makeR6(spec): our own R6 body, exact shape of Xavier's old male/female models (outline match 99.7%+),
+  bevel .12 stud, grain x2, shine 1.2 (all his picks). Female = hourglass torso measured from his old female model.
+  face:false = bare head (faces are a later item). APPROVED: base male, base female.
+- Clothing on the body: classic 2D shirt/pants/T-shirt templates; accessories by catalog id (api.wear); 3D R6 clothing is
+  centred by cage (tops on torso, bottoms on legs), pushed out of the body, body painted the garment colour underneath, split
+  onto arms/legs so it follows poses (rigToLimbs).
+
+Libraries (artifact pages, all private to Xavier)
+- Hair 3,729 good (male 1,153 / female 2,342 / both 234; 62 rejected): https://claude.ai/artifact/NQcdHob7Tkopb36erUx1AS
+- Flat clothing 6,723: https://claude.ai/artifact/R4Nmqi7e3FNbtSeoeAPwKP
+- Accessories 4,507: https://claude.ai/artifact/WYFcg6U5fNY7Dve7L9eCGi
+- R6 3D clothing 1,444 (tops 352, bottoms 1,092): https://claude.ai/artifact/P955JRMdynQ5jaSdZ2NN7k
+  (Xavier: hair "amazing"; flat clothing + accessories need trimming later; the first 3D library (slim-body clothing) was
+  "pure shit" and was replaced by R6-only.)
+- Data: library/*.json; models in assets/roblox/<id>/ (git-ignored, ~5 GB, rebuildable); crawl indexes in assets/*_index.json.
+
+Tools
+- tools/roblox/fetch.py get <ids> (convert any catalog item; uses ~/.rbx_cookie), tools/pull.py <catalog links> (Xavier's
+  "plugin": paste a link, get it on our male+female), tools/gallery.py (library pages), tools/haircheck.mjs (hair placement),
+  tools/shot.mjs + sheet.html / scene.html / matsheet.html (stills), tools/blender/decimate_gltf.py (cut heavy models down),
+  tools/voice.py (Kokoro TTS at 262 wpm; voice bake-off in voice/bakeoff/ never reviewed), tools/transcribe.py.
+- Roblox Creator Store (free models: furniture, houses, props at Roblox scale) is searchable + downloadable with the cookie
+  (apis.roblox.com/toolbox-service). Multi-part model converter NOT built yet (needed for props/sets).
+
+Reference
+- Gneef: 75 Shorts (63 at 10M+ and 12 newest) on the laptop Videos\gneef_ref and staged in the cloud; transcripts, cut timing,
+  camera motion in /home/claude/ref and reference/gneef/. docs/FORMAT_BIBLE.md (draft, from Gneef; the format may change when
+  Xavier explains the new niche). Our old videos: Videos\ours_ref (10).
+- Scripts drafted on 2026-11-16 (scripts/01..03, unapproved, may be dropped with the new niche).
+
+---------------------------------------------------------------------------------------------------------------------------
+## 5. DECISIONS LOG (short; details in docs/DECISIONS.md)
+
+- 2026-11-16 New repo, fresh rules. Three.js in the cloud. No Blender on the laptop. No reposting Gneef shot-for-shot.
+- 2026-11-16 Subsurface skin glow dropped (Xavier).
+- 2026-11-17 Base body: his old model's exact shape; bevel C, grain between B and C, shine between B and C nearer B.
+- 2026-11-17 Pull ALL catalog hair incl. community items; rights are Xavier's call ("between me and my lawyer").
+- 2026-11-18 3D clothing: R6-made only. Clothing / accessory triage later (usability ranking, not texture).
+- 2026-11-18 Colour = Claude by colour theory; every detail gets director-level thought; lighting can cheat for beauty.
+
+---------------------------------------------------------------------------------------------------------------------------
+## 6. SESSION HISTORY (one line per step)
+
+- 11-16 Brief: rebuild everything, storytime, Gneef reference. Scrutiny run. New repo. Renderer tests. Gneef study (75 videos).
+- 11-16 Overnight run batched everything -> Xavier angry -> rule: one item at a time.
+- 11-17 Base male (shape, bevel, grain, shine) approved; base female built.
+- 11-17/18 Hair, flat clothing, accessories pulled (cookie). 3D clothing redone as R6-only. Pull-by-link tool.
+- 11-18 Roadmap set. Environment plan. Look study. Material library v1 + palettes v1 shown.
+- 11-18 This log created (Xavier: "save everything so you don't forget after compaction").

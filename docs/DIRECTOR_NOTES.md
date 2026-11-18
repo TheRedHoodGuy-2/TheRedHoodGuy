@@ -59,3 +59,17 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   are not enough because they miss what happens between them.
 - First 2 seconds must move, with the hook on screen from frame 0.
 - He should never have to say the same thing twice.
+
+## Co-director rules (Xavier 2026-11-18, keep forever)
+- Put director-level thought into every detail. Don't drop a rug and leave it: ask what a person / a director would ask
+  (varnish the floor? real bevels on board edges or overkill? a woollier rug with fibres? rough wall? scratches on the table?).
+  Not every surface needs a pattern; every surface needs thought.
+- Colour by colour theory is Claude's job. Every frame: does anything clash, is it beautiful, what would make it better?
+  Never match characters' clothes to the room; design room + light so any character reads well.
+- Cinematography: add backlight / rim / soft fill / bounce when a character looks off, even if no visible source explains it,
+  as long as nobody would ask where it came from. Every scene has a mood.
+- Frames must never be flat or washed out (the old problem). Nothing childish, blocky or AI-looking.
+- Pull complex models (Roblox Creator Store with the cookie, Poly Haven, Sketchfab if he gives a cookie), strip their textures,
+  use our materials. Never model complex things from basic shapes.
+- Hand-held props for R6: about as big as the square end of the hand block.
+- 3D clothing issues to fix later: sleeves not lined up with the arm blocks (clipping), hem strip at the hip on raised arms.
