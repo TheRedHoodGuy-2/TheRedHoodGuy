@@ -108,5 +108,105 @@
   ],
   "parts": 9,
   "unions_skipped": 0
+ },
+ "482135166": {
+  "name": "Modern Door in Black!",
+  "size_m": [
+   0.204,
+   2.38,
+   1.36
+  ],
+  "parts": 9,
+  "unions_skipped": 0
+ },
+ "2179041650": {
+  "name": "ModernDoor",
+  "size_m": [
+   2.38,
+   3.485,
+   0.34
+  ],
+  "parts": 16,
+  "unions_skipped": 0
+ },
+ "8144064865": {
+  "name": "Modern Door in Black!",
+  "size_m": [
+   0.204,
+   2.38,
+   1.36
+  ],
+  "parts": 9,
+  "unions_skipped": 0
+ },
+ "296435848": {
+  "name": "Interior Door",
+  "size_m": [
+   0.68,
+   2.686,
+   2.72
+  ],
+  "parts": 7,
+  "unions_skipped": 0
+ },
+ "9041896389": {
+  "name": "interior door",
+  "size_m": [
+   1.287,
+   2.574,
+   0.388
+  ],
+  "parts": 19,
+  "unions_skipped": 0
+ },
+ "4620185984": {
+  "name": "Model",
+  "size_m": [
+   0.068,
+   5.426,
+   12.179
+  ],
+  "parts": 23,
+  "unions_skipped": 0
+ },
+ "5654418916": {
+  "name": "Window",
+  "size_m": [
+   2.04,
+   5.168,
+   0.068
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "4608775828": {
+  "name": "Tall Modern Window",
+  "size_m": [
+   3.61,
+   11.838,
+   0.469
+  ],
+  "parts": 19,
+  "unions_skipped": 0
+ },
+ "80680409051106": {
+  "name": "Model",
+  "size_m": [
+   2.146,
+   4.304,
+   0.529
+  ],
+  "parts": 23,
+  "unions_skipped": 0
+ },
+ "5438751792": {
+  "name": "Wood Frame Window",
+  "size_m": [
+   0.326,
+   1.732,
+   1.394
+  ],
+  "parts": 12,
+  "unions_skipped": 0
  }
 }

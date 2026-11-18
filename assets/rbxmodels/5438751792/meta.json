@@ -1,0 +1,18 @@
+{
+ "id": 5438751792,
+ "name": "Wood Frame Window",
+ "size_m": [
+  0.326,
+  1.732,
+  1.394
+ ],
+ "materials": [
+  "mat~Glass~edeaea",
+  "mat~Wood~694028"
+ ],
+ "parts": 12,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

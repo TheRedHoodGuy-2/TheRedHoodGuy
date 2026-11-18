@@ -1,0 +1,20 @@
+{
+ "id": 8144064865,
+ "name": "Modern Door in Black!",
+ "size_m": [
+  0.204,
+  2.38,
+  1.36
+ ],
+ "materials": [
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~Wood~111111"
+ ],
+ "parts": 9,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 2,
+ "warnings": []
+}

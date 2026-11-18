@@ -210,3 +210,4 @@ Next phase: 7 faces / face animation / lip sync.
 - Decisions: length = as long as the script needs, max 3:30; voices = Roblox male + Roblox girl; scale draft NOT
   approved (Claude must verify it by measurement first).
 - Union reader done (tools/roblox/models.py); tools/pull.py now pulls ANY Roblox link (catalog or Creator Store).
+- Room kit v1: engine/sets/roomkit.js (scale v2 sizes, real door + window models from the Creator Store, skirting, switch, sockets, film-set walls that still cast shadows); test scenes/room_test.js, docs/sheets/roomkit_v1.jpg. Also: builders' part transparency now kept; glass never blocks the sun.

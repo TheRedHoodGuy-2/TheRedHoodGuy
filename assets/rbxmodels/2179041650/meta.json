@@ -1,0 +1,19 @@
+{
+ "id": 2179041650,
+ "name": "ModernDoor",
+ "size_m": [
+  2.38,
+  3.485,
+  0.34
+ ],
+ "materials": [
+  "mat~Metal~111111",
+  "mat~Plastic~a3a2a5",
+  "mat~Wood~373737"
+ ],
+ "parts": 16,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

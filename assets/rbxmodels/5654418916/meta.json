@@ -1,0 +1,18 @@
+{
+ "id": 5654418916,
+ "name": "Window",
+ "size_m": [
+  2.04,
+  5.168,
+  0.068
+ ],
+ "materials": [
+  "mat~Plastic~111111",
+  "mat~Plastic~b4d2e4~t9"
+ ],
+ "parts": 5,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

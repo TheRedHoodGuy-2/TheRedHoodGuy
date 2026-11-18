@@ -1,0 +1,17 @@
+{
+ "id": 296435848,
+ "name": "Interior Door",
+ "size_m": [
+  0.68,
+  2.686,
+  2.72
+ ],
+ "materials": [
+  "mat~Wood~a3a2a5"
+ ],
+ "parts": 7,
+ "skipped_invisible": 3,
+ "unions_skipped": 0,
+ "decals": 2,
+ "warnings": []
+}

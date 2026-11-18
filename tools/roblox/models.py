@@ -129,7 +129,7 @@ def convert(aid):
         cf = pr.get('CFrame') or {'pos': (0, 0, 0), 'rot': None}; R = np.array(cf['rot'] or np.eye(3).ravel(), float).reshape(3, 3)
         M = np.eye(4); M[:3, :3] = R; M[:3, 3] = cf['pos']; g.apply_transform(M)
         mat = MATERIALS.get(pr.get('Material'), 'Plastic'); col = pr.get('Color3uint8') or (163, 162, 165)
-        key = f'mat~{mat}~{"%02x%02x%02x" % tuple(col)}'; groups.setdefault(key, []).append(g); stats['parts'] += 1   # '~': three.js strips ':' from node names
+        tr = int(round((pr.get('Transparency') or 0) * 10)); key = f'mat~{mat}~{"%02x%02x%02x" % tuple(col)}' + (f'~t{tr}' if tr else ''); groups.setdefault(key, []).append(g); stats['parts'] += 1   # '~': three.js strips ':' from node names
     if not groups: raise RuntimeError(f'no readable parts ({stats})')
     meshes = {k: trimesh.util.concatenate(v) for k, v in groups.items()}
     allv = np.vstack([m.vertices for m in meshes.values()]); lo, hi = allv.min(0), allv.max(0); c = (lo + hi) / 2

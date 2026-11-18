@@ -1,0 +1,21 @@
+{
+ "id": 9041896389,
+ "name": "interior door",
+ "size_m": [
+  1.287,
+  2.574,
+  0.388
+ ],
+ "materials": [
+  "mat~Glass~111111",
+  "mat~SmoothPlastic~958988",
+  "mat~SmoothPlastic~a0844f",
+  "mat~SmoothPlastic~cacbd1"
+ ],
+ "parts": 19,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 14,
+ "unions": 4,
+ "warnings": []
+}

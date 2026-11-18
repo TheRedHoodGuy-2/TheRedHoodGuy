@@ -1,0 +1,18 @@
+{
+ "id": 4608775828,
+ "name": "Tall Modern Window",
+ "size_m": [
+  3.61,
+  11.838,
+  0.469
+ ],
+ "materials": [
+  "mat~Glass~a3a2a5",
+  "mat~SmoothPlastic~635f62"
+ ],
+ "parts": 19,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}
