@@ -195,3 +195,9 @@ Next phase: 7 faces / face animation / lip sync.
   library/fitcheck.jsonl) + usability pre-sort (tools/triage.py -> library/triage_auto.json) + visual check page
   wearcheck.html. Still open: the armpit/hem tear when arms go up (needs real skin weights on garments).
 - research/scale.md + docs/sheets/scale_v1.jpg: scale standard DRAFT (1 stud = 0.34 m, door 4.5 x 7.5 st, etc).
+- Clothing triage gallery: https://claude.ai/artifact/FHSHzJXQyYnqqWgemK5i5G (1,444 R6 3D garments, sorted normal /
+  in-between / odd and fit ok / body shows / opens when moving). Sleeve cuffs now go with the arms (no more floating
+  slabs when arms go up); 946 garments got an automatic height fix (library/fit.json). The fit flags are a first pass:
+  some tight "1.0" items are flagged wrongly, his eye decides.
+- Waiting on Xavier: length decision (Gneef hits are 2-3 min), voice provider, scale draft, triage picks, union reader
+  priority for Creator Store models.

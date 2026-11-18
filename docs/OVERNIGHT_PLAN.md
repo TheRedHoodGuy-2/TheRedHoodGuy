@@ -61,7 +61,7 @@ Rules for this run (from Xavier, all binding):
       auto re-skin parts into wood / fabric / metal / glass / plastic with engine/materials.js; library file + sheet.
 - Output: tools + one sample sheet of pulled modern furniture.
 
-## 6. Clothing fit checker + sleeve snapping  [ ]
+## 6. Clothing fit checker + sleeve snapping  [x] DONE -> triage gallery https://claude.ai/artifact/FHSHzJXQyYnqqWgemK5i5G (fit flags are a first pass; armpit tear still open)
 - [ ] Every 3D garment on both bodies in standing, arms-raised, sitting: measure body poking through and sleeve
       offset from the arm blocks; auto-fix (sleeve snapping to the arm blocks, push-out), flag what can't be fixed.
 - [ ] Triage sheets: normal / in-between / odd (in-between + odd kept aside, never deleted), usability not print.
