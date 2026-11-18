@@ -39,3 +39,16 @@ Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_clo
   through, the body under it painted the garment's colour, and split onto the arms and legs so it follows poses.
 - `python3 tools/pull.py <catalog link or id> ...` = the "plugin": pull any catalog item by link and render it on our R6 bodies.
 - Xavier wants the flat clothing and accessory libraries trimmed later (no rainbow junk); not done yet.
+
+2026-11-18 ROADMAP from Xavier (order matters; one item at a time, each signed off):
+1. Environment: how scenes are planned (exterior map + cut-away interior sets + one-off story sets), then how things in them are modelled
+   cheaply but realistic (grass, trees), then materials / textures / colours. Plan: docs/ENVIRONMENT_PLAN.md.
+2. Props: how props are made and dressed.
+3. Lighting + rendering + compositing: realistic, no flat washed look, no grainy AO noise. Compare our old videos with Gneef frame by frame.
+4. Camera: movement and framing (Xavier has ideas).
+5. Animation + posing: refine the explainer-kit research with fresh research.
+6. Clothing triage + character bank: rank every item by how USABLE it is (not by texture: a 3D sweater with an ugly print stays,
+   we swap the print): most normal = used, mid / least = set aside (not deleted). Casual, real-life clothes only.
+   Then ~200 named characters, each with a personality and a fixed outfit, kept in a character bank and reused.
+   Also fix: 3D sleeves not lined up with the arms (clipping), the hem strip.
+7. Scripts / format: Xavier explains the new niche and retention strategy last.
