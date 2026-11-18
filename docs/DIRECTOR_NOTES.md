@@ -152,3 +152,7 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - Long form (3-10 min) version of every story later; shorts first.
 - Research to do: Gneef top 20 most viral scripts broken down to the molecule (hook, retention beats, boredom
   checks, payoff); YouTube scripting, hooks, retention rates and strategies; the old explainer-kit chats on retention.
+
+## 2026-11-18 16:59 Clothing review notes (later, not now)
+- Look at EVERY garment Claude fitted one by one and judge whether it was done well (not just the automatic flags).
+- The triage gallery mixed male and female items: keep them separated (male / female / both) so they can be told apart.
