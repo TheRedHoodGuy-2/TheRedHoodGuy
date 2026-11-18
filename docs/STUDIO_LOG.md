@@ -146,3 +146,5 @@ Reference
   warm room bounce, cool sky fill from the window, a hidden beauty key on the kid. Teal walls vs gold light.
 - Bug found and fixed: dust particles were baked into the room reflection probe and washed the whole frame.
 - Shown: docs/sheets/light_bedtime_v1.jpg. Next: his verdict, then the snowy winter night scene in the same room.
+- 09:37 Xavier: shader look approved. Lighting step DONE. Next: modern interior research + modern props/models
+  (environment step 1 continued + props step 2), then the town map with modern houses.

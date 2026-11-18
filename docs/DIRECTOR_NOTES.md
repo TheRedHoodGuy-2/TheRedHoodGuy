@@ -80,3 +80,12 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   desaturated). The test is: can Claude deliver what a given scene needs at that time.
 - His analogy: vanilla Minecraft vs shaders vs texture pack vs animation pack. Our work now = the SHADER layer
   (volumetric light, bloom on real lights, DOF, grade), then textures, then animation.
+
+## 2026-11-18 09:37 Don't polish final details early; modern style
+- No final-detail work (dust, tiny tweaks) before we have a video. Xavier calls final details himself after watching
+  a video. Build the big things first.
+- Shader look v1 (bedtime still) approved: "very decent, I do really like it", window bloom good (could be a bit smaller).
+  No need to build different lighting looks now; the concept is proven.
+- Style: MODERN houses and modern interiors. Research what a real modern bedroom / house looks like, then pull or
+  make models to match.
+- Posing in the test still was basic on purpose; the old repo's posing lessons get applied in the animation step.
