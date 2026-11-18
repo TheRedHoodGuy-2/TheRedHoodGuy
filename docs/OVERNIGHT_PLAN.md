@@ -36,7 +36,7 @@ Rules for this run (from Xavier, all binding):
 - [ ] Long form note: how a short leads to its long-form version (curiosity, not a cliffhanger).
 - Output: research/scripting_retention.md (cited) + draft docs/FORMAT_BIBLE.md update marked DRAFT.
 
-## 3. Voice comparison  [ ]
+## 3. Voice comparison  [x] DONE -> research/voice_options.md
 - [ ] Gneef's voice profile (from item 1). Our Kokoro voice is bad (Xavier): show why.
 - [ ] ElevenLabs and fish.audio: the "typical Roblox guy / Roblox girl" voices people use, cost per minute / plans,
       quality, API use, licence. Facts only; Xavier decides on paying.
