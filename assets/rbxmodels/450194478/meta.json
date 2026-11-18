@@ -1,0 +1,18 @@
+{
+ "id": 450194478,
+ "name": "Modern NightTable Lamp",
+ "size_m": [
+  0.394,
+  0.784,
+  0.394
+ ],
+ "materials": [
+  "mat~Metal~a3a2a5",
+  "mat~Neon~a3a2a5"
+ ],
+ "parts": 3,
+ "skipped_invisible": 1,
+ "unions_skipped": 6,
+ "decals": 2,
+ "warnings": []
+}

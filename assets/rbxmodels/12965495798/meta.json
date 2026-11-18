@@ -1,0 +1,21 @@
+{
+ "id": 12965495798,
+ "name": "MODERN WARDROBE",
+ "size_m": [
+  4.007,
+  3.478,
+  0.984
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~c4281c",
+  "mat~Plastic~f8f8f8",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~Wood~111111"
+ ],
+ "parts": 110,
+ "skipped_invisible": 30,
+ "unions_skipped": 14,
+ "decals": 0,
+ "warnings": []
+}

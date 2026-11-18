@@ -1,0 +1,18 @@
+{
+ "id": 11652583496,
+ "name": "Sofa",
+ "size_m": [
+  4.293,
+  1.692,
+  2.401
+ ],
+ "materials": [
+  "mat~Plastic~1b2a35",
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 8,
+ "skipped_invisible": 3,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

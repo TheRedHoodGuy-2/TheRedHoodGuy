@@ -1,0 +1,19 @@
+{
+ "id": 87614144166787,
+ "name": "Model",
+ "size_m": [
+  1.36,
+  1.02,
+  1.292
+ ],
+ "materials": [
+  "mat~SmoothPlastic~e5e4df",
+  "mat~Wood~111111",
+  "mat~Wood~da8541"
+ ],
+ "parts": 25,
+ "skipped_invisible": 2,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

@@ -1,0 +1,38 @@
+{
+ "id": 5504452814,
+ "name": "Model",
+ "size_m": [
+  5.576,
+  3.292,
+  4.518
+ ],
+ "materials": [
+  "mat~Concrete~1b2a35",
+  "mat~Concrete~da867a",
+  "mat~Metal~1b2a35",
+  "mat~Metal~5b9a4c",
+  "mat~Neon~f8d96d",
+  "mat~Neon~f8f8f8",
+  "mat~Plastic~2c2c2c",
+  "mat~Plastic~456576",
+  "mat~Plastic~6b849f",
+  "mat~Plastic~b1cde5",
+  "mat~Plastic~f2f3f3",
+  "mat~Sand~4b5d70",
+  "mat~Sand~7c5c46",
+  "mat~Sand~80bbdb",
+  "mat~Sand~8fa4b4",
+  "mat~Sand~edeaea",
+  "mat~SmoothPlastic~c7d4e4",
+  "mat~SmoothPlastic~ffffff",
+  "mat~Wood~af9483",
+  "mat~Wood~c7ac78",
+  "mat~Wood~e5e4df",
+  "mat~Wood~f5cd30"
+ ],
+ "parts": 206,
+ "skipped_invisible": 0,
+ "unions_skipped": 2,
+ "decals": 2,
+ "warnings": []
+}

@@ -1,0 +1,21 @@
+{
+ "id": 16956795249,
+ "name": "Modern Bed",
+ "size_m": [
+  3.196,
+  1.734,
+  3.536
+ ],
+ "materials": [
+  "mat~Plastic~5d5654",
+  "mat~Plastic~635f62",
+  "mat~Plastic~aba89e",
+  "mat~Plastic~cdcdcd",
+  "mat~Plastic~f8f8f8"
+ ],
+ "parts": 46,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

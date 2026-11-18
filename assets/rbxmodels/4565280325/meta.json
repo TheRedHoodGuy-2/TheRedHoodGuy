@@ -1,0 +1,20 @@
+{
+ "id": 4565280325,
+ "name": "Modern Desk",
+ "size_m": [
+  3.502,
+  1.156,
+  1.284
+ ],
+ "materials": [
+  "mat~Metal~f8f8f8",
+  "mat~Plastic~cdcdcd",
+  "mat~Plastic~f8f8f8",
+  "mat~Wood~9fa1ac"
+ ],
+ "parts": 13,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

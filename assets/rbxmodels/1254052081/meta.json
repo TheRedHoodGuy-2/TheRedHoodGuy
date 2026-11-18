@@ -1,0 +1,18 @@
+{
+ "id": 1254052081,
+ "name": "Modern Bed-Side Table",
+ "size_m": [
+  1.112,
+  1.156,
+  1.156
+ ],
+ "materials": [
+  "mat~Sand~edeaea",
+  "mat~Wood~111111"
+ ],
+ "parts": 8,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}
