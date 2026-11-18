@@ -1,0 +1,9061 @@
+[
+{
+"asset": 16303517847,
+"kind": "door",
+"name": "door",
+"w": 3.7,
+"d": 3.36,
+"h": 6.82
+},
+{
+"asset": 16303517847,
+"kind": "door",
+"name": "door",
+"w": 8.73,
+"d": 1.38,
+"h": 6.82
+},
+{
+"asset": 16303517847,
+"kind": "table",
+"name": "houseinteriorcoffeetable",
+"w": 8.0,
+"d": 4.0,
+"h": 2.0
+},
+{
+"asset": 16303517847,
+"kind": "door",
+"name": "door",
+"w": 4.4,
+"d": 1.69,
+"h": 6.82
+},
+{
+"asset": 16303517847,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.61,
+"d": 2.39,
+"h": 4.73
+},
+{
+"asset": 16303517847,
+"kind": "door",
+"name": "door",
+"w": 4.12,
+"d": 2.68,
+"h": 6.82
+},
+{
+"asset": 16303517847,
+"kind": "door",
+"name": "door",
+"w": 3.7,
+"d": 3.36,
+"h": 6.82
+},
+{
+"asset": 16303517847,
+"kind": "chair",
+"name": "office chair",
+"w": 4.08,
+"d": 4.05,
+"h": 5.68
+},
+{
+"asset": 133317542908462,
+"kind": "tv",
+"name": "modern tv unit",
+"w": 7.13,
+"d": 2.0,
+"h": 2.24
+},
+{
+"asset": 133317542908462,
+"kind": "desk",
+"name": "modern desk",
+"w": 7.13,
+"d": 2.0,
+"h": 2.24
+},
+{
+"asset": 133317542908462,
+"kind": "sofa",
+"name": "model_sofa_house",
+"w": 10.2,
+"d": 4.0,
+"h": 4.0
+},
+{
+"asset": 133317542908462,
+"kind": "tv",
+"name": "apple tv screen",
+"w": 12.09,
+"d": 1.66,
+"h": 6.3
+},
+{
+"asset": 133317542908462,
+"kind": "table",
+"name": "modern table",
+"w": 7.43,
+"d": 3.43,
+"h": 2.47
+},
+{
+"asset": 133317542908462,
+"kind": "chair",
+"name": "office chair",
+"w": 2.17,
+"d": 1.99,
+"h": 1.26
+},
+{
+"asset": 133317542908462,
+"kind": "desk",
+"name": "desk",
+"w": 11.77,
+"d": 4.61,
+"h": 3.42
+},
+{
+"asset": 133317542908462,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 133317542908462,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 138171138697740,
+"kind": "table",
+"name": "dining room table set",
+"w": 16.0,
+"d": 11.05,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 8.45,
+"d": 1.33,
+"h": 12.23
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 8.99
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "window",
+"name": "window",
+"w": 6.4,
+"d": 1.0,
+"h": 9.0
+},
+{
+"asset": 138171138697740,
+"kind": "stairs",
+"name": "stairs",
+"w": 22.19,
+"d": 8.8,
+"h": 15.6
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "door",
+"w": 12.6,
+"d": 0.8,
+"h": 11.36
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "two vehicle garage door",
+"w": 38.15,
+"d": 25.21,
+"h": 12.77
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 6.79,
+"d": 1.07,
+"h": 9.83
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "fridge",
+"name": "fridge",
+"w": 5.2,
+"d": 3.9,
+"h": 6.6
+},
+{
+"asset": 138171138697740,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 138171138697740,
+"kind": "tv",
+"name": "tv backing",
+"w": 6.93,
+"d": 0.1,
+"h": 4.02
+},
+{
+"asset": 138171138697740,
+"kind": "tv",
+"name": "tv bezel",
+"w": 6.93,
+"d": 0.04,
+"h": 4.02
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "wall",
+"name": "wall collage",
+"w": 10.48,
+"d": 0.13,
+"h": 6.91
+},
+{
+"asset": 138171138697740,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.61,
+"d": 2.39,
+"h": 4.73
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative pocket door",
+"w": 10.78,
+"d": 1.03,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative pocket door",
+"w": 10.78,
+"d": 1.03,
+"h": 9.23
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "narrow vanity cabinet with left hinged door",
+"w": 3.81,
+"d": 3.29,
+"h": 4.58
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "narrow vanity cabinet with left hinged door",
+"w": 3.81,
+"d": 3.29,
+"h": 4.58
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "door",
+"w": 4.32,
+"d": 0.23,
+"h": 8.27
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "door",
+"w": 4.32,
+"d": 0.23,
+"h": 8.27
+},
+{
+"asset": 138171138697740,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.61,
+"d": 2.39,
+"h": 4.73
+},
+{
+"asset": 138171138697740,
+"kind": "door",
+"name": "decorative interior door",
+"w": 5.5,
+"d": 1.09,
+"h": 9.23
+},
+{
+"asset": 84416416596886,
+"kind": "door",
+"name": "door",
+"w": 5.88,
+"d": 0.25,
+"h": 9.25
+},
+{
+"asset": 84416416596886,
+"kind": "wall",
+"name": "inner  wall",
+"w": 35.88,
+"d": 22.0,
+"h": 10.0
+},
+{
+"asset": 84416416596886,
+"kind": "window",
+"name": "window trim",
+"w": 32.75,
+"d": 20.75,
+"h": 10.75
+},
+{
+"asset": 84416416596886,
+"kind": "window",
+"name": "window",
+"w": 32.62,
+"d": 14.5,
+"h": 10.12
+},
+{
+"asset": 84416416596886,
+"kind": "door",
+"name": "interior doors",
+"w": 13.0,
+"d": 1.0,
+"h": 8.0
+},
+{
+"asset": 84416416596886,
+"kind": "table",
+"name": "coffee table",
+"w": 6.0,
+"d": 2.25,
+"h": 1.5
+},
+{
+"asset": 84416416596886,
+"kind": "tv",
+"name": "tv console",
+"w": 12.38,
+"d": 2.0,
+"h": 3.0
+},
+{
+"asset": 84416416596886,
+"kind": "tv",
+"name": "tv",
+"w": 12.38,
+"d": 0.1,
+"h": 5.5
+},
+{
+"asset": 84416416596886,
+"kind": "counter",
+"name": "countertop + sink",
+"w": 14.62,
+"d": 2.75,
+"h": 1.0
+},
+{
+"asset": 84416416596886,
+"kind": "counter",
+"name": "kitchen counter (wooden parts)",
+"w": 14.62,
+"d": 2.62,
+"h": 3.0
+},
+{
+"asset": 84416416596886,
+"kind": "fridge",
+"name": "fridge",
+"w": 5.0,
+"d": 3.05,
+"h": 8.0
+},
+{
+"asset": 84416416596886,
+"kind": "counter",
+"name": "kitchen countertop stove",
+"w": 3.0,
+"d": 2.38,
+"h": 0.03
+},
+{
+"asset": 84416416596886,
+"kind": "bed",
+"name": "bed",
+"w": 12.2,
+"d": 5.22,
+"h": 7.62,
+"mattress_top": 2.06
+},
+{
+"asset": 84416416596886,
+"kind": "chair",
+"name": "chair",
+"w": 3.13,
+"d": 1.88,
+"h": 4.56
+},
+{
+"asset": 84416416596886,
+"kind": "desk",
+"name": "desk",
+"w": 6.88,
+"d": 2.5,
+"h": 3.36
+},
+{
+"asset": 6319697240,
+"kind": "sofa",
+"name": "couch loveseat sofa",
+"w": 9.03,
+"d": 3.7,
+"h": 3.58
+},
+{
+"asset": 6319697240,
+"kind": "bed",
+"name": "bed",
+"w": 11.15,
+"d": 9.8,
+"h": 5.0,
+"mattress_top": 2.3
+},
+{
+"asset": 6319697240,
+"kind": "table",
+"name": "dining table",
+"w": 10.0,
+"d": 6.0,
+"h": 3.4
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "chair",
+"name": "chair",
+"w": 2.6,
+"d": 2.0,
+"h": 5.2,
+"seat_top": 2.0
+},
+{
+"asset": 6319697240,
+"kind": "bed",
+"name": "bed",
+"w": 9.96,
+"d": 5.19,
+"h": 3.67,
+"mattress_top": 2.02
+},
+{
+"asset": 6319697240,
+"kind": "toilet",
+"name": "toilet",
+"w": 3.7,
+"d": 2.5,
+"h": 3.3
+},
+{
+"asset": 6319697240,
+"kind": "toilet",
+"name": "toiletpaperdispenser",
+"w": 1.6,
+"d": 0.9,
+"h": 1.0
+},
+{
+"asset": 6319697240,
+"kind": "toilet",
+"name": "toilet",
+"w": 3.7,
+"d": 2.5,
+"h": 3.3
+},
+{
+"asset": 6319697240,
+"kind": "toilet",
+"name": "toiletpaperdispenser",
+"w": 1.6,
+"d": 0.9,
+"h": 1.0
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 11.85
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 10.0,
+"h": 12.15
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 14.5,
+"d": 8.72,
+"h": 11.69
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "walls",
+"w": 150.7,
+"d": 145.6,
+"h": 72.01
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 30.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 30.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 30.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 30.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 30.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "minor stone wall",
+"w": 20.0,
+"d": 1.3,
+"h": 0.68
+},
+{
+"asset": 6825295386,
+"kind": "counter",
+"name": "counters",
+"w": 75.03,
+"d": 45.06,
+"h": 64.02
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 3.8,
+"d": 0.5,
+"h": 2.37
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 250.0,
+"d": 55.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 25.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 230.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 20.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 30.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 155.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 10.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 20.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 130.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 125.0,
+"d": 20.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 45.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 30.0,
+"d": 15.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 30.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 15.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 25.0,
+"d": 10.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 25.0,
+"d": 15.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 155.0,
+"d": 105.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 35.0,
+"d": 20.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 70.0,
+"d": 50.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 55.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 45.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 5.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 5.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 5.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 35.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 70.0,
+"d": 5.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 60.0,
+"d": 25.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 100.0,
+"d": 55.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "groundwall",
+"w": 50.0,
+"d": 20.0,
+"h": 14.92
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "sunset window",
+"w": 9.0,
+"d": 0.3,
+"h": 5.25
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large round window",
+"w": 8.2,
+"d": 0.3,
+"h": 8.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large panel window",
+"w": 11.8,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large panel window",
+"w": 11.8,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain double door frame",
+"w": 9.1,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain double door frame",
+"w": 9.1,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 3.46,
+"d": 3.46,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "square window",
+"w": 4.1,
+"d": 0.3,
+"h": 4.1
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "square window",
+"w": 4.1,
+"d": 0.3,
+"h": 4.1
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "square window",
+"w": 4.1,
+"d": 0.3,
+"h": 4.1
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large panel window",
+"w": 11.8,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "sunset window",
+"w": 9.0,
+"d": 0.3,
+"h": 5.25
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "sunset window",
+"w": 9.0,
+"d": 0.3,
+"h": 5.25
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large panel window",
+"w": 11.8,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "sunset window",
+"w": 9.0,
+"d": 0.3,
+"h": 5.25
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large round window frame",
+"w": 8.2,
+"d": 0.3,
+"h": 8.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large round window frame",
+"w": 8.2,
+"d": 0.3,
+"h": 8.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large clear window",
+"w": 9.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "large horizontal window",
+"w": 8.8,
+"d": 0.3,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "traditional bookshelf secret door",
+"w": 4.3,
+"d": 0.3,
+"h": 7.9
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "clear window",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "sleek sliding door",
+"w": 4.7,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "plain double door frame",
+"w": 9.1,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "maximum security sliding door",
+"w": 9.3,
+"d": 0.3,
+"h": 11.65
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "tall glass double door",
+"w": 9.25,
+"d": 0.3,
+"h": 11.74
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.6,
+"d": 5.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 14.82,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.42,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 9.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 9.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 19.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 25.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 4.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 9.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 9.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 19.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 5.6,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 35.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 4.4,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 10.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 30.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 0.6,
+"h": 0.6
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 4.24,
+"d": 2.0,
+"h": 6.68
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 4.24,
+"d": 1.98,
+"h": 6.68
+},
+{
+"asset": 6825295386,
+"kind": "counter",
+"name": "countersink",
+"w": 3.4,
+"d": 2.0,
+"h": 0.95
+},
+{
+"asset": 6825295386,
+"kind": "counter",
+"name": "countersink",
+"w": 3.4,
+"d": 2.0,
+"h": 0.95
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "windowborder",
+"w": 4.2,
+"d": 1.81,
+"h": 7.0
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "wallpanel",
+"w": 10.18,
+"d": 4.26,
+"h": 8.5
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "windowborder",
+"w": 7.43,
+"d": 3.15,
+"h": 5.0
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "wallpanel",
+"w": 10.18,
+"d": 4.26,
+"h": 8.5
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "windowborder",
+"w": 7.43,
+"d": 3.15,
+"h": 5.0
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "wallpanel",
+"w": 10.18,
+"d": 4.26,
+"h": 8.5
+},
+{
+"asset": 6825295386,
+"kind": "window",
+"name": "windowborder",
+"w": 7.43,
+"d": 3.15,
+"h": 5.0
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "wallpanel",
+"w": 10.18,
+"d": 4.26,
+"h": 8.5
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.29,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.11,
+"d": 1.41,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.19,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.38,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.1,
+"d": 1.42,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.11,
+"d": 1.41,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.34,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.38,
+"d": 0.61,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.14,
+"d": 1.35,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.17,
+"d": 1.31,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.34,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.16,
+"d": 1.32,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.2,
+"h": 1.7
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.44,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.17,
+"d": 1.3,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.44,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.17,
+"d": 1.3,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.39,
+"d": 0.58,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.32,
+"d": 0.91,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.36,
+"d": 0.75,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.44,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.27,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.44,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.36,
+"d": 0.73,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.45,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.12,
+"d": 1.39,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.1,
+"d": 1.42,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.44,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.09,
+"d": 1.45,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.18,
+"h": 1.9
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.17,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.29,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 3.8
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.39,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.27,
+"d": 1.08,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.15,
+"d": 1.33,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.21,
+"d": 1.23,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.45,
+"h": 1.75
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 20.5,
+"d": 20.25,
+"h": 5.04
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 12.05
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 12.05
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 12.05
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 12.05
+},
+{
+"asset": 6825295386,
+"kind": "wall",
+"name": "placewall",
+"w": 15.0,
+"d": 5.0,
+"h": 12.05
+},
+{
+"asset": 4745376223,
+"kind": "table",
+"name": "simplicity table",
+"w": 8.92,
+"d": 5.6,
+"h": 4.01
+},
+{
+"asset": 4745376223,
+"kind": "chair",
+"name": "simplicity chair",
+"w": 2.76,
+"d": 2.4,
+"h": 4.01
+},
+{
+"asset": 4745376223,
+"kind": "chair",
+"name": "simplicity chair",
+"w": 2.76,
+"d": 2.4,
+"h": 4.01
+},
+{
+"asset": 4745376223,
+"kind": "tv",
+"name": "basic tv stand",
+"w": 3.53,
+"d": 3.3,
+"h": 4.6
+},
+{
+"asset": 4745376223,
+"kind": "sofa",
+"name": "simple sofa",
+"w": 9.04,
+"d": 4.11,
+"h": 3.42
+},
+{
+"asset": 4745376223,
+"kind": "bed",
+"name": "standard single bed",
+"w": 9.25,
+"d": 5.9,
+"h": 2.58,
+"mattress_top": 2.28
+},
+{
+"asset": 4745376223,
+"kind": "toilet",
+"name": "mr. flush toilet",
+"w": 3.0,
+"d": 2.4,
+"h": 4.3
+},
+{
+"asset": 4745376223,
+"kind": "desk",
+"name": "simplicity desk",
+"w": 7.8,
+"d": 4.56,
+"h": 5.04
+},
+{
+"asset": 4745376223,
+"kind": "chair",
+"name": "comfort office chair",
+"w": 2.68,
+"d": 2.37,
+"h": 0.5
+},
+{
+"asset": 4745376223,
+"kind": "table",
+"name": "simplicity console table",
+"w": 5.6,
+"d": 2.6,
+"h": 3.65
+},
+{
+"asset": 4745376223,
+"kind": "chair",
+"name": "oval armchair",
+"w": 4.52,
+"d": 4.34,
+"h": 3.51
+},
+{
+"asset": 4745376223,
+"kind": "table",
+"name": "simplicity end table",
+"w": 2.6,
+"d": 2.6,
+"h": 3.59
+},
+{
+"asset": 4745376223,
+"kind": "counter",
+"name": "counters",
+"w": 19.6,
+"d": 3.51,
+"h": 7.3
+},
+{
+"asset": 4745376223,
+"kind": "fridge",
+"name": "icebox fridge",
+"w": 4.8,
+"d": 3.46,
+"h": 7.3
+},
+{
+"asset": 4745376223,
+"kind": "wall",
+"name": "walls",
+"w": 40.68,
+"d": 38.13,
+"h": 12.01
+},
+{
+"asset": 4745376223,
+"kind": "door",
+"name": "standard door",
+"w": 5.7,
+"d": 3.47,
+"h": 8.65
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "small sunset window",
+"w": 4.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "small sunset window",
+"w": 4.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "sunset window",
+"w": 9.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 4745376223,
+"kind": "door",
+"name": "plain door",
+"w": 9.08,
+"d": 2.45,
+"h": 8.45
+},
+{
+"asset": 4745376223,
+"kind": "door",
+"name": "plain door",
+"w": 9.08,
+"d": 2.45,
+"h": 8.45
+},
+{
+"asset": 4745376223,
+"kind": "door",
+"name": "plain door frame",
+"w": 5.3,
+"d": 0.6,
+"h": 8.45
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "sunset window",
+"w": 9.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "sunset window",
+"w": 9.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 4745376223,
+"kind": "window",
+"name": "sunset window",
+"w": 9.35,
+"d": 0.85,
+"h": 5.7
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 3.15,
+"d": 0.15,
+"h": 5.95
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 1.65,
+"d": 0.15,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 3.15,
+"d": 0.15,
+"h": 5.95
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 1.65,
+"d": 0.15,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 3.15,
+"d": 0.15,
+"h": 5.95
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 1.65,
+"d": 0.15,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 3.15,
+"d": 0.15,
+"h": 5.95
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 1.65,
+"d": 0.15,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 10.0,
+"h": 11.85
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 20.0,
+"d": 10.0,
+"h": 11.85
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 4.2
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 4.2
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 2.49
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 2.49
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.69
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.69
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "walls",
+"w": 141.09,
+"d": 96.1,
+"h": 25.2
+},
+{
+"asset": 8321789378,
+"kind": "counter",
+"name": "counters",
+"w": 134.27,
+"d": 49.52,
+"h": 18.06
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 3.8,
+"d": 0.48,
+"h": 2.46
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "groundwall",
+"w": 250.0,
+"d": 250.0,
+"h": 14.92
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional window",
+"w": 3.1,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "french sliding door",
+"w": 9.35,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "french sliding door",
+"w": 9.35,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern square window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "standard door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional door frame",
+"w": 4.75,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional window",
+"w": 3.1,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional wide door frame",
+"w": 13.75,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional sliding door",
+"w": 9.3,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "standard double door",
+"w": 9.35,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "french door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "clear window frame",
+"w": 4.0,
+"d": 0.3,
+"h": 9.2
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "french door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional sidelight door",
+"w": 9.3,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional wide door frame",
+"w": 13.75,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional double door frame",
+"w": 9.1,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional wide garage door",
+"w": 17.1,
+"d": 0.3,
+"h": 10.69
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "window",
+"w": 15.5,
+"d": 0.2,
+"h": 1.65
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "french double door",
+"w": 9.35,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "traditional double window",
+"w": 6.2,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional double door frame",
+"w": 9.1,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "traditional wide door frame",
+"w": 13.75,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "window",
+"name": "modern stripe window",
+"w": 4.4,
+"d": 0.3,
+"h": 11.8
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 7.5,
+"d": 3.0,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 3.0,
+"d": 2.0,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 7.5,
+"d": 3.0,
+"h": 7.75
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 7.5,
+"d": 0.25,
+"h": 4.25
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 7.5,
+"d": 2.0,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 2.0,
+"d": 1.0,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 7.5,
+"d": 2.25,
+"h": 7.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 2.0,
+"d": 1.0,
+"h": 2.5
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.35,
+"d": 0.2,
+"h": 1.45
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 20.5,
+"d": 10.25,
+"h": 9.0
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 20.5,
+"d": 10.25,
+"h": 9.0
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 10.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 10.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 10.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 10.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 35.5,
+"d": 2.75,
+"h": 1.95
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 35.5,
+"d": 2.75,
+"h": 1.95
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 40.5,
+"d": 5.25,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 40.5,
+"d": 5.25,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 40.5,
+"d": 7.75,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 40.5,
+"d": 7.75,
+"h": 7.8
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 125.5,
+"d": 12.75,
+"h": 9.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 125.5,
+"d": 12.75,
+"h": 9.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 95.5,
+"d": 10.25,
+"h": 9.3
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 95.5,
+"d": 10.25,
+"h": 9.3
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 25.5,
+"d": 10.25,
+"h": 7.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 25.5,
+"d": 10.25,
+"h": 7.5
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 5.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 8321789378,
+"kind": "wall",
+"name": "placewall",
+"w": 5.5,
+"d": 2.75,
+"h": 3.9
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.0,
+"d": 1.0,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "frontwindows",
+"w": 6.65,
+"d": 3.24,
+"h": 1.47
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "convertiblewindows",
+"w": 6.66,
+"d": 4.06,
+"h": 1.91
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 5.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 3.8
+},
+{
+"asset": 4894781073,
+"kind": "counter",
+"name": "counters",
+"w": 43.51,
+"d": 38.55,
+"h": 11.75
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "walls",
+"w": 80.5,
+"d": 46.49,
+"h": 12.01
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "groundwall",
+"w": 250.0,
+"d": 105.0,
+"h": 14.92
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "groundwall",
+"w": 80.0,
+"d": 30.0,
+"h": 14.92
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "groundwall",
+"w": 155.0,
+"d": 145.0,
+"h": 14.92
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "groundwall",
+"w": 115.0,
+"d": 95.0,
+"h": 14.92
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.2,
+"d": 1.2,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 5.4,
+"d": 0.2,
+"h": 1.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 5.4,
+"d": 0.2,
+"h": 1.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.5,
+"d": 1.5,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.5,
+"d": 1.5,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.5,
+"d": 1.5,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "wall",
+"name": "placewall",
+"w": 1.5,
+"d": 1.5,
+"h": 12.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 5.4,
+"d": 0.2,
+"h": 1.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 5.4,
+"d": 0.2,
+"h": 1.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "wooden garage door",
+"w": 17.1,
+"d": 0.3,
+"h": 10.69
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "window",
+"w": 7.35,
+"d": 0.05,
+"h": 1.5
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "window",
+"w": 7.35,
+"d": 0.05,
+"h": 1.5
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "windowpart",
+"w": 0.3,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "windowpart",
+"w": 0.3,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "plain door",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "medium panel window",
+"w": 8.8,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small panel window",
+"w": 2.9,
+"d": 0.3,
+"h": 7.8
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "plain door",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "standard window",
+"w": 4.0,
+"d": 0.3,
+"h": 6.0
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "traditional door frame",
+"w": 5.4,
+"d": 0.3,
+"h": 10.29
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "clear sliding door",
+"w": 9.1,
+"d": 0.3,
+"h": 8.19
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "plain door frame",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 4894781073,
+"kind": "window",
+"name": "small sunset window",
+"w": 4.0,
+"d": 0.3,
+"h": 5.25
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "plain door",
+"w": 4.6,
+"d": 0.3,
+"h": 8.39
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "stylish panel door",
+"w": 4.8,
+"d": 0.3,
+"h": 8.59
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.2,
+"h": 1.7
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 4894781073,
+"kind": "door",
+"name": "door",
+"w": 2.4,
+"d": 0.15,
+"h": 1.75
+},
+{
+"asset": 17681009469,
+"kind": "wall",
+"name": "closet wall",
+"w": 18.0,
+"d": 5.6,
+"h": 19.0
+},
+{
+"asset": 17681009469,
+"kind": "wall",
+"name": "back wall",
+"w": 23.4,
+"d": 2.48,
+"h": 19.0
+},
+{
+"asset": 17681009469,
+"kind": "bed",
+"name": "bed",
+"w": 16.0,
+"d": 12.51,
+"h": 5.3,
+"mattress_top": 2.6
+},
+{
+"asset": 17681009469,
+"kind": "table",
+"name": "side table",
+"w": 5.0,
+"d": 3.0,
+"h": 3.15
+},
+{
+"asset": 17681009469,
+"kind": "table",
+"name": "side table",
+"w": 5.0,
+"d": 3.0,
+"h": 2.6
+},
+{
+"asset": 17681009469,
+"kind": "window",
+"name": "window",
+"w": 28.58,
+"d": 0.5,
+"h": 20.0
+},
+{
+"asset": 1172885566,
+"kind": "tv",
+"name": "tv working",
+"w": 9.2,
+"d": 2.65,
+"h": 7.2
+},
+{
+"asset": 5269808171,
+"kind": "desk",
+"name": "glass desk",
+"w": 8.65,
+"d": 3.35,
+"h": 3.2
+},
+{
+"asset": 5269808171,
+"kind": "chair",
+"name": "sofachair",
+"w": 5.67,
+"d": 5.51,
+"h": 3.24
+},
+{
+"asset": 84079719322294,
+"kind": "desk",
+"name": "aesthetic desk :d",
+"w": 9.96,
+"d": 5.34,
+"h": 8.1
+},
+{
+"asset": 84079719322294,
+"kind": "door",
+"name": "door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.0
+},
+{
+"asset": 84079719322294,
+"kind": "tv",
+"name": "tv stand",
+"w": 11.02,
+"d": 3.17,
+"h": 6.14
+},
+{
+"asset": 84079719322294,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 0.8,
+"h": 8.8
+},
+{
+"asset": 84079719322294,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 0.8,
+"h": 8.8
+},
+{
+"asset": 9461502368,
+"kind": "tv",
+"name": "tv",
+"w": 11.36,
+"d": 9.34,
+"h": 8.16
+},
+{
+"asset": 128596293552193,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.4,
+"h": 6.06
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 8.0,
+"d": 1.0,
+"h": 4.4
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 5.6,
+"d": 1.0,
+"h": 4.4
+},
+{
+"asset": 128596293552193,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.4,
+"h": 6.06
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 10691020644,
+"kind": "window",
+"name": "windows",
+"w": 60.9,
+"d": 57.0,
+"h": 22.19
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "doors",
+"w": 34.0,
+"d": 33.08,
+"h": 9.0
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "doors",
+"w": 66.9,
+"d": 23.5,
+"h": 9.0
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "stairrailing",
+"w": 3.67,
+"d": 0.4,
+"h": 4.74
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "stairrailing",
+"w": 3.67,
+"d": 0.4,
+"h": 4.74
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "step",
+"w": 14.0,
+"d": 1.9,
+"h": 1.0
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "step",
+"w": 14.0,
+"d": 1.7,
+"h": 2.0
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "step",
+"w": 12.0,
+"d": 1.7,
+"h": 1.0
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "steps",
+"w": 6.8,
+"d": 4.0,
+"h": 3.0
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 10691020644,
+"kind": "stairs",
+"name": "hallsteps",
+"w": 16.5,
+"d": 7.2,
+"h": 12.8
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.6,
+"h": 9.0
+},
+{
+"asset": 10691020644,
+"kind": "door",
+"name": "door",
+"w": 3.7,
+"d": 0.8,
+"h": 8.6
+},
+{
+"asset": 10691020644,
+"kind": "window",
+"name": "window",
+"w": 3.6,
+"d": 0.2,
+"h": 3.4
+},
+{
+"asset": 10691020644,
+"kind": "window",
+"name": "window",
+"w": 3.6,
+"d": 0.2,
+"h": 3.4
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "windows",
+"w": 57.19,
+"d": 17.02,
+"h": 12.13
+},
+{
+"asset": 10847897579,
+"kind": "door",
+"name": "doors",
+"w": 60.0,
+"d": 57.86,
+"h": 14.42
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "walls|ceilings|floors",
+"w": 45.0,
+"d": 15.0,
+"h": 17.0
+},
+{
+"asset": 10847897579,
+"kind": "chair",
+"name": "chairs",
+"w": 19.24,
+"d": 13.15,
+"h": 4.68
+},
+{
+"asset": 10847897579,
+"kind": "desk",
+"name": "tables|desks",
+"w": 70.06,
+"d": 61.79,
+"h": 6.17
+},
+{
+"asset": 10847897579,
+"kind": "sofa",
+"name": "couches",
+"w": 38.76,
+"d": 23.84,
+"h": 4.02
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "window_c_glass",
+"w": 12.44,
+"d": 0.04,
+"h": 3.6
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "window_c_glass",
+"w": 1.4,
+"d": 0.04,
+"h": 5.89
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "window_c_glass",
+"w": 1.4,
+"d": 0.04,
+"h": 5.89
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_sconce_a",
+"w": 1.36,
+"d": 0.77,
+"h": 1.86
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_sconce_a_off",
+"w": 1.36,
+"d": 0.77,
+"h": 1.86
+},
+{
+"asset": 10847897579,
+"kind": "desk",
+"name": "desk lamp_off",
+"w": 2.51,
+"d": 1.05,
+"h": 3.52
+},
+{
+"asset": 10847897579,
+"kind": "desk",
+"name": "desk lamp",
+"w": 2.51,
+"d": 1.05,
+"h": 3.52
+},
+{
+"asset": 10847897579,
+"kind": "stairs",
+"name": "rail_stair",
+"w": 10.17,
+"d": 0.61,
+"h": 11.57
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_tall_5m",
+"w": 5.0,
+"d": 0.56,
+"h": 4.75
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_sm",
+"w": 2.5,
+"d": 0.56,
+"h": 4.75
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel 10x4pt5",
+"w": 10.0,
+"d": 0.56,
+"h": 4.75
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_tall_2pt5m",
+"w": 2.5,
+"d": 0.56,
+"h": 7.25
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_tall_5m",
+"w": 5.0,
+"d": 0.56,
+"h": 7.25
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel 10x7",
+"w": 10.0,
+"d": 0.56,
+"h": 7.25
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_sm_corner",
+"w": 1.13,
+"d": 1.13,
+"h": 4.75
+},
+{
+"asset": 10847897579,
+"kind": "wall",
+"name": "wall_panel_tall_corner",
+"w": 1.13,
+"d": 1.13,
+"h": 7.25
+},
+{
+"asset": 10847897579,
+"kind": "stairs",
+"name": "stairs",
+"w": 24.39,
+"d": 17.07,
+"h": 16.0
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "furniture_pantry_window_shelf",
+"w": 5.5,
+"d": 1.29,
+"h": 13.12
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "furniture_pantry_window_shelf",
+"w": 5.5,
+"d": 1.29,
+"h": 13.12
+},
+{
+"asset": 10847897579,
+"kind": "fridge",
+"name": "furniture_kitchen_fridgecabinet",
+"w": 8.01,
+"d": 3.55,
+"h": 11.75
+},
+{
+"asset": 10847897579,
+"kind": "fridge",
+"name": "furniture_kitchen_fridge_normal",
+"w": 6.0,
+"d": 3.85,
+"h": 7.5
+},
+{
+"asset": 10847897579,
+"kind": "door",
+"name": "door_left",
+"w": 5.78,
+"d": 0.82,
+"h": 6.74
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "islandcountertop",
+"w": 12.89,
+"d": 7.35,
+"h": 0.18
+},
+{
+"asset": 10847897579,
+"kind": "table",
+"name": "furniture_coffeetable",
+"w": 5.22,
+"d": 2.97,
+"h": 1.77
+},
+{
+"asset": 10847897579,
+"kind": "chair",
+"name": "couch_blanket_chair",
+"w": 4.77,
+"d": 4.43,
+"h": 3.01
+},
+{
+"asset": 10847897579,
+"kind": "chair",
+"name": "couch_blanket_chair",
+"w": 4.77,
+"d": 4.43,
+"h": 3.01
+},
+{
+"asset": 10847897579,
+"kind": "sofa",
+"name": "pillow_couch_plaid",
+"w": 2.3,
+"d": 0.97,
+"h": 2.07
+},
+{
+"asset": 10847897579,
+"kind": "bed",
+"name": "dog bed",
+"w": 4.19,
+"d": 3.22,
+"h": 0.84,
+"mattress_top": 0.84
+},
+{
+"asset": 10847897579,
+"kind": "sofa",
+"name": "pillow_couch_leatherbrown",
+"w": 2.3,
+"d": 0.97,
+"h": 2.07
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 3.03,
+"d": 2.63,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 3.03,
+"d": 1.99,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top_back",
+"w": 4.09,
+"d": 0.72,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top_front",
+"w": 4.09,
+"d": 0.21,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top_left",
+"w": 2.1,
+"d": 0.11,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top_right",
+"w": 2.1,
+"d": 0.06,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 3.03,
+"d": 2.45,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 4.09,
+"d": 3.03,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 5.01,
+"d": 3.03,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "counter",
+"name": "counter top",
+"w": 2.98,
+"d": 2.0,
+"h": 0.11
+},
+{
+"asset": 10847897579,
+"kind": "window",
+"name": "wall_window",
+"w": 15.0,
+"d": 1.0,
+"h": 15.0
+},
+{
+"asset": 109085316139693,
+"kind": "door",
+"name": "wall and door",
+"w": 22.65,
+"d": 0.84,
+"h": 16.78
+},
+{
+"asset": 11107324912,
+"kind": "door",
+"name": "doors",
+"w": 86.5,
+"d": 59.05,
+"h": 9.0
+},
+{
+"asset": 11107324912,
+"kind": "window",
+"name": "windows",
+"w": 105.2,
+"d": 69.0,
+"h": 8.0
+},
+{
+"asset": 11107324912,
+"kind": "stairs",
+"name": "steps",
+"w": 6.8,
+"d": 2.8,
+"h": 2.2
+},
+{
+"asset": 11107324912,
+"kind": "window",
+"name": "window",
+"w": 3.6,
+"d": 0.2,
+"h": 3.8
+},
+{
+"asset": 113931513329874,
+"kind": "table",
+"name": "table",
+"w": 15.0,
+"d": 7.0,
+"h": 5.0
+},
+{
+"asset": 113931513329874,
+"kind": "stairs",
+"name": "rightstairs",
+"w": 4.0,
+"d": 4.0,
+"h": 7.0
+},
+{
+"asset": 113931513329874,
+"kind": "wall",
+"name": "stonebrickwall",
+"w": 4.0,
+"d": 1.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "chair",
+"name": "chair",
+"w": 3.0,
+"d": 3.0,
+"h": 6.0,
+"seat_top": 3.0
+},
+{
+"asset": 113931513329874,
+"kind": "bed",
+"name": "bed",
+"w": 9.0,
+"d": 5.0,
+"h": 5.0,
+"mattress_top": 3.0
+},
+{
+"asset": 113931513329874,
+"kind": "wall",
+"name": "wall",
+"w": 4.0,
+"d": 1.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "stairs",
+"name": "centerstairs",
+"w": 4.0,
+"d": 4.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "door",
+"name": "door",
+"w": 4.0,
+"d": 2.0,
+"h": 8.0
+},
+{
+"asset": 113931513329874,
+"kind": "chair",
+"name": "stool",
+"w": 2.0,
+"d": 2.0,
+"h": 4.0,
+"seat_top": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "fridge",
+"name": "fridge",
+"w": 6.0,
+"d": 6.0,
+"h": 11.0
+},
+{
+"asset": 113931513329874,
+"kind": "sofa",
+"name": "sofa",
+"w": 4.0,
+"d": 3.0,
+"h": 4.0,
+"seat_top": 2.0
+},
+{
+"asset": 113931513329874,
+"kind": "sofa",
+"name": "couch",
+"w": 10.0,
+"d": 3.0,
+"h": 4.0,
+"seat_top": 2.0
+},
+{
+"asset": 113931513329874,
+"kind": "table",
+"name": "coffee table",
+"w": 6.0,
+"d": 3.0,
+"h": 2.0
+},
+{
+"asset": 113931513329874,
+"kind": "stairs",
+"name": "leftstairs",
+"w": 4.0,
+"d": 4.0,
+"h": 7.0
+},
+{
+"asset": 113931513329874,
+"kind": "stairs",
+"name": "understairs",
+"w": 4.0,
+"d": 4.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "wall",
+"name": "paperwall",
+"w": 4.0,
+"d": 1.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "wall",
+"name": "checkerwall",
+"w": 4.0,
+"d": 1.0,
+"h": 4.0
+},
+{
+"asset": 113931513329874,
+"kind": "tv",
+"name": "tv stand",
+"w": 10.0,
+"d": 4.0,
+"h": 8.4
+},
+{
+"asset": 113931513329874,
+"kind": "counter",
+"name": "counter",
+"w": 4.0,
+"d": 4.0,
+"h": 5.0
+},
+{
+"asset": 120324467212099,
+"kind": "chair",
+"name": "chair",
+"w": 5.71,
+"d": 5.71,
+"h": 5.45
+},
+{
+"asset": 120324467212099,
+"kind": "table",
+"name": "table",
+"w": 3.1,
+"d": 3.0,
+"h": 2.5
+},
+{
+"asset": 120324467212099,
+"kind": "sofa",
+"name": "sofa",
+"w": 10.3,
+"d": 4.3,
+"h": 4.7
+},
+{
+"asset": 120324467212099,
+"kind": "bed",
+"name": "bed",
+"w": 10.1,
+"d": 6.0,
+"h": 4.5,
+"mattress_top": 1.67
+},
+{
+"asset": 120324467212099,
+"kind": "door",
+"name": "door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.0
+},
+{
+"asset": 120324467212099,
+"kind": "door",
+"name": "front door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.01
+},
+{
+"asset": 120324467212099,
+"kind": "door",
+"name": "door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.0
+},
+{
+"asset": 120324467212099,
+"kind": "table",
+"name": "table",
+"w": 3.1,
+"d": 3.0,
+"h": 2.5
+},
+{
+"asset": 120324467212099,
+"kind": "bed",
+"name": "bed",
+"w": 10.1,
+"d": 6.0,
+"h": 4.5,
+"mattress_top": 1.68
+},
+{
+"asset": 120324467212099,
+"kind": "tv",
+"name": "tv",
+"w": 7.7,
+"d": 0.35,
+"h": 5.0
+},
+{
+"asset": 120324467212099,
+"kind": "door",
+"name": "door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.0
+},
+{
+"asset": 120324467212099,
+"kind": "toilet",
+"name": "toilet",
+"w": 4.14,
+"d": 3.26,
+"h": 4.08
+},
+{
+"asset": 120324467212099,
+"kind": "door",
+"name": "back door",
+"w": 5.5,
+"d": 1.35,
+"h": 9.0
+},
+{
+"asset": 120324467212099,
+"kind": "table",
+"name": "table",
+"w": 3.1,
+"d": 3.0,
+"h": 2.5
+},
+{
+"asset": 120324467212099,
+"kind": "bed",
+"name": "bed",
+"w": 10.1,
+"d": 6.0,
+"h": 4.5,
+"mattress_top": 1.68
+},
+{
+"asset": 128596293552193,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.4,
+"h": 6.06
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 8.0,
+"d": 1.0,
+"h": 4.4
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 5.6,
+"d": 1.0,
+"h": 4.4
+},
+{
+"asset": 128596293552193,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.4,
+"h": 6.06
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 128596293552193,
+"kind": "window",
+"name": "window",
+"w": 3.4,
+"d": 1.0,
+"h": 4.59
+},
+{
+"asset": 12990753158,
+"kind": "stairs",
+"name": "stairs",
+"w": 21.54,
+"d": 9.19,
+"h": 12.37
+},
+{
+"asset": 12990753158,
+"kind": "stairs",
+"name": "stairs",
+"w": 21.58,
+"d": 9.3,
+"h": 12.48
+},
+{
+"asset": 12990753158,
+"kind": "stairs",
+"name": "stairs",
+"w": 23.49,
+"d": 8.28,
+"h": 12.21
+},
+{
+"asset": 12990753158,
+"kind": "door",
+"name": "glass door",
+"w": 10.19,
+"d": 0.81,
+"h": 8.9
+},
+{
+"asset": 1596137596,
+"kind": "tv",
+"name": "tv",
+"w": 12.48,
+"d": 0.54,
+"h": 7.75
+},
+{
+"asset": 1596137596,
+"kind": "tv",
+"name": "tv",
+"w": 12.48,
+"d": 0.54,
+"h": 7.75
+},
+{
+"asset": 1596137596,
+"kind": "tv",
+"name": "tv",
+"w": 12.48,
+"d": 0.54,
+"h": 7.75
+},
+{
+"asset": 1596137596,
+"kind": "tv",
+"name": "tv",
+"w": 12.48,
+"d": 0.54,
+"h": 7.75
+},
+{
+"asset": 1596137596,
+"kind": "tv",
+"name": "tv",
+"w": 12.48,
+"d": 0.54,
+"h": 7.75
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 4.8,
+"d": 0.4,
+"h": 1.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 9.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 8.6,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 2.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 8.6,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 2.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 4.8,
+"d": 0.4,
+"h": 1.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 9.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 8.6,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 2.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "wall",
+"name": "carwall",
+"w": 8.6,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "doorframe",
+"w": 2.2,
+"d": 0.4,
+"h": 9.6
+},
+{
+"asset": 1596137596,
+"kind": "door",
+"name": "door 309",
+"w": 4.6,
+"d": 0.2,
+"h": 10.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "doors",
+"w": 86.5,
+"d": 59.05,
+"h": 9.0
+},
+{
+"asset": 16842575548,
+"kind": "window",
+"name": "windows",
+"w": 105.2,
+"d": 69.0,
+"h": 8.0
+},
+{
+"asset": 16842575548,
+"kind": "table",
+"name": "dining room table set",
+"w": 16.0,
+"d": 11.05,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 16842575548,
+"kind": "wall",
+"name": "wallclock",
+"w": 2.2,
+"d": 0.2,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "desk",
+"name": "desk",
+"w": 10.0,
+"d": 9.0,
+"h": 3.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 3.18,
+"d": 3.18,
+"h": 3.8
+},
+{
+"asset": 16842575548,
+"kind": "desk",
+"name": "desklamp",
+"w": 2.37,
+"d": 1.89,
+"h": 2.86
+},
+{
+"asset": 16842575548,
+"kind": "desk",
+"name": "desk",
+"w": 8.2,
+"d": 3.2,
+"h": 6.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.35,
+"d": 2.2,
+"h": 3.8
+},
+{
+"asset": 16842575548,
+"kind": "table",
+"name": "bedside table",
+"w": 4.0,
+"d": 4.0,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "bed",
+"name": "bed",
+"w": 10.0,
+"d": 6.0,
+"h": 5.0,
+"mattress_top": 2.1
+},
+{
+"asset": 16842575548,
+"kind": "stairs",
+"name": "steps",
+"w": 6.8,
+"d": 2.8,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "desk",
+"name": "desk",
+"w": 20.0,
+"d": 3.6,
+"h": 3.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "rollingchair",
+"w": 3.2,
+"d": 3.2,
+"h": 4.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "livingroomchair",
+"w": 5.26,
+"d": 5.12,
+"h": 4.0
+},
+{
+"asset": 16842575548,
+"kind": "bed",
+"name": "bed",
+"w": 10.0,
+"d": 8.4,
+"h": 6.0,
+"mattress_top": 2.1
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 2.7,
+"d": 0.5,
+"h": 9.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 1.0,
+"h": 9.1
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 3.7,
+"d": 0.8,
+"h": 8.6
+},
+{
+"asset": 16842575548,
+"kind": "sofa",
+"name": "couch",
+"w": 10.8,
+"d": 4.0,
+"h": 4.0
+},
+{
+"asset": 16842575548,
+"kind": "table",
+"name": "coffeetable",
+"w": 12.0,
+"d": 6.0,
+"h": 2.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "livingroomchair",
+"w": 5.26,
+"d": 5.12,
+"h": 4.0
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "livingroomchair",
+"w": 4.8,
+"d": 4.51,
+"h": 4.0
+},
+{
+"asset": 16842575548,
+"kind": "wall",
+"name": "wallclock",
+"w": 2.2,
+"d": 0.2,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "toilet",
+"name": "toiletpaperdispenser",
+"w": 1.6,
+"d": 0.9,
+"h": 1.0
+},
+{
+"asset": 16842575548,
+"kind": "toilet",
+"name": "toilet",
+"w": 3.7,
+"d": 2.5,
+"h": 3.3
+},
+{
+"asset": 16842575548,
+"kind": "counter",
+"name": "bathroomcounter",
+"w": 21.2,
+"d": 3.2,
+"h": 2.8
+},
+{
+"asset": 16842575548,
+"kind": "counter",
+"name": "counter",
+"w": 14.0,
+"d": 8.0,
+"h": 0.4
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "stool",
+"w": 2.4,
+"d": 2.4,
+"h": 1.8
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "stool",
+"w": 2.4,
+"d": 2.4,
+"h": 1.8
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "stool",
+"w": 2.4,
+"d": 2.4,
+"h": 1.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 4.0,
+"d": 0.41,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "doorframe",
+"w": 4.0,
+"d": 0.6,
+"h": 9.1
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 3.7,
+"d": 0.8,
+"h": 8.6
+},
+{
+"asset": 16842575548,
+"kind": "table",
+"name": "coffeemaker",
+"w": 2.31,
+"d": 1.4,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 4.0,
+"d": 0.7,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "counter",
+"name": "kitchen counters",
+"w": 22.2,
+"d": 21.6,
+"h": 8.8
+},
+{
+"asset": 16842575548,
+"kind": "fridge",
+"name": "fridge",
+"w": 5.2,
+"d": 3.9,
+"h": 6.6
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "chair",
+"w": 2.65,
+"d": 2.6,
+"h": 4.15
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "deckchair",
+"w": 4.05,
+"d": 3.93,
+"h": 4.57
+},
+{
+"asset": 16842575548,
+"kind": "table",
+"name": "table",
+"w": 2.8,
+"d": 2.6,
+"h": 2.2
+},
+{
+"asset": 16842575548,
+"kind": "chair",
+"name": "deckchair",
+"w": 4.42,
+"d": 4.3,
+"h": 4.57
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 11.98,
+"d": 0.76,
+"h": 10.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 11.98,
+"d": 0.76,
+"h": 10.8
+},
+{
+"asset": 16842575548,
+"kind": "stairs",
+"name": "step",
+"w": 6.0,
+"d": 1.4,
+"h": 1.0
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "window",
+"name": "window",
+"w": 3.6,
+"d": 0.2,
+"h": 3.8
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.4,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.6,
+"d": 0.2,
+"h": 1.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16842575548,
+"kind": "door",
+"name": "door",
+"w": 1.8,
+"d": 0.2,
+"h": 2.6
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed",
+"w": 13.2,
+"d": 7.38,
+"h": 5.16,
+"mattress_top": 5.16
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.61,
+"d": 2.39,
+"h": 4.73
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "fridge",
+"name": "fridge",
+"w": 4.36,
+"d": 1.24,
+"h": 7.28
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "door",
+"w": 2.43,
+"d": 0.24,
+"h": 1.34
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "door",
+"w": 2.43,
+"d": 0.24,
+"h": 1.34
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.61,
+"d": 2.39,
+"h": 4.73
+},
+{
+"asset": 16864783838,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "chair",
+"name": "office chair",
+"w": 3.95,
+"d": 3.79,
+"h": 6.03
+},
+{
+"asset": 16864783838,
+"kind": "table",
+"name": "gaming  table",
+"w": 10.62,
+"d": 4.12,
+"h": 3.6
+},
+{
+"asset": 16864783838,
+"kind": "table",
+"name": "gaming  table",
+"w": 10.62,
+"d": 4.12,
+"h": 3.6
+},
+{
+"asset": 16864783838,
+"kind": "table",
+"name": "aesthetic potted table plant - reggie",
+"w": 5.19,
+"d": 4.85,
+"h": 4.84
+},
+{
+"asset": 16864783838,
+"kind": "table",
+"name": "aesthetic potted table plant - reggie",
+"w": 5.19,
+"d": 4.85,
+"h": 4.84
+},
+{
+"asset": 16864783838,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 12.85,
+"d": 10.03,
+"h": 3.4,
+"mattress_top": null
+},
+{
+"asset": 16864783838,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "bed",
+"name": "modern bed-side table",
+"w": 3.4,
+"d": 3.27,
+"h": 3.4,
+"mattress_top": 3.4
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 16864783838,
+"kind": "door",
+"name": "modern door in black!",
+"w": 4.0,
+"d": 0.6,
+"h": 7.0
+},
+{
+"asset": 16864783838,
+"kind": "table",
+"name": "metal table",
+"w": 11.05,
+"d": 5.43,
+"h": 3.83
+},
+{
+"asset": 16864783838,
+"kind": "sofa",
+"name": "sofa",
+"w": 8.53,
+"d": 3.33,
+"h": 3.52
+},
+{
+"asset": 195466922,
+"kind": "counter",
+"name": "kitchencounter",
+"w": 8.0,
+"d": 4.0,
+"h": 3.0
+},
+{
+"asset": 195466922,
+"kind": "counter",
+"name": "kitchencounter",
+"w": 8.0,
+"d": 4.0,
+"h": 3.0
+},
+{
+"asset": 195466922,
+"kind": "toilet",
+"name": "toilet",
+"w": 4.2,
+"d": 3.5,
+"h": 4.2
+},
+{
+"asset": 195466922,
+"kind": "window",
+"name": "blue little window!",
+"w": 5.0,
+"d": 1.0,
+"h": 4.8
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "rightwall",
+"w": 2.8,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "wall",
+"w": 8.0,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "leftwall",
+"w": 2.8,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "rightwall",
+"w": 2.8,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "wall",
+"w": 8.0,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 195466922,
+"kind": "wall",
+"name": "leftwall",
+"w": 2.8,
+"d": 0.4,
+"h": 2.6
+},
+{
+"asset": 317197851,
+"kind": "chair",
+"name": "patio chair",
+"w": 7.64,
+"d": 7.64,
+"h": 5.72
+},
+{
+"asset": 317197851,
+"kind": "chair",
+"name": "patio chair",
+"w": 7.64,
+"d": 7.64,
+"h": 5.72
+},
+{
+"asset": 5162762041,
+"kind": "window",
+"name": "windows",
+"w": 244.2,
+"d": 50.02,
+"h": 72.62
+},
+{
+"asset": 5162762041,
+"kind": "wall",
+"name": "brickwalls",
+"w": 251.36,
+"d": 76.61,
+"h": 75.47
+},
+{
+"asset": 5162762041,
+"kind": "door",
+"name": "door",
+"w": 5.44,
+"d": 0.05,
+"h": 10.31
+},
+{
+"asset": 5162762041,
+"kind": "wall",
+"name": "walloutlines",
+"w": 173.85,
+"d": 8.38,
+"h": 75.47
+},
+{
+"asset": 5162762041,
+"kind": "door",
+"name": "sidedoorframe",
+"w": 11.15,
+"d": 0.05,
+"h": 10.61
+},
+{
+"asset": 5162762041,
+"kind": "door",
+"name": "frontdoorframes",
+"w": 41.01,
+"d": 0.05,
+"h": 10.61
+},
+{
+"asset": 8019635721,
+"kind": "chair",
+"name": "table & chairs",
+"w": 14.8,
+"d": 9.8,
+"h": 5.0,
+"seat_top": 2.4
+},
+{
+"asset": 8019635721,
+"kind": "desk",
+"name": "desk",
+"w": 8.61,
+"d": 5.07,
+"h": 5.81,
+"seat_top": 2.73
+},
+{
+"asset": 8019635721,
+"kind": "door",
+"name": "door",
+"w": 4.56,
+"d": 0.57,
+"h": 3.18
+},
+{
+"asset": 8019635721,
+"kind": "fridge",
+"name": "samsung refrigerator",
+"w": 5.15,
+"d": 4.97,
+"h": 8.86
+},
+{
+"asset": 8019635721,
+"kind": "table",
+"name": "coffeemaker",
+"w": 2.51,
+"d": 1.52,
+"h": 2.39
+},
+{
+"asset": 8019635721,
+"kind": "toilet",
+"name": "bathroom toilet",
+"w": 3.92,
+"d": 2.6,
+"h": 5.15
+},
+{
+"asset": 8019635721,
+"kind": "tv",
+"name": "tv",
+"w": 10.99,
+"d": 1.69,
+"h": 6.47
+},
+{
+"asset": 8019635721,
+"kind": "tv",
+"name": "modern tv stand",
+"w": 7.83,
+"d": 2.37,
+"h": 3.1
+},
+{
+"asset": 8019635721,
+"kind": "bed",
+"name": "aesthetic white bed fluffy",
+"w": 16.64,
+"d": 15.23,
+"h": 4.79,
+"mattress_top": 3.25
+},
+{
+"asset": 8019635721,
+"kind": "door",
+"name": "doorframe",
+"w": 6.53,
+"d": 1.09,
+"h": 9.79
+},
+{
+"asset": 8019635721,
+"kind": "door",
+"name": "doorframe",
+"w": 6.53,
+"d": 1.09,
+"h": 9.79
+},
+{
+"asset": 8019635721,
+"kind": "door",
+"name": "doorframe",
+"w": 6.2,
+"d": 4.21,
+"h": 9.79
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "door",
+"name": "doorframe",
+"w": 3.83,
+"d": 0.2,
+"h": 6.35
+},
+{
+"asset": 89827080922446,
+"kind": "door",
+"name": "doorframe",
+"w": 3.83,
+"d": 0.2,
+"h": 6.35
+},
+{
+"asset": 89827080922446,
+"kind": "door",
+"name": "doorframe",
+"w": 3.83,
+"d": 0.2,
+"h": 6.4
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 89827080922446,
+"kind": "door",
+"name": "doorframe",
+"w": 3.83,
+"d": 0.2,
+"h": 6.35
+},
+{
+"asset": 89827080922446,
+"kind": "window",
+"name": "window",
+"w": 5.4,
+"d": 1.0,
+"h": 7.5
+},
+{
+"asset": 93115987040579,
+"kind": "door",
+"name": "meshes/door lock",
+"w": 0.74,
+"d": 0.47,
+"h": 1.23
+},
+{
+"asset": 93115987040579,
+"kind": "door",
+"name": "meshes/door lock",
+"w": 0.74,
+"d": 0.47,
+"h": 1.23
+},
+{
+"asset": 94893550,
+"kind": "door",
+"name": "door   pppppp",
+"w": 4.0,
+"d": 0.4,
+"h": 4.0
+},
+{
+"asset": 94893550,
+"kind": "bed",
+"name": "medical bed",
+"w": 14.0,
+"d": 4.0,
+"h": 4.0,
+"mattress_top": 2.4
+},
+{
+"asset": 94893550,
+"kind": "sofa",
+"name": "couch",
+"w": 6.0,
+"d": 4.0,
+"h": 4.0,
+"seat_top": 2.0
+},
+{
+"asset": 94893550,
+"kind": "door",
+"name": "tycoon owner door",
+"w": 6.0,
+"d": 1.0,
+"h": 9.6
+},
+{
+"asset": 984809285,
+"kind": "door",
+"name": "door",
+"w": 8.5,
+"d": 0.8,
+"h": 7.9
+},
+{
+"asset": 984809285,
+"kind": "door",
+"name": "door",
+"w": 9.0,
+"d": 0.8,
+"h": 10.4
+},
+{
+"asset": 984809285,
+"kind": "door",
+"name": "door",
+"w": 5.5,
+"d": 0.8,
+"h": 7.1
+},
+{
+"asset": 984809285,
+"kind": "door",
+"name": "door",
+"w": 9.0,
+"d": 0.8,
+"h": 10.3
+}
+]

@@ -10,14 +10,14 @@ const S = v => v * STUD, frame = (w, h, dz, x, col, y0 = 0) => { const g = new T
 const gl = new THREE.GridHelper(40, 40 * 3, '#bbb', '#ddd'); scene.add(gl);
 const guy = await makeR6({ face: false, res: 256, skin: '#c68a62', shirt: 'assets/tex/shirt_m.png', pants: 'assets/tex/pants_m.png' }); scene.add(guy.root);
 // x positions (m): door, seat+table, bed, counter, stairs, ceiling bar
-frame(4.5, 7.5, .3, 1.6, '#8fb3d9');                       // door 4.5 x 7.5
-frame(2, 1.5, 2, 3.0, '#c9a27a'); frame(4, .25, 3, 3.9, '#c9a27a', 2.7); frame(.3, 2.7, .3, 3.9 - S(1.8), '#c9a27a'); frame(.3, 2.7, .3, 3.9 + S(1.8), '#c9a27a');   // seat 1.5 high, table top 2.95
-frame(5, 1.8, 8, 6.2, '#b9c7a8');                          // single bed 5 x 8, mattress top 1.8
-frame(4, 3.2, 2, 8.4, '#d9c48f');                          // counter 3.2
+frame(4.5, 8.4, .3, 1.6, '#8fb3d9');                       // door 4.5 x 8.4
+frame(2, 2.0, 2, 3.0, '#c9a27a'); frame(4, .25, 3, 3.9, '#c9a27a', 2.35); frame(.3, 2.35, .3, 3.9 - S(1.8), '#c9a27a'); frame(.3, 2.35, .3, 3.9 + S(1.8), '#c9a27a');   // seat 2.0, table top 2.6
+frame(5.6, 2.4, 10, 6.3, '#b9c7a8');                        // bed 5.6 x 10, mattress top 2.4
+frame(4, 3.0, 2, 8.4, '#d9c48f');                          // counter 3.0
 for (let i = 0; i < 6; i++) frame(3, .6, 1.2, 10.2 + i * S(1.2) * 0, '#bbb', 0) ;
 for (let i = 0; i < 6; i++) { const g = new THREE.Mesh(new THREE.BoxGeometry(S(3), S(.6 * (i + 1)), S(1.2)), new THREE.MeshStandardMaterial({ color: '#aaa', transparent: true, opacity: .6 })); g.position.set(10.0 + i * S(1.2), S(.3 * (i + 1)), 0); scene.add(g); }
-frame(.3, 10, .3, -1.0, '#e08f8f');                        // ceiling 10 studs
-const cam = new THREE.OrthographicCamera(-1.6, 12.6, 4.3, -.4, .1, 50); cam.position.set(0, 0, 20); cam.lookAt(0, 0, 0); R.render(scene, cam);
+frame(.3, 12, .3, -1.0, '#e08f8f');                        // ceiling 12 studs
+const cam = new THREE.OrthographicCamera(-1.6, 12.6, 4.7, -.4, .1, 50); cam.position.set(0, 0, 20); cam.lookAt(0, 0, 0); R.render(scene, cam);
 const px = v => [(v[0] + 1.6) / 14.2 * W, H - (v[1] + .4) / 4.7 * H]; window.labels = { door: px([1.6, S(7.5) + .15]), seat: px([3.3, S(3.6)]), bed: px([6.2, S(1.8) + .2]), counter: px([8.4, S(3.2) + .15]), stairs: px([10.6, S(3.6) + .2]), ceiling: px([-1.0, S(10) + .12]), guy: px([0, S(5.2) + .1]) };
 window.ready = true;
 </script>
