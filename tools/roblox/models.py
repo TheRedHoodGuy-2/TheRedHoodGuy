@@ -46,6 +46,39 @@ def cylinder(sx, sy, sz):   # Roblox cylinders run along X
 def ball(sx, sy, sz):
     import trimesh; m = trimesh.creation.icosphere(subdivisions=3, radius=.5); m.apply_scale((sx, sy, sz)); return m
 
+# UNIONS (CSG): the union's mesh is stored in its MeshData (or the asset its AssetId points to) as a 'CSGMDL' file,
+# XOR-obfuscated with a fixed 31-byte key (found 2026-11-18 by byte-frequency analysis: the decoded header reads CSGMDL).
+# v4 layout: 'CSGMDL', int version, 16-char hash, 16 unknown bytes, int vertex count, int stride (84), vertices
+# (pos 3f, normal 3f, packed colour, pad, uv 2f, tangent...), int index count, int32 indices.
+CSG_KEY = b'V.nX1 0\x044i\x0cw\x0c\x01^\x00\x1a`7i\x1dR+\x07O$YeS\x04z'
+def csg_mesh(data):
+    import struct
+    if data[:6] != b'CSGMDL': data = bytes(b ^ CSG_KEY[i % 31] for i, b in enumerate(data))
+    if data[:6] != b'CSGMDL': raise ValueError('not a CSG mesh')
+    ver = struct.unpack_from('<i', data, 6)[0]; o = 6 + 4 + 16 + 16
+    nv, st = struct.unpack_from('<ii', data, o); o += 8
+    if st < 32 or nv <= 0 or o + nv * st > len(data): raise ValueError(f'CSG v{ver}: unexpected layout nv={nv} stride={st}')
+    V = np.frombuffer(data, dtype=np.float32, count=nv * st // 4, offset=o).reshape(nv, st // 4); o += nv * st
+    ni = struct.unpack_from('<i', data, o)[0]; o += 4
+    I = np.frombuffer(data, dtype=np.int32, count=ni, offset=o).reshape(-1, 3)
+    return V[:, :3].astype(float), I
+def union_mesh(p, warn):
+    import trimesh
+    pr = p['props']; data = pr.get('MeshData')
+    if not isinstance(data, (bytes, bytearray)) or len(data) < 64:
+        aid = rbxm.asset_id(pr.get('AssetId'))
+        if not aid: return None
+        try: data = fetch.raw(aid)
+        except Exception as e: warn.append(f'union asset {aid}: {e}'); return None
+        if data[:7] == b'<roblox':   # newer unions: the asset is a small model file (PartOperationAsset) holding the MeshData
+            md = [i['props'].get('MeshData') for i in rbxm.parse(data)]; md = [m for m in md if isinstance(m, (bytes, bytearray)) and len(m) > 64]
+            if not md: warn.append(f'union asset {aid}: no MeshData inside'); return None
+            data = md[0]
+    try: v, f = csg_mesh(bytes(data))
+    except Exception as e: warn.append(f'union: {e}'); return None
+    size = np.array(pr.get('size') or pr.get('Size') or (1, 1, 1), float); init = np.array(pr.get('InitialSize') or (v.max(0) - v.min(0)), float)
+    return trimesh.Trimesh(v * size / np.where(init == 0, 1, init), f, process=False)
+
 def part_mesh(p, kids, warn):
     import trimesh
     pr = p['props']; size = np.array(pr.get('size') or pr.get('Size') or (1, 1, 1), float); cls = p['class']
@@ -79,12 +112,19 @@ def convert(aid):
     warn, groups, stats = [], {}, {'parts': 0, 'skipped_invisible': 0, 'unions_skipped': 0, 'decals': 0}
     top = next((i for i in inst if i['parent'] == -1), None)
     for p in inst:
-        if p['class'] in ('UnionOperation', 'PartOperation', 'NegateOperation'): stats['unions_skipped'] += p['class'] != 'NegateOperation'; continue
-        if p['class'] in ('Decal', 'Texture'): stats['decals'] += 1; continue
-        if p['class'] not in PART_CLASSES: continue
+        if p['class'] == 'NegateOperation': continue
+        if p['class'] in ('UnionOperation', 'PartOperation'):
+            if (p['props'].get('Transparency') or 0) >= .95: stats['skipped_invisible'] += 1; continue
+            g = union_mesh(p, warn)
+            if g is None: stats['unions_skipped'] += 1; continue
+            stats['unions'] = stats.get('unions', 0) + 1
+        elif p['class'] in ('Decal', 'Texture'): stats['decals'] += 1; continue
+        elif p['class'] not in PART_CLASSES: continue
+        else: g = None
         pr = p['props']
-        if (pr.get('Transparency') or 0) >= .95: stats['skipped_invisible'] += 1; continue
-        g = part_mesh(p, kids.get(p['id'], []), warn)
+        if g is None:
+            if (pr.get('Transparency') or 0) >= .95: stats['skipped_invisible'] += 1; continue
+            g = part_mesh(p, kids.get(p['id'], []), warn)
         if g is None or not len(g.faces): continue
         cf = pr.get('CFrame') or {'pos': (0, 0, 0), 'rot': None}; R = np.array(cf['rot'] or np.eye(3).ravel(), float).reshape(3, 3)
         M = np.eye(4); M[:3, :3] = R; M[:3, 3] = cf['pos']; g.apply_transform(M)

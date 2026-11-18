@@ -9,7 +9,14 @@
   woven fabric with sheen, Metal -> metal, Glass -> glass, Plastic -> smooth plastic, Brick / stone -> our textures.
 - Sample sheet: docs/sheets/models_v1.jpg (10 modern pieces next to our R6).
 
-## Known limits (honest)
+## 2026-11-18 17:20 update: UNIONS SOLVED
+- Union meshes are read now: MeshData (or the PartOperationAsset its AssetId points to) is a 'CSGMDL' v4 file,
+  XOR-obfuscated with a fixed 31-byte key, then vertices (stride 84) + int32 indices. The office chair, lamp,
+  wardrobe and beds now come through complete (docs/sheets/models_v2.jpg).
+- One pull tool for everything: `python3 tools/pull.py <any Roblox link or id>` routes catalog items (clothes, hair,
+  accessories) and Creator Store models automatically, and renders a check picture to out/pull/<id>.png.
+
+## Known limits (honest, before the update)
 - UNIONS (CSG parts) cannot be read yet. Models built from unions lose those parts: in the sample the office chair
   (33 unions) and the lamp (6) come out broken. Models made of MeshParts (the sofa, the beds) come through well.
   Fix = a reader for Roblox's union mesh format; until then the tool flags `unions_skipped` and only clean models

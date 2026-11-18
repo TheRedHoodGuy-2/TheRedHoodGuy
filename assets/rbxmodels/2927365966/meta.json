@@ -2,18 +2,21 @@
  "id": 2927365966,
  "name": "Modern Office Chair",
  "size_m": [
-  0.868,
-  1.488,
-  0.844
+  0.972,
+  1.602,
+  0.93
  ],
  "materials": [
   "mat~Plastic~1b2a35",
   "mat~Plastic~797a82",
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~5b5d69",
   "mat~SmoothPlastic~9fa1ac"
  ],
- "parts": 130,
+ "parts": 162,
  "skipped_invisible": 1,
- "unions_skipped": 33,
+ "unions_skipped": 1,
  "decals": 0,
+ "unions": 32,
  "warnings": []
 }

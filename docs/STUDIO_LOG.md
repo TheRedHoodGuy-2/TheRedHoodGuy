@@ -205,3 +205,8 @@ Next phase: 7 faces / face animation / lip sync.
   history; `git clone TheRedHoodGuy.bundle` restores it). A half-made `repo` folder there could not be deleted (no
   delete permission while he slept): safe to delete. Future mirrors: overwrite files\ and the bundle after each push.
 - Review page (all overnight results + decision boxes): https://claude.ai/artifact/E6kz1NPD3bmkh98SchE72U
+
+## 2026-11-18 17:09-17:25
+- Decisions: length = as long as the script needs, max 3:30; voices = Roblox male + Roblox girl; scale draft NOT
+  approved (Claude must verify it by measurement first).
+- Union reader done (tools/roblox/models.py); tools/pull.py now pulls ANY Roblox link (catalog or Creator Store).

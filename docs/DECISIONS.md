@@ -38,3 +38,9 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 ## 2026-11-16 Reference videos
 - From the cloud, YouTube lets Claude list a channel's Shorts with view counts, but blocks downloads (bot check).
   The video files are downloaded on the laptop and shared through a connected folder.
+
+## 2026-11-18 17:09 (Xavier)
+- Video length: as long as the script needs, hard max 3:30.
+- Voice: a "Roblox male" and a "Roblox girl" voice (the Roblox-style voices that go viral). Provider to set up.
+- Scale draft NOT approved: Xavier can't tell if it is accurate -> Claude must verify it against real Roblox maps / Gneef
+  frames (measured, not guessed) before asking again.

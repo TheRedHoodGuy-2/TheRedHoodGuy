@@ -4,18 +4,24 @@
  "size_m": [
   4.007,
   3.478,
-  0.984
+  0.999
  ],
  "materials": [
+  "mat~Metal~d3be96",
   "mat~Plastic~a3a2a5",
   "mat~Plastic~c4281c",
   "mat~Plastic~f8f8f8",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~e7e7ec",
   "mat~SmoothPlastic~f8f8f8",
   "mat~Wood~111111"
  ],
- "parts": 110,
+ "parts": 124,
  "skipped_invisible": 30,
- "unions_skipped": 14,
+ "unions_skipped": 0,
  "decals": 0,
+ "unions": 14,
  "warnings": []
 }
