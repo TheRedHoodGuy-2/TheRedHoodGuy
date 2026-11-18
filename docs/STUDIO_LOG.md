@@ -167,3 +167,9 @@ continuous-path camera within a scene; scene changes = camera motion carries ove
 event-reactive camera (impact shake, reveal push); one-focus rule per shot + R6 9:16 framing/headroom rules;
 frame-rate test 24 vs 30 vs 60 fps on one shot for Xavier to pick (60 = double render time).
 Next phase: 5 animation + posing.
+Camera decided (10:00): 30 fps if visibly smoother than 24 (test one shot); Gneef-pace cuts with motion-matched shots
+(camera keeps its direction of travel across the cut) + 0.25 s dissolves between places; motion curves maxed.
+Animation/posing foundations (agreed, build later at max effort): research (12 principles, Roblox animation, R6 posing)
++ explainer-kit lessons; POSE LESSONS system: every pose Xavier gives is diffed against Claude's, the principle is
+written down with before/after images, new poses are built from principles + the emotion and checked against them.
+Next phase: 6 clothing triage + character bank + 3D clothing fixes.

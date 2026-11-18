@@ -106,3 +106,12 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
     the camera's framing and motion carry on and the WORLD changes under it, with a short fade/dissolve (not slow, not
     a hard cut).
   - The camera reacts to events (hit a table from a low "giant" angle -> small shake) so the viewer feels it.
+
+## 2026-11-18 10:00 Frame rate, cuts, posing must be LEARNED not copied
+- Smoothness comes from motion curves: use camera motion curves to the max. 30 fps if it is visibly smoother than 24.
+- Combine Gneef's ~1.5 s snappy cuts + continuous gliding camera + short dissolves (~0.25 s) between places.
+- Poses: when Xavier makes a pose, Claude must LEARN WHY (what changed vs Claude's version and what principle it
+  shows) and apply the principle to new situations, never paste the same pose for the same emotion.
+- Animation step = deep research first: 12 principles of animation, how animation works, Roblox animation, R6 posing.
+  Then merge with explainer-kit lessons (locked motion style, dynamic posing, action arcs). Xavier will run that step
+  at max effort.
