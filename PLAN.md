@@ -31,3 +31,11 @@ Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_clo
 - Accessories: 4,507 (hats 1,856, face 652, front 606, back 527, neck 490, shoulder 215, waist 161). https://claude.ai/artifact/WYFcg6U5fNY7Dve7L9eCGi
 - 3D layered clothing: 2,499 of 12,958 found (top by favourites; disk limit). Made for the slim R15 body, NOT fitted to R6 yet. https://claude.ai/artifact/P955JRMdynQ5jaSdZ2NN7k
 - Sorting is by name keywords + hair length: rough, Xavier corrects by number.
+
+2026-11-18: 3D CLOTHING REDONE. Xavier: the slim-body 3D library was "pure shit"; he wants only 3D clothing made for R6.
+- Searched the catalog's 3D clothing types with R6 keywords (13,067 found), pulled each and kept only pieces whose shape matches
+  the R6 body (tops: arms out to about 2 studs each side; bottoms: two legs, about 2 studs tall): 1,444 kept, the rest deleted.
+- Engine: 3D clothing is centred by body (tops on the torso, bottoms on the legs), pushed out of the body so nothing pokes
+  through, the body under it painted the garment's colour, and split onto the arms and legs so it follows poses.
+- `python3 tools/pull.py <catalog link or id> ...` = the "plugin": pull any catalog item by link and render it on our R6 bodies.
+- Xavier wants the flat clothing and accessory libraries trimmed later (no rainbow junk); not done yet.

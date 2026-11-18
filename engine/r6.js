@@ -98,6 +98,44 @@ function femaleTorso(g) {
   for (let i = 0; i < P.count; i++) { const y = P.getY(i); P.setX(i, P.getX(i) * f(y)); P.setZ(i, P.getZ(i) * fz(y)); }
   return smoothNormals(g);
 }
+// 3D clothing made for R6 sits on the body's surface; any of its vertices that end up inside the torso, an arm or a leg
+// (stud boxes in torso space) are pushed out to just over the nearest face, so the body never shows through.
+const BODY_BOXES = [[[-1, -1, -.5], [1, 1, .5]], [[1, -1, -.5], [2, 1, .5]], [[-2, -1, -.5], [-1, 1, .5]], [[0, -3, -.5], [1, -1, .5]], [[-1, -3, -.5], [0, -1, .5]]];
+function pushOut(handle, torso) {
+  handle.updateMatrixWorld(true); torso.updateMatrixWorld(true); const v = new THREE.Vector3(), m = new THREE.Matrix4(), mi = new THREE.Matrix4(), PAD = .025;
+  handle.traverse(o => { if (!o.isMesh) return;
+    m.copy(torso.matrixWorld).invert().multiply(o.matrixWorld); mi.copy(m).invert(); const P = o.geometry.attributes.position; let moved = 0;
+    for (let i = 0; i < P.count; i++) { v.fromBufferAttribute(P, i).applyMatrix4(m);
+      for (const [lo, hi] of BODY_BOXES) { if (v.x <= lo[0] - PAD || v.x >= hi[0] + PAD || v.y <= lo[1] - PAD || v.y >= hi[1] + PAD || v.z <= lo[2] - PAD || v.z >= hi[2] + PAD) continue;
+        const d = [[v.x - lo[0] + PAD, 0, -1], [hi[0] + PAD - v.x, 0, 1], [v.y - lo[1] + PAD, 1, -1], [hi[1] + PAD - v.y, 1, 1], [v.z - lo[2] + PAD, 2, -1], [hi[2] + PAD - v.z, 2, 1]];
+        if (lo[0] === -1 && hi[0] === 1) d.splice(2, 2);   // the torso's top and bottom are covered by the head and legs: never push up or down out of it
+        const [, ax, sg] = d.reduce((a, b) => b[0] < a[0] ? b : a); v.setComponent(ax, sg < 0 ? lo[ax] - PAD : hi[ax] + PAD); moved++; }
+      v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); }
+    if (moved) { P.needsUpdate = true; o.geometry.computeVertexNormals(); o.geometry.computeBoundingBox(); o.geometry.computeBoundingSphere(); } });
+}
+// 3D clothing is one rigid mesh; split its triangles by where they sit (torso space, studs) and hand each piece to the
+// body part under it, so sleeves follow the arms and trouser legs follow the legs when the character is posed.
+function rigToLimbs(handle, parts) {
+  handle.updateMatrixWorld(true); const torso = parts.torso, m = new THREE.Matrix4(), a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
+  const meshes = []; handle.traverse(o => { if (o.isMesh) meshes.push(o); });
+  for (const o of meshes) {
+    m.copy(torso.matrixWorld).invert().multiply(o.matrixWorld); const g = o.geometry, P = g.attributes.position;
+    const idx = g.index ? g.index.array : Array.from({ length: P.count }, (_, i) => i), buckets = { torso: [], armL: [], armR: [], legL: [], legR: [] };
+    for (let t = 0; t < idx.length; t += 3) {
+      a.fromBufferAttribute(P, idx[t]).applyMatrix4(m); b.fromBufferAttribute(P, idx[t + 1]).applyMatrix4(m); c.fromBufferAttribute(P, idx[t + 2]).applyMatrix4(m);
+      const x = (a.x + b.x + c.x) / 3, y = (a.y + b.y + c.y) / 3;
+      const k = y < -1.02 ? (x >= 0 ? 'legR' : 'legL') : x > 1.02 ? 'armR' : x < -1.02 ? 'armL' : 'torso';
+      buckets[k].push(idx[t], idx[t + 1], idx[t + 2]);
+    }
+    for (const [k, list] of Object.entries(buckets)) {
+      if (!list.length || k === 'torso') continue;
+      const gg = new THREE.BufferGeometry(); for (const [n, at] of Object.entries(g.attributes)) gg.setAttribute(n, at); gg.setIndex(list);
+      const piece = new THREE.Mesh(gg, o.material); piece.castShadow = piece.receiveShadow = true; o.parent.add(piece); piece.matrix.copy(o.matrix); piece.matrix.decompose(piece.position, piece.quaternion, piece.scale);
+      parts[k].attach(piece);
+    }
+    g.setIndex(buckets.torso);
+  }
+}
 function headGeo(fx = .3, fy = .3) {   // the supplied model's head, measured exactly: radius .6, height 1.2, a round .3 fillet top and bottom (flat cap radius .3)
   const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 16;
   pts.push(new THREE.Vector2(0.0001, -H));
@@ -165,17 +203,31 @@ export async function makeR6(spec = {}) {
   api.setFace = (name = 'neutral') => { const t = drawFace(name, sex, 'ink'); t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; faceMat.map = t; faceMat.needsUpdate = true; api.faceName = name; };
   if (spec.face === false) facePatch.visible = false; else api.setFace(spec.face || 'neutral');   // face: false = bare head (faces are their own checklist item)
   // catalog accessories (converted by tools/roblox/fetch.py into assets/roblox/<id>/)
+  // under a 3D top, the body blocks it covers are painted in the garment's main colour, so any sliver between the cloth
+  // and the body reads as cloth, never as skin
+  async function underlay(p, handle) {
+    let col = null; handle.traverse(o => { if (!col && o.isMesh && o.material.map?.image) { const im = o.material.map.image, cc = document.createElement('canvas'); cc.width = cc.height = 32;
+      const x = cc.getContext('2d'); x.drawImage(im, 0, 0, 32, 32); const d = x.getImageData(0, 0, 32, 32).data, px = [];
+      for (let i = 0; i < d.length; i += 4) if (d[i + 3] > 200) px.push([d[i], d[i + 1], d[i + 2]]);
+      px.sort((a, b) => (a[0] + a[1] + a[2]) - (b[0] + b[1] + b[2])); const m = px[Math.floor(px.length / 2)]; if (m) col = `rgb(${m[0]},${m[1]},${m[2]})`; } });
+    if (!col) col = `rgb(${(p.color || [163, 162, 165]).join(',')})`;
+    const t = document.createElement('canvas'); t.width = 585; t.height = 559; const tx = t.getContext('2d'); tx.fillStyle = col; tx.fillRect(0, 0, 585, 559);
+    const bottom = (p.attachments || []).some(a => a.name.startsWith('Waist'));   // pants and skirts hang from the waist
+    blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']); map.needsUpdate = true;
+  }
   api.wear = async (id, { tint = null, part = null } = {}) => {
     const meta = await (await fetch(url(`assets/roblox/${id}/meta.json`))).json(); const out = [];
     for (const p of meta.parts) {
       const gltf = await new GLTFLoader().loadAsync(url(`assets/roblox/${id}/${p.file}`)); const handle = new THREE.Group(); handle.add(gltf.scene);
+      gltf.scene.traverse(o => { if (o.isMesh && String(p.meshVersion || '').startsWith('7')) o.geometry.computeVertexNormals(); });   // v7 meshes come out with broken normals (rendered black)
       gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; const m = o.material; o.material = new THREE.MeshStandardMaterial({ map: m.map || null, color: tint ? new THREE.Color(tint) : (m.map ? 0xffffff : new THREE.Color(...(p.color || [163, 162, 165]).map(v => v / 255))), roughness: .7, metalness: 0, side: THREE.DoubleSide }); if (o.material.map) o.material.map.colorSpace = THREE.SRGBColorSpace; } });
       // line the handle's attachment up with the same-named attachment on the body
       let done = false;
       for (const a of p.attachments) for (const [pk, list] of Object.entries(ATTACH)) if (!done && list[a.name] && (!part || part === pk)) {
         const r = a.rot || [1, 0, 0, 0, 1, 0, 0, 0, 1], A = new THREE.Matrix4().set(r[0], r[1], r[2], a.pos[0], r[3], r[4], r[5], a.pos[1], r[6], r[7], r[8], a.pos[2], 0, 0, 0, 1);
-        const B = new THREE.Matrix4().makeTranslation(...list[a.name]); if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
+        const B = new THREE.Matrix4().makeTranslation(...(p.layered && pk !== 'head' ? (a.name.startsWith('Waist') ? [0, -2, 0] : [0, 0, 0]) : list[a.name]))   /* 3D clothing is fitted by its cage, not its attachment: tops centre on the torso, bottoms on the legs */; if (p.layered && pk === 'head') B.multiply(new THREE.Matrix4().makeScale(1.2, 1.12, 1.2));   // layered hair is cut for the smaller new heads
         handle.applyMatrix4(B.multiply(A.invert())); parts[pk].add(handle); done = true;
+        if (p.layered && pk === 'torso') { pushOut(handle, parts.torso); await underlay(p, handle); rigToLimbs(handle, parts); }   // 3D clothing: nothing of the body may poke through it
       }
       if (!done) { handle.position.set(0, .6, 0); parts.head.add(handle); }
       out.push(handle); api.accessories.push({ id, handle, meta: p });
