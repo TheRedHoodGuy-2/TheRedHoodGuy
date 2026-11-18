@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>House design board</title>
+<style>
+body { margin:0; background:#f5f2ec; font:15px/1.45 system-ui,"Segoe UI",sans-serif; color:#24262a; }
+.wrap { width:1760px; padding:30px 34px; }
+h1 { margin:0; font-size:34px; letter-spacing:-.01em } .sub { color:#5e6570; margin:4px 0 20px; font-size:16px }
+.plans { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-bottom:22px }
+.plan { background:#fff; border:1px solid #e3ded4; border-radius:12px; padding:12px }
+.plan h3 { margin:0 0 6px; font-size:15px; color:#5e6570; text-transform:uppercase; letter-spacing:.06em }
+svg text { font: 600 7.5px system-ui; fill:#2b2d31 } svg .dim { font-weight:400; fill:#6a717c; font-size:6.5px }
+.rooms { display:grid; grid-template-columns:repeat(4,1fr); gap:14px }
+.card { background:#fff; border:1px solid #e3ded4; border-radius:12px; padding:12px 14px }
+.card h4 { margin:0 0 6px; font-size:16px } .sw { display:flex; gap:6px; margin:6px 0 8px } .sw div { flex:1; height:34px; border-radius:6px; border:1px solid rgba(0,0,0,.08); position:relative }
+.sw span { position:absolute; bottom:-15px; left:0; font-size:9px; color:#6a717c; white-space:nowrap }
+.card p { margin:16px 0 0; font-size:13px; color:#3b3f45 } .card b { color:#24262a }
+</style></head><body><div class="wrap" id="w"></div>
+<script>
+const H = {
+ A: { title: 'House A: warm modern (the guy\'s family)', sub: 'Two storeys + finished basement + attic. White-oak floors, creamy walls, walnut and black accents, olive and terracotta soft goods, a dark-teal kitchen. Sizes in metres at our Roblox scale (real plans x 1.4).',
+  floors: {
+   'Ground floor': [['Entry + stairs',0,0,3,5.5,'#e9dfcf'],['Living room',3,0,6,6,'#efe6d6'],['Kitchen',9,0,5,4.8,'#cfdad6'],['Dining',9,4.8,5,3.7,'#efe6d6'],['Toilet',0,5.5,3,3,'#e6e0d6'],['Laundry / storage',3,6,6,2.5,'#e2ddd3'],['Garage (1 storey)',14,0,6.5,8.5,'#d9d6cf']],
+   'Upstairs': [['Hall + stairs',0,0,3,5.5,'#e9dfcf'],['Parents\' closet',0,5.5,3,3,'#e6ded2'],['Parents\' bedroom',3,0,6,4.8,'#efe3d3'],['En-suite',3,4.8,3,3.7,'#e6e0d6'],['His bedroom',9,0,5,4.8,'#c9ccd2'],['Bathroom (shower)',6,4.8,4,3.7,'#dfe3e0'],['Guest / office',10,4.8,4,3.7,'#ece4d8']],
+   'Basement (finished)': [['Rec room (TV, sofa)',0,0,8,6,'#d9d2c6'],['Storage + boiler',8,0,4,6,'#cfcac2']],
+   'Attic': [['Attic storage (slanted roof)',0,0,10,5,'#e0d3bf']] },
+  rooms: [
+   ['Living room', ['#efe6d6','#c8a27a','#5b4636','#6f7b4f','#c16a43'], ['cream','white oak','walnut','olive','terracotta'], 'Low <b>cream boucle sofa</b>, walnut coffee table, olive armchair, jute rug, black floor lamp, big window. Sun + warm lamp in the evening.'],
+   ['Kitchen', ['#24474a','#c8a27a','#efece6','#b68b4c','#2c2c2c'], ['dark teal','white oak','quartz','brass','black'], '<b>Dark-teal cabinets</b>, white-oak open shelves, white quartz island with 3 stools, brass taps and pendants.'],
+   ['Dining', ['#efe6d6','#5b4636','#c8a27a','#d8c3a5','#2c2c2c'], ['cream','walnut','oak','linen','black'], '<b>Walnut table</b> for 6, oak chairs, linen pendant, one big art print.'],
+   ['Toilet + bathrooms', ['#e7ddd0','#c16a43','#8e9a86','#efece6','#2c2c2c'], ['sand','terracotta','sage','white','black'], 'Floating oak vanity, <b>terracotta zellige</b> wall, clear glass shower panel, black fixtures, round mirror.'],
+   ['Parents\' bedroom', ['#efe3d3','#c8a27a','#d6c2a8','#7a8a6a','#2c2c2c'], ['warm white','oak','linen','sage','black'], 'Upholstered linen bed, oak nightstands, <b>linen bedding</b>, sage throw, wall sconces, wardrobe wall.'],
+   ['His bedroom', ['#3b4250','#22324a','#c8a27a','#e7e3dc','#6fa0ff'], ['charcoal','deep blue','oak','off-white','LED blue'], 'Charcoal accent wall, low platform bed, <b>gaming desk with monitor + LED strip</b>, shelf of sneakers, poster.'],
+   ['Basement rec room', ['#d9d2c6','#3d3a36','#8a6e52','#6f7b4f','#efe6d6'], ['greige','dark sofa','leather','olive','cream'], 'Big sectional, wall TV, rug, shelving, a small bar fridge. Cosy, low light.'],
+   ['Attic', ['#e0d3bf','#a88a64','#bfb3a0','#6b5a48','#f2e6c8'], ['raw pine','beams','dust','boxes','window light'], 'Slanted roof with <b>exposed beams</b>, boxes, old furniture under sheets, one round window: sunbeam + dust.'] ] },
+ B: { title: 'House B: soft organic (the family where the daughter is the child)', sub: 'Different plan and a lighter, softer style. Pale-oak floors, sage-green kitchen with brass, clay and cream, terracotta bathroom tile. Unfinished storage basement, attic.',
+  floors: {
+   'Ground floor': [['Entry',0,0,3,3.5,'#f0e9dd'],['Living room',3,0,6.5,5.5,'#f3ece1'],['Kitchen + island',9.5,0,5,5.5,'#cfdccb'],['Dining nook',9.5,5.5,5,3,'#f0e6d8'],['Stairs',0,3.5,3,3,'#efe6d8'],['Toilet',0,6.5,3,2,'#e9ddd1'],['Laundry',3,5.5,3,3,'#e3ded6'],['Mudroom / storage',6,5.5,3.5,3,'#e2dbd0']],
+   'Upstairs': [['Linen closet',0,0,3,3.5,'#e9e1d6'],['Hall + stairs',0,3.5,3,5,'#f0e9dd'],['Parents\' bedroom',3,0,5.5,5,'#efe6da'],['En-suite',3,5,3,3.5,'#ead7cb'],['Her bedroom',8.5,0,6,5,'#f2d8d6'],['Bathroom (shower)',6,5,4,3.5,'#e6d6c8'],['Little brother',10,5,4.5,3.5,'#dfe6ee']],
+   'Basement (storage)': [['Unfinished storage (concrete)',0,0,9,6,'#cfccc6'],['Furnace',9,0,3,6,'#c4c0b9']],
+   'Attic': [['Attic (slanted roof)',0,0,10,5,'#e4d8c6']] },
+  rooms: [
+   ['Living room', ['#f3ece1','#d9c3a4','#b9785a','#9aa88e','#e8d8c0'], ['cream','pale oak','clay','sage','linen'], 'Curved <b>clay-coloured sofa</b>, round pale-oak coffee table, big plants, woven pendant, arched mirror.'],
+   ['Kitchen', ['#9db49a','#e9e3d8','#c09b5a','#d9c3a4','#f7f4ee'], ['sage green','cream quartz','brass','pale oak','white'], '<b>Sage-green shaker cabinets</b>, brass handles, cream quartz, pale-oak island with rattan stools.'],
+   ['Dining nook', ['#f0e6d8','#d9c3a4','#b9785a','#9db49a','#e8d8c0'], ['cream','pale oak','clay','sage','linen'], 'Round table, bench seat with cushions, rattan pendant, window view.'],
+   ['Toilet + bathrooms', ['#d98a6a','#f2ebe2','#c09b5a','#9db49a','#e9e0d4'], ['terracotta','cream','brass','sage','sand'], '<b>Terracotta tile</b>, cream walls, brass fixtures, wood vanity, arched mirror, glass shower.'],
+   ['Parents\' bedroom', ['#efe6da','#b9785a','#d9c3a4','#9aa88e','#f6efe4'], ['cream','clay','pale oak','sage','white'], 'Rattan headboard, clay bedding, pale-oak nightstands, ceramic lamps.'],
+   ['Her bedroom', ['#f2d8d6','#c9b8e0','#f7f1ea','#d9c3a4','#ff7fb6'], ['blush','lavender','cream','pale oak','neon pink'], 'Blush walls, lavender bedding, <b>fairy lights + neon sign</b>, desk with ring light, hanging chair, plants.'],
+   ['Basement storage', ['#cfccc6','#8f8a82','#b59a74','#6d6a66','#e9e1d2'], ['concrete','steel shelves','cardboard','pipes','bulb light'], 'Bare concrete, steel shelves of boxes, washer/dryer, one hanging bulb. Spooky when needed.'],
+   ['Attic', ['#e4d8c6','#a88a64','#c9bba6','#6b5a48','#f2e6c8'], ['raw pine','beams','dust','trunks','window light'], 'Exposed beams, old trunk, rocking chair, dress form, one window.'] ] } };
+const k = new URLSearchParams(location.search).get('h') || 'A', D = H[k], w = document.getElementById('w'), S = 15;
+let html = `<h1>${D.title}</h1><p class="sub">${D.sub}</p><div class="plans">`;
+for (const [fl, rooms] of Object.entries(D.floors)) {
+  const mx = Math.max(...rooms.map(r => r[1] + r[3])), my = Math.max(...rooms.map(r => r[2] + r[4]));
+  html += `<div class="plan"><h3>${fl}</h3><svg width="100%" style="max-height:330px" viewBox="-4 -4 ${mx * S + 8} ${my * S + 8}">`;
+  for (const [n, x, y, ww, hh, c] of rooms) html += `<rect x="${x * S}" y="${y * S}" width="${ww * S}" height="${hh * S}" fill="${c}" stroke="#3a3c40" stroke-width="2.5"/><text x="${x * S + 4}" y="${y * S + 11}" textLength="${Math.min(n.length * 4.1, ww * S - 8)}" lengthAdjust="spacingAndGlyphs">${n}</text><text class="dim" x="${x * S + 4}" y="${y * S + 20}">${ww} x ${hh} m</text>`;
+  html += `</svg></div>`;
+}
+html += `</div><div class="rooms">`;
+for (const [n, cols, names, txt] of D.rooms) html += `<div class="card"><h4>${n}</h4><div class="sw">${cols.map((c, i) => `<div style="background:${c}"><span>${names[i]}</span></div>`).join('')}</div><p>${txt}</p></div>`;
+w.innerHTML = html + `</div>`; window.ready = true;
+</script></body></html>
