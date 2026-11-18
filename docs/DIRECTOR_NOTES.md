@@ -183,3 +183,8 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - 2026-11-18 20:29 Trees: blob trees (noisy spheres, low-poly facets) REJECTED hard ("low poly pieces of shit"). Trees are
   built like game trees: real trunk + branches + hundreds of alpha leaf cards from a real leaf scan (engine/sets/town.js
   treeParts). Never ship faceted blobs for foliage.
+- 2026-11-18 21:41 "Look at the frames yourself" (again, angry, he waited hours): I sent room sheets with a chair facing a
+  blank doorway, pillows standing upright, a toilet in the middle of a bathroom (its invisible water block pushed it off
+  the wall), clipping pieces. RULE: every set build runs the furnish self-check (clips / through walls / doorways / loose
+  pieces auto-nudged) AND I look at every still before sending. Chairs face what they serve (table, desk, TV). Nothing
+  goes out with a known clash.

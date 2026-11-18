@@ -33,17 +33,17 @@ for (const [id, r] of Object.entries(HS.rooms)) {
   const R = r.refs, rect = r.rect, cx = rect.x + rect.w / 2, cz = rect.z + rect.d / 2, yb = r.y;
   let p, l;
   if (rect.type === 'attic') { p = [rect.x + 1.2, yb + 2.4, rect.z + rect.d / 2 + .6]; l = [rect.x + rect.w * .7, yb + .8, rect.z + rect.d / 2 - .4]; }
-  else if (Math.min(R.W, R.D) < 2.2) {   // corridors: from one end, down the long axis
+  else if (['corridor', 'hall'].includes(rect.type)) {   // corridors: from one end, down the long axis
     const alongX = R.W > R.D; p = alongX ? [cx - R.W / 2 + .9, yb + 2.2, cz] : [cx, yb + 2.2, cz + R.D / 2 - .9]; l = alongX ? [cx + R.W / 2, yb + 1.0, cz] : [cx, yb + 1.0, cz - R.D / 2]; }
   else {   // from a corner opposite the room's main piece, looking across at it; the first corner with a clear view wins
     const f = r.focus || 'n', hw = R.W / 2 - .25, hd = R.D / 2 - .25, cands = [];
-    for (const ff of [f, { n: 'e', e: 's', s: 'w', w: 'n' }[f], { n: 'w', w: 's', s: 'e', e: 'n' }[f]]) for (const s2 of [1, -1]) { const C = { n: [[s2 * hw, hd], [-s2 * hw * .25, -hd * .7]], s: [[s2 * hw, -hd], [-s2 * hw * .25, hd * .7]], e: [[-hw, s2 * hd], [hw * .7, -s2 * hd * .25]], w: [[hw, s2 * hd], [-hw * .7, -s2 * hd * .25]] }[ff];
+    for (const ff of r.camStrict ? [f] : [f, { n: 'e', e: 's', s: 'w', w: 'n' }[f], { n: 'w', w: 's', s: 'e', e: 'n' }[f]]) for (const s2 of [1, -1]) { const C = { n: [[s2 * hw, hd], [-s2 * hw * .25, -hd * .7]], s: [[s2 * hw, -hd], [-s2 * hw * .25, hd * .7]], e: [[-hw, s2 * hd], [hw * .7, -s2 * hd * .25]], w: [[hw, s2 * hd], [-hw * .7, -s2 * hd * .25]] }[ff];
       cands.push([[cx + C[0][0], yb + 2.35, cz + C[0][1]], [cx + C[1][0], yb + 1.0, cz + C[1][1]]]); }
     const clear = ([pp, ll]) => { const L = new THREE.Vector3(...ll), Pp = new THREE.Vector3(...pp), dir = Pp.clone().sub(L), dist = dir.length(); dir.normalize();
       const h = new THREE.Raycaster(L, dir, .3, dist).intersectObject(R.root, true).filter(q => q.object.material && !q.object.material.transparent && q.object.material.colorWrite !== false); return !h.length || h[0].distance > dist - .05; };
     // free space round the camera (8 level rays): a corner jammed against a bookcase loses to one with room
     const shell = new Set([...Object.values(R.walls), R.ceiling, R.root.children[0]]), isShell = o => { for (let x = o; x; x = x.parent) if (shell.has(x)) return true; return false; };
-    const room8 = pp => { let m = 2; for (let i = 0; i < 8; i++) { const d = new THREE.Vector3(Math.cos(i * Math.PI / 4), -.35, Math.sin(i * Math.PI / 4)).normalize(); const h = new THREE.Raycaster(new THREE.Vector3(...pp), d, 0, 2).intersectObject(R.root, true).filter(q => q.object.material && !q.object.material.transparent && q.object.material.colorWrite !== false && !isShell(q.object)); if (h.length) m = Math.min(m, h[0].distance); } return m; };
+    const room8 = pp => { let m = 2; for (let i = 0; i < 16; i++) { const d = new THREE.Vector3(Math.cos(i * Math.PI / 4), i < 8 ? -.7 : .15, Math.sin(i * Math.PI / 4)).normalize(); const h = new THREE.Raycaster(new THREE.Vector3(...pp), d, 0, 2.6).intersectObject(R.root, true).filter(q => q.object.material && !q.object.material.transparent && q.object.material.colorWrite !== false && !isShell(q.object)); if (h.length) m = Math.min(m, h[0].distance); } return m; };
     let best = -1; for (const [i, c] of cands.entries()) { const sc = (clear(c) ? 4 : 0) + room8(c[0]) - (i >= 2 ? .6 : 0); if (sc > best) { best = sc; [p, l] = c; } } }
   { // keep the camera out of the furniture: from the look point back to the camera, stop .35 before anything in the way
     const L = new THREE.Vector3(...l), Pp = new THREE.Vector3(...p), dir = Pp.clone().sub(L), dist = dir.length(); dir.normalize();

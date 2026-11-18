@@ -235,3 +235,11 @@ Next phase: 7 faces / face animation / lip sync.
   signs, leaf-card street trees, House A + B on two real lots. Sheet docs/sheets/town_v1.jpg.
 - Known gaps (v1): his-bedroom desk corner cluttered; attic dust sheets read as blocks; shower glass hard to see;
   hallway still cameras face walls; town buildings are shells with painted windows (by design until a story needs one).
+
+## 2026-11-18 22:40 World v2: self-checked rooms
+- Root causes fixed: placement boxes ignored see-through parts (toilet water block), model yaw was undone by placement
+  (sofas were sideways), desk items placed in world axes (monitors faced the wall), pillows stood upright.
+- furnish.js now self-checks every room: pieces clipping each other, through walls, in doorways; loose pieces (chairs,
+  plants, lamps, boxes) auto-nudge to a clear spot; chairs face their table / desk; walls track what already stands on
+  them. Final report: zero problems (only the optional dining console is skipped where no wall is free).
+- Sheets: docs/sheets/house_{A,B}_built_v2.jpg.

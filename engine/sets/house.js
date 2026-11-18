@@ -67,7 +67,7 @@ async function attic(parent, r, y, M) {
   for (const s of [-1, 1]) {   // roof boards (inside face) + rafters every 1.1 m
     const roof = bbox(W + .2, .06, L, M.boards, .004); roof.rotation.x = -s * slope; roof.position.set(W / 2, (knee + ridge) / 2 + .1, D / 2 - s * D / 4); g.add(roof);
     for (let x = .3; x < W; x += 1.1) { const rf = bbox(.09, .18, L, M.rafter, .01); rf.rotation.x = -s * slope; rf.position.set(x, (knee + ridge) / 2 - .03, D / 2 - s * D / 4); g.add(rf); }
-    g.add(place(bbox(W, knee, .1, M.boards, .004), W / 2, knee / 2, s < 0 ? D - .05 : .05));
+    g.add(place(bbox(W, knee + .35, .1, M.boards, .004), W / 2, (knee + .35) / 2, s < 0 ? D - .05 : .05));   // knee wall taller than the roof's foot: no daylight gap along the eaves
   }
   g.add(place(bbox(W, .2, .14, M.rafter, .01), W / 2, ridge - .05, D / 2));   // ridge beam
   for (const x of [.05, W - .05]) {   // gable end walls with a window (the round-window look comes from its frame)

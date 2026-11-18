@@ -3,7 +3,9 @@
 import * as THREE from 'three';
 import { STUD } from './r6.js';
 
-const box = o => { o.updateMatrixWorld(true); return new THREE.Box3().setFromObject(o); };
+// placement box: OPAQUE meshes only (store models carry invisible / see-through parts, e.g. a toilet's water block, that
+// pushed pieces off the wall into the middle of the room)
+export const box = o => { o.updateMatrixWorld(true); const b = new THREE.Box3(), t = new THREE.Box3(); o.traverse(m => { if (m.isMesh && m.visible && !(m.material?.transparent && m.material.opacity < .9)) { if (!m.geometry.boundingBox) m.geometry.computeBoundingBox(); if (m.isInstancedMesh) return; t.copy(m.geometry.boundingBox).applyMatrix4(m.matrixWorld); b.union(t); } }); return b.isEmpty() ? new THREE.Box3().setFromObject(o) : b; };
 // on the floor at (x, z), turned by yaw (radians). The lowest point of the object touches y = 0.
 export function onFloor(o, x = 0, z = 0, yaw = 0) { o.rotation.y = yaw; o.position.set(x, 0, z); const b = box(o); o.position.y -= b.min.y; o.position.x += x - (b.min.x + b.max.x) / 2; o.position.z += z - (b.min.z + b.max.z) / 2; return o; }
 // against a wall of a room from engine/sets/roomkit.js: its BACK to the wall, its front (+z of the model) into the room.

@@ -6,6 +6,7 @@ import { mat } from '../materials.js';
 import { bbox, at, ph, cushion, drape, tableLamp } from '../build.js';
 import { loadRbx } from '../rbxmodel.js';
 
+const named = (o, n) => { o.name = n; return o; };
 // ---------- materials ----------
 const C = new Map(), once = (k, f) => { if (!C.has(k)) C.set(k, f()); return C.get(k); };
 export const M = {
@@ -41,14 +42,15 @@ const canvasTex = (w, h, draw) => { const c = document.createElement('canvas'); 
 // ---------- living ----------
 export const sofa = async ({ seat, frame, pillow, len = 2.9 }) => loadRbx(17203147978, { yaw: -Math.PI / 2, scale: len / 3.931,
   paint: { '635f62': seat, '474446': frame, '111111': pillow, a3a2a5: M.black() } });   // clean modern sofa (inspected: cushions / frame / pillows / tag are separate)
-export const loungeChair = async (cushionMat) => ph('modern_arm_chair_01', { scale: 1.45, swap: { modern_arm_chair_01_pillow: cushionMat } });
+export const loungeChair = async (cushionMat) => named(await ph('modern_arm_chair_01', { scale: 1.45, swap: { modern_arm_chair_01_pillow: cushionMat } }), 'armchair');
 export function coffeeTable({ wood, w = 1.7, d = .85, round = false }) {
   if (round) { const t = new THREE.Mesh(new THREE.CylinderGeometry(w / 2, w / 2, .06, 48), wood); t.position.y = .52; return shadow(grp(t, cyl(w / 2 - .12, w / 2 - .06, .46, wood, 0, .23, 0, 40))); }
   const g = grp(B(w, .06, d, wood, 0, .52, 0, .025), B(w - .2, .05, d - .17, wood, 0, .17, 0));
   for (const [x, z] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) g.add(cyl(.03, .022, .49, wood, x * (w / 2 - .06), .245, z * (d / 2 - .09), 16));
   return shadow(g);
 }
-export const rug = (m, w, d, edge = '#8d7558', round = false) => round ? shadow(grp(cyl(w / 2, w / 2, .012, m, 0, .006, 0, 64), cyl(w / 2 + .03, w / 2 + .03, .01, M.matte(edge), 0, .005, 0, 64)))
+export const rug = (m, w, d, edge = '#8d7558', round = false) => { const o = rugRaw(m, w, d, edge, round); o.userData.rug = true; o.name = 'rug'; return o; };
+const rugRaw = (m, w, d, edge, round) => round ? shadow(grp(cyl(w / 2, w / 2, .012, m, 0, .006, 0, 64), cyl(w / 2 + .03, w / 2 + .03, .01, M.matte(edge), 0, .005, 0, 64)))
   : shadow(grp(B(w, .012, d, m, 0, .006, 0, .006), B(w + .06, .01, d + .06, M.matte(edge), 0, .005, 0, .005)));
 export function arcLamp() {
   const g = new THREE.Group(), reach = 2.1, top = 2.75;
@@ -64,7 +66,7 @@ export function tv(w = 2.0) {
   for (const x of [-w * .4, w * .4]) g.add(B(.05, .07, .28, M.black(), x, .035, 0, .01));
   return shadow(g);
 }
-export const plant = async (pot, which = 'potted_plant_01') => ph(which, { scale: 1.45, swap: pot ? { [which + '_pot']: pot } : null });
+export const plant = async (pot, which = 'potted_plant_01') => named(await ph(which, { scale: 1.45, swap: pot ? { [which + '_pot']: pot } : null }), 'plant');
 export const pillows = async (m) => ph('throw_pillows_01', { scale: 1.45, swap: { throw_pillows_01: m } });
 export function art(colors, w = 1.2, h = 1.6, seed = 0) {
   const t = canvasTex(600, Math.round(600 * h / w), (x, W, H) => {
@@ -87,8 +89,8 @@ export function bed({ w = 1.9, l = 3.1, top = .82, frame, head, duvet, sheet, pi
   const dd = l * .7, dv = drape({ w: w - .02, d: dd, top, hang: .3, mat: duvet, thick: .05, waves: .012 }); dv.position.set(0, 0, l / 2 - dd / 2 - .02); g.add(dv);
   g.add(at(cushion(w + .02, .07, .32, sheet, { puff: .6, seam: .5 }), 0, top + .06, l / 2 - dd - .02 + .16));   // the turned-down sheet
   const n = w > 1.5 ? 2 : 1;
-  for (let i = 0; i < n; i++) { const p = cushion(.74, .2, .46, pillow, { puff: 1.2, seam: .35 }); p.rotation.x = -1.15; p.position.set(n === 1 ? 0 : (i - .5) * (w / 2), top + .25, -l / 2 + .2); g.add(p); }
-  if (accent) { const a = cushion(.5, .14, .4, accent, { puff: 1.1, seam: .4 }); a.rotation.x = -1.2; a.position.set(0, top + .2, -l / 2 + .45); g.add(a); }
+  for (let i = 0; i < n; i++) { const p = cushion(.74, .2, .46, pillow, { puff: 1.2, seam: .35 }); p.rotation.x = -.32; p.position.set(n === 1 ? 0 : (i - .5) * (w / 2), top + .13, -l / 2 + .32); g.add(p); }   // lying on the mattress, propped a little on the headboard
+  if (accent) { const a = cushion(.5, .14, .4, accent, { puff: 1.1, seam: .4 }); a.rotation.x = -.5; a.position.set(0, top + .14, -l / 2 + .62); g.add(a); }
   return shadow(g);
 }
 export function nightstand(wood, handle = M.brass()) { const h = .78; return shadow(grp(B(.75, h - .06, .6, wood, 0, .06 + (h - .06) / 2, 0, .015), B(.69, .01, .01, M.black(), 0, h * .55, .301, .002), B(.16, .02, .03, handle, 0, h * .72, .31, .005), ...[-1, 1].map(s => B(.04, .06, .04, M.black(), s * .32, .03, 0, .005)))); }
@@ -120,16 +122,16 @@ export function shelf({ w = 1.4, body, books = true }) { const g = grp(B(w, .05,
 export function bookcase({ w = 1.3, h = 2.6, d = .45, body }) { const g = grp(), n = 5;
   for (const s of [-1, 1]) g.add(B(.04, h, d, body, s * (w / 2 - .02), h / 2, 0, .004)); g.add(B(w, .04, d, body, 0, h - .02, 0, .004)); g.add(B(w - .04, h, .02, body, 0, h / 2, -d / 2 + .01, .002));
   for (let i = 0; i < n; i++) { const sh = shelf({ w: w - .08, body, books: i % 2 === 0 || i === 3 }); sh.position.y = .06 + i * (h - .1) / n; g.add(sh); } return shadow(g); }
-export const officeChair = async () => loadRbx(131726966724793, { yaw: 0, scale: 1.0, paint: { '*': { color: '#3a3b3f', kind: 'Fabric' } } });
-export const gamingChair = async (c = '#22324a') => loadRbx(9435226454, { yaw: -Math.PI / 2, scale: .85, paint: { f8f8f8: { color: c, kind: 'Fabric' } } });
+export const officeChair = async () => named(await loadRbx(131726966724793, { yaw: 0, scale: 1.0, paint: { '*': { color: '#3a3b3f', kind: 'Fabric' } } }), 'desk chair');
+export const gamingChair = async (c = '#22324a') => named(await loadRbx(9435226454, { yaw: -Math.PI / 2, scale: .85, paint: { f8f8f8: { color: c, kind: 'Fabric' } } }), 'gaming chair');
 // hanging egg chair, modelled (the store ones were faceted low-poly): woven rattan shell (a lathe, open at the front), a round
 // cushion inside, hung by a chain from a curved black stand
 export function eggChair(shellMat, cushionMat) {
   const g = new THREE.Group(), pts = []; for (let i = 0; i <= 24; i++) { const a = i / 24 * Math.PI; pts.push(new THREE.Vector2(Math.sin(a) * .55 * (1 - .15 * Math.cos(a)), -Math.cos(a) * .7)); }
   const shell = new THREE.Mesh(new THREE.LatheGeometry(pts, 40, Math.PI * .35, Math.PI * 1.3), shellMat); shell.material = shellMat; shell.material.side = THREE.DoubleSide; shell.position.y = 1.15;   // the lathe's open side faces +z (into the room) g.add(shell);
   g.add(at(cushion(.8, .14, .7, cushionMat, { puff: 1, seam: .5 }), 0, .62, .05));
-  g.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CubicBezierCurve3(new THREE.Vector3(0, .02, -.75), new THREE.Vector3(0, 2.5, -1.1), new THREE.Vector3(0, 2.9, -.2), new THREE.Vector3(0, 2.4, 0)), 60, .03, 10), M.black()));
-  g.add(cyl(.45, .45, .04, M.black(), 0, .02, -.75, 32), cyl(.008, .008, .5, M.black(), 0, 2.13, 0, 6));
+  g.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CubicBezierCurve3(new THREE.Vector3(0, .02, -.55), new THREE.Vector3(0, 2.4, -.85), new THREE.Vector3(0, 2.8, -.15), new THREE.Vector3(0, 2.4, 0)), 60, .03, 10), M.black()));
+  g.add(cyl(.42, .42, .04, M.black(), 0, .02, -.45, 32), cyl(.008, .008, .5, M.black(), 0, 2.13, 0, 6));   // compact stand: base tucked under the back of the shell
   return shadow(g); }
 export function poster(colors, title = '', w = .9, h = 1.25, seed = 1) { const t = canvasTex(360, 500, (x, W, H) => { const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, colors[0]); g.addColorStop(1, colors[1]); x.fillStyle = g; x.fillRect(0, 0, W, H);
     x.fillStyle = colors[2]; x.beginPath(); if (seed % 2) { x.moveTo(W * .5, H * .18); x.lineTo(W * .85, H * .7); x.lineTo(W * .15, H * .7); } else x.arc(W * .5, H * .42, W * .26, 0, 7); x.fill();
@@ -142,8 +144,8 @@ export function fairyLights(w, sag = .25, n = 22, c = '#ffd9a0') { const g = new
   g.add(tube(pts, .004, wire)); return g; }
 export function ringLight() { return shadow(grp(new THREE.Mesh(new THREE.TorusGeometry(.22, .022, 10, 48), M.glow('#fff6ea')), cyl(.012, .012, 1.4, M.black(), 0, -.75, 0, 8), cyl(.16, .18, .03, M.black(), 0, -1.46, 0, 24))).translateY(1.48); }
 export const tableLampW = (base, shade) => tableLamp({ baseMat: base, shadeMat: shade });
-export function toyBox(c) { return shadow(grp(B(.9, .5, .55, M.paint(c), 0, .25, 0, .04), B(.94, .06, .58, M.paint('#f2efe8'), 0, .53, 0, .03))); }
-export function beanBag(m) { return shadow(at(cushion(1.0, .6, 1.0, m, { puff: 1.6, seam: .3, seg: 20 }), 0, .3, 0)); }
+export function toyBox(c) { return named(shadow(grp(B(.9, .5, .55, M.paint(c), 0, .25, 0, .04), B(.94, .06, .58, M.paint('#f2efe8'), 0, .53, 0, .03))), 'toy box'); }
+export function beanBag(m) { return named(grp(shadow(at(cushion(1.0, .6, 1.0, m, { puff: 1.6, seam: .3, seg: 20 }), 0, .3, 0))), 'beanbag'); }
 
 // ---------- kitchen / dining ----------
 // a run of base cabinets with a counter (len along x, back at -z). opts.sink = x of the sink, opts.range = x of the range slot
@@ -178,7 +180,7 @@ export function island({ len = 2.6, d = 1.15, cab, counter, handle = M.black() }
   return shadow(g); }   // seating side = +z (overhang)
 export function stool(seat, legs = M.black()) { const sh = .92, g = grp(at(cushion(.46, .07, .46, seat, { puff: .6, seam: .6 }), 0, sh, 0), B(.36, .3, .04, seat, 0, sh + .2, -.2, .02));
   for (const [x, z] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { const l = cyl(.016, .016, sh, legs, x * .16, sh / 2, z * .16, 8); l.rotation.set(z * .06, 0, -x * .06); g.add(l); }
-  const ring = new THREE.Mesh(new THREE.TorusGeometry(.19, .01, 6, 24), legs); ring.rotation.x = Math.PI / 2; ring.position.y = .32; g.add(ring); return shadow(g); }
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(.19, .01, 6, 24), legs); ring.rotation.x = Math.PI / 2; ring.position.y = .32; g.add(ring); g.name = 'stool'; return shadow(g); }
 export const fridge = async () => { const o = await loadRbx(995603100, { yaw: -Math.PI / 2, scale: 2.55 / 3.961, paint: { f5cd30: M.steel(), f8f8f8: M.steel(), f2f3f3: M.steel() } }); return o; };
 export const microwave = async () => loadRbx(9587284235, { scale: .7 });
 export function diningTable({ w = 2.5, d = 1.25, wood, round = false }) { const h = .88;
@@ -191,7 +193,7 @@ export function diningChair({ wood, seat }) { const sh = .68, g = grp(at(cushion
 export function bench({ w = 1.8, seat, wood }) { return shadow(grp(at(cushion(w, .1, .5, seat, { puff: .5, seam: .6 }), 0, .56, 0), B(w, .46, .48, wood, 0, .23, 0, .01))); }
 
 // ---------- bathroom / laundry ----------
-export const toilet = async () => loadRbx(2091145711, { scale: .75, paint: { f8f8f8: M.ceramic(), e7e7ec: M.ceramic(), '90929c': M.ceramic() } });
+export const toilet = async () => named(await loadRbx(2091145711, { scale: .75, drop: ['cfdae4'], paint: { f8f8f8: M.ceramic(), e7e7ec: M.ceramic(), '90929c': M.ceramic() } }), 'toilet');
 export function vanity({ w = 1.3, body, top, sinkMat = M.ceramic(), tap = M.black() }) { const h = 1.12, g = grp(B(w, .55, .6, body, 0, h - .05 - .275, 0, .01), B(w + .02, .05, .62, top, 0, h - .025, 0, .006));
   g.add(B(w - .1, .006, .004, M.matte('#1a1a1a'), 0, h - .3, .301, .001)); for (const s of [-1, 1]) g.add(B(.2, .02, .03, tap, s * w / 4, h - .2, .32, .006));
   const bowl = new THREE.Mesh(new THREE.LatheGeometry([[0, 0], [.2, 0], [.23, .04], [.25, .14], [.24, .15], [.21, .03], [0, .03]].map(([x, y]) => new THREE.Vector2(x, y)), 40), sinkMat); bowl.position.set(0, h, .02); g.add(bowl);
@@ -202,14 +204,15 @@ export function mirror({ w = .9, h = 1.1, frame = M.black(), round = false, arch
   else { g.add(B(w, h, .03, frame, 0, h / 2, 0, .004)); const m = new THREE.Mesh(new THREE.PlaneGeometry(w - .06, h - .06), M.mirror()); m.position.set(0, h / 2, .016); g.add(m); }
   return shadow(g); }
 // walk-in shower in a corner: tiled tray, one fixed glass panel with a black frame, rain head + mixer on the back wall
-export function shower({ w = 1.5, d = 1.5, tile, metal = M.black() }) { const H = 2.9, g = grp(B(w, .06, d, tile, 0, .03, 0, .01));
-  const glass = new THREE.Mesh(new THREE.PlaneGeometry(d * .8, H - .1), M.glass()); glass.rotation.y = Math.PI / 2; glass.position.set(w / 2, H / 2 + .05, d * .1); g.add(glass);
-  g.add(B(.03, H, .03, metal, w / 2, H / 2, d * .1 - d * .4, .004), B(.03, .03, d * .8, metal, w / 2, H, d * .1, .004));
+export function shower({ w = 1.5, d = 1.5, tile, metal = M.black(), front = false }) { const H = 2.9, g = grp(B(w, .06, d, tile, 0, .03, 0, .01));
+  if (front) { const glass = new THREE.Mesh(new THREE.PlaneGeometry(w * .6, H - .1), M.glass()); glass.position.set(-w * .2, H / 2 + .05, d / 2); g.add(glass, B(.03, H, .03, metal, w * .1, H / 2, d / 2, .004), B(w * .6, .03, .03, metal, -w * .2, H, d / 2, .004)); }
+  else { const glass = new THREE.Mesh(new THREE.PlaneGeometry(d * .8, H - .1), M.glass()); glass.rotation.y = Math.PI / 2; glass.position.set(w / 2, H / 2 + .05, d * .1); g.add(glass);
+  g.add(B(.03, H, .03, metal, w / 2, H / 2, d * .1 - d * .4, .004), B(.03, .03, d * .8, metal, w / 2, H, d * .1, .004)); }
   g.add(cyl(.18, .18, .02, metal, 0, H - .1, -d / 2 + .35, 32), B(.02, .02, .35, metal, 0, H - .05, -d / 2 + .175, .004), cyl(.06, .06, .03, metal, 0, 1.4, -d / 2 + .015, 24));
-  g.children.at(-1).rotation.x = Math.PI / 2; return shadow(g); }
+  g.children.at(-1).rotation.x = Math.PI / 2; g.name = 'shower'; return shadow(g); }
 export function towelBar(towel, w = .7) { const g = grp(B(w, .02, .02, M.black(), 0, 0, .06, .008), B(.02, .04, .06, M.black(), -w / 2, 0, .03, .005), B(.02, .04, .06, M.black(), w / 2, 0, .03, .005)); g.add(at(cushion(w * .7, .05, .6, towel, { puff: .4, seam: .7 }), 0, -.28, .08)); g.children.at(-1).rotation.x = Math.PI / 2; return shadow(g); }
-export const washer = async () => loadRbx(2106113027, { scale: .62, paint: { f8f8f8: M.ceramic(), f9f9f9: M.ceramic(), f4f3f3: M.ceramic(), edeaea: M.ceramic(), d5d3d3: M.ceramic(), cdcdcd: M.ceramic(), '3f3c3e': M.matte('#444') } });
-export function basket(m) { return shadow(grp(cyl(.26, .22, .45, m, 0, .225, 0, 24))); }
+export const washer = async () => named(await loadRbx(2106113027, { scale: .62, paint: { f8f8f8: M.ceramic(), f9f9f9: M.ceramic(), f4f3f3: M.ceramic(), edeaea: M.ceramic(), d5d3d3: M.ceramic(), cdcdcd: M.ceramic(), '3f3c3e': M.matte('#444') } }), 'washer');
+export function basket(m) { return named(shadow(grp(cyl(.26, .22, .45, m, 0, .225, 0, 24))), 'basket'); }
 
 // ---------- garage / basement / attic ----------
 // drop the flat ground quad some scans include (triangles lying at the model's floor, wider than the model's footprint)
@@ -218,10 +221,10 @@ function stripGround(o) { o.traverse(m => { if (!m.isMesh) return; const g = m.g
   for (let t = 0; t < P.count; t += 3) { let flat = true, far = false; for (let k = 0; k < 3; k++) { if (Math.abs(P.getY(t + k) - y0) > .003) flat = false; if (Math.hypot(P.getX(t + k), P.getZ(t + k)) > .8) far = true; } if (!(flat && far)) keep.push(t); }
   const ng = new THREE.BufferGeometry(); for (const [k, a] of Object.entries(g.attributes)) { const arr = new a.array.constructor(keep.length * 3 * a.itemSize); keep.forEach((t, i) => { for (let v = 0; v < 3; v++) for (let c = 0; c < a.itemSize; c++) arr[(i * 3 + v) * a.itemSize + c] = a.array[(t + v) * a.itemSize + c]; }); ng.setAttribute(k, new THREE.BufferAttribute(arr, a.itemSize)); }
   m.geometry = ng; }); return o; }
-export const car = async () => loadRbx(133877355439325, { scale: 1.0 });
-export const steelShelves = async () => ph('steel_frame_shelves_01', { scale: .13 });   // this scan is in decimetres: .13 -> 1.43 m wide, 2.8 m tall
-export const box = async (s = 1.45) => ph('cardboard_box_01', { scale: s });
-export const toolChest = async () => ph('metal_tool_chest', { scale: 1.45 });
+export const car = async () => named(await loadRbx(133877355439325, { scale: 1.0 }), 'car');
+export const steelShelves = async () => named(await ph('steel_frame_shelves_01', { scale: .13 }), 'shelves');   // this scan is in decimetres: .13 -> 1.43 m wide, 2.8 m tall
+export const box = async (s = 1.45) => named(await ph('cardboard_box_01', { scale: s }), 'box');
+export const toolChest = async () => named(await ph('metal_tool_chest', { scale: 1.45 }), 'tool chest');
 export const rockingChair = async () => ph('Rockingchair_01', { scale: 1.45 });
 export const oldCabinet = async () => ph('vintage_cabinet_01', { scale: 1.3 });
 export const oldTable = async () => ph('round_wooden_table_01', { scale: 1.3 });
@@ -234,7 +237,9 @@ export function trunk(wood) { const g = grp(B(1.3, .6, .7, wood, 0, .3, 0, .02),
 export function dressForm() { const g = grp(cyl(.02, .02, 1.3, M.walnut(), 0, .65, 0, 10), cyl(.25, .28, .04, M.walnut(), 0, .02, 0, 24));
   const t = new THREE.Mesh(new THREE.LatheGeometry([[0, 0], [.2, 0], [.24, .2], [.18, .45], [.22, .7], [.2, .82], [.08, .9], [.05, .98], [0, 1]].map(([x, y]) => new THREE.Vector2(x, y)), 32), M.linen('#d8c8b0')); t.scale.z = .7; t.position.y = 1.25; g.add(t); return shadow(g); }
 // a dust sheet thrown over an old armchair: cloth over a chair-shaped mound
-export function sheetCovered(m) { const g = new THREE.Group(); const d = drape({ w: 1.0, d: 1.0, top: .5, hang: .55, mat: m, thick: .02, waves: .03, under: (x, z) => { const back = z < -.25 ? 1.15 : 0, arm = Math.abs(x) > .38 ? .75 : 0; return Math.max(.5, back, arm); } }); d.position.set(0, 0, -.28); g.add(d); return shadow(g); }
+export function sheetCovered(m) { const g = new THREE.Group(), sm = (e0, e1, x) => { const t = Math.min(1, Math.max(0, (x - e0) / (e1 - e0))); return t * t * (3 - 2 * t); };
+  const d = drape({ w: .95, d: .95, top: .55, hang: .5, mat: m, thick: .015, waves: .045, seg: 120, under: (x, z) => { const back = sm(-.05, -.42, z) * .62, arm = sm(.3, .45, Math.abs(x)) * .22 * (1 - sm(.25, .45, z)); return .55 + back + arm - sm(.2, .5, z) * .04; } });
+  d.position.set(0, 0, -.25); g.add(d); g.name = 'dust sheet'; return shadow(g); }
 export function poolTable(wood) { const g = grp(B(2.9, .25, 1.6, wood, 0, .95, 0, .04), B(2.6, .05, 1.3, mat('velvet', { color: '#2f6b4f' }), 0, 1.08, 0, .005)); for (const [x, z] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) g.add(B(.16, .85, .16, wood, x * 1.25, .42, z * .65, .02));
   for (const [x, z] of [[-1.3, -.65], [0, -.66], [1.3, -.65], [-1.3, .65], [0, .66], [1.3, .65]]) g.add(cyl(.05, .05, .02, M.matte('#111'), x, 1.1, z, 12)); return shadow(g); }
 export function barFridge() { return shadow(grp(B(.8, 1.15, .8, M.matte('#2a2a2c'), 0, .575, 0, .02), (() => { const p = new THREE.Mesh(new THREE.PlaneGeometry(.66, .95), new THREE.MeshPhysicalMaterial({ color: '#30383c', roughness: .1, clearcoat: 1 })); p.position.set(0, .6, .401); return p; })(), B(.03, .5, .03, M.steel(), .3, .7, .42, .008))); }
