@@ -148,3 +148,13 @@ Reference
 - Shown: docs/sheets/light_bedtime_v1.jpg. Next: his verdict, then the snowy winter night scene in the same room.
 - 09:37 Xavier: shader look approved. Lighting step DONE. Next: modern interior research + modern props/models
   (environment step 1 continued + props step 2), then the town map with modern houses.
+
+## 2026-11-18 09:44 FOUNDATION PASS (Xavier: fix foundations before building anything)
+We go phase by phase listing foundation problems, agree them, then Claude works through the agreed list while he sleeps.
+Environment foundations (agreed, parked until the full list is done):
+1 scale sheet vs R6; 2 model pull tool + library sheet (Roblox Creator Store converter); 3 auto re-skin of imported
+models with our materials; 4 room/house kit with real doors/windows and removable film-set walls; 5 placement helpers +
+seat/lie/hold points + furniture clipping check; 6 9:16 framing standard for rooms; 7 light rig standard + preview must
+match final; 8 render speed budget; 9 outdoor backdrop for every window. Style = modern.
+Props: covered by env 2, 3, 5 (plus hand-prop size rule).
+Next phase being discussed: render pipeline + speed.
