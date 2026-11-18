@@ -1,0 +1,20 @@
+{
+ "id": 101744644611182,
+ "name": "Armchair",
+ "size_m": [
+  1.122,
+  1.105,
+  1.717
+ ],
+ "materials": [
+  "mat~Plastic~635f62",
+  "mat~Plastic~74869d",
+  "mat~Plastic~9fadc0",
+  "mat~Plastic~f8f8f8"
+ ],
+ "parts": 11,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

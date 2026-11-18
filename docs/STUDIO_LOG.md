@@ -211,3 +211,4 @@ Next phase: 7 faces / face animation / lip sync.
   approved (Claude must verify it by measurement first).
 - Union reader done (tools/roblox/models.py); tools/pull.py now pulls ANY Roblox link (catalog or Creator Store).
 - Room kit v1: engine/sets/roomkit.js (scale v2 sizes, real door + window models from the Creator Store, skirting, switch, sockets, film-set walls that still cast shadows); test scenes/room_test.js, docs/sheets/roomkit_v1.jpg. Also: builders' part transparency now kept; glass never blocks the sun.
+- Placement helpers: engine/place.js (onFloor, againstWall, onTop, anchors seat/lie/top found from the shape, faceTo, sitOn, autoSit, clipCheck, unclip); test scenes/place_test.js + tools/placetest.mjs, docs/sheets/place_v1.jpg (clip 0). Post pipeline now guards against bad pixels (one NaN pixel had been blurred into a black block).

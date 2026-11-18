@@ -63,7 +63,8 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
         gl_FragColor = vec4(c, 1.); }` });
   const compMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { scene: { value: rtScene.texture }, fog: { value: rtFog.texture }, fogCol: { value: new THREE.Color(P.volumeColor) }, amt: { value: P.volume } },
     fragmentShader: `varying vec2 vUv; uniform sampler2D scene, fog; uniform vec3 fogCol; uniform float amt;
-      void main(){ gl_FragColor = vec4(texture2D(scene, vUv).rgb + texture2D(fog, vUv).rgb * fogCol * amt, 1.); }` });
+      void main(){ vec3 c = texture2D(scene, vUv).rgb; if (any(isnan(c)) || any(isinf(c))) c = vec3(0.);   // one bad pixel must not be blurred into a black block
+        gl_FragColor = vec4(min(c, vec3(64.)) + texture2D(fog, vUv).rgb * fogCol * amt, 1.); }` });
   // depth of field: a 36-tap disc gather, radius from the circle of confusion of the real depth
   const dofMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, depth: { value: rtScene.depthTexture }, near: { value: camera.near }, far: { value: camera.far }, focus: { value: P.focus }, ap: { value: P.aperture }, maxB: { value: P.maxBlur }, px: { value: new THREE.Vector2(1 / W, 1 / H) } },
     fragmentShader: `varying vec2 vUv; uniform sampler2D src, depth; uniform float near, far, focus, ap, maxB; uniform vec2 px;

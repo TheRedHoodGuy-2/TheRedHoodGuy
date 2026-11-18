@@ -1,0 +1,21 @@
+{
+ "id": 1744217931,
+ "name": "Light",
+ "size_m": [
+  0.415,
+  0.917,
+  0.527
+ ],
+ "materials": [
+  "mat~Neon~cacbd1",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~cacbd1",
+  "mat~SmoothPlastic~e7e7ec"
+ ],
+ "parts": 12,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 4,
+ "warnings": []
+}

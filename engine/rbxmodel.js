@@ -14,7 +14,7 @@ export function reskin(name, size = 1) {
   let m;
   if (kind === 'wood') m = hsl.s < .12 && hsl.l > .7 ? mat('plaster_fine', { color: '#' + hex, size: 1, normal: .6, rough: .5 })        // white / grey "wood" = painted
     : (m = mat('wood_fine', { size: 1.2, clearcoat: .3 }), m.color.copy(c).lerp(new THREE.Color(1, 1, 1), .35).multiplyScalar(1.4), m);   // real wood, tinted toward the builder's colour
-  else if (kind === 'fabric') m = mat('denim', { color: '#' + hex, size: .35, normal: .7, sheen: .7, sheenColor: '#ffffff' });
+  else if (kind === 'fabric') m = mat('denim', { color: '#' + hex, size: .16, normal: .45, sheen: .7, sheenColor: '#ffffff' });   // upholstery: a fine weave, not a big pattern
   else if (kind === 'metal') m = new THREE.MeshStandardMaterial({ color: c, metalness: .85, roughness: .32 });
   else if (kind === 'glass') m = new THREE.MeshPhysicalMaterial({ color: c, roughness: .05, transparent: true, opacity: .25 });
   else if (kind === 'brick') m = mat('brick', { size: 2.2 });
@@ -27,6 +27,6 @@ export function reskin(name, size = 1) {
 export async function loadRbx(id, { yaw = 0, scale = 1 } = {}) {
   const g = await new GLTFLoader().loadAsync(new URL(`assets/rbxmodels/${id}/model.glb`, document.baseURI).href), o = new THREE.Group(); o.add(g.scene);
   g.scene.traverse(m => { if (!m.isMesh) return; const n = m.name.startsWith('mat~') ? m.name : (m.parent?.name || '');
-    let geo = m.geometry.index ? m.geometry.toNonIndexed() : m.geometry; geo.computeVertexNormals(); m.geometry = worldUV(geo); /* flat normals: Roblox parts are hard-edged */ m.material = n.startsWith('mat~') ? reskin(n) : m.material; m.castShadow = !m.material.transparent; m.receiveShadow = true; });   /* glass and see-through parts never block the sun */
+    let geo = m.geometry.index ? m.geometry.toNonIndexed() : m.geometry; geo.computeVertexNormals(); { const N = geo.attributes.normal.array; for (let i = 0; i < N.length; i++) if (!Number.isFinite(N[i])) N[i] = i % 3 === 1 ? 1 : 0; } m.geometry = worldUV(geo); /* flat normals: Roblox parts are hard-edged */ m.material = n.startsWith('mat~') ? reskin(n) : m.material; m.castShadow = !m.material.transparent; m.receiveShadow = true; });   /* glass and see-through parts never block the sun */
   o.rotation.y = yaw; o.scale.setScalar(scale); return o;
 }

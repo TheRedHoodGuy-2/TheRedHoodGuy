@@ -1,0 +1,19 @@
+{
+ "id": 12266124617,
+ "name": "Modern armchair",
+ "size_m": [
+  1.235,
+  1.09,
+  1.386
+ ],
+ "materials": [
+  "mat~Fabric~eab892",
+  "mat~Metal~1b2a35"
+ ],
+ "parts": 5,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 18,
+ "unions": 5,
+ "warnings": []
+}

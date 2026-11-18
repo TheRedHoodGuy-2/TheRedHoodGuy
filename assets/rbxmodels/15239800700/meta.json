@@ -1,0 +1,20 @@
+{
+ "id": 15239800700,
+ "name": "Lamp",
+ "size_m": [
+  0.365,
+  0.709,
+  0.441
+ ],
+ "materials": [
+  "mat~Neon~fdea8d",
+  "mat~Plastic~111111",
+  "mat~Plastic~1b2a35",
+  "mat~Plastic~5b5d69"
+ ],
+ "parts": 15,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

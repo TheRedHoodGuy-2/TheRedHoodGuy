@@ -208,5 +208,55 @@
   ],
   "parts": 12,
   "unions_skipped": 0
+ },
+ "12266124617": {
+  "name": "Modern armchair",
+  "size_m": [
+   1.235,
+   1.09,
+   1.386
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "101744644611182": {
+  "name": "Armchair",
+  "size_m": [
+   1.122,
+   1.105,
+   1.717
+  ],
+  "parts": 11,
+  "unions_skipped": 0
+ },
+ "2908982722": {
+  "name": "Coffee Table",
+  "size_m": [
+   2.49,
+   0.902,
+   1.476
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "1744217931": {
+  "name": "Light",
+  "size_m": [
+   0.415,
+   0.917,
+   0.527
+  ],
+  "parts": 12,
+  "unions_skipped": 0
+ },
+ "15239800700": {
+  "name": "Lamp",
+  "size_m": [
+   0.365,
+   0.709,
+   0.441
+  ],
+  "parts": 15,
+  "unions_skipped": 0
  }
 }

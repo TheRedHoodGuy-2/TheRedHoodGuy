@@ -1,0 +1,19 @@
+{
+ "id": 2908982722,
+ "name": "Coffee Table",
+ "size_m": [
+  2.49,
+  0.902,
+  1.476
+ ],
+ "materials": [
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 5,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 1,
+ "warnings": []
+}
