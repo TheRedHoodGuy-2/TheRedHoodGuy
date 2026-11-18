@@ -201,3 +201,6 @@ Next phase: 7 faces / face animation / lip sync.
   some tight "1.0" items are flagged wrongly, his eye decides.
 - Waiting on Xavier: length decision (Gneef hits are 2-3 min), voice provider, scale draft, triage picks, union reader
   priority for Creator Store models.
+- Laptop mirror: C:\Users\Luminmgmt\Documents\TheRedHoodGuy\files (working copy) + TheRedHoodGuy.bundle (full git
+  history; `git clone TheRedHoodGuy.bundle` restores it). A half-made `repo` folder there could not be deleted (no
+  delete permission while he slept): safe to delete. Future mirrors: overwrite files\ and the bundle after each push.

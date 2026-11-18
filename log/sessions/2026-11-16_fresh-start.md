@@ -104,3 +104,9 @@ Colour is Claude's job by colour theory, not palettes he likes. Put a lot more t
 (varnished floors? real bevels? woollier rug?). Every frame must look good: fix with backlight / rim / soft light, even
 invisible extra lights. Don't match clothes to rooms. Frames are still flat and washed out. Hand props about the size of the
 hand block's end. Save everything into a log file read every chat so nothing is lost after compaction.
+
+
+## 2026-11-18 10:26 -> 16:50 overnight run (Xavier asleep)
+All 8 items of docs/OVERNIGHT_PLAN.md done: Gneef top 20 breakdown, scripting/retention research, voice options,
+render speed (11.5 -> 9.6 s/frame), pose editor port + pose lessons, Creator Store model pull tool, clothing fit
+checker + sleeve fixes + triage gallery, scale draft, push + laptop mirror. See docs/STUDIO_LOG.md.

@@ -12,6 +12,8 @@ Rules for this run (from Xavier, all binding):
 - Roblox cookie stays at ~/.rbx_cookie, never in the repo, logs or memory.
 - Push to GitHub ONLY at the end (item 8), then mirror to C:\Users\Luminmgmt\Documents\TheRedHoodGuy (access granted).
 
+ALL ITEMS DONE 2026-11-18 ~16:50 Lagos. Nothing left unticked.
+
 ## 1. Gneef top 20 script breakdown  [x] DONE -> research/gneef_top20_scripts.md
 - [ ] List Gneef's Shorts by views (yt-dlp via the laptop bridge: device_bash, cloud is bot-blocked). Pick the top 20.
 - [ ] Download audio (+ video if needed) to C:\Users\Luminmgmt\Videos\gneef_top20\, stage to the cloud.
@@ -72,7 +74,7 @@ Rules for this run (from Xavier, all binding):
       next to our R6; one sheet picture + table.
 - Output: research/scale.md + docs/sheets/scale_v1.jpg (DRAFT for approval).
 
-## 8. Wrap up  [ ]
+## 8. Wrap up  [x] DONE -> pushed to GitHub main; mirror at Documents\TheRedHoodGuy (files\ + TheRedHoodGuy.bundle)
 - [ ] Update docs/STUDIO_LOG.md (what was done, where, what waits for Xavier), session log.
 - [ ] git push (Xavier OK'd pushing at the end of this run). Tag explainer-kit v1-final only if he asked (he did earlier:
       check STUDIO_LOG before doing it).
