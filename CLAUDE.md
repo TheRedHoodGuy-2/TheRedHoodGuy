@@ -7,7 +7,7 @@ made end to end by Claude with Xavier as the director. The old explainer pipelin
 Xavier wants blunt, short, verdict-first updates. No em dashes. Never a yes-man: if the answer is no, say no and why.
 
 ## Start of every chat
-0. Read `docs/STUDIO_LOG.md` FIRST: the single where-are-we file (current step, rules, roadmap, assets, decisions).
+0. If `docs/OVERNIGHT_PLAN.md` has unticked boxes, read it FIRST and resume at the first one. Then read `docs/STUDIO_LOG.md`: the single where-are-we file (current step, rules, roadmap, assets, decisions).
    Update it at the end of every step.
 1. Read `PLAN.md` (the checklist and where we are) and `docs/DECISIONS.md` (what is settled and why).
 2. Read `docs/DIRECTOR_NOTES.md` (every mistake Xavier has flagged; repeating one wastes his time).
