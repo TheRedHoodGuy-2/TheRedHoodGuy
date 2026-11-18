@@ -42,7 +42,7 @@ Rules for this run (from Xavier, all binding):
       quality, API use, licence. Facts only; Xavier decides on paying.
 - Output: research/voice_options.md.
 
-## 4. Render speed  [ ]
+## 4. Render speed  [x] DONE -> research/render_speed.md (11.5 s -> ~9.6 s/frame, look unchanged)
 - [ ] Per-frame timing of every stage on scenes/bedtime_story.js at 1080x1920 (scene draw, sun shadow, point-light
       shadow, volume, bloom, DOF, grade, SMAA), page load and probe separately.
 - [ ] Static shadows/bounce computed once per shot (characters still get fresh shadows); camera moves stay correct.

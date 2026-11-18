@@ -28,7 +28,7 @@ float sunlit(vec3 p){
 
 export function makePost(renderer, scene, camera, W, H, o = {}) {
   const P = Object.assign({
-    volume: 0, volumeColor: '#ffb070', volumeG: .45, volumeSteps: 48, volumeMax: 7,          // shafts (0 = off)
+    volume: 0, volumeColor: '#ffb070', volumeG: .45, volumeSteps: 32, volumeMax: 7,          // shafts (0 = off)
     bloom: .35, bloomRadius: .55, bloomThreshold: 1.0,                                           // glow on real lights only
     focus: 3, aperture: 0, maxBlur: 6,                                                           // DOF (aperture 0 = off)
     exposure: 1, contrast: 1.12, saturation: 1.12, black: 0., shadowTint: '#000000', highTint: '#000000', tintAmt: 0, pivot: .42,
@@ -103,10 +103,18 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
       for (let k = 0; k < 2; k++) { blurMat.uniforms.src.value = a.texture; blurMat.uniforms.dir.value.set(1.2 * W / 540 / a.width, 0); quad(r, blurMat, b); blurMat.uniforms.src.value = b.texture; blurMat.uniforms.dir.value.set(0, 1.2 * W / 540 / a.height); quad(r, blurMat, a); } }
     addMat.uniforms.src.value = src.texture; quad(r, addMat, dst); } };
   const smaa = new SMAAPass(W, H); smaa.renderToScreen = true;
+  const rtDof = new THREE.WebGLRenderTarget(hw, hh, { type: THREE.HalfFloatType });
+  const dofMix = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, blur: { value: rtDof.texture }, depth: { value: rtScene.depthTexture }, near: { value: camera.near }, far: { value: camera.far }, focus: { value: P.focus }, ap: { value: P.aperture } },
+    fragmentShader: `varying vec2 vUv; uniform sampler2D src, blur, depth; uniform float near, far, focus, ap;
+      float lin(float d){ float z = d * 2. - 1.; return 2. * near * far / (far + near - z * (far - near)); }
+      void main(){ float z = lin(texture2D(depth, vUv).x), c = ap * abs(z - focus) / z; gl_FragColor = vec4(mix(texture2D(src, vUv).rgb, texture2D(blur, vUv).rgb, smoothstep(.4, 1.6, c)), 1.); }` });
   const api = { P, rtScene, sun, fogMat, gradeMat, dofMat };
-  api.render = () => {
-    const r = renderer; r.toneMapping = THREE.NoToneMapping;
-    r.setRenderTarget(rtScene); r.render(scene, camera);
+  api.render = (T = null) => {   // T: optional {} that collects ms per stage (forces the GPU to finish between stages)
+    const r = renderer, gl = r.getContext(); let t0 = performance.now();
+    const px = new Uint8Array(4), sync = () => gl.readPixels(0, 0, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px);   // readPixels really waits; gl.finish does not under SwiftShader
+    const lap = k => { if (!T) return; sync(); const t = performance.now(); T[k] = (T[k] || 0) + t - t0; t0 = t; };
+    r.toneMapping = THREE.NoToneMapping;
+    r.setRenderTarget(rtScene); r.render(scene, camera); lap('scene');
     camera.updateMatrixWorld();
     let src = rtScene;
     if (P.volume > 0 && sun) {
@@ -114,12 +122,14 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
       u.sunShadow.value = sun.shadow.map.texture; u.sunMatrix.value.copy(sun.shadow.matrix); u.sunDir.value.copy(sun.position).sub(sun.target.position).normalize();
       quad(r, fogMat, rtFog);
       for (let k = 0; k < 2; k++) { blurMat.uniforms.src.value = rtFog.texture; blurMat.uniforms.dir.value.set(1.5 * W / 540 / hw, 0); quad(r, blurMat, rtFog2); blurMat.uniforms.src.value = rtFog2.texture; blurMat.uniforms.dir.value.set(0, 1.5 * W / 540 / hh); quad(r, blurMat, rtFog); }
-      quad(r, compMat, rtA); src = rtA;
+      quad(r, compMat, rtA); src = rtA; lap('volume');
     } else { compMat.uniforms.amt.value = 0; quad(r, compMat, rtA); src = rtA; }
-    if (P.bloom > 0) { const dst = src === rtA ? rtB : rtA; bloom.render(r, src, dst); src = dst; }
-    if (P.aperture > 0) { const dst = src === rtA ? rtB : rtA; dofMat.uniforms.src.value = src.texture; quad(r, dofMat, dst); src = dst; }
-    gradeMat.uniforms.src.value = src.texture; quad(r, gradeMat, rtLDR);
-    smaa.render(r, null, rtLDR);
+    if (P.bloom > 0) { const dst = src === rtA ? rtB : rtA; bloom.render(r, src, dst); src = dst; } lap('bloom');
+    if (P.aperture > 0) {   // gather at half size (4x fewer pixels), then blend over the sharp frame by each pixel's own blur amount
+      dofMat.uniforms.src.value = src.texture; dofMat.uniforms.px.value.set(2 / W, 2 / H); dofMat.uniforms.maxB.value = P.maxBlur / 2; dofMat.uniforms.ap.value = P.aperture / 2; quad(r, dofMat, rtDof);
+      const dst = src === rtA ? rtB : rtA; dofMix.uniforms.src.value = src.texture; quad(r, dofMix, dst); src = dst; } lap('dof');
+    gradeMat.uniforms.src.value = src.texture; quad(r, gradeMat, rtLDR); lap('grade');
+    smaa.render(r, null, rtLDR); lap('smaa'); if (T === false) sync();
   };
   return api;
 }

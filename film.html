@@ -12,6 +12,9 @@ renderer.setSize(W, H, false); renderer.setPixelRatio(1); renderer.outputColorSp
 const scene = new THREE.Scene();
 const mod = await import(`./scenes/${spec.scene}.js`), S = await mod.build({ scene, renderer, W, H, opts: spec.opts || {} });
 await new Promise(r => setTimeout(r, spec.wait ?? 2500));   // textures
+if (spec.matTest) scene.traverse(o => { if (!o.isMesh) return; const m = o.material; if (!m || !m.isMeshStandardMaterial) return;   // speed test only: what do materials cost
+  if (spec.matTest === 'standard' && m.isMeshPhysicalMaterial) o.material = new THREE.MeshStandardMaterial({ map: m.map, normalMap: m.normalMap, roughnessMap: m.roughnessMap, color: m.color, roughness: m.roughness, side: m.side });
+  if (spec.matTest === 'lambert') o.material = new THREE.MeshLambertMaterial({ map: m.map, color: m.color, side: m.side }); });
 // reflection / bounce probe: the room as seen from its middle (so varnish and glass reflect the real room)
 if (spec.probe !== false) {
   const crt = new THREE.WebGLCubeRenderTarget(256, { type: THREE.HalfFloatType }), cc = new THREE.CubeCamera(.05, 100, crt); cc.position.set(...(spec.probeAt || [0, 1.4, -.4])); scene.add(cc);
@@ -20,5 +23,19 @@ if (spec.probe !== false) {
 }
 const post = makePost(renderer, scene, S.camera, W, H, Object.assign(S.post, spec.post || {}));
 S.before?.(); post.render(); S.before?.(); post.render();
+if (spec.time) {   // per-stage timing over N frames; then the cost of the shadow maps alone
+  const N = spec.time, T = {}; for (let i = 0; i < N; i++) { S.before?.(); post.render(T); }
+  for (const k in T) T[k] = +(T[k] / N).toFixed(0);
+  renderer.shadowMap.autoUpdate = false; let t = performance.now(); for (let i = 0; i < N; i++) post.render(false); T.frame_noShadowUpdate = +((performance.now() - t) / N).toFixed(0);
+  renderer.shadowMap.autoUpdate = true; t = performance.now(); for (let i = 0; i < N; i++) post.render(false); T.frame_full = +((performance.now() - t) / N).toFixed(0);
+  window.timing = T;
+}
+window.tLoad = performance.now();
+// video mode: tools/render.mjs calls renderFrame(t) for each frame it still needs
+window.renderFrame = t => {
+  const moved = S.update ? S.update(t) : false;
+  renderer.shadowMap.autoUpdate = false; if (moved || !window._shadowsDone) { renderer.shadowMap.needsUpdate = true; window._shadowsDone = true; }
+  S.before?.(); post.render(false); return renderer.domElement.toDataURL('image/jpeg', .93);
+};
 window.__dbg = { scene, S, THREE }; window.ready = true;
 </script>

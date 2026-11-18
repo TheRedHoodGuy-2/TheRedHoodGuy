@@ -99,9 +99,11 @@ export async function build({ scene, W, H, opts = {} }) {
   add(at(bbox(nsW - .06, .2, .02, wood, .006), nsx, nsH - .16, nsz + nsD / 2 + .006));                                           // drawer front, proud of the carcass with a shadow gap
   const knob = add(new THREE.Mesh(new THREE.SphereGeometry(.018, 16, 12), new THREE.MeshStandardMaterial({ color: '#b08a4a', metalness: .8, roughness: .3 }))); knob.position.set(nsx, nsH - .16, nsz + nsD / 2 + .03);
   for (const [sx, sz2] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) add(at(bbox(.04, .05, .04, wood, .008), nsx + sx * (nsW / 2 - .04), .025, nsz + sz2 * (nsD / 2 - .04)));
-  const lampLight = new THREE.PointLight('#ffb36b', opts.lamp ?? 6, 7, 2); lampLight.castShadow = true; lampLight.shadow.mapSize.set(1024, 1024); lampLight.shadow.bias = -.002; lampLight.shadow.radius = 4;
+  const lampOn = (opts.lamp ?? 0) > 0;   // Xavier 2026-11-18: daylight, nobody reading by it -> the lamp is OFF
+  const lampLight = new THREE.PointLight('#ffb36b', opts.lamp ?? 0, 7, 2); lampLight.castShadow = lampOn && (opts.lampShadow ?? true); lampLight.visible = lampOn; lampLight.shadow.mapSize.set(1024, 1024); lampLight.shadow.bias = -.002; lampLight.shadow.radius = 4;
   const lamp = add(tableLamp({ baseMat: new THREE.MeshPhysicalMaterial({ color: '#c98f3b', roughness: .25, clearcoat: .8, clearcoatRoughness: .1 }),
-    shadeMat: new THREE.MeshStandardMaterial({ color: '#f4e7cf', roughness: .9, side: THREE.DoubleSide, emissive: new THREE.Color('#ffb065'), emissiveIntensity: .9 }), height: .55, light: lampLight }));
+    shadeMat: new THREE.MeshStandardMaterial({ color: '#f4e7cf', roughness: .9, side: THREE.DoubleSide, emissive: new THREE.Color('#ffb065'), emissiveIntensity: lampOn ? .9 : 0 }), height: .55, light: lampLight }));
+  lamp.children.forEach(c => { if (c.material?.isMeshBasicMaterial) c.visible = lampOn; });
   lamp.position.set(nsx - .03, nsH + .03, nsz - .04);
   const clock = add(await ph('alarm_clock_01', { scale: 1.1 })); clock.position.set(nsx + .15, nsH + .03, nsz + .1); clock.rotation.y = .5;
   // ---------- rug, plant, shelf ----------
@@ -128,10 +130,10 @@ export async function build({ scene, W, H, opts = {} }) {
   const sun = new THREE.DirectionalLight(opts.sunColor || '#ffb877', opts.sun ?? 6); sun.position.copy(focus).addScaledVector(sunDir, 20); sun.target.position.copy(focus);
   sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096); Object.assign(sun.shadow.camera, { left: -4.5, right: 4.5, top: 4.5, bottom: -4.5, near: 5, far: 40 }); sun.shadow.bias = -.0004; sun.shadow.normalBias = .02;
   add(sun, sun.target);
-  const skyFill = new THREE.RectAreaLight(opts.skyColor || '#8aa6e8', opts.skyFill ?? 3, WX1 - WX0, WY1 - WY0); skyFill.position.set(wcx, wcy, Z0 - .05); skyFill.lookAt(wcx, wcy, 5); add(skyFill);
+  const skyFill = new THREE.RectAreaLight(opts.skyColor || '#8aa6e8', opts.skyFill ?? 3, WX1 - WX0, WY1 - WY0); skyFill.position.set(wcx, wcy, Z0 - .05); skyFill.lookAt(wcx, wcy, 5); if (!opts.noRect) add(skyFill);
   const bounce = new THREE.PointLight('#ffa66a', opts.bounce ?? 1.8, 7, 1.6); bounce.position.set(.4, .9, .3); add(bounce);   // sunlight bouncing round the room: warm, soft, everywhere
-  const beauty = new THREE.RectAreaLight('#dfe3ff', opts.beauty ?? 1.4, 2.4, 2.4); beauty.position.set(.4, 1.8, 2.2); beauty.lookAt(-.2, 1, -1.6); add(beauty);   // cool soft fill from the camera side (no visible source)
-  const kidKey = new THREE.SpotLight('#ffc590', opts.kidKey ?? 7, 6, .38, .9, 1.4); kidKey.position.set(-1.25, 2.05, .2); kidKey.target.position.set(-.73, 1.0, -1.72); add(kidKey, kidKey.target);   // the lamp's warmth on the kid's front (beauty light, motivated by the lamp)
+  const beauty = new THREE.RectAreaLight('#dfe3ff', opts.beauty ?? 1.4, 2.4, 2.4); beauty.position.set(.4, 1.8, 2.2); beauty.lookAt(-.2, 1, -1.6); if (!opts.noRect) add(beauty);   // cool soft fill from the camera side (no visible source)
+  const kidKey = new THREE.SpotLight('#ffcf9e', opts.kidKey ?? 8, 6, .38, .9, 1.4); kidKey.position.set(-1.25, 2.05, .2); kidKey.target.position.set(-.73, 1.0, -1.72); add(kidKey, kidKey.target);   // soft warm fill on the kid's front (beauty light: reads as sunlight bouncing off the floor and sheets)
   add(new THREE.HemisphereLight('#8b98bb', '#7a4a2e', opts.ambient ?? .8));
   // ---------- dust in the air (bright only where the sun beam is) ----------
   const N = 9000, pos = new Float32Array(N * 3), dsz = new Float32Array(N); let s = 11; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
@@ -146,6 +148,10 @@ export async function build({ scene, W, H, opts = {} }) {
 
   // ---------- camera: from the foot side, diagonal across the bed, dad in front of the window ----------
   const cam = new THREE.PerspectiveCamera(opts.fov || 60, W / H, .05, 200); cam.position.set(...(opts.camP || [-.35, 1.78, 2.6])); cam.lookAt(...(opts.camL || [.05, .6, -1.9]));
-  return { camera: cam, sun, before, post: { sun, volume: opts.volume ?? 1.6, volumeColor: opts.sunColor || '#ffb877', volumeBox: [[X0, 0, Z0], [X1, CH, Z1]], focus: 3.4, aperture: opts.aperture ?? 3, maxBlur: 5 * W / 540,
+  // update(t): set everything for time t from scratch; return true only if something OTHER than the camera moved
+  // (then the shadows are redrawn; a camera-only move reuses them). Test move: a slow push-in.
+  const c0 = cam.position.clone(), l0 = new THREE.Vector3(...(opts.camL || [.05, .6, -1.9]));
+  const update = t => { const k = t / 6, e = k * k * (3 - 2 * k); cam.position.copy(c0).lerp(l0, .12 * e); cam.lookAt(l0); return false; };
+  return { camera: cam, sun, before, update, post: { sun, volume: opts.volume ?? 1.6, volumeColor: opts.sunColor || '#ffb877', volumeBox: [[X0, 0, Z0], [X1, CH, Z1]], focus: 3.4, aperture: opts.aperture ?? 3, maxBlur: 5 * W / 540,
     bloom: .5, bloomRadius: .6, bloomThreshold: 1.3, bloomCap: 2.5, exposure: opts.exposure ?? 1.2, contrast: 1.1, saturation: 1.15, black: .02, shadowTint: '#3d6f8c', highTint: '#ffcf8a', tintAmt: .35, pivot: .4 } };
 }
