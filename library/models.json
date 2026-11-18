@@ -1,0 +1,112 @@
+{
+ "5817139151": {
+  "name": "Modern Bed",
+  "size_m": [
+   4.496,
+   1.466,
+   2.617
+  ],
+  "parts": 4,
+  "unions_skipped": 2
+ },
+ "16956795249": {
+  "name": "Modern Bed",
+  "size_m": [
+   3.196,
+   1.734,
+   3.536
+  ],
+  "parts": 46,
+  "unions_skipped": 0
+ },
+ "5504452814": {
+  "name": "Model",
+  "size_m": [
+   5.576,
+   3.292,
+   4.518
+  ],
+  "parts": 206,
+  "unions_skipped": 2
+ },
+ "13006207521": {
+  "name": "Model",
+  "size_m": [
+   2.748,
+   1.171,
+   2.563
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "1254052081": {
+  "name": "Modern Bed-Side Table",
+  "size_m": [
+   1.112,
+   1.156,
+   1.156
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "2927365966": {
+  "name": "Modern Office Chair",
+  "size_m": [
+   0.868,
+   1.488,
+   0.844
+  ],
+  "parts": 130,
+  "unions_skipped": 33
+ },
+ "4565280325": {
+  "name": "Modern Desk",
+  "size_m": [
+   3.502,
+   1.156,
+   1.284
+  ],
+  "parts": 13,
+  "unions_skipped": 0
+ },
+ "12965495798": {
+  "name": "MODERN WARDROBE",
+  "size_m": [
+   4.007,
+   3.478,
+   0.984
+  ],
+  "parts": 110,
+  "unions_skipped": 14
+ },
+ "11652583496": {
+  "name": "Sofa",
+  "size_m": [
+   4.293,
+   1.692,
+   2.401
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "87614144166787": {
+  "name": "Model",
+  "size_m": [
+   1.36,
+   1.02,
+   1.292
+  ],
+  "parts": 25,
+  "unions_skipped": 0
+ },
+ "450194478": {
+  "name": "Modern NightTable Lamp",
+  "size_m": [
+   0.394,
+   0.784,
+   0.394
+  ],
+  "parts": 3,
+  "unions_skipped": 6
+ }
+}

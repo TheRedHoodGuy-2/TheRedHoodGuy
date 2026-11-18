@@ -52,11 +52,11 @@ Rules for this run (from Xavier, all binding):
 - [ ] Before/after still with times, identical look. Budget target ~10 s per final frame.
 - Output: research/render_speed.md + tools.
 
-## 5. The two tools  [ ]
+## 5. The two tools  [x] DONE -> pose editor artifact + tools/roblox/models.py (research/model_pull.md; unions not readable yet)
 - [x] Pose editor DONE: https://claude.ai/artifact/Wodk7AKaH6PrU4eRtEMiWR + docs/POSE_LESSONS.md. Port from explainer-kit (pose_editor.html) to this repo's R6 (engine/r6.js), fix it up, publish as
       an artifact; pose code drops into a pose library file. Add the POSE LESSONS file (docs/POSE_LESSONS.md):
       every pose Xavier gives is diffed against Claude's with the principle written down.
-- [ ] Roblox pull tool for MODELS: Creator Store search + by link (toolbox-service with the cookie), rbxm/rbxmx parse,
+- [x] Roblox pull tool for MODELS (v1, unions pending): Creator Store search + by link (toolbox-service with the cookie), rbxm/rbxmx parse,
       MeshParts + Parts (+ unions where possible) -> glTF; auto: floor at y=0, front facing +z, R6 scale; strip textures,
       auto re-skin parts into wood / fabric / metal / glass / plastic with engine/materials.js; library file + sheet.
 - Output: tools + one sample sheet of pulled modern furniture.
