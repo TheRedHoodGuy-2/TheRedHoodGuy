@@ -173,3 +173,9 @@ Animation/posing foundations (agreed, build later at max effort): research (12 p
 + explainer-kit lessons; POSE LESSONS system: every pose Xavier gives is diffed against Claude's, the principle is
 written down with before/after images, new poses are built from principles + the emotion and checked against them.
 Next phase: 6 clothing triage + character bank + 3D clothing fixes.
+Clothing + bank foundations (agreed): automatic fit checker (each garment on both bodies in rest + raised-arm + sitting
+poses, measures body poking through and sleeve offset from the arm blocks, flags or auto-fixes), sleeve snapping to arm
+blocks, triage by usability (normal / mid / odd; mid and odd kept aside), recolour system with real fabric materials,
+colour-harmony check per outfit, skin-tone scale, hair colour set, bank file (name, sex, skin, hair, outfit, accessories,
+personality line) + one sheet of all 200. Faces added to the bank in the faces step.
+Next phase: 7 faces / face animation / lip sync.

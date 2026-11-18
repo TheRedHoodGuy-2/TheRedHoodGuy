@@ -115,3 +115,14 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
 - Animation step = deep research first: 12 principles of animation, how animation works, Roblox animation, R6 posing.
   Then merge with explainer-kit lessons (locked motion style, dynamic posing, action arcs). Xavier will run that step
   at max effort.
+
+## 2026-11-18 10:06 Self-check every frame + clothing fit + character bank
+- BEFORE showing any frame or video: look at it and find what is wrong (camera, objects, characters, things on
+  characters). Xavier saw clipping sleeves on most 3D clothing and didn't point it out; finding it was Claude's job.
+- 3D clothing must FIT: the torso piece on the torso, sleeves exactly on the arm blocks, accessories seated. Any
+  clipping or wrong look on the body is Claude's to fix.
+- Character bank: 100 male + 100 female background characters. Skin on a scale from fair to a decent brown
+  (darkest ~ the bedtime test skin or a bit darker), random per character. Good hair each, varied hair colours.
+  Clothes from the triaged normal clothing (flat and 3D mixed), accessories with personality (glasses, headphones,
+  bag) that fit and never clash; recolouring allowed but with proper real materials (real denim texture etc).
+  Built only after clothing triage. Faces come later; mains are designed separately with Xavier.
