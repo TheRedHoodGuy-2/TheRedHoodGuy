@@ -132,3 +132,23 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   outfit. Nerd: glasses, neat shirt, maybe a book bag. Cool kid: shades, skateboard, streetwear. Then dress them so
   the type reads at a glance.
 - Faces / face animation / lip sync and scripts / niche / retention are moved to later (complicated, own sessions).
+
+## 2026-11-18 10:20 Voice, SFX, checks, sync, NICHE
+- Current voice tool (Kokoro) is bad. Study how Gneef's voice/words actually sound and pace (verify the 262 wpm).
+  Xavier may pay for ElevenLabs or fish.audio for the "typical Roblox guy / Roblox girl" voices (undecided).
+- SFX bank must be perfected in this repo (real sounds only).
+- Captions: Xavier explains his style later.
+- Hook/boredom checks happen in PLANNING (directing the script), not on the rendered video. Clipping check and
+  every-frame check run on EVERY render, every time.
+- Every GitHub push is mirrored to an organised folder on Xavier's laptop (flash-drive backup). Push only when the
+  overnight work is done.
+- Tools to have: the pose editor (port from explainer-kit, fix it up) and the Roblox pull tool (incl. models).
+- NICHE: Reddit-style drama storytime (proven, pre-tested by upvotes) acted out by our Roblox cast (our edge vs
+  gameplay-background channels), plus some Gneef-style "In this world..." high-concept stories with a crazy twist.
+  Write originals/adaptations in our own voice, retention and animation; never read posts word for word.
+- THE question for every script, every frame: "why is this person not scrolling away?" Frame 0, first 3-5 frames,
+  first second and first line must answer it; then every few seconds there must still be a reason (a promise, a
+  twist coming, something crazy happening or about to happen).
+- Long form (3-10 min) version of every story later; shorts first.
+- Research to do: Gneef top 20 most viral scripts broken down to the molecule (hook, retention beats, boredom
+  checks, payoff); YouTube scripting, hooks, retention rates and strategies; the old explainer-kit chats on retention.
