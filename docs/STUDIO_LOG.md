@@ -204,3 +204,4 @@ Next phase: 7 faces / face animation / lip sync.
 - Laptop mirror: C:\Users\Luminmgmt\Documents\TheRedHoodGuy\files (working copy) + TheRedHoodGuy.bundle (full git
   history; `git clone TheRedHoodGuy.bundle` restores it). A half-made `repo` folder there could not be deleted (no
   delete permission while he slept): safe to delete. Future mirrors: overwrite files\ and the bundle after each push.
+- Review page (all overnight results + decision boxes): https://claude.ai/artifact/E6kz1NPD3bmkh98SchE72U
