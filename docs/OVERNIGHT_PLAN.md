@@ -53,7 +53,7 @@ Rules for this run (from Xavier, all binding):
 - Output: research/render_speed.md + tools.
 
 ## 5. The two tools  [ ]
-- [ ] Pose editor: port from explainer-kit (pose_editor.html) to this repo's R6 (engine/r6.js), fix it up, publish as
+- [x] Pose editor DONE: https://claude.ai/artifact/Wodk7AKaH6PrU4eRtEMiWR + docs/POSE_LESSONS.md. Port from explainer-kit (pose_editor.html) to this repo's R6 (engine/r6.js), fix it up, publish as
       an artifact; pose code drops into a pose library file. Add the POSE LESSONS file (docs/POSE_LESSONS.md):
       every pose Xavier gives is diffed against Claude's with the principle written down.
 - [ ] Roblox pull tool for MODELS: Creator Store search + by link (toolbox-service with the cookie), rbxm/rbxmx parse,
