@@ -1,0 +1,17 @@
+{
+ "id": 131726966724793,
+ "name": "PBR Office Chair",
+ "size_m": [
+  1.145,
+  1.481,
+  1.09
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 4,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

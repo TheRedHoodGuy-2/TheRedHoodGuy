@@ -1,0 +1,19 @@
+{
+ "id": 501541682,
+ "name": "Modern Chair",
+ "size_m": [
+  1.958,
+  2.771,
+  1.884
+ ],
+ "materials": [
+  "mat~Fabric~a3a2a5",
+  "mat~SmoothPlastic~a3a2a5"
+ ],
+ "parts": 5,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 2,
+ "warnings": []
+}

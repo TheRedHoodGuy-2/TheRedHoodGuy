@@ -1,0 +1,23 @@
+{
+ "id": 995603100,
+ "name": "Refrigerator",
+ "size_m": [
+  1.442,
+  3.961,
+  2.012
+ ],
+ "materials": [
+  "mat~Fabric~a3a2a5",
+  "mat~Plastic~635f62",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~cdcdcd",
+  "mat~Plastic~f2f3f3",
+  "mat~Plastic~f5cd30",
+  "mat~Plastic~f8f8f8"
+ ],
+ "parts": 37,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

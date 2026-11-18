@@ -1,0 +1,32 @@
+{
+ "id": 131988671579013,
+ "name": "Audi RS3 Limousine",
+ "size_m": [
+  6.545,
+  2.086,
+  2.856
+ ],
+ "materials": [
+  "mat~Metal~9b9a9c",
+  "mat~Neon~b4d2e4",
+  "mat~Neon~bd4242",
+  "mat~SmoothPlastic~000000~t9",
+  "mat~SmoothPlastic~2b2b2b",
+  "mat~SmoothPlastic~2c2c2c",
+  "mat~SmoothPlastic~519538",
+  "mat~SmoothPlastic~73312b",
+  "mat~SmoothPlastic~73312b~t9",
+  "mat~SmoothPlastic~9b9a9c",
+  "mat~SmoothPlastic~a0a0a2",
+  "mat~SmoothPlastic~a12424",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~c2c2c2"
+ ],
+ "parts": 302,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": [
+  "mesh 8924543945: ('Connection broken: IncompleteRead(0 bytes read, 1 more expected)', IncompleteRead(0 bytes read, 1 more expected))"
+ ]
+}

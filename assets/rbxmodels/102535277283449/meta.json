@@ -1,0 +1,27 @@
+{
+ "id": 102535277283449,
+ "name": "BathroomSink",
+ "size_m": [
+  2.399,
+  1.741,
+  0.924
+ ],
+ "materials": [
+  "mat~Foil~c7d4e4~t6",
+  "mat~Metal~887850",
+  "mat~Metal~a0844f",
+  "mat~Plastic~80bbdb",
+  "mat~Plastic~be6862",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~Wood~6c584b"
+ ],
+ "parts": 24,
+ "skipped_invisible": 4,
+ "unions_skipped": 1,
+ "decals": 0,
+ "unions": 2,
+ "warnings": [
+  "union: CSG v5: unexpected layout nv=163688991 stride=-861395531"
+ ]
+}

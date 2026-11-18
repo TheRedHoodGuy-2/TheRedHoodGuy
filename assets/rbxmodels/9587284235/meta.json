@@ -1,0 +1,19 @@
+{
+ "id": 9587284235,
+ "name": "Microwave",
+ "size_m": [
+  1.037,
+  0.612,
+  0.697
+ ],
+ "materials": [
+  "mat~Metal~a3a2a5",
+  "mat~Metal~cdcdcd"
+ ],
+ "parts": 2,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 1,
+ "unions": 1,
+ "warnings": []
+}

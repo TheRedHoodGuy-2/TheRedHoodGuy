@@ -1,0 +1,20 @@
+{
+ "id": 6243887144,
+ "name": "Samsung Dryer",
+ "size_m": [
+  1.479,
+  1.87,
+  1.343
+ ],
+ "materials": [
+  "mat~Metal~1b2a35",
+  "mat~SmoothPlastic~1b2a35",
+  "mat~SmoothPlastic~1b2a35~t3"
+ ],
+ "parts": 29,
+ "skipped_invisible": 7,
+ "unions_skipped": 0,
+ "decals": 1,
+ "unions": 13,
+ "warnings": []
+}

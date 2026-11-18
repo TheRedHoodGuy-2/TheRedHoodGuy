@@ -33,3 +33,7 @@ Exteriors that match the floor plans (so a window seen from inside is the same w
 ## Open questions
 - Map source: OpenStreetMap tiles reach the cloud; the street-data API (Overpass) is blocked from the cloud (try from
   the laptop bridge or a different endpoint). Google Maps can be used as a visual reference.
+
+
+## Status 2026-11-18 21:00
+Steps 1-5 built (v1): boards, furniture, all rooms of both houses, both shells, the town from real OSM data (Overpass worked through the laptop). Next: Xavier's review, then fixes he calls.

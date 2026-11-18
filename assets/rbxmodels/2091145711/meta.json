@@ -1,0 +1,22 @@
+{
+ "id": 2091145711,
+ "name": "Bathroom Toilet",
+ "size_m": [
+  1.227,
+  1.61,
+  0.811
+ ],
+ "materials": [
+  "mat~Ice~cfdae4~t4",
+  "mat~Metal~cacbd1",
+  "mat~Plastic~90929c",
+  "mat~Sand~e7e7ec",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 14,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 12,
+ "warnings": []
+}

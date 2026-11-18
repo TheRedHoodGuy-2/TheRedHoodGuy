@@ -1,0 +1,34 @@
+{
+ "id": 5928948870,
+ "name": "Oven,COMPLETE",
+ "size_m": [
+  1.702,
+  3.315,
+  1.234
+ ],
+ "materials": [
+  "mat~Glass~5b5d69~t5",
+  "mat~Glass~f8f8f8~t7",
+  "mat~Ice~f8f8f8",
+  "mat~Marble~1b2a35",
+  "mat~Metal~111111",
+  "mat~Metal~1b2a35",
+  "mat~Metal~5b5d69",
+  "mat~Plastic~111111",
+  "mat~Plastic~1b2a35",
+  "mat~Plastic~562424",
+  "mat~Plastic~5b5d69",
+  "mat~Plastic~9fa1ac",
+  "mat~Plastic~f8f8f8",
+  "mat~Wood~e7e7ec"
+ ],
+ "parts": 93,
+ "skipped_invisible": 0,
+ "unions_skipped": 2,
+ "decals": 0,
+ "unions": 8,
+ "warnings": [
+  "union asset 5928948541: no MeshData inside",
+  "union asset 5928948541: no MeshData inside"
+ ]
+}

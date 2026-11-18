@@ -223,3 +223,15 @@ Next phase: 7 faces / face animation / lip sync.
 - Sheet: docs/sheets/houseA_living_furniture_v1.jpg. Sources: store sofa 11652583496 (repainted), Poly Haven armchair / console / plant / pillows, modelled table, rug, arc lamp, TV, art.
 - New: materials boucle (curly_teddy_natural; wool_boucle is actually PLAID, not used), linen, jute, velvet; loadRbx paint option; ph swap option; texReady() (unloaded maps rendered black in stills).
 - Poly Haven sofas are all Victorian / classic: unusable for modern houses. Store sofas mostly blocky; 11652583496 is the only good modern one found.
+
+## 2026-11-18 21:00 WORLD BUILT v1 (Xavier: "build everything")
+- Plans v2 (engine/designs/plans.js, one source for boards + interiors + shells): 16 x 11 m houses, corridor upstairs,
+  main stair + cellar stair side by side, every door / window placed once.
+- Interiors: engine/sets/house.js (multi-room floors, shared partitions, stairs + stairwell holes + railings, attic roof),
+  engine/designs/styles.js (per-room surfaces), furniture.js (library), furnish.js (layouts by room type, slot-based so
+  doors stay clear). 38 rooms furnished. Stills: tools/allrooms.sh -> out/rooms/, sheets docs/sheets/house_{A,B}_built_v1.jpg.
+- Shells: engine/sets/shell.js (siding / stucco, trims, roofs, garage, porch, path, driveway) from the same plan.
+- Town: engine/sets/town.js from real OSM data (research/map.md): roads, sidewalks, 972 building shells, parks, civic
+  signs, leaf-card street trees, House A + B on two real lots. Sheet docs/sheets/town_v1.jpg.
+- Known gaps (v1): his-bedroom desk corner cluttered; attic dust sheets read as blocks; shower glass hard to see;
+  hallway still cameras face walls; town buildings are shells with painted windows (by design until a story needs one).

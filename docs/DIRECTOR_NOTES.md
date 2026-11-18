@@ -174,3 +174,12 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   planned: a proper map with school, police station, fire station etc. Other buildings are OUTER SHELLS only until a
   story needs their inside. Ideally copy a real, good-looking neighbourhood (e.g. American) from a map.
 - Same standard as Gneef's world: a proper actual set. Pulled models are fine as long as they fit the design.
+
+## 2026-11-18 19:25 Inspect every imported model
+- The store sofa had a throw blanket "dripping" over it and I sent it without noticing. EVERY pulled / imported model gets
+  looked at close up before it is used: drips, throws, stray parts, holes, wrong scale, baked junk (blankets, logos, text).
+  Remove what doesn't belong (split the mesh) or reject the model.
+- "Build everything" (houses, shells, town) quickly so we can move to the next phase. Show him the result, don't stop per room.
+- 2026-11-18 20:29 Trees: blob trees (noisy spheres, low-poly facets) REJECTED hard ("low poly pieces of shit"). Trees are
+  built like game trees: real trunk + branches + hundreds of alpha leaf cards from a real leaf scan (engine/sets/town.js
+  treeParts). Never ship faceted blobs for foliage.

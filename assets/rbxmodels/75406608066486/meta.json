@@ -1,0 +1,24 @@
+{
+ "id": 75406608066486,
+ "name": "Model",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~Glass~cacbd1~t6",
+  "mat~Metal~1b2a35",
+  "mat~Metal~5b5d69",
+  "mat~Metal~69665c",
+  "mat~Metal~a3a2a5",
+  "mat~Metal~aba89e",
+  "mat~Metal~f8f8f8",
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 63,
+ "skipped_invisible": 0,
+ "unions_skipped": 5,
+ "decals": 10,
+ "warnings": []
+}

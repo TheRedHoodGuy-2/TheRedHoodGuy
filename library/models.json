@@ -378,5 +378,225 @@
   ],
   "parts": 21,
   "unions_skipped": 0
+ },
+ "2091145711": {
+  "name": "Bathroom Toilet",
+  "size_m": [
+   1.227,
+   1.61,
+   0.811
+  ],
+  "parts": 14,
+  "unions_skipped": 0
+ },
+ "13232590585": {
+  "name": "Toilet",
+  "size_m": [
+   0.927,
+   1.409,
+   0.581
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "104018038431688": {
+  "name": "Model",
+  "size_m": [
+   1.508,
+   2.942,
+   1.952
+  ],
+  "parts": 42,
+  "unions_skipped": 5
+ },
+ "995603100": {
+  "name": "Refrigerator",
+  "size_m": [
+   1.442,
+   3.961,
+   2.012
+  ],
+  "parts": 37,
+  "unions_skipped": 0
+ },
+ "6290449270": {
+  "name": "Modern Fridge",
+  "size_m": [
+   1.424,
+   3.087,
+   1.635
+  ],
+  "parts": 3,
+  "unions_skipped": 0
+ },
+ "132650402034566": {
+  "name": "Oven",
+  "size_m": [
+   1.186,
+   1.153,
+   1.275
+  ],
+  "parts": 34,
+  "unions_skipped": 0
+ },
+ "75406608066486": {
+  "name": "Model",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 63,
+  "unions_skipped": 5
+ },
+ "2106113027": {
+  "name": "Wash Machine By StarModelX",
+  "size_m": [
+   1.393,
+   1.689,
+   1.458
+  ],
+  "parts": 18,
+  "unions_skipped": 2
+ },
+ "16835770952": {
+  "name": "UNGROUP!",
+  "size_m": [
+   1.039,
+   1.726,
+   2.794
+  ],
+  "parts": 362,
+  "unions_skipped": 146
+ },
+ "79400172627241": {
+  "name": "Folder",
+  "size_m": [
+   1.321,
+   1.576,
+   2.437
+  ],
+  "parts": 85,
+  "unions_skipped": 34
+ },
+ "6243887144": {
+  "name": "Samsung Dryer",
+  "size_m": [
+   1.479,
+   1.87,
+   1.343
+  ],
+  "parts": 29,
+  "unions_skipped": 0
+ },
+ "85567649577374": {
+  "name": "Sink",
+  "size_m": [
+   0.97,
+   1.256,
+   0.97
+  ],
+  "parts": 10,
+  "unions_skipped": 16
+ },
+ "102535277283449": {
+  "name": "BathroomSink",
+  "size_m": [
+   2.399,
+   1.741,
+   0.924
+  ],
+  "parts": 24,
+  "unions_skipped": 1
+ },
+ "131988671579013": {
+  "name": "Audi RS3 Limousine",
+  "size_m": [
+   6.545,
+   2.086,
+   2.856
+  ],
+  "parts": 302,
+  "unions_skipped": 0
+ },
+ "133877355439325": {
+  "name": "2018 Toyota Camry XSE",
+  "size_m": [
+   2.744,
+   1.917,
+   6.436
+  ],
+  "parts": 118,
+  "unions_skipped": 0
+ },
+ "9435226454": {
+  "name": "Model",
+  "size_m": [
+   1.442,
+   2.229,
+   1.191
+  ],
+  "parts": 6,
+  "unions_skipped": 0
+ },
+ "131726966724793": {
+  "name": "PBR Office Chair",
+  "size_m": [
+   1.145,
+   1.481,
+   1.09
+  ],
+  "parts": 4,
+  "unions_skipped": 0
+ },
+ "501541682": {
+  "name": "Modern Chair",
+  "size_m": [
+   1.958,
+   2.771,
+   1.884
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "2106505232": {
+  "name": "Model",
+  "size_m": [
+   2.544,
+   3.64,
+   2.393
+  ],
+  "parts": 32,
+  "unions_skipped": 0
+ },
+ "5928948870": {
+  "name": "Oven,COMPLETE",
+  "size_m": [
+   1.702,
+   3.315,
+   1.234
+  ],
+  "parts": 93,
+  "unions_skipped": 2
+ },
+ "2362717420": {
+  "name": "Modern Shower",
+  "size_m": [
+   3.632,
+   4.186,
+   1.912
+  ],
+  "parts": 43,
+  "unions_skipped": 0
+ },
+ "9587284235": {
+  "name": "Microwave",
+  "size_m": [
+   1.037,
+   0.612,
+   0.697
+  ],
+  "parts": 2,
+  "unions_skipped": 0
  }
 }

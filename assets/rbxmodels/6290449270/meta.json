@@ -1,0 +1,20 @@
+{
+ "id": 6290449270,
+ "name": "Modern Fridge",
+ "size_m": [
+  1.424,
+  3.087,
+  1.635
+ ],
+ "materials": [
+  "mat~Concrete~a3a2a5",
+  "mat~Plastic~635f62",
+  "mat~SmoothPlastic~958988"
+ ],
+ "parts": 3,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 3,
+ "warnings": []
+}

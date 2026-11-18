@@ -1,0 +1,31 @@
+{
+ "id": 2362717420,
+ "name": "Modern Shower",
+ "size_m": [
+  3.632,
+  4.186,
+  1.912
+ ],
+ "materials": [
+  "mat~Concrete~9fa1ac",
+  "mat~Metal~cacbd1",
+  "mat~Neon~9fa1ac",
+  "mat~Neon~9fa1ac~t4",
+  "mat~Neon~f8f8f8",
+  "mat~Sand~111111",
+  "mat~Sand~1b2a35",
+  "mat~SmoothPlastic~5b5d69",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~9fa1ac~t4",
+  "mat~SmoothPlastic~cacbd1",
+  "mat~SmoothPlastic~e7e7ec",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~Wood~2d2e34"
+ ],
+ "parts": 43,
+ "skipped_invisible": 3,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 26,
+ "warnings": []
+}

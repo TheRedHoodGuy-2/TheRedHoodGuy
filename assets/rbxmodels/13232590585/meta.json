@@ -1,0 +1,21 @@
+{
+ "id": 13232590585,
+ "name": "Toilet",
+ "size_m": [
+  0.927,
+  1.409,
+  0.581
+ ],
+ "materials": [
+  "mat~Foil~c7d4e4~t4",
+  "mat~Metal~cdcdcd",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~SmoothPlastic~dfdfde"
+ ],
+ "parts": 8,
+ "skipped_invisible": 1,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 5,
+ "warnings": []
+}

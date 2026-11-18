@@ -1,0 +1,20 @@
+{
+ "id": 132650402034566,
+ "name": "Oven",
+ "size_m": [
+  1.186,
+  1.153,
+  1.275
+ ],
+ "materials": [
+  "mat~Metal~1b2a35",
+  "mat~Metal~e7e7ec",
+  "mat~SmoothPlastic~5b5d69",
+  "mat~SmoothPlastic~635f62"
+ ],
+ "parts": 34,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

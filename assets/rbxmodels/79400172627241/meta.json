@@ -1,0 +1,34 @@
+{
+ "id": 79400172627241,
+ "name": "Folder",
+ "size_m": [
+  1.321,
+  1.576,
+  2.437
+ ],
+ "materials": [
+  "mat~SmoothPlastic~0d69ac",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t2",
+  "mat~SmoothPlastic~111111~t3",
+  "mat~SmoothPlastic~1b2a35",
+  "mat~SmoothPlastic~3e3c3d",
+  "mat~SmoothPlastic~750000",
+  "mat~SmoothPlastic~7c7c7e",
+  "mat~SmoothPlastic~8fa3a5",
+  "mat~SmoothPlastic~9d6b00",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~9ff3e9~t8",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~e7e7ec",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~fdea8d",
+  "mat~Snow~80bbdb",
+  "mat~Snow~f8f8f8"
+ ],
+ "parts": 85,
+ "skipped_invisible": 83,
+ "unions_skipped": 34,
+ "decals": 6,
+ "warnings": []
+}

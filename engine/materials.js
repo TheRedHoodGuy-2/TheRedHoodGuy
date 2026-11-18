@@ -26,7 +26,7 @@ export const LIB = {
   wood_floor:     { dir: 'ph/wood_floor', kind: 'natural', size: 2.4, rough: .9, normal: 1, note: 'wood boards' },
   laminate:       { dir: 'ph/laminate_floor_02', kind: 'natural', size: 2.4, rough: .8, normal: .8, note: 'laminate / light oak' },
   parquet:        { dir: 'ph/herringbone_parquet', kind: 'natural', size: 1.6, rough: .8, normal: 1, note: 'herringbone parquet (living rooms)' },
-  tiles:          { dir: 'ph/floor_tiles_06', kind: 'tint', size: 1.2, color: '#e8e6e0', rough: .7, normal: 1, note: 'tiles (kitchen, bathroom)' },
+  tiles:          { dir: 'gen/tile_large', kind: 'tint', size: 1.2, color: '#e8e6e0', rough: .7, normal: 1, note: 'large-format modern tiles, 60 cm, thin grout (kitchen, bathroom); the old checker scan read dated' },
   carpet:         { dir: 'ph/dirty_carpet', kind: 'tint', size: 1.2, color: '#9aa0a8', rough: 1, normal: 1.2, note: 'carpet (bedrooms, offices)' },
   concrete:       { dir: 'ph/concrete_floor', kind: 'tint', color: '#a9a8a4', size: 3, rough: 1, normal: 1, note: 'concrete (garage, sidewalk)' },
   // furniture + soft things
@@ -40,6 +40,17 @@ export const LIB = {
   linen:          { dir: 'ph/rough_linen', kind: 'tint', size: .5, color: '#d8c3a5', rough: 1, normal: 1, note: 'rough linen (bedding, curtains, lamp shades)' },
   jute:           { dir: 'ph/hessian_380', kind: 'tint', size: .5, color: '#c9ad84', rough: 1, normal: 1.6, note: 'jute / hessian weave (rugs, baskets)' },
   velvet:         { dir: 'ph/velour_velvet', kind: 'tint', size: .5, color: '#6f7b4f', rough: 1, normal: .6, note: 'velvet (armchairs, cushions; use sheen)' },
+  siding:         { dir: 'gen/lap_siding', kind: 'tint', size: 1, color: '#f2efe8', rough: .6, normal: 1.4, note: 'painted lap siding, .25 m boards (US houses)' },
+  shingles:       { dir: 'gen/shingles', kind: 'tint', size: 1.6, color: '#4a4c50', rough: .9, normal: 1.2, note: 'asphalt shingles (roofs)' },
+  roofTiles:      { dir: 'ph/clay_roof_tiles', kind: 'natural', size: 1.6, rough: .8, normal: 1, note: 'clay roof tiles' },
+  stucco:         { dir: 'ph/painted_plaster_wall', kind: 'tint', size: 1.6, color: '#efe6d6', rough: 1, normal: 2, note: 'stucco / render (houses, shops)' },
+  asphalt:        { dir: 'ph/asphalt_02', kind: 'tint', size: 4, color: '#56585c', rough: .95, normal: 1, note: 'road asphalt' },
+  pavement:       { dir: 'ph/concrete_pavement_02', kind: 'tint', size: 2.5, color: '#c9c6c0', rough: .9, normal: 1, note: 'sidewalk / driveway concrete' },
+  grass:          { dir: 'ph/leafy_grass', kind: 'tint', size: 2.5, color: '#5f8a3a', rough: 1, normal: 1, note: 'lawn (the scan tinted green: natural it read brown-orange)' },
+  facadeSiding:   { dir: 'gen/facade_siding', kind: 'tint', size: 4.38, color: '#f2efe8', rough: .7, normal: 1.2, note: 'town house wall: siding with one window per storey tile' },
+  facadeBrick:    { dir: 'gen/facade_brick', kind: 'tint', size: 4.38, color: '#a5573f', rough: .9, normal: 1.2, note: 'town brick wall with windows' },
+  facadeStucco:   { dir: 'gen/facade_stucco', kind: 'tint', size: 4.38, color: '#e9dfcc', rough: .9, normal: 1, note: 'town render wall with windows' },
+  facadeShop:     { dir: 'gen/facade_shopfront', kind: 'tint', size: 4.38, color: '#e9dfcc', rough: .9, normal: 1, note: 'shop ground floor: display window' },
   knit:           { dir: 'gen/knit', kind: 'tint', size: .6, color: '#d9d4ea', rough: 1, normal: 1.2, note: 'knit (bedding, sweaters: Gneef look)' },
 };
 export function mat(name, o = {}) {

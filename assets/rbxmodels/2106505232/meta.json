@@ -1,0 +1,22 @@
+{
+ "id": 2106505232,
+ "name": "Model",
+ "size_m": [
+  2.544,
+  3.64,
+  2.393
+ ],
+ "materials": [
+  "mat~Fabric~f8f8f8",
+  "mat~Fabric~ffff00",
+  "mat~Metal~111111",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 32,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 17,
+ "warnings": []
+}

@@ -13,7 +13,8 @@ svg text { font: 600 7.5px system-ui; fill:#2b2d31 } svg .dim { font-weight:400;
 .sw span { position:absolute; bottom:-15px; left:0; font-size:9px; color:#6a717c; white-space:nowrap }
 .card p { margin:16px 0 0; font-size:13px; color:#3b3f45 } .card b { color:#24262a }
 </style></head><body><div class="wrap" id="w"></div>
-<script>
+<script type="module">
+import { PLANS } from './engine/designs/plans.js';
 const H = {
  A: { title: 'House A: warm modern (the guy\'s family)', sub: 'Two storeys + finished basement + attic. White-oak floors, creamy walls, walnut and black accents, olive and terracotta soft goods, a dark-teal kitchen. Sizes in metres at our Roblox scale (real plans x 1.4).',
   floors: {
@@ -46,6 +47,11 @@ const H = {
    ['Basement storage', ['#cfccc6','#8f8a82','#b59a74','#6d6a66','#e9e1d2'], ['concrete','steel shelves','cardboard','pipes','bulb light'], 'Bare concrete, steel shelves of boxes, washer/dryer, one hanging bulb. Spooky when needed.'],
    ['Attic', ['#e4d8c6','#a88a64','#c9bba6','#6b5a48','#f2e6c8'], ['raw pine','beams','dust','trunks','window light'], 'Exposed beams, old trunk, rocking chair, dress form, one window.'] ] } };
 const k = new URLSearchParams(location.search).get('h') || 'A', D = H[k], w = document.getElementById('w'), S = 15;
+// floor plans come from the ONE plan file the builder uses (v2: 16 x 11 m, corridor upstairs, stacked stairs)
+const tint = { living: '#efe6d6', kitchen: '#cfdad6', dining: '#efe6d6', entry: '#e9dfcf', hall: '#ece6dc', toilet: '#e6e0d6', laundry: '#e2ddd3', study: '#e8e4c8', garage: '#d9d6cf', hallUp: '#e9dfcf', linen: '#e2ddd3', corridor: '#ece6dc', parents: '#efe3d3', ensuite: '#e6e0d6', teenBoy: '#c9ccd2', teenGirl: '#f2d8d6', kid: '#dfe6ee', bathroom: '#dfe3e0', guest: '#ece4d8', office: '#ece4d8', rec: '#d9d2c6', storage: '#cfcac2', basementRaw: '#cfccc6', furnace: '#c4c0b9', attic: '#e0d3bf', mudroom: '#e2dbd0', den: '#e8ecdf' };
+const names = { ground: 'Ground floor', up: 'Upstairs', basement: 'Basement', attic: 'Attic' };
+D.floors = Object.fromEntries(Object.entries(PLANS[k].floors).map(([fk, F]) => [names[fk], F.rooms.map(r => [r.name, r.x, r.z, r.w, r.d, tint[r.type] || '#eee'])]));
+D.sub = PLANS[k].sub + ' Sizes in metres at our Roblox scale (real plans x 1.4).';
 let html = `<h1>${D.title}</h1><p class="sub">${D.sub}</p><div class="plans">`;
 for (const [fl, rooms] of Object.entries(D.floors)) {
   const mx = Math.max(...rooms.map(r => r[1] + r[3])), my = Math.max(...rooms.map(r => r[2] + r[4]));

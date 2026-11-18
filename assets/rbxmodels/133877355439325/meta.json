@@ -1,0 +1,42 @@
+{
+ "id": 133877355439325,
+ "name": "2018 Toyota Camry XSE",
+ "size_m": [
+  2.744,
+  1.917,
+  6.436
+ ],
+ "materials": [
+  "mat~Fabric~5b5d69",
+  "mat~Fabric~635f62",
+  "mat~Neon~970000",
+  "mat~Plastic~3c3c3c",
+  "mat~Plastic~564236",
+  "mat~Plastic~635f62",
+  "mat~SmoothPlastic~000000",
+  "mat~SmoothPlastic~0f0f0f",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t7",
+  "mat~SmoothPlastic~191919",
+  "mat~SmoothPlastic~1e1e1e",
+  "mat~SmoothPlastic~3c3c3c",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~750000",
+  "mat~SmoothPlastic~787878",
+  "mat~SmoothPlastic~828282",
+  "mat~SmoothPlastic~970000",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~a3a2a5~t8",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~SmoothPlastic~d95a00",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~ff0000",
+  "mat~SmoothPlastic~ff0000~t8",
+  "mat~SmoothPlastic~ffb000"
+ ],
+ "parts": 118,
+ "skipped_invisible": 9,
+ "unions_skipped": 0,
+ "decals": 73,
+ "warnings": []
+}

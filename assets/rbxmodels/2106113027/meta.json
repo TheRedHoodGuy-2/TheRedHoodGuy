@@ -1,0 +1,31 @@
+{
+ "id": 2106113027,
+ "name": "Wash Machine By StarModelX",
+ "size_m": [
+  1.393,
+  1.689,
+  1.458
+ ],
+ "materials": [
+  "mat~Metal~111111",
+  "mat~Metal~3f3c3e",
+  "mat~Metal~cdcdcd",
+  "mat~Metal~d5d3d3",
+  "mat~Metal~edeaea",
+  "mat~Metal~f4f3f3",
+  "mat~Metal~f8f8f8",
+  "mat~Metal~f9f9f9",
+  "mat~SmoothPlastic~c8c8c8",
+  "mat~SmoothPlastic~cacbd1~t8",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 18,
+ "skipped_invisible": 0,
+ "unions_skipped": 2,
+ "decals": 0,
+ "unions": 7,
+ "warnings": [
+  "union asset 2102763876: no MeshData inside",
+  "union asset 2102763876: no MeshData inside"
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": 85567649577374,
+ "name": "Sink",
+ "size_m": [
+  0.97,
+  1.256,
+  0.97
+ ],
+ "materials": [
+  "mat~Metal~a3a2a5",
+  "mat~Plastic~111111",
+  "mat~Wood~a3a2a5"
+ ],
+ "parts": 10,
+ "skipped_invisible": 0,
+ "unions_skipped": 16,
+ "decals": 1,
+ "warnings": [
+  "union: CSG v5: unexpected layout nv=-704564840 stride=257992559",
+  "union: CSG v5: unexpected layout nv=-704564840 stride=257992559",
+  "union: CSG v5: unexpected layout nv=-704564840 stride=257992559",
+  "union: CSG v5: unexpected layout nv=-704564840 stride=257992559",
+  "union: CSG v5: unexpected layout nv=1577137128 stride=-2124373506",
+  "union: CSG v5: unexpected layout nv=1006711783 stride=-2090851301",
+  "union: CSG v5: unexpected layout nv=2114007429 stride=-1218402327",
+  "union: CSG v5: unexpected layout nv=-83807679 stride=-1092573754",
+  "union: CSG v5: unexpected layout nv=-117361694 stride=929080708",
+  "union: CSG v5: unexpected layout nv=973157352 stride=1398842395",
+  "union: CSG v5: unexpected layout nv=1560359888 stride=828417448",
+  "union: CSG v5: unexpected layout nv=973157351 stride=-1621089253",
+  "union asset 86212452429204: no MeshData inside",
+  "union: CSG v5: unexpected layout nv=-838750142 stride=2002790205",
+  "union: CSG v5: unexpected layout nv=-838750142 stride=2002790205",
+  "union: CSG v5: unexpected layout nv=-83807864 stride=-1117772354"
+ ]
+}
