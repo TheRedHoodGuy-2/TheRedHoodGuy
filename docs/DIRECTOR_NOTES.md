@@ -126,3 +126,9 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   Clothes from the triaged normal clothing (flat and 3D mixed), accessories with personality (glasses, headphones,
   bag) that fit and never clash; recolouring allowed but with proper real materials (real denim texture etc).
   Built only after clothing triage. Faces come later; mains are designed separately with Xavier.
+
+## 2026-11-18 10:08 Personality = what the character looks like
+- Personality is not a text line: think per character what that type actually carries and wears. Jock: sporty 3D
+  outfit. Nerd: glasses, neat shirt, maybe a book bag. Cool kid: shades, skateboard, streetwear. Then dress them so
+  the type reads at a glance.
+- Faces / face animation / lip sync and scripts / niche / retention are moved to later (complicated, own sessions).
