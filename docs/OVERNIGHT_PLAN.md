@@ -24,7 +24,7 @@ Rules for this run (from Xavier, all binding):
 - [ ] How his voice sounds (pitch, energy, pace, pauses) for the voice item.
 - Output: research/gneef_top20_scripts.md (+ transcripts in research/gneef_top20/).
 
-## 2. Scripting + retention research  [ ]
+## 2. Scripting + retention research  [x] DONE -> research/scripting_retention.md (FORMAT_BIBLE update waits for Xavier's length decision)
 - [ ] Hooks (first frame, first line), retention strategies, open loops, pattern interrupts, payoffs, loops for Shorts.
 - [ ] Retention-rate benchmarks for Shorts and long form (3-10 min); what YouTube rewards (viewed vs swiped, APV).
 - [ ] Reddit drama storytime format: why it holds people (AITA, betrayal, revenge, "was I wrong?"), how to adapt a
