@@ -113,7 +113,7 @@ def shift(img, dx, dy, k=1.0):
     return img.transform((S, S), Image.AFFINE, (1, 0, -dx, 0, 1, -dy), resample=Image.BICUBIC)
 def run(style):
     src = f'{AI}/{style}'; dst = f'{OUT}/{style}'; os.makedirs(dst, exist_ok=True); meta = {'style': style}
-    sheets = {k: [key(c) for c in cells(f'{src}/{k}.png')] for k in 'ABCD' if os.path.exists(f'{src}/{k}.png')}
+    sheets = {k: [key(c) for c in cells(f'{src}/{k}.png')] for k in 'ABCDEF' if os.path.exists(f'{src}/{k}.png')}
     A1 = sheets['A'][0]; mouth = mbox(mouth_mask(A1)); eyes = bbox(eyes_only(A1)); meta['split'] = int(mouth[1]) if mouth else S; meta['eyes'] = [int(v) for v in eyes]; meta['mouth'] = [int(v) for v in mouth] if mouth else None
     fix = {}
     def med(boxes):
@@ -123,6 +123,11 @@ def run(style):
         if ma is not None and mc is not None:
             k = float(np.clip((ma[2] - ma[0]) / max(1, mc[2] - mc[0]), .7, 1.4)); cx, cy = (mc[0] + mc[2]) / 2, (mc[1] + mc[3]) / 2; tx, ty = (ma[0] + ma[2]) / 2, (ma[1] + ma[3]) / 2
             fix['C'] = (tx - (S / 2 + (cx - S / 2) * k), ty - (S / 2 + (cy - S / 2) * k), k)
+    for kk in 'EF':   # talking-mouth rows (MOUTHS_v2): aligned like sheet C, to the mouths of sheet A
+        if kk in sheets and 'A' in sheets:
+            ma = med([mbox(mouth_mask(i)) for i in sheets['A']]); mc = med([bbox(i) for i in sheets[kk] if bbox(i) is not None])
+            if ma is not None and mc is not None:
+                cx, cy = (mc[0] + mc[2]) / 2, (mc[1] + mc[3]) / 2; tx, ty = (ma[0] + ma[2]) / 2, (ma[1] + ma[3]) / 2; fix[kk] = (tx - cx, ty - cy, 1.0)
     if 'D' in sheets:
         ea = med([bbox(eyes_only(i)) for i in sheets['A']]); ed = med([bbox(i) for i in sheets['D']])
         k = float(np.clip((ea[2] - ea[0]) / max(1, ed[2] - ed[0]), .8, 1.25)); cx, cy = (ed[0] + ed[2]) / 2, (ed[1] + ed[3]) / 2; tx, ty = (ea[0] + ea[2]) / 2, (ea[1] + ea[3]) / 2

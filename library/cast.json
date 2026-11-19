@@ -1,0 +1,10 @@
+{
+ "_doc": "THE CAST (Xavier 2026-11-19 10:24: characters stay the same person in every video). Bank ids + overrides. The two mains: boy (red hood, narrator) and girl (her own family, not picked yet).",
+ "boy":   { "base": "m005", "name": "the red hood guy (narrator)", "skin": "#9a6444", "hair": [], "pants": 139566330228696,
+            "wear": [[11419556095, null], [5644892394, "#c3222c"]], "faceSet": "ai:05_intimidating", "note": "3D Plain Red Hoodie + red hood up, blue jeans" },
+  "mia":   { "base": "f005", "name": "Mia, his sister" },
+  "mom":   { "base": "f034", "name": "Mom (Jade)" },
+  "grandma": { "base": "f051", "name": "Grandma (Keisha)" },
+  "teacher": { "base": "f010", "name": "his teacher" },
+  "mailman": { "base": "m009", "name": "the mailman" }
+}

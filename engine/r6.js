@@ -247,7 +247,7 @@ export async function makeR6(spec = {}) {
   // (one canvas + one texture reused, so a frame costs one 1024 canvas redraw)
   const live = { cache: new Map(), cv: null, tex: null, key: '' };
   api.preloadFace = async urls => { urls = urls.flatMap(u => typeof u === 'string' ? [u] : [u.u, u.clip].filter(Boolean)); await Promise.all([...new Set(urls)].filter(u => !live.cache.has(u)).map(async u => live.cache.set(u, await img(u)))); };
-  api.faceNow = (layers, place = {}) => { const key = layers.join('|') + JSON.stringify(place); if (key === live.key) return; live.key = key;
+  api.faceNow = (layers, place = {}) => { const key = JSON.stringify(layers) + JSON.stringify(place); if (key === live.key) return; live.key = key;
     if (!live.cv) { live.cv = document.createElement('canvas'); live.cv.width = live.cv.height = 1024; live.tex = new THREE.CanvasTexture(live.cv); live.tex.colorSpace = THREE.SRGBColorSpace; live.tex.anisotropy = 8; live.tex.wrapS = THREE.RepeatWrapping; live.tex.repeat.x = -1; live.tex.offset.x = 1; }
     const x = live.cv.getContext('2d'); x.clearRect(0, 0, 1024, 1024); x.imageSmoothingQuality = 'high'; const k = place.k || 1, w = 1024 * k, ox = (1024 - w) / 2 + (place.dx || 0) * 1024, oy = (1024 - w) / 2 + (place.dy || 0) * 1024;
     drawItems(x, layers, u => live.cache.get(u), place);

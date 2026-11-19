@@ -72,7 +72,7 @@ export async function buildSuburb(scene, { seed = 7, length = 110 } = {}) {
     add(new THREE.SphereGeometry(.045, 16, 12), M(0xc9a24a, { roughness: .3, metalness: .8 }), DOOR_W / 2 - .09, -.02, .07, slab);
     // house number plate + porch lamp
     add(cyl(.07, .05, .2, 14), M(0xfff1c9, { emissive: 0xffe0a0, emissiveIntensity: .5 }), .85, FLOOR + 2.35, .1, H);
-    const door = { hinge, slab, world: new THREE.Vector3(0, FLOOR, 1.2).applyMatrix4(H.updateMatrixWorld(true) && H.matrixWorld) }; refs.doors.push(door);
+    const door = { hinge, slab, world: new THREE.Vector3(0, FLOOR, 1.2).applyMatrix4((H.updateMatrixWorld(true), H.matrixWorld)) }; refs.doors.push(door);
     return { group: H, door, bushAt: [-2.75, 2.75].map(sx => new THREE.Vector3(sx, 0, .75).applyMatrix4(H.matrixWorld)) };
   }
   // ---------- two rows of houses ----------

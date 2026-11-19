@@ -7,7 +7,7 @@ function chromePath() { const base = process.env.PLAYWRIGHT_BROWSERS_PATH || '/o
 export async function openPage({ width = 540, height = 960, dsf = 1 } = {}) {
   const browser = await chromium.launch({ executablePath: chromePath(), args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: dsf });
-  page.on('pageerror', e => console.log('PAGEERR', e.message));
+  page.on('pageerror', e => console.log('PAGEERR', e.message, (e.stack || '').split('\n').slice(1, 4).join(' | ')));
   page.on('console', m => { if (m.type() === 'error' && !m.text().includes('ERR_FAILED')) console.log('CONSOLE', m.text()); });
   await page.route('**/*', r => {
     const u = r.request().url();
