@@ -1,0 +1,11 @@
+# Research index (read before looking anything up again)
+- animation.md: animation principles, posing (silhouette, line of action, power centre, weight), moving holds, eye timing, R6 notes (2026-11-19)
+- animation_r6.md: first pass on Roblox R6 animation (devforum, Moon Animator)
+- cinematography.md: composition, depth/value, lighting, lens/FOV/DOF, camera moves, colour scripts, grading, why CG looks CG + our gaps (2026-11-19)
+- faces.md: Roblox classic vs dynamic faces, decal face animation plan, lip sync mouth chart (2026-11-19)
+- classroom.md: US high-school classroom + seated R6 measurements (2026-11-19)
+- house_design.md, map.md, scale.md (+ scale_data.json): houses, the Naperville town map, studio scale
+- look_study_2026-11-18.md, gneef_first_look.md, gneef_top20*: reference-channel look and formula studies
+- scripting_retention.md: hooks, pacing, retention
+- model_pull.md, render_speed.md: model sources and render cost
+- sfx_sources.md, voice_fish.md, voice_options.md: sound effects and voice

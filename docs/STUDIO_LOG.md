@@ -255,3 +255,10 @@ Next phase: 7 faces / face animation / lip sync.
 - Bank = library/characters.json (100 m + 100 f, 26 archetypes), built ONLY from items I passed by eye (library/bank_ok.json,
   tools/bankpool.py). tools/charbank.py --redo <ids> regenerates single characters. Review log: docs/sheets/charbank_review.md.
 - Grey hair for grandparents = real desaturating tint in r6.js wear(). 3D clothing left out of the bank until its fit is fixed.
+
+## 2026-11-19 Colourways, classroom v1, research batch
+- Repeated bank garments get their own colourways (tools/recolor.py, assets/variants/).
+- Classroom set v1 (engine/sets/classroom.js, scenes/classroom.js): research/classroom.md. 22 bank students + teacher, 0 clips.
+- Research: research/animation.md, faces.md, cinematography.md (+ research/README.md index). Next: distil into
+  docs/ANIMATION.md + a docs/LOOK.md draft, close the look gaps (grain, CA, halation, motion blur, lift/gamma/gain,
+  per-shot key + rim, colour script step), then faces.

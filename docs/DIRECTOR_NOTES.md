@@ -202,3 +202,7 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   _test_pants.png: every face named, UP arrow) rendered from 4 sides before use; review sheets render at res 2048.
 - 2026-11-19 02:10 "why repeat the exact texture when you can change the colour": a garment worn by more than one bank
   character gets a new colourway for every extra wearer (tools/recolor.py), prints kept, real cloth colours only.
+- 2026-11-19 02:50 research scope added: film composition / staging, colour theory + colour GRADING (very important),
+  lighting types, camera (lens types, FOV, depth of field), and "pseudo-photorealism": how films and animations look
+  like films (not basic 3D objects dropped in a scene), applied to camera, characters, backgrounds, scenes. Goes with
+  the animation, posing and Roblox-faces research.
