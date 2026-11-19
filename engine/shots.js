@@ -20,10 +20,10 @@ export function planShots(list, subjectAt) {
     const Z = SIZE[s.size || 'medium'], fov = s.fov || Z.fov, d0 = Z.h / (2 * Math.tan(fov * Math.PI / 360)), sp = s.speed ?? 1;
     const mv = s.move || 'push', T = s.dur, keys = [], N = Math.max(2, Math.ceil(T / .2));
     const ease = mv === 'punch' ? (u => E.out(Math.min(1, u / .3))) : mv.startsWith('orbit') || mv.startsWith('truck') ? E.io : E.out;
-    const start = subjectAt(s.t);
+    const start = subjectAt(s.t, s);
     for (let k = 0; k <= N; k++) {
-      const u = k / N, tt = s.t + u * T, e = ease(u), sub = (s.follow ?? (mv === 'track' || mv === 'push' || mv === 'pull' || mv === 'punch' || mv.startsWith('orbit') || mv.startsWith('truck'))) ? subjectAt(tt) : start;
-      const look = subjectAt(tt);
+      const u = k / N, tt = s.t + u * T, e = ease(u), sub = (s.follow ?? (mv === 'track' || mv === 'push' || mv === 'pull' || mv === 'punch' || mv.startsWith('orbit') || mv.startsWith('truck'))) ? subjectAt(tt, s) : start;
+      const look = subjectAt(tt, s);
       let dist = d0, az = (s.az ?? 30) * Math.PI / 180, lat = 0, hy = (ANGLE[s.angle || 'eye'] ?? 0) * Math.min(1.6, Z.h / 1.35);
       const rate = .07 * sp * T;                                   // fraction of the distance covered over the shot
       if (mv === 'push') dist *= 1 + Math.min(.45, rate) * (.5 - e);
@@ -34,7 +34,7 @@ export function planShots(list, subjectAt) {
       if (mv === 'craneUp' || mv === 'craneDown') hy += (mv === 'craneUp' ? 1 : -1) * .9 * sp * (e - .5);
       const a = sub.heading + az, fx = Math.sin(a), fz = Math.cos(a);
       const p = [sub.x + fx * dist + fz * lat, (sub.y ?? 0) + Z.y + hy, sub.z + fz * dist - fx * lat];
-      const l = [look.x + (s.aimX || 0), (look.y ?? 0) + (s.aimY ?? Z.y) + hy * .15, look.z];
+      const l = [look.x + (s.aimX || 0), (look.y ?? 0) + (s.aimY ?? Z.y) + hy * .15, look.z + (s.aimZ || 0)];
       keys.push({ t: tt, p, l, fov });
     }
     return { t: s.t, keys, ease: 'linear', drift: s.drift ?? .6, focus: s.focus, spec: s };

@@ -76,12 +76,22 @@ export async function buildSuburb(scene, { seed = 7, length = 110 } = {}) {
     return { group: H, door, bushAt: [-2.75, 2.75].map(sx => new THREE.Vector3(sx, 0, .75).applyMatrix4(H.matrixWorld)) };
   }
   // ---------- two rows of houses ----------
+  // picket fence = ONE double-sided cut-out panel (pickets + rails painted with alpha), never thin boxes
+  const FENCE = canvasTex(512, 96, (g, w, h) => { g.clearRect(0, 0, w, h); g.fillStyle = '#fbfaf6'; for (let i = 0; i < 13; i++) { const x = i * w / 13 + 6; g.fillRect(x, 10, w / 13 * .5, h - 10); g.beginPath(); g.moveTo(x, 10); g.lineTo(x + w / 26, 0); g.lineTo(x + w / 13 * .5, 10); g.fill(); }
+    g.fillRect(0, h * .28, w, 7); g.fillRect(0, h * .7, w, 7); g.fillStyle = 'rgba(0,0,0,.12)'; for (let i = 0; i < 13; i++) g.fillRect(i * w / 13 + 6 + w / 13 * .42, 10, 3, h - 10); });
+  const fenceMat = new THREE.MeshStandardMaterial({ map: FENCE, alphaTest: .5, side: THREE.DoubleSide, roughness: .6 });
+  const fence = (fx, fz) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(6.6, .98), fenceMat); m.position.set(fx, .49, fz); m.rotation.y = Math.PI / 2; m.castShadow = true; m.receiveShadow = true; W.add(m); };
   refs.houses = []; const bushSpots = [], treeSpots = [];
   let k = 0;
   for (let x = -length / 2 + 8; x <= length / 2 - 22; x += 15) {
     for (const s of [-1, 1]) { const h = house(x + (s > 0 ? 6 : 0), s * 13.2, s > 0 ? Math.PI : 0, HOUSES[(k++ * 5 + 1) % HOUSES.length]); refs.houses.push(h); bushSpots.push(...h.bushAt); }
-    for (const s of [-1, 1]) { treeSpots.push([x + 7.5 + (s > 0 ? 6 : 0), s * (8.2 + R() * 2)]); for (let z = 6.2; z < 12.6; z += .5) rb(.07, .95, .07, M(0xfbfaf6, { roughness: .6 }), x + 7.5 + (s > 0 ? 6 : 0), .48, s * z, W, .012); for (const y of [.38, .8]) rb(.045, .07, 6.6, M(0xfbfaf6), x + 7.5 + (s > 0 ? 6 : 0), y, s * 9.4, W, .01); }
+    for (const s of [-1, 1]) { treeSpots.push([x + 7.5 + (s > 0 ? 6 : 0), s * (8.2 + R() * 2)]); fence(x + 7.5 + (s > 0 ? 6 : 0), s * 9.4); }
   }
+  // the neighbourhood goes on: a second row of houses behind the backyards, and rows closing both ends of the street,
+  // so no camera direction ever sees empty ground (Xavier 2026-11-19: "I thought we built an actual full neighbourhood")
+  const backRow = [];
+  for (let x = -length / 2 - 10; x <= length / 2 + 20; x += 15) for (const s of [-1, 1]) backRow.push(house(x + 3 + (s > 0 ? 7 : 0), s * 44, s > 0 ? 0 : Math.PI, HOUSES[(k++ * 3 + 2) % HOUSES.length]));
+  for (const ex of [-length / 2 - 34]) for (let z = -30;   /* the park end stays open: the sun sets on the hills there */ z <= 30; z += 15) { const hh = house(ex, z, ex > 0 ? -Math.PI / 2 : Math.PI / 2, HOUSES[(k++ * 7 + 3) % HOUSES.length]); backRow.push(hh); }
   // mailboxes by the kerb
   for (const h of refs.houses) { const p = new THREE.Vector3(1.5, 0, 7.6).applyMatrix4(h.group.matrixWorld); rb(.09, 1.05, .09, M(0x5a5048), p.x, .53, p.z, W, .012); const mb = rb(.24, .26, .46, M(0x2f4f6f, { roughness: .5 }), p.x, 1.14, p.z, W, .09); rb(.02, .12, .02, M(0xc23b2b), p.x + .13, 1.2, p.z + .1, W, .004); }
   // ---------- park at the +x end: open lawn, a low hill, benches ----------
@@ -89,16 +99,25 @@ export async function buildSuburb(scene, { seed = 7, length = 110 } = {}) {
   const hill = add(new THREE.SphereGeometry(16, 48, 24, 0, Math.PI * 2, 0, Math.PI / 2), pbr('leafy_grass', [14, 14], { color: 0xb9d68a, normal: 1.4 }), px + 8, -12.2, -24, W, { shadow: false }); hill.receiveShadow = true;
   for (const [bx, bz, br] of [[px - 6, -7.2, 0], [px + 6, -7.2, 0]]) { const B = grp(bx, 0, bz, W); B.rotation.y = br; for (let i = 0; i < 4; i++) rb(1.7, .05, .11, M(0x8a5a36, { roughness: .6 }), 0, .47, -.2 + i * .13, B, .015); for (let i = 0; i < 3; i++) rb(1.7, .11, .05, M(0x8a5a36, { roughness: .6 }), 0, .62 + i * .14, -.3, B, .015); for (const sx of [-.75, .75]) { rb(.07, .47, .5, M(0x2c2f33, { roughness: .5 }), sx, .235, -.05, B, .015); rb(.07, .55, .06, M(0x2c2f33), sx, .7, -.31, B, .015); } }
   // ---------- real trees + shrubs ----------
-  const L = new GLTFLoader(), [treeG, shrubG] = await Promise.all([L.loadAsync(url('assets/models/tree_small_02.glb')), L.loadAsync(url('assets/models/shrub_02.glb'))]);
+  const L = new GLTFLoader(), [treeG, shrubG] = [null, await L.loadAsync(url('assets/models/shrub_02.glb'))];
   const prep = (g, leafTint) => g.scene.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; o.material.side = THREE.DoubleSide; o.material.alphaTest = .4; if (leafTint && /lea|shrub/i.test(o.material.name)) o.material.color.multiply(new THREE.Color(leafTint)); } });
-  prep(treeG, 0xdfffc0); prep(shrubG, 0xe6ffc8);
-  const tb = new THREE.Box3().setFromObject(treeG.scene), th = tb.max.y - tb.min.y, sb = new THREE.Box3().setFromObject(shrubG.scene), sh = sb.max.y - sb.min.y, sc = sb.getCenter(new THREE.Vector3());
+  prep(shrubG, 0xe6ffc8);
+  const sb = new THREE.Box3().setFromObject(shrubG.scene), sh = sb.max.y - sb.min.y, sc = sb.getCenter(new THREE.Vector3());
   for (let i = 0; i < 9; i++) treeSpots.push([px - 12 + R() * 34, -9 - R() * 22]);                               // park trees
   for (let x = -length / 2 - 20; x < length / 2 + 30; x += 9) for (const s of [-1, 1]) treeSpots.push([x + R() * 4, s * (24 + R() * 10)]);   // behind the houses
   refs.trees = [];
-  for (const [x, z] of treeSpots) { const t = treeG.scene.clone(true), s = (5.5 + R() * 3.2) / th; t.scale.setScalar(s); t.rotation.y = R() * 6.28; t.position.set(x, -tb.min.y * s, z); W.add(t); refs.trees.push(t); }
+  for (let x = -length / 2 - 30; x < length / 2 + 60; x += 7) for (const s of [-1, 1]) treeSpots.push([x + R() * 4, s * (56 + R() * 14)]);   // behind the second row
+  { const { treeParts, leafMat, barkMat } = await import('./town.js'); const kinds = [1, 2, 3].map(treeParts), lm = leafMat(), bm = barkMat(), m4 = new THREE.Matrix4();
+    const IL = kinds.map(k => new THREE.InstancedMesh(k.leaves, lm, treeSpots.length)), IW = kinds.map(k => new THREE.InstancedMesh(k.wood, bm, treeSpots.length)), n = [0, 0, 0];
+    treeSpots.forEach(([x, z], i) => { const k = i % 3, sc = (6 + R() * 3) / 7.5; m4.compose(new THREE.Vector3(x, 0, z), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, R() * 6.28, 0)), new THREE.Vector3(sc, sc, sc)); IL[k].setMatrixAt(n[k], m4); IW[k].setMatrixAt(n[k], m4); n[k]++; refs.trees.push([x, z]); });
+    for (let k = 0; k < 3; k++) { for (const I of [IL[k], IW[k]]) { I.count = n[k]; I.castShadow = true; I.receiveShadow = true; I.instanceMatrix.needsUpdate = true; W.add(I); } } }
+  // far hills all round (the sun sets behind the ones past the park end): big low domes of grass + tree belts on them
+  for (let i = 0; i < 14; i++) { const a = i / 14 * Math.PI * 2, r = 190 + R() * 60, hr = 60 + R() * 50, hy = 10 + R() * 14 + (Math.cos(a) > .6 ? 10 : 0);
+    const hm = new THREE.Mesh(new THREE.SphereGeometry(hr, 28, 12, 0, Math.PI * 2, 0, Math.PI / 2), new THREE.MeshStandardMaterial({ color: new THREE.Color('#6f8f4a').offsetHSL(R() * .03, 0, (R() - .5) * .06), roughness: 1 }));
+    hm.scale.y = hy / hr; hm.position.set(Math.cos(a) * r, -1, Math.sin(a) * r); W.add(hm); }
+  { const far = new THREE.Mesh(new THREE.CircleGeometry(420, 48), new THREE.MeshStandardMaterial({ color: '#6c8a46', roughness: 1 })); far.rotation.x = -Math.PI / 2; far.position.y = -.03; W.add(far); }
   for (const p of bushSpots) for (let i = -1; i <= 1; i++) { const b = shrubG.scene.clone(true), s = (.75 + R() * .3) / sh; b.scale.setScalar(s); b.rotation.y = R() * 6.28; b.position.set(p.x + i * .62 - sc.x * s, -sb.min.y * s, p.z - sc.z * s); W.add(b); }
-  scene.fog = new THREE.Fog(0xcfe6fb, 70, 260);
+  scene.fog = new THREE.Fog(0xcfe6fb, 90, 380);
   refs.spots = { street: new THREE.Vector3(0, .02, 0), sidewalk: new THREE.Vector3(0, .14, -4.8), lawn: new THREE.Vector3(-7, 0, -8.5), porch: refs.houses[6]?.door.world || new THREE.Vector3(), park: new THREE.Vector3(px, 0, -9), hill: new THREE.Vector3(px + 8, 3.8, -24) };
   return refs;
 }

@@ -17,6 +17,12 @@ export const GRADE = {   // look study targets: Gneef brightness .31, saturation
           lift: [.004, .008, .02], gain: [1.05, 1.0, .95], bloom: .3, bloomRadius: .6, bloomThreshold: 1.35, bloomCap: 2.4, bloomTint: '#ffb391', grain: .025, ca: .004, volume: 0 },
 };
 
+export function paintSky(sky, top, horizon, glow = null, glowDir = null) {   // recolour the dome (time of day); glow = warm patch round the sun
+  const p = sky.geometry.attributes.position, c = sky.geometry.attributes.color, a = new THREE.Color(top), b = new THREE.Color(horizon), g = glow ? new THREE.Color(glow) : null, v = new THREE.Vector3(), col = new THREE.Color();
+  for (let i = 0; i < p.count; i++) { v.fromBufferAttribute(p, i).normalize(); const k = Math.max(0, v.y); col.copy(b).lerp(a, Math.pow(k, .55));
+    if (g && glowDir) { const d = Math.max(0, v.dot(glowDir)); col.lerp(g, Math.pow(d, 6) * (1 - k) * .9); } col.multiplyScalar(1.25); c.setXYZ(i, col.r, col.g, col.b); }
+  c.needsUpdate = true;
+}
 function skyDome(top = '#4f8fd6', horizon = '#cfe3f5') {
   const g = new THREE.SphereGeometry(350, 32, 16), c = [], a = new THREE.Color(top), b = new THREE.Color(horizon), p = g.attributes.position;
   for (let i = 0; i < p.count; i++) { const k = Math.max(0, p.getY(i) / 350); const col = b.clone().lerp(a, Math.pow(k, .55)).multiplyScalar(1.25); c.push(col.r, col.g, col.b); }
@@ -40,15 +46,22 @@ function subjectLights(scene, { key = 5, rim = 30, keyColor = '#fff2e2', rimColo
   };
 }
 
-export function dayLook(scene, { sunAz = 215, sunEl = 38, sun = 3.3, fill = .55, keyK = 4, rimK = 34 } = {}) {
-  const L = new THREE.DirectionalLight('#ffe3bd', sun), az = sunAz * Math.PI / 180, el = sunEl * Math.PI / 180;
+export function dayLook(scene, { sunAz = 215, sunEl = 38, sun = 3.3, fill = .55, keyK = 4, rimK = 34, sunColor = '#ffe3bd', skyTop, skyHorizon, hemiSky = '#a9c8ee', hemiGround = '#5d6b3c', disc = false } = {}) {
+  const L = new THREE.DirectionalLight(sunColor, sun), az = sunAz * Math.PI / 180, el = sunEl * Math.PI / 180;
   const dir = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el));
   L.castShadow = true; L.shadow.mapSize.set(2048, 2048); Object.assign(L.shadow.camera, { left: -7, right: 7, top: 7, bottom: -7, near: 1, far: 70 });
   L.shadow.bias = -.0004; L.shadow.normalBias = .02; scene.add(L, L.target);
-  scene.add(new THREE.HemisphereLight('#a9c8ee', '#5d6b3c', fill), skyDome());
+  const hemi = new THREE.HemisphereLight(hemiSky, hemiGround, fill), sky = skyDome(skyTop, skyHorizon); scene.add(hemi, sky);
+  let sunDisc = null; if (disc) { sunDisc = new THREE.Mesh(new THREE.CircleGeometry(9, 40), new THREE.MeshBasicMaterial({ color: new THREE.Color('#ffd08a').multiplyScalar(2.2), fog: false })); scene.add(sunDisc); }
   const lights = subjectLights(scene, { key: keyK, rim: rimK });
   const post = { ...GRADE.day, sun: L, aperture: 2.0, maxBlur: 9 };
-  return { sun: L, post, follow(cam, subj) {
+  // setSun: move / recolour the sun over time (a sunset): az / el in degrees; the disc sits on the sky at that direction
+  const setSun = (az, el, o = {}) => { const a = az * Math.PI / 180, e = el * Math.PI / 180; dir.set(Math.sin(a) * Math.cos(e), Math.sin(e), Math.cos(a) * Math.cos(e));
+    if (o.color) L.color.set(o.color); if (o.intensity != null) L.intensity = o.intensity; if (o.fill != null) hemi.intensity = o.fill;
+    if (sunDisc) { sunDisc.position.copy(dir).multiplyScalar(300); sunDisc.lookAt(0, 0, 0); sunDisc.visible = el > -6; } };
+  setSun(sunAz, sunEl);
+  return { sun: L, hemi, sky, sunDisc, setSun, post, follow(cam, subj) {
+    if (sunDisc) { const c = cam.position; sunDisc.position.copy(dir).multiplyScalar(300).add(c); sunDisc.lookAt(c); }
     L.target.position.set(subj.x, 0, subj.z); L.position.copy(L.target.position).addScaledVector(dir, 30);   // crisp shadows where we look
     lights(cam, subj, dir.clone().setY(0).normalize());
     post.focus = cam.position.distanceTo(new THREE.Vector3(subj.x, (subj.y || 0) + (subj.focusY ?? 1.5), subj.z));

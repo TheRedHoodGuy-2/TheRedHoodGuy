@@ -1,0 +1,82 @@
+{
+ "expr": {
+  "neutral": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti_split/10151317201_m.png"
+  ],
+  "determined": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti_split/10151317201_m.png"
+  ],
+  "sly": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti_split/100817458905898_m.png"
+  ],
+  "smug": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376403844.png",
+   "packs/alti_split/100817458905898_m.png"
+  ],
+  "evil": [
+   "packs/alti_split/10151317201_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti_split/72790099869278_m.png"
+  ],
+  "laugh": [
+   "packs/alti_split/128721343133483_e.png",
+   "packs/alti_split/72790099869278_m.png"
+  ],
+  "happy": [
+   "packs/alti_split/128721343133483_e.png",
+   "packs/alti_split/128721343133483_m.png"
+  ],
+  "shocked": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti_split/132291071282220_m.png"
+  ],
+  "surprised": [
+   "packs/alti_split/10151062442_e.png",
+   "packs/alti_split/10151062442_m.png"
+  ],
+  "stunned": [
+   "packs/alti_split/86372641254448_e.png",
+   "packs/alti_split/86372641254448_m.png"
+  ],
+  "scared": [
+   "packs/alti/10150915673.png",
+   "packs/alti_split/132291071282220_m.png"
+  ],
+  "sad": [
+   "packs/alti/10150915673.png",
+   "packs/alti/6376350182.png"
+  ],
+  "nervous": [
+   "packs/alti/10150915673.png",
+   "packs/alti_split/10151317201_m.png"
+  ],
+  "deadpan": [
+   "packs/alti/10685555064.png"
+  ],
+  "annoyed": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti/6376350182.png"
+  ],
+  "angry": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti_split/103371234480503_m.png"
+  ],
+  "lookUp": [
+   "packs/alti_split/10151062442_e.png",
+   "packs/alti_split/10151317201_m.png"
+  ]
+ },
+ "talk": {
+  "1": "packs/alti_split/10151317201_m.png",
+  "2": "packs/alti_split/78381074807715_m.png"
+ },
+ "blink": "packs/alti/6383716102.png"
+}

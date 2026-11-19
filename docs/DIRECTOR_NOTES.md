@@ -283,3 +283,12 @@ defend every pixel of it, it does not get sent.
 - Wrong hoodie: the boy's hoodie is catalog 91631221833009 (Black Hoodie) with its sleeves, tinted RED.
 - Next: script about gender swapping with his homeboy (homeboy becomes a girl, the boy's sinister "finally" look),
   approve, then the FINAL video straight away (no low-quality preview), unattended, following every rule. Push OK.
+## 2026-11-19 16:19-16:24 Boy look + faces + light (Xavier, very angry)
+- The boy is LIGHT-skinned like the old main (#f0c09e). Never change a main's skin. He needs HAIR (black, good-looking,
+  chosen: 11442395338 "Short Black Spiky Anime Hair"); no extra hood item on top of the hoodie he chose.
+- Sleeves must not run into the hands: a strip of skin shows at the base of the hand (the hoodie is built that way).
+- Catalog roller skates were garbage: research real inline skates and MODEL them properly.
+- Faces: NOT our AI faces and NOT "cool" eyes. The goofy round-eye AltiWyre faces (pack #36, #11, #12, #152, sometimes
+  #512) with expressions (library/alti_face.json, eyes / mouths split by tools/altisplit.py).
+- Light: stop making everything warm / golden. Default = bright, clear, sunny day (crisp white sun, blue sky, like a
+  beach day). Warm sunset only where the story needs it, and even then not orange soup.

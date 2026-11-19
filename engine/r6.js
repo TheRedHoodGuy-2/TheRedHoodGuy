@@ -145,6 +145,10 @@ function rigToLimbs(handle, parts, top = true) {
       if (k.startsWith('arm')) snapSleeve(piece);
     }
     g.setIndex(buckets.torso);
+    // the torso piece keeps ragged triangle ends where the sleeves were cut off: fold anything past the torso's sides back
+    // flat onto them (the arm covers that face), so no zigzag teeth show down the sides (2026-11-19)
+    if (top) { const mi = m.clone().invert(), seen = new Set(); for (const i of buckets.torso) { if (seen.has(i)) continue; seen.add(i); a.fromBufferAttribute(P, i).applyMatrix4(m);
+      if (Math.abs(a.x) > 1.03 && a.y > -1.05) { a.x = Math.sign(a.x) * 1.03; a.applyMatrix4(mi); P.setXYZ(i, a.x, a.y, a.z); } } P.needsUpdate = true; g.computeVertexNormals(); }
   }
 }
 // SLEEVE SNAP (2026-11-18): a sleeve rides exactly on its arm block. Centre the sleeve on the arm (x / z) when it was
@@ -154,6 +158,19 @@ function snapSleeve(piece) {
   for (let i = 0; i < P.count; i++) b.expandByPoint(v.fromBufferAttribute(P, i).applyMatrix4(m));
   const sz = b.getSize(new THREE.Vector3()), c = b.getCenter(new THREE.Vector3());
   if (sz.x < 1.7 && sz.z < 1.7) { const dx = Math.abs(c.x) < .35 ? -c.x : 0, dz = Math.abs(c.z) < .35 ? -c.z : 0; piece.position.x += dx; piece.position.z += dz; piece.updateMatrix(); m.copy(piece.matrix); mi.copy(m).invert(); }
+  // CUFF (Xavier 2026-11-19): R6 arm blocks include the hand, so a sleeve made to reach the wrist of an R15 arm swallowed the
+  // hand. Shorten the sleeve (uniformly, shape kept) so its cuff ends .24 stud above the block's bottom: a strip of skin shows.
+  { const CUFF = -1 + .24, used = [...new Set(piece.geometry.index ? piece.geometry.index.array : [])];   // only the sleeve's own vertices (the buffer holds the whole garment)
+    const yb = new THREE.Box3(); for (const i of used) yb.expandByPoint(v.fromBufferAttribute(P, i).applyMatrix4(m));
+    const ymax = yb.max.y, ymin = yb.min.y;
+    if (used.length && ymin < CUFF && ymax > CUFF + .3) { const k = (ymax - CUFF) / (ymax - ymin);
+      for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); v.y = ymax - (ymax - v.y) * k; v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); } }
+    // snug fit (Xavier 2026-11-19 16:50: the sleeve looked fat and weirdly placed): centre the sleeve on the arm's axis and
+    // scale its cross-section so it sits just outside the block (half-size .56 stud vs the arm's .5) along its whole length
+    const xb = new THREE.Box3(); for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); if (v.y > -1 && v.y < .9) xb.expandByPoint(v); }
+    if (!xb.isEmpty()) { const cx = (xb.min.x + xb.max.x) / 2, cz = (xb.min.z + xb.max.z) / 2, sx = .56 / Math.max(.3, (xb.max.x - xb.min.x) / 2), sz = .56 / Math.max(.3, (xb.max.z - xb.min.z) / 2);
+      for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); v.x = (v.x - cx) * sx; v.z = (v.z - cz) * sz; v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); } }
+    P.needsUpdate = true; piece.geometry.computeVertexNormals(); }
   const PAD = .02; let moved = 0;
   for (let i = 0; i < P.count; i++) { v.fromBufferAttribute(P, i).applyMatrix4(m);
     if (Math.abs(v.x) < .5 + PAD && Math.abs(v.z) < .5 + PAD && v.y > -1 && v.y < 1) {
@@ -284,6 +301,9 @@ export async function makeR6(spec = {}) {
     if (!col) col = `rgb(${(p.color || [163, 162, 165]).join(',')})`;
     const t = document.createElement('canvas'); t.width = 585; t.height = 559; const tx = t.getContext('2d'); tx.fillStyle = col; tx.fillRect(0, 0, 585, 559);
     const bottom = (p.attachments || []).some(a => a.name.startsWith('Waist'));   // pants and skirts hang from the waist
+    // hands stay skin (Xavier 2026-11-19: the hoodie is built so a strip of skin shows at the base of the hand; painting the whole
+    // arm in the garment colour made the sleeve look like it ran into the hand)
+    if (!bottom) { tx.fillStyle = css(skin); for (const ap of ['armL', 'armR']) { for (const f of ['front', 'back', 'left', 'right']) { const [x, y, w, h] = TEMPLATE[ap][f]; tx.fillRect(x, y + h * .8, w, h * .2 + 1); } const [bx, by, bw, bh] = TEMPLATE[ap].bottom; tx.fillRect(bx, by, bw, bh); } }
     blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']);
     if (bottom) { g.fillStyle = '#26262a'; for (const lp of ['legL', 'legR']) { const [x, y, w, h] = LAYOUT[lp].bottom; g.fillRect(x, y, w, h); } }   // shoe soles: seen when sitting
     map.needsUpdate = true;

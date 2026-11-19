@@ -3,8 +3,10 @@
  "boy": {
   "base": "m005",
   "name": "the red hood guy (narrator)",
-  "skin": "#9a6444",
-  "hair": [],
+  "skin": "#f0c09e",
+  "hair": [
+   7067588586
+  ],
   "pants": 139566330228696,
   "wear": [
    [
@@ -12,8 +14,8 @@
     "#c3222c"
    ]
   ],
-  "faceSet": "ai:05_intimidating",
-  "note": "3D Black Hoodie 91631221833009 tinted red (its own sleeves, hood up) + blue jeans (Xavier 2026-11-19 15:43)"
+  "faceSet": "alti:boy",
+  "note": "Old-main look (Xavier 2026-11-19 16:19): light skin #f0c09e, black spiky hair (18136340264), 3D Black Hoodie 91631221833009 in red (its own hood, down), jeans, AltiWyre face (library/alti_face.json)"
  },
  "mia": {
   "base": "f005",
@@ -34,5 +36,82 @@
  "mailman": {
   "base": "m009",
   "name": "the mailman"
+ },
+ "mailman_skates": {
+  "base": "m009",
+  "wear": [
+   [
+    97024899582812,
+    null
+   ]
+  ],
+  "note": "mailman on rollerblades (Roller Skates 97024899582812)"
+ },
+ "jayden": {
+  "base": "m016",
+  "name": "Jayden (the boy's homeboy)",
+  "note": "fastest kid on the block"
+ },
+ "jayden_girl": {
+  "base": "m016",
+  "sex": "f",
+  "hair": [
+   9932882251
+  ],
+  "faceSet": "ai:16_shy_moe_smirk",
+  "name": "Jayden after the swap"
+ },
+ "uncle": {
+  "base": "m034",
+  "name": "the boy's uncle"
+ },
+ "aunt_linda": {
+  "base": "m034",
+  "sex": "f",
+  "hair": [
+   4876456635
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "name": "Aunt Linda (the uncle, swapped)"
+ },
+ "kayla": {
+  "base": "m005",
+  "sex": "f",
+  "skin": "#f0c09e",
+  "hair": [
+   9932882251
+  ],
+  "hairTint": "#2a1a12",
+  "pants": 139566330228696,
+  "wear": [
+   [
+    91631221833009,
+    "#c3222c"
+   ]
+  ],
+  "faceSet": "alti:boy",
+  "name": "Kayla (the boy, swapped)"
+ },
+ "swapA": {
+  "base": "m013"
+ },
+ "swapA_f": {
+  "base": "m013",
+  "sex": "f",
+  "hair": [
+   122988594975561
+  ],
+  "faceSet": "ai:16_shy_moe_smirk"
+ },
+ "swapB": {
+  "base": "f001"
+ },
+ "swapB_m": {
+  "base": "f001",
+  "sex": "m",
+  "hair": [
+   8966711821
+  ],
+  "faceSet": "ai:05_intimidating"
  }
 }
