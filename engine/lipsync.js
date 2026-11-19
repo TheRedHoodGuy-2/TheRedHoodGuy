@@ -36,3 +36,10 @@ export function blinkTimes(dur, starts = [], seed = 1) {
   while (t < dur) { if (!out.some(b => Math.abs(b - t) < 1.2)) out.push(t); t += 2.2 + rnd() * 2.4; }
   return out.sort((a, b) => a - b);
 }
+
+// ANIME FLAP (2026-11-19, Xavier 09:21: the per-phoneme sync looked bad): tools/flap.py turns the AUDIO into a per-frame
+// mouth state 0 closed / 1 half / 2 open (speech-band loudness: loud syllable = open, shoulder = half, the dip between
+// syllables = closed; M B P close; 1-frame lead; 2-frame minimum). flapTrack(json, offset) -> t => 0 | 1 | 2 | null (silent)
+export function flapTrack(F, offset = 0) {
+  return t => { const i = Math.floor((t - offset) * F.fps); if (i < 0 || i >= F.states.length) return null; return F.states[i]; };
+}

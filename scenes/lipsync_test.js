@@ -9,7 +9,7 @@ import { makeR6 } from '../engine/r6.js';
 import { poseRig } from '../engine/rig.js';
 import { CLASS } from './classroom.js';
 import { faceSpec, loadClassic, AI_PLACE, VISEMES, EMOTIONS } from '../engine/faceset.js';
-import { talkTrack, blinkTrack, blinkTimes } from '../engine/lipsync.js';
+import { talkTrack, blinkTrack, blinkTimes, flapTrack } from '../engine/lipsync.js';
 
 export const A0 = .35, E0 = 4.88, DUR = 12.2;   // Ava's line starts at A0, Ethan's at E0 (seconds in the clip)
 const SIT = [
@@ -25,8 +25,10 @@ function liveFace(actor, style, emo, talk, blink) {
   const D = `assets/faces/sprites/${style}`, E = cellOf(emo), P = AI_PLACE[style] || {};
   const urls = [`${D}/${E}.png`, `${D}/${E}e.png`, `${D}/D02.png`, `${D}/D03.png`, ...VISEMES.map(v => `${D}/${mouthCell(v)}.png`)];
   return { ready: () => actor.preloadFace(urls), at: t => {
-    const v = talk(t), b = blink(t), eyes = b === 2 ? `${D}/D03.png` : b === 1 ? `${D}/D02.png` : null;
-    const layers = v ? [eyes || `${D}/${E}e.png`, `${D}/${mouthCell(v)}.png`] : eyes ? [eyes, `${D}/C01.png`] : [`${D}/${E}.png`];
+    const b = blink(t), eyes = b === 2 ? `${D}/D03.png` : b === 1 ? `${D}/D02.png` : null;
+    let v = talk(t); if (typeof v === 'number') v = v === 2 ? 'AI' : v === 1 ? 'talkSmile' : 'SHUT';   // flap: open / half / own closed mouth
+    const own = `${D}/${E}.png`;
+    const layers = v && v !== 'SHUT' ? [eyes || `${D}/${E}e.png`, `${D}/${mouthCell(v)}.png`] : eyes ? [eyes, `${D}/C01.png`] : [own];
     actor.faceNow(layers, P); return { v, b }; } };
 }
 export async function build({ scene, W: w, H: h, opts = {} }) {
@@ -48,13 +50,15 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // the two actors (same staging as the research before/after)
   const sHer = C.seats[HER], sHim = C.seats[HIM];
   const her = await makeR6(spec(bank.f002, { face: false })), him = await makeR6(spec(bank.m005, { face: false }));
-  poseRig(her).pose({ legL: [.28, -.04, 1], legR: [.02, -.16, 1], armR: [-.78, -.55, -.12], armL: [.22, -.92, .32], head: [-.62, .06, .14], root: { y: seatY(sHer), rx: .1, rz: -.14 } }); place(her, sHer, 1.15, .04);
+  poseRig(her).pose({ legL: [.28, -.04, 1], legR: [.02, -.16, 1], armR: [-.78, -.55, -.12], armL: [.22, -.92, .32], head: [-.42, .06, .14], root: { y: seatY(sHer), rx: .1, rz: -.14 } }); place(her, sHer, 1.15, .04);   // head turned less than the research frame: a SPEAKER's face must read
   poseRig(him).pose({ legL: [.12, 0, 1], legR: [-.16, -.04, 1], armL: [.1, -.1, .99], armR: [-.22, -.12, .97], head: [.12, -.1, .1], root: { y: seatY(sHim), rx: .16, rz: .05 } }); place(him, sHim);
   // lip + blink tracks from the audio analysis
   const cues = async n => (await (await fetch(new URL(`topics/lipsync_test/${n}.json`, document.baseURI))).json()).mouthCues;
   const fps = opts.fps || 30;
-  const herF = liveFace(her, opts.herStyle || '13_sleepy_chibi_doll', 'smug', talkTrack(await cues('ava'), { fps, offset: A0 }), blinkTrack(blinkTimes(DUR, [A0 - .1, E0 + 1.6], 3), fps));
-  const himF = liveFace(him, opts.himStyle || '05_intimidating', 'neutral', talkTrack(await cues('ethan'), { fps, offset: E0 }), blinkTrack(blinkTimes(DUR, [E0 - .15], 7), fps));
+  const flap = async n => (await (await fetch(new URL(`topics/lipsync_test/${n}_flap.json`, document.baseURI))).json());
+  const FL = opts.lip !== 'phoneme';
+  const herF = liveFace(her, opts.herStyle || '13_sleepy_chibi_doll', 'smug', FL ? flapTrack(await flap('ava'), A0) : talkTrack(await cues('ava'), { fps, offset: A0 }), blinkTrack(blinkTimes(DUR, [A0 - .1, E0 + 1.6], 3), fps));
+  const himF = liveFace(him, opts.himStyle || '05_intimidating', 'neutral', FL ? flapTrack(await flap('ethan'), E0) : talkTrack(await cues('ethan'), { fps, offset: E0 }), blinkTrack(blinkTimes(DUR, [E0 - .15], 7), fps));
   await herF.ready(); await himF.ready();
   // light design (as in the research after)
   C.ceilingLights.forEach(l => l.intensity *= .55);

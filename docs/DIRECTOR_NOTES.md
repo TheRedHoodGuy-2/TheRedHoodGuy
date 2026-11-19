@@ -239,3 +239,10 @@ defend every pixel of it, it does not get sent.
   Xavier: keep the eye base shape as the mask and put a clean full circle pupil where the pupil was, hidden by the lid.
 - 2026-11-19 08:41 Faces: remove the faint white edges around face lines; upscale the sprites so edges are crisp and sharp.
   ("I like the progress. Keep it up.")
+- 2026-11-19 09:21 RESEARCH IN EVERY FRAME (priority rule): composition, lens + depth, lighting, posing, face acting and
+  grade from the research must hold in EVERY scene and EVERY frame of every animation. It is part of the frame check I
+  do before Xavier sees anything (docs/FRAME_CHECK.md). Lip sync test was "extremely bad": needs extensive research and
+  a different approach (Xavier suggests anime-style open / close flap). Budget: 80% of his weekly limit used, resets
+  Tuesday: everything must be done by then. Next phase after fixes: CONTENT ENGINE (retention, hooks, cuts, camera,
+  actions), then a strict CLAUDE.md of rules, then the first video. Steal what worked from the old repo (the
+  shoulder-vs-elbow posing research).

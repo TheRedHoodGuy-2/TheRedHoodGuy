@@ -36,3 +36,17 @@ apprentice blog; Dartmouth After Effects lip sync guide; arts.ac.uk lecture note
 ## Built (2026-11-19)
 - engine/lipsync.js: talkTrack (Rhubarb cues -> our mouths with lead, 2-frame minimum, closures protected),
   blinkTrack / blinkTimes (motivated blinks). scenes/lipsync_test.js + topics/lipsync_test (Rhubarb json + audio).
+
+## 2026-11-19 09:21: Xavier: the phoneme lip sync looked "extremely bad". Why, and the fix
+Diagnosis (from the frame-by-frame mouth strips): (1) the 16 sheet-C mouths are separate drawings of different sizes
+and styles, so the mouth jumped between unrelated pictures ~8 times a second; (2) Rhubarb's most common shape (B, most
+consonants) is a clenched-teeth rectangle in our sheets, so she looked like she was grimacing; (3) talking mouths
+replaced the expression's own mouth; (4) Ava's face was turned too far to read.
+Fix = ANIME FLAP ("kuchipaku"): anime uses about three mouth drawings (closed / half / open) instead of matching every
+sound, and audiences accept it (ANN forum discussion of Japanese lip flaps; serifu explainer). Western dub tools and
+PNGtuber / VTuber apps drive open / closed from the voice's loudness with a threshold (After Effects audio-to-keyframes
+expressions, Wwise meter lip sync, veadotube issues: flicker between syllables and noise opening the mouth).
+Our version (tools/flap.py): loudness in the 300-3000 Hz speech band per frame, normalised to the loudest syllable
+within 0.5 s; > -6 dB open, > -16 dB half, below = closed (the dips BETWEEN syllables close it, so it flaps per syllable,
+measured, not random); M B P closures from Rhubarb; 1-frame lead; 2-frame minimum; closed = the expression's own mouth,
+so the face keeps its acting. Timing beats shape accuracy (highonfilms): shapes placed exactly on waveform peaks read late.

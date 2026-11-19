@@ -271,3 +271,4 @@ Next phase: 7 faces / face animation / lip sync.
   08:04 Xavier: split eyes jagged, girls' eyes "bleeding": sprites re-keyed (thick whites bounded by ink kept whole,
   slivers dropped), 05 eyes rebuilt as clean vector layers (tools/eyerig2.py). PRIORITY RULE logged in DIRECTOR_NOTES.
 - 2026-11-19 09:15 Sprites now 1024, edge colour decontaminated (no light rims), crisp alpha; 05 eye layers rebuilt at 1024; lip sync clip re-rendered and checked frame by frame (mouth vs Rhubarb cue every frame): out/lipsync_test_audio.mp4.
+- 2026-11-19 09:50 Lip sync v2 = anime flap from the audio (tools/flap.py, engine/lipsync.js flapTrack): out/lipsync_flap.mp4, checked frame by frame. docs/FRAME_CHECK.md (research in every frame) is law. engine/r6pose.js ported (shoulder-vs-elbow). NEXT: content engine.

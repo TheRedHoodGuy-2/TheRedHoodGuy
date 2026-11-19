@@ -17,5 +17,15 @@ library engine/poses.js). Pose code drops straight into engine/poses.js.
 6. Every action is an arc: pre-action, action, reaction, post-action. A hand arrives ON the thing before it moves.
 7. Expressive = the whole body commits, not one arm.
 
+8. R6 HAS NO ELBOWS / KNEES (Xavier 2026-11-12, the research that made the old posing good; engine/r6pose.js limbTo):
+   - whole-arm actions pivot at the SHOULDER (reach, arm up, grip a desk, arms out for balance, wind-up): limbTo(part,
+     root, handTarget) with no elbow; the hand LANDS on the target (block slides in / out of the socket up to .16 m).
+   - FOREARM actions slide the block so the SHOULDER BECOMES THE ELBOW (writing, clapping, scratching the head, chin on
+     hand, hand over mouth, arms crossed, fist pump): limbTo(part, root, handTarget, elbowPoint), elbow beside the ribs
+     ~.3 m under the shoulder. Slight clipping into the torso is fine, a lot is not; > ~.25 m slide reads detached.
+   - Build limbs from WHERE THE HAND / FOOT GOES, not from joint angles; pass the pose's root so a lean / turn still
+     lands the hand on the target.
+9. Sitting: legs near-vertical slid forward (leg top reads as the knee), or legs horizontal with the root up.
+
 ## New lessons
 (none yet: the first pose Xavier gives in the new studio goes here with its before/after)
