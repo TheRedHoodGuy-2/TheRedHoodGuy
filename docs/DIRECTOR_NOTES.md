@@ -224,3 +224,16 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   asked me to pull the Classic Roblox Facepack + AltiWyre's Face Pack, and to bring back the old repo's faces. RULE:
   randomise faces across the bank: females get the female styles (13, 16), some the neutral 11, some old-repo faces;
   males get 05 / 11 / old-repo faces; "the most diverse face ever". Asked: what comes after faces.
+- 2026-11-19 07:44 Faces need a PROBABILITY MODEL: faces not custom-made for girls (11 neutral, big-eye, kit, classic)
+  count as "ugly on girls": low (not zero) chance on girls; a bit higher on guys. A girl with a pretty personality must
+  never get an ugly face (f020 big-eye -> prettier, e.g. sleepy chibi). Wants 2-3 more male dynamic heads to make AI
+  sheets. LIP SYNC must match the audio phoneme by phoneme, never random flapping: research it properly (not only
+  Roblox). Separate eyes / pupils / brows if feasible. Wants PROOF (visual) for every research area, incl. animation
+  + posing (dynamic poses). Thinks camera was finished: check the logs.
+
+## PRIORITY RULE (Xavier 2026-11-19 08:04, repeated many times): INSPECT EVERY PRODUCT IN DETAIL BEFORE SENDING
+Before anything goes to Xavier: open it at FULL size, zoom into every face / edge / contact, dissect it (jagged edges,
+see-through parts, skin bleeding into eyes, clipping, wrong shapes). A thumbnail look is not a check. If I would not
+defend every pixel of it, it does not get sent.
+- 08:04 the layer-split eyes looked chopped / jagged; the girls' eyes look like the skin bleeds into them. Idea from
+  Xavier: keep the eye base shape as the mask and put a clean full circle pupil where the pupil was, hidden by the lid.

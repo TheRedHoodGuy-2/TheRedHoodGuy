@@ -1,0 +1,13 @@
+{
+ "_doc": "Face probability model (Xavier 2026-11-19 07:44). 'made' = faces custom-made for that sex; 'other' = everything else (ugly on girls). p_other = chance a character gets an 'other' face, by archetype. tools/faceassign.py applies it (seeded by id, stable).",
+ "f": {
+  "made": {"ai:13_sleepy_chibi_doll": 1, "ai:16_shy_moe_smirk": 1},
+  "other": {"ai:11_silly_derpy": 3, "kit:anime": 2, "kit:toon": 2, "kit:bean": 2, "kit:classic": 1, "classicB": 1, "classicA": 1, "kit:bigeye": 0.5, "kit:hose": 0.5},
+  "p_other": {"popular": 0, "cute": 0, "preppy": 0, "sporty": 0.05, "bookworm": 0.2, "artsy": 0.2, "goth": 0.25, "gamer": 0.25, "office": 0.2, "nurse": 0.15, "mom": 0.2, "teacher": 0.25, "grandma": 0.45, "_default": 0.15}
+ },
+ "m": {
+  "made": {"ai:05_intimidating": 1},
+  "other": {"ai:11_silly_derpy": 4, "kit:classic": 2, "kit:tick": 2, "kit:sharp": 2, "kit:marker": 1, "kit:toon": 1, "kit:bigeye": 1, "classicB": 2, "classicA": 1},
+  "p_other": {"jock": 0.25, "preppy": 0.25, "skater": 0.35, "gamer": 0.35, "goth": 0.35, "artsy": 0.35, "country": 0.35, "nerd": 0.45, "dad": 0.4, "office": 0.4, "teacher": 0.4, "coach": 0.4, "grandpa": 0.55, "_default": 0.35}
+ }
+}

@@ -181,3 +181,13 @@ THE 16 EYE STATES, in this order:
 24 star_yum_chibi (female). Big grey gradient anime eyes with a white star highlight, spiky lashes, thin brows, big soft blush, a tiny tongue-out lick mouth.
 
 25 calm_chibi (gender neutral). Big solid black eyes with a flat thick lid line on top and a rounded bottom, a small white square highlight, strong soft blush, a tiny pink triangle mouth.
+
+## Male styles (added 2026-11-19 07:44)
+
+26 bored_dude (male, chill). Two thick black half-lidded eyes (a heavy flat black lid shape over a black lower half), small raised "^" brows high above them, a small sideways smirk line off to one side, a faint pink smear across the nose.
+
+27 toon_chillaxed (male, goofy-confident). Thick black rectangular bar brows set low and straight, no visible eyes in the neutral face (the bars ARE the eyes / brows), a huge white toothy grin with a thick black outline and straight vertical tooth lines. When eyes are needed, draw small black dot eyes just under the bars.
+
+28 toon_spiky_chillax (male, mischievous). Same family as 27: thick black bar brows, and a wide grin of sharp zig-zag white teeth with a thick black outline. When eyes are needed, small black dot eyes under the bars.
+
+02 man_face is also male (see above) if you want a fourth.

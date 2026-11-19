@@ -125,6 +125,7 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
     const px = new Uint8Array(4), sync = () => gl.readPixels(0, 0, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px);   // readPixels really waits; gl.finish does not under SwiftShader
     const lap = k => { if (!T) return; sync(); const t = performance.now(); T[k] = (T[k] || 0) + t - t0; t0 = t; };
     r.toneMapping = THREE.NoToneMapping;
+    dofMat.uniforms.focus.value = dofMix.uniforms.focus.value = P.focus;   // a scene may refocus per shot (S.post.focus)
     r.setRenderTarget(rtScene); r.render(scene, camera); lap('scene');
     camera.updateMatrixWorld();
     let src = rtScene;

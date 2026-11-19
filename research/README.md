@@ -11,3 +11,4 @@
 - sfx_sources.md, voice_fish.md, voice_options.md: sound effects and voice
 - dynfaces.md: Roblox dynamic faces 2026 (migration, what's popular, measured face layout of the top 48), basis of face kit v3
 - facepacks.md: the three face packs pulled 2026-11-19 (classic, AltiWyre, CLASSIC_FACES zip), what they are, how they're used
+- lipsync.md: lip sync + facial animation (mouth chart, Rhubarb, forced alignment, timing rules, blinks, darts, brows) (2026-11-19)

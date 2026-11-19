@@ -265,3 +265,8 @@ Next phase: 7 faces / face animation / lip sync.
 
 - 2026-11-19 04:xx: research before/after sent (docs/sheets/research_before_after.jpg, scenes/research_ab.js, opts.mode before|after). Same whisper beat; after = OTS, 30 deg lens + DOF on her eyes, fill cut + key + window rim, asymmetric posing, kit v2 face, lift/gamma/gain grade. Known weak: his foreground head is a black slab, her near arm a plain block. Next: docs/ANIMATION.md + docs/LOOK.md drafts from research/.
 - 2026-11-19 07:xx FACES: AI sheets 05/11/13/16 sliced + keyed (tools/facesprites.py -> assets/faces/sprites), old repo face kit ported (engine/legacy), classic pack + AltiWyre pulled (tools/rbxm.py), engine/faceset.js = 32 emotions + 16 visemes for every family, faceSet on all 200 bank characters, classroom scene wears them. Sheets: docs/sheets/faces/.
+- 2026-11-19 08:xx Face probability model (library/face_model.json, tools/faceassign.py: girls 16% non-girl faces, guys 29%);
+  male refs 26-28 for AI sheets; lip sync (research/lipsync.md, Rhubarb at /opt/rhubarb, engine/lipsync.js,
+  scenes/lipsync_test.js); docs/ANIMATION.md draft + docs/sheets/pose_proof.jpg; docs/RESEARCH_PROOFS.md.
+  08:04 Xavier: split eyes jagged, girls' eyes "bleeding": sprites re-keyed (thick whites bounded by ink kept whole,
+  slivers dropped), 05 eyes rebuilt as clean vector layers (tools/eyerig2.py). PRIORITY RULE logged in DIRECTOR_NOTES.

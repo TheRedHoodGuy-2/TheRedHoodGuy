@@ -18,7 +18,8 @@
    "Light Grey Sweatpants"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m001",
@@ -41,7 +42,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m002",
@@ -62,7 +64,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:sharp"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m003",
@@ -85,7 +88,8 @@
   "accessories": [
    7856863608
   ],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m004",
@@ -106,7 +110,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "classicB",
+  "faceKind": "other"
  },
  {
   "id": "m005",
@@ -127,7 +132,8 @@
    "Black Suit Trousers"
   ],
   "accessories": [],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m006",
@@ -148,7 +154,8 @@
    "denim trousers"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m007",
@@ -169,7 +176,8 @@
    "Dark Blue Jeans with Black Formal Shoes"
   ],
   "accessories": [],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m008",
@@ -190,7 +198,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m009",
@@ -211,7 +220,8 @@
    "Black Suit Trousers"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m010",
@@ -234,7 +244,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "kit:tick"
+  "faceSet": "classicB",
+  "faceKind": "other"
  },
  {
   "id": "m011",
@@ -255,7 +266,8 @@
    "white sweatpants"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "kit:classic",
+  "faceKind": "other"
  },
  {
   "id": "m012",
@@ -279,7 +291,8 @@
    4197739997
   ],
   "hairTint": "#c9c9c7",
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m013",
@@ -300,7 +313,8 @@
    "Light Grey Sweatpants"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m014",
@@ -323,7 +337,8 @@
   "accessories": [
    4197739997
   ],
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m015",
@@ -344,7 +359,8 @@
    "Black on black tank-top and jeans"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m016",
@@ -367,7 +383,8 @@
   "accessories": [
    130568043270999
   ],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m017",
@@ -388,7 +405,8 @@
    "black trousers"
   ],
   "accessories": [],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m018",
@@ -409,7 +427,8 @@
    "Dark Blue Scrub Pants [-]"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m019",
@@ -434,7 +453,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m020",
@@ -455,7 +475,8 @@
    "blue jeans"
   ],
   "accessories": [],
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m021",
@@ -476,7 +497,8 @@
    "Plain Black Pants"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m022",
@@ -497,7 +519,8 @@
    "Black Suit Trousers"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "kit:tick",
+  "faceKind": "other"
  },
  {
   "id": "m023",
@@ -524,7 +547,8 @@
   "colourway": {
    "pants": "maroon"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m024",
@@ -545,7 +569,8 @@
    "preppy sweatpants"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m025",
@@ -568,7 +593,8 @@
   "accessories": [
    4143016822
   ],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "classicA",
+  "faceKind": "other"
  },
  {
   "id": "m026",
@@ -589,7 +615,8 @@
    "Black on black tank-top and jeans"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m027",
@@ -612,7 +639,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "kit:classic",
+  "faceKind": "other"
  },
  {
   "id": "m028",
@@ -633,7 +661,8 @@
    "cargo pants grey black"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m029",
@@ -656,7 +685,8 @@
   "accessories": [
    7856863608
   ],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "classicA",
+  "faceKind": "other"
  },
  {
   "id": "m030",
@@ -677,7 +707,8 @@
    "cargo pants grey black"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m031",
@@ -698,7 +729,8 @@
    "Formal Black Pants"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m032",
@@ -719,7 +751,8 @@
    "black pants"
   ],
   "accessories": [],
-  "faceSet": "kit:tick"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m033",
@@ -740,7 +773,8 @@
    "Jeans"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m034",
@@ -761,7 +795,8 @@
    "blue jeans"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m035",
@@ -782,7 +817,8 @@
    "Black Formal Slacks -"
   ],
   "accessories": [],
-  "faceSet": "kit:sharp"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m036",
@@ -805,7 +841,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m037",
@@ -826,7 +863,8 @@
    "Grey and white sweatpants w white shoes"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m038",
@@ -850,7 +888,8 @@
    4143016822
   ],
   "hairTint": "#c9c9c7",
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "kit:tick",
+  "faceKind": "other"
  },
  {
   "id": "m039",
@@ -875,7 +914,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m040",
@@ -902,7 +942,8 @@
   "colourway": {
    "pants": "green"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "kit:tick",
+  "faceKind": "other"
  },
  {
   "id": "m041",
@@ -923,7 +964,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "classicB",
+  "faceKind": "other"
  },
  {
   "id": "m042",
@@ -946,7 +988,8 @@
   "accessories": [
    7856863608
   ],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m043",
@@ -967,7 +1010,8 @@
    "Dark Casual Pants Black Trousers [ - ]"
   ],
   "accessories": [],
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m044",
@@ -988,7 +1032,8 @@
    "Black Formal Slacks -"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m045",
@@ -1013,7 +1058,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "kit:bigeye"
+  "faceSet": "kit:bigeye",
+  "faceKind": "other"
  },
  {
   "id": "m046",
@@ -1038,7 +1084,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m047",
@@ -1059,7 +1106,8 @@
    "Grey plaid trousers w/ black high top sneakers"
   ],
   "accessories": [],
-  "faceSet": "kit:marker"
+  "faceSet": "kit:classic",
+  "faceKind": "other"
  },
  {
   "id": "m048",
@@ -1080,7 +1128,8 @@
    "Formal Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:marker"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m049",
@@ -1103,7 +1152,8 @@
   "accessories": [
    4197739997
   ],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m050",
@@ -1128,7 +1178,8 @@
   "colourway": {
    "shirt": "lilac"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m051",
@@ -1155,7 +1206,8 @@
   "colourway": {
    "pants": "olive"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m052",
@@ -1180,7 +1232,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m053",
@@ -1207,7 +1260,8 @@
   "colourway": {
    "shirt": "sage"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m054",
@@ -1228,7 +1282,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m055",
@@ -1249,7 +1304,8 @@
    "jogger fit"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m056",
@@ -1270,7 +1326,8 @@
    "Dark Casual Pants Black Trousers [ - ]"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m057",
@@ -1295,7 +1352,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m058",
@@ -1320,7 +1378,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m059",
@@ -1345,7 +1404,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m060",
@@ -1366,7 +1426,8 @@
    "blue jeans"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m061",
@@ -1387,7 +1448,8 @@
    "Formal Black Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:marker"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m062",
@@ -1410,7 +1472,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "kit:tick"
+  "faceSet": "kit:marker",
+  "faceKind": "other"
  },
  {
   "id": "m063",
@@ -1435,7 +1498,8 @@
   "colourway": {
    "shirt": "pink"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m064",
@@ -1462,7 +1526,8 @@
   "colourway": {
    "shirt": "olive"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m065",
@@ -1487,7 +1552,8 @@
   "colourway": {
    "shirt": "pink"
   },
-  "faceSet": "kit:toon"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m066",
@@ -1514,7 +1580,8 @@
   "colourway": {
    "shirt": "sage"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m067",
@@ -1535,7 +1602,8 @@
    "Dark Casual Pants Black Trousers [ - ]"
   ],
   "accessories": [],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m068",
@@ -1558,7 +1626,8 @@
   "accessories": [
    130568043270999
   ],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m069",
@@ -1583,7 +1652,8 @@
   "colourway": {
    "shirt": "forest"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m070",
@@ -1608,7 +1678,8 @@
   "colourway": {
    "shirt": "royal"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m071",
@@ -1633,7 +1704,8 @@
   "colourway": {
    "shirt": "olive"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m072",
@@ -1660,7 +1732,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/2228336895_sky.png",
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "m073",
@@ -1681,7 +1754,8 @@
    "blue jeans"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "m074",
@@ -1702,7 +1776,8 @@
    "Black Suit Classic Formal Pants [ - ]"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "m075",
@@ -1725,7 +1800,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m076",
@@ -1750,7 +1826,8 @@
   "colourway": {
    "shirt": "green"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m077",
@@ -1778,7 +1855,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "classicB"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "m078",
@@ -1803,7 +1881,8 @@
   "colourway": {
    "shirt": "green"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m079",
@@ -1830,7 +1909,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m080",
@@ -1855,7 +1935,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m081",
@@ -1878,7 +1959,8 @@
   "accessories": [
    7856863608
   ],
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m082",
@@ -1903,7 +1985,8 @@
   "colourway": {
    "shirt": "forest"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "kit:sharp",
+  "faceKind": "other"
  },
  {
   "id": "m083",
@@ -1930,7 +2013,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/6652024161_sky.png",
-  "faceSet": "kit:classic"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m084",
@@ -1955,7 +2039,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m085",
@@ -1980,7 +2065,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "classicA",
+  "faceKind": "other"
  },
  {
   "id": "m086",
@@ -2001,7 +2087,8 @@
    "Dark Scrubs (Pants)"
   ],
   "accessories": [],
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m087",
@@ -2022,7 +2109,8 @@
    "Black Formal Slacks -"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m088",
@@ -2049,7 +2137,8 @@
   "colourway": {
    "pants": "navy"
   },
-  "faceSet": "kit:toon"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m089",
@@ -2074,7 +2163,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:bigeye"
+  "faceSet": "kit:sharp",
+  "faceKind": "other"
  },
  {
   "id": "m090",
@@ -2101,7 +2191,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m091",
@@ -2126,7 +2217,8 @@
   "colourway": {
    "shirt": "blush"
   },
-  "faceSet": "kit:tick"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m092",
@@ -2153,7 +2245,8 @@
   "colourway": {
    "shirt": "lilac"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m093",
@@ -2178,7 +2271,8 @@
   "colourway": {
    "shirt": "lilac"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m094",
@@ -2201,7 +2295,8 @@
   "accessories": [
    10943571579
   ],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "kit:sharp",
+  "faceKind": "other"
  },
  {
   "id": "m095",
@@ -2226,7 +2321,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "kit:marker",
+  "faceKind": "other"
  },
  {
   "id": "m096",
@@ -2251,7 +2347,8 @@
   "colourway": {
    "shirt": "royal"
   },
-  "faceSet": "ai:05_intimidating"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m097",
@@ -2276,7 +2373,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m098",
@@ -2303,7 +2401,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/2228336895_sky.png",
-  "faceSet": "classicB"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "m099",
@@ -2324,7 +2423,8 @@
    "Black on black tank-top and jeans"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:05_intimidating",
+  "faceKind": "made"
  },
  {
   "id": "f000",
@@ -2345,7 +2445,8 @@
    "denim shorts"
   ],
   "accessories": [],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f001",
@@ -2370,7 +2471,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f002",
@@ -2393,7 +2495,8 @@
   "accessories": [
    11884330
   ],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f003",
@@ -2418,7 +2521,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f004",
@@ -2439,7 +2543,8 @@
    "black pleated skirt || black socks"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "classicB",
+  "faceKind": "other"
  },
  {
   "id": "f005",
@@ -2462,7 +2567,8 @@
   "accessories": [
    16266640100
   ],
-  "faceSet": "classicA"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f006",
@@ -2487,7 +2593,8 @@
   "colourway": {
    "pants": "green"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f007",
@@ -2508,7 +2615,8 @@
    "denim shorts"
   ],
   "accessories": [],
-  "faceSet": "kit:bean"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f008",
@@ -2529,7 +2637,8 @@
    "cargo"
   ],
   "accessories": [],
-  "faceSet": "kit:hose"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f009",
@@ -2554,7 +2663,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f010",
@@ -2581,7 +2691,8 @@
   "colourway": {
    "pants": "sky"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f011",
@@ -2602,7 +2713,8 @@
    "Dark Blue Scrub Pants [-]"
   ],
   "accessories": [],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f012",
@@ -2626,7 +2738,8 @@
    4143016822
   ],
   "hairTint": "#c9c9c7",
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "classicB",
+  "faceKind": "other"
  },
  {
   "id": "f013",
@@ -2647,7 +2760,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f014",
@@ -2672,7 +2786,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f015",
@@ -2699,7 +2814,8 @@
   "colourway": {
    "pants": "green"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f016",
@@ -2720,7 +2836,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:bean"
+  "faceSet": "classicA",
+  "faceKind": "other"
  },
  {
   "id": "f017",
@@ -2741,7 +2858,8 @@
    "black pleated skirt  black socks"
   ],
   "accessories": [],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f018",
@@ -2764,7 +2882,8 @@
   "accessories": [
    7856863608
   ],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f019",
@@ -2789,7 +2908,8 @@
   "colourway": {
    "pants": "navy"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f020",
@@ -2810,7 +2930,8 @@
    "grey jeans"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f021",
@@ -2831,7 +2952,8 @@
    "plaid sweatpants "
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f022",
@@ -2852,7 +2974,8 @@
    "Dark Casual Pants Black Trousers [ - ]"
   ],
   "accessories": [],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f023",
@@ -2879,7 +3002,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f024",
@@ -2900,7 +3024,8 @@
    "[-] Scrub Pants Black"
   ],
   "accessories": [],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f025",
@@ -2922,7 +3047,8 @@
   ],
   "accessories": [],
   "hairTint": "#c9c9c7",
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f026",
@@ -2943,7 +3069,8 @@
    "School girl pleat skirt"
   ],
   "accessories": [],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f027",
@@ -2968,7 +3095,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f028",
@@ -2991,7 +3119,8 @@
   "accessories": [
    11884330
   ],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "kit:bigeye",
+  "faceKind": "other"
  },
  {
   "id": "f029",
@@ -3016,7 +3145,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f030",
@@ -3041,7 +3171,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "kit:anime",
+  "faceKind": "other"
  },
  {
   "id": "f031",
@@ -3064,7 +3195,8 @@
   "accessories": [
    130568043270999
   ],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f032",
@@ -3085,7 +3217,8 @@
    "black pleated skirt  black socks"
   ],
   "accessories": [],
-  "faceSet": "kit:classic"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f033",
@@ -3106,7 +3239,8 @@
    "black pleated skirt || black socks"
   ],
   "accessories": [],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f034",
@@ -3127,7 +3261,8 @@
    "Black Jeans with White Shoes"
   ],
   "accessories": [],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f035",
@@ -3152,7 +3287,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f036",
@@ -3179,7 +3315,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f037",
@@ -3200,7 +3337,8 @@
    "White Scrubs (Pants)"
   ],
   "accessories": [],
-  "faceSet": "kit:toon"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f038",
@@ -3226,7 +3364,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f039",
@@ -3247,7 +3386,8 @@
    "Jean Shorts with White Shoes"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f040",
@@ -3272,7 +3412,8 @@
   "colourway": {
    "shirt": "green"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f041",
@@ -3295,7 +3436,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f042",
@@ -3316,7 +3458,8 @@
    "Grey Chef Pants"
   ],
   "accessories": [],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f043",
@@ -3341,7 +3484,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f044",
@@ -3364,7 +3508,8 @@
   "accessories": [
    130568043270999
   ],
-  "faceSet": "kit:toon"
+  "faceSet": "kit:classic",
+  "faceKind": "other"
  },
  {
   "id": "f045",
@@ -3385,7 +3530,8 @@
    "black pleated skirt  black socks"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f046",
@@ -3406,7 +3552,8 @@
    "baggy gym sweatpants"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f047",
@@ -3427,7 +3574,8 @@
    "Plain Black Jeans With Boots"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "kit:anime",
+  "faceKind": "other"
  },
  {
   "id": "f048",
@@ -3454,7 +3602,8 @@
    "pants": "navy"
   },
   "pantsTex": "assets/variants/2688157000_navy.png",
-  "faceSet": "classicB"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f049",
@@ -3483,7 +3632,8 @@
    "pants": "green"
   },
   "pantsTex": "assets/variants/6652024161_green.png",
-  "faceSet": "kit:hose"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "f050",
@@ -3504,7 +3654,8 @@
    "Dark Blue Scrub Pants [-]"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f051",
@@ -3530,7 +3681,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f052",
@@ -3551,7 +3703,8 @@
    "pink skirt with white socks"
   ],
   "accessories": [],
-  "faceSet": "classicB"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f053",
@@ -3576,7 +3729,8 @@
   "colourway": {
    "shirt": "cream"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f054",
@@ -3599,7 +3753,8 @@
   "accessories": [
    301820310
   ],
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f055",
@@ -3624,7 +3779,8 @@
   "colourway": {
    "shirt": "forest"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f056",
@@ -3649,7 +3805,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f057",
@@ -3676,7 +3833,8 @@
   "colourway": {
    "shirt": "blush"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f058",
@@ -3701,7 +3859,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:bean"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f059",
@@ -3726,7 +3885,8 @@
   "colourway": {
    "shirt": "mustard"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f060",
@@ -3747,7 +3907,8 @@
    "Plain Black Jeans With Boots"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "f061",
@@ -3772,7 +3933,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:anime"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f062",
@@ -3801,7 +3963,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/2688157000_sky.png",
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f063",
@@ -3822,7 +3985,8 @@
    "Dark Blue Scrub Pants [-]"
   ],
   "accessories": [],
-  "faceSet": "classicA"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f064",
@@ -3850,7 +4014,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/6652024161_sky.png",
-  "faceSet": "kit:toon"
+  "faceSet": "kit:bigeye",
+  "faceKind": "other"
  },
  {
   "id": "f065",
@@ -3875,7 +4040,8 @@
   "colourway": {
    "shirt": "cream"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f066",
@@ -3900,7 +4066,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f067",
@@ -3923,7 +4090,8 @@
   "accessories": [
    11884330
   ],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f068",
@@ -3948,7 +4116,8 @@
   "colourway": {
    "shirt": "forest"
   },
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "f069",
@@ -3973,7 +4142,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:toon"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f070",
@@ -3994,7 +4164,8 @@
    "Grey Leggings"
   ],
   "accessories": [],
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f071",
@@ -4019,7 +4190,8 @@
   "colourway": {
    "shirt": "olive"
   },
-  "faceSet": "kit:hose"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f072",
@@ -4044,7 +4216,8 @@
   "colourway": {
    "shirt": "purple"
   },
-  "faceSet": "kit:bean"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f073",
@@ -4069,7 +4242,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f074",
@@ -4094,7 +4268,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f075",
@@ -4121,7 +4296,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "classicA"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f076",
@@ -4142,7 +4318,8 @@
    "Blue Medical Scrub Pants"
   ],
   "accessories": [],
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "f077",
@@ -4170,7 +4347,8 @@
    "pants": "navy"
   },
   "pantsTex": "assets/variants/6652024161_navy.png",
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "kit:classic",
+  "faceKind": "other"
  },
  {
   "id": "f078",
@@ -4195,7 +4373,8 @@
   "colourway": {
    "shirt": "sage"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f079",
@@ -4220,7 +4399,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "kit:classic"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f080",
@@ -4249,7 +4429,8 @@
    "pants": "green"
   },
   "pantsTex": "assets/variants/2688157000_green.png",
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:11_silly_derpy",
+  "faceKind": "other"
  },
  {
   "id": "f081",
@@ -4274,7 +4455,8 @@
   "colourway": {
    "shirt": "red"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f082",
@@ -4301,7 +4483,8 @@
    "pants": "sky"
   },
   "pantsTex": "assets/variants/899151344_sky.png",
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "classicA",
+  "faceKind": "other"
  },
  {
   "id": "f083",
@@ -4328,7 +4511,8 @@
   "colourway": {
    "shirt": "sage"
   },
-  "faceSet": "kit:toon"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f084",
@@ -4353,7 +4537,8 @@
   "colourway": {
    "shirt": "mustard"
   },
-  "faceSet": "kit:anime"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f085",
@@ -4378,7 +4563,8 @@
   "colourway": {
    "shirt": "olive"
   },
-  "faceSet": "kit:hose"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f086",
@@ -4403,7 +4589,8 @@
   "colourway": {
    "shirt": "lilac"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f087",
@@ -4428,7 +4615,8 @@
   "colourway": {
    "shirt": "sage"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f088",
@@ -4455,7 +4643,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "kit:toon",
+  "faceKind": "other"
  },
  {
   "id": "f089",
@@ -4476,7 +4665,8 @@
    "Blue Medical Scrub Pants"
   ],
   "accessories": [],
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f090",
@@ -4504,7 +4694,8 @@
   "colourway": {
    "shirt": "navy"
   },
-  "faceSet": "ai:13_sleepy_chibi_doll"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f091",
@@ -4529,7 +4720,8 @@
   "colourway": {
    "shirt": "brown"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f092",
@@ -4554,7 +4746,8 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:11_silly_derpy"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f093",
@@ -4581,7 +4774,8 @@
   "colourway": {
    "shirt": "mustard"
   },
-  "faceSet": "kit:toon"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f094",
@@ -4606,7 +4800,8 @@
   "colourway": {
    "shirt": "forest"
   },
-  "faceSet": "classicB"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f095",
@@ -4631,7 +4826,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "kit:anime"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f096",
@@ -4658,7 +4854,8 @@
   "colourway": {
    "shirt": "maroon"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f097",
@@ -4683,7 +4880,8 @@
   "colourway": {
    "shirt": "cream"
   },
-  "faceSet": "kit:bigeye"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  },
  {
   "id": "f098",
@@ -4708,7 +4906,8 @@
   "colourway": {
    "shirt": "green"
   },
-  "faceSet": "kit:anime"
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "faceKind": "made"
  },
  {
   "id": "f099",
@@ -4733,6 +4932,7 @@
   "colourway": {
    "shirt": "sky"
   },
-  "faceSet": "ai:16_shy_moe_smirk"
+  "faceSet": "ai:16_shy_moe_smirk",
+  "faceKind": "made"
  }
 ]

@@ -232,9 +232,29 @@ export async function makeR6(spec = {}) {
   api.setFaceMap = src => { const t = src.isTexture ? src : new THREE.CanvasTexture(src); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; t.needsUpdate = true; faceMat.map = t; faceMat.needsUpdate = true; facePatch.visible = true; };
   // SPRITE FACES (2026-11-19): layers of 512 RGBA face decals (AI sheets, catalogue packs) drawn into the face canvas.
   // fs = { layers: [url, ...], place?: { k, dx, dy } }  (k scales about the decal centre, dx / dy in decal fractions)
-  api.setFaceSprite = async fs => { const ims = await Promise.all(fs.layers.map(u => img(u))); const cv = document.createElement('canvas'); cv.width = cv.height = 1024;
+  // layered face drawing: an item is a url or { u, dx, dy, rot, cx, cy, clip } (offsets / pivot in 512-decal pixels;
+  // clip = only show the layer where that image is opaque, e.g. an iris moving inside its eye)
+  const tmpC = document.createElement('canvas'); tmpC.width = tmpC.height = 1024;
+  const drawItems = (x, items, get, place = {}) => { const k = place.k || 1, w = 1024 * k, ox = (1024 - w) / 2 + (place.dx || 0) * 1024, oy = (1024 - w) / 2 + (place.dy || 0) * 1024, s = w / 512;
+    for (const it of items) { const o = typeof it === 'string' ? { u: it } : it, im = get(o.u); if (!im) continue;
+      const t = o.clip ? tmpC.getContext('2d') : x; if (o.clip) t.clearRect(0, 0, 1024, 1024);
+      t.save(); t.translate(ox, oy); t.scale(s, s); t.translate(o.dx || 0, o.dy || 0);
+      if (o.rot) { t.translate(o.cx || 256, o.cy || 256); t.rotate(o.rot); t.translate(-(o.cx || 256), -(o.cy || 256)); }
+      t.drawImage(im, 0, 0, 512, 512); t.restore();
+      if (o.clip) { const cm = get(o.clip); if (cm) { t.save(); t.globalCompositeOperation = 'destination-in'; t.translate(ox, oy); t.scale(s, s); t.drawImage(cm, 0, 0, 512, 512); t.restore(); } x.drawImage(tmpC, 0, 0); } } };
+  api.drawFaceItems = drawItems;
+  // live faces for animation: preload every layer once, then draw any combination synchronously each frame
+  // (one canvas + one texture reused, so a frame costs one 1024 canvas redraw)
+  const live = { cache: new Map(), cv: null, tex: null, key: '' };
+  api.preloadFace = async urls => { urls = urls.flatMap(u => typeof u === 'string' ? [u] : [u.u, u.clip].filter(Boolean)); await Promise.all([...new Set(urls)].filter(u => !live.cache.has(u)).map(async u => live.cache.set(u, await img(u)))); };
+  api.faceNow = (layers, place = {}) => { const key = layers.join('|') + JSON.stringify(place); if (key === live.key) return; live.key = key;
+    if (!live.cv) { live.cv = document.createElement('canvas'); live.cv.width = live.cv.height = 1024; live.tex = new THREE.CanvasTexture(live.cv); live.tex.colorSpace = THREE.SRGBColorSpace; live.tex.anisotropy = 8; live.tex.wrapS = THREE.RepeatWrapping; live.tex.repeat.x = -1; live.tex.offset.x = 1; }
+    const x = live.cv.getContext('2d'); x.clearRect(0, 0, 1024, 1024); x.imageSmoothingQuality = 'high'; const k = place.k || 1, w = 1024 * k, ox = (1024 - w) / 2 + (place.dx || 0) * 1024, oy = (1024 - w) / 2 + (place.dy || 0) * 1024;
+    drawItems(x, layers, u => live.cache.get(u), place);
+    live.tex.needsUpdate = true; if (faceMat.map !== live.tex) { faceMat.map = live.tex; faceMat.needsUpdate = true; } facePatch.visible = true; };
+  api.setFaceSprite = async fs => { const urls = [...new Set(fs.layers.flatMap(u => typeof u === 'string' ? [u] : [u.u, u.clip].filter(Boolean)))], ims = await Promise.all(urls.map(u => img(u))), M = new Map(urls.map((u, i) => [u, ims[i]])); const cv = document.createElement('canvas'); cv.width = cv.height = 1024;
     const x = cv.getContext('2d'); x.imageSmoothingQuality = 'high'; const P = fs.place || {}, k = P.k || 1, w = 1024 * k, ox = (1024 - w) / 2 + (P.dx || 0) * 1024, oy = (1024 - w) / 2 + (P.dy || 0) * 1024;
-    for (const im of ims) x.drawImage(im, ox, oy, w, w); api.setFaceMap(cv); api.faceName = fs.layers.join('+'); };
+    drawItems(x, fs.layers, u => M.get(u), P); api.setFaceMap(cv); api.faceName = 'sprite'; };
 // OLD-REPO FACES (explainer-kit kit/facekit.js: 12 styles x ~80 expressions + visemes 'expr+talkA'; kit/faces.js: the
   // approved mains' faces). Their 512 canvas used the same front projection as our decal, so it maps 1:1.
   // fk = { style, expr, sex, npc (true = Xavier's NPC sizes), main (a kit/faces.js name instead), place }
