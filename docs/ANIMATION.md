@@ -31,3 +31,14 @@ body (only an outside force moves the body first). Every action = anticipation -
 
 ## 5. Contact + clipping
 Hands arrive ON a thing before it moves. Seated / contact poses pass the point-in-mesh clip test (tools/clipcheck.js).
+
+## WALK (2026-11-19, engine/walk.js, research/walk.md)
+- Footprint-solved compass gait: one foot planted per step, hip between footprint midpoints, planted leg angle from the
+  hip, hip height keeps the planted corner on the floor (heel strike, toe off). Swing leg slides up into the hip for
+  clearance (reads as a knee lift). Down = planted leg gives ~3 cm after contact. Start and stop are eased half steps.
+- Arms opposite the legs, 2 frames late, back swing a touch bigger. Small torso twist, weight shift + tilt over the
+  planted foot, forward lean (legs counter it so they stay true), head steadies.
+- footLock(): after posing, the real planted leg mesh is measured and the root nudged so the foot never drifts or
+  sinks. Gate (scenes/walk_test.js opts.check): planted drift 0 mm, planted off floor 0 mm, swing clearance > 0.
+- Default 12 frames a step at 24 fps (T .5 s), step .6 m = 1.2 m/s.
+- Old explainer-kit animation + posing rules, research and code: research/legacy_explainer/ (all of it, verbatim).
