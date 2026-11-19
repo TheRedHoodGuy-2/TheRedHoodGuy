@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { face as drawFace } from './faces.js';
+import { faceCanvas } from './faces2.js';
 
 export const STUD = 0.34;                       // 5 studs tall = 1.7 m
 export const HEAD_R = 0.6, HEAD_H = 1.2;        // measured from the male model Xavier supplied (explainer-kit 6910cb06): 1.2 wide, 1.2 tall
@@ -223,7 +224,12 @@ export async function makeR6(spec = {}) {
   const facePatch = new THREE.Mesh(fg, faceMat); facePatch.renderOrder = 2; parts.head.add(facePatch);
   const api = { root, rbx, joints, parts, spec, bodyMat, skinMat, atlas: c, accessories: [] };
   api.setFace = (name = 'neutral') => { const t = drawFace(name, sex, 'ink'); t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; faceMat.map = t; faceMat.needsUpdate = true; api.faceName = name; };
-  if (spec.face === false) facePatch.visible = false; else api.setFace(spec.face || 'neutral');   // face: false = bare head (faces are their own checklist item)
+  // any face picture (a Roblox classic decal, a face-kit v2 canvas): same placement as the drawn faces
+  api.setFaceMap = src => { const t = src.isTexture ? src : new THREE.CanvasTexture(src); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; t.needsUpdate = true; faceMat.map = t; faceMat.needsUpdate = true; facePatch.visible = true; };
+  api.setFace2 = (emo, o = {}) => { api.setFaceMap(faceCanvas(emo, sex, o)); api.faceName = typeof emo === 'string' ? emo : 'custom'; };
+  if (spec.faceImg) { const im = await img(spec.faceImg); const cv = document.createElement('canvas'); cv.width = cv.height = 1024; const x = cv.getContext('2d'); x.imageSmoothingQuality = 'high'; x.drawImage(im, 0, 0, 1024, 1024); api.setFaceMap(cv); }
+  else if (spec.face2) api.setFace2(spec.face2);
+  else if (spec.face === false) facePatch.visible = false; else api.setFace(spec.face || 'neutral');   // face: false = bare head (faces are their own checklist item)
   // catalog accessories (converted by tools/roblox/fetch.py into assets/roblox/<id>/)
   // under a 3D top, the body blocks it covers are painted in the garment's main colour, so any sliver between the cloth
   // and the body reads as cloth, never as skin
