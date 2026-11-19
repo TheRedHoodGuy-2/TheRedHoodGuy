@@ -200,3 +200,5 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   down and zigzag-warped, which put pant waistbands at the chest; fixed + 16 columns on the pinched torso. (b) sheets
   drew clothing at res 256 (1/8). RULE: any new body / mesh gets the labelled test template (assets/_test_shirt.png,
   _test_pants.png: every face named, UP arrow) rendered from 4 sides before use; review sheets render at res 2048.
+- 2026-11-19 02:10 "why repeat the exact texture when you can change the colour": a garment worn by more than one bank
+  character gets a new colourway for every extra wearer (tools/recolor.py), prints kept, real cloth colours only.

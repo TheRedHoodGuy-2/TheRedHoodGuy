@@ -180,7 +180,7 @@ def sheets(B, ids=None, tag=''):
         for s0 in range(0, len(L2), per):
             page = L2[s0:s0 + per]
             chars = [{'res': 2048, 'skin': c['skin'], 'face': False, 'yaw': 25, 'sex': sex, 'hair': c['hair'], 'accessories': c['accessories'], **({'hairTint': c['hairTint']} if c.get('hairTint') else {}),
-                      'shirt': f'assets/roblox/{c["shirt"]}/texture.png', 'pants': f'assets/roblox/{c["pants"]}/texture.png'} for c in page]
+                      'shirt': c.get('shirtTex') or f'assets/roblox/{c["shirt"]}/texture.png', 'pants': c.get('pantsTex') or f'assets/roblox/{c["pants"]}/texture.png'} for c in page]
             sp = {'w': cols * cw, 'h': ((len(page) + cols - 1) // cols) * chh, 'cols': cols, 'grid': {'cw': 1.7, 'ch': 2.55, 'cy': .92, 'bg': '#e4e9ef'}, 'chars': chars}
             png = f'/tmp/cb_{sex}_{s0}.png'; r = subprocess.run(['node', 'tools/shot.mjs', 'sheet.html', json.dumps(sp), png], cwd=ROOT, capture_output=True, text=True)
             bad = re.findall(r'BADITEM (\d+)', r.stdout + r.stderr)
@@ -202,4 +202,6 @@ if __name__ == '__main__':
         for i in redo: seeds[i] = seeds.get(i, 0) + 1
     B = bank(seeds, set(redo) if redo else None, prev if redo else None)
     json.dump(B, open(f'{ROOT}/library/characters.json', 'w'), indent=1); json.dump(seeds, open(SEEDS, 'w'))
+    subprocess.run([sys.executable, f'{ROOT}/tools/recolor.py'], check=True)   # colourways for repeated garments
+    B = json.load(open(f'{ROOT}/library/characters.json'))
     if '--nosheets' not in sys.argv: sheets(B, set(redo) if redo else None, '_redo' if redo else '')

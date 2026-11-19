@@ -12,3 +12,8 @@ Floral top removed, nurse tops must have trousers of their own colour. Pass 3: a
 
 Item pools (library/bank_ok.json) were also checked one by one on candidate sheets (docs/sheets/pool_*): 39 boys' hair,
 48 girls' hair, 79 boys' tops, 39 boys' bottoms, 89 girls' tops, 42 girls' bottoms. 2D clothing only for now.
+
+Pass 4 (colourways, 2026-11-19): every repeated top / trouser after its first wearer gets its own real-cloth colourway
+(tools/recolor.py, assets/variants/). 110 variants. Checked every original next to its variants (docs/sheets/colourways_*):
+fixed neon greens (saturation / brightness caps per colour), dark cloth turning to glitter (shift instead of ratio),
+trousers in shirt colours (trouser palette only; jeans change wash). Scrubs never vary. All 8 bank sheets re-checked: pass.

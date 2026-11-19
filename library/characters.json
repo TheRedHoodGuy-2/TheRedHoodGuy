@@ -410,7 +410,11 @@
    "Black and white striped shirt",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "m020",
@@ -492,7 +496,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "pantsTex": "assets/variants/5944768364_maroon.png",
+  "colourway": {
+   "pants": "maroon"
+  }
  },
  {
   "id": "m024",
@@ -823,7 +831,11 @@
    "8 polo",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "m040",
@@ -845,7 +857,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "pantsTex": "assets/variants/5944768364_green.png",
+  "colourway": {
+   "pants": "green"
+  }
  },
  {
   "id": "m041",
@@ -947,7 +963,11 @@
    "beige hoodie ",
    "Black Jeans with Sneakers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/130065502224761_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "m046",
@@ -967,7 +987,11 @@
    "white sweatshirt w flannel",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "m047",
@@ -1049,7 +1073,11 @@
    "MAAP Logo-Print Cycling Vest",
    "jogger fit"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/88173808109921_lilac.png",
+  "colourway": {
+   "shirt": "lilac"
+  }
  },
  {
   "id": "m051",
@@ -1071,7 +1099,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "pantsTex": "assets/variants/5944768364_olive.png",
+  "colourway": {
+   "pants": "olive"
+  }
  },
  {
   "id": "m052",
@@ -1091,7 +1123,11 @@
    "polo xadrez underground shirt",
    "Black on black tank-top and jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/100378636380851_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "m053",
@@ -1113,7 +1149,11 @@
   ],
   "accessories": [
    11884330
-  ]
+  ],
+  "shirtTex": "assets/variants/87751149249705_sage.png",
+  "colourway": {
+   "shirt": "sage"
+  }
  },
  {
   "id": "m054",
@@ -1193,7 +1233,11 @@
    "shirt and tie",
    "Black Suit Classic Formal Pants [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/80358312613888_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "m058",
@@ -1213,7 +1257,11 @@
    "Green Turtleneck w/ Brown Plaid Jacket",
    "Plain Black Jeans With Boots"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6232422993_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "m059",
@@ -1233,7 +1281,11 @@
    "Light Blue Flannel",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "m060",
@@ -1315,7 +1367,11 @@
    "stussy team mesh jersey 80",
    "preppy sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/76610244834559_pink.png",
+  "colourway": {
+   "shirt": "pink"
+  }
  },
  {
   "id": "m064",
@@ -1337,7 +1393,11 @@
   ],
   "accessories": [
    4143016822
-  ]
+  ],
+  "shirtTex": "assets/variants/4986626787_olive.png",
+  "colourway": {
+   "shirt": "olive"
+  }
  },
  {
   "id": "m065",
@@ -1357,7 +1417,11 @@
    "brazil tee",
    "Black Jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/87324605800410_pink.png",
+  "colourway": {
+   "shirt": "pink"
+  }
  },
  {
   "id": "m066",
@@ -1379,7 +1443,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/127542353057927_sage.png",
+  "colourway": {
+   "shirt": "sage"
+  }
  },
  {
   "id": "m067",
@@ -1441,7 +1509,11 @@
    "coat",
    "Dark Scrubs (Pants)"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/135933517125074_forest.png",
+  "colourway": {
+   "shirt": "forest"
+  }
  },
  {
   "id": "m070",
@@ -1461,7 +1533,11 @@
    "thrifted striped polo",
    "Formal Pants Black"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84224179619413_royal.png",
+  "colourway": {
+   "shirt": "royal"
+  }
  },
  {
   "id": "m071",
@@ -1481,7 +1557,11 @@
    "Tie Dye Shirt",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/9291160487_olive.png",
+  "colourway": {
+   "shirt": "olive"
+  }
  },
  {
   "id": "m072",
@@ -1501,7 +1581,13 @@
    "brown flannel w black shirt",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/4010357605_purple.png",
+  "colourway": {
+   "shirt": "purple",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/2228336895_sky.png"
  },
  {
   "id": "m073",
@@ -1583,7 +1669,11 @@
    "8 polo",
    "white sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84831639942736_green.png",
+  "colourway": {
+   "shirt": "green"
+  }
  },
  {
   "id": "m077",
@@ -1606,7 +1696,11 @@
   "accessories": [
    4143016822
   ],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/118187099088629_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "m078",
@@ -1626,7 +1720,11 @@
    "Black-red-champion-hoodie",
    "cargo pants grey black"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/129607158986204_green.png",
+  "colourway": {
+   "shirt": "green"
+  }
  },
  {
   "id": "m079",
@@ -1648,7 +1746,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/73057040403674_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "m080",
@@ -1668,7 +1770,11 @@
    "Jacket",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/85195509415575_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "m081",
@@ -1710,7 +1816,11 @@
    "black flannel",
    "Dark Scrubs (Pants)"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/5327275648_forest.png",
+  "colourway": {
+   "shirt": "forest"
+  }
  },
  {
   "id": "m083",
@@ -1730,7 +1840,13 @@
    "White Tuxedo Shirt + Suspenders [+]",
    "khaki trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/7494465908_blush.png",
+  "colourway": {
+   "shirt": "blush",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/6652024161_sky.png"
  },
  {
   "id": "m084",
@@ -1750,7 +1866,11 @@
    "Black and white striped shirt",
    "Dark Scrubs (Pants)"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/81735727343320_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "m085",
@@ -1770,7 +1890,11 @@
    "flannel",
    "blue jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/129347348519341_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "m086",
@@ -1832,7 +1956,11 @@
   ],
   "accessories": [
    11884330
-  ]
+  ],
+  "pantsTex": "assets/variants/6652024161_navy.png",
+  "colourway": {
+   "pants": "navy"
+  }
  },
  {
   "id": "m089",
@@ -1852,7 +1980,11 @@
    "Colombia Jersey",
    "black sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/115778289091191_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "m090",
@@ -1874,7 +2006,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "shirtTex": "assets/variants/83691516584002_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "m091",
@@ -1894,7 +2030,11 @@
    "champion white shirt for boys",
    "Black Jeans with Sneakers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/104688268350437_blush.png",
+  "colourway": {
+   "shirt": "blush"
+  }
  },
  {
   "id": "m092",
@@ -1916,7 +2056,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "shirtTex": "assets/variants/78013815276971_lilac.png",
+  "colourway": {
+   "shirt": "lilac"
+  }
  },
  {
   "id": "m093",
@@ -1936,7 +2080,11 @@
    "White No Bystanders NY Tee Shirt (Kalcer Style)",
    "black trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/99535361899884_lilac.png",
+  "colourway": {
+   "shirt": "lilac"
+  }
  },
  {
   "id": "m094",
@@ -1978,7 +2126,11 @@
    "vintage faded t shirt",
    "black pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/125832373059665_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "m096",
@@ -1998,7 +2150,11 @@
    "Blue Striped Shirt (Kalcer Style)",
    "Black Suit Trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/101620698895900_royal.png",
+  "colourway": {
+   "shirt": "royal"
+  }
  },
  {
   "id": "m097",
@@ -2018,7 +2174,11 @@
    "yingyang koi fish Sweater black beige streetwear",
    "Black on black tank-top and jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/7204130986_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "m098",
@@ -2038,7 +2198,13 @@
    "Light Blue Flannel",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/4791398991_purple.png",
+  "colourway": {
+   "shirt": "purple",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/2228336895_sky.png"
  },
  {
   "id": "m099",
@@ -2098,7 +2264,11 @@
    "8 polo",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84831639942736_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f002",
@@ -2140,7 +2310,11 @@
    "Green Turtleneck w/ Brown Plaid Jacket",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6232422993_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f004",
@@ -2202,7 +2376,11 @@
    "gray polo",
    "khaki trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/6652024161_green.png",
+  "colourway": {
+   "pants": "green"
+  }
  },
  {
   "id": "f007",
@@ -2262,7 +2440,11 @@
    "Black Suit w Belt Top Suit - Top Suit Black Dress",
    "khaki trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/6652024161_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "f010",
@@ -2284,7 +2466,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "pantsTex": "assets/variants/2688157000_sky.png",
+  "colourway": {
+   "pants": "sky"
+  }
  },
  {
   "id": "f011",
@@ -2367,7 +2553,11 @@
    "MAAP Logo-Print Cycling Vest",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/88173808109921_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f015",
@@ -2389,7 +2579,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "pantsTex": "assets/variants/2688157000_green.png",
+  "colourway": {
+   "pants": "green"
+  }
  },
  {
   "id": "f016",
@@ -2471,7 +2665,11 @@
    "polo",
    "khaki trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "pantsTex": "assets/variants/6652024161_navy.png",
+  "colourway": {
+   "pants": "navy"
+  }
  },
  {
   "id": "f020",
@@ -2553,7 +2751,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/83011153202867_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f024",
@@ -2634,7 +2836,11 @@
    "thrifted striped polo",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84224179619413_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "f028",
@@ -2676,7 +2882,11 @@
    "Black Overalls w White Crop Shirt",
    "dark pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/5212623934_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "f030",
@@ -2696,7 +2906,11 @@
    "vintage faded t shirt",
    "plaid trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/79761866360161_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "f031",
@@ -2798,7 +3012,11 @@
    "Soft Blue Stripe Shirt w Neck Tie (kalcer style)",
    "Formal Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/122692416575580_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "f036",
@@ -2820,7 +3038,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "shirtTex": "assets/variants/125023586525859_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "f037",
@@ -2861,7 +3083,11 @@
    "Formal Pants"
   ],
   "accessories": [],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/136568372915877_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f039",
@@ -2901,7 +3127,11 @@
    "thrifted striped polo",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84224179619413_green.png",
+  "colourway": {
+   "shirt": "green"
+  }
  },
  {
   "id": "f041",
@@ -2963,7 +3193,11 @@
    "Black Sleeveless Turtleneck Shirt",
    "black pleated skirt || black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6948525547_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f044",
@@ -3065,7 +3299,13 @@
    "Formal Shirt -",
    "vintage checked brown trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/131205147854169_blush.png",
+  "colourway": {
+   "shirt": "blush",
+   "pants": "navy"
+  },
+  "pantsTex": "assets/variants/2688157000_navy.png"
  },
  {
   "id": "f049",
@@ -3087,7 +3327,13 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "shirtTex": "assets/variants/82138561539385_sky.png",
+  "colourway": {
+   "shirt": "sky",
+   "pants": "green"
+  },
+  "pantsTex": "assets/variants/6652024161_green.png"
  },
  {
   "id": "f050",
@@ -3128,7 +3374,11 @@
    "Formal Pants"
   ],
   "accessories": [],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/6999290186_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "f052",
@@ -3168,7 +3418,11 @@
    "MAAP Logo-Print Cycling Vest",
    "Light Grey Sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/88173808109921_cream.png",
+  "colourway": {
+   "shirt": "cream"
+  }
  },
  {
   "id": "f054",
@@ -3210,7 +3464,11 @@
    "fuzzy black & white striped sweater",
    "Plain Black Jeans With Boots"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/135872548989088_forest.png",
+  "colourway": {
+   "shirt": "forest"
+  }
  },
  {
   "id": "f056",
@@ -3230,7 +3488,11 @@
    "flannel shirt",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/5510979986_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "f057",
@@ -3252,7 +3514,11 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "shirtTex": "assets/variants/99978212949301_blush.png",
+  "colourway": {
+   "shirt": "blush"
+  }
  },
  {
   "id": "f058",
@@ -3272,7 +3538,11 @@
    "polo pink",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/134073243937495_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f059",
@@ -3292,7 +3562,11 @@
    "pink hoodie",
    "School girl pleat skirt"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/120306059275285_mustard.png",
+  "colourway": {
+   "shirt": "mustard"
+  }
  },
  {
   "id": "f060",
@@ -3332,7 +3606,11 @@
    "gray polo",
    "black trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/75648623476384_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f062",
@@ -3354,7 +3632,13 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/83011153202867_green.png",
+  "colourway": {
+   "shirt": "green",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/2688157000_sky.png"
  },
  {
   "id": "f063",
@@ -3395,7 +3679,13 @@
    "khaki trousers"
   ],
   "accessories": [],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/6467531805_teal.png",
+  "colourway": {
+   "shirt": "teal",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/6652024161_sky.png"
  },
  {
   "id": "f065",
@@ -3415,7 +3705,11 @@
    "White shirt",
    "baggy gym sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/138498361609157_cream.png",
+  "colourway": {
+   "shirt": "cream"
+  }
  },
  {
   "id": "f066",
@@ -3435,7 +3729,11 @@
    "8 polo",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84831639942736_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "f067",
@@ -3477,7 +3775,11 @@
    "Black and white striped shirt",
    "grey jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/81735727343320_forest.png",
+  "colourway": {
+   "shirt": "forest"
+  }
  },
  {
   "id": "f069",
@@ -3497,7 +3799,11 @@
    "vintage faded t shirt",
    "black pleated skirt || black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/79761866360161_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f070",
@@ -3537,7 +3843,11 @@
    "polo",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/99427838709553_olive.png",
+  "colourway": {
+   "shirt": "olive"
+  }
  },
  {
   "id": "f072",
@@ -3557,7 +3867,11 @@
    "White w/ Pink Stripes Sweater",
    "joggers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/5097955152_purple.png",
+  "colourway": {
+   "shirt": "purple"
+  }
  },
  {
   "id": "f073",
@@ -3577,7 +3891,11 @@
    "Grey Striped Shirt with Denim Jacket",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/144076436_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f074",
@@ -3597,7 +3915,11 @@
    "Black Suit w Belt Top Suit - Top Suit Black Dress",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6708696844_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "f075",
@@ -3619,7 +3941,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/78013815276971_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f076",
@@ -3660,7 +3986,13 @@
    "khaki trousers"
   ],
   "accessories": [],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/125023586525859_purple.png",
+  "colourway": {
+   "shirt": "purple",
+   "pants": "navy"
+  },
+  "pantsTex": "assets/variants/6652024161_navy.png"
  },
  {
   "id": "f078",
@@ -3680,7 +4012,11 @@
    "Blue Splatter STREETS tee.",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/126573586724044_sage.png",
+  "colourway": {
+   "shirt": "sage"
+  }
  },
  {
   "id": "f079",
@@ -3700,7 +4036,11 @@
    "8 polo",
    "preppy sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84831639942736_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "f080",
@@ -3722,7 +4062,13 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/76997048714989_forest.png",
+  "colourway": {
+   "shirt": "forest",
+   "pants": "green"
+  },
+  "pantsTex": "assets/variants/2688157000_green.png"
  },
  {
   "id": "f081",
@@ -3742,7 +4088,11 @@
    "Tie Dye Shirt",
    "dark pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/9291160487_red.png",
+  "colourway": {
+   "shirt": "red"
+  }
  },
  {
   "id": "f082",
@@ -3762,7 +4112,13 @@
    "Black Sleeveless Turtleneck Shirt",
    "plaid trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6948525547_charcoal.png",
+  "colourway": {
+   "shirt": "charcoal",
+   "pants": "sky"
+  },
+  "pantsTex": "assets/variants/899151344_sky.png"
  },
  {
   "id": "f083",
@@ -3784,7 +4140,11 @@
   ],
   "accessories": [
    10943571579
-  ]
+  ],
+  "shirtTex": "assets/variants/110797869888281_sage.png",
+  "colourway": {
+   "shirt": "sage"
+  }
  },
  {
   "id": "f084",
@@ -3804,7 +4164,11 @@
    "Soft Blue Stripe Shirt w Neck Tie (kalcer style)",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/122692416575580_mustard.png",
+  "colourway": {
+   "shirt": "mustard"
+  }
  },
  {
   "id": "f085",
@@ -3824,7 +4188,11 @@
    "pink plaid dress (shirt",
    "joggers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/134621006241247_olive.png",
+  "colourway": {
+   "shirt": "olive"
+  }
  },
  {
   "id": "f086",
@@ -3844,7 +4212,11 @@
    "Classic White T-Shirt (FAV IT PLEASE!)",
    "dark pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/111776479099725_lilac.png",
+  "colourway": {
+   "shirt": "lilac"
+  }
  },
  {
   "id": "f087",
@@ -3864,7 +4236,11 @@
    "Formal Shirt -",
    "black trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/131205147854169_sage.png",
+  "colourway": {
+   "shirt": "sage"
+  }
  },
  {
   "id": "f088",
@@ -3886,7 +4262,11 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "shirtTex": "assets/variants/75648623476384_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f089",
@@ -3929,7 +4309,11 @@
   "accessories": [
    4753645975
   ],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "shirtTex": "assets/variants/6999290186_navy.png",
+  "colourway": {
+   "shirt": "navy"
+  }
  },
  {
   "id": "f091",
@@ -3949,7 +4333,11 @@
    "White Givenchy Star Polo",
    "joggers"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/129713293784379_brown.png",
+  "colourway": {
+   "shirt": "brown"
+  }
  },
  {
   "id": "f092",
@@ -3969,7 +4357,11 @@
    "thrifted striped polo",
    "preppy sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/84224179619413_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  },
  {
   "id": "f093",
@@ -3991,7 +4383,11 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "shirtTex": "assets/variants/382537085_mustard.png",
+  "colourway": {
+   "shirt": "mustard"
+  }
  },
  {
   "id": "f094",
@@ -4011,7 +4407,11 @@
    "Black Overalls w/ Mint Hoodie",
    "dark pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/4728419660_forest.png",
+  "colourway": {
+   "shirt": "forest"
+  }
  },
  {
   "id": "f095",
@@ -4031,7 +4431,11 @@
    "flannel shirt",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/5510979986_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f096",
@@ -4053,7 +4457,11 @@
   ],
   "accessories": [
    124442197389942
-  ]
+  ],
+  "shirtTex": "assets/variants/398633584_maroon.png",
+  "colourway": {
+   "shirt": "maroon"
+  }
  },
  {
   "id": "f097",
@@ -4073,7 +4481,11 @@
    "Number Nine Hardcore Logo Cardigan Sweater",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/136568372915877_cream.png",
+  "colourway": {
+   "shirt": "cream"
+  }
  },
  {
   "id": "f098",
@@ -4093,7 +4505,11 @@
    "White w Pink Stripes Sweater",
    "baggy gym sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/74733757527820_green.png",
+  "colourway": {
+   "shirt": "green"
+  }
  },
  {
   "id": "f099",
@@ -4113,6 +4529,10 @@
    "Vlone Polo (White)",
    "Black Jeans with White Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "shirtTex": "assets/variants/6149324873_sky.png",
+  "colourway": {
+   "shirt": "sky"
+  }
  }
 ]
