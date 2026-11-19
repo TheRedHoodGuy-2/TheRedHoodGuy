@@ -246,3 +246,7 @@ defend every pixel of it, it does not get sent.
   Tuesday: everything must be done by then. Next phase after fixes: CONTENT ENGINE (retention, hooks, cuts, camera,
   actions), then a strict CLAUDE.md of rules, then the first video. Steal what worked from the old repo (the
   shoulder-vs-elbow posing research).
+- 2026-11-19 09:52 Mouths: sheet C mouths too big (5 = massive) and mostly smiling; Ethan talked with smiling mouths on a
+  serious face. Mouths must MATCH THE EMOTION (happy line = smiling talk, serious / neutral = neutral talk). New prompt:
+  docs/face_prompts/MOUTHS_v2.md (rows per mood, one mouth opening wider, small). Then: content engine -> CLAUDE.md
+  rulebook -> first video, all before Tuesday.
