@@ -270,3 +270,4 @@ Next phase: 7 faces / face animation / lip sync.
   scenes/lipsync_test.js); docs/ANIMATION.md draft + docs/sheets/pose_proof.jpg; docs/RESEARCH_PROOFS.md.
   08:04 Xavier: split eyes jagged, girls' eyes "bleeding": sprites re-keyed (thick whites bounded by ink kept whole,
   slivers dropped), 05 eyes rebuilt as clean vector layers (tools/eyerig2.py). PRIORITY RULE logged in DIRECTOR_NOTES.
+- 2026-11-19 09:15 Sprites now 1024, edge colour decontaminated (no light rims), crisp alpha; 05 eye layers rebuilt at 1024; lip sync clip re-rendered and checked frame by frame (mouth vs Rhubarb cue every frame): out/lipsync_test_audio.mp4.

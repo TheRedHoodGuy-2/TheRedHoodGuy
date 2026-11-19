@@ -237,3 +237,5 @@ see-through parts, skin bleeding into eyes, clipping, wrong shapes). A thumbnail
 defend every pixel of it, it does not get sent.
 - 08:04 the layer-split eyes looked chopped / jagged; the girls' eyes look like the skin bleeds into them. Idea from
   Xavier: keep the eye base shape as the mask and put a clean full circle pupil where the pupil was, hidden by the lid.
+- 2026-11-19 08:41 Faces: remove the faint white edges around face lines; upscale the sprites so edges are crisp and sharp.
+  ("I like the progress. Keep it up.")

@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); os.chdir(os.path
 from facesheet import body, render
 D = 'assets/faces/sprites/05_intimidating'
 def cen(f):
-    a = np.array(Image.open(f'{D}/{f}.png'))[..., 3]; ys, xs = np.where(a > 100); return float(xs.mean()), float(ys.mean())
+    a = np.array(Image.open(f'{D}/{f}.png'))[..., 3]; k = 512 / a.shape[0]; ys, xs = np.where(a > 100); return float(xs.mean()) * k, float(ys.mean()) * k
 cl, cr = cen('brow_sl'), cen('brow_sr')
 def face(ix=0, iy=0, bl=(0, 0), br=(0, 0), mouth='C02'):
     # bl / br = (raise px, tilt rad) for the brow on canvas-left / canvas-right

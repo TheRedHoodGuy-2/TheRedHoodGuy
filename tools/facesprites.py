@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); AI = f'{ROOT}/assets/faces/ai'; OUT = f'{ROOT}/assets/faces/sprites'
-S = 512
+S = 1024   # 2026-11-19 08:41: sprites are 1024 (keyed at the sheet's own resolution, then upscaled with clean colour + sharpened alpha)
 def cells(path):
     a = np.array(Image.open(path).convert('RGB')).astype(np.float32); H, W = a.shape[:2]
     white = (a.min(-1) > 236)
@@ -73,8 +73,16 @@ def key(cell):
     if nh: hole &= np.isin(lh, np.where(ndimage.maximum(dth, lh, range(1, nh + 1)) >= 3.5)[0] + 1)
     alpha[hole] = 1; rgb[hole] = cell[hole]
     e = max(4, int(h * .03)); alpha[: int(h * .25), : int(w * .25)] = 0; alpha[:e] = 0; alpha[-e:] = 0; alpha[:, :e] = 0; alpha[:, -e:] = 0   # separator leftovers
-    rgba = np.dstack([rgb, alpha * 255]).astype(np.uint8)
-    return Image.fromarray(rgba, 'RGBA').resize((S, S), Image.LANCZOS)
+    # DECONTAMINATE: every semi-transparent edge pixel takes the colour of the nearest solid pixel, so no light page /
+    # halo colour survives at line edges (the faint white rims Xavier saw)
+    solid = alpha > .9
+    if solid.any():
+        _, (iy, ix) = ndimage.distance_transform_edt(~solid, return_indices=True); rgb = np.where(solid[..., None], rgb, rgb[iy, ix])
+    # UPSCALE crisp: colour with Lanczos, alpha bicubic then a steep curve (edges ~1-2 px wide at 1024, no blur)
+    rgbI = Image.fromarray(np.clip(rgb, 0, 255).astype(np.uint8), 'RGB').resize((S, S), Image.LANCZOS)
+    aU = np.array(Image.fromarray((alpha * 255).astype(np.uint8), 'L').resize((S, S), Image.BICUBIC)).astype(float) / 255
+    aU = np.clip((aU - .15) / .6, 0, 1); aU = aU * aU * (3 - 2 * aU)   # smoothstep(.15, .75): crisp edges, thin lines kept whole
+    return Image.fromarray(np.dstack([np.array(rgbI), (aU * 255).astype(np.uint8)]), 'RGBA')
 def bbox(img, rows=None):
     a = np.array(img)[..., 3] > 90
     if rows: a[:rows[0]] = False; a[rows[1]:] = False

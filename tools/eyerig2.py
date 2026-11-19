@@ -9,7 +9,7 @@ import numpy as np, cv2
 from PIL import Image, ImageDraw, ImageFilter
 from scipy import ndimage
 st = sys.argv[1]; D = f'assets/faces/sprites/{st}'; SS = 4
-im = np.array(Image.open(f'{D}/D01.png')).astype(float); A = im[..., 3] / 255; L = im[..., :3].mean(-1)
+src1024 = Image.open(f'{D}/D01.png'); im = np.array(src1024.resize((512, 512), Image.LANCZOS)).astype(float); A = im[..., 3] / 255; L = im[..., :3].mean(-1)
 ink = (A > .5) & (L < 70); white = (A > .5) & (L > 170)
 eye = ndimage.binary_fill_holes(ndimage.binary_closing(white | ink, iterations=3)) & (A > .3)
 lab, n = ndimage.label(eye); sizes = ndimage.sum(eye, lab, range(1, n + 1)); order = np.argsort(sizes)[::-1] + 1
@@ -26,7 +26,7 @@ def smooth_contour(m, sig=3.0):
     k = int(sig * 3); w = np.exp(-np.arange(-k, k + 1) ** 2 / (2 * sig * sig)); w /= w.sum()
     pad = np.concatenate([c[-k:], c, c[:k]]); return np.stack([np.convolve(pad[:, j], w, 'valid') for j in (0, 1)], 1)
 def canvas(): return Image.new('RGBA', (512 * SS, 512 * SS)), None
-def down(img): return img.resize((512, 512), Image.LANCZOS)
+def down(img): return img.resize((1024, 1024), Image.LANCZOS)
 base = Image.new('RGBA', (512 * SS, 512 * SS)); clip = Image.new('L', (512 * SS, 512 * SS)); lines = Image.new('RGBA', (512 * SS, 512 * SS)); iris = Image.new('RGBA', (512 * SS, 512 * SS))
 db, dc, dl, di = ImageDraw.Draw(base), ImageDraw.Draw(clip), ImageDraw.Draw(lines), ImageDraw.Draw(iris)
 rig = {'eyes': []}
@@ -81,10 +81,15 @@ outside = (A > .35) & (L < 90) & ~ndimage.binary_dilation(E, iterations=1) & ~B
 outside = ndimage.binary_opening(outside, iterations=1)
 lab2, n2 = ndimage.label(outside); sz = ndimage.sum(outside, lab2, range(1, n2 + 1)); outside &= np.isin(lab2, np.where(sz >= 12)[0] + 1)
 oimg = np.zeros((512, 512, 4)); oimg[outside, :3] = inkc; oimg[..., 3] = np.where(outside, A * 255, 0)
-oimg = Image.fromarray(oimg.astype(np.uint8), 'RGBA')
+oimg = Image.fromarray(oimg.astype(np.uint8), 'RGBA').resize((1024, 1024), Image.LANCZOS)
 L2 = down(lines); L2.alpha_composite(oimg)
 brs = np.zeros_like(im); brs[B] = im[B]; brl = brs.copy(); brl[:, 256:] = 0; brr = brs.copy(); brr[:, :256] = 0
-bb = np.array(down(base)); bb[..., 3] = (bb[..., 3].astype(float) * np.array(clip.resize((512, 512), Image.LANCZOS)) / 255).astype(np.uint8); Image.fromarray(bb, 'RGBA').save(f'{D}/eyebase.png'); L2.save(f'{D}/eyelines.png'); down(iris).save(f'{D}/iris.png')
-cl = down(clip.convert('RGBA')); a = np.array(clip.resize((512, 512), Image.LANCZOS)); Image.fromarray(np.dstack([np.full_like(a, 255)] * 3 + [a]), 'RGBA').save(f'{D}/irisclip.png')
-for nme, arr in [('brows', brs), ('brow_sl', brl), ('brow_sr', brr)]: Image.fromarray(arr.astype(np.uint8), 'RGBA').save(f'{D}/{nme}.png')
+bb = np.array(down(base)); bb[..., 3] = (bb[..., 3].astype(float) * np.array(clip.resize((1024, 1024), Image.LANCZOS)) / 255).astype(np.uint8); Image.fromarray(bb, 'RGBA').save(f'{D}/eyebase.png'); L2.save(f'{D}/eyelines.png'); down(iris).save(f'{D}/iris.png')
+a = np.array(clip.resize((1024, 1024), Image.LANCZOS)); Image.fromarray(np.dstack([np.full_like(a, 255)] * 3 + [a]), 'RGBA').save(f'{D}/irisclip.png')
+S1 = np.array(src1024).astype(float); Bm = np.array(Image.fromarray((B * 255).astype(np.uint8)).resize((1024, 1024), Image.NEAREST)) > 127
+for nme, side in [('brows', None), ('brow_sl', 'l'), ('brow_sr', 'r')]:
+    m = Bm.copy()
+    if side == 'l': m[:, 512:] = False
+    if side == 'r': m[:, :512] = False
+    arr = np.zeros_like(S1); arr[m] = S1[m]; Image.fromarray(arr.astype(np.uint8), 'RGBA').save(f'{D}/{nme}.png')
 json.dump(rig, open(f'{D}/rig.json', 'w')); print(st, rig)
