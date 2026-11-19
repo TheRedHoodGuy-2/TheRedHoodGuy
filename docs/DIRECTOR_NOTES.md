@@ -206,3 +206,9 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   lighting types, camera (lens types, FOV, depth of field), and "pseudo-photorealism": how films and animations look
   like films (not basic 3D objects dropped in a scene), applied to camera, characters, backgrounds, scenes. Goes with
   the animation, posing and Roblox-faces research.
+- 2026-11-19 04:16 Faces (kit v2 drawn faces): he likes them but they're "weird". Eyes too far apart, too high (near the
+  top of the head), too far from the mouth: eyes + mouth make "one massive triangle". WANT: eyes closer together, closer
+  to the mouth, the whole face sitting lower on the head (near the base, not at it). The eye drawing style looks weird
+  too: try other eye styles. He will send a cartoon reference screenshot. He HATES the 3D dynamic head (Man Face / Silly
+  Fun): never use realistic 3D heads. He loved the research before/after ("exactly what I want"): keep researching
+  where it helps.

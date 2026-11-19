@@ -1,0 +1,434 @@
+[
+ {
+  "n": 1,
+  "name": "Woman Face",
+  "eye_y": 0.434,
+  "eye_sep": 0.494,
+  "mouth_y": 0.797,
+  "feat_top": 0.266,
+  "feat_bot": 0.853
+ },
+ {
+  "n": 2,
+  "name": "Man Face",
+  "eye_y": 0.311,
+  "eye_sep": 0.459,
+  "mouth_y": 0.795,
+  "feat_top": 0.255,
+  "feat_bot": 0.896
+ },
+ {
+  "n": 3,
+  "name": "Dylan Default",
+  "eye_y": 0.345,
+  "eye_sep": 0.231,
+  "mouth_y": 0.762,
+  "feat_top": 0.264,
+  "feat_bot": 0.78
+ },
+ {
+  "n": 4,
+  "name": "Silly Smile",
+  "eye_y": 0.548,
+  "eye_sep": 0.49,
+  "mouth_y": 0.784,
+  "feat_top": 0.424,
+  "feat_bot": 0.86
+ },
+ {
+  "n": 5,
+  "name": "Intimidating Face",
+  "eye_y": 0.548,
+  "eye_sep": 0.543,
+  "mouth_y": 0.88,
+  "feat_top": 0.411,
+  "feat_bot": 0.891
+ },
+ {
+  "n": 6,
+  "name": "Cute Kawaii Star Anime Eyes",
+  "eye_y": 0.678,
+  "eye_sep": 0.551,
+  "mouth_y": null,
+  "feat_top": 0.459,
+  "feat_bot": 0.896
+ },
+ {
+  "n": 7,
+  "name": "Chocolate Yum Girl Face (Cus",
+  "eye_y": 0.594,
+  "eye_sep": 0.504,
+  "mouth_y": 0.877,
+  "feat_top": 0.458,
+  "feat_bot": 0.911
+ },
+ {
+  "n": 8,
+  "name": "Animated Cute Blush Face",
+  "eye_y": 0.609,
+  "eye_sep": 0.506,
+  "mouth_y": null,
+  "feat_top": 0.552,
+  "feat_bot": 0.663
+ },
+ {
+  "n": 9,
+  "name": "Devon Default",
+  "eye_y": 0.407,
+  "eye_sep": 0.231,
+  "mouth_y": 0.77,
+  "feat_top": 0.322,
+  "feat_bot": 0.782
+ },
+ {
+  "n": 10,
+  "name": "Suprised Face (Cheeks)",
+  "eye_y": 0.508,
+  "eye_sep": 0.49,
+  "mouth_y": 0.86,
+  "feat_top": 0.292,
+  "feat_bot": 0.924
+ },
+ {
+  "n": 11,
+  "name": "Yum Cute Angel Face - Cheeks",
+  "eye_y": 0.5,
+  "eye_sep": 0.463,
+  "mouth_y": 0.822,
+  "feat_top": 0.229,
+  "feat_bot": 0.864
+ },
+ {
+  "n": 12,
+  "name": "Sleek Tired Girl (Lowered,Bl",
+  "eye_y": 0.347,
+  "eye_sep": 0.412,
+  "mouth_y": 0.871,
+  "feat_top": 0.237,
+  "feat_bot": 0.877
+ },
+ {
+  "n": 13,
+  "name": "Whimsy Mochi doll Worry Pout",
+  "eye_y": 0.565,
+  "eye_sep": 0.564,
+  "mouth_y": 0.896,
+  "feat_top": 0.411,
+  "feat_bot": 0.928
+ },
+ {
+  "n": 14,
+  "name": "Siren Eye Chibi Girl",
+  "eye_y": 0.634,
+  "eye_sep": 0.494,
+  "mouth_y": null,
+  "feat_top": 0.509,
+  "feat_bot": 0.754
+ },
+ {
+  "n": 15,
+  "name": "Super Super Happy Face Cheek",
+  "eye_y": 0.261,
+  "eye_sep": 0.288,
+  "mouth_y": 0.737,
+  "feat_top": 0.216,
+  "feat_bot": 0.86
+ },
+ {
+  "n": 16,
+  "name": "Animated Chibi Vampire Face",
+  "eye_y": 0.634,
+  "eye_sep": 0.541,
+  "mouth_y": null,
+  "feat_top": 0.425,
+  "feat_bot": 0.851
+ },
+ {
+  "n": 17,
+  "name": "Y2K Moe Anime Face",
+  "eye_y": 0.611,
+  "eye_sep": 0.597,
+  "mouth_y": 0.925,
+  "feat_top": 0.287,
+  "feat_bot": 0.935
+ },
+ {
+  "n": 18,
+  "name": "\u2b50 Happy Relaxed Classic :3 C",
+  "eye_y": 0.267,
+  "eye_sep": 0.22,
+  "mouth_y": 0.752,
+  "feat_top": 0.216,
+  "feat_bot": 0.898
+ },
+ {
+  "n": 19,
+  "name": "Silly derpy face",
+  "eye_y": 0.629,
+  "eye_sep": 0.661,
+  "mouth_y": 0.699,
+  "feat_top": 0.591,
+  "feat_bot": 0.768
+ },
+ {
+  "n": 20,
+  "name": "Stunned Dazed Scene Face",
+  "eye_y": 0.5,
+  "eye_sep": 0.533,
+  "mouth_y": 0.799,
+  "feat_top": 0.282,
+  "feat_bot": 0.834
+ },
+ {
+  "n": 21,
+  "name": "\ud83c\udf40Animated Sleepy Chibi Doll ",
+  "eye_y": 0.654,
+  "eye_sep": 0.543,
+  "mouth_y": null,
+  "feat_top": 0.529,
+  "feat_bot": 0.778
+ },
+ {
+  "n": 22,
+  "name": "Cute Excited Face",
+  "eye_y": 0.453,
+  "eye_sep": 0.525,
+  "mouth_y": 0.794,
+  "feat_top": 0.319,
+  "feat_bot": 0.969
+ },
+ {
+  "n": 23,
+  "name": "kawaii doll puppy eyes face",
+  "eye_y": 0.662,
+  "eye_sep": 0.608,
+  "mouth_y": null,
+  "feat_top": 0.38,
+  "feat_bot": 0.925
+ },
+ {
+  "n": 24,
+  "name": "Animated Kawaii Chibi Smug F",
+  "eye_y": 0.644,
+  "eye_sep": 0.577,
+  "mouth_y": 0.864,
+  "feat_top": 0.432,
+  "feat_bot": 0.872
+ },
+ {
+  "n": 25,
+  "name": "Sleek Downturned Condescendi",
+  "eye_y": 0.327,
+  "eye_sep": 0.43,
+  "mouth_y": 0.765,
+  "feat_top": 0.203,
+  "feat_bot": 0.809
+ },
+ {
+  "n": 26,
+  "name": "cute shy moe chibi smirk las",
+  "eye_y": 0.665,
+  "eye_sep": 0.597,
+  "mouth_y": null,
+  "feat_top": 0.471,
+  "feat_bot": 0.911
+ },
+ {
+  "n": 27,
+  "name": "Sleek Downt. Cond. Girl LO v",
+  "eye_y": 0.436,
+  "eye_sep": 0.465,
+  "mouth_y": 0.856,
+  "feat_top": 0.301,
+  "feat_bot": 0.924
+ },
+ {
+  "n": 28,
+  "name": "Cute Tired Chibi Face",
+  "eye_y": 0.638,
+  "eye_sep": 0.539,
+  "mouth_y": 0.905,
+  "feat_top": 0.42,
+  "feat_bot": 0.911
+ },
+ {
+  "n": 29,
+  "name": "Side Eye Woman Face v2 (Chee",
+  "eye_y": 0.411,
+  "eye_sep": 0.496,
+  "mouth_y": 0.854,
+  "feat_top": 0.216,
+  "feat_bot": 0.898
+ },
+ {
+  "n": 30,
+  "name": "Simple Stare Face (Customiza",
+  "eye_y": 0.619,
+  "eye_sep": 0.529,
+  "mouth_y": 0.907,
+  "feat_top": 0.47,
+  "feat_bot": 0.919
+ },
+ {
+  "n": 31,
+  "name": "Hum Face",
+  "eye_y": 0.513,
+  "eye_sep": 0.49,
+  "mouth_y": null,
+  "feat_top": 0.464,
+  "feat_bot": 0.552
+ },
+ {
+  "n": 32,
+  "name": "The Winning Smile",
+  "eye_y": 0.346,
+  "eye_sep": 0.362,
+  "mouth_y": 0.812,
+  "feat_top": 0.188,
+  "feat_bot": 0.815
+ },
+ {
+  "n": 33,
+  "name": "Confused Tired Face",
+  "eye_y": 0.494,
+  "eye_sep": 0.463,
+  "mouth_y": 0.843,
+  "feat_top": 0.356,
+  "feat_bot": 0.866
+ },
+ {
+  "n": 34,
+  "name": "Cute Dizziness Overwhelmed f",
+  "eye_y": 0.638,
+  "eye_sep": 0.545,
+  "mouth_y": 0.966,
+  "feat_top": 0.369,
+  "feat_bot": 0.975
+ },
+ {
+  "n": 35,
+  "name": "{\ud83c\udf19} Cute Pouting Shy Girl Fa",
+  "eye_y": 0.431,
+  "eye_sep": 0.5,
+  "mouth_y": 0.831,
+  "feat_top": 0.25,
+  "feat_bot": 0.843
+ },
+ {
+  "n": 36,
+  "name": "Cute Face",
+  "eye_y": 0.454,
+  "eye_sep": 0.557,
+  "mouth_y": 0.78,
+  "feat_top": 0.249,
+  "feat_bot": 0.851
+ },
+ {
+  "n": 37,
+  "name": "Sleepy Tired Face",
+  "eye_y": 0.512,
+  "eye_sep": 0.482,
+  "mouth_y": 0.884,
+  "feat_top": 0.274,
+  "feat_bot": 0.95
+ },
+ {
+  "n": 38,
+  "name": "Classic Female Face",
+  "eye_y": 0.357,
+  "eye_sep": 0.257,
+  "mouth_y": 0.669,
+  "feat_top": 0.108,
+  "feat_bot": 0.727
+ },
+ {
+  "n": 39,
+  "name": "Animated Crying Chibi",
+  "eye_y": 0.626,
+  "eye_sep": 0.533,
+  "mouth_y": 0.772,
+  "feat_top": 0.441,
+  "feat_bot": 0.808
+ },
+ {
+  "n": 40,
+  "name": "Surprised Scene Fang Face",
+  "eye_y": 0.581,
+  "eye_sep": 0.535,
+  "mouth_y": 0.913,
+  "feat_top": 0.398,
+  "feat_bot": 0.996
+ },
+ {
+  "n": 41,
+  "name": "Sleek Tired Girl v2",
+  "eye_y": 0.347,
+  "eye_sep": 0.412,
+  "mouth_y": 0.871,
+  "feat_top": 0.237,
+  "feat_bot": 0.877
+ },
+ {
+  "n": 42,
+  "name": "Annoyed Face",
+  "eye_y": 0.557,
+  "eye_sep": 0.504,
+  "mouth_y": 0.864,
+  "feat_top": 0.383,
+  "feat_bot": 0.885
+ },
+ {
+  "n": 43,
+  "name": "Offputting Smile",
+  "eye_y": 0.32,
+  "eye_sep": 0.377,
+  "mouth_y": 0.681,
+  "feat_top": 0.27,
+  "feat_bot": 0.811
+ },
+ {
+  "n": 44,
+  "name": "Relaxed Anime Chibi Face",
+  "eye_y": 0.574,
+  "eye_sep": 0.51,
+  "mouth_y": 0.86,
+  "feat_top": 0.341,
+  "feat_bot": 0.923
+ },
+ {
+  "n": 45,
+  "name": "sshf super super happy face ",
+  "eye_y": 0.217,
+  "eye_sep": 0.346,
+  "mouth_y": 0.765,
+  "feat_top": 0.14,
+  "feat_bot": 0.894
+ },
+ {
+  "n": 46,
+  "name": "Cute Big Eyes Face (Customiz",
+  "eye_y": 0.674,
+  "eye_sep": 0.518,
+  "mouth_y": 0.953,
+  "feat_top": 0.445,
+  "feat_bot": 0.975
+ },
+ {
+  "n": 47,
+  "name": "kawaii star yum chibi face (",
+  "eye_y": 0.654,
+  "eye_sep": 0.598,
+  "mouth_y": 0.889,
+  "feat_top": 0.397,
+  "feat_bot": 0.903
+ },
+ {
+  "n": 48,
+  "name": "\ud83c\udf40Animated Simple Calm Chibi ",
+  "eye_y": 0.67,
+  "eye_sep": 0.572,
+  "mouth_y": 0.877,
+  "feat_top": 0.387,
+  "feat_bot": 0.897
+ }
+]

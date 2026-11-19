@@ -54,3 +54,10 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
   trauma shakes on impacts (rotation only). Static shadows are not re-rendered when only the camera moves.
 - SFX bank v1: 688 Mixkit sounds (commercial use, no attribution) in 39 categories, on the laptop at
   Documents\TheRedHoodGuy\sfx_bank (298 MB, not in git); catalog in library/sfx_catalog.json.
+
+## 2026-11-19 04:16 Faces (Xavier)
+- REJECTED: realistic 3D dynamic heads (Man Face / Silly Fun mesh with moving parts). Never use them.
+- Faces are 2D-drawn faces on the R6 head that animate (blink, mouth, brows), redrawn with new proportions: eyes closer
+  together, lower on the head, closer to the mouth. Eye style still open (he sends a reference).
+- The research before/after look (OTS, long lens + DOF, designed key / rim, asymmetric posing, grade) is approved as the
+  direction for every shot.
