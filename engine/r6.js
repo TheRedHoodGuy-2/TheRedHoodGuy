@@ -7,6 +7,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { face as drawFace } from './faces.js';
 import { faceCanvas } from './faces2.js';
 import { faceCanvas as faceCanvas3 } from './faces3.js';
+import { faceCanvas4 } from './facestyles.js';
 
 export const STUD = 0.34;                       // 5 studs tall = 1.7 m
 export const HEAD_R = 0.6, HEAD_H = 1.2;        // measured from the male model Xavier supplied (explainer-kit 6910cb06): 1.2 wide, 1.2 tall
@@ -227,9 +228,11 @@ export async function makeR6(spec = {}) {
   api.setFace = (name = 'neutral') => { const t = drawFace(name, sex, 'ink'); t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; faceMat.map = t; faceMat.needsUpdate = true; api.faceName = name; };
   // any face picture (a Roblox classic decal, a face-kit v2 canvas): same placement as the drawn faces
   api.setFaceMap = src => { const t = src.isTexture ? src : new THREE.CanvasTexture(src); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; t.needsUpdate = true; faceMat.map = t; faceMat.needsUpdate = true; facePatch.visible = true; };
+  api.setFace4 = (style, emo) => { api.setFaceMap(faceCanvas4(style, emo, sex)); api.faceName = style + ':' + emo; };
   api.setFace3 = (emo, o = {}) => { api.setFaceMap(faceCanvas3(emo, sex, o)); api.faceName = typeof emo === 'string' ? emo : 'custom'; };
   api.setFace2 = (emo, o = {}) => { api.setFaceMap(faceCanvas(emo, sex, o)); api.faceName = typeof emo === 'string' ? emo : 'custom'; };
   if (spec.faceImg) { const im = await img(spec.faceImg); const cv = document.createElement('canvas'); cv.width = cv.height = 1024; const x = cv.getContext('2d'); x.imageSmoothingQuality = 'high'; x.drawImage(im, 0, 0, 1024, 1024); api.setFaceMap(cv); }
+  else if (spec.face4) api.setFace4(spec.face4.style, spec.face4.emo);
   else if (spec.face3) api.setFace3(spec.face3, { style: spec.faceStyle });
   else if (spec.face2) api.setFace2(spec.face2);
   else if (spec.face === false) facePatch.visible = false; else api.setFace(spec.face || 'neutral');   // face: false = bare head (faces are their own checklist item)

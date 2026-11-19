@@ -61,3 +61,8 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
   together, lower on the head, closer to the mouth. Eye style still open (he sends a reference).
 - The research before/after look (OTS, long lens + DOF, designed key / rim, asymmetric posing, grade) is approved as the
   direction for every shot.
+
+## 2026-11-19 04:45 Faces come from AI image sheets (Xavier)
+- Code-drawn face kits (faces2 / faces3 / facestyles) are rejected as final art. Faces = AI-generated expression sheets
+  per style (prompt pack: docs/face_prompts/), made by Xavier in Gemini / ChatGPT, rigged by Claude (slice, key, align
+  to the decal layout, swap per emotion / viseme).

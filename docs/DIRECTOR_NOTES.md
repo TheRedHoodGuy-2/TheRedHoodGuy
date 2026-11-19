@@ -212,3 +212,11 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   too: try other eye styles. He will send a cartoon reference screenshot. He HATES the 3D dynamic head (Man Face / Silly
   Fun): never use realistic 3D heads. He loved the research before/after ("exactly what I want"): keep researching
   where it helps.
+- 2026-11-19 04:29 Face STYLE PACKS: for each chosen dynamic head (1,2,3,4(=18,22),5,6,7,8,16,17,19,20(=34),21,23,24,
+  26,28,30,31,33,39,42,44,47,48) draw that face in its style, then a full set of expressions in the SAME style (like
+  1 vs 29: same style, different expression). If the catalogue already has the style in other expressions, show them.
+  "Put a lot of effort into this, artistry." RULE (again): never show anything without inspecting every detail first.
+- 2026-11-19 04:45 My hand-coded face style packs: "terrible, horrendous". STOP drawing faces in code. New pipeline: I
+  split each chosen dynamic head into its own reference PNG + write a detailed AI image prompt (expression sheets, mouth
+  shapes for lip sync, eye / brow parts, exact layout and presentation); Xavier generates the sheets in Gemini / ChatGPT
+  and sends them back; I slice, key and rig them onto the head.
