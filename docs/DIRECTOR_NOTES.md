@@ -273,3 +273,13 @@ defend every pixel of it, it does not get sent.
 - Things already built and approved stay as they are (our engine, faces, flow). From explainer-kit only the old faces
   (kit/faces.js, kit/facekit.js) get merged into our faces; the rest of the old repo (posing, animation lessons) is
   carried over as the rules it taught. HANDOFF.md items are all pulled into legacy/explainer-kit/.
+## 2026-11-19 15:43 Walk test v2 + "you followed nothing" (Xavier, 92% of weekly limit)
+- Saying "I didn't check the docs" is not acceptable: EVERY rule we built must be applied every video, nothing skipped.
+  -> CLAUDE.md rewritten as the full rulebook + docs/RULES_CHECK_TEMPLATE.md (every video ticks every rule with evidence).
+- A dotted LINE cut across the boy's body: far fence pickets (.07 m) bleeding through (thin-geometry rule) + camera
+  near .05 / far 800. Fix: no thin far geometry, near >= .15, far <= 400.
+- The "trees" behind the houses were grey twigs + dots (tree_small_02 glb leaves not reading). Use treeParts game trees.
+- Empty space behind him: "I thought we had a city / a full neighbourhood". No void in any camera direction.
+- Wrong hoodie: the boy's hoodie is catalog 91631221833009 (Black Hoodie) with its sleeves, tinted RED.
+- Next: script about gender swapping with his homeboy (homeboy becomes a girl, the boy's sinister "finally" look),
+  approve, then the FINAL video straight away (no low-quality preview), unattended, following every rule. Push OK.
