@@ -77,18 +77,28 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
         gl_FragColor = vec4(acc / wsum, 1.); }` });
   // tone map (Khronos PBR Neutral) + grade, out in sRGB
   const gradeMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, exposure: { value: P.exposure }, contrast: { value: P.contrast }, sat: { value: P.saturation }, black: { value: P.black },
-      sT: { value: new THREE.Color(P.shadowTint) }, hT: { value: new THREE.Color(P.highTint) }, tint: { value: P.tintAmt }, pivot: { value: P.pivot } },
-    fragmentShader: `varying vec2 vUv; uniform sampler2D src; uniform float exposure, contrast, sat, black, tint, pivot; uniform vec3 sT, hT;
+      sT: { value: new THREE.Color(P.shadowTint) }, hT: { value: new THREE.Color(P.highTint) }, tint: { value: P.tintAmt }, pivot: { value: P.pivot },
+      // camera / film finishing (research/cinematography.md 7): lens colour fringe toward the edges, film grain in the
+      // mid-tones, lift / gamma / gain wheels (shadows / mids / highlights). All default OFF so older scenes look the same.
+      ca: { value: P.ca || 0 }, grain: { value: P.grain || 0 }, seed: { value: 0 }, res: { value: new THREE.Vector2(W, H) },
+      lift: { value: new THREE.Vector3(...(P.lift || [0, 0, 0])) }, gamma: { value: new THREE.Vector3(...(P.gamma || [1, 1, 1])) }, gain: { value: new THREE.Vector3(...(P.gain || [1, 1, 1])) } },
+    fragmentShader: `varying vec2 vUv; uniform sampler2D src; uniform float exposure, contrast, sat, black, tint, pivot, ca, grain, seed; uniform vec3 sT, hT, lift, gamma, gain; uniform vec2 res;
+      float hash(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
       vec3 neutral(vec3 c){ const float S = .8 - .04, D = .15; float x = min(c.r, min(c.g, c.b)); float off = x < .08 ? x - 6.25 * x * x : .04; c -= off;
         float pk = max(c.r, max(c.g, c.b)); if (pk < S) return c; float d = 1. - S, np = 1. - d * d / (pk + d - S); c *= np / pk; float gg = 1. - 1. / (D * (pk - np) + 1.); return mix(c, np * vec3(1.), gg); }
       vec3 toSRGB(vec3 c){ return mix(c * 12.92, 1.055 * pow(c, vec3(1. / 2.4)) - .055, step(.0031308, c)); }
-      void main(){ vec3 c = neutral(texture2D(src, vUv).rgb * exposure); c = clamp(c, 0., 1.);
+      void main(){ vec2 d = vUv - .5; vec2 off = d * dot(d, d) * ca;   // chromatic aberration grows toward the frame edges
+        vec3 raw = vec3(texture2D(src, vUv - off).r, texture2D(src, vUv).g, texture2D(src, vUv + off).b);
+        vec3 c = neutral(raw * exposure); c = clamp(c, 0., 1.);
         vec3 s = toSRGB(c); float l = dot(s, vec3(.2126, .7152, .0722));
         s = mix(vec3(l), s, sat);                                                  // saturation
         s = (s - pivot) * contrast + pivot;                                        // contrast around the mid grey
         float lw = smoothstep(.0, .55, l), hw = smoothstep(.45, 1., l);
         s += tint * ((1. - lw) * (sT - .5) + hw * (hT - .5)) * .5;                 // split tone: shadows one way, highlights the other
         s = (s - black) / (1. - black);                                            // black point
+        s = clamp(s, 0., 1.); s = gain * (s + lift * (1. - s)); s = pow(max(s, 0.), 1. / gamma);   // lift / gamma / gain
+        float n = hash(vUv * res + seed) + hash(vUv * res * 1.7 - seed * 1.3) - 1.; float lw2 = 1. - pow(abs(l - .5) * 2., 2.);
+        s += n * grain * (.35 + .65 * lw2);                                         // grain: strongest in the mid-tones
         gl_FragColor = vec4(clamp(s, 0., 1.), 1.); }` });
 
   // bloom: only what is brighter than the threshold, capped (the sun in a window must not fog the whole frame), 3 small levels
@@ -96,8 +106,8 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
   const brightMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, thr: { value: P.bloomThreshold }, cap: { value: P.bloomCap ?? 3 } },
     fragmentShader: `varying vec2 vUv; uniform sampler2D src; uniform float thr, cap; void main(){ vec3 c = texture2D(src, vUv).rgb; float l = max(c.r, max(c.g, c.b)); vec3 b = c * (max(l - thr, 0.) / max(l, 1e-4)); float bl = max(b.r, max(b.g, b.b)); gl_FragColor = vec4(b * min(1., cap / max(bl, 1e-4)), 1.); }` });
   const copyMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null } }, fragmentShader: 'varying vec2 vUv; uniform sampler2D src; void main(){ gl_FragColor = texture2D(src, vUv); }' });
-  const addMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, b0: { value: lv[0][0].texture }, b1: { value: lv[1][0].texture }, b2: { value: lv[2][0].texture }, k: { value: P.bloom }, r: { value: P.bloomRadius } },
-    fragmentShader: 'varying vec2 vUv; uniform sampler2D src, b0, b1, b2; uniform float k, r; void main(){ vec3 b = texture2D(b0, vUv).rgb + texture2D(b1, vUv).rgb * r + texture2D(b2, vUv).rgb * r * r; gl_FragColor = vec4(texture2D(src, vUv).rgb + b * k, 1.); }' });
+  const addMat = new THREE.ShaderMaterial({ vertexShader: VS, uniforms: { src: { value: null }, b0: { value: lv[0][0].texture }, b1: { value: lv[1][0].texture }, b2: { value: lv[2][0].texture }, k: { value: P.bloom }, r: { value: P.bloomRadius }, bt: { value: new THREE.Color(P.bloomTint || '#ffffff') } },
+    fragmentShader: 'varying vec2 vUv; uniform sampler2D src, b0, b1, b2; uniform float k, r; uniform vec3 bt; void main(){ vec3 b = texture2D(b0, vUv).rgb + texture2D(b1, vUv).rgb * r + texture2D(b2, vUv).rgb * r * r; gl_FragColor = vec4(texture2D(src, vUv).rgb + b * k * bt, 1.); }' });
   const bloom = { render(r, src, dst) {
     brightMat.uniforms.src.value = src.texture; quad(r, brightMat, lv[0][0]);
     for (let i = 0; i < 3; i++) { const [a, b] = lv[i]; if (i) { copyMat.uniforms.src.value = lv[i - 1][0].texture; quad(r, copyMat, a); }
@@ -129,7 +139,7 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
     if (P.aperture > 0) {   // gather at half size (4x fewer pixels), then blend over the sharp frame by each pixel's own blur amount
       dofMat.uniforms.src.value = src.texture; dofMat.uniforms.px.value.set(2 / W, 2 / H); dofMat.uniforms.maxB.value = P.maxBlur / 2; dofMat.uniforms.ap.value = P.aperture / 2; quad(r, dofMat, rtDof);
       const dst = src === rtA ? rtB : rtA; dofMix.uniforms.src.value = src.texture; quad(r, dofMix, dst); src = dst; } lap('dof');
-    gradeMat.uniforms.src.value = src.texture; quad(r, gradeMat, rtLDR); lap('grade');
+    gradeMat.uniforms.src.value = src.texture; gradeMat.uniforms.seed.value = (gradeMat.uniforms.seed.value + 17.13) % 1000; quad(r, gradeMat, rtLDR); lap('grade');   // bloomTint warm = halation
     smaa.render(r, null, rtLDR); lap('smaa'); if (T === false) sync();
   };
   return api;

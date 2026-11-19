@@ -262,3 +262,5 @@ Next phase: 7 faces / face animation / lip sync.
 - Research: research/animation.md, faces.md, cinematography.md (+ research/README.md index). Next: distil into
   docs/ANIMATION.md + a docs/LOOK.md draft, close the look gaps (grain, CA, halation, motion blur, lift/gamma/gain,
   per-shot key + rim, colour script step), then faces.
+
+- 2026-11-19 04:xx: research before/after sent (docs/sheets/research_before_after.jpg, scenes/research_ab.js, opts.mode before|after). Same whisper beat; after = OTS, 30 deg lens + DOF on her eyes, fill cut + key + window rim, asymmetric posing, kit v2 face, lift/gamma/gain grade. Known weak: his foreground head is a black slab, her near arm a plain block. Next: docs/ANIMATION.md + docs/LOOK.md drafts from research/.
