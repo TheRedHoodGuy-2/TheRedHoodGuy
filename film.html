@@ -32,9 +32,18 @@ if (spec.time) {   // per-stage timing over N frames; then the cost of the shado
 }
 window.tLoad = performance.now();
 // video mode: tools/render.mjs calls renderFrame(t) for each frame it still needs
+// a scene with a camera rig (engine/camera.js) gets dissolves: the outgoing shot is drawn too and blended in
+const mixCv = document.createElement('canvas'), mixCx = mixCv.getContext('2d');
 window.renderFrame = t => {
   const moved = S.update ? S.update(t) : false;
   renderer.shadowMap.autoUpdate = false; if (moved || !window._shadowsDone) { renderer.shadowMap.needsUpdate = true; window._shadowsDone = true; }
+  const info = S.rig ? S.rig.apply(S.camera, t) : null;
+  if (info?.mix) {
+    const c = renderer.domElement; mixCv.width = c.width; mixCv.height = c.height;
+    S.rig.applyShot(S.camera, info.mix.from, t); S.before?.(); post.render(false); mixCx.globalAlpha = 1; mixCx.drawImage(c, 0, 0);
+    S.rig.apply(S.camera, t); S.before?.(); post.render(false); mixCx.globalAlpha = info.mix.k; mixCx.drawImage(c, 0, 0);
+    return mixCv.toDataURL('image/jpeg', .93);
+  }
   S.before?.(); post.render(false); return renderer.domElement.toDataURL('image/jpeg', .93);
 };
 window.__dbg = { scene, S, THREE }; window.ready = true;

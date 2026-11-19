@@ -46,3 +46,11 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
   frames (measured, not guessed) before asking again.
 - 2026-11-18 17:18 Scale: v2 (measured from 47 real Roblox builds, research/scale.md) is the standard. Xavier left it
   to Claude ("up to you"); Claude chose the measured version.
+
+## 2026-11-19 Camera system + frame rate
+- Videos render at 30 fps (smoother camera glides; ~25% more render time than 24, worth it).
+- engine/camera.js is the camera: shots of spline keys, ONE ease per shot ('glide': short ease in, steady cruise, short
+  ease out, never a stop at a middle key), never-still drift, 0.25 s dissolves between shots (hard cuts inside a scene),
+  trauma shakes on impacts (rotation only). Static shadows are not re-rendered when only the camera moves.
+- SFX bank v1: 688 Mixkit sounds (commercial use, no attribution) in 39 categories, on the laptop at
+  Documents\TheRedHoodGuy\sfx_bank (298 MB, not in git); catalog in library/sfx_catalog.json.

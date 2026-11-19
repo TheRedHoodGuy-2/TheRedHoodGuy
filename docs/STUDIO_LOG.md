@@ -243,3 +243,8 @@ Next phase: 7 faces / face animation / lip sync.
   plants, lamps, boxes) auto-nudge to a clear spot; chairs face their table / desk; walls track what already stands on
   them. Final report: zero problems (only the optional dining console is skipped where no wall is free).
 - Sheets: docs/sheets/house_{A,B}_built_v2.jpg.
+
+## 2026-11-19 01:00 Bulk batch 1: camera system, SFX bank, voice + animation research
+- Camera: engine/camera.js + film.html dissolves; demo scenes/camera_demo.js -> out/camera_demo.mp4 (8 s, 30 fps, review quality). Every frame checked.
+- SFX: 688 sounds downloaded through the laptop (tools on the laptop: ~/sfx_dl.py), catalog library/sfx_catalog.json.
+- Research: research/voice_fish.md (needs Xavier's Fish Audio key), research/sfx_sources.md, research/animation_r6.md.
