@@ -17,7 +17,8 @@
    "stussy team mesh jersey 80",
    "Light Grey Sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m001",
@@ -39,7 +40,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "kit:classic"
  },
  {
   "id": "m002",
@@ -59,7 +61,8 @@
    "blue hoodie",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:sharp"
  },
  {
   "id": "m003",
@@ -81,7 +84,8 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "faceSet": "kit:classic"
  },
  {
   "id": "m004",
@@ -101,7 +105,8 @@
    "vintage faded t shirt",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m005",
@@ -121,7 +126,8 @@
    "2000s Archive CH Polo Collar Shirt",
    "Black Suit Trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:toon"
  },
  {
   "id": "m006",
@@ -141,7 +147,8 @@
    "yingyang koi fish Sweater black beige streetwear",
    "denim trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m007",
@@ -161,7 +168,8 @@
    "FullyChop CH Brown Jacket W Tats",
    "Dark Blue Jeans with Black Formal Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:classic"
  },
  {
   "id": "m008",
@@ -181,7 +189,8 @@
    "Soft Yuta Aesthetic Cozy White Top Shirt [ + ]",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m009",
@@ -201,7 +210,8 @@
    "[RHS] White Shirt",
    "Black Suit Trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "m010",
@@ -223,7 +233,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m011",
@@ -243,7 +254,8 @@
    "champion white shirt for boys",
    "white sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m012",
@@ -266,7 +278,8 @@
   "accessories": [
    4197739997
   ],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "faceSet": "kit:classic"
  },
  {
   "id": "m013",
@@ -286,7 +299,8 @@
    "Colombia Jersey",
    "Light Grey Sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m014",
@@ -308,7 +322,8 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m015",
@@ -328,7 +343,8 @@
    "White No Bystanders NY Tee Shirt (Kalcer Style)",
    "Black on black tank-top and jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m016",
@@ -350,7 +366,8 @@
   ],
   "accessories": [
    130568043270999
-  ]
+  ],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m017",
@@ -370,7 +387,8 @@
    "black jacket",
    "black trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:toon"
  },
  {
   "id": "m018",
@@ -390,7 +408,8 @@
    "shirt and tie",
    "Dark Blue Scrub Pants [-]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m019",
@@ -414,7 +433,8 @@
   "pantsTex": "assets/variants/2228336895_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "m020",
@@ -434,7 +454,8 @@
    "flannel",
    "blue jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m021",
@@ -454,7 +475,8 @@
    "Black Shirt",
    "Plain Black Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "m022",
@@ -474,7 +496,8 @@
    "Classic Black Suit Formal Shirt [ + ]",
    "Black Suit Trousers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "m023",
@@ -500,7 +523,8 @@
   "pantsTex": "assets/variants/5944768364_maroon.png",
   "colourway": {
    "pants": "maroon"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m024",
@@ -520,7 +544,8 @@
    "MAAP Logo-Print Cycling Vest",
    "preppy sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m025",
@@ -542,7 +567,8 @@
   ],
   "accessories": [
    4143016822
-  ]
+  ],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m026",
@@ -562,7 +588,8 @@
    "thrifted striped polo",
    "Black on black tank-top and jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "m027",
@@ -584,7 +611,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m028",
@@ -604,7 +632,8 @@
    "Black-red-champion-hoodie",
    "cargo pants grey black"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m029",
@@ -626,7 +655,8 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m030",
@@ -646,7 +676,8 @@
    "Black t-shirt",
    "cargo pants grey black"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m031",
@@ -666,7 +697,8 @@
    "polo xadrez underground shirt",
    "Formal Black Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "m032",
@@ -686,7 +718,8 @@
    "fuzzy black & white striped sweater",
    "black pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m033",
@@ -706,7 +739,8 @@
    "brown flannel w black shirt",
    "Jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m034",
@@ -726,7 +760,8 @@
    "blue hoodie",
    "blue jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m035",
@@ -746,7 +781,8 @@
    "coat",
    "Black Formal Slacks -"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:sharp"
  },
  {
   "id": "m036",
@@ -768,7 +804,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m037",
@@ -788,7 +825,8 @@
    "brazil tee",
    "Grey and white sweatpants w white shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m038",
@@ -811,7 +849,8 @@
   "accessories": [
    4143016822
   ],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m039",
@@ -835,7 +874,8 @@
   "pantsTex": "assets/variants/2228336895_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m040",
@@ -861,7 +901,8 @@
   "pantsTex": "assets/variants/5944768364_green.png",
   "colourway": {
    "pants": "green"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "m041",
@@ -881,7 +922,8 @@
    "Tie Dye Shirt",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m042",
@@ -903,7 +945,8 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "faceSet": "kit:classic"
  },
  {
   "id": "m043",
@@ -923,7 +966,8 @@
    "black flannel",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m044",
@@ -943,7 +987,8 @@
    "White   Polo",
    "Black Formal Slacks -"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m045",
@@ -967,7 +1012,8 @@
   "shirtTex": "assets/variants/130065502224761_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m046",
@@ -991,7 +1037,8 @@
   "pantsTex": "assets/variants/2228336895_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m047",
@@ -1011,7 +1058,8 @@
    "Not4nerd Tribal Logo Nylon Racing Jacket (White)",
    "Grey plaid trousers w/ black high top sneakers"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:marker"
  },
  {
   "id": "m048",
@@ -1031,7 +1079,8 @@
    "Blue Stripe Shirt with Neck Tie (kalcer style",
    "Formal Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:marker"
  },
  {
   "id": "m049",
@@ -1053,7 +1102,8 @@
   ],
   "accessories": [
    4197739997
-  ]
+  ],
+  "faceSet": "kit:toon"
  },
  {
   "id": "m050",
@@ -1077,7 +1127,8 @@
   "shirtTex": "assets/variants/88173808109921_lilac.png",
   "colourway": {
    "shirt": "lilac"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "m051",
@@ -1103,7 +1154,8 @@
   "pantsTex": "assets/variants/5944768364_olive.png",
   "colourway": {
    "pants": "olive"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m052",
@@ -1127,7 +1179,8 @@
   "shirtTex": "assets/variants/100378636380851_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m053",
@@ -1153,7 +1206,8 @@
   "shirtTex": "assets/variants/87751149249705_sage.png",
   "colourway": {
    "shirt": "sage"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "m054",
@@ -1173,7 +1227,8 @@
    "Jacket",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "m055",
@@ -1193,7 +1248,8 @@
    "Red Hoodie With Headphones!",
    "jogger fit"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "m056",
@@ -1213,7 +1269,8 @@
    "vintage faded t shirt",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m057",
@@ -1237,7 +1294,8 @@
   "shirtTex": "assets/variants/80358312613888_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "kit:tick"
  },
  {
   "id": "m058",
@@ -1261,7 +1319,8 @@
   "shirtTex": "assets/variants/6232422993_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m059",
@@ -1285,7 +1344,8 @@
   "pantsTex": "assets/variants/2228336895_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m060",
@@ -1305,7 +1365,8 @@
    "sosa grey polo gray polo pro club jacket zipper sa",
    "blue jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m061",
@@ -1325,7 +1386,8 @@
    "Denji Classic Shirt Formal Tie Top [ + ]",
    "Formal Black Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:marker"
  },
  {
   "id": "m062",
@@ -1347,7 +1409,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "kit:tick"
  },
  {
   "id": "m063",
@@ -1371,7 +1434,8 @@
   "shirtTex": "assets/variants/76610244834559_pink.png",
   "colourway": {
    "shirt": "pink"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m064",
@@ -1397,7 +1461,8 @@
   "shirtTex": "assets/variants/4986626787_olive.png",
   "colourway": {
    "shirt": "olive"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "m065",
@@ -1421,7 +1486,8 @@
   "shirtTex": "assets/variants/87324605800410_pink.png",
   "colourway": {
    "shirt": "pink"
-  }
+  },
+  "faceSet": "kit:toon"
  },
  {
   "id": "m066",
@@ -1447,7 +1513,8 @@
   "shirtTex": "assets/variants/127542353057927_sage.png",
   "colourway": {
    "shirt": "sage"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "m067",
@@ -1467,7 +1534,8 @@
    "Denim Jacket with White Hoodie",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:toon"
  },
  {
   "id": "m068",
@@ -1489,7 +1557,8 @@
   ],
   "accessories": [
    130568043270999
-  ]
+  ],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m069",
@@ -1513,7 +1582,8 @@
   "shirtTex": "assets/variants/135933517125074_forest.png",
   "colourway": {
    "shirt": "forest"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m070",
@@ -1537,7 +1607,8 @@
   "shirtTex": "assets/variants/84224179619413_royal.png",
   "colourway": {
    "shirt": "royal"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m071",
@@ -1561,7 +1632,8 @@
   "shirtTex": "assets/variants/9291160487_olive.png",
   "colourway": {
    "shirt": "olive"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m072",
@@ -1587,7 +1659,8 @@
    "shirt": "purple",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/2228336895_sky.png"
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m073",
@@ -1607,7 +1680,8 @@
    "White shirt",
    "blue jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m074",
@@ -1627,7 +1701,8 @@
    "Soft Purple Stripe Shirt w Neck Tie (kalcer style)",
    "Black Suit Classic Formal Pants [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m075",
@@ -1649,7 +1724,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "kit:classic"
  },
  {
   "id": "m076",
@@ -1673,7 +1749,8 @@
   "shirtTex": "assets/variants/84831639942736_green.png",
   "colourway": {
    "shirt": "green"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m077",
@@ -1700,7 +1777,8 @@
   "shirtTex": "assets/variants/118187099088629_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "m078",
@@ -1724,7 +1802,8 @@
   "shirtTex": "assets/variants/129607158986204_green.png",
   "colourway": {
    "shirt": "green"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "m079",
@@ -1750,7 +1829,8 @@
   "shirtTex": "assets/variants/73057040403674_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m080",
@@ -1774,7 +1854,8 @@
   "shirtTex": "assets/variants/85195509415575_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m081",
@@ -1796,7 +1877,8 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "faceSet": "classicA"
  },
  {
   "id": "m082",
@@ -1820,7 +1902,8 @@
   "shirtTex": "assets/variants/5327275648_forest.png",
   "colourway": {
    "shirt": "forest"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m083",
@@ -1846,7 +1929,8 @@
    "shirt": "blush",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/6652024161_sky.png"
+  "pantsTex": "assets/variants/6652024161_sky.png",
+  "faceSet": "kit:classic"
  },
  {
   "id": "m084",
@@ -1870,7 +1954,8 @@
   "shirtTex": "assets/variants/81735727343320_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "m085",
@@ -1894,7 +1979,8 @@
   "shirtTex": "assets/variants/129347348519341_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m086",
@@ -1914,7 +2000,8 @@
    "Black Polo Zip Up w White Tee",
    "Dark Scrubs (Pants)"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m087",
@@ -1934,7 +2021,8 @@
    "Black Suit",
    "Black Formal Slacks -"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m088",
@@ -1960,7 +2048,8 @@
   "pantsTex": "assets/variants/6652024161_navy.png",
   "colourway": {
    "pants": "navy"
-  }
+  },
+  "faceSet": "kit:toon"
  },
  {
   "id": "m089",
@@ -1984,7 +2073,8 @@
   "shirtTex": "assets/variants/115778289091191_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "m090",
@@ -2010,7 +2100,8 @@
   "shirtTex": "assets/variants/83691516584002_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m091",
@@ -2034,7 +2125,8 @@
   "shirtTex": "assets/variants/104688268350437_blush.png",
   "colourway": {
    "shirt": "blush"
-  }
+  },
+  "faceSet": "kit:tick"
  },
  {
   "id": "m092",
@@ -2060,7 +2152,8 @@
   "shirtTex": "assets/variants/78013815276971_lilac.png",
   "colourway": {
    "shirt": "lilac"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "m093",
@@ -2084,7 +2177,8 @@
   "shirtTex": "assets/variants/99535361899884_lilac.png",
   "colourway": {
    "shirt": "lilac"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m094",
@@ -2106,7 +2200,8 @@
   ],
   "accessories": [
    10943571579
-  ]
+  ],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m095",
@@ -2130,7 +2225,8 @@
   "shirtTex": "assets/variants/125832373059665_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "m096",
@@ -2154,7 +2250,8 @@
   "shirtTex": "assets/variants/101620698895900_royal.png",
   "colourway": {
    "shirt": "royal"
-  }
+  },
+  "faceSet": "ai:05_intimidating"
  },
  {
   "id": "m097",
@@ -2178,7 +2275,8 @@
   "shirtTex": "assets/variants/7204130986_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "m098",
@@ -2204,7 +2302,8 @@
    "shirt": "purple",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/2228336895_sky.png"
+  "pantsTex": "assets/variants/2228336895_sky.png",
+  "faceSet": "classicB"
  },
  {
   "id": "m099",
@@ -2224,7 +2323,8 @@
    "polo",
    "Black on black tank-top and jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "f000",
@@ -2244,7 +2344,8 @@
    "Gray polo grey polo swag true religion affliction",
    "denim shorts"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:classic"
  },
  {
   "id": "f001",
@@ -2268,7 +2369,8 @@
   "shirtTex": "assets/variants/84831639942736_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f002",
@@ -2290,7 +2392,8 @@
   ],
   "accessories": [
    11884330
-  ]
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f003",
@@ -2314,7 +2417,8 @@
   "shirtTex": "assets/variants/6232422993_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f004",
@@ -2334,7 +2438,8 @@
    "Black Sleeveless Turtleneck Shirt",
    "black pleated skirt || black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f005",
@@ -2356,7 +2461,8 @@
   ],
   "accessories": [
    16266640100
-  ]
+  ],
+  "faceSet": "classicA"
  },
  {
   "id": "f006",
@@ -2380,7 +2486,8 @@
   "pantsTex": "assets/variants/6652024161_green.png",
   "colourway": {
    "pants": "green"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "f007",
@@ -2400,7 +2507,8 @@
    "White w/ Pink Stripes Sweater",
    "denim shorts"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bean"
  },
  {
   "id": "f008",
@@ -2420,7 +2528,8 @@
    "Black Short Sleeve Tee",
    "cargo"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:hose"
  },
  {
   "id": "f009",
@@ -2444,7 +2553,8 @@
   "pantsTex": "assets/variants/6652024161_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f010",
@@ -2470,7 +2580,8 @@
   "pantsTex": "assets/variants/2688157000_sky.png",
   "colourway": {
    "pants": "sky"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "f011",
@@ -2490,7 +2601,8 @@
    "Scrubs [+]",
    "Dark Blue Scrub Pants [-]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f012",
@@ -2513,7 +2625,8 @@
   "accessories": [
    4143016822
   ],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f013",
@@ -2533,7 +2646,8 @@
    "!3 chiraq button up polo",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f014",
@@ -2557,7 +2671,8 @@
   "shirtTex": "assets/variants/88173808109921_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f015",
@@ -2583,7 +2698,8 @@
   "pantsTex": "assets/variants/2688157000_green.png",
   "colourway": {
    "pants": "green"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "f016",
@@ -2603,7 +2719,8 @@
    "Black Overalls w White Crop Shirt",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bean"
  },
  {
   "id": "f017",
@@ -2623,7 +2740,8 @@
    "flannel shirt",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f018",
@@ -2645,7 +2763,8 @@
   ],
   "accessories": [
    7856863608
-  ]
+  ],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f019",
@@ -2669,7 +2788,8 @@
   "pantsTex": "assets/variants/6652024161_navy.png",
   "colourway": {
    "pants": "navy"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f020",
@@ -2689,7 +2809,8 @@
    "Blue Essential Vest (Kalcer Style)",
    "grey jeans"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f021",
@@ -2709,7 +2830,8 @@
    "Vlone Polo (White)",
    "plaid sweatpants "
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "f022",
@@ -2729,7 +2851,8 @@
    "Formal Shirt -",
    "Dark Casual Pants Black Trousers [ - ]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f023",
@@ -2755,7 +2878,8 @@
   "shirtTex": "assets/variants/83011153202867_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "f024",
@@ -2775,7 +2899,8 @@
    "Scrubs (+)",
    "[-] Scrub Pants Black"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f025",
@@ -2796,7 +2921,8 @@
    "Dark Casual Pants Black Trousers [ - ]"
   ],
   "accessories": [],
-  "hairTint": "#c9c9c7"
+  "hairTint": "#c9c9c7",
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f026",
@@ -2816,7 +2942,8 @@
    "White w Pink Stripes Sweater",
    "School girl pleat skirt"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:classic"
  },
  {
   "id": "f027",
@@ -2840,7 +2967,8 @@
   "shirtTex": "assets/variants/84224179619413_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f028",
@@ -2862,7 +2990,8 @@
   ],
   "accessories": [
    11884330
-  ]
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f029",
@@ -2886,7 +3015,8 @@
   "shirtTex": "assets/variants/5212623934_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f030",
@@ -2910,7 +3040,8 @@
   "shirtTex": "assets/variants/79761866360161_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f031",
@@ -2932,7 +3063,8 @@
   ],
   "accessories": [
    130568043270999
-  ]
+  ],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f032",
@@ -2952,7 +3084,8 @@
    "polo pink",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:classic"
  },
  {
   "id": "f033",
@@ -2972,7 +3105,8 @@
    "pink hoodie",
    "black pleated skirt || black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:toon"
  },
  {
   "id": "f034",
@@ -2992,7 +3126,8 @@
    "Red+Dark blue striped blouse",
    "Black Jeans with White Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f035",
@@ -3016,7 +3151,8 @@
   "shirtTex": "assets/variants/122692416575580_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "f036",
@@ -3042,7 +3178,8 @@
   "shirtTex": "assets/variants/125023586525859_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f037",
@@ -3062,7 +3199,8 @@
    "Pink Scrubs Top Seaside Hospital Pediatrics OB/GYN",
    "White Scrubs (Pants)"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:toon"
  },
  {
   "id": "f038",
@@ -3087,7 +3225,8 @@
   "shirtTex": "assets/variants/136568372915877_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f039",
@@ -3107,7 +3246,8 @@
    "pink plaid dress (shirt",
    "Jean Shorts with White Shoes"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "f040",
@@ -3131,7 +3271,8 @@
   "shirtTex": "assets/variants/84224179619413_green.png",
   "colourway": {
    "shirt": "green"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f041",
@@ -3153,7 +3294,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f042",
@@ -3173,7 +3315,8 @@
    "Black Overalls w/ Mint Hoodie",
    "Grey Chef Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f043",
@@ -3197,7 +3340,8 @@
   "shirtTex": "assets/variants/6948525547_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "f044",
@@ -3219,7 +3363,8 @@
   ],
   "accessories": [
    130568043270999
-  ]
+  ],
+  "faceSet": "kit:toon"
  },
  {
   "id": "f045",
@@ -3239,7 +3384,8 @@
    "Pink Stripe Shirt with Neck Tie (kalcer style)",
    "black pleated skirt  black socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f046",
@@ -3259,7 +3405,8 @@
    "Pink blouse ",
    "baggy gym sweatpants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f047",
@@ -3279,7 +3426,8 @@
    "Black tee",
    "Plain Black Jeans With Boots"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "f048",
@@ -3305,7 +3453,8 @@
    "shirt": "blush",
    "pants": "navy"
   },
-  "pantsTex": "assets/variants/2688157000_navy.png"
+  "pantsTex": "assets/variants/2688157000_navy.png",
+  "faceSet": "classicB"
  },
  {
   "id": "f049",
@@ -3333,7 +3482,8 @@
    "shirt": "sky",
    "pants": "green"
   },
-  "pantsTex": "assets/variants/6652024161_green.png"
+  "pantsTex": "assets/variants/6652024161_green.png",
+  "faceSet": "kit:hose"
  },
  {
   "id": "f050",
@@ -3353,7 +3503,8 @@
    "Medical Scrubs Navy Blue +",
    "Dark Blue Scrub Pants [-]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f051",
@@ -3378,7 +3529,8 @@
   "shirtTex": "assets/variants/6999290186_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f052",
@@ -3398,7 +3550,8 @@
    "Blue Splatter STREETS tee.",
    "pink skirt with white socks"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicB"
  },
  {
   "id": "f053",
@@ -3422,7 +3575,8 @@
   "shirtTex": "assets/variants/88173808109921_cream.png",
   "colourway": {
    "shirt": "cream"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "f054",
@@ -3444,7 +3598,8 @@
   ],
   "accessories": [
    301820310
-  ]
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f055",
@@ -3468,7 +3623,8 @@
   "shirtTex": "assets/variants/135872548989088_forest.png",
   "colourway": {
    "shirt": "forest"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f056",
@@ -3492,7 +3648,8 @@
   "shirtTex": "assets/variants/5510979986_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f057",
@@ -3518,7 +3675,8 @@
   "shirtTex": "assets/variants/99978212949301_blush.png",
   "colourway": {
    "shirt": "blush"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "f058",
@@ -3542,7 +3700,8 @@
   "shirtTex": "assets/variants/134073243937495_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:bean"
  },
  {
   "id": "f059",
@@ -3566,7 +3725,8 @@
   "shirtTex": "assets/variants/120306059275285_mustard.png",
   "colourway": {
    "shirt": "mustard"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f060",
@@ -3586,7 +3746,8 @@
    "grey polo hoodie",
    "Plain Black Jeans With Boots"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "f061",
@@ -3610,7 +3771,8 @@
   "shirtTex": "assets/variants/75648623476384_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:anime"
  },
  {
   "id": "f062",
@@ -3638,7 +3800,8 @@
    "shirt": "green",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/2688157000_sky.png"
+  "pantsTex": "assets/variants/2688157000_sky.png",
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f063",
@@ -3658,7 +3821,8 @@
    "Scrubs+",
    "Dark Blue Scrub Pants [-]"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "classicA"
  },
  {
   "id": "f064",
@@ -3685,7 +3849,8 @@
    "shirt": "teal",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/6652024161_sky.png"
+  "pantsTex": "assets/variants/6652024161_sky.png",
+  "faceSet": "kit:toon"
  },
  {
   "id": "f065",
@@ -3709,7 +3874,8 @@
   "shirtTex": "assets/variants/138498361609157_cream.png",
   "colourway": {
    "shirt": "cream"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f066",
@@ -3733,7 +3899,8 @@
   "shirtTex": "assets/variants/84831639942736_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f067",
@@ -3755,7 +3922,8 @@
   ],
   "accessories": [
    11884330
-  ]
+  ],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f068",
@@ -3779,7 +3947,8 @@
   "shirtTex": "assets/variants/81735727343320_forest.png",
   "colourway": {
    "shirt": "forest"
-  }
+  },
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f069",
@@ -3803,7 +3972,8 @@
   "shirtTex": "assets/variants/79761866360161_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:toon"
  },
  {
   "id": "f070",
@@ -3823,7 +3993,8 @@
    "Black Hoodie + HeadPhones",
    "Grey Leggings"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f071",
@@ -3847,7 +4018,8 @@
   "shirtTex": "assets/variants/99427838709553_olive.png",
   "colourway": {
    "shirt": "olive"
-  }
+  },
+  "faceSet": "kit:hose"
  },
  {
   "id": "f072",
@@ -3871,7 +4043,8 @@
   "shirtTex": "assets/variants/5097955152_purple.png",
   "colourway": {
    "shirt": "purple"
-  }
+  },
+  "faceSet": "kit:bean"
  },
  {
   "id": "f073",
@@ -3895,7 +4068,8 @@
   "shirtTex": "assets/variants/144076436_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f074",
@@ -3919,7 +4093,8 @@
   "shirtTex": "assets/variants/6708696844_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f075",
@@ -3945,7 +4120,8 @@
   "shirtTex": "assets/variants/78013815276971_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "classicA"
  },
  {
   "id": "f076",
@@ -3965,7 +4141,8 @@
    "Scrubs +",
    "Blue Medical Scrub Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f077",
@@ -3992,7 +4169,8 @@
    "shirt": "purple",
    "pants": "navy"
   },
-  "pantsTex": "assets/variants/6652024161_navy.png"
+  "pantsTex": "assets/variants/6652024161_navy.png",
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f078",
@@ -4016,7 +4194,8 @@
   "shirtTex": "assets/variants/126573586724044_sage.png",
   "colourway": {
    "shirt": "sage"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f079",
@@ -4040,7 +4219,8 @@
   "shirtTex": "assets/variants/84831639942736_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "kit:classic"
  },
  {
   "id": "f080",
@@ -4068,7 +4248,8 @@
    "shirt": "forest",
    "pants": "green"
   },
-  "pantsTex": "assets/variants/2688157000_green.png"
+  "pantsTex": "assets/variants/2688157000_green.png",
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f081",
@@ -4092,7 +4273,8 @@
   "shirtTex": "assets/variants/9291160487_red.png",
   "colourway": {
    "shirt": "red"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f082",
@@ -4118,7 +4300,8 @@
    "shirt": "charcoal",
    "pants": "sky"
   },
-  "pantsTex": "assets/variants/899151344_sky.png"
+  "pantsTex": "assets/variants/899151344_sky.png",
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f083",
@@ -4144,7 +4327,8 @@
   "shirtTex": "assets/variants/110797869888281_sage.png",
   "colourway": {
    "shirt": "sage"
-  }
+  },
+  "faceSet": "kit:toon"
  },
  {
   "id": "f084",
@@ -4168,7 +4352,8 @@
   "shirtTex": "assets/variants/122692416575580_mustard.png",
   "colourway": {
    "shirt": "mustard"
-  }
+  },
+  "faceSet": "kit:anime"
  },
  {
   "id": "f085",
@@ -4192,7 +4377,8 @@
   "shirtTex": "assets/variants/134621006241247_olive.png",
   "colourway": {
    "shirt": "olive"
-  }
+  },
+  "faceSet": "kit:hose"
  },
  {
   "id": "f086",
@@ -4216,7 +4402,8 @@
   "shirtTex": "assets/variants/111776479099725_lilac.png",
   "colourway": {
    "shirt": "lilac"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f087",
@@ -4240,7 +4427,8 @@
   "shirtTex": "assets/variants/131205147854169_sage.png",
   "colourway": {
    "shirt": "sage"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f088",
@@ -4266,7 +4454,8 @@
   "shirtTex": "assets/variants/75648623476384_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f089",
@@ -4286,7 +4475,8 @@
    "Doctor Scrubs Top",
    "Blue Medical Scrub Pants"
   ],
-  "accessories": []
+  "accessories": [],
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f090",
@@ -4313,7 +4503,8 @@
   "shirtTex": "assets/variants/6999290186_navy.png",
   "colourway": {
    "shirt": "navy"
-  }
+  },
+  "faceSet": "ai:13_sleepy_chibi_doll"
  },
  {
   "id": "f091",
@@ -4337,7 +4528,8 @@
   "shirtTex": "assets/variants/129713293784379_brown.png",
   "colourway": {
    "shirt": "brown"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f092",
@@ -4361,7 +4553,8 @@
   "shirtTex": "assets/variants/84224179619413_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:11_silly_derpy"
  },
  {
   "id": "f093",
@@ -4387,7 +4580,8 @@
   "shirtTex": "assets/variants/382537085_mustard.png",
   "colourway": {
    "shirt": "mustard"
-  }
+  },
+  "faceSet": "kit:toon"
  },
  {
   "id": "f094",
@@ -4411,7 +4605,8 @@
   "shirtTex": "assets/variants/4728419660_forest.png",
   "colourway": {
    "shirt": "forest"
-  }
+  },
+  "faceSet": "classicB"
  },
  {
   "id": "f095",
@@ -4435,7 +4630,8 @@
   "shirtTex": "assets/variants/5510979986_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "kit:anime"
  },
  {
   "id": "f096",
@@ -4461,7 +4657,8 @@
   "shirtTex": "assets/variants/398633584_maroon.png",
   "colourway": {
    "shirt": "maroon"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  },
  {
   "id": "f097",
@@ -4485,7 +4682,8 @@
   "shirtTex": "assets/variants/136568372915877_cream.png",
   "colourway": {
    "shirt": "cream"
-  }
+  },
+  "faceSet": "kit:bigeye"
  },
  {
   "id": "f098",
@@ -4509,7 +4707,8 @@
   "shirtTex": "assets/variants/74733757527820_green.png",
   "colourway": {
    "shirt": "green"
-  }
+  },
+  "faceSet": "kit:anime"
  },
  {
   "id": "f099",
@@ -4533,6 +4732,7 @@
   "shirtTex": "assets/variants/6149324873_sky.png",
   "colourway": {
    "shirt": "sky"
-  }
+  },
+  "faceSet": "ai:16_shy_moe_smirk"
  }
 ]

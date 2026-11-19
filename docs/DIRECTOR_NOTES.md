@@ -220,3 +220,7 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   split each chosen dynamic head into its own reference PNG + write a detailed AI image prompt (expression sheets, mouth
   shapes for lip sync, eye / brow parts, exact layout and presentation); Xavier generates the sheets in Gemini / ChatGPT
   and sends them back; I slice, key and rig them onto the head.
+- 2026-11-19 07:17 Sent AI sheets for styles 05 (male), 11 (neutral), 13 + 16 (female); a CLASSIC_FACES zip (647 faces);
+  asked me to pull the Classic Roblox Facepack + AltiWyre's Face Pack, and to bring back the old repo's faces. RULE:
+  randomise faces across the bank: females get the female styles (13, 16), some the neutral 11, some old-repo faces;
+  males get 05 / 11 / old-repo faces; "the most diverse face ever". Asked: what comes after faces.

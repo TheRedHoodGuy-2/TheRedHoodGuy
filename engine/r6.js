@@ -8,6 +8,8 @@ import { face as drawFace } from './faces.js';
 import { faceCanvas } from './faces2.js';
 import { faceCanvas as faceCanvas3 } from './faces3.js';
 import { faceCanvas4 } from './facestyles.js';
+import { drawFace as kitDraw, NPC_FACE } from './legacy/facekit.js';
+import { FACE_DEFS as MAIN_FACES } from './legacy/faces.js';
 
 export const STUD = 0.34;                       // 5 studs tall = 1.7 m
 export const HEAD_R = 0.6, HEAD_H = 1.2;        // measured from the male model Xavier supplied (explainer-kit 6910cb06): 1.2 wide, 1.2 tall
@@ -228,10 +230,25 @@ export async function makeR6(spec = {}) {
   api.setFace = (name = 'neutral') => { const t = drawFace(name, sex, 'ink'); t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; faceMat.map = t; faceMat.needsUpdate = true; api.faceName = name; };
   // any face picture (a Roblox classic decal, a face-kit v2 canvas): same placement as the drawn faces
   api.setFaceMap = src => { const t = src.isTexture ? src : new THREE.CanvasTexture(src); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.wrapS = THREE.RepeatWrapping; t.repeat.x = -1; t.offset.x = 1; t.needsUpdate = true; faceMat.map = t; faceMat.needsUpdate = true; facePatch.visible = true; };
+  // SPRITE FACES (2026-11-19): layers of 512 RGBA face decals (AI sheets, catalogue packs) drawn into the face canvas.
+  // fs = { layers: [url, ...], place?: { k, dx, dy } }  (k scales about the decal centre, dx / dy in decal fractions)
+  api.setFaceSprite = async fs => { const ims = await Promise.all(fs.layers.map(u => img(u))); const cv = document.createElement('canvas'); cv.width = cv.height = 1024;
+    const x = cv.getContext('2d'); x.imageSmoothingQuality = 'high'; const P = fs.place || {}, k = P.k || 1, w = 1024 * k, ox = (1024 - w) / 2 + (P.dx || 0) * 1024, oy = (1024 - w) / 2 + (P.dy || 0) * 1024;
+    for (const im of ims) x.drawImage(im, ox, oy, w, w); api.setFaceMap(cv); api.faceName = fs.layers.join('+'); };
+// OLD-REPO FACES (explainer-kit kit/facekit.js: 12 styles x ~80 expressions + visemes 'expr+talkA'; kit/faces.js: the
+  // approved mains' faces). Their 512 canvas used the same front projection as our decal, so it maps 1:1.
+  // fk = { style, expr, sex, npc (true = Xavier's NPC sizes), main (a kit/faces.js name instead), place }
+  api.setFaceKit = fk => { const c = document.createElement('canvas'); c.width = c.height = 512; const g = c.getContext('2d');
+    if (fk.main) (MAIN_FACES[fk.main] || MAIN_FACES.neutral)(g, (fk.sex || sex) === 'f' || (fk.sex || sex) === 'female');
+    else kitDraw(g, fk.expr || 'neutral', { style: fk.style || 'classic', sex: (fk.sex || sex) === 'female' ? 'f' : (fk.sex || sex), lips: fk.lips || 'black', ...(fk.npc === false ? {} : NPC_FACE), ...(fk.o || {}) });
+    const cv = document.createElement('canvas'); cv.width = cv.height = 1024; const x = cv.getContext('2d'); const P = fk.place || {}, k = P.k || 1, w = 1024 * k;
+    x.drawImage(c, (1024 - w) / 2 + (P.dx || 0) * 1024, (1024 - w) / 2 + (P.dy || 0) * 1024, w, w); api.setFaceMap(cv); api.faceName = 'kit:' + (fk.main || fk.style + ':' + fk.expr); };
   api.setFace4 = (style, emo) => { api.setFaceMap(faceCanvas4(style, emo, sex)); api.faceName = style + ':' + emo; };
   api.setFace3 = (emo, o = {}) => { api.setFaceMap(faceCanvas3(emo, sex, o)); api.faceName = typeof emo === 'string' ? emo : 'custom'; };
   api.setFace2 = (emo, o = {}) => { api.setFaceMap(faceCanvas(emo, sex, o)); api.faceName = typeof emo === 'string' ? emo : 'custom'; };
   if (spec.faceImg) { const im = await img(spec.faceImg); const cv = document.createElement('canvas'); cv.width = cv.height = 1024; const x = cv.getContext('2d'); x.imageSmoothingQuality = 'high'; x.drawImage(im, 0, 0, 1024, 1024); api.setFaceMap(cv); }
+  else if (spec.faceSprite) await api.setFaceSprite(spec.faceSprite);
+  else if (spec.faceKit) api.setFaceKit(spec.faceKit);
   else if (spec.face4) api.setFace4(spec.face4.style, spec.face4.emo);
   else if (spec.face3) api.setFace3(spec.face3, { style: spec.faceStyle });
   else if (spec.face2) api.setFace2(spec.face2);

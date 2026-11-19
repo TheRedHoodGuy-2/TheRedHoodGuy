@@ -264,3 +264,4 @@ Next phase: 7 faces / face animation / lip sync.
   per-shot key + rim, colour script step), then faces.
 
 - 2026-11-19 04:xx: research before/after sent (docs/sheets/research_before_after.jpg, scenes/research_ab.js, opts.mode before|after). Same whisper beat; after = OTS, 30 deg lens + DOF on her eyes, fill cut + key + window rim, asymmetric posing, kit v2 face, lift/gamma/gain grade. Known weak: his foreground head is a black slab, her near arm a plain block. Next: docs/ANIMATION.md + docs/LOOK.md drafts from research/.
+- 2026-11-19 07:xx FACES: AI sheets 05/11/13/16 sliced + keyed (tools/facesprites.py -> assets/faces/sprites), old repo face kit ported (engine/legacy), classic pack + AltiWyre pulled (tools/rbxm.py), engine/faceset.js = 32 emotions + 16 visemes for every family, faceSet on all 200 bank characters, classroom scene wears them. Sheets: docs/sheets/faces/.

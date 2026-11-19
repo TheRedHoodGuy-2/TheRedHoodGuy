@@ -10,3 +10,4 @@
 - model_pull.md, render_speed.md: model sources and render cost
 - sfx_sources.md, voice_fish.md, voice_options.md: sound effects and voice
 - dynfaces.md: Roblox dynamic faces 2026 (migration, what's popular, measured face layout of the top 48), basis of face kit v3
+- facepacks.md: the three face packs pulled 2026-11-19 (classic, AltiWyre, CLASSIC_FACES zip), what they are, how they're used

@@ -66,3 +66,11 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 - Code-drawn face kits (faces2 / faces3 / facestyles) are rejected as final art. Faces = AI-generated expression sheets
   per style (prompt pack: docs/face_prompts/), made by Xavier in Gemini / ChatGPT, rigged by Claude (slice, key, align
   to the decal layout, swap per emotion / viseme).
+
+## 2026-11-19 07:17 Face families (Xavier)
+- Every bank character has `faceSet` in library/characters.json (engine/faceset.js): ai:05 / ai:11 / ai:13 / ai:16 (his
+  AI sheets, 32 emotions + 16 mouths + 16 eye states), kit:<style> (old repo face kit, 80 expressions), classicA /
+  classicB (Classic Roblox Facepack, layered eyes / mouths / brows). One emotion + viseme vocabulary for all of them.
+- The two mains keep their own faces (old repo kit/faces.js), not given to anyone else.
+- CLASSIC_FACES zip (647 single faces) = background extras only (they cannot change expression).
+- kit:scribble dropped (its grey cheeks read as bruises).

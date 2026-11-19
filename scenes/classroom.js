@@ -5,6 +5,7 @@ import { RectAreaLightUniformsLib } from 'three/addons/lights/RectAreaLightUnifo
 import { classroom, W, D, H } from '../engine/sets/classroom.js';
 import { makeR6 } from '../engine/r6.js';
 import { poseRig } from '../engine/rig.js';
+import { faceSpec, loadClassic } from '../engine/faceset.js';
 
 // the class: 22 students from the bank (teens), 3 desks left empty, and the teacher (a bank adult)
 export const CLASS = ['m000', 'f001', 'm002', 'f002', 'm003', 'f005', 'm004', 'f006', 'm005', 'f007', 'm013', 'f013', 'm014', 'f015', 'm015', 'f016', 'm016', 'f017', 'm019', 'f019', 'm020', 'f020'];
@@ -23,7 +24,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const view = opts.view || 'back';
   const C = await classroom(scene, { hide: opts.hide || hideFor(view) }); globalThis.CLASS_DBG = { C, people: [] };
   const bank = Object.fromEntries((await (await fetch(new URL('library/characters.json', document.baseURI))).json()).map(c => [c.id, c]));
-  const spec = c => ({ res: 1024, skin: c.skin, face: false, sex: c.sex, hair: c.hair, accessories: c.accessories, ...(c.hairTint ? { hairTint: c.hairTint } : {}),
+  await loadClassic();
+  const spec = c => ({ res: 1024, skin: c.skin, ...(c.faceSet ? faceSpec(c.faceSet, (opts.emo || {})[c.id] || 'neutral', null, c.sex) : { face: false }), sex: c.sex, hair: c.hair, accessories: c.accessories, ...(c.hairTint ? { hairTint: c.hairTint } : {}),
     shirt: c.shirtTex || `assets/roblox/${c.shirt}/texture.png`, pants: c.pantsTex || `assets/roblox/${c.pants}/texture.png` });
   if (!opts.noCast) {
     let k = 0;

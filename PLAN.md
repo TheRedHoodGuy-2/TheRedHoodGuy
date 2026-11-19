@@ -9,7 +9,7 @@ Status key: TODO, DOING, WAITING (on Xavier), DONE (date). One item is signed of
 | 3 | Renderer decision | `docs/DECISIONS.md` | DONE 2026-11-16: Three.js in the cloud; Blender finals wait for a new laptop |
 | 4 | Base male + female v2 | bevels, proportions, plastic grain (no glow), `docs/CHARACTER.md` | DRAFT DONE 2026-11-16: `engine/r6.js`, sheets in `docs/sheets/`. WAITING: sign-off |
 | 5 | Hair + clothing library | Roblox catalog importer (official items only) | DRAFT DONE 2026-11-16: 98 hair / accessories, 9 shirts, 12 pants. Props and buildings are NOT reachable this way |
-| 6 | Faces | face system rework | TODO |
+| 6 | Faces | face system rework | DOING 2026-11-19: 4 AI families + old kit + classic packs rigged, randomised on the bank (engine/faceset.js). Left: AltiWyre labelling, blink + lip sync in the animator |
 | 7 | Look bible | material library, light rigs, set + prop standards, `docs/LOOK.md` | TODO |
 | 8 | Animation v2 | pose / motion rework, automated clipping check, `docs/ANIMATION.md` | TODO |
 | 9 | Voice + captions | voice bake-off (he picks one), caption style | DOING: 6 Kokoro takes at 262 wpm in `voice/bakeoff/` (2026-11-16). WAITING: Xavier picks. Captions not built |

@@ -17,7 +17,7 @@ def render(cells, out, cols=6, cw=300, chh=330, title=''):
     # render tall cells (a whole body each, so nothing spills into the row below), then crop the head and shoulders
     CH = 2.0; rh = round(cw * CH / .8)
     sp = {'w': cols * cw, 'h': rows * rh, 'cols': cols, 'grid': {'cw': .8, 'ch': CH, 'cy': 1.25, 'bg': '#e6ebf0'}, 'chars': [c for _, c in cells]}
-    png = '/tmp/facesheet.png'; r = subprocess.run(['node', 'tools/shot.mjs', 'sheet.html', json.dumps(sp), png], cwd=ROOT, capture_output=True, text=True)
+    png = f'/tmp/facesheet_{os.getpid()}.png'; r = subprocess.run(['node', 'tools/shot.mjs', 'sheet.html', json.dumps(sp), png], cwd=ROOT, capture_output=True, text=True)
     if not os.path.exists(png): print(r.stdout[-500:], r.stderr[-500:]); return
     full = Image.open(png).convert('RGB'); y0 = round((CH / 2 - (1.98 - 1.25)) / CH * rh); im = Image.new('RGB', (full.width, rows * chh), '#e6ebf0')
     for r in range(rows): im.paste(full.crop((0, r * rh + y0, full.width, r * rh + y0 + chh - 30)), (0, r * chh))
