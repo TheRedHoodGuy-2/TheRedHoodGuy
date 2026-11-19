@@ -74,3 +74,13 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 - The two mains keep their own faces (old repo kit/faces.js), not given to anyone else.
 - CLASSIC_FACES zip (647 single faces) = background extras only (they cannot change expression).
 - kit:scribble dropped (its grey cheeks read as bruises).
+
+## 2026-11-19 10:01 Niche + script rules (Xavier)
+- NICHE: popular Reddit stories (Xavier finds them) remade into the "In this world / town" impossible-rule format. When
+  there is no good Reddit story, Claude writes an original one.
+- LENGTH: whatever the script needs, never past the max (95 s, FORMAT_BIBLE). If a story would run long, cut it at a
+  CLIFFHANGER. Most scripts BUILD TOWARD a cliffhanger that is never resolved (his example: the village eye that has not
+  blinked in 3 days, ends mid-blink).
+- THE 7-YEAR-OLD CHECK: at every block of a few seconds ask "would a 7-year-old still be watching?"; a block that fails
+  is rewritten. Every research rule (retention, hook, composition, posing, faces, frame check) applies to every script
+  and every frame. No skills needed: the rules live in the docs + CLAUDE.md.
