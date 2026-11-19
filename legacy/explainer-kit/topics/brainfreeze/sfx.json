@@ -1,0 +1,85 @@
+[
+ {
+  "t": 5.35,
+  "sound": "slushie_slurp",
+  "vol": 0.7,
+  "trim": 1.6
+ },
+ {
+  "t": 6.0,
+  "sound": "gulp",
+  "vol": 0.6,
+  "trim": 1.4
+ },
+ {
+  "t": 9.55,
+  "sound": "scream",
+  "vol": 0.75,
+  "trim": 1.2,
+  "duck": true
+ },
+ {
+  "t": 10.65,
+  "sound": "long_woosh",
+  "vol": 0.7
+ },
+ {
+  "t": 11.0,
+  "sound": "snow_wind",
+  "vol": 0.35,
+  "trim": 5.3
+ },
+ {
+  "t": 11.75,
+  "sound": "desk_bang",
+  "vol": 0.7
+ },
+ {
+  "t": 12.85,
+  "sound": "shiver",
+  "vol": 0.7,
+  "trim": 1.2
+ },
+ {
+  "t": 13.75,
+  "sound": "alarm",
+  "vol": 0.55,
+  "trim": 2.4
+ },
+ {
+  "t": 14.1,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 14.46,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 14.82,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 15.18,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 15.54,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 15.9,
+  "sound": "button_slam",
+  "vol": 0.4
+ },
+ {
+  "t": 18.3,
+  "sound": "crickets",
+  "vol": 0.55,
+  "trim": 5.0
+ }
+]

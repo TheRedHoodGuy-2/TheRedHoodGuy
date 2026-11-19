@@ -250,3 +250,26 @@ defend every pixel of it, it does not get sent.
   serious face. Mouths must MATCH THE EMOTION (happy line = smiling talk, serious / neutral = neutral talk). New prompt:
   docs/face_prompts/MOUTHS_v2.md (rows per mood, one mouth opening wider, small). Then: content engine -> CLAUDE.md
   rulebook -> first video, all before Tuesday.
+- 2026-11-19 10:24 CAST IS CONSISTENT: once a character plays someone (the hoodie boy's mom, sister Mia, grandma, dad),
+  they stay that person in every video. Two MAINS: the boy in the red hoodie (narrator) and a main girl with her OWN
+  family (Mia is NOT the main girl). Mains wear 3D clothing: the boy = a proper full red 3D hoodie (no zipper) + jeans.
+  Make CHILD (~10 y) and MID (between child and adult) versions of the male and female bases (shorter legs / torso),
+  textures must still fit. Voice: match Gneef's narrator exactly (pace, sound); the "Roblox guy" voice; later a girl.
+  CLIFFHANGERS ARE SHOWN, NOT SAID: cut the last line, let them watch it happen. No clipping: fix clips with more
+  dynamic poses. Wants the research applied automatically while making a video. Mouth sheets 5_E / 5_F: add to the bank
+  for every custom face (male + female). Test the script as a LOW quality video while he sleeps.
+
+## 2026-11-19 15:01 Shadow Steps test: "terrible", lighting + camera (Xavier, angry, ~90% of weekly limit)
+- LIGHTING was absurd: none of the look study (research/look_study_2026-11-18.md) or the approved research before/after
+  (scenes/research_ab.js) was applied. Every scene must use the look rig (engine/look.js): one motivated hard key
+  (sun / window / lamp), real shadows, a soft key on the subject's face + a rim that cuts them out, darker overall with
+  true blacks, richer warm colour, background darker and softer than the subject. Gate it with tools/lookmeter.py
+  against Gneef's measured numbers before anything is sent.
+- CAMERA was a PowerPoint slideshow: every shot the same slow push and the character barely moving. Gneef's camera is
+  fast AND slow, left AND right, cutting: vary the move every shot (fast push, whip, truck left / right, orbit, track,
+  crane, pull-out, punch-in), vary size and angle every cut, ~1.5 s shots, motion carries across cuts. Never the same
+  move or size twice in a row. (Supersedes "72% slow push" in CONTENT_ENGINE.md.)
+- Before sending ANY video: check it against the research docs, not only for clipping.
+- Things already built and approved stay as they are (our engine, faces, flow). From explainer-kit only the old faces
+  (kit/faces.js, kit/facekit.js) get merged into our faces; the rest of the old repo (posing, animation lessons) is
+  carried over as the rules it taught. HANDOFF.md items are all pulled into legacy/explainer-kit/.

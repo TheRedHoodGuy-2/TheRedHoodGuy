@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explainer Film</title>
+<style>
+@font-face{font-family:Caption;src:url(kit/fonts/caption.woff2) format('woff2');font-weight:800;font-display:block}
+:root{--bg:#0e1116;--fg:#f4f6f8;--muted:#9aa4b2;--accent:#ffd34d;--edge:#15171f}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#e9edf2;--fg:#11161d;--muted:#4c5866}}
+:root[data-theme="light"]{--bg:#e9edf2;--fg:#11161d;--muted:#4c5866}:root[data-theme="dark"]{--bg:#0e1116;--fg:#f4f6f8;--muted:#9aa4b2}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;box-sizing:border-box;overflow-x:hidden}
+#stage{position:relative;height:min(82vh,calc((100vw - 32px)*16/9));aspect-ratio:9/16;overflow:hidden;border-radius:10px;background:#9cc3e6}
+#stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+#cap,#callout{position:absolute;left:0;right:0;text-align:center;white-space:nowrap;pointer-events:none;font-family:Caption,sans-serif;font-weight:800;line-height:1;height:1em;letter-spacing:.01em}
+#cap{top:var(--capY,74%);transform:translateY(-50%);font-size:calc(var(--w)*.105);color:#fff}
+#callout{top:16%;font-size:calc(var(--w)*.1);color:var(--accent);opacity:0}
+#cap span,#callout span{position:absolute;left:0;right:0;-webkit-text-stroke:calc(var(--w)*.018) var(--edge);paint-order:stroke fill}
+#cap span.x,#callout span.x{color:var(--edge)}
+#cap.em span.face{color:var(--accent)}
+#bar{display:flex;gap:10px;align-items:center;width:min(100%,460px)}
+#bar button{background:transparent;color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+#bar input{flex:1}#bar span{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;min-width:44px;text-align:right}
+body.render{padding:0;background:#000}body.render #bar{display:none}body.render #stage{height:100vh;border-radius:0}
+body.board #cap{display:none}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body>
+<div id="stage"><div id="cap"></div><div id="callout"></div></div>
+<div id="bar"><button id="play">Play</button><input id="scrub" type="range" min="0" max="70" step="0.01" value="0"><span id="tc">0.00</span></div>
+<audio id="vo" preload="auto"></audio>
+<script type="module">
+import { createFilm } from './kit/engine.js';
+const q = new URLSearchParams(location.search), RENDER = q.has('render'), topic = q.get('topic') || 'microwave';
+if (RENDER) document.body.classList.add('render'); if (q.has('board')) document.body.classList.add('board');
+await document.fonts.load('800 40px Caption').catch(() => {});
+const film = await createFilm(document.getElementById('stage'), { topic });
+window.renderAt = film.renderAt; window.film = film; window.ready = true;
+if (!RENDER) {
+  const scrub = document.getElementById('scrub'), tc = document.getElementById('tc'), btn = document.getElementById('play'), vo = document.getElementById('vo');
+  vo.src = `topics/${topic}/voice/mix.mp3`;
+  scrub.max = film.DUR; let playing = false, t = parseFloat(q.get('t') || '0'), last = performance.now();
+  btn.onclick = () => { playing = !playing; btn.textContent = playing ? 'Pause' : 'Play'; last = performance.now(); if (playing) { vo.currentTime = t; vo.play().catch(() => {}); } else vo.pause(); };
+  scrub.oninput = () => { t = +scrub.value; if (playing) vo.currentTime = t; };
+  (function loop(now) { if (playing) { t = vo.paused ? t + (now - last) / 1000 : vo.currentTime; if (t >= film.DUR) { t = 0; playing = false; btn.textContent = 'Play'; vo.pause(); } } last = now; scrub.value = t; tc.textContent = t.toFixed(2); film.renderAt(t); requestAnimationFrame(loop); })(performance.now());
+} else film.renderAt(parseFloat(q.get('t') || '0'));
+</script></body></html>

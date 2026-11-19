@@ -1,0 +1,20 @@
+{
+ "title": "Why you get brain freeze",
+ "format": "A",
+ "engine": "recording",
+ "beats": [
+  "He snuck a slushie into class and waited till the teacher turned around.",
+  "Then he chugged half of it, and his head exploded so hard he screamed.",
+  "You see, your brain panics at the cold and sets off every alarm in your head.",
+  "And when it finally stopped, the whole class was staring at him in silence."
+ ],
+ "recording": "voice/recording.wav",
+ "hook": "0-2s: him at his desk, slushie hidden under the desk / behind his textbook, eyes locked on the teacher's back, waiting",
+ "staging": {
+  "sneak": "teacher writing on the board; he slides the cup out, slow, eyes on her; she turns around: he freezes, cup down; she turns back to the board",
+  "chug": "he chugs, cheeks hollow, eyes wide... head explodes: grabs his head and SCREAMS (mouth wide, whole body arched)",
+  "brain_hq": "HQ iced over, a block of ice smashes through the ceiling (the cold), little him in a parka panics and slams EVERY alarm button, sirens + red lights everywhere (funny, not a science diagram)",
+  "payoff": "pain fades, he exhales, opens his eyes... dead silence. The whole class + the teacher turned round staring at him. He slowly lowers the cup. Hold on the stares."
+ },
+ "recording_note": "take A (21:38 first file) + 1.6 s silence added at the end for the stares (Xavier 2026-11-14)"
+}

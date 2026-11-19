@@ -1,0 +1,29 @@
+{
+ "duration": 24.191,
+ "beats": [
+  {
+   "i": 1,
+   "text": "He was just dozing off in class when his whole body jolted like he fell off a building.",
+   "start": 0,
+   "end": 5.92
+  },
+  {
+   "i": 2,
+   "text": "You see, when you drift off, your muscles relax so fast your brain panics.",
+   "start": 6.25,
+   "end": 11.64
+  },
+  {
+   "i": 3,
+   "text": "It thinks you're falling, so it slams every muscle at once to save you.",
+   "start": 11.91,
+   "end": 16.62
+  },
+  {
+   "i": 4,
+   "text": "Problem is, his foot was right under the desk in front, and now so is the teacher's coffee.",
+   "start": 16.77,
+   "end": 23.36
+  }
+ ]
+}

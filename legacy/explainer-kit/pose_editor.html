@@ -1,0 +1,306 @@
+<meta charset="utf-8">
+<title>R6 Pose Editor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,500;6..12,700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: stage (character + gizmo; click a part, drag the rings / arrows) beside a panel: who, start pose, face, part, tool
+   (rotate / move part / move pivot), sliders, props, undo, pose code in and out. Stacks on phones. */
+:root {
+  --bg: #eef1f4; --panel: #ffffff; --ink: #1f2328; --muted: #67707b; --line: #dde2e8; --accent: #d63a3a; --accentInk: #fff; --chip: #f4f6f8; --focus: #f2a13a; --stage: #cfe4f5;
+  --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif; --body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #16191d; --panel: #1f2328; --ink: #eef1f4; --muted: #a2abb5; --line: #343a41; --accent: #ef5a52; --accentInk: #16191d; --chip: #2a2f35; --stage: #1d2a36; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #16191d; --panel: #1f2328; --ink: #eef1f4; --muted: #a2abb5; --line: #343a41; --accent: #ef5a52; --accentInk: #16191d; --chip: #2a2f35; --stage: #1d2a36; color-scheme: dark }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); }
+.app { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) 350px; }
+#stage { position: relative; min-height: 0; background: var(--stage); }
+#stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.hint { position: absolute; left: max(12px, env(safe-area-inset-left, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); background: rgba(20,24,28,.72); color: #fff; font: 700 .78rem var(--body); padding: 6px 11px; border-radius: 12px; max-width: calc(100% - 24px); }
+.views { position: absolute; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); display: flex; flex-wrap: wrap; justify-content: end; gap: 6px; }
+#loading { position: absolute; inset: 0; display: grid; place-items: center; font: 700 1.1rem var(--display); color: var(--muted); }
+aside { background: var(--panel); border-left: 1px solid var(--line); overflow-y: auto; padding-block: 14px 24px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 14px; align-content: start; }
+h1 { margin: 0; font: 700 1.35rem var(--display); }
+.sub { margin: -8px 0 0; color: var(--muted); font-size: .84rem; }
+.grp { display: grid; gap: 7px; }
+.lbl { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.row { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip, .btn { font: 700 .82rem var(--body); color: var(--ink); background: var(--chip); border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accentInk); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accentInk); }
+.btn:disabled { opacity: .45; cursor: default; }
+kbd { font: 500 .7rem var(--mono); opacity: .75; margin-left: 4px; }
+select, textarea { font: 600 .9rem var(--body); color: var(--ink); background: var(--chip); border: 1.5px solid var(--line); border-radius: 10px; padding: 6px 8px; width: 100%; box-sizing: border-box; }
+textarea { font: 500 .72rem/1.4 var(--mono); min-height: 3.6rem; resize: vertical; }
+.slider { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr) 3.4rem; gap: 8px; align-items: center; font-size: .84rem; }
+.slider input { width: 100%; accent-color: var(--accent); }
+.slider output { font: 500 .78rem var(--mono); text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.note { font-size: .78rem; color: var(--muted); margin: 0; }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+pre { margin: 0; background: var(--chip); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font: 500 .72rem/1.45 var(--mono); white-space: pre-wrap; word-break: break-word; max-height: 9.5rem; overflow: auto; user-select: all; }
+@media (max-width: 760px) { .app { grid-template-columns: 1fr; grid-template-rows: 60vh auto; height: auto; } aside { border-left: 0; border-top: 1px solid var(--line); } }
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+
+<div class="app">
+  <div id="stage"><div id="loading">Loading the characters…</div>
+    <div class="views" role="group" aria-label="Camera"><button class="btn" data-v="front" type="button">Front</button><button class="btn" data-v="side" type="button">Side</button><button class="btn" data-v="three" type="button">3/4</button><button class="btn" data-v="back" type="button">Back</button><button class="chip" id="gizmoToggle" type="button" aria-pressed="true">Gizmo</button></div>
+    <div class="hint" id="hint">Click a body part · drag the rings or arrows · drag empty space to orbit · scroll to zoom</div></div>
+  <aside>
+    <div><h1>R6 Pose Editor</h1></div>
+    <p class="sub">Pose our characters, then send a screenshot or the pose code.</p>
+    <div class="grp"><span class="lbl">Character</span><div class="row"><button class="chip" id="who-guy" type="button" aria-pressed="true">Guy</button><button class="chip" id="who-girl" type="button" aria-pressed="false">Girl</button><button class="chip" id="who-npc" type="button" aria-pressed="false">Classmate</button></div></div>
+    <div class="grp"><label class="lbl" for="preset">Start from</label><select id="preset"></select></div>
+    <div class="grp"><label class="lbl" for="face">Face</label><select id="face"></select></div>
+    <div class="grp"><span class="lbl">Body part</span><div class="row" id="parts"></div></div>
+    <div class="grp"><span class="lbl">Tool</span>
+      <div class="row" id="modes"><button class="chip" data-m="rotate" type="button" aria-pressed="true">Rotate<kbd>R</kbd></button><button class="chip" data-m="move" type="button" aria-pressed="false">Move part<kbd>G</kbd></button><button class="chip" data-m="pivot" type="button" aria-pressed="false">Move pivot<kbd>P</kbd></button></div>
+      <p class="note" id="modeNote"></p>
+      <div class="row"><button class="btn" id="reattach" type="button">Snap back to pivot</button><button class="btn" id="resetPivot" type="button">Reset pivot</button></div></div>
+    <div class="grp" id="sliders" aria-live="polite"></div>
+    <div class="grp"><span class="lbl">Props</span><div class="row"><button class="chip" id="desk" type="button" aria-pressed="false">Class desk</button><button class="chip" id="seat" type="button" aria-pressed="false">Chair</button><button class="chip" id="ledge" type="button" aria-pressed="false">Ledge</button></div></div>
+    <div class="row"><button class="btn" id="undo" type="button" disabled>Undo<kbd>Ctrl Z</kbd></button><button class="btn" id="resetPart" type="button">Reset part</button><button class="btn" id="resetAll" type="button">Reset all</button></div>
+    <div class="grp"><span class="lbl">Pose code</span><pre id="code"></pre><div class="row"><button class="btn primary" id="copy" type="button">Copy pose</button></div></div>
+    <div class="grp"><label class="lbl" for="paste">Load pose code</label><textarea id="paste" placeholder="Paste a pose here, e.g. { armR: { r: [0, 0, -2.4] } }"></textarea><div class="row"><button class="btn" id="load" type="button">Load</button></div><p class="note" id="loadNote" role="status"></p></div>
+  </aside>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { TransformControls } from 'three/addons/controls/TransformControls.js';
+const PK = await import('./kit/packs.js'); await PK.usePack();   // model files ship gzip-packed (artifact hosts don't serve .gltf/.obj/.fbx)
+const RB = await import('./kit/roblox.js'), { face, FACES } = await import('./kit/faces.js'), { POSES, REST, partChannels } = await import('./kit/poses.js');
+
+// ---------- scene ----------
+const host = document.getElementById('stage'), r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+r.setPixelRatio(Math.min(devicePixelRatio, 2)); r.outputColorSpace = THREE.SRGBColorSpace; r.toneMapping = THREE.ACESFilmicToneMapping; r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap; host.prepend(r.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--stage').trim() || '#cfe4f5');
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8899aa, 1.5)); const sun = new THREE.DirectionalLight(0xfff4e6, 2.3); sun.position.set(2.5, 5, 4); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); Object.assign(sun.shadow.camera, { left: -2.5, right: 2.5, top: 3, bottom: -1 }); scene.add(sun);
+const floor = new THREE.Mesh(new THREE.CircleGeometry(4, 48), new THREE.MeshStandardMaterial({ color: 0xbfc8cf, roughness: .9 })); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+const grid = new THREE.GridHelper(6, 12, 0x8a96a1, 0xa9b3bc); grid.position.y = .002; scene.add(grid);
+// the real classroom desk + chair (same sizes and spacing as the classroom set): chair under you, desk in front
+const deskSet = new THREE.Group(); deskSet.visible = false; scene.add(deskSet);
+const deskG = new THREE.Group(), chairG = new THREE.Group(); deskSet.add(deskG, chairG); deskG.position.z = .5;
+const PROPS = { desk: deskG, chair: chairG }, PROP0 = { desk: { p: [0, 0, .5], r: [0, 0, 0] }, chair: { p: [0, 0, 0], r: [0, 0, 0] } };
+{ const oak = new THREE.MeshStandardMaterial({ color: 0xc89a62, roughness: .55 }), steel = new THREE.MeshStandardMaterial({ color: 0xd3d8de, roughness: .35, metalness: .45 });
+  let into = deskG; const box = (w, h, d, m, x, y, z, rx = 0) => { const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), m); b.position.set(x, y, z); b.rotation.x = rx; b.castShadow = b.receiveShadow = true; into.add(b); return b; };
+  const DZ = 0, W = .68, D = .5, H = .74;   // (desk group sits 0.5 m in front of the chair)
+  box(W, .035, D, oak, 0, H - .018, DZ);
+  for (const sx of [-1, 1]) { for (const sz of [-1, 1]) box(.03, H - .04, .03, steel, sx * (W / 2 - .04), (H - .04) / 2, DZ + sz * (D / 2 - .05)); box(.018, .2, D - .1, steel, sx * (W / 2 - .04), H - .15, DZ); }
+  box(W - .1, .015, D - .1, steel, 0, H - .2, DZ); box(W - .1, .18, .015, steel, 0, H - .12, DZ + (D / 2 - .055));
+  into = chairG; box(.42, .025, .4, oak, 0, .45, 0); box(.4, .2, .022, oak, 0, .77, -.2, .1);
+  for (const sx of [-1, 1]) for (const sz of [-1, 1]) box(.022, .45, .022, steel, sx * .18, .225, sz * .17);
+  for (const sx of [-1, 1]) box(.022, .36, .022, steel, sx * .18, .62, -.2);
+  // the test paper + pencil on the desk, like in the scene
+  const pap = new THREE.Mesh(new THREE.BoxGeometry(.21, .002, .297), new THREE.MeshStandardMaterial({ color: 0xfbfbf7 })); pap.position.set(.02, H + .002, DZ - .02); deskG.add(pap);
+}
+const seat = new THREE.Mesh(new THREE.BoxGeometry(.6, .45, .5), new THREE.MeshStandardMaterial({ color: 0xb08a5a, roughness: .7 })); seat.position.set(0, .225, -.12); seat.castShadow = seat.receiveShadow = true; seat.visible = false; scene.add(seat);
+const ledge = new THREE.Mesh(new THREE.BoxGeometry(1.6, .62, .8), new THREE.MeshStandardMaterial({ color: 0x9a9fa6, roughness: .8 })); ledge.position.set(0, .31, -.3); ledge.castShadow = ledge.receiveShadow = true; ledge.visible = false; scene.add(ledge);
+const cam = new THREE.PerspectiveCamera(32, 1, .05, 50), ctl = new OrbitControls(cam, r.domElement); ctl.enableDamping = true; ctl.target.set(0, .9, 0); ctl.minDistance = 1.2; ctl.maxDistance = 8;
+const VIEWS = { front: [0, 1.3, 4.6], side: [4.6, 1.3, 0], three: [3.1, 1.6, 3.6], back: [0, 1.3, -4.6] };
+const view = v => { cam.position.set(...VIEWS[v]); ctl.target.set(0, .9, 0); ctl.update(); };
+document.querySelectorAll('[data-v]').forEach(b => b.onclick = () => view(b.dataset.v)); view('three');
+// pivot marker (always drawn on top) + the gizmo handle
+const marker = new THREE.Mesh(new THREE.SphereGeometry(.035, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffb020, depthTest: false })); marker.renderOrder = 10; scene.add(marker);
+const handle = new THREE.Object3D(); scene.add(handle);
+const tc = new TransformControls(cam, r.domElement); tc.setSize(.85); tc.attach(handle); scene.add(tc.getHelper());
+
+// ---------- characters (exactly as built) ----------
+async function load(who) {
+  if (who === 'npc') { const CAST = await import('./kit/cast.js'); const n = await CAST.castBlank('m', 3); n.A.root.traverse(o => { if (o.isMesh) o.castShadow = true; }); n.A.sex = 'm'; return n.A; }
+  const sex = who === 'girl' ? 'f' : 'm', A = sex === 'f' ? await RB.loadFemale({ hairColor: 0x161214 }) : await RB.loadMale();
+  await RB.skin(A, `kit/assets/avatar_tex/${sex === 'f' ? 'female' : 'male'}.png`); RB.dress(A, {}, { getFace: face, face: 'neutral', sex, skipBody: true });
+  const white = new THREE.MeshStandardMaterial({ color: 0xf4f4f1, roughness: .55 }), sole = new THREE.MeshStandardMaterial({ color: 0x3e4046, roughness: .8 });
+  if (sex === 'm') { const red = RB.photoMat('red', 1.5), rib = RB.photoMat('red', 3, { color: 0xd8d8d8 }), dd = RB.photoMat('denim_dark', 1.5);
+    RB.details(A, [{ type: 'hood2', mat: red }, { type: 'ring', part: 'armL', f0: .25, f1: .34, g: .012, mat: rib }, { type: 'ring', part: 'armR', f0: .25, f1: .34, g: .012, mat: rib }, { type: 'ring', part: 'legL', f0: .2, f1: .265, g: .009, mat: dd }, { type: 'ring', part: 'legR', f0: .2, f1: .265, g: .009, mat: dd }, { type: 'toe', part: 'legL', f1: .2, mat: white, sole }, { type: 'toe', part: 'legR', f1: .2, mat: white, sole }, { type: 'hair', mesh: await RB.loadSpikyHair(0x18130f), fit: 1.25, lift: .3 }]);
+  } else { const dl = RB.photoMat('denim_light', 1.5); RB.details(A, [{ type: 'ring', part: 'legL', f0: .72, f1: .79, g: .01, mat: dl }, { type: 'ring', part: 'legR', f0: .72, f1: .79, g: .01, mat: dl }, { type: 'toe', part: 'legL', f1: .14, mat: white, sole }, { type: 'toe', part: 'legR', f1: .14, mat: white, sole }]); }
+  A.root.traverse(o => { if (o.isMesh) o.castShadow = true; }); A.sex = sex; return A;
+}
+const cast = {}; let A = null;
+
+// ---------- pose state ----------
+// parts: r = rotation vector (avatar frame, radians) about the pivot, p = pivot shift, o = move off the pivot (metres)
+// root: the whole body (x y z, rx ry rz with Euler order YXZ). bodyPiv: where body / torso rotate (editor only).
+const PARTS = ['armL', 'armR', 'legL', 'legR', 'head'], NAMES = { chair: 'Chair (prop)', desk: 'Desk (prop)', body: 'Whole body', torso: 'Torso (legs stay)', head: 'Head', armL: 'Left arm', armR: 'Right arm', legL: 'Left leg', legR: 'Right leg' };
+const V3 = a => new THREE.Vector3(a[0], a[1], a[2]), R2D = 180 / Math.PI, D2R = Math.PI / 180;
+const qOf = rv => { const a = Math.hypot(...rv); return a > 1e-7 ? new THREE.Quaternion().setFromAxisAngle(V3(rv).divideScalar(a), a) : new THREE.Quaternion(); };
+const rvOf = q => { q = q.clone(); if (q.w < 0) q.set(-q.x, -q.y, -q.z, -q.w); const a = 2 * Math.acos(Math.min(1, q.w)), s = Math.sqrt(Math.max(0, 1 - q.w * q.w)); return s < 1e-7 ? [0, 0, 0] : [q.x / s * a, q.y / s * a, q.z / s * a]; };
+let S = null;
+function stateFrom(pose) {
+  const st = { parts: {}, root: { ...REST.root, ...(pose.root || {}) }, bodyPiv: [0, .95, 0], expr: S ? S.expr : 'neutral', props: JSON.parse(JSON.stringify(PROP0)) };
+  for (const k of ['desk', 'chair']) if (pose.props && pose.props[k]) st.props[k] = { p: pose.props[k].p || PROP0[k].p.slice(), r: pose.props[k].r || [0, 0, 0] };
+  for (const p of PARTS) { const c = partChannels(p, pose[p] || REST[p]); st.parts[p] = { r: c.slice(0, 3), p: c.slice(3, 6), o: c.slice(6, 9) }; }
+  return st;
+}
+const rootQ = () => new THREE.Quaternion().setFromEuler(new THREE.Euler(S.root.rx, S.root.ry, S.root.rz, 'YXZ'));
+function setRootQ(q) { const e = new THREE.Euler().setFromQuaternion(q, 'YXZ'); S.root.rx = e.x; S.root.ry = e.y; S.root.rz = e.z; }
+function apply() {
+  if (!A) return; A.reset();
+  A.root.position.set(S.root.x, S.root.y, S.root.z); A.root.rotation.set(S.root.rx, S.root.ry, S.root.rz, 'YXZ'); A.root.updateMatrixWorld(true);
+  for (const p of PARTS) A.part(p, S.parts[p]);
+  for (const [k, o] of Object.entries(PROPS)) { const v = (S.props || PROP0)[k]; o.position.set(...v.p); o.rotation.set(...v.r); }
+  writeCode();
+}
+// the visible pivot of a part in world space: pivot (default + shift) carried by the offset
+const pivLocal = n => A.pivot(n).add(V3(S.parts[n].p));
+const visPivWorld = n => A.root.localToWorld(pivLocal(n).add(V3(S.parts[n].o)));
+const bodyPivWorld = () => A.root.localToWorld(V3(S.bodyPiv));
+
+// ---------- selection, tool mode, gizmo ----------
+let sel = 'armR', mode = 'rotate', dragging = false;
+const NOTES = { prop: 'Desk / chair: Rotate tips or turns it, Move slides it. Shows up in the pose code as props.', rotate: 'Rotate the part about its pivot (the orange dot). Drag a ring; the outer ring turns it in screen space.', move: 'Move the whole part off its pivot, so it can float free. Snap back to pivot undoes it.', pivot: 'Move the pivot only. The part stays where it is; it will rotate about the new point.' };
+const isProp = p => p === 'desk' || p === 'chair';
+function syncHandle() {
+  if (!A) return; const qr = rootQ();
+  if (isProp(sel)) { const o = PROPS[sel]; handle.position.copy(o.position); handle.quaternion.copy(o.quaternion); marker.position.copy(handle.position); tc.setMode(mode === 'rotate' ? 'rotate' : 'translate'); tc.setSpace('local'); return; }
+  if (sel === 'body' || sel === 'torso') { handle.position.copy(bodyPivWorld()); handle.quaternion.copy(qr); }
+  else { handle.position.copy(visPivWorld(sel)); handle.quaternion.copy(mode === 'rotate' ? qr.clone().multiply(qOf(S.parts[sel].r)) : qr); }
+  marker.position.copy(handle.position);
+  tc.setMode(mode === 'rotate' ? 'rotate' : 'translate'); tc.setSpace('local');
+}
+// legs keep their world placement while the torso turns: re-solve their rotation / offset against the new root
+function legsWorld() { const qr = rootQ(), rp = V3([S.root.x, S.root.y, S.root.z]), out = {}; for (const n of ['legL', 'legR']) out[n] = { q: qr.clone().multiply(qOf(S.parts[n].r)), v: visPivWorld(n) }; return out; }
+function legsRestore(W) { const qr = rootQ(), qi = qr.clone().invert(); for (const n of ['legL', 'legR']) { S.parts[n].r = rvOf(qi.clone().multiply(W[n].q)); const local = A.root.worldToLocal(W[n].v.clone()); S.parts[n].o = local.sub(pivLocal(n)).toArray(); } }
+let legSnap = null;
+tc.addEventListener('dragging-changed', e => { ctl.enabled = !e.value; dragging = e.value; if (e.value) { push(); if (sel === 'torso') legSnap = legsWorld(); } else { syncHandle(); sliders(); } });
+tc.addEventListener('objectChange', () => {
+  if (!A || !dragging) return; const qr = rootQ();
+  if (isProp(sel)) { const o = PROPS[sel]; if (mode === 'rotate') o.quaternion.copy(handle.quaternion); else o.position.copy(handle.position); S.props[sel] = { p: o.position.toArray(), r: [o.rotation.x, o.rotation.y, o.rotation.z] }; marker.position.copy(handle.position); writeCode(); liveSliders(); return; }
+  if (sel === 'body' || sel === 'torso') {
+    if (mode === 'pivot') { A.root.updateMatrixWorld(true); S.bodyPiv = A.root.worldToLocal(handle.position.clone()).toArray(); marker.position.copy(handle.position); writeCode(); return; }
+    const q = mode === 'rotate' ? handle.quaternion.clone() : qr; setRootQ(q);
+    const rp = handle.position.clone().sub(V3(S.bodyPiv).applyQuaternion(q)); S.root.x = rp.x; S.root.y = rp.y; S.root.z = rp.z;
+    A.root.position.copy(rp); A.root.quaternion.copy(q); A.root.updateMatrixWorld(true);
+    if (sel === 'torso' && legSnap) legsRestore(legSnap);
+  } else {
+    const P = S.parts[sel], base = A.root.localToWorld(pivLocal(sel)), qi = qr.clone().invert();
+    if (mode === 'rotate') P.r = rvOf(qi.clone().multiply(handle.quaternion));
+    else if (mode === 'move') P.o = handle.position.clone().sub(base).applyQuaternion(qi).toArray();
+    else movePivotTo(sel, A.root.worldToLocal(handle.position.clone()));
+  }
+  apply(); marker.position.copy(handle.position); liveSliders();
+});
+// move a part's pivot without moving the part: shift p by d and add (R - I) d to the offset
+function movePivotTo(n, visLocal) {
+  const P = S.parts[n], R = qOf(P.r), d = visLocal.clone().sub(pivLocal(n)).sub(V3(P.o)).applyQuaternion(R.clone().invert());
+  P.p = V3(P.p).add(d).toArray(); P.o = V3(P.o).add(d.clone().applyQuaternion(R)).sub(d).toArray();
+}
+function select(p) { sel = p; document.getElementById('modeNote').textContent = isProp(p) ? NOTES.prop : NOTES[mode]; if (isProp(p) && !deskSet.visible) { deskSet.visible = true; document.getElementById('desk').setAttribute('aria-pressed', 'true'); } document.querySelectorAll('#parts .chip').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.p === p))); syncHandle(); sliders(); }
+function setMode(m) { mode = m; document.querySelectorAll('#modes .chip').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.m === m))); document.getElementById('modeNote').textContent = isProp(sel) ? NOTES.prop : NOTES[m]; syncHandle(); }
+for (const p of ['body', 'torso', 'head', 'armL', 'armR', 'legL', 'legR', 'chair', 'desk']) { const b = document.createElement('button'); b.className = 'chip'; b.type = 'button'; b.dataset.p = p; b.textContent = NAMES[p]; b.onclick = () => select(p); document.getElementById('parts').appendChild(b); }
+document.querySelectorAll('#modes .chip').forEach(b => b.onclick = () => setMode(b.dataset.m));
+const gz = document.getElementById('gizmoToggle'); gz.onclick = () => { const on = gz.getAttribute('aria-pressed') !== 'true'; gz.setAttribute('aria-pressed', String(on)); tc.getHelper().visible = on; tc.enabled = on; marker.visible = on; };
+
+// ---------- sliders (fine control for the selected part) ----------
+const eulerOf = rv => new THREE.Euler().setFromQuaternion(qOf(rv), 'XYZ');
+function sliderDefs() {
+  if (isProp(sel)) { const P = S.props[sel]; return [
+    ['Move x', () => P.p[0], v => { P.p[0] = v; }, -1.5, 1.5, .01], ['Move y', () => P.p[1], v => { P.p[1] = v; }, -.5, 1, .01], ['Move z', () => P.p[2], v => { P.p[2] = v; }, -1.5, 1.5, .01],
+    ['Tip fwd / back', () => P.r[0] * R2D, v => { P.r[0] = v * D2R; }, -90, 90, 1], ['Turn', () => P.r[1] * R2D, v => { P.r[1] = v * D2R; }, -180, 180, 1], ['Tip side', () => P.r[2] * R2D, v => { P.r[2] = v * D2R; }, -90, 90, 1]]; }
+  if (sel === 'body' || sel === 'torso') return [
+    ['Lean fwd / back', () => S.root.rx * R2D, v => { S.root.rx = v * D2R; }, -90, 90, 1], ['Turn', () => S.root.ry * R2D, v => { S.root.ry = v * D2R; }, -180, 180, 1], ['Tilt side', () => S.root.rz * R2D, v => { S.root.rz = v * D2R; }, -90, 90, 1],
+    ['Drop / raise', () => S.root.y, v => { S.root.y = v; }, -1, 1, .01], ['Slide x', () => S.root.x, v => { S.root.x = v; }, -1, 1, .01], ['Slide z', () => S.root.z, v => { S.root.z = v; }, -1, 1, .01]];
+  const P = S.parts[sel], e = () => eulerOf(P.r), setE = (k, v) => { const E = e(); E[k] = v * D2R; P.r = rvOf(new THREE.Quaternion().setFromEuler(E)); };
+  return [
+    ['Rotate X', () => e().x * R2D, v => setE('x', v), -180, 180, 1], ['Rotate Y (twist)', () => e().y * R2D, v => setE('y', v), -180, 180, 1], ['Rotate Z', () => e().z * R2D, v => setE('z', v), -180, 180, 1],
+    ['Off pivot x', () => P.o[0], v => { P.o[0] = v; }, -1, 1, .01], ['Off pivot y', () => P.o[1], v => { P.o[1] = v; }, -1, 1, .01], ['Off pivot z', () => P.o[2], v => { P.o[2] = v; }, -1, 1, .01]];
+}
+const fmt = (v, st) => st < 1 ? v.toFixed(2) : Math.round(v);
+function sliders() {
+  const box = document.getElementById('sliders'); box.textContent = '';
+  const h = document.createElement('span'); h.className = 'lbl'; h.textContent = NAMES[sel]; box.appendChild(h);
+  sliderDefs().forEach(([label, get, set, lo, hi, st], i) => {
+    const row = document.createElement('div'), id = `s-${i}`; row.className = 'slider';
+    const l = document.createElement('label'); l.htmlFor = id; l.textContent = label;
+    const inp = document.createElement('input'); inp.type = 'range'; inp.id = id; inp.min = lo; inp.max = hi; inp.step = st; inp.value = get();
+    const o = document.createElement('output'); o.htmlFor = id; o.textContent = fmt(get(), st);
+    inp.addEventListener('pointerdown', push); inp.addEventListener('keydown', e => { if (!e.repeat) push(); });
+    inp.oninput = () => {
+      const W = sel === 'torso' ? legsWorld() : null; set(+inp.value); o.textContent = fmt(+inp.value, st);
+      if (W) { A.root.position.set(S.root.x, S.root.y, S.root.z); A.root.rotation.set(S.root.rx, S.root.ry, S.root.rz, 'YXZ'); A.root.updateMatrixWorld(true); legsRestore(W); }
+      apply(); syncHandle(); };
+    row.append(l, inp, o); box.appendChild(row);
+  });
+}
+function liveSliders() { const defs = sliderDefs(); document.querySelectorAll('#sliders .slider').forEach((row, i) => { const [, get, , , , st] = defs[i]; row.querySelector('input').value = get(); row.querySelector('output').textContent = fmt(get(), st); }); }
+
+// ---------- undo ----------
+const hist = []; const undoBtn = document.getElementById('undo');
+function push() { hist.push(JSON.stringify(S)); if (hist.length > 80) hist.shift(); undoBtn.disabled = false; }
+function undo() { if (!hist.length) return; S = JSON.parse(hist.pop()); undoBtn.disabled = !hist.length; apply(); syncHandle(); sliders(); }
+undoBtn.onclick = undo;
+addEventListener('keydown', e => {
+  if (e.target.closest('textarea, select, input')) return;
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); undo(); }
+  else if (!e.ctrlKey && !e.metaKey) { const m = { r: 'rotate', g: 'move', p: 'pivot' }[e.key.toLowerCase()]; if (m) setMode(m); }
+});
+
+// ---------- buttons ----------
+document.getElementById('reattach').onclick = () => { if (!S.parts[sel]) return; push(); S.parts[sel].o = [0, 0, 0]; apply(); syncHandle(); sliders(); };
+document.getElementById('resetPivot').onclick = () => {
+  if (isProp(sel)) return; push(); if (sel === 'body' || sel === 'torso') S.bodyPiv = [0, .95, 0];
+  else { A.root.updateMatrixWorld(true); const P = S.parts[sel], R = qOf(P.r), d = V3(P.p).negate(); P.p = [0, 0, 0]; P.o = V3(P.o).add(d.clone().applyQuaternion(R)).sub(d).toArray(); }
+  apply(); syncHandle(); sliders();
+};
+document.getElementById('resetPart').onclick = () => {
+  push(); if (isProp(sel)) S.props[sel] = JSON.parse(JSON.stringify(PROP0[sel]));
+  else if (sel === 'body' || sel === 'torso') { S.root = { ...REST.root }; S.bodyPiv = [0, .95, 0]; }
+  else { const c = partChannels(sel, REST[sel]); S.parts[sel] = { r: c.slice(0, 3), p: [0, 0, 0], o: [0, 0, 0] }; }
+  apply(); syncHandle(); sliders();
+};
+document.getElementById('resetAll').onclick = () => { push(); ps.value = 'stand'; S = stateFrom({}); apply(); syncHandle(); sliders(); };
+const ps = document.getElementById('preset'); for (const n of Object.keys(POSES)) ps.add(new Option(n, n));
+ps.onchange = () => { push(); S = stateFrom(POSES[ps.value]); apply(); syncHandle(); sliders(); };
+const fs = document.getElementById('face'); for (const n of FACES) fs.add(new Option(n, n));
+fs.onchange = () => { S.expr = fs.value; if (A) A.setExpression(S.expr); writeCode(); };
+for (const [id, mesh] of [['desk', deskSet], ['seat', seat], ['ledge', ledge]]) { const b = document.getElementById(id); b.onclick = () => { mesh.visible = !mesh.visible; b.setAttribute('aria-pressed', String(mesh.visible)); }; }
+
+// ---------- pose code out / in ----------
+const rn = v => +v.toFixed(3), z3 = a => a.every(v => Math.abs(v) < 5e-4);
+function poseObj() {
+  const out = {};
+  for (const p of PARTS) { const P = S.parts[p], rest = partChannels(p, REST[p]), o = { r: P.r.map(rn) };
+    if (!z3(P.p)) o.p = P.p.map(rn); if (!z3(P.o)) o.o = P.o.map(rn);
+    if (o.p || o.o || P.r.some((v, i) => Math.abs(v - rest[i]) > 2e-3)) out[p] = o; }
+  const rt = {}; for (const k of ['x', 'y', 'z', 'rx', 'ry', 'rz']) if (Math.abs(S.root[k]) > 5e-4) rt[k] = rn(S.root[k]); if (Object.keys(rt).length) out.root = rt;
+  const pr = {}; for (const k of ['chair', 'desk']) { const v = (S.props || PROP0)[k], d = PROP0[k]; if (v.p.some((x, i) => Math.abs(x - d.p[i]) > 5e-4) || v.r.some(x => Math.abs(x) > 5e-4)) pr[k] = { p: v.p.map(rn), r: v.r.map(rn) }; } if (Object.keys(pr).length) out.props = pr;
+  return out;
+}
+function writeCode() { const s = JSON.stringify(poseObj()).replace(/"(\w+)":/g, '$1: ').replace(/,(?=\S)/g, ', ').replace(/\{(?=\S)/g, '{ ').replace(/(\S)\}/g, '$1 }'); document.getElementById('code').textContent = `myPose: ${s},   // face: '${S.expr}'`; }
+document.getElementById('copy').onclick = async e => { const t = document.getElementById('code').textContent; try { await navigator.clipboard.writeText(t); e.target.textContent = 'Copied'; } catch { const rg = document.createRange(); rg.selectNodeContents(document.getElementById('code')); getSelection().removeAllRanges(); getSelection().addRange(rg); e.target.textContent = 'Selected, copy it'; } setTimeout(() => e.target.textContent = 'Copy pose', 1600); };
+document.getElementById('load').onclick = () => {
+  const note = document.getElementById('loadNote'); let t = document.getElementById('paste').value.trim();
+  const fm = t.match(/face:\s*'([\w-]+)'/); t = t.replace(/\/\/.*$/gm, '').replace(/^\s*\w+\s*:\s*(?=\{)/, '').replace(/,\s*$/, '').trim();
+  try { const obj = JSON.parse(t.replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":').replace(/'/g, '"').replace(/,\s*([}\]])/g, '$1')); push(); S = stateFrom(obj); if (fm && FACES.includes(fm[1])) { S.expr = fm[1]; fs.value = fm[1]; A.setExpression(S.expr); } apply(); syncHandle(); sliders(); note.textContent = 'Loaded.'; }
+  catch { note.textContent = 'Could not read that. Paste the code exactly as Copy pose gives it.'; }
+};
+
+// ---------- click a body part to select it ----------
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2(); let down = null;
+function partAt(ev) {
+  const rc = r.domElement.getBoundingClientRect(); ndc.set((ev.clientX - rc.left) / rc.width * 2 - 1, -(ev.clientY - rc.top) / rc.height * 2 + 1); ray.setFromCamera(ndc, cam);
+  const hit = ray.intersectObject(A.root, true)[0];
+  if (deskSet.visible) { const ph = ray.intersectObject(deskSet, true)[0]; if (ph && (!hit || ph.distance < hit.distance)) { for (let o = ph.object; o; o = o.parent) { if (o === chairG) return 'chair'; if (o === deskG) return 'desk'; } } }
+  if (!hit) return null;
+  let best = null, bd = 1e9; const w = new THREE.Vector3(), w2 = new THREE.Vector3();
+  for (const p of ['head', 'armL', 'armR', 'legL', 'legR', 'torso']) { const b = A.bones[p]; if (!b) continue; b.getWorldPosition(w); const t = A.tip(b); if (t) { t.getWorldPosition(w2); w.lerp(w2, .5); } const d = w.distanceTo(hit.point); if (d < bd) { bd = d; best = p; } }
+  return best;
+}
+r.domElement.addEventListener('pointerdown', ev => { down = tc.axis ? null : { x: ev.clientX, y: ev.clientY }; });
+r.domElement.addEventListener('pointerup', ev => { if (!down || !A || Math.hypot(ev.clientX - down.x, ev.clientY - down.y) > 5) return; const p = partAt(ev); if (p) select(p); down = null; });
+
+async function show(w) {
+  for (const x of ['guy', 'girl', 'npc']) document.getElementById('who-' + x).setAttribute('aria-pressed', String(x === w));
+  if (A) scene.remove(A.root); A = cast[w] || (cast[w] = await load(w)); scene.add(A.root); A.setExpression(S.expr); apply(); syncHandle();
+}
+document.getElementById('who-guy').onclick = () => show('guy'); document.getElementById('who-girl').onclick = () => show('girl'); document.getElementById('who-npc').onclick = () => show('npc');
+function resize() { const w = host.clientWidth, h = host.clientHeight; r.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); }
+addEventListener('resize', resize); new ResizeObserver(resize).observe(host); resize();
+S = stateFrom(POSES.crossedArms); ps.value = 'crossedArms'; setMode('rotate'); select('armR');
+await show('guy'); document.getElementById('loading').style.display = 'none';
+if (matchMedia('(hover: none)').matches) document.getElementById('hint').textContent = 'Tap a body part · drag the rings or arrows · drag empty space to orbit · pinch to zoom';
+window.__pe = { get S() { return S; }, select, setMode, apply, syncHandle, handle, tc, A: () => A, movePivotTo };
+r.setAnimationLoop(() => { ctl.update(); r.render(scene, cam); });
+</script>

@@ -1,0 +1,19 @@
+{
+ "title": "Why you can't tickle yourself",
+ "format": "A",
+ "engine": "recording",
+ "voice_ref": "topics/tickle/ref/take2_ref.wav",
+ "exaggeration": 0.5,
+ "cfg": 0.5,
+ "target_max": 40.0,
+ "max_pause": 0.5,
+ "gap": 0.2,
+ "beats": [
+  "He got bored in class, so he tried to tickle himself, but nothing happened.",
+  "So he tried harder, tickling under his arm, ribs and even feet, but still felt nothing.",
+  "You see, every time you move, your brain predicts exactly what that touch will feel like, and turns the feeling way down so your own hands never startle you, but it can't predict someone else's fingers.",
+  "So when the girl next to him poked him in the middle of the test, he screamed, and the whole class turned around."
+ ],
+ "tempo": 0.84,
+ "recording": "voice/recording.mp3"
+}

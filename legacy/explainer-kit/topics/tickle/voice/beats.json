@@ -1,0 +1,29 @@
+{
+ "duration": 37.735,
+ "beats": [
+  {
+   "i": 1,
+   "text": "He got bored in class, so he tried to tickle himself, but nothing happened.",
+   "start": 0,
+   "end": 5.46
+  },
+  {
+   "i": 2,
+   "text": "So he tried harder, tickling under his arm, ribs and even feet, but still felt nothing.",
+   "start": 5.75,
+   "end": 12.8
+  },
+  {
+   "i": 3,
+   "text": "You see, every time you move, your brain predicts exactly what that touch will feel like, and turns the feeling way down so your own hands never startle you, but it can't predict someone else's fingers.",
+   "start": 13.41,
+   "end": 28.56
+  },
+  {
+   "i": 4,
+   "text": "So when the girl next to him poked him in the middle of the test, he screamed, and the whole class turned around.",
+   "start": 28.87,
+   "end": 36.5
+  }
+ ]
+}

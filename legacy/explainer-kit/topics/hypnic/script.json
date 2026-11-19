@@ -1,0 +1,14 @@
+{
+ "title": "Why your body jolts when you fall asleep",
+ "format": "A",
+ "engine": "recording",
+ "recording": "voice/recording.mp3",
+ "target_max": 24.0,
+ "tail": 0.1,
+ "beats": [
+  "He was just dozing off in class when his whole body jolted like he fell off a building.",
+  "You see, when you drift off, your muscles relax so fast your brain panics.",
+  "It thinks you're falling, so it slams every muscle at once to save you.",
+  "Problem is, his foot was right under the desk in front, and now so is the teacher's coffee."
+ ]
+}

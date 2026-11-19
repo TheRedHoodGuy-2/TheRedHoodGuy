@@ -1,0 +1,20 @@
+{
+ "title": "What happens if you swallow gum 😬",
+ "format": "A",
+ "engine": "recording",
+ "beats": [
+  "He was blowing a huge bubble in class when the teacher turned around, so he panicked and swallowed it.",
+  "Then he remembered gum stays in your stomach for seven years.",
+  "You see, your stomach can't break gum down, so it just squeezes it along with your lunch and out the other end in a day or two.",
+  "So the next day he blew an even bigger one, right as the teacher turned around."
+ ],
+ "recording": "voice/recording.wav",
+ "frame0": "title 'What happens if you swallow gum 😬' on screen 0-2 s; bubble already growing at frame 0, camera pushing in",
+ "staging": {
+  "swallow": "bubble swells, teacher spins, POP, he sucks it in and gulps hard, eyes bulging",
+  "myth": "he freezes in horror; thought bubble: old-man him at a desk with a gum ball still in his belly",
+  "inside": "camera dives down his throat: Roblox-style cut-away of the gut, the pink wad drops into the stomach, acid splashes it and nothing happens, the stomach wall squeezes it on with the lunch chunks, down the intestine tube toward a door marked EXIT",
+  "payoff": "next day, same desk, even bigger bubble, teacher turns around again (loops to frame 0)"
+ },
+ "research": "research/gum.md"
+}

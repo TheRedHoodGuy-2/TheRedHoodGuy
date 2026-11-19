@@ -1,0 +1,300 @@
+<meta charset="utf-8">
+<title>NPC Creator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,500;6..12,700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: NPC list (slots Claude asked for + your own) | live 3D preview | the selected NPC's look: body, face, hair,
+   shirt, pants, shading, extra images, notes. Every change saves to the shared pack Claude reads. Stacks on phones. */
+:root {
+  --bg: #eef1f4; --panel: #ffffff; --ink: #1f2328; --muted: #67707b; --line: #dde2e8; --accent: #d63a3a; --accentInk: #fff; --chip: #f4f6f8; --focus: #f2a13a; --stage: #cfe4f5; --ok: #1f8a4c; --warn: #b26a00;
+  --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif; --body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #16191d; --panel: #1f2328; --ink: #eef1f4; --muted: #a2abb5; --line: #343a41; --accent: #ef5a52; --accentInk: #16191d; --chip: #2a2f35; --stage: #1d2a36; --ok: #4cc27f; --warn: #e3a24a; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #16191d; --panel: #1f2328; --ink: #eef1f4; --muted: #a2abb5; --line: #343a41; --accent: #ef5a52; --accentInk: #16191d; --chip: #2a2f35; --stage: #1d2a36; --ok: #4cc27f; --warn: #e3a24a; color-scheme: dark }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); }
+.app { height: 100%; display: grid; grid-template-columns: 250px minmax(0, 1fr) 370px; }
+nav, aside { background: var(--panel); overflow-y: auto; padding-block: 14px 24px; padding-inline: 16px; display: grid; gap: 12px; align-content: start; }
+nav { border-right: 1px solid var(--line); padding-left: max(16px, env(safe-area-inset-left, 0px)); }
+aside { border-left: 1px solid var(--line); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+#stage { position: relative; min-height: 0; background: var(--stage); }
+#stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.badge { position: absolute; left: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); background: rgba(20,24,28,.72); color: #fff; font: 700 .78rem var(--body); padding: 6px 11px; border-radius: 12px; max-width: calc(100% - 24px); }
+.views { position: absolute; right: 12px; top: calc(12px + env(safe-area-inset-top, 0px)); display: flex; gap: 6px; }
+#loading { position: absolute; inset: 0; display: grid; place-items: center; font: 700 1.1rem var(--display); color: var(--muted); text-align: center; padding: 16px; }
+h1 { margin: 0; font: 700 1.35rem var(--display); }
+h2 { margin: 0; font: 700 1.05rem var(--display); }
+.sub, .note { color: var(--muted); font-size: .82rem; margin: 0; }
+.grp { display: grid; gap: 7px; padding-top: 10px; border-top: 1px solid var(--line); }
+.lbl { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.chip, .btn { font: 700 .82rem var(--body); color: var(--ink); background: var(--chip); border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accentInk); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accentInk); }
+.btn.quiet { background: transparent; }
+label.field { display: grid; gap: 4px; font-size: .8rem; font-weight: 700; color: var(--muted); }
+select, input[type=text], textarea { font: 600 .9rem var(--body); color: var(--ink); background: var(--chip); border: 1.5px solid var(--line); border-radius: 10px; padding: 6px 8px; width: 100%; box-sizing: border-box; }
+textarea { min-height: 4.2rem; resize: vertical; font-weight: 500; }
+input[type=color] { width: 44px; height: 32px; padding: 0; border: 1.5px solid var(--line); border-radius: 8px; background: var(--chip); cursor: pointer; }
+.swatches { display: flex; flex-wrap: wrap; gap: 5px; }
+.sw { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--line); cursor: pointer; padding: 0; }
+.sw[aria-pressed="true"] { outline: 3px solid var(--accent); outline-offset: 1px; }
+.list { display: grid; gap: 6px; }
+.npc { display: grid; grid-template-columns: 14px 1fr auto; gap: 8px; align-items: center; text-align: left; font: 700 .86rem var(--body); color: var(--ink); background: var(--chip); border: 1.5px solid var(--line); border-radius: 12px; padding: 8px 10px; cursor: pointer; }
+.npc[aria-current="true"] { border-color: var(--accent); }
+.npc .dot { width: 12px; height: 12px; border-radius: 50%; }
+.npc small { font: 600 .72rem var(--body); color: var(--muted); display: block; }
+.npc .st { font: 700 .68rem var(--body); text-transform: uppercase; letter-spacing: .06em; }
+.st.done { color: var(--ok); } .st.todo { color: var(--warn); }
+.up { display: grid; grid-template-columns: 56px 1fr; gap: 8px; align-items: center; }
+.thumb { width: 56px; height: 56px; border-radius: 8px; border: 1.5px dashed var(--line); background: var(--chip) center / contain no-repeat; }
+.thumbs { display: flex; flex-wrap: wrap; gap: 6px; }
+.thumbs figure { margin: 0; position: relative; }
+.thumbs img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); display: block; }
+.thumbs button { position: absolute; top: -6px; right: -6px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: var(--ink); color: var(--panel); font: 700 .8rem var(--body); cursor: pointer; }
+.save { font: 600 .78rem var(--body); color: var(--muted); }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+[hidden] { display: none !important; }
+@media (max-width: 980px) { .app { grid-template-columns: 1fr; grid-template-rows: auto 56vh auto; height: auto; } nav { border-right: 0; border-bottom: 1px solid var(--line); } aside { border-left: 0; border-top: 1px solid var(--line); } }
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+
+<div class="app">
+  <nav aria-label="NPCs">
+    <div><h1>NPC Creator</h1></div>
+    <p class="sub">Claude adds the slots each video needs. Fill each one in and mark it done.</p>
+    <p class="sub"><strong>Nothing to export:</strong> every change saves to the pack by itself (watch for “Saved” at the top right), and Claude pulls it straight from here. Just tell Claude when they’re done.</p>
+    <div class="list" id="list"></div>
+    <button class="btn" id="add" type="button">+ New NPC</button>
+    <p class="note" id="dbNote" role="status"></p>
+  </nav>
+  <div id="stage"><div id="loading">Loading…</div><div class="badge" id="badge"></div>
+    <div class="views" role="group" aria-label="Preview"><button class="chip" id="spin" type="button" aria-pressed="true">Spin</button><button class="btn" data-v="front" type="button">Front</button><button class="btn" data-v="back" type="button">Back</button></div></div>
+  <aside id="ed" aria-label="Look">
+    <div class="row" style="justify-content:space-between"><h2 id="title">NPC</h2><span class="save" id="save" role="status"></span></div>
+    <div class="two"><label class="field">Name<input type="text" id="name" maxlength="40"></label><label class="field">Role<input type="text" id="role" maxlength="40" placeholder="classmate, teacher…"></label></div>
+    <div class="row"><button class="chip" data-sex="m" type="button">Male</button><button class="chip" data-sex="f" type="button">Female</button></div>
+
+    <div class="grp"><span class="lbl">Skin</span><div class="swatches" id="skins"></div><div class="row"><input type="color" id="skin" aria-label="Custom skin colour"><span class="note">custom</span></div></div>
+
+    <div class="grp"><span class="lbl">Face</span>
+      <div class="two"><label class="field">Style<select id="face"></select></label><label class="field">Preview expression<select id="expr"></select></label></div>
+      <div class="up"><div class="thumb" id="faceImgThumb"></div><div class="row"><button class="btn" data-up="faceImg" type="button">Upload own face</button><button class="btn quiet" data-clear="faceImg" type="button">Clear</button></div></div>
+      <p class="note">An own face is drawn over the head front. PNG with transparency, or anything on green.</p></div>
+
+    <div class="grp"><span class="lbl">Hair</span>
+      <div class="two"><label class="field">Style<select id="hair"></select></label><div class="row"><input type="color" id="hairColor" aria-label="Hair colour"><span class="note">colour</span></div></div>
+      <div class="swatches" id="hairs"></div></div>
+
+    <div class="grp"><span class="lbl">Shirt</span>
+      <div class="row" id="shirtMode"><button class="chip" data-m="build" type="button">Build it</button><button class="chip" data-m="upload" type="button">Upload template</button><button class="chip" data-m="none" type="button">None</button></div>
+      <div id="shirtBuild" class="grp" style="border:0;padding:0">
+        <div class="row"><input type="color" id="shirtColor" aria-label="Shirt colour"><label class="field" style="flex:1">Fabric<select id="shirtFabric"></select></label></div>
+        <div class="two"><label class="field">Sleeves<select id="sleeves"><option value="long">Long</option><option value="short">Short</option><option value="none">None (tank)</option></select></label><label class="field">Neck<select id="neck"><option value="crew">Crew</option><option value="v">V-neck</option><option value="collar">Collar</option><option value="hood">Hood</option></select></label></div>
+        <div class="row"><button class="chip" id="cuffs" type="button">Ribbed cuffs + hem</button></div>
+        <div class="up"><div class="thumb" id="printThumb"></div><div class="row"><button class="btn" data-up="print" type="button">Chest print</button><button class="btn quiet" data-clear="print" type="button">Clear</button></div></div>
+        <div class="up"><div class="thumb" id="backPrintThumb"></div><div class="row"><button class="btn" data-up="backPrint" type="button">Back print</button><button class="btn quiet" data-clear="backPrint" type="button">Clear</button></div></div></div>
+      <div id="shirtUp" class="up"><div class="thumb" id="shirtThumb"></div><div class="row"><button class="btn" data-up="shirt" type="button">Upload shirt</button><button class="btn quiet" data-clear="shirt" type="button">Clear</button></div></div>
+      <p class="note" id="shirtNote"></p></div>
+
+    <div class="grp"><span class="lbl">Pants</span>
+      <div class="row" id="pantsMode"><button class="chip" data-m="color" type="button">Colour</button><button class="chip" data-m="upload" type="button">Upload template</button></div>
+      <div id="pantsColorRow" class="row"><input type="color" id="pantsColor" aria-label="Pants colour"><label class="field" style="flex:1">Fabric<select id="pantsFabric"></select></label></div>
+      <div id="pantsUp" class="up"><div class="thumb" id="pantsThumb"></div><div class="row"><button class="btn" data-up="pants" type="button">Upload pants</button><button class="btn quiet" data-clear="pants" type="button">Clear</button></div></div></div>
+
+    <div class="grp"><span class="lbl">Shading</span>
+      <div class="row" id="shadeMode"><button class="chip" data-m="auto" type="button">Auto folds</button><button class="chip" data-m="upload" type="button">Upload</button><button class="chip" data-m="none" type="button">None</button></div>
+      <div id="shadeUp" class="up"><div class="thumb" id="shadingThumb"></div><div class="row"><button class="btn" data-up="shading" type="button">Upload shading</button><button class="btn quiet" data-clear="shading" type="button">Clear</button></div></div>
+      <p class="note">Black and white is fine: white = no change, darker = shadow. Roblox template layout.</p></div>
+
+    <div class="grp"><span class="lbl">Flow images (no transparency)</span>
+      <div class="row"><button class="chip" id="keyOn" type="button">Treat a colour as see-through</button><input type="color" id="keyColor" aria-label="See-through colour"></div>
+      <p class="note">Paint whatever should be skin or empty in this colour (pure green by default) and it disappears.</p></div>
+
+    <div class="grp"><span class="lbl">Full skin texture (optional)</span>
+      <div class="up"><div class="thumb" id="skinTexThumb"></div><div class="row"><button class="btn" data-up="skinTex" type="button">Upload</button><button class="btn quiet" data-clear="skinTex" type="button">Clear</button></div></div>
+      <p class="note">A whole-body texture in our 2048 layout replaces the skin colour; shirt and pants still go on top.</p></div>
+
+    <div class="grp"><span class="lbl">Reference images</span><div class="thumbs" id="refs"></div><div class="row"><button class="btn" data-up="ref" type="button">Add images</button></div><p class="note">Anything else: looks you like, hats, shoes. Claude reads these.</p></div>
+    <div class="grp"><label class="field">Notes for Claude<textarea id="notes" maxlength="1500" placeholder="glasses, braids, always carries a bag…"></textarea></label></div>
+    <div class="grp"><div class="row"><button class="chip" id="done" type="button">Done</button><button class="btn quiet" id="del" type="button">Delete NPC</button></div></div>
+  </aside>
+</div>
+<input type="file" id="file" accept="image/*" hidden>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const $ = id => document.getElementById(id);
+const PK = await import('./kit/packs.js'); await PK.usePack();
+const RB = await import('./kit/roblox.js'), CL = await import('./kit/clothing.js'), FK = await import('./kit/facekit.js'), HR = await import('./kit/hair.js');
+
+// ---------- options ----------
+const SKINS = ['#ffe0c4', '#f6cfae', '#f0c09e', '#e0ac82', '#c68c62', '#b07650', '#9a6040', '#85502f', '#744428', '#5e3720'];
+const HAIRC = ['#0f0c0b', '#1a1411', '#2b1d14', '#3d2a1c', '#6b4426', '#8a5a32', '#a8783e', '#c9a06a', '#dcc08a', '#7a3418', '#9c4a22', '#8c8a86', '#c8c6c2', '#d94f9a', '#4f7bd9', '#8e5bd9'];
+const FABRICS = { '': 'Flat colour', red: 'Knit', peach: 'Soft cotton', denim_dark: 'Denim (dark)', denim_light: 'Denim (light)' };
+const blank = (sex = 'm', i = 0) => ({ name: '', role: '', sex, skin: SKINS[(i * 3 + 2) % SKINS.length], face: 'classic', expr: 'neutral', hair: sex === 'f' ? 'longBob' : 'fluffy', hairColor: '#2b1d14',
+  shirt: { mode: 'build', color: sex === 'f' ? '#e88aa8' : '#4a7cc9', fabric: '', sleeves: 'short', neck: 'crew', cuffs: true },
+  pants: { mode: 'color', color: '#2f3b52', fabric: '' }, shading: { mode: 'auto' }, key: { on: false, color: '#00ff00' },
+  img: {}, refs: [], notes: '', done: false, order: Date.now() });
+
+// ---------- shared pack (db + uploaded files) ----------
+let db = null, assets = null; const docs = new Map(); let cur = null;
+const local = new Map();   // when db is not available, edits live here for this visit only
+const note = $('dbNote');
+async function initStore() {
+  const use = n => window.claude && window.claude.use ? window.claude.use(n).catch(() => null) : Promise.resolve(null);
+  [db, assets] = await Promise.all([use('db'), use('assets')]);
+  if (!db) { note.textContent = 'Not saving: open this page signed in to keep your NPCs.'; const id = 'local1'; local.set(id, { ...blank('m'), name: 'Test NPC' }); docs.set(id, local.get(id)); renderList(); pick(id); return; }
+  note.textContent = '';
+  db.collection('npcs').onSnapshot(snap => {
+    for (const ch of snap.docChanges()) { if (ch.type === 'removed') docs.delete(ch.doc.id); else if (!(ch.doc.metadata.hasPendingWrites && ch.doc.id === cur)) docs.set(ch.doc.id, normalise(ch.doc.data())); }
+    renderList(); if (!cur || !docs.has(cur)) { const first = sorted()[0]; if (first) pick(first[0]); else showEmpty(); } else if (!dirty) { fillForm(); rebuild(); }
+  }, e => { note.textContent = 'Could not load the NPC pack (' + e.code + ').'; });
+  if (!assets) for (const b of document.querySelectorAll('[data-up]')) { b.disabled = true; b.title = 'Uploads need editor access'; }
+}
+function normalise(d) { const b = blank(d.sex || 'm'); return { ...b, ...d, shirt: { ...b.shirt, ...(d.shirt || {}) }, pants: { ...b.pants, ...(d.pants || {}) }, shading: { ...b.shading, ...(d.shading || {}) }, key: { ...b.key, ...(d.key || {}) }, img: { ...(d.img || {}) }, refs: d.refs || [] }; }
+const sorted = () => [...docs.entries()].sort((a, b) => (a[1].order || 0) - (b[1].order || 0));
+let saveT = 0, dirty = false;
+function save() {
+  dirty = true; $('save').textContent = 'Saving…'; clearTimeout(saveT);
+  saveT = setTimeout(async () => { const d = docs.get(cur); d.updatedAt = Date.now();
+    if (!db) { dirty = false; $('save').textContent = ''; renderList(); return; }
+    try { await db.collection('npcs').doc(cur).set(JSON.parse(JSON.stringify(d))); $('save').textContent = 'Saved'; } catch (e) { $('save').textContent = 'Not saved (' + (e.code || 'error') + ')'; }
+    dirty = false; renderList(); }, 600);
+}
+const imgURL = id => id ? '/_blob/' + id : null;
+
+// ---------- list ----------
+function renderList() {
+  const box = $('list'); box.textContent = '';
+  for (const [id, d] of sorted()) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'npc'; b.setAttribute('aria-current', String(id === cur));
+    const dot = document.createElement('span'); dot.className = 'dot'; dot.style.background = d.skin;
+    const t = document.createElement('span'); t.textContent = d.name || '(unnamed)'; const sm = document.createElement('small'); sm.textContent = `${d.sex === 'f' ? 'Female' : 'Male'}${d.role ? ' · ' + d.role : ''}`; t.appendChild(sm);
+    const st = document.createElement('span'); st.className = 'st ' + (d.done ? 'done' : 'todo'); st.textContent = d.done ? 'Done' : 'To do';
+    b.append(dot, t, st); b.onclick = () => pick(id); box.appendChild(b);
+  }
+}
+function showEmpty() { cur = null; $('ed').hidden = true; $('badge').textContent = 'No NPCs yet. Add one.'; if (A) A.root.visible = false; }
+$('add').onclick = async () => {
+  const d = blank('m', docs.size); d.name = 'New NPC';
+  if (!db) { const id = 'local' + (local.size + 1); local.set(id, d); docs.set(id, d); renderList(); pick(id); return; }
+  try { const ref = await db.collection('npcs').add(d); docs.set(ref.id, d); renderList(); pick(ref.id); } catch (e) { note.textContent = 'Could not add (' + (e.code || 'error') + ').'; }
+};
+$('del').onclick = async () => {
+  if (!cur || !confirm('Delete this NPC from the pack?')) return; const id = cur;
+  if (db) { try { await db.collection('npcs').doc(id).delete(); } catch (e) { $('save').textContent = 'Not deleted (' + (e.code || 'error') + ')'; return; } }
+  docs.delete(id); local.delete(id); cur = null; renderList(); const f = sorted()[0]; f ? pick(f[0]) : showEmpty();
+};
+function pick(id) { cur = id; $('ed').hidden = false; renderList(); fillForm(); rebuild(); }
+
+// ---------- form ----------
+const D = () => docs.get(cur);
+const pressed = (sel, val, attr) => document.querySelectorAll(sel).forEach(b => b.setAttribute('aria-pressed', String(b.dataset[attr] === val)));
+function sw(box, list, get, set) { const el = $(box); el.textContent = ''; for (const c of list) { const b = document.createElement('button'); b.type = 'button'; b.className = 'sw'; b.style.background = c; b.setAttribute('aria-label', c); b.setAttribute('aria-pressed', String(get() === c)); b.onclick = () => { set(c); }; el.appendChild(b); } }
+for (const n of FK.STYLE_NAMES()) $('face').add(new Option(n, n)); for (const n of FK.EXPRESSIONS) $('expr').add(new Option(n, n));
+$('hair').add(new Option('No hair', 'none')); for (const sx of ['m', 'f']) { const og = document.createElement('optgroup'); og.label = sx === 'm' ? 'Short / male' : 'Long / female'; for (const k of Object.keys(HR.STYLES)) if (HR.STYLES[k].sex === sx) og.appendChild(new Option(k, k)); $('hair').appendChild(og); }
+for (const s of ['shirtFabric', 'pantsFabric']) for (const [k, v] of Object.entries(FABRICS)) $(s).add(new Option(v, k));
+function fillForm() {
+  const d = D(); if (!d) return; $('title').textContent = d.name || 'NPC'; $('name').value = d.name; $('role').value = d.role;
+  pressed('[data-sex]', d.sex, 'sex'); $('skin').value = d.skin; sw('skins', SKINS, () => D().skin, c => edit(x => { x.skin = c; }));
+  $('face').value = d.face; $('expr').value = d.expr; $('hair').value = d.hair; $('hairColor').value = d.hairColor; sw('hairs', HAIRC, () => D().hairColor, c => edit(x => { x.hairColor = c; }));
+  pressed('#shirtMode .chip', d.shirt.mode, 'm'); $('shirtBuild').hidden = d.shirt.mode !== 'build'; $('shirtUp').hidden = d.shirt.mode !== 'upload';
+  $('shirtNote').textContent = d.shirt.mode === 'upload' ? 'A Roblox classic shirt template (585 x 559), or a texture in our 2048 layout.' : d.shirt.mode === 'build' ? 'Flow only needs to make the print. Put it on green and turn on see-through below.' : '';
+  $('shirtColor').value = d.shirt.color; $('shirtFabric').value = d.shirt.fabric; $('sleeves').value = d.shirt.sleeves; $('neck').value = d.shirt.neck; $('cuffs').setAttribute('aria-pressed', String(!!d.shirt.cuffs));
+  pressed('#pantsMode .chip', d.pants.mode, 'm'); $('pantsColorRow').hidden = d.pants.mode !== 'color'; $('pantsUp').hidden = d.pants.mode !== 'upload'; $('pantsColor').value = d.pants.color; $('pantsFabric').value = d.pants.fabric;
+  pressed('#shadeMode .chip', d.shading.mode, 'm'); $('shadeUp').hidden = d.shading.mode !== 'upload';
+  $('keyOn').setAttribute('aria-pressed', String(d.key.on)); $('keyColor').value = d.key.color;
+  for (const k of ['faceImg', 'print', 'backPrint', 'shirt', 'pants', 'shading', 'skinTex']) { const u = imgURL(d.img[k]); $(k + 'Thumb').style.backgroundImage = u ? `url("${u}")` : ''; }
+  const rf = $('refs'); rf.textContent = ''; d.refs.forEach((id, i) => { const f = document.createElement('figure'), im = document.createElement('img'), x = document.createElement('button'); im.src = imgURL(id); im.alt = 'Reference ' + (i + 1); x.type = 'button'; x.textContent = '×'; x.setAttribute('aria-label', 'Remove reference ' + (i + 1)); x.onclick = () => edit(z => { z.refs.splice(i, 1); }); f.append(im, x); rf.appendChild(f); });
+  $('notes').value = d.notes; $('done').setAttribute('aria-pressed', String(d.done)); $('done').textContent = d.done ? 'Done ✓' : 'Mark done';
+}
+function edit(fn, { look = true } = {}) { const d = D(); if (!d) return; fn(d); fillForm(); save(); if (look) rebuild(); }
+$('name').oninput = e => edit(d => { d.name = e.target.value; }, { look: false }); $('role').oninput = e => edit(d => { d.role = e.target.value; }, { look: false });
+$('notes').oninput = e => { const d = D(); d.notes = e.target.value; save(); };
+document.querySelectorAll('[data-sex]').forEach(b => b.onclick = () => edit(d => { d.sex = b.dataset.sex; }));
+$('skin').oninput = e => edit(d => { d.skin = e.target.value; });
+$('face').onchange = e => edit(d => { d.face = e.target.value; }); $('expr').onchange = e => edit(d => { d.expr = e.target.value; });
+$('hair').onchange = e => edit(d => { d.hair = e.target.value; }); $('hairColor').oninput = e => edit(d => { d.hairColor = e.target.value; });
+document.querySelectorAll('#shirtMode .chip').forEach(b => b.onclick = () => edit(d => { d.shirt.mode = b.dataset.m; }));
+$('shirtColor').oninput = e => edit(d => { d.shirt.color = e.target.value; }); $('shirtFabric').onchange = e => edit(d => { d.shirt.fabric = e.target.value; });
+$('sleeves').onchange = e => edit(d => { d.shirt.sleeves = e.target.value; }); $('neck').onchange = e => edit(d => { d.shirt.neck = e.target.value; });
+$('cuffs').onclick = () => edit(d => { d.shirt.cuffs = !d.shirt.cuffs; });
+document.querySelectorAll('#pantsMode .chip').forEach(b => b.onclick = () => edit(d => { d.pants.mode = b.dataset.m; }));
+$('pantsColor').oninput = e => edit(d => { d.pants.color = e.target.value; }); $('pantsFabric').onchange = e => edit(d => { d.pants.fabric = e.target.value; });
+document.querySelectorAll('#shadeMode .chip').forEach(b => b.onclick = () => edit(d => { d.shading.mode = b.dataset.m; }));
+$('keyOn').onclick = () => edit(d => { d.key.on = !d.key.on; }); $('keyColor').oninput = e => edit(d => { d.key.color = e.target.value; });
+$('done').onclick = () => edit(d => { d.done = !d.done; }, { look: false });
+
+// ---------- uploads ----------
+let upTarget = null;
+document.querySelectorAll('[data-up]').forEach(b => b.onclick = () => { upTarget = b.dataset.up; $('file').multiple = upTarget === 'ref'; $('file').value = ''; $('file').click(); });
+document.querySelectorAll('[data-clear]').forEach(b => b.onclick = () => edit(d => { delete d.img[b.dataset.clear]; }));
+$('file').onchange = async () => {
+  const files = [...$('file').files]; if (!files.length || !cur) return; const target = upTarget, id = cur;
+  if (!assets) { $('save').textContent = 'Uploads need editor access'; return; }
+  $('save').textContent = 'Uploading…';
+  try { for (const f of files) { const r = await assets.upload(f); const d = docs.get(id); if (!d) return; if (target === 'ref') d.refs.push(r.id); else d.img[target] = r.id; }
+    if (cur === id) { fillForm(); rebuild(); } save(); }
+  catch (e) { $('save').textContent = e.code === 'too_large' ? 'That file is too big (20 MB max)' : e.code === 'unsupported_type' ? 'That file type is not supported' : 'Upload failed (' + (e.code || 'error') + ')'; }
+};
+
+// ---------- 3D preview ----------
+const host = $('stage'), r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+r.setPixelRatio(Math.min(devicePixelRatio, 2)); r.outputColorSpace = THREE.SRGBColorSpace; r.toneMapping = THREE.ACESFilmicToneMapping; r.shadowMap.enabled = true; host.prepend(r.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--stage').trim() || '#cfe4f5');
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8899aa, 1.5)); const sun = new THREE.DirectionalLight(0xfff4e6, 2.1); sun.position.set(2.5, 5, 4); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024); Object.assign(sun.shadow.camera, { left: -2, right: 2, top: 3, bottom: -1 }); scene.add(sun);
+const back = new THREE.DirectionalLight(0xffffff, .9); back.position.set(-2, 3, -4); scene.add(back);
+const floor = new THREE.Mesh(new THREE.CircleGeometry(3, 48), new THREE.MeshStandardMaterial({ color: 0xbfc8cf, roughness: .9 })); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+const cam = new THREE.PerspectiveCamera(30, 1, .05, 50), ctl = new OrbitControls(cam, r.domElement); ctl.enableDamping = true; ctl.target.set(0, .95, 0); ctl.minDistance = 1.4; ctl.maxDistance = 7; ctl.autoRotate = true; ctl.autoRotateSpeed = 1.6;
+cam.position.set(0, 1.35, 5.2); ctl.update();
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches; if (reduce) { ctl.autoRotate = false; $('spin').setAttribute('aria-pressed', 'false'); }
+$('spin').onclick = () => { ctl.autoRotate = !ctl.autoRotate; $('spin').setAttribute('aria-pressed', String(ctl.autoRotate)); };
+document.querySelectorAll('[data-v]').forEach(b => b.onclick = () => { ctl.autoRotate = false; $('spin').setAttribute('aria-pressed', 'false'); cam.position.set(0, 1.4, b.dataset.v === "back" ? -5.2 : 5.2); ctl.update(); });
+const bodies = {}; let A = null, faceStyle = 'classic', faceSex = 'm', faceImg = null;
+const faceCache = new Map();
+function getFace(n) { if (faceImg) return faceImg; const k = faceStyle + faceSex + n; if (!faceCache.has(k)) faceCache.set(k, FK.faceTex(n, { style: faceStyle, sex: faceSex, ...FK.NPC_FACE })); return faceCache.get(k); }
+async function body(sex) { if (!bodies[sex]) bodies[sex] = (async () => { const B = sex === 'f' ? await RB.loadFemale({ hair: false }) : await RB.loadMale(); RB.dress(B, {}, { getFace, face: 'neutral', sex, skipBody: true }); B.root.traverse(o => { if (o.isMesh) o.castShadow = true; }); return B; })(); return bodies[sex]; }
+async function keyed(id, d) { if (!id) return null; const im = await loadImg(imgURL(id)); return d.key.on ? CL.keyOut(im, d.key.color) : im; }
+const loadImg = src => new Promise((ok, no) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => ok(i); i.onerror = no; i.src = src; });
+function fabricFill(color, fabric) { const c = document.createElement('canvas'); c.width = 585; c.height = 559; const g = c.getContext('2d'); g.fillStyle = color; g.fillRect(0, 0, 585, 559); return { c, g, fabric }; }
+async function pantsCanvas(d) {
+  const { c, g } = fabricFill(d.pants.color);
+  if (d.pants.fabric) { const f = await loadImg(`kit/assets/fabric/${d.pants.fabric}.jpg`); g.save(); g.filter = 'grayscale(1) contrast(1.6)'; g.globalCompositeOperation = 'overlay'; g.globalAlpha = .55; const t = document.createElement('canvas'); t.width = t.height = 200; t.getContext('2d').drawImage(f, 0, 0, 200, 200); g.fillStyle = g.createPattern(t, 'repeat'); g.fillRect(0, 0, 585, 559); g.restore(); }
+  return c;
+}
+// one rebuild at a time; edits made while one runs collapse into a single follow-up (so hair never stacks)
+let gen = 0, busy = false, again = false;
+async function rebuild() { if (busy) { again = true; return; } busy = true; try { do { again = false; await rebuildOnce(); } while (again); } finally { busy = false; } }
+function stripHair(B) { const old = []; B.root.traverse(o => { if (o.userData && o.userData.style) old.push(o); }); for (const o of old) o.parent.remove(o); B.hair = null; }
+async function rebuildOnce() {
+  const d = D(); if (!d) return; const my = ++gen; $('badge').textContent = 'Updating…';
+  try {
+    const B = await body(d.sex); if (my !== gen) return;
+    faceStyle = d.face; faceSex = d.sex;
+    faceImg = null; if (d.img.faceImg) { const im = await keyed(d.img.faceImg, d); const c = document.createElement('canvas'); c.width = c.height = 512; c.getContext('2d').drawImage(im, 0, 0, 512, 512); faceImg = new THREE.CanvasTexture(c); faceImg.colorSpace = THREE.SRGBColorSpace; }
+    let shirt = null;
+    if (d.shirt.mode === 'build') shirt = await CL.buildShirt({ color: d.shirt.color, fabric: d.shirt.fabric || null, sleeves: d.shirt.sleeves, neck: d.shirt.neck, cuffs: d.shirt.cuffs, hem: d.shirt.cuffs,
+      print: await keyed(d.img.print, d), back: await keyed(d.img.backPrint, d) });
+    else if (d.shirt.mode === 'upload') shirt = await keyed(d.img.shirt, d);
+    const pants = d.pants.mode === 'upload' ? await keyed(d.img.pants, d) : await pantsCanvas(d);
+    const shading = d.shading.mode === 'auto' ? 'auto' : d.shading.mode === 'upload' && d.img.shading ? await loadImg(imgURL(d.img.shading)) : null;
+    const tex = await CL.dressTexture({ base: d.img.skinTex ? await loadImg(imgURL(d.img.skinTex)) : null, skin: d.skin, shirt, pants, shading });
+    if (my !== gen) return;
+    await RB.skin(B, tex); B.setExpression(d.expr);
+    stripHair(B);
+    if (d.hair !== 'none' && HR.STYLES[d.hair]) await HR.putHair(B, d.hair, new THREE.Color(d.hairColor).getHex(), { partBoxes: RB.partBoxes });
+    if (A && A !== B) scene.remove(A.root); A = B; A.root.visible = true; if (!A.root.parent) scene.add(A.root);
+    $('badge').textContent = `${d.name || 'NPC'} · ${d.sex === 'f' ? 'female' : 'male'}`;
+  } catch (e) { console.error(e); $('badge').textContent = 'Could not draw this look (an image failed to load).'; }
+}
+function resize() { const w = host.clientWidth, h = host.clientHeight; r.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); }
+addEventListener('resize', resize); new ResizeObserver(resize).observe(host); resize();
+r.setAnimationLoop(() => { ctl.update(); r.render(scene, cam); });
+$('ed').hidden = true; $('loading').style.display = 'none';
+window.__npc = { docs, pick, rebuild, get cur() { return cur; }, hairCount: () => { let n = 0; if (A) A.root.traverse(o => { if (o.userData && o.userData.style) n++; }); return n; }, get busy() { return busy; } };
+await initStore();
+</script>

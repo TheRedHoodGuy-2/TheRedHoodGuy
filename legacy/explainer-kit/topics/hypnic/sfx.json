@@ -1,0 +1,80 @@
+[
+ {
+  "t": 0.3,
+  "sound": "snore",
+  "vol": 0.3,
+  "trim": 3.0
+ },
+ {
+  "t": 3.64,
+  "sound": "body_thud",
+  "vol": 0.85
+ },
+ {
+  "t": 3.66,
+  "sound": "desk_bang",
+  "vol": 0.6,
+  "trim": 0.8
+ },
+ {
+  "t": 3.7,
+  "sound": "chair_scrape",
+  "vol": 0.5,
+  "trim": 0.6
+ },
+ {
+  "t": 6.05,
+  "sound": "long_woosh",
+  "vol": 0.7
+ },
+ {
+  "t": 8.6,
+  "sound": "power_down",
+  "vol": 0.6
+ },
+ {
+  "t": 10.42,
+  "sound": "alarm",
+  "vol": 0.45,
+  "trim": 3.2
+ },
+ {
+  "t": 12.98,
+  "sound": "chair_scrape",
+  "vol": 0.45,
+  "trim": 0.5
+ },
+ {
+  "t": 13.66,
+  "sound": "button_slam",
+  "vol": 0.8
+ },
+ {
+  "t": 16.68,
+  "sound": "woosh_two",
+  "vol": 0.55
+ },
+ {
+  "t": 20.92,
+  "sound": "body_thud",
+  "vol": 0.85
+ },
+ {
+  "t": 20.95,
+  "sound": "desk_bang",
+  "vol": 0.85,
+  "trim": 0.8
+ },
+ {
+  "t": 22.88,
+  "sound": "coffee_splash_hit",
+  "vol": 0.85,
+  "trim": 2.2
+ },
+ {
+  "t": 23.65,
+  "sound": "snore",
+  "vol": 0.3,
+  "trim": 0.55
+ }
+]

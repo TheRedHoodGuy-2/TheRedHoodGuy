@@ -1,0 +1,89 @@
+[
+ {
+  "t": 0.0,
+  "sound": "clock_tick",
+  "vol": 0.55,
+  "trim": 5.0
+ },
+ {
+  "t": 5.1,
+  "sound": "clock_tick",
+  "vol": 0.4,
+  "trim": 6.2
+ },
+ {
+  "t": 11.3,
+  "sound": "body_thud",
+  "vol": 0.8
+ },
+ {
+  "t": 11.65,
+  "sound": "long_woosh",
+  "vol": 0.7
+ },
+ {
+  "t": 12.35,
+  "sound": "tally_click",
+  "vol": 0.7
+ },
+ {
+  "t": 13.35,
+  "sound": "tally_click",
+  "vol": 0.7
+ },
+ {
+  "t": 14.35,
+  "sound": "tally_click",
+  "vol": 0.7
+ },
+ {
+  "t": 15.35,
+  "sound": "tally_click",
+  "vol": 0.7
+ },
+ {
+  "t": 17.35,
+  "sound": "tally_click",
+  "vol": 0.7
+ },
+ {
+  "t": 16.4,
+  "sound": "yawn",
+  "vol": 0.6,
+  "duck": true
+ },
+ {
+  "t": 18.7,
+  "sound": "woosh_two",
+  "vol": 0.6
+ },
+ {
+  "t": 18.75,
+  "sound": "controller_mashing",
+  "vol": 0.6,
+  "trim": 5.0
+ },
+ {
+  "t": 18.75,
+  "sound": "fps_gunfire",
+  "vol": 0.45,
+  "trim": 5.0
+ },
+ {
+  "t": 24.8,
+  "sound": "woosh_three",
+  "vol": 0.7,
+  "trim": 0.9
+ },
+ {
+  "t": 25.38,
+  "sound": "vine_boom",
+  "vol": 0.8
+ },
+ {
+  "t": 28.85,
+  "sound": "controller_mashing",
+  "vol": 0.5,
+  "trim": 1.3
+ }
+]

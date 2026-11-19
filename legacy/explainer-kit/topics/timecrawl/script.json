@@ -1,0 +1,18 @@
+{
+ "title": "Why time crawls in class but flies when you're gaming",
+ "format": "A",
+ "engine": "recording",
+ "beats": [
+  "He was stuck in class staring at the clock, and it said 1:03.",
+  "So he stared it down, looked away for ages, even shook his watch, and it was 1:04.",
+  "You see, when you're bored, your brain counts every single second, so time drags.",
+  "But that night he started gaming, his brain got too busy to count, and when he blinked, it was 3am, with class in five hours."
+ ],
+ "recording": "voice/recording.wav",
+ "hook": "0-2s: cold open mid-action, he's already slumped on his chair in class glaring at the wall clock (no spoken question, Xavier 2026-11-14)",
+ "staging": {
+  "attempts": "1 stare-down (lean in, squint at the clock), 2 look away (turn to the window, drum fingers, look back fast), 3 shake the wristwatch next to your ear. Clock: 1:04.",
+  "brain_hq": "little you at a desk with a big hand counter, clicking every single second ONE... TWO... yawning, a tall stack of ticked-off seconds beside him.",
+  "payoff": "your bedroom at night, controller in hand, glued to the screen. Cut to HQ: the counter guy has turned round and is watching the game on the HQ screen too, counter forgotten. Back in the room you blink, the bedside clock flips to 3:00 AM, your face drops."
+ }
+}

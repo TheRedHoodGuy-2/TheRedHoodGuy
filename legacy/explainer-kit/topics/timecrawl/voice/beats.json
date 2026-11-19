@@ -1,0 +1,29 @@
+{
+ "duration": 30.081,
+ "beats": [
+  {
+   "i": 1,
+   "text": "He was stuck in class staring at the clock, and it said 1:03.",
+   "start": 0,
+   "end": 4.4
+  },
+  {
+   "i": 2,
+   "text": "So he stared it down, looked away for ages, even shook his watch, and it was 1:04.",
+   "start": 5.09,
+   "end": 11.46
+  },
+  {
+   "i": 3,
+   "text": "You see, when you're bored, your brain counts every single second, so time drags.",
+   "start": 12.11,
+   "end": 18.62
+  },
+  {
+   "i": 4,
+   "text": "But that night he started gaming, his brain got too busy to count, and when he blinked, it was 3am, with class in five hours.",
+   "start": 18.89,
+   "end": 28.84
+  }
+ ]
+}

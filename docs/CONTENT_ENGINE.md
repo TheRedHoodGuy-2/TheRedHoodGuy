@@ -21,7 +21,7 @@ research/cinematography.md, docs/ANIMATION.md, docs/FRAME_CHECK.md.
   at 0.0 s, rule said by 3 s. (Our own stats: winners 68-70% stayed, losers 43-48%; the first frame was the difference.)
 - **Cuts**: one sentence = one shot; median 1.5 s, first shot ~1.9 s, 7 cuts in the first 10 s; no shot over ~6 s except
   the emotional beat. Hard cuts inside a place; short dissolves only between places (camera decision 2026-11-19).
-- **Camera never parks**: 72% slow push in (~7% bigger per second), 22% pull out, 5% drift; motion carries across cuts.
+- **Camera never parks, never repeats**: every shot a different move from engine/shots.js (fast push, whip, truck L/R, orbit, track, crane, pull-out, punch-in, slow push), different size and angle from the last; motion carries across cuts (Xavier 2026-11-19: the all-slow-push test read as a slideshow).
 - **Shot types**: medium / medium-close on one subject (default); over-the-shoulder for dialogue (research before/after);
   insert for the rule's object (counter, sign, tag) and hands on things; wide only to show a place or crowd, then back in;
   low "giant" angle + small shake on impacts; reaction shot after every reveal.
