@@ -248,3 +248,10 @@ Next phase: 7 faces / face animation / lip sync.
 - Camera: engine/camera.js + film.html dissolves; demo scenes/camera_demo.js -> out/camera_demo.mp4 (8 s, 30 fps, review quality). Every frame checked.
 - SFX: 688 sounds downloaded through the laptop (tools on the laptop: ~/sfx_dl.py), catalog library/sfx_catalog.json.
 - Research: research/voice_fish.md (needs Xavier's Fish Audio key), research/sfx_sources.md, research/animation_r6.md.
+
+## 2026-11-19 Character bank v2
+- Fixed two render bugs Xavier spotted: female torso prints were upside down + warped (UVs processed twice), and sheets
+  drew clothes at 1/8 res. Labelled test template (assets/_test_shirt.png / _test_pants.png) is now the check for any body.
+- Bank = library/characters.json (100 m + 100 f, 26 archetypes), built ONLY from items I passed by eye (library/bank_ok.json,
+  tools/bankpool.py). tools/charbank.py --redo <ids> regenerates single characters. Review log: docs/sheets/charbank_review.md.
+- Grey hair for grandparents = real desaturating tint in r6.js wear(). 3D clothing left out of the bank until its fit is fixed.

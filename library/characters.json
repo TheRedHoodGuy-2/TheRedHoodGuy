@@ -1,0 +1,4118 @@
+[
+ {
+  "id": "m000",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#f6dcc8",
+  "name": "Liam Smith",
+  "hair": [
+   376548738
+  ],
+  "hairName": "Brown Charmer Hair",
+  "shirt": 76610244834559,
+  "pants": 6123348701,
+  "outfit": [
+   "stussy team mesh jersey 80",
+   "Light Grey Sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m001",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#f6dcc8",
+  "name": "Noah Taylor",
+  "hair": [
+   6323887109
+  ],
+  "hairName": "Black Side-Swept Fringe Hair",
+  "shirt": 7494465908,
+  "pants": 127114051052079,
+  "outfit": [
+   "White Tuxedo Shirt + Suspenders [+]",
+   "Plain Black Pants"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m002",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#a8714f",
+  "name": "Oliver Thompson",
+  "hair": [
+   7222634196
+  ],
+  "hairName": "Black Dawn Hairstyle",
+  "shirt": 112822028680901,
+  "pants": 6602166195,
+  "outfit": [
+   "blue hoodie",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m003",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#cf9668",
+  "name": "Elijah Walker",
+  "hair": [
+   11506610371
+  ],
+  "hairName": "Blonde Two Strand Twists",
+  "shirt": 138353096989865,
+  "pants": 4749222820,
+  "outfit": [
+   "sweater",
+   "jogger fit"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "m004",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#b67a53",
+  "name": "James Green",
+  "hair": [
+   6823409166
+  ],
+  "hairName": "Messy Boy Hair in Brown",
+  "shirt": 79761866360161,
+  "pants": 6602166195,
+  "outfit": [
+   "vintage faded t shirt",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m005",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#ecc3a3",
+  "name": "Ethan Carter",
+  "hair": [
+   15913837
+  ],
+  "hairName": "Roblohunk Hair",
+  "shirt": 127542353057927,
+  "pants": 6356025808,
+  "outfit": [
+   "2000s Archive CH Polo Collar Shirt",
+   "Black Suit Trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m006",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#ecc3a3",
+  "name": "Lucas Collins",
+  "hair": [
+   16102939941
+  ],
+  "hairName": "Two Strand Twists Black",
+  "shirt": 7204130986,
+  "pants": 6516075700,
+  "outfit": [
+   "yingyang koi fish Sweater black beige streetwear",
+   "denim trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m007",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#9a6444",
+  "name": "Mason Murphy",
+  "hair": [
+   134241734496562
+  ],
+  "hairName": "Soft Black Raven Cut Hair",
+  "shirt": 83691516584002,
+  "pants": 2228336895,
+  "outfit": [
+   "FullyChop CH Brown Jacket W Tats",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m008",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#f1cfb5",
+  "name": "Logan Gray",
+  "hair": [
+   117086356051576
+  ],
+  "hairName": "Brown Slicked Side Part Hair",
+  "shirt": 121764822195698,
+  "pants": 6602166195,
+  "outfit": [
+   "Soft Yuta Aesthetic Cozy White Top Shirt [ + ]",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m009",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#cf9668",
+  "name": "Jacob Smith",
+  "hair": [
+   5920359974
+  ],
+  "hairName": "Black Side Sweep Hair",
+  "shirt": 108540124845631,
+  "pants": 6356025808,
+  "outfit": [
+   "[RHS] White Shirt",
+   "Black Suit Trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m010",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#dca67c",
+  "name": "Jackson Taylor",
+  "hair": [
+   138585534376447
+  ],
+  "hairName": "M11! - Short Messy Curly Afro hair w/ Low Taper ",
+  "shirt": 93550833497499,
+  "pants": 7415534613,
+  "outfit": [
+   "white boxy shirt with tie",
+   "Formal Pants"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m011",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#b67a53",
+  "name": "Aiden Thompson",
+  "hair": [
+   5163638577
+  ],
+  "hairName": "Blonde Styled Back Hair",
+  "shirt": 104688268350437,
+  "pants": 123039382092615,
+  "outfit": [
+   "champion white shirt for boys",
+   "white sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m012",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#e6b48c",
+  "name": "Carter Walker",
+  "hair": [
+   4875448562
+  ],
+  "hairName": "Blonde Short Parted Hair",
+  "shirt": 101620698895900,
+  "pants": 618389976,
+  "outfit": [
+   "Blue Striped Shirt (Kalcer Style)",
+   "Formal Black Pants"
+  ],
+  "accessories": [
+   4197739997
+  ],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "m013",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#dca67c",
+  "name": "Owen Green",
+  "hair": [
+   8966711821
+  ],
+  "hairName": "Black Messy Hair (1.0)",
+  "shirt": 115778289091191,
+  "pants": 6123348701,
+  "outfit": [
+   "Colombia Jersey",
+   "Light Grey Sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m014",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#b67a53",
+  "name": "Wyatt Carter",
+  "hair": [
+   4875448562
+  ],
+  "hairName": "Blonde Short Parted Hair",
+  "shirt": 78013815276971,
+  "pants": 3651862159,
+  "outfit": [
+   "White   Polo",
+   "Grey plaid trousers w/ black high top sneakers"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m015",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#9a6444",
+  "name": "Caleb Collins",
+  "hair": [
+   8967211297
+  ],
+  "hairName": "Sandy Blonde Messy Hair (1.0)",
+  "shirt": 99535361899884,
+  "pants": 119441420711117,
+  "outfit": [
+   "White No Bystanders NY Tee Shirt (Kalcer Style)",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m016",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#c3875c",
+  "name": "Isaac Murphy",
+  "hair": [
+   7107560513
+  ],
+  "hairName": "Black Messy Side Swoop",
+  "shirt": 130065502224761,
+  "pants": 382538503,
+  "outfit": [
+   "beige hoodie ",
+   "Black Jeans with Sneakers"
+  ],
+  "accessories": [
+   130568043270999
+  ]
+ },
+ {
+  "id": "m017",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#dca67c",
+  "name": "Ryan Gray",
+  "hair": [
+   13405570812
+  ],
+  "hairName": "Thick Afro Dreadlocks ",
+  "shirt": 93838171146425,
+  "pants": 7448820531,
+  "outfit": [
+   "black jacket",
+   "black trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m018",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#c3875c",
+  "name": "Nathan Smith",
+  "hair": [
+   15913837
+  ],
+  "hairName": "Roblohunk Hair",
+  "shirt": 80358312613888,
+  "pants": 5944768364,
+  "outfit": [
+   "shirt and tie",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m019",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#9a6444",
+  "name": "Dylan Taylor",
+  "hair": [
+   4846306965
+  ],
+  "hairName": "'Fro: Pulled Back Locs",
+  "shirt": 81735727343320,
+  "pants": 2228336895,
+  "outfit": [
+   "Black and white striped shirt",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m020",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#f6dcc8",
+  "name": "Tyler Thompson",
+  "hair": [
+   6533630214
+  ],
+  "hairName": "Black Messy Middle Part",
+  "shirt": 129347348519341,
+  "pants": 139566330228696,
+  "outfit": [
+   "flannel",
+   "blue jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m021",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#f1cfb5",
+  "name": "Jordan Hall",
+  "hair": [
+   5920359974
+  ],
+  "hairName": "Black Side Sweep Hair",
+  "shirt": 96154029879604,
+  "pants": 127114051052079,
+  "outfit": [
+   "Black Shirt",
+   "Plain Black Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m022",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#ecc3a3",
+  "name": "Marcus Green",
+  "hair": [
+   11207845538
+  ],
+  "hairName": "Afro Taper Fade",
+  "shirt": 74818373923979,
+  "pants": 6356025808,
+  "outfit": [
+   "Classic Black Suit Formal Shirt [ + ]",
+   "Black Suit Trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m023",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#dca67c",
+  "name": "Andre Carter",
+  "hair": [
+   376548738
+  ],
+  "hairName": "Brown Charmer Hair",
+  "shirt": 6232422993,
+  "pants": 5944768364,
+  "outfit": [
+   "Green Turtleneck w/ Brown Plaid Jacket",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m024",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#9a6444",
+  "name": "Jamal Collins",
+  "hair": [
+   18477356360
+  ],
+  "hairName": "Black Tapper Faded Afro",
+  "shirt": 88173808109921,
+  "pants": 132071203441084,
+  "outfit": [
+   "MAAP Logo-Print Cycling Vest",
+   "preppy sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m025",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#f1cfb5",
+  "name": "Kevin Murphy",
+  "hair": [
+   128977425250405
+  ],
+  "hairName": "Grey Suave Slicked Back Hair",
+  "shirt": 136343615709903,
+  "pants": 6652024161,
+  "outfit": [
+   "Formal Suit Classic Dark Jacket Top [ + ]",
+   "khaki trousers"
+  ],
+  "accessories": [
+   4143016822
+  ]
+ },
+ {
+  "id": "m026",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#ecc3a3",
+  "name": "Brandon Gray",
+  "hair": [
+   17176557559
+  ],
+  "hairName": "Sponged Afro Low Taper Fade",
+  "shirt": 84224179619413,
+  "pants": 119441420711117,
+  "outfit": [
+   "thrifted striped polo",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m027",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#f6dcc8",
+  "name": "Austin Smith",
+  "hair": [
+   117086356051576
+  ],
+  "hairName": "Brown Slicked Side Part Hair",
+  "shirt": 122692416575580,
+  "pants": 4800478888,
+  "outfit": [
+   "Soft Blue Stripe Shirt w Neck Tie (kalcer style)",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m028",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#b67a53",
+  "name": "Cole Taylor",
+  "hair": [
+   17496829224
+  ],
+  "hairName": "Curly tied up dreads",
+  "shirt": 129607158986204,
+  "pants": 12380638156,
+  "outfit": [
+   "Black-red-champion-hoodie",
+   "cargo pants grey black"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m029",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#a8714f",
+  "name": "Chase Thompson",
+  "hair": [
+   94407938162171
+  ],
+  "hairName": "Dexter's Messy Cut",
+  "shirt": 79712231955679,
+  "pants": 120354938116112,
+  "outfit": [
+   "Black polo with sleeve",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "m030",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#f6dcc8",
+  "name": "Evan Walker",
+  "hair": [
+   15651943440
+  ],
+  "hairName": "Thick Black Twisted Dreadlocks",
+  "shirt": 97889100293882,
+  "pants": 12380638156,
+  "outfit": [
+   "Black t-shirt",
+   "cargo pants grey black"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m031",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#dca67c",
+  "name": "Jason Green",
+  "hair": [
+   5163638577
+  ],
+  "hairName": "Blonde Styled Back Hair",
+  "shirt": 100378636380851,
+  "pants": 618389976,
+  "outfit": [
+   "polo xadrez underground shirt",
+   "Formal Black Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m032",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#dca67c",
+  "name": "Derek Carter",
+  "hair": [
+   13620894544
+  ],
+  "hairName": "Barrel Twists",
+  "shirt": 135872548989088,
+  "pants": 115114052762782,
+  "outfit": [
+   "fuzzy black & white striped sweater",
+   "black pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m033",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#b67a53",
+  "name": "Trevor Collins",
+  "hair": [
+   7183785281
+  ],
+  "hairName": "Black Messy Manga Hair",
+  "shirt": 4010357605,
+  "pants": 129458426,
+  "outfit": [
+   "brown flannel w black shirt",
+   "Jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m034",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#cf9668",
+  "name": "Miles Murphy",
+  "hair": [
+   138585534376447
+  ],
+  "hairName": "M11! - Short Messy Curly Afro hair w/ Low Taper ",
+  "shirt": 74378792773084,
+  "pants": 139566330228696,
+  "outfit": [
+   "blue hoodie",
+   "blue jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m035",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#ecc3a3",
+  "name": "Malik Gray",
+  "hair": [
+   11207845538
+  ],
+  "hairName": "Afro Taper Fade",
+  "shirt": 135933517125074,
+  "pants": 7071841238,
+  "outfit": [
+   "coat",
+   "Black Formal Slacks -"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m036",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#c3875c",
+  "name": "Darius Smith",
+  "hair": [
+   6323887109
+  ],
+  "hairName": "Black Side-Swept Fringe Hair",
+  "shirt": 73057040403674,
+  "pants": 7071841238,
+  "outfit": [
+   "black polo",
+   "Black Formal Slacks -"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m037",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#dca67c",
+  "name": "Diego Taylor",
+  "hair": [
+   116614863367317
+  ],
+  "hairName": "Sponged Afro with Taper Fade",
+  "shirt": 87324605800410,
+  "pants": 1528011420,
+  "outfit": [
+   "brazil tee",
+   "Grey and white sweatpants w white shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m038",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#f1cfb5",
+  "name": "Mateo Thompson",
+  "hair": [
+   5920359974
+  ],
+  "hairName": "Black Side Sweep Hair",
+  "shirt": 118187099088629,
+  "pants": 124230255668039,
+  "outfit": [
+   "Vivienne Westwood Man Trim Collar White Polo",
+   "Black Suit Classic Formal Pants [ - ]"
+  ],
+  "accessories": [
+   4143016822
+  ],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "m039",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#f1cfb5",
+  "name": "Leo Walker",
+  "hair": [
+   12911961302
+  ],
+  "hairName": "Medium Length Messy Hair(Black)",
+  "shirt": 84831639942736,
+  "pants": 2228336895,
+  "outfit": [
+   "8 polo",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m040",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#e6b48c",
+  "name": "Max Green",
+  "hair": [
+   15913837
+  ],
+  "hairName": "Roblohunk Hair",
+  "shirt": 87751149249705,
+  "pants": 5944768364,
+  "outfit": [
+   "Brown Stripe Shirt with Neck Tie (kalcer",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m041",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#cf9668",
+  "name": "Zach Carter",
+  "hair": [
+   90611147065136
+  ],
+  "hairName": "Quint CrashOut Dreads LightSkin Blond",
+  "shirt": 9291160487,
+  "pants": 6602166195,
+  "outfit": [
+   "Tie Dye Shirt",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m042",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#f6dcc8",
+  "name": "Blake Collins",
+  "hair": [
+   15896840710
+  ],
+  "hairName": "2 Strand Twists V2",
+  "shirt": 112871917678194,
+  "pants": 127114051052079,
+  "outfit": [
+   "Denim Jacket",
+   "Plain Black Pants"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "m043",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#f6dcc8",
+  "name": "Kyle Murphy",
+  "hair": [
+   12372133607
+  ],
+  "hairName": "Black Messy Dread-Locs",
+  "shirt": 5327275648,
+  "pants": 120354938116112,
+  "outfit": [
+   "black flannel",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m044",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#f1cfb5",
+  "name": "Sean Gray",
+  "hair": [
+   4875448562
+  ],
+  "hairName": "Blonde Short Parted Hair",
+  "shirt": 137559265706025,
+  "pants": 7071841238,
+  "outfit": [
+   "White   Polo",
+   "Black Formal Slacks -"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m045",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#cf9668",
+  "name": "Connor Smith",
+  "hair": [
+   98929488107431
+  ],
+  "hairName": "Zen Locs",
+  "shirt": 130065502224761,
+  "pants": 382538503,
+  "outfit": [
+   "beige hoodie ",
+   "Black Jeans with Sneakers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m046",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#ecc3a3",
+  "name": "Gavin Taylor",
+  "hair": [
+   7183785281
+  ],
+  "hairName": "Black Messy Manga Hair",
+  "shirt": 4986626787,
+  "pants": 2228336895,
+  "outfit": [
+   "white sweatshirt w flannel",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m047",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#dca67c",
+  "name": "Hunter Thompson",
+  "hair": [
+   18477356360
+  ],
+  "hairName": "Black Tapper Faded Afro",
+  "shirt": 76425945673858,
+  "pants": 3651862159,
+  "outfit": [
+   "Not4nerd Tribal Logo Nylon Racing Jacket (White)",
+   "Grey plaid trousers w/ black high top sneakers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m048",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#a8714f",
+  "name": "Ian Walker",
+  "hair": [
+   17176557559
+  ],
+  "hairName": "Sponged Afro Low Taper Fade",
+  "shirt": 99673099682177,
+  "pants": 7415534613,
+  "outfit": [
+   "Blue Stripe Shirt with Neck Tie (kalcer style",
+   "Formal Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m049",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#c3875c",
+  "name": "Jace Baker",
+  "hair": [
+   4875448562
+  ],
+  "hairName": "Blonde Short Parted Hair",
+  "shirt": 139593884178896,
+  "pants": 75345399569566,
+  "outfit": [
+   "classic formal black suit",
+   "Formal Pants Black"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m050",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#f6dcc8",
+  "name": "Kai Carter",
+  "hair": [
+   18477356360
+  ],
+  "hairName": "Black Tapper Faded Afro",
+  "shirt": 88173808109921,
+  "pants": 4749222820,
+  "outfit": [
+   "MAAP Logo-Print Cycling Vest",
+   "jogger fit"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m051",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#9a6444",
+  "name": "Luis Collins",
+  "hair": [
+   128977425250405
+  ],
+  "hairName": "Grey Suave Slicked Back Hair",
+  "shirt": 6999290186,
+  "pants": 5944768364,
+  "outfit": [
+   "formal black sweater",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m052",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#cf9668",
+  "name": "Nico Murphy",
+  "hair": [
+   8966711821
+  ],
+  "hairName": "Black Messy Hair (1.0)",
+  "shirt": 100378636380851,
+  "pants": 119441420711117,
+  "outfit": [
+   "polo xadrez underground shirt",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m053",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#b67a53",
+  "name": "Omar Gray",
+  "hair": [
+   6323887109
+  ],
+  "hairName": "Black Side-Swept Fringe Hair",
+  "shirt": 87751149249705,
+  "pants": 119441420711117,
+  "outfit": [
+   "Brown Stripe Shirt with Neck Tie (kalcer",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": [
+   11884330
+  ]
+ },
+ {
+  "id": "m054",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#c3875c",
+  "name": "Reggie Smith",
+  "hair": [
+   5460231212
+  ],
+  "hairName": "Undercut Dreads",
+  "shirt": 85195509415575,
+  "pants": 6602166195,
+  "outfit": [
+   "Jacket",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m055",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#9a6444",
+  "name": "Seth Taylor",
+  "hair": [
+   18816554945
+  ],
+  "hairName": "Black Curly 2 Strand Twists",
+  "shirt": 101333714195380,
+  "pants": 4749222820,
+  "outfit": [
+   "Red Hoodie With Headphones!",
+   "jogger fit"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m056",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#a8714f",
+  "name": "Theo Thompson",
+  "hair": [
+   118167554854098
+  ],
+  "hairName": "Twin Locs V2",
+  "shirt": 125832373059665,
+  "pants": 120354938116112,
+  "outfit": [
+   "vintage faded t shirt",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m057",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#dca67c",
+  "name": "Victor Walker",
+  "hair": [
+   117086356051576
+  ],
+  "hairName": "Brown Slicked Side Part Hair",
+  "shirt": 80358312613888,
+  "pants": 124230255668039,
+  "outfit": [
+   "shirt and tie",
+   "Black Suit Classic Formal Pants [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m058",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#a8714f",
+  "name": "Wes Green",
+  "hair": [
+   111789066063145
+  ],
+  "hairName": "Tedd Locs",
+  "shirt": 6232422993,
+  "pants": 72210379788544,
+  "outfit": [
+   "Green Turtleneck w/ Brown Plaid Jacket",
+   "Plain Black Jeans With Boots"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m059",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#cf9668",
+  "name": "Xavier Carter",
+  "hair": [
+   7107560513
+  ],
+  "hairName": "Black Messy Side Swoop",
+  "shirt": 4791398991,
+  "pants": 2228336895,
+  "outfit": [
+   "Light Blue Flannel",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m060",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#e6b48c",
+  "name": "Zion Collins",
+  "hair": [
+   11207845538
+  ],
+  "hairName": "Afro Taper Fade",
+  "shirt": 128156466960474,
+  "pants": 139566330228696,
+  "outfit": [
+   "sosa grey polo gray polo pro club jacket zipper sa",
+   "blue jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m061",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#a8714f",
+  "name": "Liam Murphy",
+  "hair": [
+   5163638577
+  ],
+  "hairName": "Blonde Styled Back Hair",
+  "shirt": 128184882101211,
+  "pants": 618389976,
+  "outfit": [
+   "Denji Classic Shirt Formal Tie Top [ + ]",
+   "Formal Black Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m062",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#b67a53",
+  "name": "Noah Gray",
+  "hair": [
+   376548738
+  ],
+  "hairName": "Brown Charmer Hair",
+  "shirt": 12142438478,
+  "pants": 2688157000,
+  "outfit": [
+   "suit",
+   "vintage checked brown trousers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m063",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#dca67c",
+  "name": "Oliver Smith",
+  "hair": [
+   138585534376447
+  ],
+  "hairName": "M11! - Short Messy Curly Afro hair w/ Low Taper ",
+  "shirt": 76610244834559,
+  "pants": 132071203441084,
+  "outfit": [
+   "stussy team mesh jersey 80",
+   "preppy sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m064",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#cf9668",
+  "name": "Elijah Taylor",
+  "hair": [
+   128977425250405
+  ],
+  "hairName": "Grey Suave Slicked Back Hair",
+  "shirt": 4986626787,
+  "pants": 72230339769433,
+  "outfit": [
+   "white sweatshirt w flannel",
+   "Classic Black Suit Formal Pants [ - ]"
+  ],
+  "accessories": [
+   4143016822
+  ]
+ },
+ {
+  "id": "m065",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#f1cfb5",
+  "name": "James Thompson",
+  "hair": [
+   6823409166
+  ],
+  "hairName": "Messy Boy Hair in Brown",
+  "shirt": 87324605800410,
+  "pants": 382537569,
+  "outfit": [
+   "brazil tee",
+   "Black Jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m066",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#cf9668",
+  "name": "Ethan Walker",
+  "hair": [
+   117086356051576
+  ],
+  "hairName": "Brown Slicked Side Part Hair",
+  "shirt": 127542353057927,
+  "pants": 72230339769433,
+  "outfit": [
+   "2000s Archive CH Polo Collar Shirt",
+   "Classic Black Suit Formal Pants [ - ]"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m067",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#ecc3a3",
+  "name": "Lucas Green",
+  "hair": [
+   134241734496562
+  ],
+  "hairName": "Soft Black Raven Cut Hair",
+  "shirt": 398633584,
+  "pants": 120354938116112,
+  "outfit": [
+   "Denim Jacket with White Hoodie",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m068",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#9a6444",
+  "name": "Mason Carter",
+  "hair": [
+   15896840710
+  ],
+  "hairName": "2 Strand Twists V2",
+  "shirt": 99978212949301,
+  "pants": 123039382092615,
+  "outfit": [
+   "Ego Hooded Tee without tats",
+   "white sweatpants"
+  ],
+  "accessories": [
+   130568043270999
+  ]
+ },
+ {
+  "id": "m069",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#c3875c",
+  "name": "Logan Collins",
+  "hair": [
+   90611147065136
+  ],
+  "hairName": "Quint CrashOut Dreads LightSkin Blond",
+  "shirt": 135933517125074,
+  "pants": 4800478888,
+  "outfit": [
+   "coat",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m070",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#e6b48c",
+  "name": "Jacob Murphy",
+  "hair": [
+   5920359974
+  ],
+  "hairName": "Black Side Sweep Hair",
+  "shirt": 84224179619413,
+  "pants": 75345399569566,
+  "outfit": [
+   "thrifted striped polo",
+   "Formal Pants Black"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m071",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#f1cfb5",
+  "name": "Jackson Gray",
+  "hair": [
+   118167554854098
+  ],
+  "hairName": "Twin Locs V2",
+  "shirt": 9291160487,
+  "pants": 120354938116112,
+  "outfit": [
+   "Tie Dye Shirt",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m072",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#b67a53",
+  "name": "Aiden Smith",
+  "hair": [
+   94407938162171
+  ],
+  "hairName": "Dexter's Messy Cut",
+  "shirt": 4010357605,
+  "pants": 2228336895,
+  "outfit": [
+   "brown flannel w black shirt",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m073",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#cf9668",
+  "name": "Carter Taylor",
+  "hair": [
+   17176557559
+  ],
+  "hairName": "Sponged Afro Low Taper Fade",
+  "shirt": 138498361609157,
+  "pants": 139566330228696,
+  "outfit": [
+   "White shirt",
+   "blue jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m074",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#ecc3a3",
+  "name": "Owen Thompson",
+  "hair": [
+   116614863367317
+  ],
+  "hairName": "Sponged Afro with Taper Fade",
+  "shirt": 129452210986832,
+  "pants": 124230255668039,
+  "outfit": [
+   "Soft Purple Stripe Shirt w Neck Tie (kalcer style)",
+   "Black Suit Classic Formal Pants [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m075",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#f1cfb5",
+  "name": "Wyatt Walker",
+  "hair": [
+   15913837
+  ],
+  "hairName": "Roblohunk Hair",
+  "shirt": 110580944445455,
+  "pants": 7071841238,
+  "outfit": [
+   "Black Suit Classic Formal Shirt [ + ]",
+   "Black Formal Slacks -"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m076",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#b67a53",
+  "name": "Caleb Green",
+  "hair": [
+   18477356360
+  ],
+  "hairName": "Black Tapper Faded Afro",
+  "shirt": 84831639942736,
+  "pants": 123039382092615,
+  "outfit": [
+   "8 polo",
+   "white sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m077",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#b67a53",
+  "name": "Isaac Carter",
+  "hair": [
+   376548738
+  ],
+  "hairName": "Brown Charmer Hair",
+  "shirt": 118187099088629,
+  "pants": 75345399569566,
+  "outfit": [
+   "Vivienne Westwood Man Trim Collar White Polo",
+   "Formal Pants Black"
+  ],
+  "accessories": [
+   4143016822
+  ],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "m078",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#f1cfb5",
+  "name": "Ryan Collins",
+  "hair": [
+   6533630214
+  ],
+  "hairName": "Black Messy Middle Part",
+  "shirt": 129607158986204,
+  "pants": 12380638156,
+  "outfit": [
+   "Black-red-champion-hoodie",
+   "cargo pants grey black"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m079",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#cf9668",
+  "name": "Nathan Murphy",
+  "hair": [
+   6323887109
+  ],
+  "hairName": "Black Side-Swept Fringe Hair",
+  "shirt": 73057040403674,
+  "pants": 124230255668039,
+  "outfit": [
+   "black polo",
+   "Black Suit Classic Formal Pants [ - ]"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "m080",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#a8714f",
+  "name": "Dylan Gray",
+  "hair": [
+   11506610371
+  ],
+  "hairName": "Blonde Two Strand Twists",
+  "shirt": 85195509415575,
+  "pants": 6602166195,
+  "outfit": [
+   "Jacket",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m081",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#ecc3a3",
+  "name": "Tyler Smith",
+  "hair": [
+   7222634196
+  ],
+  "hairName": "Black Dawn Hairstyle",
+  "shirt": 86572039283785,
+  "pants": 123039382092615,
+  "outfit": [
+   "Plain Black Short Sleeve Tee",
+   "white sweatpants"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "m082",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#f6dcc8",
+  "name": "Jordan Taylor",
+  "hair": [
+   15651943440
+  ],
+  "hairName": "Thick Black Twisted Dreadlocks",
+  "shirt": 5327275648,
+  "pants": 4800478888,
+  "outfit": [
+   "black flannel",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m083",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#9a6444",
+  "name": "Marcus Thompson",
+  "hair": [
+   4875448562
+  ],
+  "hairName": "Blonde Short Parted Hair",
+  "shirt": 7494465908,
+  "pants": 6652024161,
+  "outfit": [
+   "White Tuxedo Shirt + Suspenders [+]",
+   "khaki trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m084",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#dca67c",
+  "name": "Andre Walker",
+  "hair": [
+   4846306965
+  ],
+  "hairName": "'Fro: Pulled Back Locs",
+  "shirt": 81735727343320,
+  "pants": 4800478888,
+  "outfit": [
+   "Black and white striped shirt",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m085",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#e6b48c",
+  "name": "Jamal Green",
+  "hair": [
+   12911961302
+  ],
+  "hairName": "Medium Length Messy Hair(Black)",
+  "shirt": 129347348519341,
+  "pants": 139566330228696,
+  "outfit": [
+   "flannel",
+   "blue jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m086",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#e6b48c",
+  "name": "Kevin Carter",
+  "hair": [
+   11207845538
+  ],
+  "hairName": "Afro Taper Fade",
+  "shirt": 78706960877997,
+  "pants": 4800478888,
+  "outfit": [
+   "Black Polo Zip Up w White Tee",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m087",
+  "sex": "m",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Coffee in hand, always on a call.",
+  "skin": "#f1cfb5",
+  "name": "Brandon Collins",
+  "hair": [
+   17176557559
+  ],
+  "hairName": "Sponged Afro Low Taper Fade",
+  "shirt": 92257911710875,
+  "pants": 7071841238,
+  "outfit": [
+   "Black Suit",
+   "Black Formal Slacks -"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m088",
+  "sex": "m",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Strict but fair, hates phones in class.",
+  "skin": "#f1cfb5",
+  "name": "Austin Murphy",
+  "hair": [
+   138585534376447
+  ],
+  "hairName": "M11! - Short Messy Curly Afro hair w/ Low Taper ",
+  "shirt": 117992698769759,
+  "pants": 6652024161,
+  "outfit": [
+   "+ Suit",
+   "khaki trousers"
+  ],
+  "accessories": [
+   11884330
+  ]
+ },
+ {
+  "id": "m089",
+  "sex": "m",
+  "archetype": "coach",
+  "age": "adult",
+  "personality": "Whistle, joggers, never sits down.",
+  "skin": "#cf9668",
+  "name": "Cole Gray",
+  "hair": [
+   116614863367317
+  ],
+  "hairName": "Sponged Afro with Taper Fade",
+  "shirt": 115778289091191,
+  "pants": 100347836748005,
+  "outfit": [
+   "Colombia Jersey",
+   "black sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m090",
+  "sex": "m",
+  "archetype": "grandpa",
+  "age": "adult",
+  "personality": "Slow walker, sharp mind, wild stories.",
+  "skin": "#e6b48c",
+  "name": "Chase Smith",
+  "hair": [
+   128977425250405
+  ],
+  "hairName": "Grey Suave Slicked Back Hair",
+  "shirt": 83691516584002,
+  "pants": 3651862159,
+  "outfit": [
+   "FullyChop CH Brown Jacket W Tats",
+   "Grey plaid trousers w/ black high top sneakers"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m091",
+  "sex": "m",
+  "archetype": "jock",
+  "age": "teen",
+  "personality": "Captain of the team, loud, always hungry.",
+  "skin": "#f1cfb5",
+  "name": "Evan Taylor",
+  "hair": [
+   8967211297
+  ],
+  "hairName": "Sandy Blonde Messy Hair (1.0)",
+  "shirt": 104688268350437,
+  "pants": 382538503,
+  "outfit": [
+   "champion white shirt for boys",
+   "Black Jeans with Sneakers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m092",
+  "sex": "m",
+  "archetype": "nerd",
+  "age": "teen",
+  "personality": "Knows the answer before the question ends.",
+  "skin": "#f1cfb5",
+  "name": "Jason Thompson",
+  "hair": [
+   5163638577
+  ],
+  "hairName": "Blonde Styled Back Hair",
+  "shirt": 78013815276971,
+  "pants": 7415534613,
+  "outfit": [
+   "White   Polo",
+   "Formal Pants"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "m093",
+  "sex": "m",
+  "archetype": "skater",
+  "age": "teen",
+  "personality": "Never without the board, says \"dude\" a lot.",
+  "skin": "#ecc3a3",
+  "name": "Derek Walker",
+  "hair": [
+   18816554945
+  ],
+  "hairName": "Black Curly 2 Strand Twists",
+  "shirt": 99535361899884,
+  "pants": 7448820531,
+  "outfit": [
+   "White No Bystanders NY Tee Shirt (Kalcer Style)",
+   "black trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m094",
+  "sex": "m",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Up till 3 a.m., talks in game terms.",
+  "skin": "#ecc3a3",
+  "name": "Trevor Green",
+  "hair": [
+   16102939941
+  ],
+  "hairName": "Two Strand Twists Black",
+  "shirt": 109937084990168,
+  "pants": 4800478888,
+  "outfit": [
+   "white polo collared neck crew button up thrift emo",
+   "Dark Scrubs (Pants)"
+  ],
+  "accessories": [
+   10943571579
+  ]
+ },
+ {
+  "id": "m095",
+  "sex": "m",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Quiet, black everything, secretly funny.",
+  "skin": "#c3875c",
+  "name": "Miles Carter",
+  "hair": [
+   13405570812
+  ],
+  "hairName": "Thick Afro Dreadlocks ",
+  "shirt": 125832373059665,
+  "pants": 115114052762782,
+  "outfit": [
+   "vintage faded t shirt",
+   "black pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m096",
+  "sex": "m",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Polo tucked in, wants to be class president.",
+  "skin": "#b67a53",
+  "name": "Malik Collins",
+  "hair": [
+   117086356051576
+  ],
+  "hairName": "Brown Slicked Side Part Hair",
+  "shirt": 101620698895900,
+  "pants": 6356025808,
+  "outfit": [
+   "Blue Striped Shirt (Kalcer Style)",
+   "Black Suit Trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m097",
+  "sex": "m",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Paint on his hands, sketchbook in his bag.",
+  "skin": "#f1cfb5",
+  "name": "Darius Murphy",
+  "hair": [
+   13620894544
+  ],
+  "hairName": "Barrel Twists",
+  "shirt": 7204130986,
+  "pants": 119441420711117,
+  "outfit": [
+   "yingyang koi fish Sweater black beige streetwear",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m098",
+  "sex": "m",
+  "archetype": "country",
+  "age": "teen",
+  "personality": "From the farm, polite, strong.",
+  "skin": "#dca67c",
+  "name": "Diego Gray",
+  "hair": [
+   8967211297
+  ],
+  "hairName": "Sandy Blonde Messy Hair (1.0)",
+  "shirt": 4791398991,
+  "pants": 2228336895,
+  "outfit": [
+   "Light Blue Flannel",
+   "Dark Blue Jeans with Black Formal Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "m099",
+  "sex": "m",
+  "archetype": "dad",
+  "age": "adult",
+  "personality": "Tells dad jokes, grills every weekend.",
+  "skin": "#f1cfb5",
+  "name": "Mateo Smith",
+  "hair": [
+   6323887109
+  ],
+  "hairName": "Black Side-Swept Fringe Hair",
+  "shirt": 93750718202024,
+  "pants": 119441420711117,
+  "outfit": [
+   "polo",
+   "Black on black tank-top and jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f000",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#b67a53",
+  "name": "Olivia Davis",
+  "hair": [
+   7061583264
+  ],
+  "hairName": "Bun Hair with Flower Hairpin",
+  "shirt": 110797869888281,
+  "pants": 113863077563704,
+  "outfit": [
+   "Gray polo grey polo swag true religion affliction",
+   "denim shorts"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f001",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#ecc3a3",
+  "name": "Emma Jackson",
+  "hair": [
+   122988594975561
+  ],
+  "hairName": "Double Curly Braids in Black",
+  "shirt": 84831639942736,
+  "pants": 109437600584609,
+  "outfit": [
+   "8 polo",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f002",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#9a6444",
+  "name": "Ava Robinson",
+  "hair": [
+   7668491285
+  ],
+  "hairName": "Brown Popular Back Braids",
+  "shirt": 135093449663794,
+  "pants": 85926546050440,
+  "outfit": [
+   "shadowbanned tee",
+   "School girl pleat skirt"
+  ],
+  "accessories": [
+   11884330
+  ]
+ },
+ {
+  "id": "f003",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#cf9668",
+  "name": "Sophia Wright",
+  "hair": [
+   104164430679537
+  ],
+  "hairName": "Black Locs w Ponytail",
+  "shirt": 6232422993,
+  "pants": 6602166195,
+  "outfit": [
+   "Green Turtleneck w/ Brown Plaid Jacket",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f004",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#9a6444",
+  "name": "Isabella Nelson",
+  "hair": [
+   6346367086
+  ],
+  "hairName": "Wavy Side Part w/ Simple Edges",
+  "shirt": 6948525547,
+  "pants": 6314613214,
+  "outfit": [
+   "Black Sleeveless Turtleneck Shirt",
+   "black pleated skirt || black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f005",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#9a6444",
+  "name": "Mia Phillips",
+  "hair": [
+   12931221901
+  ],
+  "hairName": "Natural High Ponytail(Blonde)",
+  "shirt": 121578447619410,
+  "pants": 6602166195,
+  "outfit": [
+   "raf sweater",
+   "Grey Chef Pants"
+  ],
+  "accessories": [
+   16266640100
+  ]
+ },
+ {
+  "id": "f006",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#cf9668",
+  "name": "Amelia Rogers",
+  "hair": [
+   13884716114
+  ],
+  "hairName": "Brown Layered Bob with Bangs",
+  "shirt": 75648623476384,
+  "pants": 6652024161,
+  "outfit": [
+   "gray polo",
+   "khaki trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f007",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#b67a53",
+  "name": "Harper Howard",
+  "hair": [
+   12727863138
+  ],
+  "hairName": "Ballerina Low Side Bun- Brown",
+  "shirt": 5097955152,
+  "pants": 113863077563704,
+  "outfit": [
+   "White w/ Pink Stripes Sweater",
+   "denim shorts"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f008",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#cf9668",
+  "name": "Evelyn Wood",
+  "hair": [
+   6376832169
+  ],
+  "hairName": "Blonde Valentines Hairstyle",
+  "shirt": 15167462391,
+  "pants": 122551860846652,
+  "outfit": [
+   "Black Short Sleeve Tee",
+   "cargo"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f009",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#9a6444",
+  "name": "Abigail Davis",
+  "hair": [
+   16291393461
+  ],
+  "hairName": "Black Messy Bun",
+  "shirt": 6708696844,
+  "pants": 6652024161,
+  "outfit": [
+   "Black Suit w Belt Top Suit - Top Suit Black Dress",
+   "khaki trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f010",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#9a6444",
+  "name": "Emily Jackson",
+  "hair": [
+   9605313021
+  ],
+  "hairName": "Preppy braided loose buns in blonde",
+  "shirt": 136568372915877,
+  "pants": 2688157000,
+  "outfit": [
+   "Number Nine Hardcore Logo Cardigan Sweater",
+   "vintage checked brown trousers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f011",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#f6dcc8",
+  "name": "Ella Lewis",
+  "hair": [
+   10083976194
+  ],
+  "hairName": "Gyaru Side Ponytail in Black",
+  "shirt": 95201231764107,
+  "pants": 5944768364,
+  "outfit": [
+   "Scrubs [+]",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f012",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#f1cfb5",
+  "name": "Chloe King",
+  "hair": [
+   5591459794
+  ],
+  "hairName": "Brunette Messy Bun",
+  "shirt": 83011153202867,
+  "pants": 1860814442,
+  "outfit": [
+   "Coat (+",
+   "Chef Pants"
+  ],
+  "accessories": [
+   4143016822
+  ],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f013",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#9a6444",
+  "name": "Grace Nelson",
+  "hair": [
+   9932882251
+  ],
+  "hairName": "Windy Middle Part Waves in Black",
+  "shirt": 77407324978969,
+  "pants": 6602166195,
+  "outfit": [
+   "!3 chiraq button up polo",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f014",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#c3875c",
+  "name": "Lily Phillips",
+  "hair": [
+   124334807330180
+  ],
+  "hairName": "Messy Low Ponytail in Brown",
+  "shirt": 88173808109921,
+  "pants": 109437600584609,
+  "outfit": [
+   "MAAP Logo-Print Cycling Vest",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f015",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#f1cfb5",
+  "name": "Zoe Rogers",
+  "hair": [
+   14354806550
+  ],
+  "hairName": "Soft Messy Braid in Blonde",
+  "shirt": 111776479099725,
+  "pants": 2688157000,
+  "outfit": [
+   "Classic White T-Shirt (FAV IT PLEASE!)",
+   "vintage checked brown trousers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f016",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#9a6444",
+  "name": "Riley Howard",
+  "hair": [
+   8327000450
+  ],
+  "hairName": "Pigtail Locs Brown",
+  "shirt": 5212623934,
+  "pants": 6602166195,
+  "outfit": [
+   "Black Overalls w White Crop Shirt",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f017",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#a8714f",
+  "name": "Nora Wood",
+  "hair": [
+   102374752593858
+  ],
+  "hairName": "long emo black messy rockstar back hair ",
+  "shirt": 5510979986,
+  "pants": 103500044558995,
+  "outfit": [
+   "flannel shirt",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f018",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#a8714f",
+  "name": "Hannah Davis",
+  "hair": [
+   15895035990
+  ],
+  "hairName": "Braided Low Buns(Brown)",
+  "shirt": 104435950923269,
+  "pants": 6123348701,
+  "outfit": [
+   "Gallery Dept. JR Jersey Black White",
+   "Light Grey Sweatpants"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "f019",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#a8714f",
+  "name": "Layla Jackson",
+  "hair": [
+   14915534033
+  ],
+  "hairName": "Messy Wavy Hairstyle(Blonde)",
+  "shirt": 99427838709553,
+  "pants": 6652024161,
+  "outfit": [
+   "polo",
+   "khaki trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f020",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#dca67c",
+  "name": "Aria Robinson",
+  "hair": [
+   114211163917185
+  ],
+  "hairName": "Coily Cutie Afro Puff in Blonde",
+  "shirt": 109723746787655,
+  "pants": 76376344470136,
+  "outfit": [
+   "Blue Essential Vest (Kalcer Style)",
+   "grey jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f021",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#ecc3a3",
+  "name": "Maya Young",
+  "hair": [
+   11856685029
+  ],
+  "hairName": "Layered Curtain Bangs in Blonde & Brown",
+  "shirt": 6149324873,
+  "pants": 3735688883,
+  "outfit": [
+   "Vlone Polo (White)",
+   "plaid sweatpants "
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f022",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#cf9668",
+  "name": "Jasmine Nelson",
+  "hair": [
+   5857744668
+  ],
+  "hairName": "Cute Bob Hairstyle Black ",
+  "shirt": 131205147854169,
+  "pants": 120354938116112,
+  "outfit": [
+   "Formal Shirt -",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f023",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#f6dcc8",
+  "name": "Kayla Phillips",
+  "hair": [
+   7133444268
+  ],
+  "hairName": "Shoreline Half-up Buns in Blonde",
+  "shirt": 83011153202867,
+  "pants": 1502628548,
+  "outfit": [
+   "Coat (+",
+   "grey plaid trousers w/ belt"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f024",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#e6b48c",
+  "name": "Brianna Reed",
+  "hair": [
+   139799065975836
+  ],
+  "hairName": "Messy bun (Black)",
+  "shirt": 9966912012,
+  "pants": 5822241701,
+  "outfit": [
+   "Scrubs (+)",
+   "[-] Scrub Pants Black"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f025",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#f6dcc8",
+  "name": "Destiny Howard",
+  "hair": [
+   7133444268
+  ],
+  "hairName": "Shoreline Half-up Buns in Blonde",
+  "shirt": 125023586525859,
+  "pants": 120354938116112,
+  "outfit": [
+   "Brown Plaid Jacket w White Sweatshirt",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": [],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f026",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#c3875c",
+  "name": "Imani Wood",
+  "hair": [
+   4876456635
+  ],
+  "hairName": "Wavy Side Part",
+  "shirt": 74733757527820,
+  "pants": 85926546050440,
+  "outfit": [
+   "White w Pink Stripes Sweater",
+   "School girl pleat skirt"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f027",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#c3875c",
+  "name": "Aaliyah Davis",
+  "hair": [
+   10083976194
+  ],
+  "hairName": "Gyaru Side Ponytail in Black",
+  "shirt": 84224179619413,
+  "pants": 109437600584609,
+  "outfit": [
+   "thrifted striped polo",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f028",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#f1cfb5",
+  "name": "Nia Jackson",
+  "hair": [
+   5067667033
+  ],
+  "hairName": "Blonde Double Braid Wrap",
+  "shirt": 398635081,
+  "pants": 97118097068276,
+  "outfit": [
+   "Blue Plaid Shirt ",
+   "dark pants"
+  ],
+  "accessories": [
+   11884330
+  ]
+ },
+ {
+  "id": "f029",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#dca67c",
+  "name": "Sienna Robinson",
+  "hair": [
+   135363163223761
+  ],
+  "hairName": "Lovely Loc Buns in Ginger",
+  "shirt": 5212623934,
+  "pants": 97118097068276,
+  "outfit": [
+   "Black Overalls w White Crop Shirt",
+   "dark pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f030",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#f1cfb5",
+  "name": "Paige Young",
+  "hair": [
+   6376240819
+  ],
+  "hairName": "Long Punk Buns & Choppy Bangs",
+  "shirt": 79761866360161,
+  "pants": 899151344,
+  "outfit": [
+   "vintage faded t shirt",
+   "plaid trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f031",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#b67a53",
+  "name": "Megan Nelson",
+  "hair": [
+   108683367154686
+  ],
+  "hairName": "Preppy Braided Buns Hair (Milktea Brown)",
+  "shirt": 382537085,
+  "pants": 109437600584609,
+  "outfit": [
+   "I <3 Pizza Shirt",
+   "Grey Leggings"
+  ],
+  "accessories": [
+   130568043270999
+  ]
+ },
+ {
+  "id": "f032",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#cf9668",
+  "name": "Tessa Phillips",
+  "hair": [
+   9671930695
+  ],
+  "hairName": "Mockeri's Black Luscious Ponytail",
+  "shirt": 134073243937495,
+  "pants": 103500044558995,
+  "outfit": [
+   "polo pink",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f033",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#cf9668",
+  "name": "Ruby Rogers",
+  "hair": [
+   86812348209728
+  ],
+  "hairName": "Coily Cutie Afro Puff in Dark Brown",
+  "shirt": 120306059275285,
+  "pants": 6314613214,
+  "outfit": [
+   "pink hoodie",
+   "black pleated skirt || black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f034",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#9a6444",
+  "name": "Jade Howard",
+  "hair": [
+   15618744269
+  ],
+  "hairName": "Long Wavy Lush Tucked Back Hair (Blonde)",
+  "shirt": 6467531805,
+  "pants": 398633812,
+  "outfit": [
+   "Red+Dark blue striped blouse",
+   "Black Jeans with White Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f035",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#b67a53",
+  "name": "Skye Wood",
+  "hair": [
+   131965286999284
+  ],
+  "hairName": "Tilted Messy Buns (Black)",
+  "shirt": 122692416575580,
+  "pants": 7415534613,
+  "outfit": [
+   "Soft Blue Stripe Shirt w Neck Tie (kalcer style)",
+   "Formal Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f036",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#9a6444",
+  "name": "Ivy Davis",
+  "hair": [
+   12727863138
+  ],
+  "hairName": "Ballerina Low Side Bun- Brown",
+  "shirt": 125023586525859,
+  "pants": 7415534613,
+  "outfit": [
+   "Brown Plaid Jacket w White Sweatshirt",
+   "Formal Pants"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "f037",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#a8714f",
+  "name": "Luna White",
+  "hair": [
+   12931221901
+  ],
+  "hairName": "Natural High Ponytail(Blonde)",
+  "shirt": 15047642386,
+  "pants": 2220807482,
+  "outfit": [
+   "Pink Scrubs Top Seaside Hospital Pediatrics OB/GYN",
+   "White Scrubs (Pants)"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f038",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#c3875c",
+  "name": "Hazel Robinson",
+  "hair": [
+   5591459794
+  ],
+  "hairName": "Brunette Messy Bun",
+  "shirt": 136568372915877,
+  "pants": 7415534613,
+  "outfit": [
+   "Number Nine Hardcore Logo Cardigan Sweater",
+   "Formal Pants"
+  ],
+  "accessories": [],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f039",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#f1cfb5",
+  "name": "Willow Young",
+  "hair": [
+   14899639764
+  ],
+  "hairName": "Manga Messy Half Up Hair (Black)",
+  "shirt": 134621006241247,
+  "pants": 382537950,
+  "outfit": [
+   "pink plaid dress (shirt",
+   "Jean Shorts with White Shoes"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f040",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#b67a53",
+  "name": "Brooke Nelson",
+  "hair": [
+   15858488633
+  ],
+  "hairName": "Long Soft Dutch Braid  (Blonde)",
+  "shirt": 84224179619413,
+  "pants": 109437600584609,
+  "outfit": [
+   "thrifted striped polo",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f041",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#f1cfb5",
+  "name": "Taylor Phillips",
+  "hair": [
+   15858488633
+  ],
+  "hairName": "Long Soft Dutch Braid  (Blonde)",
+  "shirt": 76997048714989,
+  "pants": 1860814442,
+  "outfit": [
+   "Shirt",
+   "Chef Pants"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f042",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#e6b48c",
+  "name": "Morgan Rogers",
+  "hair": [
+   104164430679537
+  ],
+  "hairName": "Black Locs w Ponytail",
+  "shirt": 4728419660,
+  "pants": 6602166195,
+  "outfit": [
+   "Black Overalls w/ Mint Hoodie",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f043",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#f6dcc8",
+  "name": "Bailey Howard",
+  "hair": [
+   12661008587
+  ],
+  "hairName": "Long Misfit Mullet in Black",
+  "shirt": 6948525547,
+  "pants": 6314613214,
+  "outfit": [
+   "Black Sleeveless Turtleneck Shirt",
+   "black pleated skirt || black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f044",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#b67a53",
+  "name": "Carmen Wood",
+  "hair": [
+   108683367154686
+  ],
+  "hairName": "Preppy Braided Buns Hair (Milktea Brown)",
+  "shirt": 129713293784379,
+  "pants": 109437600584609,
+  "outfit": [
+   "White Givenchy Star Polo",
+   "Grey Leggings"
+  ],
+  "accessories": [
+   130568043270999
+  ]
+ },
+ {
+  "id": "f045",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#ecc3a3",
+  "name": "Elena Miller",
+  "hair": [
+   14899639764
+  ],
+  "hairName": "Manga Messy Half Up Hair (Black)",
+  "shirt": 82138561539385,
+  "pants": 103500044558995,
+  "outfit": [
+   "Pink Stripe Shirt with Neck Tie (kalcer style)",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f046",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#a8714f",
+  "name": "Sofia Jackson",
+  "hair": [
+   8705233070
+  ],
+  "hairName": "Silky Afro Pigtails",
+  "shirt": 4876696710,
+  "pants": 107934153353934,
+  "outfit": [
+   "Pink blouse ",
+   "baggy gym sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f047",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#e6b48c",
+  "name": "Valeria Robinson",
+  "hair": [
+   11856685029
+  ],
+  "hairName": "Layered Curtain Bangs in Blonde & Brown",
+  "shirt": 126285958081780,
+  "pants": 72210379788544,
+  "outfit": [
+   "Black tee",
+   "Plain Black Jeans With Boots"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f048",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#f1cfb5",
+  "name": "Gabby Young",
+  "hair": [
+   7061583264
+  ],
+  "hairName": "Bun Hair with Flower Hairpin",
+  "shirt": 131205147854169,
+  "pants": 2688157000,
+  "outfit": [
+   "Formal Shirt -",
+   "vintage checked brown trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f049",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#e6b48c",
+  "name": "Rosa Hill",
+  "hair": [
+   16291393461
+  ],
+  "hairName": "Black Messy Bun",
+  "shirt": 82138561539385,
+  "pants": 6652024161,
+  "outfit": [
+   "Pink Stripe Shirt with Neck Tie (kalcer style)",
+   "khaki trousers"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "f050",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#b67a53",
+  "name": "Tia Parker",
+  "hair": [
+   13884716114
+  ],
+  "hairName": "Brown Layered Bob with Bangs",
+  "shirt": 6829369338,
+  "pants": 5944768364,
+  "outfit": [
+   "Medical Scrubs Navy Blue +",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f051",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#c3875c",
+  "name": "Keisha Reed",
+  "hair": [
+   9605313021
+  ],
+  "hairName": "Preppy braided loose buns in blonde",
+  "shirt": 6999290186,
+  "pants": 7415534613,
+  "outfit": [
+   "formal black sweater",
+   "Formal Pants"
+  ],
+  "accessories": [],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f052",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#f1cfb5",
+  "name": "Nadia Howard",
+  "hair": [
+   131965286999284
+  ],
+  "hairName": "Tilted Messy Buns (Black)",
+  "shirt": 126573586724044,
+  "pants": 106164549779377,
+  "outfit": [
+   "Blue Splatter STREETS tee.",
+   "pink skirt with white socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f053",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#a8714f",
+  "name": "Priya Wood",
+  "hair": [
+   4762658406
+  ],
+  "hairName": "Bead Pigtails In Black",
+  "shirt": 88173808109921,
+  "pants": 6123348701,
+  "outfit": [
+   "MAAP Logo-Print Cycling Vest",
+   "Light Grey Sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f054",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#ecc3a3",
+  "name": "Maddie Davis",
+  "hair": [
+   122988594975561
+  ],
+  "hairName": "Double Curly Braids in Black",
+  "shirt": 144076436,
+  "pants": 6602166195,
+  "outfit": [
+   "Grey Striped Shirt with Denim Jacket",
+   "Grey Chef Pants"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f055",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#9a6444",
+  "name": "Lexi Jackson",
+  "hair": [
+   7062095862
+  ],
+  "hairName": "Brown Locs",
+  "shirt": 135872548989088,
+  "pants": 72210379788544,
+  "outfit": [
+   "fuzzy black & white striped sweater",
+   "Plain Black Jeans With Boots"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f056",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#dca67c",
+  "name": "Becca Robinson",
+  "hair": [
+   135209332340050
+  ],
+  "hairName": "Long Layered Jellyfish Hair with Bangs in Black",
+  "shirt": 5510979986,
+  "pants": 103500044558995,
+  "outfit": [
+   "flannel shirt",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f057",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#9a6444",
+  "name": "Gwen King",
+  "hair": [
+   131965286999284
+  ],
+  "hairName": "Tilted Messy Buns (Black)",
+  "shirt": 99978212949301,
+  "pants": 531606150,
+  "outfit": [
+   "Ego Hooded Tee without tats",
+   "Sweatpants"
+  ],
+  "accessories": [
+   7856863608
+  ]
+ },
+ {
+  "id": "f058",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#c3875c",
+  "name": "Olivia Nelson",
+  "hair": [
+   124334807330180
+  ],
+  "hairName": "Messy Low Ponytail in Brown",
+  "shirt": 134073243937495,
+  "pants": 103500044558995,
+  "outfit": [
+   "polo pink",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f059",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#9a6444",
+  "name": "Emma Phillips",
+  "hair": [
+   5165702629
+  ],
+  "hairName": "Dream Girl Low Pigtails Blonde",
+  "shirt": 120306059275285,
+  "pants": 85926546050440,
+  "outfit": [
+   "pink hoodie",
+   "School girl pleat skirt"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f060",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#9a6444",
+  "name": "Ava Rogers",
+  "hair": [
+   14915534033
+  ],
+  "hairName": "Messy Wavy Hairstyle(Blonde)",
+  "shirt": 132682463182191,
+  "pants": 72210379788544,
+  "outfit": [
+   "grey polo hoodie",
+   "Plain Black Jeans With Boots"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f061",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#ecc3a3",
+  "name": "Sophia Howard",
+  "hair": [
+   15895035990
+  ],
+  "hairName": "Braided Low Buns(Brown)",
+  "shirt": 75648623476384,
+  "pants": 7448820531,
+  "outfit": [
+   "gray polo",
+   "black trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f062",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#dca67c",
+  "name": "Isabella Barnes",
+  "hair": [
+   7133444268
+  ],
+  "hairName": "Shoreline Half-up Buns in Blonde",
+  "shirt": 83011153202867,
+  "pants": 2688157000,
+  "outfit": [
+   "Coat (+",
+   "vintage checked brown trousers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f063",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#b67a53",
+  "name": "Mia Wilson",
+  "hair": [
+   139799065975836
+  ],
+  "hairName": "Messy bun (Black)",
+  "shirt": 1413392300,
+  "pants": 5944768364,
+  "outfit": [
+   "Scrubs+",
+   "Dark Blue Scrub Pants [-]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f064",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#a8714f",
+  "name": "Amelia Jackson",
+  "hair": [
+   9605313021
+  ],
+  "hairName": "Preppy braided loose buns in blonde",
+  "shirt": 6467531805,
+  "pants": 6652024161,
+  "outfit": [
+   "Red+Dark blue striped blouse",
+   "khaki trousers"
+  ],
+  "accessories": [],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f065",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#ecc3a3",
+  "name": "Harper Robinson",
+  "hair": [
+   4876456635
+  ],
+  "hairName": "Wavy Side Part",
+  "shirt": 138498361609157,
+  "pants": 107934153353934,
+  "outfit": [
+   "White shirt",
+   "baggy gym sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f066",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#f6dcc8",
+  "name": "Evelyn Young",
+  "hair": [
+   7168295329
+  ],
+  "hairName": "Black Messy Ponytail & Bangs",
+  "shirt": 84831639942736,
+  "pants": 109437600584609,
+  "outfit": [
+   "8 polo",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f067",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#f1cfb5",
+  "name": "Abigail Nelson",
+  "hair": [
+   14354806550
+  ],
+  "hairName": "Soft Messy Braid in Blonde",
+  "shirt": 134676844684876,
+  "pants": 97118097068276,
+  "outfit": [
+   "Black Polo",
+   "dark pants"
+  ],
+  "accessories": [
+   11884330
+  ]
+ },
+ {
+  "id": "f068",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#dca67c",
+  "name": "Emily Phillips",
+  "hair": [
+   17832723362
+  ],
+  "hairName": "Mel's Shaggy rockstar curly mullet (Black)",
+  "shirt": 81735727343320,
+  "pants": 76376344470136,
+  "outfit": [
+   "Black and white striped shirt",
+   "grey jeans"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f069",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#b67a53",
+  "name": "Ella Rogers",
+  "hair": [
+   135209332340050
+  ],
+  "hairName": "Long Layered Jellyfish Hair with Bangs in Black",
+  "shirt": 79761866360161,
+  "pants": 6314613214,
+  "outfit": [
+   "vintage faded t shirt",
+   "black pleated skirt || black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f070",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#b67a53",
+  "name": "Chloe Howard",
+  "hair": [
+   16291393461
+  ],
+  "hairName": "Black Messy Bun",
+  "shirt": 135285143969442,
+  "pants": 109437600584609,
+  "outfit": [
+   "Black Hoodie + HeadPhones",
+   "Grey Leggings"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f071",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#f1cfb5",
+  "name": "Grace Wood",
+  "hair": [
+   6346367086
+  ],
+  "hairName": "Wavy Side Part w/ Simple Edges",
+  "shirt": 99427838709553,
+  "pants": 103500044558995,
+  "outfit": [
+   "polo",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f072",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#9a6444",
+  "name": "Lily Davis",
+  "hair": [
+   7969585520
+  ],
+  "hairName": "Loose Blonde Pigtails",
+  "shirt": 5097955152,
+  "pants": 73311753065706,
+  "outfit": [
+   "White w/ Pink Stripes Sweater",
+   "joggers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f073",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#f6dcc8",
+  "name": "Zoe Jackson",
+  "hair": [
+   15618744269
+  ],
+  "hairName": "Long Wavy Lush Tucked Back Hair (Blonde)",
+  "shirt": 144076436,
+  "pants": 6602166195,
+  "outfit": [
+   "Grey Striped Shirt with Denim Jacket",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f074",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#cf9668",
+  "name": "Riley Robinson",
+  "hair": [
+   5857744668
+  ],
+  "hairName": "Cute Bob Hairstyle Black ",
+  "shirt": 6708696844,
+  "pants": 120354938116112,
+  "outfit": [
+   "Black Suit w Belt Top Suit - Top Suit Black Dress",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f075",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#a8714f",
+  "name": "Nora Young",
+  "hair": [
+   5591459794
+  ],
+  "hairName": "Brunette Messy Bun",
+  "shirt": 78013815276971,
+  "pants": 3651862159,
+  "outfit": [
+   "White   Polo",
+   "Grey plaid trousers w/ black high top sneakers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f076",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#f6dcc8",
+  "name": "Hannah Campbell",
+  "hair": [
+   108683367154686
+  ],
+  "hairName": "Preppy Braided Buns Hair (Milktea Brown)",
+  "shirt": 16031948559,
+  "pants": 6669237943,
+  "outfit": [
+   "Scrubs +",
+   "Blue Medical Scrub Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f077",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#f6dcc8",
+  "name": "Layla Phillips",
+  "hair": [
+   7133444268
+  ],
+  "hairName": "Shoreline Half-up Buns in Blonde",
+  "shirt": 125023586525859,
+  "pants": 6652024161,
+  "outfit": [
+   "Brown Plaid Jacket w White Sweatshirt",
+   "khaki trousers"
+  ],
+  "accessories": [],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f078",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#f1cfb5",
+  "name": "Aria Rogers",
+  "hair": [
+   6376832169
+  ],
+  "hairName": "Blonde Valentines Hairstyle",
+  "shirt": 126573586724044,
+  "pants": 6602166195,
+  "outfit": [
+   "Blue Splatter STREETS tee.",
+   "Grey Chef Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f079",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#f1cfb5",
+  "name": "Maya Howard",
+  "hair": [
+   7668491285
+  ],
+  "hairName": "Brown Popular Back Braids",
+  "shirt": 84831639942736,
+  "pants": 132071203441084,
+  "outfit": [
+   "8 polo",
+   "preppy sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f080",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#a8714f",
+  "name": "Jasmine Wood",
+  "hair": [
+   5067667033
+  ],
+  "hairName": "Blonde Double Braid Wrap",
+  "shirt": 76997048714989,
+  "pants": 2688157000,
+  "outfit": [
+   "Shirt",
+   "vintage checked brown trousers"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f081",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#dca67c",
+  "name": "Kayla Davis",
+  "hair": [
+   7175874678
+  ],
+  "hairName": "Black City Beret Hair",
+  "shirt": 9291160487,
+  "pants": 97118097068276,
+  "outfit": [
+   "Tie Dye Shirt",
+   "dark pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f082",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#9a6444",
+  "name": "Brianna Jackson",
+  "hair": [
+   12661008587
+  ],
+  "hairName": "Long Misfit Mullet in Black",
+  "shirt": 6948525547,
+  "pants": 899151344,
+  "outfit": [
+   "Black Sleeveless Turtleneck Shirt",
+   "plaid trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f083",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#b67a53",
+  "name": "Destiny Robinson",
+  "hair": [
+   9671930695
+  ],
+  "hairName": "Mockeri's Black Luscious Ponytail",
+  "shirt": 110797869888281,
+  "pants": 398633812,
+  "outfit": [
+   "Gray polo grey polo swag true religion affliction",
+   "Black Jeans with White Shoes"
+  ],
+  "accessories": [
+   10943571579
+  ]
+ },
+ {
+  "id": "f084",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#a8714f",
+  "name": "Imani Young",
+  "hair": [
+   9932882251
+  ],
+  "hairName": "Windy Middle Part Waves in Black",
+  "shirt": 122692416575580,
+  "pants": 103500044558995,
+  "outfit": [
+   "Soft Blue Stripe Shirt w Neck Tie (kalcer style)",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f085",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#dca67c",
+  "name": "Aaliyah Nelson",
+  "hair": [
+   9360912905
+  ],
+  "hairName": "Flowy Low Pigtails with Curtain Bangs in Black",
+  "shirt": 134621006241247,
+  "pants": 73311753065706,
+  "outfit": [
+   "pink plaid dress (shirt",
+   "joggers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f086",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#dca67c",
+  "name": "Nia Phillips",
+  "hair": [
+   15895035990
+  ],
+  "hairName": "Braided Low Buns(Brown)",
+  "shirt": 111776479099725,
+  "pants": 97118097068276,
+  "outfit": [
+   "Classic White T-Shirt (FAV IT PLEASE!)",
+   "dark pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f087",
+  "sex": "f",
+  "archetype": "office",
+  "age": "adult",
+  "personality": "Power suit, color-coded calendar.",
+  "skin": "#a8714f",
+  "name": "Sienna Rogers",
+  "hair": [
+   7061583264
+  ],
+  "hairName": "Bun Hair with Flower Hairpin",
+  "shirt": 131205147854169,
+  "pants": 7448820531,
+  "outfit": [
+   "Formal Shirt -",
+   "black trousers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f088",
+  "sex": "f",
+  "archetype": "teacher",
+  "age": "adult",
+  "personality": "Kind voice, red pen of doom.",
+  "skin": "#a8714f",
+  "name": "Paige Howard",
+  "hair": [
+   12727863138
+  ],
+  "hairName": "Ballerina Low Side Bun- Brown",
+  "shirt": 75648623476384,
+  "pants": 3651862159,
+  "outfit": [
+   "gray polo",
+   "Grey plaid trousers w/ black high top sneakers"
+  ],
+  "accessories": [
+   4197739997
+  ]
+ },
+ {
+  "id": "f089",
+  "sex": "f",
+  "archetype": "nurse",
+  "age": "adult",
+  "personality": "Night shifts, calm in any crisis.",
+  "skin": "#9a6444",
+  "name": "Megan Ross",
+  "hair": [
+   139799065975836
+  ],
+  "hairName": "Messy bun (Black)",
+  "shirt": 5993541401,
+  "pants": 6669237943,
+  "outfit": [
+   "Doctor Scrubs Top",
+   "Blue Medical Scrub Pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f090",
+  "sex": "f",
+  "archetype": "grandma",
+  "age": "adult",
+  "personality": "Hugs, cookies, terrifying when mad.",
+  "skin": "#e6b48c",
+  "name": "Tessa Miller",
+  "hair": [
+   12727863138
+  ],
+  "hairName": "Ballerina Low Side Bun- Brown",
+  "shirt": 6999290186,
+  "pants": 120354938116112,
+  "outfit": [
+   "formal black sweater",
+   "Dark Casual Pants Black Trousers [ - ]"
+  ],
+  "accessories": [
+   4753645975
+  ],
+  "hairTint": "#c9c9c7"
+ },
+ {
+  "id": "f091",
+  "sex": "f",
+  "archetype": "popular",
+  "age": "teen",
+  "personality": "Knows everyone, runs the group chat.",
+  "skin": "#9a6444",
+  "name": "Ruby Jackson",
+  "hair": [
+   7168295329
+  ],
+  "hairName": "Black Messy Ponytail & Bangs",
+  "shirt": 129713293784379,
+  "pants": 73311753065706,
+  "outfit": [
+   "White Givenchy Star Polo",
+   "joggers"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f092",
+  "sex": "f",
+  "archetype": "sporty",
+  "age": "teen",
+  "personality": "Track star, always in a ponytail.",
+  "skin": "#cf9668",
+  "name": "Jade Robinson",
+  "hair": [
+   4762658406
+  ],
+  "hairName": "Bead Pigtails In Black",
+  "shirt": 84224179619413,
+  "pants": 132071203441084,
+  "outfit": [
+   "thrifted striped polo",
+   "preppy sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f093",
+  "sex": "f",
+  "archetype": "bookworm",
+  "age": "teen",
+  "personality": "Reads at lunch, notices everything.",
+  "skin": "#f1cfb5",
+  "name": "Skye Young",
+  "hair": [
+   5067667033
+  ],
+  "hairName": "Blonde Double Braid Wrap",
+  "shirt": 382537085,
+  "pants": 6314613214,
+  "outfit": [
+   "I <3 Pizza Shirt",
+   "black pleated skirt || black socks"
+  ],
+  "accessories": [
+   301820310
+  ]
+ },
+ {
+  "id": "f094",
+  "sex": "f",
+  "archetype": "artsy",
+  "age": "teen",
+  "personality": "Thrifted clothes, paints murals.",
+  "skin": "#c3875c",
+  "name": "Ivy Nelson",
+  "hair": [
+   8327000450
+  ],
+  "hairName": "Pigtail Locs Brown",
+  "shirt": 4728419660,
+  "pants": 97118097068276,
+  "outfit": [
+   "Black Overalls w/ Mint Hoodie",
+   "dark pants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f095",
+  "sex": "f",
+  "archetype": "goth",
+  "age": "teen",
+  "personality": "Black lipstick energy, loyal friend.",
+  "skin": "#b67a53",
+  "name": "Luna Phillips",
+  "hair": [
+   6376240819
+  ],
+  "hairName": "Long Punk Buns & Choppy Bangs",
+  "shirt": 5510979986,
+  "pants": 103500044558995,
+  "outfit": [
+   "flannel shirt",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f096",
+  "sex": "f",
+  "archetype": "gamer",
+  "age": "teen",
+  "personality": "Beats the boys at every game.",
+  "skin": "#dca67c",
+  "name": "Hazel Rogers",
+  "hair": [
+   124334807330180
+  ],
+  "hairName": "Messy Low Ponytail in Brown",
+  "shirt": 398633584,
+  "pants": 109437600584609,
+  "outfit": [
+   "Denim Jacket with White Hoodie",
+   "Grey Leggings"
+  ],
+  "accessories": [
+   124442197389942
+  ]
+ },
+ {
+  "id": "f097",
+  "sex": "f",
+  "archetype": "preppy",
+  "age": "teen",
+  "personality": "Tennis on Saturdays, perfect grades.",
+  "skin": "#e6b48c",
+  "name": "Willow Howard",
+  "hair": [
+   6376832169
+  ],
+  "hairName": "Blonde Valentines Hairstyle",
+  "shirt": 136568372915877,
+  "pants": 103500044558995,
+  "outfit": [
+   "Number Nine Hardcore Logo Cardigan Sweater",
+   "black pleated skirt  black socks"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f098",
+  "sex": "f",
+  "archetype": "cute",
+  "age": "teen",
+  "personality": "Sweet, giggly, loves pastel.",
+  "skin": "#9a6444",
+  "name": "Brooke Wood",
+  "hair": [
+   14656909197
+  ],
+  "hairName": "Candy Curly Pigtails Black",
+  "shirt": 74733757527820,
+  "pants": 107934153353934,
+  "outfit": [
+   "White w Pink Stripes Sweater",
+   "baggy gym sweatpants"
+  ],
+  "accessories": []
+ },
+ {
+  "id": "f099",
+  "sex": "f",
+  "archetype": "mom",
+  "age": "adult",
+  "personality": "Calls twice, worries always, best cook.",
+  "skin": "#dca67c",
+  "name": "Taylor Davis",
+  "hair": [
+   9932882251
+  ],
+  "hairName": "Windy Middle Part Waves in Black",
+  "shirt": 6149324873,
+  "pants": 398633812,
+  "outfit": [
+   "Vlone Polo (White)",
+   "Black Jeans with White Shoes"
+  ],
+  "accessories": []
+ }
+]

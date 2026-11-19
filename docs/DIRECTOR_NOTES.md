@@ -188,3 +188,15 @@ applies to storytime. Explainer-only rules (Brain HQ, "You see", the tickle reci
   the wall), clipping pieces. RULE: every set build runs the furnish self-check (clips / through walls / doorways / loose
   pieces auto-nudged) AND I look at every still before sending. Chairs face what they serve (table, desk, TV). Nothing
   goes out with a known clash.
+- 2026-11-19 01:41 Character bank v1 (angry): m000 "jock" in overalls + mint hoodie, m002 hair through the cap, m006 3D
+  sleeves swallowing the hands, m007 colour riot (plaid + purple), m008 reads as a woman, m009 / m011 broken sleeves,
+  m010 in women's clothing. "LOOK AT EVERY SINGLE CHARACTER, BOTH MALE AND FEMALE." RULE: every generated character is
+  looked at by me, one by one at full size, with a written pass / fail per id, BEFORE any sheet is sent. Generator rules:
+  men get men's hair (short / medium, nothing past the jaw) and men's clothes (no crop, no bare belly, no blouses);
+  outfits match the archetype; pants plain or denim, max one loud piece per outfit; no hat over hair that pokes through;
+  no garment whose sleeves cover the hands or end in broken bands.
+- 2026-11-19 01:49 "textures flipped upside down, pants way too high, all look very low quality": BOTH were my bugs.
+  (a) female torso UVs were processed twice per vertex (gridRoundedBox) so every print on the girls' torso was upside
+  down and zigzag-warped, which put pant waistbands at the chest; fixed + 16 columns on the pinched torso. (b) sheets
+  drew clothing at res 256 (1/8). RULE: any new body / mesh gets the labelled test template (assets/_test_shirt.png,
+  _test_pants.png: every face named, UP arrow) rendered from 4 sides before use; review sheets render at res 2048.

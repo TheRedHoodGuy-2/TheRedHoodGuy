@@ -49,8 +49,10 @@ function grain() {
 
 const FACE_OF_GROUP = ['right', 'left', 'top', 'bottom', 'back', 'front'];   // BoxGeometry groups: +x -x +y -y +z -z, in Roblox space
 // a rounded box with rows of vertices down the flat sides too (RoundedBoxGeometry has none there, so it cannot be bent)
-function gridRoundedBox(w, h, d, r, rows) {
-  const k = 4, n = 2 * k + 1, ny = 2 * k + rows, g = new THREE.BoxGeometry(1, 1, 1, n, ny, n), P = g.attributes.position;
+function gridRoundedBox(w, h, d, r, rows, cols = 1) {
+  // cols: segments across the flat front / sides. The female torso is pinched per row, and one wide quad per row warped
+  // the print into a zigzag (2026-11-19), so it gets many columns.
+  const k = 4, n = 2 * k + cols, ny = 2 * k + rows, g = new THREE.BoxGeometry(1, 1, 1, n, ny, n), P = g.attributes.position;
   const map = (t, half, cnt) => {   // grid index -> position: k rows inside each bevel band, the rest spread over the flat
     const i = Math.round((t + .5) * cnt), j = Math.min(i, cnt - i), side = i * 2 < cnt ? -1 : 1;
     if (j <= k) return side * (half - r + r * (k - j) / k);
@@ -58,8 +60,9 @@ function gridRoundedBox(w, h, d, r, rows) {
   };
   // UVs must follow the real positions (the box spaces them by grid index, which squashed the flat middle into 1/9 of the texture)
   const UV = g.attributes.uv, AX = [[2, 1], [2, 1], [0, 2], [0, 2], [0, 1], [0, 1]], dims = [w, h, d];
+  const done = new Set();   // each vertex once: it is shared by several triangles, and a second pass re-tested the already-fixed UV and flipped it back (2026-11-19: female torso prints came out upside down and warped)
   g.groups.forEach((gr, gi) => { for (let q = gr.start; q < gr.start + gr.count; q++) {
-    const i = g.index.getX(q), t = [P.getX(i), P.getY(i), P.getZ(i)], m = [map(t[0], w / 2, n), map(t[1], h / 2, ny), map(t[2], d / 2, n)];
+    const i = g.index.getX(q); if (done.has(i)) continue; done.add(i); const t = [P.getX(i), P.getY(i), P.getZ(i)], m = [map(t[0], w / 2, n), map(t[1], h / 2, ny), map(t[2], d / 2, n)];
     const fix = (val, a) => Math.abs(val - (t[a] + .5)) < 1e-5 ? m[a] / dims[a] + .5 : .5 - m[a] / dims[a];
     UV.setXY(i, fix(UV.getX(i), AX[gi][0]), fix(UV.getY(i), AX[gi][1]));
   } });
@@ -78,8 +81,8 @@ function smoothNormals(g) {
   for (let i = 0; i < P.count; i++) { const a = acc.get(key(i)), l = Math.hypot(...a) || 1; N.setXYZ(i, a[0] / l, a[1] / l, a[2] / l); }
   return g;
 }
-function block(part, w, h, d, bevel, rows = 0) {
-  const geo = rows ? gridRoundedBox(w, h, d, bevel, rows) : new RoundedBoxGeometry(w, h, d, 4, bevel), uv = geo.attributes.uv, idx = geo.index, seen = new Set();
+function block(part, w, h, d, bevel, rows = 0, cols = 1) {
+  const geo = rows ? gridRoundedBox(w, h, d, bevel, rows, cols) : new RoundedBoxGeometry(w, h, d, 4, bevel), uv = geo.attributes.uv, idx = geo.index, seen = new Set();
   geo.groups.forEach((gr, gi) => {
     const f = FACE_OF_GROUP[gi], [x, y, rw, rh] = LAYOUT[part][f], flip = f === 'top' || f === 'bottom';
     for (let k = gr.start; k < gr.start + gr.count; k++) {
@@ -207,7 +210,7 @@ export async function makeR6(spec = {}) {
   const joints = { root: J('root'), neck: J('neck'), shoulderR: J('shoulderR'), shoulderL: J('shoulderL'), hipR: J('hipR'), hipL: J('hipL') };
   joints.root.position.set(0, 3, 0); rbx.add(joints.root);
   const parts = {};
-  const tg = sex === 'f' ? femaleTorso(block('torso', 2, 2, 1, bevel, 20)) : block('torso', 2, 2, 1, bevel);
+  const tg = sex === 'f' ? femaleTorso(block('torso', 2, 2, 1, bevel, 20, 16)) : block('torso', 2, 2, 1, bevel);
   parts.torso = mesh(tg, bodyMat); joints.root.add(parts.torso);
   const hang = (joint, pivot, part, key, w, off) => { joint.position.set(...pivot); joints.root.add(joint); parts[key] = mesh(block(part, w, 2, 1, bevel), bodyMat); parts[key].position.set(...off); joint.add(parts[key]); };
   hang(joints.shoulderR, [1, .5, 0], 'armR', 'armR', 1, [.5, -.5, 0]); hang(joints.shoulderL, [-1, .5, 0], 'armL', 'armL', 1, [-.5, -.5, 0]);
@@ -242,7 +245,14 @@ export async function makeR6(spec = {}) {
     for (const p of meta.parts) {
       const gltf = await new GLTFLoader().loadAsync(url(`assets/roblox/${id}/${p.file}`)); const handle = new THREE.Group(); handle.add(gltf.scene);
       gltf.scene.traverse(o => { if (o.isMesh && String(p.meshVersion || '').startsWith('7')) o.geometry.computeVertexNormals(); });   // v7 meshes come out with broken normals (rendered black)
-      gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; const m = o.material; o.material = new THREE.MeshStandardMaterial({ map: m.map || null, color: tint ? new THREE.Color(tint) : (m.map ? 0xffffff : new THREE.Color(...(p.color || [163, 162, 165]).map(v => v / 255))), roughness: .7, metalness: 0, side: THREE.DoubleSide }); if (o.material.map) o.material.map.colorSpace = THREE.SRGBColorSpace; } });
+      gltf.scene.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; const m = o.material; let map = m.map || null;
+        // a tint (grey hair for grandparents) recolours the texture: strands keep their light / dark detail but lose their own hue.
+        // Multiplying a blonde map by grey only gave darker blonde (2026-11-19), so the map is made grey first, lifted to the tint.
+        if (tint && map?.image) { const im = map.image, cv = document.createElement('canvas'); cv.width = im.width; cv.height = im.height; const x = cv.getContext('2d'); x.drawImage(im, 0, 0);
+          const d = x.getImageData(0, 0, cv.width, cv.height), a = d.data, tc = new THREE.Color(tint), T = [tc.r, tc.g, tc.b].map(v => Math.round(Math.pow(v, 1 / 2.2) * 255));
+          for (let i = 0; i < a.length; i += 4) { const l = (.3 * a[i] + .59 * a[i + 1] + .11 * a[i + 2]) / 255, k = .55 + .45 * l; a[i] = T[0] * k; a[i + 1] = T[1] * k; a[i + 2] = T[2] * k; }
+          x.putImageData(d, 0, 0); const t2 = new THREE.CanvasTexture(cv); t2.flipY = map.flipY; t2.wrapS = map.wrapS; t2.wrapT = map.wrapT; map = t2; }
+        o.material = new THREE.MeshStandardMaterial({ map, color: tint && !map ? new THREE.Color(tint) : (map ? 0xffffff : new THREE.Color(...(p.color || [163, 162, 165]).map(v => v / 255))), roughness: .7, metalness: 0, side: THREE.DoubleSide }); if (o.material.map) o.material.map.colorSpace = THREE.SRGBColorSpace; } });
       // line the handle's attachment up with the same-named attachment on the body
       let done = false;
       for (const a of p.attachments) for (const [pk, list] of Object.entries(ATTACH)) if (!done && list[a.name] && (!part || part === pk)) {
@@ -256,7 +266,8 @@ export async function makeR6(spec = {}) {
     }
     return out;
   };
-  for (const h of spec.hair || []) await api.wear(h, { tint: spec.hairTint || null });
-  for (const a of spec.accessories || []) await api.wear(a);
+  // one broken item (missing file, bad mesh) is skipped and reported, never allowed to strip the rest of the look
+  for (const h of spec.hair || []) await api.wear(h, { tint: spec.hairTint || null }).catch(e => console.error('BADITEM', h, String(e).slice(0, 80)));
+  for (const a of spec.accessories || []) await api.wear(a).catch(e => console.error('BADITEM', a, String(e).slice(0, 80)));
   return api;
 }
