@@ -22,7 +22,10 @@ export const LIB = {
   wallpaper:      { dir: 'gen/wallpaper_stripe', kind: 'tint', size: .9, color: '#b9cfe6', rough: 1, normal: 1, note: 'striped wallpaper (Gneef bedrooms)' },
   brick:          { dir: 'ph/brick_wall_001', kind: 'natural', size: 2.2, rough: 1, normal: 1.2, note: 'red brick (houses, school)' },
   brick_painted:  { dir: 'ph/painted_brick', kind: 'tint', size: 2.2, color: '#f1ede4', rough: 1, normal: 1.2, note: 'painted brick' },
+  cmu:            { dir: 'gen/cmu_block', kind: 'tint', size: 1.62 * 1.4, color: '#dfe6ea', rough: .85, normal: .5, note: 'painted concrete block 8x16 in, running bond (US school walls)' },
   // floors
+  vct:            { dir: 'gen/vct_floor', kind: 'natural', size: 1.22 * 1.4, rough: 1, normal: .6, note: 'waxed VCT tile, 12 in squares, speckled (US school floors)' },
+  ceilingTile:    { dir: 'gen/ceiling_tile', kind: 'tint', size: .6 * 1.4, color: '#eceeef', rough: 1, normal: .8, note: 'suspended acoustic ceiling tile 2x2 ft' },
   wood_floor:     { dir: 'ph/wood_floor', kind: 'natural', size: 2.4, rough: .9, normal: 1, note: 'wood boards' },
   laminate:       { dir: 'ph/laminate_floor_02', kind: 'natural', size: 2.4, rough: .8, normal: .8, note: 'laminate / light oak' },
   parquet:        { dir: 'ph/herringbone_parquet', kind: 'natural', size: 1.6, rough: .8, normal: 1, note: 'herringbone parquet (living rooms)' },
