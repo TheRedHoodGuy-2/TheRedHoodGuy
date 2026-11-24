@@ -167,8 +167,10 @@ function snapSleeve(piece) {
       for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); v.y = ymax - (ymax - v.y) * k; v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); } }
     // snug fit (Xavier 2026-11-19 16:50: the sleeve looked fat and weirdly placed): centre the sleeve on the arm's axis and
     // scale its cross-section so it sits just outside the block (half-size .56 stud vs the arm's .5) along its whole length
+    // only for a sleeve that hangs down the arm (a T-pose / horizontal sleeve is left as modelled)
     const xb = new THREE.Box3(); for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); if (v.y > -1 && v.y < .9) xb.expandByPoint(v); }
-    if (!xb.isEmpty()) { const cx = (xb.min.x + xb.max.x) / 2, cz = (xb.min.z + xb.max.z) / 2, sx = .56 / Math.max(.3, (xb.max.x - xb.min.x) / 2), sz = .56 / Math.max(.3, (xb.max.z - xb.min.z) / 2);
+    if (globalThis.SNUG_DBG) console.error('SLEEVE', (ymax - ymin).toFixed(2), xb.isEmpty() ? '-' : ((xb.max.x - xb.min.x) / 2).toFixed(2), xb.isEmpty() ? '-' : ((xb.max.z - xb.min.z) / 2).toFixed(2));
+    if (!xb.isEmpty() && ymax - ymin > 1.2 && xb.max.x - xb.min.x < 1.8 && xb.max.z - xb.min.z < 1.8) { const cx = (xb.min.x + xb.max.x) / 2, cz = (xb.min.z + xb.max.z) / 2, sx = .56 / Math.max(.3, (xb.max.x - xb.min.x) / 2), sz = .56 / Math.max(.3, (xb.max.z - xb.min.z) / 2);
       for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); v.x = (v.x - cx) * sx; v.z = (v.z - cz) * sz; v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); } }
     P.needsUpdate = true; piece.geometry.computeVertexNormals(); }
   // no per-vertex push: where the arm block shows through it is painted in the garment colour (underlay), so it reads as sleeve

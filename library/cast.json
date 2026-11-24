@@ -104,10 +104,10 @@
   "faceSet": "ai:16_shy_moe_smirk"
  },
  "swapB": {
-  "base": "f001"
+  "base": "f020"
  },
  "swapB_m": {
-  "base": "f001",
+  "base": "f020",
   "sex": "m",
   "hair": [
    8966711821
