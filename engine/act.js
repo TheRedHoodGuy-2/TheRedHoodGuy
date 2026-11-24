@@ -88,7 +88,7 @@ export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {})
     }
     for (const f of fxs) { const u = (t - f.t + .18) / f.dur; f.G.visible = u > 0 && u < 1; if (!f.G.visible) continue;
       const p = f.who.a.root.position; f.G.position.set(p.x, p.y, p.z);
-      for (const q of f.parts) { const r = .3 + .45 * Math.sqrt(u); q.m.position.set(q.d.x * r, q.h + u * .3, q.d.z * r); q.m.scale.setScalar(q.s * (.6 + u * .9)); q.m.material.opacity = u < .25 ? u / .25 : Math.max(0, 1 - (u - .25) / .75); } }
+      for (const q of f.parts) { const r = .3 + .45 * Math.sqrt(u); q.m.position.set(q.d.x * r, q.h + u * .3, q.d.z * r); q.m.scale.setScalar(q.s * .62 * (.6 + u * .9)); q.m.material.opacity = .85 * (u < .25 ? u / .25 : Math.max(0, 1 - (u - .25) / .75)); } }
   };
   function faceUpdate(A, t) {
     if (A.kind === 'static') return;

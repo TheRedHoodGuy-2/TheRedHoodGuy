@@ -68,7 +68,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const TIMES = {   // sun az / el, colour, strength, sky fill, sky dome, exposure
     day:    { az: 200, el: 52, col: '#fffaf0', int: 3.5, fill: .9, hs: '#a9cbf2', hg: '#5f6e40', top: '#2f74d6', hor: '#cfe6fb', glow: null, exp: 1.12 },
     sunset: { az: 92, el: null, col: '#ffe8c8', int: 3.0, fill: .95, hs: '#a7c3ea', hg: '#5f6a48', top: '#4f7fcc', hor: '#f3e2cf', glow: '#ffd2a0', exp: 1.15 },
-    dusk:   { az: 92, el: -5, col: '#ff9a70', int: .35, fill: .95, hs: '#6c84c8', hg: '#2c3042', top: '#1d2b57', hor: '#d48a7a', glow: '#e7907a', exp: 1.32 },
+    dusk:   { az: 92, el: -5, col: '#ffb08a', int: .4, fill: 1.25, hs: '#7c94d4', hg: '#353a4c', top: '#22325f', hor: '#c9a6a0', glow: '#e3b08e', exp: 1.6 },
   };
   const sunOff = t => t < 19.4 ? 9 : t < 38.1 ? lerp(4.6, 1.7, (t - 35.5) / 2.6) : t < 48.3 ? lerp(1.7, 0, (t - 38.1) / 10.2) : lerp(0, -2.2, (t - 48.3) / 4.4);   // degrees above the hill line
   let skyKey = '';
@@ -115,7 +115,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.mail.key(11.3, { pose: t => P.skate(t), at: [-3, 4.85], ry: Math.PI / 2 }).key(11.31, { pose: t => P.skate(t), at: [4.6, 4.85], glide: 1.7, ease: 'io' });
   // ======================= 13-19.4 s  UNCLE -> AUNT LINDA (sunset flash, then day) + THE GESTURE =======================
   A.uncle.show(13.0, 14.25).key(13.0, { pose: 'relaxed', at: [-14, -8.4], ry: .2 }).face(13, 'happy');
-  A.tagU.show(13.0, 14.6).run(13.0, [[-15.6, -10.6], [-14.4, -9.15]], { step: .8, T: .3, arm: 1.1, style: { lean: .12 } }); A.tagU.key(13.95, { pose: 'tagArm', upper: true, hold: .4 });
+  A.tagU.show(13.0, 14.6).run(13.0, [[-17.2, -8.9], [-14.55, -8.75]], { step: .8, T: .3, arm: 1.1, style: { lean: .12 } }); A.tagU.key(13.95, { pose: 'tagArm', upper: true, hold: .4 });
   A.tagU.key(14.3, { pose: 'point', ry: .5 }).face(14.2, 'laugh');
   A.aunt.show(14.25, 17.2).key(14.25, { pose: 'stumble', at: [-14, -8.4], ry: .2 }).key(14.6, { pose: 'stand' }).key(15.3, { pose: 'hips', dur: .4 }).face(14.25, 'shocked').face(15.2, 'annoyed');
   S.swap(A.uncle, A.aunt, 14.25);
@@ -136,27 +136,27 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.jay.show(28.1, 30.8).key(28.1, { pose: 'point', at: [-36.2, -11.2], ry: -.6 }).face(28.1, 'laugh');
   A.boy.show(30.8, 35.5).key(30.8, { pose: 'stand', at: [-38.5, -9.8], ry: .4 }).key(31.15, { pose: 'determined', dur: .45 }).face(30.8, 'determined');
   // FALLING, over and over: trip (anticipation) -> fall -> flat on the grass; up again; again
-  for (const f of [33.3, 34.55]) A.boy.key(f - .2, { pose: 'stand', at: [-38.5, -9.8], ry: .4, dur: .15 }).key(f, { pose: 'stumble', dur: .12 }).key(f + .14, { pose: 'fallMid', dur: .14 }).key(f + .3, { pose: 'prone', dur: .14 });
+  for (const [f, up] of [[33.3, 33.1], [34.6, 34.2]]) A.boy.key(up, { pose: 'stand', at: [-38.5, -9.8], ry: .4, dur: up === 34.2 ? .01 : .15 }).key(f, { pose: 'stumble', dur: .12 }).key(f + .14, { pose: 'fallMid', dur: .14 }).key(f + .3, { pose: 'prone', dur: .14 });
   // ======================= 35.5-52.2 s  FRIDAY: THE GAME (clean sunset, street + park x 36-56) =======================
   for (const [n, from, to, t0, st] of [['k1', [40, 1.5], [36, 7], 36.7, .9], ['k2', [41.5, -1], [37.5, -9], 36.75, .85], ['k3', [39, .2], [33, -2], 36.8, .9], ['tagA', [42, 1], [45.5, 6.5], 36.75, .9]]) {
     A[n].show(35.5, 38.0).key(35.5, { pose: 'relaxed', at: from, ry: Math.atan2(to[0] - from[0], to[1] - from[1]) }).run(t0, [from, to], { step: st, T: .3, arm: 1.15, style: { lean: .16 } }); A[n].face(35.5, 'excited'); }
   A.boy.show(35.5, 38.0).key(35.5, { pose: 'determined', at: [40.5, -1.2], ry: Math.PI / 2 }).face(35.5, 'determined');
   A.jay.show(35.5, 38.0).key(35.5, { pose: 'crossArms', at: [41.8, -.6], ry: -Math.PI / 2 }).face(35.5, 'smug');
   // the chase on the park lawn toward +x (the low sun in their faces), Jayden closing in
-  const chase = A.boy.run(39.45, [[42, -7.2], [52.6, -7.2]], { step: .95, T: .29, arm: 1.2, style: { lean: .18 } });
+  const chase = A.boy.run(39.45, [[42, -6.3], [52.6, -6.3]], { step: .95, T: .29, arm: 1.2, style: { lean: .18 } });
   A.boy.show(39.6, 52.1); A.boy.face(39.6, 'scared').face(42.3, 'sly');
   A.boy.key(42.5, { pose: { head: [-1.0, -.05, -.1] }, upper: true, hold: .5 });                                                               // glance back at Jayden
-  A.boy.key(43.2, { pose: 'stumble', at: [52.6, -7.2], ry: Math.PI / 2, dur: .1 }).key(43.36, { pose: 'fallMid', dur: .12 }).key(43.52, { pose: 'prone', dur: .12 });   // the fall (on purpose)
-  A.boy.key(45.45, { pose: 'sitGround', at: [52.9, -7.2], ry: -Math.PI / 2, dur: .01 }).face(45.45, 'nervous');                                    // (cut) sitting up, facing Jayden
-  const HAND = [52.4, .88, -7.15];
-  A.boy.key(47.0, { pose: () => ({ ...P.sitGround, armR: limbTo('armR', P.sitGround.root, local(HAND, 52.9, -7.2, -Math.PI / 2)), head: [0, -.25, 0] }), dur: .45 }).face(48.3, 'sly');
-  A.boy.key(50.4, { pose: () => ({ ...P.sitGround, armR: limbTo('armR', P.sitGround.root, local(HAND, 52.9, -7.2, -Math.PI / 2)), head: [.08, -.22, .14], root: { ...P.sitGround.root, rx: -.18 } }), dur: .25 }).face(50.4, 'smug').talk(50.55, 50.9);
-  A.jay.show(39.6, 52.75).run(39.55, [[40.1, -7.25], [51.6, -7.25]], { step: 1.0, T: .36, arm: 1.2, style: { lean: .2 } });
-  A.jay.key(44.3, { pose: 'skid', at: [51.6, -7.25], ry: Math.PI / 2, dur: .12 }).key(44.75, { pose: 'stand', dur: .35 }).face(44.3, 'surprised').face(45.4, 'nervous').talk(45.5, 46.45);
-  A.jay.key(46.7, { pose: () => ({ ...P.stand, armR: limbTo('armR', { rx: .42 }, local(HAND, 51.6, -7.25, Math.PI / 2)), head: [0, .25, 0], root: { rx: .42 } }), dur: .6, ease: 'io' });
-  A.jay.face(50.75, 'shocked');
+  A.boy.key(43.2, { pose: 'stumble', at: [52.6, -6.3], ry: Math.PI / 2, dur: .1 }).key(43.36, { pose: 'fallMid', dur: .12 }).key(43.52, { pose: 'prone', dur: .12 });   // the fall (on purpose)
+  A.boy.key(45.45, { pose: 'sitGround', at: [52.9, -6.3], ry: -Math.PI / 2, dur: .01 }).face(45.45, 'nervous');                                    // (cut) sitting up, facing Jayden
+  const HAND = [52.4, .88, -6.27];
+  A.boy.key(47.0, { pose: () => ({ ...P.sitGround, armR: limbTo('armR', P.sitGround.root, local(HAND, 52.9, -6.3, -Math.PI / 2)), head: [0, -.25, 0] }), dur: .45 }).face(48.3, 'sly');
+  A.boy.key(50.4, { pose: () => ({ ...P.sitGround, armR: limbTo('armR', P.sitGround.root, local(HAND, 52.9, -6.3, -Math.PI / 2)), head: [.08, -.22, .14], root: { ...P.sitGround.root, rx: -.18 } }), dur: .25 }).face(50.4, 'smug').talk(50.55, 50.9);
+  A.jay.show(39.6, 52.75).run(39.55, [[40.1, -6.35], [51.6, -6.35]], { step: 1.0, T: .36, arm: 1.2, style: { lean: .2 } });
+  A.jay.key(44.3, { pose: 'skid', at: [51.6, -6.35], ry: Math.PI / 2, dur: .12 }).key(44.75, { pose: 'stand', dur: .35 }).face(44.3, 'surprised').face(45.4, 'nervous').talk(45.5, 46.45);
+  A.jay.key(46.7, { pose: () => ({ ...P.stand, armR: limbTo('armR', { rx: .42 }, local(HAND, 51.6, -6.35, Math.PI / 2)), head: [0, .25, 0], root: { rx: .42 } }), dur: .6, ease: 'io' });
+  A.jay.key(50.75, { pose: () => ({ ...P.stand, armR: limbTo('armR', { rx: .22 }, local(HAND, 51.6, -6.35, Math.PI / 2)), head: [0, .05, 0], root: { rx: .22 } }), dur: .15 }).face(50.75, 'shocked');
   // ======================= 52.2-61.7 s  DUSK: THE SWAP + THE SMILE =======================
-  A.jayG.show(52.75, 61.7).key(52.75, { pose: 'stumble', at: [51.6, -7.25], ry: Math.PI / 2 }).key(53.1, { pose: 'stand', dur: .3 }).key(53.65, { pose: 'lookHands', dur: .35 }).key(55.0, { pose: 'touchHair', dur: .3 })
+  A.jayG.show(52.75, 58.7).key(52.75, { pose: 'stumble', at: [51.6, -6.35], ry: Math.PI / 2 }).key(53.1, { pose: 'stand', dur: .3 }).key(53.65, { pose: 'lookHands', dur: .35 }).key(55.0, { pose: 'touchHair', dur: .3 })
     .key(56.0, { pose: 'yell', dur: .2 }).key(56.9, { pose: 'whatGesture', dur: .3 });
   A.jayG.face(52.75, 'shocked').face(53.65, 'scared').face(55.0, 'terrified').face(56.0, 'angry').talk(56.02, 56.5).talk(57.0, 58.62);
   S.swap(A.jay, A.jayG, 52.75);
@@ -168,15 +168,15 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const fixed = (x, y, z, hd = 0) => () => ({ x, y, z, heading: hd });
   const SH = [
     // the rule
-    { t: 0,    dur: 1.3, who: 'kidA', size: 'wide',   angle: 'low',  az: 25,  move: 'push',   speed: 2.4 },
+    { t: 0,    dur: 1.3, who: 'kidA', size: 'wide',   angle: 'eye',  az: 25,  move: 'push',   speed: 2.4 },
     { t: 1.3,  dur: 1.6, who: 'tagA', size: 'full',   angle: 'eye',  az: 55,  move: 'track',  speed: .8 },
     { t: 2.9,  dur: 2.0, who: 'kidAf', size: 'medium', angle: 'eye',  az: 28,  move: 'orbitL', speed: 1.6 },
     { t: 4.9,  dur: 1.5, who: 'kidBm', size: 'full',   angle: 'eye',  az: -35, move: 'truckR', speed: 1.1, at: [26.5, -1.4] },
-    { t: 6.4,  dur: 1.8, who: 'kidBm', size: 'wide',   angle: 'low',  az: 25,  move: 'pull',   speed: 3.0 },
+    { t: 6.4,  dur: 1.8, who: 'kidBm', size: 'wide',   angle: 'high',  az: 25,  move: 'pull',   speed: 3.0 },
     // 5:59, sprinting men, the mailman
     { t: 8.2,  dur: 1.5, who: 'c1',   size: 'medium', angle: 'low',  az: 10,  move: 'punch',  speed: 1.4 },
-    { t: 9.7,  dur: 1.6, who: 'c2',   size: 'full',   angle: 'eye',  az: -8,  move: 'pull',   speed: 1.9 },
-    { t: 11.3, dur: 1.7, who: 'mail', size: 'full',   angle: 'low',  az: 70,  move: 'pan',    speed: 1.0, follow: false },
+    { t: 9.7,  dur: 1.6, who: 'c2',   size: 'wide',   angle: 'high', az: 30,  move: 'pull',   speed: 1.9 },
+    { t: 11.3, dur: 1.7, who: 'mail', size: 'wide',   angle: 'eye',  az: 70,  move: 'pan',    speed: 1.0, follow: false },
     // uncle -> Aunt Linda -> the gesture
     { t: 13.0, dur: 1.6, who: 'uncle', size: 'full',  angle: 'high', az: 15,  move: 'craneDown', speed: 1.5 },
     { t: 14.6, dur: 2.6, who: 'aunt', size: 'medium', angle: 'low',  az: 5,   move: 'push',   speed: .7 },
@@ -187,7 +187,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     { t: 21.9, dur: 1.1, who: 'boy',  size: 'full',   angle: 'eye',  az: 0,   move: 'truckL', speed: 1.0, aimX: .38 },
     { t: 23.0, dur: 1.2, who: 'jay',  size: 'full',   angle: 'eye',  az: -82, move: 'track',  speed: 1.8 },
     { t: 24.2, dur: 2.2, who: 'jay',  size: 'wide',   angle: 'low',  az: 20,  move: 'pull',   speed: .6 },
-    { t: 26.4, dur: 1.7, who: 'boy',  size: 'full',   angle: 'eye',  az: -60, move: 'orbitR', speed: 1.4 },
+    { t: 26.4, dur: 1.7, who: 'boy',  size: 'full',   angle: 'eye',  az: -20, move: 'orbitR', speed: 1.4 },
     { t: 28.1, dur: 2.7, who: 'kayla', size: 'medium', angle: 'eye', az: 10,  move: 'push',   speed: .55 },
     { t: 30.8, dur: 2.2, who: 'boy',  size: 'medium', angle: 'low',  az: 25,  move: 'orbitL', speed: 1.2 },
     { t: 33.0, dur: 1.2, who: 'boy',  size: 'wide',   angle: 'eye',  az: 95,  move: 'hold',   speed: .4, follow: false, aimX: .25, aimZ: .65 },
@@ -197,23 +197,23 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     { t: 36.7, dur: 1.3, who: 'boy',  size: 'wide',   angle: 'low',  az: 160, move: 'pull',   speed: 3.2 },
     { t: 38.0, dur: 1.6, who: 'sun',  size: 'wide',   angle: 'eye',  az: 180, move: 'craneDown', speed: .5 },
     { t: 39.6, dur: 1.1, who: 'boy',  size: 'full',   angle: 'low',  az: 8,   move: 'track',  speed: 1.0 },
-    { t: 40.7, dur: 1.5, who: 'jay',  size: 'full',   angle: 'eye',  az: 4,   move: 'pull',   speed: 2.0 },
-    { t: 42.2, dur: 0.9, who: 'boy',  size: 'close',  angle: 'eye',  az: 30,  move: 'track',  speed: .5 },
-    { t: 43.1, dur: 1.1, who: 'boy',  size: 'wide',   angle: 'low',  az: 85,  move: 'push',   speed: 2.6, follow: false },
+    { t: 40.7, dur: 1.5, who: 'jay',  size: 'wide',   angle: 'eye',  az: 35,   move: 'pull',   speed: 2.0 },
+    { t: 42.2, dur: 0.9, who: 'boy',  size: 'medium', angle: 'eye',  az: 30,  move: 'track',  speed: .5 },
+    { t: 43.1, dur: 1.1, who: 'boy',  size: 'full',   angle: 'eye',  az: 70,  move: 'push',   speed: 2.6, follow: false },
     { t: 44.2, dur: 1.3, who: 'jay',  size: 'full',   angle: 'low',  az: -30, move: 'orbitL', speed: 1.5 },
     { t: 45.5, dur: 1.1, who: 'jay',  size: 'close',  angle: 'low',  az: -20, move: 'push',   speed: .9 },
-    { t: 46.6, dur: 1.6, who: 'jay',  size: 'full',   angle: 'eye',  az: 85,  move: 'truckR', speed: .45 },
+    { t: 46.6, dur: 1.6, who: 'jay',  size: 'full',   angle: 'eye',  az: 85,  move: 'truckR', speed: .45, aimX: .65 },
     { t: 48.2, dur: 1.0, who: 'sun',  size: 'wide',   angle: 'low',  az: 180, move: 'push',   speed: 1.6 },
     { t: 49.2, dur: 1.2, who: 'hand', size: 'feet',   angle: 'eye',  az: 0,   move: 'punch',  speed: 1.2 },
-    { t: 50.4, dur: 0.6, who: 'boy',  size: 'close',  angle: 'low',  az: -15, move: 'push',   speed: 2.6 },
-    { t: 51.0, dur: 1.1, who: 'jay',  size: 'close',  angle: 'eye',  az: -25, move: 'orbitR', speed: 1.0 },
+    { t: 50.4, dur: 0.6, who: 'boy',  size: 'close',  angle: 'eye',  az: 60, move: 'push',   speed: 2.6 },
+    { t: 51.0, dur: 1.1, who: 'jay',  size: 'close',  angle: 'low',  az: 10, move: 'orbitR', speed: 1.0 },
     // dusk
     { t: 52.1, dur: 1.5, who: 'jayG', size: 'wide',   angle: 'eye',  az: -100, move: 'pull',  speed: 2.4 },
-    { t: 53.6, dur: 1.4, who: 'jayG', size: 'close',  angle: 'high', az: -15, move: 'push',   speed: 1.2 },
-    { t: 55.0, dur: 0.9, who: 'jayG', size: 'medium', angle: 'eye',  az: -45, move: 'truckL', speed: 1.5 },
-    { t: 55.9, dur: 0.8, who: 'jayG', size: 'medium', angle: 'low',  az: -5,  move: 'punch',  speed: 2.0 },
+    { t: 53.6, dur: 1.4, who: 'jayG', size: 'close',  angle: 'eye',  az: 15, move: 'push',   speed: 1.2 },
+    { t: 55.0, dur: 0.9, who: 'jayG', size: 'medium', angle: 'eye',  az: 40, move: 'truckL', speed: 1.5 },
+    { t: 55.9, dur: 0.8, who: 'jayG', size: 'medium', angle: 'low',  az: 55,  move: 'punch',  speed: 2.0 },
     { t: 56.7, dur: 2.0, who: 'jayG', size: 'full',   angle: 'eye',  az: -25, move: 'orbitL', speed: .8 },
-    { t: 58.7, dur: 3.0, who: 'boy',  size: 'close',  angle: 'eye',  az: 0,   move: 'push',   speed: .5 },
+    { t: 58.7, dur: 3.0, who: 'boy',  size: 'close',  angle: 'eye',  az: 35,   move: 'push',   speed: .5 },
   ];
   // shot subjects: actors, the setting sun on the hills, the two hands meeting
   const SUBJ = { sun: t => { const p = new THREE.Vector3(48, 1.6, -4); return { x: p.x, y: 0, z: p.z, heading: -Math.PI / 2 }; }, hand: () => ({ x: HAND[0], y: HAND[1] - .5, z: HAND[2], heading: Math.PI }) };

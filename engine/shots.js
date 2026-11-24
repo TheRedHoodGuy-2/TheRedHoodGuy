@@ -33,7 +33,7 @@ export function planShots(list, subjectAt) {
       if (mv === 'orbitL' || mv === 'orbitR') az += (mv === 'orbitL' ? 1 : -1) * .35 * sp * (e - .5);
       if (mv === 'craneUp' || mv === 'craneDown') hy += (mv === 'craneUp' ? 1 : -1) * .9 * sp * (e - .5);
       const a = sub.heading + az, fx = Math.sin(a), fz = Math.cos(a);
-      const p = [sub.x + fx * dist + fz * lat, (sub.y ?? 0) + Z.y + hy, sub.z + fz * dist - fx * lat];
+      const p = [sub.x + fx * dist + fz * lat, Math.max((sub.y ?? 0) + Z.y + hy, (sub.y ?? 0) + .6), sub.z + fz * dist - fx * lat];   // never down in the kerb / ground
       const l = [look.x + (s.aimX || 0), (look.y ?? 0) + (s.aimY ?? Z.y) + hy * .15, look.z + (s.aimZ || 0)];
       keys.push({ t: tt, p, l, fov });
     }

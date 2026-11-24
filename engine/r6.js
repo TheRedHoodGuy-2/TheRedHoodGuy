@@ -171,13 +171,8 @@ function snapSleeve(piece) {
     if (!xb.isEmpty()) { const cx = (xb.min.x + xb.max.x) / 2, cz = (xb.min.z + xb.max.z) / 2, sx = .56 / Math.max(.3, (xb.max.x - xb.min.x) / 2), sz = .56 / Math.max(.3, (xb.max.z - xb.min.z) / 2);
       for (const i of used) { v.fromBufferAttribute(P, i).applyMatrix4(m); v.x = (v.x - cx) * sx; v.z = (v.z - cz) * sz; v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); } }
     P.needsUpdate = true; piece.geometry.computeVertexNormals(); }
-  const PAD = .02; let moved = 0;
-  for (let i = 0; i < P.count; i++) { v.fromBufferAttribute(P, i).applyMatrix4(m);
-    if (Math.abs(v.x) < .5 + PAD && Math.abs(v.z) < .5 + PAD && v.y > -1 && v.y < 1) {
-      const dxp = .5 + PAD - Math.abs(v.x), dzp = .5 + PAD - Math.abs(v.z);
-      if (dxp < dzp) v.x = Math.sign(v.x || 1) * (.5 + PAD); else v.z = Math.sign(v.z || 1) * (.5 + PAD);
-      v.applyMatrix4(mi); P.setXYZ(i, v.x, v.y, v.z); moved++; } }
-  if (moved) { P.needsUpdate = true; piece.geometry.computeVertexNormals(); piece.geometry.computeBoundingSphere(); }
+  // no per-vertex push: where the arm block shows through it is painted in the garment colour (underlay), so it reads as sleeve
+  piece.geometry.computeBoundingSphere();
 }
 function headGeo(fx = .3, fy = .3) {   // the supplied model's head, measured exactly: radius .6, height 1.2, a round .3 fillet top and bottom (flat cap radius .3)
   const pts = [], R = HEAD_R, H = HEAD_H / 2, n = 16;
@@ -303,7 +298,7 @@ export async function makeR6(spec = {}) {
     const bottom = (p.attachments || []).some(a => a.name.startsWith('Waist'));   // pants and skirts hang from the waist
     // hands stay skin (Xavier 2026-11-19: the hoodie is built so a strip of skin shows at the base of the hand; painting the whole
     // arm in the garment colour made the sleeve look like it ran into the hand)
-    if (!bottom) { tx.fillStyle = css(skin); for (const ap of ['armL', 'armR']) { for (const f of ['front', 'back', 'left', 'right']) { const [x, y, w, h] = TEMPLATE[ap][f]; tx.fillRect(x, y + h * .8, w, h * .2 + 1); } const [bx, by, bw, bh] = TEMPLATE[ap].bottom; tx.fillRect(bx, by, bw, bh); } }
+    if (!bottom) { tx.fillStyle = css(skin); for (const ap of ['armL', 'armR']) { for (const f of ['front', 'back', 'left', 'right']) { const [x, y, w, h] = TEMPLATE[ap][f]; tx.fillRect(x, y + h * .88, w, h * .12 + 1); } const [bx, by, bw, bh] = TEMPLATE[ap].bottom; tx.fillRect(bx, by, bw, bh); } }
     blitTemplate(g, t, bottom ? ['legL', 'legR'] : ['torso', 'armL', 'armR']);
     if (bottom) { g.fillStyle = '#26262a'; for (const lp of ['legL', 'legR']) { const [x, y, w, h] = LAYOUT[lp].bottom; g.fillRect(x, y, w, h); } }   // shoe soles: seen when sitting
     map.needsUpdate = true;
