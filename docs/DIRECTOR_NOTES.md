@@ -292,3 +292,9 @@ defend every pixel of it, it does not get sent.
   #512) with expressions (library/alti_face.json, eyes / mouths split by tools/altisplit.py).
 - Light: stop making everything warm / golden. Default = bright, clear, sunny day (crisp white sun, blue sky, like a
   beach day). Warm sunset only where the story needs it, and even then not orange soup.
+
+## 2026-11-24 / 25 (Sunset Tag final)
+- Frame 0 must be mid-action and the retention formula applied every video (rule by 3 s, "You see", gags by 20%, "But I" by ~30%, clock, cuts ~1.5 s, shown cliffhanger).
+- Captions are a SEPARATE layer, never baked into the 3D render: `python3 tools/captions.py <topic> [--title "..."] --burn` (styles at the top of the .ass; restyle + re-burn in ~2 min). Always deliver clean + captioned.
+- Title card on frame 0 is optional (Xavier reconsidering): it is its own style/event, so a version with and without is one command.
+- Motion blur is possible in three.js (sub-frame accumulation); Blender only if he gets an NVIDIA GPU machine.

@@ -71,11 +71,11 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     dusk:   { az: 92, el: -5, col: '#ffb08a', int: .4, fill: 1.25, hs: '#7c94d4', hg: '#353a4c', top: '#22325f', hor: '#c9a6a0', glow: '#e3b08e', exp: 1.95 },
   };
   const sunOff = t => t < 19.4 ? 9 : t < 38.1 ? lerp(4.6, 1.7, (t - 35.5) / 2.6) : t < 48.3 ? lerp(1.7, 0, (t - 38.1) / 10.2) : lerp(0, -2.2, (t - 48.3) / 4.4);   // degrees above the hill line
-  let skyKey = '';
+  let skyKey = ''; const sunDir = new THREE.Vector3(0, 1, 0);   // the sun's direction from az / el (the light's own position drifts with its target)
   const light = t => {
     const seg = t < 8.2 ? 'sunset' : t < 13.0 ? 'day' : t < 14.6 ? 'sunset' : t < 35.5 ? 'day' : t < 52.2 ? 'sunset' : 'dusk';
     let L = TIMES[seg]; if (seg === 'dusk' && t < 53.4) { const k = sm((t - 52.2) / 1.2), A = TIMES.sunset, B = TIMES.dusk; L = {}; for (const n of Object.keys(B)) L[n] = typeof B[n] === 'number' ? lerp(A[n] ?? B[n], B[n], k) : (k < .5 ? A[n] : B[n]); L.el = lerp(hillEl + sunOff(t), -5, k); L.mix = k; }
-    const el = L.el ?? (seg === 'sunset' ? hillEl + sunOff(t) : 50);
+    const el = L.el ?? (seg === 'sunset' ? hillEl + sunOff(t) : 50); { const A_ = L.az * Math.PI / 180, E_ = el * Math.PI / 180; sunDir.set(Math.sin(A_) * Math.cos(E_), Math.sin(E_), Math.cos(A_) * Math.cos(E_)); }
     LOOK.setSun(L.az, el, { color: L.col, intensity: L.int, fill: L.fill }); LOOK.hemi.color.set(L.hs); LOOK.hemi.groundColor.set(L.hg); post.exposure = L.exp;
     const sk = seg + (L.mix != null ? Math.round(L.mix * 10) : ''); if (sk !== skyKey) { skyKey = sk; const a = L.az * Math.PI / 180; paintSky(LOOK.sky, L.top, L.hor, L.glow, new THREE.Vector3(Math.sin(a), .05, Math.cos(a)).normalize()); }
     scene.fog.color.set(L.hor); if (LOOK.sunDisc) LOOK.sunDisc.material.color.set(seg === 'day' ? '#fffbe8' : '#ffd9a0').multiplyScalar(seg === 'day' ? 2.5 : 2);
@@ -233,7 +233,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     if (opts.camP) { cam.position.set(...opts.camP); cam.lookAt(...opts.camL); cam.fov = opts.fov || 35; cam.updateProjectionMatrix(); }
     else rig.apply(cam, t);
     { const sh = SH.slice().reverse().find(q => t >= q.t); if (sh && sh.who === 'sun') {   // the sun on the hills: from the park lawn along +x, long lens
-      const u = (t - sh.t) / sh.dur, first = sh.t < 45, y = first ? lerp(2.2, 1.5, sm(u)) : 1.35, a = LOOK.sun.position.clone().sub(LOOK.sun.target.position).normalize();
+      const u = (t - sh.t) / sh.dur, first = sh.t < 45, y = first ? lerp(2.2, 1.5, sm(u)) : 1.35, a = sunDir.clone();
       cam.position.set(first ? 45 : 47.5 + u * .6, y, first ? -3.2 : -3.4); cam.fov = first ? 15 : 19; cam.updateProjectionMatrix();
       cam.lookAt(cam.position.x + a.x * 100, y + Math.max(1.2, a.y * 100) - (first ? 0 : .5), cam.position.z + a.z * 100); } }
     { const sh = SH.slice().reverse().find(q => t >= q.t); if (sh && sh.cam && !opts.camP) { const u = sm((t - sh.t) / sh.dur), C = sh.cam; cam.position.set(...C.p0.map((v, n) => lerp(v, C.p1[n], u))); cam.fov = C.fov; cam.updateProjectionMatrix(); cam.lookAt(...C.l); } }   // hand-placed shots (checked in stills)
