@@ -321,3 +321,13 @@ Sent the full voice script (narration only, no stage directions) for Fish Audio.
 ## 2026-11-25 04:21 Claude
 
 Voice assembled: 72 s (boy part 1 + Mom's line in the girl voice + part 3), gaps trimmed, levelled, word timings + lip flap done. Take says 'Re-fucking-wind' at ~43 s; made voice_clean.wav with a plain third 'Rewind' (41.2 s copy) in case. Asked which to use; building the sets next. Total ~76 s with the silent ending.
+
+---
+
+## 2026-11-25 04:24 Xavier
+
+swear, let me have the final audio, reducend the long ahh puase
+
+## 2026-11-25 04:24 Claude
+
+Kept the swear, cut every pause to ~0.1 s (72 s -> 63 s, ~243 words a minute), only 3 gaps over 0.2 s left. Sent do_overs_voice.mp3; word timings + lip flap redone on it.
