@@ -84,3 +84,10 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
 - THE 7-YEAR-OLD CHECK: at every block of a few seconds ask "would a 7-year-old still be watching?"; a block that fails
   is rewritten. Every research rule (retention, hook, composition, posing, faces, frame check) applies to every script
   and every frame. No skills needed: the rules live in the docs + CLAUDE.md.
+
+## 2026-11-25 03:44 (Xavier)
+- Script 07 "Do-Overs" approved (topics/do_overs/).
+- FINALS: render at 1440x2560 and deliver at 1440x2560 (no downscale); encode at a high bitrate (~15 Mbps, x264 slow,
+  -b:v 15M -maxrate 20M -bufsize 30M) so TikTok / YouTube start from the best file.
+- TEXTURES: after he confirms the review video, every texture used in THAT video is upscaled hard (AI 4x, Real-ESRGAN)
+  before the final render; Poly Haven pulled at 2K/4K; engine-drawn canvases regenerated at 2-4x.

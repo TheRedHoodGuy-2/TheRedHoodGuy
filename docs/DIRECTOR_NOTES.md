@@ -319,3 +319,4 @@ defend every pixel of it, it does not get sent.
   2K-4K so frames look crisp and sharp like Gneef's / the refs. Audit 2026-11-25: 237 textures in Sunset Tag, none above
   1024 px; 56 at 256 px (body normal maps, hair maps); Poly Haven loaded at 1K and shrunk to 512; anisotropy 1-8.
 - Scripts: every number must stay consistent with the rule (no 4,000 tries when the max is 100).
+- 03:44: finals at 1440x2560 not downscaled, ~15 Mbps; upscale every texture of a video after the review OK. "Do not forget all our tips."
