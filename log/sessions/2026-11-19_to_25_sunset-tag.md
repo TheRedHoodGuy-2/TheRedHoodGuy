@@ -341,3 +341,13 @@ the pauses are TOO short
 ## 2026-11-25 04:26 Claude
 
 Pauses set to ~0.16 s (between the two versions): 69.6 s. Sent the new do_overs_voice.mp3, timings + flap redone.
+
+---
+
+## 2026-11-25 04:28 Xavier
+
+alr proceed, hold off on bg audio tho
+
+## 2026-11-25 04:28 Claude
+
+Voice locked (69.6 s). No music this time. Building the sets and props now.
