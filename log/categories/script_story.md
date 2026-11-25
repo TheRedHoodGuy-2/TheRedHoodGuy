@@ -90,3 +90,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 03:47** (2026-11-19_to_25_sunset-tag.md): send the full script let me go make the audio
 
 - **2026-11-25 04:21** (2026-11-19_to_25_sunset-tag.md): (3 voice files: Roblox narrator part 1, E-girl Mom line, Roblox narrator part 3 'quiet haunted recollection')
+
+- **2026-11-25 07:55** (2026-11-19_to_25_sunset-tag.md): Concept, bro. You're disappointing me. ... research about videos, shorts, YouTube retention ... the first 5 seconds of this video is my bicycle ... first 2 to 5 seconds are the most golden part ... Action is supposed to be something so out of place or so capturing that the person wants to know what happens next. The end of the video is too long and too silent ... something brief ... video loops ... nigga is riding the bicycle backward. You do not even check the frames ... The car passes through him ... clipping into the bed ... ok what do you want YOU tell me what do you think i should provide that you cant access so you stop making shitty vids, more popular creators in the same niche all over ttk and yt?? what!!!

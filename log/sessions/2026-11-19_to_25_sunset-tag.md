@@ -393,3 +393,13 @@ You're right. For Sunset Tag I checked stills shot by shot and rendered once; th
 ## 2026-11-25 07:45 Claude
 
 Rebuilt every pose in his { r, o } form (his fall/sit/kneel/propose/hug codes verbatim; bike pedals with hips-as-knees), confirmed axis conventions with a test sheet, re-ran the pose sheet, then a stills pass at start/middle/end of all 42 shots and fixed what failed (two-shot too narrow so the girl was cut, lying heads buried in pillows, phone replaced with own model that lights up when ringing, hug shows his face, cry/close-up/finale cams, junk first frames). One render only: lq 180x320 6 fps, out/do_overs_review2.mp4 with voice. Known weak spots: hug + lock shots dark in lq, old man's face mostly hidden, shh arm still crosses part of Mom's face.
+
+---
+
+## 2026-11-25 07:55 Xavier
+
+Concept, bro. You're disappointing me. ... research about videos, shorts, YouTube retention ... the first 5 seconds of this video is my bicycle ... first 2 to 5 seconds are the most golden part ... Action is supposed to be something so out of place or so capturing that the person wants to know what happens next. The end of the video is too long and too silent ... something brief ... video loops ... nigga is riding the bicycle backward. You do not even check the frames ... The car passes through him ... clipping into the bed ... ok what do you want YOU tell me what do you think i should provide that you cant access so you stop making shitty vids, more popular creators in the same niche all over ttk and yt?? what!!!
+
+## 2026-11-25 07:55 Claude
+
+Verdict: more videos won't fix the bike, the car or the bed; those are my checking failures. What would help: 5-10 mp4s of top niche shorts (YouTube/TikTok block my downloads) and his YouTube Studio / TikTok retention graphs. Proposed: frame-0 mid-disaster hook that rewinds, 1.5 s loop ending, per-shot collision and direction checks.
