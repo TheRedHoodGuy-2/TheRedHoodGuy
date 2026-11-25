@@ -122,8 +122,10 @@ export async function buildTown(scene, o = {}) {
   spots.forEach(([x, z], i) => { const v = i % 3, s = .85 + rnd(i) * .4; m4.compose(new THREE.Vector3(x, Y, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rnd(i + 3) * 6.28), new THREE.Vector3(s, s, s)); IL[v].setMatrixAt(cnt[v], m4); IT[v].setMatrixAt(cnt[v], m4); cnt[v]++; });
   IL.forEach((m, v) => { m.count = cnt[v]; IT[v].count = cnt[v]; m.castShadow = IT[v].castShadow = true; m.receiveShadow = true; root.add(m, IT[v]); });
   // the hero houses on their real lots
-  const lots = {};
+  const lots = {}, houses = {};
   for (const l of data.lots) { const g = new THREE.Group(); g.position.set(l.c[0], 0, l.c[1]); g.rotation.y = l.yaw; root.add(g); const inner = new THREE.Group(); inner.position.set(-l.planCentre[0], 0, -l.planCentre[1]); g.add(inner);
-    await houseShell(inner, l.house, { glass: !o.interiors }); if (o.interiors) await buildHouse(inner, l.house, { floors: ['ground', 'up'] }); lots[l.house] = g; }
-  return { root, data, lots, trees: spots.length };
+    await houseShell(inner, l.house, { glass: !o.interiors }); if (o.interiors) { const H = await buildHouse(inner, l.house, { floors: ['ground', 'up'] }); houses[l.house] = H;
+      if (o.furnish) { const { furnishHouse } = await import('../designs/furnish.js'); await furnishHouse(inner, H, o.furnish); } }   // o.furnish: room ids to dress (e.g. ['kitchen', 'his'])
+    lots[l.house] = g; }
+  return { root, data, lots, houses, trees: spots.length };
 }
