@@ -810,3 +810,13 @@ let me hear the new voice???
 ## 2026-11-25 12:23 Claude
 
 Sent clap_cops_voice_tight.mp3: 49.4 s down to 44.2 s, 21 pauses cut to about 0.26 s, every word re-checked.
+
+---
+
+## 2026-11-25 12:25 Xavier
+
+between "snaps" and "friday" night, "cops" and "clapping is one"... 'robe" and "officer"  pause WAY too short
+
+## 2026-11-25 12:25 Claude
+
+Sent v2: those 3 pauses back to his take's length (0.72 / 0.56 / 0.62 s), others still tight. 45.4 s.
