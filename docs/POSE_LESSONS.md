@@ -27,5 +27,8 @@ library engine/poses.js). Pose code drops straight into engine/poses.js.
      lands the hand on the target.
 9. Sitting: legs near-vertical slid forward (leg top reads as the knee), or legs horizontal with the root up.
 
+10. Xavier's sitting codes (hip as butt / hip side as butt) and the extremely relaxed couch pose: research/legacy_explainer/
+    ANIMATION_COMPLETE.md section D. Jolt, flinch, adult reactions, clapping, writing: section B / C there.
+
 ## New lessons
 (none yet: the first pose Xavier gives in the new studio goes here with its before/after)

@@ -114,6 +114,11 @@ every message of his and every reply -> session log.
 - Gneef measured: ~45% push-ins at speeds from 3 to 19 %/s, ~40% holds where the CHARACTER does the moving, fast
   pull-outs, quick pans (0.13-0.2 frame widths / s), tilts / cranes. Cuts every ~1.5 s (first shot ~1.9 s, 7 cuts in
   the first 10 s, longest ~6 s for the big beat). Hard cuts inside a place; 0.25 s dissolve between places.
+- CONSTANT MOTION (Xavier 2026-10-23 + 2026-11-25, research/motion_reference_2026-11-25.md): consecutive frames are never
+  the same. Inside a shot the camera never stops: constant-speed travel (gentle start, no ease-out to a halt; shots.js
+  default) + an always-on handheld layer (camera.js) + the character doing the work most of the time. The ref: 0.5%
+  still frames, camera ~2.5x our speed, foreground sliding past for parallax. Gate: `python3 tools/motionstudy.py
+  <check video> --crop .6` -> still frames < 2%, longest still run < 0.3 s; slow shots (speed < 1) need the character moving.
 - EVERY cut changes move, size AND speed (shots.js validate() must return nothing). Never the slow-push slideshow
   (Shadow Steps, 2026-11-19). Motion carries across cuts. Camera never parks; drift on holds.
 - One clear subject per shot; faces visible (never only a back); look room toward who they face; foreground /
@@ -126,6 +131,8 @@ every message of his and every reply -> session log.
 - Low "giant" angle + small shake on impacts; reaction shot after every reveal; inserts carry the rule's object.
 
 ## 10. Animation and posing (docs/ANIMATION.md, docs/POSE_LESSONS.md, research/legacy_explainer/)
+- FULL old-kit sweep (2026-11-25): research/legacy_explainer/ANIMATION_COMPLETE.md (jolt / flinch / adult reactions, world
+  interaction instead of clipping, Xavier's sit + couch pose codes, POV, old camera notes). Read it with this section.
 - THINK before every pose, face, prop, camera: what does this person want and feel RIGHT NOW, how would a real
   person do it, can the viewer read it. Eyes lead, then head, then body.
 - Every action: anticipation -> action -> reaction -> settle. Nothing moves by itself: the hand arrives ON the handle,

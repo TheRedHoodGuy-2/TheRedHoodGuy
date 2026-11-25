@@ -305,3 +305,11 @@ defend every pixel of it, it does not get sent.
 - FLOW (big one): no still frames. Shots must not be "camera goes to person, they do one thing, then they freeze while the camera pushes in". Action keeps going through every shot and across cuts (cut ON action, the next shot continues the motion), people keep doing things (secondary actions, reactions, walking on, looking around), the story flows from one shot to the next instead of each shot being its own frozen vignette.
 - 01:30 refinement of the SFX rule: giggles (from on-screen laughers), a few whooshes, ticking clocks, heartbeats and swap sparkles in moderation are GOOD; a meme sound ("bruh") is welcome when it lands a deadpan joke. Still out: gasps nobody makes, record scratches, drones/stings stacked on the ending.
 - 01:37: the Freesound 'heheheh' chuckle was wrong for the ending; use the evil cat laugh he sent (topics/sunset_tag/sfx/src/evil_cat_laugh.mp3, first laugh). REVIEW GATE IS BACK: always send a cheap low-res, low-fps review video for him to rate BEFORE the expensive final render (his 15:43 'final straight' was a one-off).
+
+## 2026-11-25 02:29 (motion reference + full old-repo sweep)
+- Ref video (davystep75 TikTok): "very smooth, very consistent camera, sometimes it seems handheld; no still moment; either
+  the camera or the character is doing the work, mostly the character". Measured: research/motion_reference_2026-11-25.md.
+  Engine: constant-speed camera moves + handheld layer (shots.js, camera.js). Gate: tools/motionstudy.py.
+- He first asked for "never a still moment" on 2026-10-23 (explainer-kit). It was lost; now in CLAUDE.md section 9.
+- Every animation / pose note from the old repo is in research/legacy_explainer/ANIMATION_COMPLETE.md (+ his full old
+  messages in xavier_messages_old_chats.md).

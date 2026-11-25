@@ -19,7 +19,8 @@ export function planShots(list, subjectAt) {
   return list.map((s, i) => {
     const Z = SIZE[s.size || 'medium'], fov = s.fov || Z.fov, d0 = Z.h / (2 * Math.tan(fov * Math.PI / 360)), sp = s.speed ?? 1;
     const mv = s.move || 'push', T = s.dur, keys = [], N = Math.max(2, Math.ceil(T / .2));
-    const ease = mv === 'punch' ? (u => E.out(Math.min(1, u / .3))) : mv.startsWith('orbit') || mv.startsWith('truck') ? E.io : E.out;
+    const go = u => { const k = .12; return u < k ? (u * u / (2 * k)) / (1 - k / 2) : (u - k / 2) / (1 - k / 2); };   // gentle start, then constant speed to the cut (never eases to a stop: research/motion_reference_2026-11-25.md)
+    const ease = mv === 'punch' ? (u => E.out(Math.min(1, u / .3))) : go;
     const start = subjectAt(s.t, s);
     for (let k = 0; k <= N; k++) {
       const u = k / N, tt = s.t + u * T, e = ease(u), sub = (s.follow ?? (mv === 'track' || mv === 'push' || mv === 'pull' || mv === 'punch' || mv.startsWith('orbit') || mv.startsWith('truck'))) ? subjectAt(tt, s) : start;

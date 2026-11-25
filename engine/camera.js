@@ -58,7 +58,8 @@ export function cameraRig(shots, o = {}) {
       let j = 0; while (j < K.length - 2 && g > K[j + 1].t) j++; const a = K[j], b = K[j + 1], f = Math.min(1, Math.max(0, (g - a.t) / (b.t - a.t))), uu = s.u[j] + (s.u[j + 1] - s.u[j]) * f;
       p = s.P.getPoint(uu); l = s.L.getPoint(uu); fov = (a.fov ?? fov) + ((b.fov ?? a.fov ?? fov) - (a.fov ?? fov)) * f; roll = (a.roll ?? 0) + ((b.roll ?? 0) - (a.roll ?? 0)) * f; }
     // never still: a slow drift (position ~2-3 cm, look ~1.5 cm), different per shot
-    if (drift) { const d = drift * (s.drift ?? 1), q = i * 13.7; p.x += .03 * d * noise(t * .35 + q); p.y += .02 * d * noise(t * .3 + q + 5); p.z += .03 * d * noise(t * .33 + q + 9); l.x += .015 * d * noise(t * .4 + q + 2); l.y += .012 * d * noise(t * .37 + q + 7); }
+    if (drift) { const d = drift * (s.drift ?? 1), q = i * 13.7, n2 = (f, o) => noise(t * f + q + o) + .45 * noise(t * f * 3.1 + q + o + 50);   // handheld: slow sway + ~1 Hz wobble (2026-11-25 ref: 2.5x our old drift)
+      p.x += .06 * d * n2(.35, 0); p.y += .045 * d * n2(.3, 5); p.z += .06 * d * n2(.33, 9); l.x += .04 * d * n2(.4, 2); l.y += .03 * d * n2(.37, 7); }
     cam.position.copy(p); cam.up.set(0, 1, 0); cam.lookAt(l); if (cam.fov !== fov) { cam.fov = fov; cam.updateProjectionMatrix(); }
     // reactive shake: trauma decays, rotation jitter scales with trauma squared (game-feel standard)
     let tr = 0; for (const sk of shakes) { const dt = t - sk.t; if (dt >= 0 && dt < sk.dur) tr = Math.max(tr, (sk.amp ?? 1) * (1 - dt / sk.dur)); }
