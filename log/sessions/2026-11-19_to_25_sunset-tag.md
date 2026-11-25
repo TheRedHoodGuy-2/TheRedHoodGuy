@@ -513,3 +513,13 @@ quick test, hand over a new script
 ## 2026-11-25 10:39 Claude
 
 Gave a lie-shrinks-you-one-inch script, ~235 words, beat list, tagged lines, 3 comment predictions.
+
+---
+
+## 2026-11-25 10:41 Xavier
+
+trash, these arent the kinda coments im looking for these are as and typically what ai would say look at those story time videos comment analytics and look at mey recent ttk one ans see whaa i mean
+
+## 2026-11-25 10:41 Claude
+
+Pulled real comments (vidIQ Gneef x2, Windsor TikTok). Findings: loopholes, exempt character, lookalikes, pedants. His TikTok had 0/0/2 comments. Rewrote script with loophole + Uncle Ray exempt character. Saved research/comments_real_2026-11-25.md.

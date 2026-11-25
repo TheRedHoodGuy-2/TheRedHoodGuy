@@ -102,3 +102,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 13:10** (2026-11-19_to_25_sunset-tag.md): (10:04) story, do for all you need to
 
 - **2026-11-25 10:39** (2026-11-19_to_25_sunset-tag.md): quick test, hand over a new script
+
+- **2026-11-25 10:41** (2026-11-19_to_25_sunset-tag.md): trash, these arent the kinda coments im looking for these are as and typically what ai would say look at those story time videos comment analytics and look at mey recent ttk one ans see whaa i mean
