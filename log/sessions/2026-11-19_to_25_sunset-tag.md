@@ -473,3 +473,13 @@ Top 3 per channel picked + downloaded (Hawks, Cody, GreenBro, Gneef, SensBloxx).
 ## 2026-11-25 11:05 Claude
 
 Viewed all 19 sheets of the Hawks 96M video; full dissection saved in research/dissect/hawks_won_and_lost_P6/NOTES.md.
+
+---
+
+## 2026-11-25 11:40 Xavier
+
+(10:00) next
+
+## 2026-11-25 11:40 Claude
+
+Viewed all 16 sheets of Hawks 79M "What parents see vs What i see"; full dissection saved.
