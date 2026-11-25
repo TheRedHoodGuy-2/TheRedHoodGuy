@@ -10,3 +10,6 @@ reference/**/*.webm
 __pycache__/
 /assets/roblox/
 topics/*/music/*.wav
+research/dissect/*/frames/
+research/dissect/*/sheets/
+research/dissect/*/audio.wav

@@ -327,3 +327,19 @@ defend every pixel of it, it does not get sent.
 - Before ANY render: show the pose library (every pose used, story order, labelled) so he can repose the bad ones.
 - "This render looks so trash, so undercooked. The animation is ass." The video was sent with known broken shots.
 - "new video" in a new chat must run THIS workflow (TheRedHoodGuy v2), not the explainer-kit v1 one.
+
+## 2026-11-25 07:17 posing lessons (his pose codes, now in scenes/do_overs.js X.*)
+- HIPS AS KNEES: on a bike the knees go up = leg blocks slid forward + up (o y ~.2-.3, z ~.3), alternating for pedalling.
+- Sitting: legs near-vertical slid forward (o z ~.33, y ~.11), root barely drops. Kneeling: legs r.x ~1.6 (shin back on
+  the floor) + root y -.37. Proposing: one leg kneeling, the other leg up front (o [-.1,.38,.39]).
+- Falls are posed and animated DYNAMICALLY (his fall code: body rolled rz 1.26, limbs splayed, root shifted).
+- Hug = both arms forward ~r.x -1.35..-1.55, or wrapped (+o forward .24-.28) when the other person is big.
+- Mom strapping her watch: hands clipped. Check hand-to-hand contacts.
+- Convention (tested): arm r.x negative = forward, armL r.z positive = out, head r.x positive = look down.
+
+## 2026-11-25 07:52 Do-Overs review v2: hook, loop, checking
+- First 2-5 s are golden: frame 0 must be something out of place / mid-action that makes the brain need the next second.
+  A kid riding a bike is not a hook.
+- Ending too long and silent: end brief, on something that just happens, so it loops into the start.
+- Frame 0 had the biker riding the bike BACKWARD; the car drives THROUGH the boy; he clips into the bed. Check every frame
+  for direction, collisions and clipping before sending.

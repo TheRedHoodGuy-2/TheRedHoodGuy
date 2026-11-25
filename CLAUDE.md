@@ -185,6 +185,12 @@ Re-renders after notes touch only the changed shots.
    Fix -> re-render -> re-check until a full pass finds nothing.
 8. Final: title (rule + emoji) + description. Commit topic (not frames / wav). Push per section 3.
 
+## 11b. Studying reference videos (Xavier 2026-11-25)
+Every reference video is dissected with `tools/dissect.py` + the matching spec: `docs/DISSECT_ANIMATION.md` (real
+animators: posing, timing, spacing, acting, camera) or `docs/DISSECT_STORYTIME.md` (our niche: script, hook, camera, text,
+sound, ending / loop). EVERY frame is looked at in order; the per-frame log has no empty rows. Our own retention numbers
+live in `research/analytics/` and are read beside every dissection (hook = stayed-to-watch, loop = average % viewed).
+
 ## 12. Where things are
 engine/: r6.js (bodies), rig.js (poseRig), poses.js, r6pose.js, cast.js, faceset.js, lipsync.js, walk.js, look.js,
 shots.js, camera.js, sets/ (suburb, town, classroom, house, roomkit), build.js (ph() Poly Haven props).

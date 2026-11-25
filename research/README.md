@@ -14,3 +14,8 @@
 - lipsync.md: lip sync + facial animation (mouth chart, Rhubarb, forced alignment, timing rules, blinks, darts, brows) (2026-11-19)
 - gneef_camera.md: Gneef's measured camera moves (push / hold / pull / pan mix, speeds, shot lengths)
 - gneef_metadata.md: Gneef titles (3 eras + views), description (hashtags only), the reused 54-tag block
+
+## 2026-11-25 dissection system + analytics
+- `docs/DISSECT_ANIMATION.md` (class A: real animators' Roblox videos) and `docs/DISSECT_STORYTIME.md` (class B: our niche):
+  the metrics, every frame, remake-level. Tool: `python3 tools/dissect.py <video> --class anim|story` -> `research/dissect/<name>/`.
+- `research/analytics/`: YouTube Studio exports (content, traffic, audience), 2026-10-27 to 11-24; feeds DISSECT_STORYTIME B11.
