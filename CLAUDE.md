@@ -21,6 +21,12 @@ are copied into `legacy/explainer-kit/`: reference only; our own engine and flow
 - Never make him find a mistake Claude could have found. He has said "look at the frames yourself" more than ten times.
 
 ## 2. Start of every chat (in this order)
+00. THE LOG (Xavier 2026-11-25: "compacting should not be the end of me"): read `log/INDEX.md`, EVERY file in
+    `log/categories/` (all his notes by topic, from both repos) and the tail of the newest `log/sessions/` file.
+    END OF EVERY TURN, no exceptions: write his message + your full reply verbatim to two files and run
+    `python3 tools/logturn.py log/sessions/<current>.md "<YYYY-MM-DD HH:MM>" x.txt reply.txt` (appends, files the
+    message into categories, rebuilds the index, commits + pushes log/). The raw cloud transcript is not on disk, so
+    this is the only record. If a compaction summary is all you have, backfill from the claude.ai chat history.
 0. If `docs/OVERNIGHT_PLAN.md` has unticked boxes, resume there. Then `docs/STUDIO_LOG.md` (where we are).
 1. This file, then `PLAN.md`, `docs/DECISIONS.md`, `docs/DIRECTOR_NOTES.md` (every mistake he flagged), newest `log/sessions/`.
 2. Before a video: `docs/FORMAT_BIBLE.md`, `docs/CONTENT_ENGINE.md`, `docs/ANIMATION.md`, `docs/POSE_LESSONS.md`,
