@@ -413,3 +413,13 @@ Verdict: more videos won't fix the bike, the car or the bed; those are my checki
 ## 2026-11-25 08:40 Claude
 
 Built: docs/DISSECT_ANIMATION.md (A0-A10: identity, shot table, action phases with frame numbers antic/action/contact/overshoot/follow/settle/hold, spacing, arcs, overlap offsets, key poses as our pose code, face track, locomotion, FX, per-frame log, numbers, remake spec, score), docs/DISSECT_STORYTIME.md (B0-B14: performance + title, script with structure timestamps + open loops + reason-to-stay timeline, hook frames 0-3 s, ending/loop last 3 s, shot table with narration vs image, camera/edit numbers, text, sound, acting, look, pacing map, retention link to our analytics, remake spec, per-frame log, score). tools/dissect.py: every frame extracted + tiled in order, cuts, stepping, camera vs character motion, still frames, every word timed (49 s for an 85 s video). Analytics unpacked to research/analytics/ with the hook/loop columns mapped (stayed-to-watch, avg % viewed), not analysed yet. Ready for the videos.
+
+---
+
+## 2026-11-25 08:47 Xavier
+
+Our last video, the gender swap one, got people talking in the comments ... cheeky boy because in the last frame he was laughing when his bro became a girl. People asking what if you were transgender, a boy turning into a girl ... We want videos that get people to comment. Consider this when making scripts. What can we add to make people talk? What concept can we make that people are sure to talk? quick question, if i provide links, can you use ytdlp to download?
+
+## 2026-11-25 08:47 Claude
+
+Comment bait rule saved (CLAUDE.md s4, FORMAT_BIBLE, DIRECTOR_NOTES): every script lists the 2-3 comments it's built to start. yt-dlp: YouTube blocked here (bot sign-in wall, tested on his own short xpIRhLYVXFA). TikTok untested. Options: throwaway-account cookies, run yt-dlp on his laptop via the desktop app, or he downloads and uploads.
