@@ -433,3 +433,13 @@ try it on my laptop
 ## 2026-11-25 08:50 Claude
 
 Works. yt-dlp in the desktop app's Linux VM on his laptop (nothing installed on Windows), no bot wall from his home connection. Pulled his own short xpIRhLYVXFA at 1080p H.264, saved to Videos\redhood_refs, staged into the cloud workspace. Script ~/getref.sh downloads any list of links. Two leftover part files from the first test are in Videos\redhood_refs\_to_delete (deleting in his folders is off by default).
+
+---
+
+## 2026-11-25 09:40 Xavier
+
+(09:17) Xavier sent 10 uploaded storytime vids + 15 story links + 14 anim links; HQ channels = SensBlox, GreenBroRants, Gneef; asked if channel names -> top 7 download works; wants higher quality (Blender ok for finals, one video a day), strict frame scrutiny, anim dissection must classify what each character is doing per frame.
+
+## 2026-11-25 09:40 Claude
+
+All 29 links downloaded to Videos\redhood_refs\story (15) and \anim (14), 1080 wide, 60 fps, with info.json view counts. Channel name -> top 7 works (tested on @gneef: 304 Shorts listed with views). Notes: HQ = SensBlox, GreenBroRants, Gneef; anim channels = Hawks RBX, CodysTooBig. Noted: story uploads are 576px wide, so the downloaded 1080 copies are the ones to dissect.
