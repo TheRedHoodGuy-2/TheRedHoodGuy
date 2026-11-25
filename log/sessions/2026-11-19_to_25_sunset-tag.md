@@ -383,3 +383,13 @@ I think you're understanding something. This is so undone. ... Why do you have t
 ## 2026-11-25 07:05 Claude
 
 You're right. For Sunset Tag I checked stills shot by shot and rendered once; this time I used full renders to debug, which is backwards. Rule written into CLAUDE.md section 11 + DIRECTOR_NOTES: stills while building, pose sheet before any render, then ONE lowest-quality render (lq, 180x320, 6 fps). Built tools/posesheet.py (all 41 poses, ~1 min) and sent out/do_overs_poses.jpg. My own verdict: most are bad (forearm blocks crossing chest/face: 03 04 12 13 15 21 28 32 33 36 40 41; stiff symmetric arms-out: 08 14 17 22 24 25 26 31 37; 15 puts the hand on her own head). Proposed skill redhood-new-video so "new video" runs v2. Waiting for his reposes.
+
+---
+
+## 2026-11-25 07:45 Xavier
+
+[9 pose-editor screenshots] for the bicycle you realise knees go up and you did posing research you should know hips could be knees sometimes / and you realise falls can be posed and animate DYNAMICALLY right? myPose (fall) ... / knee principle in sitting myPose ... / hands clipping when strapping watch for mom / knee principle when kneeling down myPose ... / propose myPose ... / hug example myPose ... or ... if the individual is too big / all these are example poses to teach you now finish the animation and let me have the review vid.
+
+## 2026-11-25 07:45 Claude
+
+Rebuilt every pose in his { r, o } form (his fall/sit/kneel/propose/hug codes verbatim; bike pedals with hips-as-knees), confirmed axis conventions with a test sheet, re-ran the pose sheet, then a stills pass at start/middle/end of all 42 shots and fixed what failed (two-shot too narrow so the girl was cut, lying heads buried in pillows, phone replaced with own model that lights up when ringing, hug shows his face, cry/close-up/finale cams, junk first frames). One render only: lq 180x320 6 fps, out/do_overs_review2.mp4 with voice. Known weak spots: hug + lock shots dark in lq, old man's face mostly hidden, shh arm still crosses part of Mom's face.
