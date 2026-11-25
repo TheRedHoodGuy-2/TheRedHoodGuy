@@ -698,3 +698,38 @@ So I called the cops. "Clapping is one year in jail," the lady said. "Wait, canc
 - 34-42 s: Dad at the top of the stairs in his robe, Mom's entrance, her line, cut.
 
 Logic check: every action has a reason now, and nothing else changed. Say go and I'll write RULES_CHECK and the shot list.
+
+---
+
+## 2026-11-25 11:44 Xavier
+
+would this be hard for you to animate properly??? thats my fear
+
+## 2026-11-25 11:44 Claude
+
+Yes, as written, parts of it would be. Four beats would look bad or burn your credits. All four can be fixed in the script without losing the story, and with the fixes most of it is stuff we already do well.
+
+**Hard as written:**
+1. **Fingers.** R6 hands are blocks with no fingers, so "everybody wiggles their fingers" can't be shown. A snap only reads as a wrist flick plus the sound. Fix: "At weddings, everybody stomps," since legs read fine on R6. The snap shot stays wide and lets the sound sell it.
+2. **Stairs.** The house set has stairs, but our walk system only plants feet on flat floor, so running up and down on screen means sliding, clipping feet. Fix: never show the climb. He hits the first step, then we cut on the action to him at Dad's door. Dad standing at the top in his robe stays, because nobody walks in that shot.
+3. **The couch.** A kid shoving a couch needs his hands on it the whole time, his feet stepping while he leans, and the couch sliding in sync. That's three of our weak spots in one move. Fix: he jams a chair under the doorknob, and the kick sends it flying.
+4. **Wedding hall and stadium.** We have neither. Each one is a full build plus a crowd, for 1.5 s on screen. Fix: use sets we already have. "At birthday parties, everybody stomps" happens in the house with the family round a cake, and "At school, everybody snaps" happens in the classroom. The stadium is still possible, but it would be the most expensive 1.5 s in the video.
+
+**Medium:** it's night the whole time. Lamps on, and red and blue siren light through the windows. The risk is dark faces, and the light gate catches that.
+
+**Easy:** the talking and reactions, the door kick with a camera shake, the phone call (phone in hand, dispatcher off screen), Mom walking in on flat floor, the closet clicking shut, and Dad shoving something under the bed. Most of the video is one house.
+
+**Logic bugs I found in my own last version:**
+- The cop kicks the front door open, so "Behind the cop, the front door opened" can't happen. Fix: "Mom walked in behind the cop with her suitcase."
+- The cold open has to be that front door kick now, with the chair flying, or the loop won't match.
+- I'd put the pink car at the football game, but it has to be at our house. Fix: it pulls into our driveway, seen through the window behind Dad as he says "I'm just working out."
+
+**New models:**
+- Dad isn't in the cast yet. He'd be fixed for every future video, so you pick him.
+- A cop. The bank has police items.
+- The clap van, with a real ear model on top. We don't have a van.
+- A suitcase.
+- A robe. The bank has robe items to fit-check.
+- The pink car. It's a recolour if a car in our model list holds up close.
+
+Say go on these fixes and I'll lock the script and start RULES_CHECK.
