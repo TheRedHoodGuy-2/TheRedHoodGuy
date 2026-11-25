@@ -859,3 +859,13 @@ Since the second render I've been using stills only: about 5 s each, a few shots
 3. ONE review video at the lowest quality, sent to you, not used for checking.
 
 [later] Stills done at the start, middle and end of all 33 shots. Fixed: Dad's arm off his face, jazz hands, lady and Mom lit, the camera no longer walking into Mom, Mia's blow, Dad now grabs the purse and hides it behind his back (it was clipping into a solid bed), the chair carry, the jail close-up, motion added to the held shots. Pose sheet v2 sent. Your call on the poses, then I render ONE lq review video and send it to you.
+
+---
+
+## 2026-11-25 16:02 Xavier
+
+js render man
+
+## 2026-11-25 16:02 Claude
+
+Rendered and sent clap_cops_review_voice.mp4 (180x320, 6 fps, voice). Known weak spots: the chair wedge reads from behind on a dark door, the siren shot ends dark. Tell me what to change; only those shots get touched.
