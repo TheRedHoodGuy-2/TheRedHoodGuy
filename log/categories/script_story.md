@@ -88,3 +88,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 03:44** (2026-11-19_to_25_sunset-tag.md): No. I mean, yes, you can increase the textures of the other stuff, the polygon and stuff. But all our own textures have to be upscaled... in a video, when you've made the test video and I've confirmed everything, take all the textures from that video and upscale them like crazy. Render at 1440 and don't scale it down. TikTok quality checker said our video was 1024p... increase the bit rate (currently ~678 kbps) to about 10 or 15. I approve the script, I like it. Let's try this. Do not forget all our tips.
 
 - **2026-11-25 03:47** (2026-11-19_to_25_sunset-tag.md): send the full script let me go make the audio
+
+- **2026-11-25 04:21** (2026-11-19_to_25_sunset-tag.md): (3 voice files: Roblox narrator part 1, E-girl Mom line, Roblox narrator part 3 'quiet haunted recollection')

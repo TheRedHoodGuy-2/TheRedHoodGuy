@@ -311,3 +311,13 @@ send the full script let me go make the audio
 ## 2026-11-25 03:47 Claude
 
 Sent the full voice script (narration only, no stage directions) for Fish Audio.
+
+---
+
+## 2026-11-25 04:21 Xavier
+
+(3 voice files: Roblox narrator part 1, E-girl Mom line, Roblox narrator part 3 'quiet haunted recollection')
+
+## 2026-11-25 04:21 Claude
+
+Voice assembled: 72 s (boy part 1 + Mom's line in the girl voice + part 3), gaps trimmed, levelled, word timings + lip flap done. Take says 'Re-fucking-wind' at ~43 s; made voice_clean.wav with a plain third 'Rewind' (41.2 s copy) in case. Asked which to use; building the sets next. Total ~76 s with the silent ending.
