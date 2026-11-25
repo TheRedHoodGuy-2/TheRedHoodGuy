@@ -443,3 +443,13 @@ Works. yt-dlp in the desktop app's Linux VM on his laptop (nothing installed on 
 ## 2026-11-25 09:40 Claude
 
 All 29 links downloaded to Videos\redhood_refs\story (15) and \anim (14), 1080 wide, 60 fps, with info.json view counts. Channel name -> top 7 works (tested on @gneef: 304 Shorts listed with views). Notes: HQ = SensBlox, GreenBroRants, Gneef; anim channels = Hawks RBX, CodysTooBig. Noted: story uploads are 576px wide, so the downloaded 1080 copies are the ones to dissect.
+
+---
+
+## 2026-11-25 10:05 Xavier
+
+(09:36) Xavier: stick to cloud (no Blender); 25% weekly used. go study anim vids; can you connect YT/TikTok/FB analytics; where did you download vids.
+
+## 2026-11-25 10:05 Claude
+
+Dissect tool run on all 14 anim videos (metrics + sheets). Looked at 3 sheets of Cheater as a method check. Connectors: Windsor.ai (YT/TikTok/FB organic) and vidIQ (needs connecting). Videos: laptop Videos\redhood_refs\story/anim, copies in cloud workspace.
