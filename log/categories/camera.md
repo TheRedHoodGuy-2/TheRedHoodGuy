@@ -155,3 +155,9 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 [15:15] Nigger, my fucking nigger, can you like stop fucking rendering the full review video and check all the frames first and ensure that everything is okay before rendering the fucking video? Because you are rendering and then checking the frames and then rendering again. What kind of redundant stupid thing are you doing, bro? Didn't he talk about this shit? Isn't that what you're doing right now? Because tell me why I just saw the code saying something about rendering stuff, and then back to I'm now seeing you checking frames again. Aren't you supposed to check every single frame and ensure that everything looks right before rendering? I'm so lost right now.
 
 - **2026-11-25 17:50** (2026-11-19_to_25_sunset-tag.md): videos frame by frame, you see so many frames where the hand clips into something or doesn't grab something well. We want to avoid that. We want to avoid that very much. In our previous repo, we never had this clipping problem. We had the problem, but we fixed it. I don't remember how we fixed it. Please go and check that other repo and come here and apply that knowledge. Never let anything clip. We do not want clipping.
+
+- **2026-11-25 22:58** (2026-11-19_to_25_sunset-tag.md): [18:15] so i can go sleep rn ya?
+[18:17] do one w music snf one without, the finger thing id sll you, render final vid at 1920 x 1080 off to beed
+[18:18] you dont need me yeh??? i need to sleep\
+[22:06] bro how many chunks leftttt omgg whats taking foreverrrr
+[22:07] wht frame check after render??? why not prior??

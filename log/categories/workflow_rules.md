@@ -208,3 +208,9 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-25 16:02** (2026-11-19_to_25_sunset-tag.md): js render man
 
 - **2026-11-25 17:50** (2026-11-19_to_25_sunset-tag.md): videos frame by frame, you see so many frames where the hand clips into something or doesn't grab something well. We want to avoid that. We want to avoid that very much. In our previous repo, we never had this clipping problem. We had the problem, but we fixed it. I don't remember how we fixed it. Please go and check that other repo and come here and apply that knowledge. Never let anything clip. We do not want clipping.
+
+- **2026-11-25 22:58** (2026-11-19_to_25_sunset-tag.md): [18:15] so i can go sleep rn ya?
+[18:17] do one w music snf one without, the finger thing id sll you, render final vid at 1920 x 1080 off to beed
+[18:18] you dont need me yeh??? i need to sleep\
+[22:06] bro how many chunks leftttt omgg whats taking foreverrrr
+[22:07] wht frame check after render??? why not prior??

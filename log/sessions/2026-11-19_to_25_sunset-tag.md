@@ -882,3 +882,19 @@ Done. Review v2 sent (clap_cops_review_v2.mp4). Clip scan passes on every frame 
 Old repo: no magic tool, the fix was checking every frame and fixing by staging (chairs moved back, clearance, rerouted walks). Built tools/clipscan.mjs: every frame, every visible body part vs the set, people vs people, props vs the set, held props vs the palm. First scan: 139 problems. Now 0.
 Fixed: phone floated 50 cm from the hand (now always in the palm); hands 17 cm off the chair (hands now on the backrest); boy sank into the sofa; feet into floors (engine floor clamp); dash through the armchair and partition wall (armchair removed, path rerouted); stair climb matched to the real treads (two at a time) with a cut on action; bed slid 40 cm so Dad fits; console table moved so people fit the door; Mom's arms in for the 1.30 m doorway; boy holds the chair against the door instead of standing through it; kicked chair no longer hits the rail; crowd spaced.
 New rule: CLIPSCAN PASS is a gate before any video.
+
+---
+
+## 2026-11-25 22:58 Xavier
+
+[18:15] so i can go sleep rn ya?
+[18:17] do one w music snf one without, the finger thing id sll you, render final vid at 1920 x 1080 off to beed
+[18:18] you dont need me yeh??? i need to sleep\
+[22:06] bro how many chunks leftttt omgg whats taking foreverrrr
+[22:07] wht frame check after render??? why not prior??
+
+## 2026-11-25 22:58 Claude
+
+Delivered: clap_cops_FINAL_music.mp4 + clap_cops_FINAL_no_music.mp4 (1080x1920, 30 fps, title + captions burnt, SFX from the real bank, loudnorm -14).
+Frame check of all 1410 frames: no broken / black / glitch frames. Clip scan passed at 24 fps before render.
+Notes: title emoji dropped from the burnt title (caption font can't draw it, came out as garbage); use "Clapping is a CRIME here 👏" as the upload title. 2K Poly Haven maps crashed the renderer (black frames), so those stay 1K; clothing textures were AI-upscaled. Lookmeter: warm reads high (red hoodie in most close-ups), dark / top pass. Snaps in the stands are silent until you send a snap sound. Weak spots I'd still fix: the chair wedge is shot from behind on a dark door.

@@ -234,3 +234,9 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-25 12:16** (2026-11-19_to_25_sunset-tag.md): [voice file: Roblox-2026-11-25-12-07-deadpan-absurd-storytelling-tone-In-this-town.mp3] maybe ending can be mrs pam sneaking out? or hiding? idk man ima go sleep suprise me, the pauses are kinda long, shorten a bi
 
 - **2026-11-25 12:23** (2026-11-19_to_25_sunset-tag.md): let me hear the new voice???
+
+- **2026-11-25 22:58** (2026-11-19_to_25_sunset-tag.md): [18:15] so i can go sleep rn ya?
+[18:17] do one w music snf one without, the finger thing id sll you, render final vid at 1920 x 1080 off to beed
+[18:18] you dont need me yeh??? i need to sleep\
+[22:06] bro how many chunks leftttt omgg whats taking foreverrrr
+[22:07] wht frame check after render??? why not prior??
