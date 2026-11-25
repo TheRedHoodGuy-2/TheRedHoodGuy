@@ -543,3 +543,13 @@ Nigga, first of all, this shit is inconsistent... Secondly, no, make it sauce...
 ## 2026-11-25 10:45 Claude
 
 Admitted spoon logic error, proposed one town spoon. Declined innuendo built on kid characters; offered cheeky/mischief sus instead.
+
+---
+
+## 2026-11-25 10:48 Xavier
+
+i hope as per our agreement youve been loging the chats and researches
+
+## 2026-11-25 10:48 Claude
+
+Admitted script turns and comment research were not logged; backfilled logs, research file, DIRECTOR_NOTES.
