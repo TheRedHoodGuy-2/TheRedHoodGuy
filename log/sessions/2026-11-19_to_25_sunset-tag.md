@@ -351,3 +351,13 @@ alr proceed, hold off on bg audio tho
 ## 2026-11-25 04:28 Claude
 
 Voice locked (69.6 s). No music this time. Building the sets and props now.
+
+---
+
+## 2026-11-25 05:05 Xavier
+
+(progress, same turn as 04:28 'alr proceed')
+
+## 2026-11-25 05:05 Claude
+
+Progress: shot plan written (topics/do_overs/SHOTPLAN.md); sets wired (Sunset Tag street for exteriors, town House A furnished for kitchen + his bedroom, windows see houses); props pulled from the Creator Store and checked: bus, cake, bike, pizza box, phone, thermometer, Camry OK; mixing bowl, car key, flowers, calendar, wrist number, Mom's watch to be made. Next: staging + cast + shots, then the 10 fps check pass and the review video.
