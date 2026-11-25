@@ -5,13 +5,13 @@ Categories: every Xavier message filed by topic (one message can sit in several)
 
 ## Categories
 - log/categories/camera.md (19 notes)
-- log/categories/captions_titles.md (23 notes)
-- log/categories/faces_characters_clothes.md (30 notes)
+- log/categories/captions_titles.md (24 notes)
+- log/categories/faces_characters_clothes.md (31 notes)
 - log/categories/posing_animation.md (39 notes)
-- log/categories/script_story.md (17 notes)
+- log/categories/script_story.md (18 notes)
 - log/categories/sound_music.md (44 notes)
 - log/categories/workflow_rules.md (32 notes)
-- log/categories/world_lighting.md (19 notes)
+- log/categories/world_lighting.md (20 notes)
 
 ## Sessions
 - log/sessions/2026-11-16_fresh-start.md

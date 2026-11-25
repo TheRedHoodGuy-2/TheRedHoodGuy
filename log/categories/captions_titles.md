@@ -72,3 +72,5 @@ add brainfreeze, the comeback one, the word looking wrong, the time crawl they a
 - **2026-11-25 03:17** (2026-11-19_to_25_sunset-tag.md): (image of a crisp Roblox character + b3474d0f-Download_1.mp4) i like rezero, also notice this these uploaded vids i see even gneefs have this HIGH ASF quality look like shapr textures n shii, even this ranom one 
 
 but ours look low qual ash
+
+- **2026-11-25 03:25** (2026-11-19_to_25_sunset-tag.md): I don't mean like those things that you turned off here... (full message) They must be 1080p. Upgrade every texture from face to clothing to 1080p / 2560 / 4K so our textures are crisp. Sharp textures, top quality, not copying his look. Script: inconsistency (max 100 vs 4,000 / 1,050 / 312). Twist: he was borrowing his mom's resets, counting down instead of up, at zero you die, make it tragic.

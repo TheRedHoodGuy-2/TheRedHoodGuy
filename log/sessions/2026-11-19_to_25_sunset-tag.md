@@ -280,3 +280,14 @@ but ours look low qual ash
 
 Re:Zero script: scripts/07_restart_day.md, "In This Town, Mistakes Restart Your Day 🔁", 256 words ~59 s + 4 s silent ending. Rule + wrist counter, gags (312 / 1,050 / 4,000), plant (Mom's watch she never takes off, "one is the best number"), Tuesday Mom never comes home, tries 2 -> 99, at 100 the day stops restarting, fix: he bakes the cake himself, Wednesday. Cliffhanger shown: her wrist says 4,812, finger to lips.
 Quality: the ref is only 576x1024; resolution isn't the gap. Tested DOF/grain/bloom off + lifted grade: barely changes. The gap is the look: clean flat colours, crisp simple textures, soft bright light vs our busy photo textures, blurry low-res catalog shirt prints, dark contrasty grade, heavy DOF. Plan: a clean look preset for the next video, tested on one still vs the ref before rendering. research/look_quality_gap_2026-11-25.md.
+
+---
+
+## 2026-11-25 03:25 Xavier
+
+I don't mean like those things that you turned off here... (full message) They must be 1080p. Upgrade every texture from face to clothing to 1080p / 2560 / 4K so our textures are crisp. Sharp textures, top quality, not copying his look. Script: inconsistency (max 100 vs 4,000 / 1,050 / 312). Twist: he was borrowing his mom's resets, counting down instead of up, at zero you die, make it tragic.
+
+## 2026-11-25 03:25 Claude
+
+Script v2 (scripts/07_do_overs.md, "In This Town, You Get 100 Do-Overs ⏪"): everyone starts with 100, the wrist counts DOWN, at zero you don't wake up; gags 60 left / 10 left / 3 left; Mom's watch + "the people who love you most never tell you what they spent"; Tuesday loop, his wrist never drops; 60 Tuesdays, he bakes the cake, Wednesday; shown ending: Mom's wrist says 1, finger to lips. 255 words ~58 s + 4 s.
+Textures audit: 237 textures, none above 1024 px, 56 at 256 px, Poly Haven shrunk to 512, anisotropy 1-8. We already render 1080x1920. Plan: canvas-made textures regenerated at 2-4x, Poly Haven 2K/4K, catalog clothing + hair + faces AI-upscaled 4x (Real-ESRGAN, CPU), anisotropy 16 everywhere, PNG frames, supersample 1440x2560 -> 1080x1920. Cost: a few hours of work, renders ~2x slower. Proof still vs current before applying.
