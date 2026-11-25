@@ -553,3 +553,13 @@ i hope as per our agreement youve been loging the chats and researches
 ## 2026-11-25 10:48 Claude
 
 Admitted script turns and comment research were not logged; backfilled logs, research file, DIRECTOR_NOTES.
+
+---
+
+## 2026-11-25 10:52 Xavier
+
+i hope as per our agreement youve been loging the chats and researches
+
+## 2026-11-25 10:52 Claude
+
+No, not fully. The story study turn was logged, but the script turns (10:39 to 10:48) and the real-comment research were not. Backfilled now: 5 session log turns, research/comments_real_2026-11-25.md, DIRECTOR_NOTES entry, README index line. CLAUDE.md section 4 COMMENT BAIT is not updated yet. Waiting on your go for the fixed spoon script (one town spoon, cheeky sus, no innuendo with kid characters).
