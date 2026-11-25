@@ -1,0 +1,5 @@
+file p1.wav
+file g.wav
+file p2_mom.wav
+file g.wav
+file p3.wav
