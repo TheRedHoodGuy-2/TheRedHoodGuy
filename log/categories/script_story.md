@@ -80,3 +80,5 @@ Comparing them shows what actually worked: the hook line, the length, the topic,
 - **2026-11-25 02:54** (2026-11-19_to_25_sunset-tag.md): (attached cdfd8f43c7a8424b55390041e70be842.mp4, a 4:47 Reddit wrong-number story) no new video, take the script from this 4 min full story reddit story shii, it seems captive enough, lets apply our retention shii and cliffhanger shii on the script, send the new script
 
 also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here gets stored in a log on our repo that you read EVERY TIME, ike EVERYTHING what i say, your response etc if it can even be catalogud in categores as well as the full raw complete shii every 5 messages or sun or every message, ion want compacting to be the end of me
+
+- **2026-11-25 03:05** (2026-11-19_to_25_sunset-tag.md): nooo not an inthis town video, just the script but efficient for max views and we use a girl to tell the tale...

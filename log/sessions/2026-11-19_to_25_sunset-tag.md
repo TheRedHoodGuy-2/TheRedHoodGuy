@@ -193,3 +193,62 @@ CLIFFHANGER (shown, no voice, ~4 s) The door opens a crack. Theo's porch light c
 Checks: rule by ~3 s; "You see" sentence 2; 3 gags by 17%; "But I" 26%; plant before the crisis; crisis + clock by ~40-45%; the fix uses the plant (his count) + the rule's own words; median sentence 5 words, longest 16; 4 tagged lines; 2 named (Theo, Mr. Gus). Under the bible's 320-word target (294) but inside 75 s, render ~2 h at final quality.
 
 LOG: every message now goes into the repo. log/sessions/ = raw per session (Xavier verbatim + my reply), log/categories/ = his messages filed by topic (posing, camera, sound/music, captions/titles, script, faces/clothes, world/lighting, workflow), log/INDEX.md. Seeded with this whole session (his messages verbatim, my replies condensed for the part before now) + all 101 of his messages from the old repo. tools/logturn.py appends each turn verbatim at the end of every turn and pushes. CLAUDE.md now says: read the index + all categories + newest session at the start of every chat. Limit: this cloud session's raw transcript is not on disk, so it can't be scraped automatically; it's written each turn by me. The first ~190 turns of this chat (before the compaction) are in as the summary's version of your messages; a full raw backfill from the claude.ai history costs roughly 150-250k tokens of reading, say the word and I do it.
+
+---
+
+## 2026-11-25 03:05 Xavier
+
+nooo not an inthis town video, just the script but efficient for max views and we use a girl to tell the tale...
+
+## 2026-11-25 03:05 Claude
+
+Rewrote it as the real story, no rule, told by a girl (main girl, "Rosie" for now). scripts/06_wrong_number.md, 295 words, ~68 s + ~3 s silent cut. Title: "My New Number Got A Text From A Stranger 📱". Porch-light rule version archived as scripts/_ideas_porch_light_rule.md.
+
+## Script
+At 11:42 p.m., a stranger texted my new number.
+"Mom, I'm outside. Please open the door."
+I live alone. Fourth floor. Broken buzzer.
+I crept to the peephole.
+Empty hallway. One flickering light.
+"Wrong number," I texted.
+Ten seconds later: "I know you're mad. I just want to talk."
+I shoved a chair under the doorknob.
+Then someone knocked.
+I almost screamed.
+"Everything okay in there?" a man asked.
+It was the old man from across the hall, in a plaid bathrobe, holding a mug.
+"Someone says he's outside my door," I whispered.
+He looked down the hallway. Nobody.
+All night, my phone kept lighting up.
+"I'm not leaving. It's cold out here."
+So I told him the truth.
+"I'm not your mom. I'm a nineteen-year-old girl named Rosie. I've had this number three weeks."
+The dots appeared. Disappeared. Appeared.
+Then he sent a photo.
+A small white house. Green shutters.
+A For Sale sign, leaning in the grass.
+"She always leaves the porch light on for me," he wrote.
+The porch light was off.
+That's when I felt sick.
+He wasn't outside MY door.
+He was outside hers. Two hundred miles away. Texting a stranger.
+"It said delivered three weeks ago," he wrote. "Before that, it never went through."
+Three weeks. The day I got this number.
+His name was Theo.
+Three years ago, his stepdad threw him out and said his mom agreed.
+She never texted him again.
+"Did SHE ever say that?" I asked.
+A long pause.
+"No. He did."
+And now her house was for sale. Nobody told him.
+"Call your aunt," I wrote. "Right now."
+"It's four in the morning."
+"She'll answer."
+An hour passed. Nothing.
+Then at 5:17, my phone buzzed.
+A voice memo. From Theo.
+I pressed play.
+[SHOWN, NO NARRATION ~3 s] Static. Then a woman sobbing, loud and broken. A second voice starts, "Theo, baby,
+where..." CUT to black mid-word.
+
+Retention: hook line 1 (stranger + "Mom, I am outside"), a scare every few seconds (peephole, chair, knock at 19%), reveal at 47-58% (photo, porch light off, he is not at her door), backstory + "No. He did." at 85%, clock 4 a.m. -> 5:17, cut on the voice memo (part 2 bait). Needs a female narrator voice in Fish Audio; the girl main is not chosen yet.
