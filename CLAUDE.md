@@ -156,13 +156,15 @@ every message of his and every reply -> session log.
 3. Shot list written with engine/shots.js; `validate()` empty; stills at start / middle / end of EVERY shot looked at
    (subject readable, nothing blocking, face lit, no void behind).
 4. Gates: walk check (if anyone walks), clip check (tools/clipcheck.js on contact poses), lookmeter, shot validate.
-5. Render (tools/render.mjs, --t0 for per-location segments; 30 fps finals; segments concatenated with -c copy, voice
+5. REVIEW GATE (Xavier 2026-11-25): after the frame-checked 10 fps check pass, SEND him that cheap low-res, low-fps review video
+   (with voice) to rate, and wait for his OK. Only then the final. A 'final straight' request is a one-off, not the default.
+6. Render (tools/render.mjs, --t0 for per-location segments; 30 fps finals; segments concatenated with -c copy, voice
    muxed with -c:v copy). render.mjs SKIPS existing frames: delete the affected frames after any change.
-6. FRAME CHECK (docs/FRAME_CHECK.md): extract EVERY frame, tile them all (nothing skipped), zoom crops of faces /
+7. FRAME CHECK (docs/FRAME_CHECK.md): extract EVERY frame, tile them all (nothing skipped), zoom crops of faces /
    hands / contacts, check against the research (composition, lens, light, posing, faces, mouths, grade) and the
    defects list (clipping, floating limbs, flicker, pops, blocked shots, lines bleeding through, empty horizon).
    Fix -> re-render -> re-check until a full pass finds nothing.
-7. Final: title (rule + emoji) + description. Commit topic (not frames / wav). Push per section 3.
+8. Final: title (rule + emoji) + description. Commit topic (not frames / wav). Push per section 3.
 
 ## 12. Where things are
 engine/: r6.js (bodies), rig.js (poseRig), poses.js, r6pose.js, cast.js, faceset.js, lipsync.js, walk.js, look.js,
