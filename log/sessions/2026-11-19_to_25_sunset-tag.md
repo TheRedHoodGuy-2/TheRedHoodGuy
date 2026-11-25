@@ -423,3 +423,13 @@ Our last video, the gender swap one, got people talking in the comments ... chee
 ## 2026-11-25 08:47 Claude
 
 Comment bait rule saved (CLAUDE.md s4, FORMAT_BIBLE, DIRECTOR_NOTES): every script lists the 2-3 comments it's built to start. yt-dlp: YouTube blocked here (bot sign-in wall, tested on his own short xpIRhLYVXFA). TikTok untested. Options: throwaway-account cookies, run yt-dlp on his laptop via the desktop app, or he downloads and uploads.
+
+---
+
+## 2026-11-25 08:50 Xavier
+
+try it on my laptop
+
+## 2026-11-25 08:50 Claude
+
+Works. yt-dlp in the desktop app's Linux VM on his laptop (nothing installed on Windows), no bot wall from his home connection. Pulled his own short xpIRhLYVXFA at 1080p H.264, saved to Videos\redhood_refs, staged into the cloud workspace. Script ~/getref.sh downloads any list of links. Two leftover part files from the first test are in Videos\redhood_refs\_to_delete (deleting in his folders is off by default).
