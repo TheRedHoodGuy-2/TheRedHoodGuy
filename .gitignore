@@ -9,3 +9,4 @@ reference/**/*.mp4
 reference/**/*.webm
 __pycache__/
 /assets/roblox/
+topics/*/music/*.wav

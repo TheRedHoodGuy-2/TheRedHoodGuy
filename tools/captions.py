@@ -10,17 +10,18 @@ title = args[args.index('--title') + 1] if '--title' in args else None
 T = f'topics/{topic}'; words = json.load(open(f'{T}/voice/words.json'))['words']
 
 LOOK = dict(
-    font='Poppins', font_file='/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',
-    size=210,                 # ASS font size (libass draws Poppins at ~.558 of this in px: 210 -> ~117 px em)
-    y=1330,                   # caption centre line (px from top of 1920)
-    max_w=940, max_words=3,   # chunking
-    text='&H00FFFFFF', outline='&H00000000', bord=9, shad=4,
-    box='&H002B26E3',         # highlight box colour (BGR): brand red  (yellow: &H0000D4FF)
-    box_text='&H00FFFFFF', pad_x=22, pad_y=16, radius=18,
-    bounce=((0, 90, 124), (90, 190, 112)),   # (from ms, to ms, scale %): grow, then settle
-    title_size=250, title_y=330, title_box='&H002B26E3',
+    font='FredokaSB', font_file='assets/fonts/FredokaSB.ttf',   # Fredoka SemiBold (Google Fonts, OFL), rounded like his ref
+    size=124,                 # ASS font size (libass draws FredokaSB at ~.82 of this: 124 -> ~102 px em)
+    y=1370,                   # caption centre line (px from top of 1920)
+    max_w=860, max_words=3,   # chunking
+    text='&H00FFFFFF', outline='&H001B1B1B', bord=6, shad=2,
+    hl='&H001FD2FF',          # spoken word fill (BGR): warm yellow #FFD21F, same as the title
+    box=None,                 # set e.g. '&H002B26E3' to put the spoken word on a box instead
+    box_text='&H00FFFFFF', pad_x=14, pad_y=10, radius=14,
+    bounce=((0, 80, 118), (80, 170, 106)),   # (from ms, to ms, scale %): grow, then settle
+    title='&H001FD2FF', title_size=104, title_y=200, title_bord=6,
 )
-K = .558                      # libass px per ASS font-size unit, measured for Poppins (calibration 2026-11-25)
+K = .822                      # libass px per ASS font-size unit, measured for FredokaSB (2026-11-25)
 F = ImageFont.truetype(LOOK['font_file'], round(LOOK['size'] * K))
 def wpx(s): b = F.getbbox(s); return b[2] - b[0]
 CAP_H = F.getbbox('H')[3] - F.getbbox('H')[1]
@@ -36,7 +37,7 @@ def bounce():
     return ''.join(f'\\t({a},{b},\\fscx{s}\\fscy{s})' for a, b, s in LOOK['bounce'])
 
 # chunk: up to 3 words that fit the width, break after punctuation or a pause
-GAP = SPACE + 2 * LOOK['pad_x'] + 22
+GAP = SPACE + (2 * LOOK['pad_x'] + 6 if LOOK['box'] else 10)
 chunks, cur = [], []
 for i, w in enumerate(words):
     cur.append(w); nxt = words[i + 1] if i + 1 < len(words) else None
@@ -55,17 +56,17 @@ for ci, ch in enumerate(chunks):
         a = w['s']; b = ch[wi + 1]['s'] if wi + 1 < len(ch) else end_chunk
         for k, x_ in enumerate(ch):
             word = x_['w'].upper()
-            if k == wi:   # the spoken word: box + white text, both bouncing about the word centre
+            if k == wi and LOOK['box']:   # spoken word on a box, both bouncing about the word centre
                 bw, bh = ws[k] + 2 * LOOK['pad_x'], CAP_H + 2 * LOOK['pad_y']
                 ev.append(f'Dialogue: 1,{ts(a)},{ts(b)},Cap,,0,0,0,,{{\\an5\\pos({cx[k]:.0f},{LOOK["y"]})\\bord0\\shad3\\1c{LOOK["box"]}\\p1{bounce()}}}{rrect(bw, bh, LOOK["radius"])}')
                 ev.append(f'Dialogue: 2,{ts(a)},{ts(b)},Cap,,0,0,0,,{{\\an5\\pos({cx[k]:.0f},{LOOK["y"]})\\bord0\\shad0\\1c{LOOK["box_text"]}{bounce()}}}{word}')
+            elif k == wi:                 # spoken word: yellow fill, same outline, bounces
+                ev.append(f'Dialogue: 2,{ts(a)},{ts(b)},Cap,,0,0,0,,{{\\an5\\pos({cx[k]:.0f},{LOOK["y"]})\\1c{LOOK["hl"]}{bounce()}}}{word}')
             else:
                 ev.append(f'Dialogue: 0,{ts(a)},{ts(b)},Cap,,0,0,0,,{{\\an5\\pos({cx[k]:.0f},{LOOK["y"]})}}{word}')
-if title:
-    TF = ImageFont.truetype(LOOK['font_file'], round(LOOK['title_size'] * K)); tb = TF.getbbox(title); tw = tb[2] - tb[0]; th = TF.getbbox('H')[3] - TF.getbbox('H')[1]
-    pop = '\\fscx60\\fscy60\\t(0,120,\\fscx112\\fscy112)\\t(120,240,\\fscx100\\fscy100)\\fad(0,250)'
-    ev.insert(0, f'Dialogue: 3,{ts(0)},{ts(2.2)},Title,,0,0,0,,{{\\an5\\pos(540,{LOOK["title_y"]})\\bord0\\shad4\\1c{LOOK["title_box"]}\\p1{pop}}}{rrect(tw + 60, th + 44, 24)}')
-    ev.insert(1, f'Dialogue: 4,{ts(0)},{ts(2.2)},Title,,0,0,0,,{{\\an5\\pos(540,{LOOK["title_y"]})\\bord0\\shad0{pop}}}{title}')
+if title:   # small title at the top: yellow fill, dark outline, pops in, fades out at 2.2 s
+    pop = '\\fscx60\\fscy60\\t(0,110,\\fscx110\\fscy110)\\t(110,220,\\fscx100\\fscy100)\\fad(0,250)'
+    ev.insert(0, f'Dialogue: 4,{ts(0)},{ts(2.2)},Title,,0,0,0,,{{\\an5\\pos(540,{LOOK["title_y"]}){pop}}}{title}')
 
 STYLES = f"""[Script Info]
 ScriptType: v4.00+
@@ -76,8 +77,8 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,{LOOK['font']},{LOOK['size']},{LOOK['text']},{LOOK['text']},{LOOK['outline']},&H78000000,-1,0,0,0,100,100,0,0,1,{LOOK['bord']},{LOOK['shad']},5,0,0,0,1
-Style: Title,{LOOK['font']},{LOOK['title_size']},&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,-1,0,0,0,100,100,0,0,1,0,4,5,0,0,0,1
+Style: Cap,{LOOK['font']},{LOOK['size']},{LOOK['text']},{LOOK['text']},{LOOK['outline']},&H78000000,0,0,0,0,100,100,0,0,1,{LOOK['bord']},{LOOK['shad']},5,0,0,0,1
+Style: Title,{LOOK['font']},{LOOK['title_size']},{LOOK['title']},{LOOK['title']},{LOOK['outline']},&H78000000,0,0,0,0,100,100,0,0,1,{LOOK['title_bord']},2,5,0,0,0,1
 """
 out = f'{T}/captions{"_title" if title else ""}.ass'
 open(out, 'w').write(STYLES + '\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n' + '\n'.join(ev) + '\n')
