@@ -593,3 +593,44 @@ do clapping but dont copy my flow do something different with our retention shii
 ## 2026-11-25 10:59 Claude
 
 Wrote 'Clapping Is Illegal, I Called The Cops': cold open on door kick, snapping loophole, Mom away, Mrs. Pam voice twist, clock, Mom walks in at end. Awaiting go.
+
+---
+
+## 2026-11-25 11:02 Xavier
+
+I like it. I like it. I'm liking this one. But instead of making it obvious, like we're making it very obvious that Mrs. Palm is here, let's leave it for the viewer. Like let's insinuate it. For example, at the point where he said, shove Mrs. Palm hides in the closet, or that was Mrs. Palm. Like, I don't have to explain what I'm trying to say. We can leave it for the viewer. We can insinuate, like, if for example, if mom walks in with her suitcase and says, why is Mrs. Palm's car outside? You understand? You understand? That way, we are leaving it for the viewer.
+
+## 2026-11-25 11:02 Claude
+
+Revised: Mrs. Pam is never named or heard. The viewer connects it from the car, and Mom's line is the only reveal.
+
+**Title: "Clapping Is Illegal, I Called The Cops 👏"**
+
+**Voice (~200 words):**
+In this town, clapping is illegal. You see, one clap and the clap cops come. They have a van. It has a giant ear on top. So at weddings, everybody wiggles their fingers. At football games, everybody snaps. My teacher gets a standing ovation of snaps every morning. It sounds like rain. Mom went to Aunt Linda's for the weekend. Dad stayed home. "I'm just working out," he said. Friday night, I heard it. Clap. Clap. Clap clap clap. From Dad's room. "Dad's breaking the law," I said. So I called the cops. They said three minutes. I ran upstairs. "Dad! Cops!" The clapping stopped. "Go to your room," Dad said. The siren got closer. Ten seconds. Dad shoved something under the bed. The closet door clicked shut. I knocked the lamp over. Nothing helped. The cop kicked the door open. Dad stood there in his robe. "Officer, it's just me." Behind the cop, the front door opened. Mom walked in with her suitcase. "Why is Mrs. Pam's car outside?"
+
+**What changed:**
+- Mrs. Pam's voice is gone. The narrator never says her name.
+- Plant: a pink car sits parked across the street from frame 3 s onward, in the background of the gags. The kid never mentions it.
+- The closet door clicking shut is visual only. No line points at it.
+- "Working out" is Dad's own cover line, so the kid believes it.
+- The only reveal is Mom's last line. Cut on her face and on Dad's.
+
+**Beats:** same as before, with these swaps:
+- 22-30 s: clapping only, no second voice. I call the cops.
+- 30-45 s: I run up, the clapping stops, Dad shoves something under the bed, the closet clicks shut, I knock over the lamp. No Pam, no names.
+- 45-55 s: the cop kicks the door open, Dad in his robe, Mom at the front door. Last line, cut.
+
+**Logic check:**
+- Clapping is the only illegal sound, and snapping is legal.
+- The pink car is the only link to Mrs. Pam. Mom connects it, the viewer connects it, and nobody confirms it.
+- Dad's "working out" fits what the kid heard.
+- Nothing contradicts. The car plants early and pays off at the end.
+
+**Comments it's built to start:**
+- "whose car was that 😭" (the plant)
+- "the closet door closing by itself"
+- "why not just snap" (the loophole)
+- "Mom knew"
+
+Say go and I'll write RULES_CHECK and the shot list.

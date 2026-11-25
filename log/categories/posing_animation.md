@@ -218,3 +218,5 @@ add brainfreeze, the comeback one, the word looking wrong, the time crawl they a
 - **2026-11-25 10:05** (2026-11-19_to_25_sunset-tag.md): (09:36) Xavier: stick to cloud (no Blender); 25% weekly used. go study anim vids; can you connect YT/TikTok/FB analytics; where did you download vids.
 
 - **2026-11-25 10:39** (2026-11-19_to_25_sunset-tag.md): quick test, hand over a new script
+
+- **2026-11-25 11:02** (2026-11-19_to_25_sunset-tag.md): I like it. I like it. I'm liking this one. But instead of making it obvious, like we're making it very obvious that Mrs. Palm is here, let's leave it for the viewer. Like let's insinuate it. For example, at the point where he said, shove Mrs. Palm hides in the closet, or that was Mrs. Palm. Like, I don't have to explain what I'm trying to say. We can leave it for the viewer. We can insinuate, like, if for example, if mom walks in with her suitcase and says, why is Mrs. Palm's car outside? You understand? You understand? That way, we are leaving it for the viewer.
