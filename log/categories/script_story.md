@@ -114,3 +114,7 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 10:59** (2026-11-19_to_25_sunset-tag.md): do clapping but dont copy my flow do something different with our retention shii ofc
 
 - **2026-11-25 11:12** (2026-11-19_to_25_sunset-tag.md): What does the story do? Like he called the cops. Why then go upstairs to say that cops? And then why does he now shove the lamp over to help? What's going on? I don't get the point of the what's going on.
+
+- **2026-11-25 11:55** (2026-11-19_to_25_sunset-tag.md): replace fingers with jazz hands, learn how to pose ffs and animate or ask for an example, replace couch with chair under knob, make sets we dont have then dont be a pussy, but ya you can replace with bday party and jazz hands 
+
+next time dont make scripts that would be hard to animate, lms the new sscript now

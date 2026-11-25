@@ -150,3 +150,7 @@ but ours look low qual ash
 - **2026-11-25 08:47** (2026-11-19_to_25_sunset-tag.md): Our last video, the gender swap one, got people talking in the comments ... cheeky boy because in the last frame he was laughing when his bro became a girl. People asking what if you were transgender, a boy turning into a girl ... We want videos that get people to comment. Consider this when making scripts. What can we add to make people talk? What concept can we make that people are sure to talk? quick question, if i provide links, can you use ytdlp to download?
 
 - **2026-11-25 09:40** (2026-11-19_to_25_sunset-tag.md): (09:17) Xavier sent 10 uploaded storytime vids + 15 story links + 14 anim links; HQ channels = SensBlox, GreenBroRants, Gneef; asked if channel names -> top 7 download works; wants higher quality (Blender ok for finals, one video a day), strict frame scrutiny, anim dissection must classify what each character is doing per frame.
+
+- **2026-11-25 11:55** (2026-11-19_to_25_sunset-tag.md): replace fingers with jazz hands, learn how to pose ffs and animate or ask for an example, replace couch with chair under knob, make sets we dont have then dont be a pussy, but ya you can replace with bday party and jazz hands 
+
+next time dont make scripts that would be hard to animate, lms the new sscript now
