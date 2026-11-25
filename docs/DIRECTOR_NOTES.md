@@ -313,3 +313,9 @@ defend every pixel of it, it does not get sent.
 - He first asked for "never a still moment" on 2026-10-23 (explainer-kit). It was lost; now in CLAUDE.md section 9.
 - Every animation / pose note from the old repo is in research/legacy_explainer/ANIMATION_COMPLETE.md (+ his full old
   messages in xavier_messages_old_chats.md).
+
+## 2026-11-25 03:25 (texture quality)
+- NOT about turning off bloom / realism. Videos must be 1080p, and EVERY texture (faces, clothing, sets, props) upgraded to
+  2K-4K so frames look crisp and sharp like Gneef's / the refs. Audit 2026-11-25: 237 textures in Sunset Tag, none above
+  1024 px; 56 at 256 px (body normal maps, hair maps); Poly Haven loaded at 1K and shrunk to 512; anisotropy 1-8.
+- Scripts: every number must stay consistent with the rule (no 4,000 tries when the max is 100).
