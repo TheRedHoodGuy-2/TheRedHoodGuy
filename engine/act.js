@@ -61,10 +61,10 @@ export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {})
     const cur = K[i], prev = K[Math.max(0, i - 1)], get = k => chans(typeof k.pose === 'function' ? k.pose(t, A) : (typeof k.pose === 'string' ? POSES[k.pose] : k.pose) || {});
     const dur = cur.dur ?? .32, u = Math.min(1, Math.max(0, (t - cur.t) / dur)), k = i === 0 ? 1 : (cur.ease === 'io' ? ease(u) : back(u));
     const c = i === 0 ? get(cur) : mixC(get(prev), get(cur), k);
-    let at = cur.at, ry = cur.ry; for (let j = i; j >= 0 && (at == null || ry == null); j--) { at ??= K[j].at; ry ??= K[j].ry; }
+    let at = cur.at, ry = cur.ry, yy = cur.y; for (let j = i; j >= 0 && (at == null || ry == null); j--) { if (at == null && K[j].at) yy ??= K[j].y ?? 0; at ??= K[j].at; ry ??= K[j].ry; }   // y comes with the key that placed the actor (2026-11-25: a bed key without y dropped him to the floor)
     if (cur.glide && cur.at && i > 0) { let pa = null; for (let j = i - 1; j >= 0 && !pa; j--) pa = K[j].at; if (pa) { const g = ease(Math.min(1, (t - cur.t) / cur.glide)); at = pa.map((v, n) => v + (cur.at[n] - v) * g); } }
     if (cur.turn != null && i > 0) { let pr = null; for (let j = i - 1; j >= 0 && pr == null; j--) pr = K[j].ry; if (pr != null) ry = pr + (ry - pr) * ease(Math.min(1, (t - cur.t) / cur.turn)); }
-    return { c, at: at || [0, 0], ry: ry || 0, y: cur.y ?? 0 };
+    return { c, at: at || [0, 0], ry: ry || 0, y: yy ?? 0 };
   }
   S.update = t => {
     for (const A of actors) {
