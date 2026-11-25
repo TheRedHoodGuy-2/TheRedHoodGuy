@@ -301,3 +301,13 @@ No. I mean, yes, you can increase the textures of the other stuff, the polygon a
 ## 2026-11-25 03:44 Claude
 
 Script approved and locked (topics/do_overs/). Finals: render 1440x2560, deliver at 1440x2560, ~15 Mbps. Textures: after the review OK, every texture in the video upscaled 4x before the final. Our Sunset Tag file is already ~16-20 Mbps; the 678 kbps / 1024p reading is TikTok's own re-compressed copy, so a higher-res, higher-bitrate upload still helps but TikTok will re-encode. Next: the voice take (the Fish Audio boy narrator, like Sunset Tag) while I build the house, kitchen, street, car, wrist-counter prop, watch, cake; then the 10 fps review video for you to rate.
+
+---
+
+## 2026-11-25 03:47 Xavier
+
+send the full script let me go make the audio
+
+## 2026-11-25 03:47 Claude
+
+Sent the full voice script (narration only, no stage directions) for Fish Audio.
