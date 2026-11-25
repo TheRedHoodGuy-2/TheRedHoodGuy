@@ -331,3 +331,13 @@ swear, let me have the final audio, reducend the long ahh puase
 ## 2026-11-25 04:24 Claude
 
 Kept the swear, cut every pause to ~0.1 s (72 s -> 63 s, ~243 words a minute), only 3 gaps over 0.2 s left. Sent do_overs_voice.mp3; word timings + lip flap redone on it.
+
+---
+
+## 2026-11-25 04:26 Xavier
+
+the pauses are TOO short
+
+## 2026-11-25 04:26 Claude
+
+Pauses set to ~0.16 s (between the two versions): 69.6 s. Sent the new do_overs_voice.mp3, timings + flap redone.
