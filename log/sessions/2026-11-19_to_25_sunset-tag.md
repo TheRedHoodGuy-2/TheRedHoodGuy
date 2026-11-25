@@ -267,3 +267,16 @@ Yes. We take the anime's CONCEPT only (ideas are free), never its names, charact
 3. RE:ZERO -> "In this town, when you mess up, the whole day restarts, but only you remember." Gags: perfect test scores, a guy on his 400th try asking a girl out. Crisis: I'm stuck in a day where Mom never comes home.
 4. NARUTO (clones) -> "In this town, every kid can make one copy of themselves." Gags: clones doing homework, chores, detention. My copy never listens to me. Crisis: my copy wants to keep my life.
 Pick one (or name another anime) and I write the full script.
+
+---
+
+## 2026-11-25 03:17 Xavier
+
+(image of a crisp Roblox character + b3474d0f-Download_1.mp4) i like rezero, also notice this these uploaded vids i see even gneefs have this HIGH ASF quality look like shapr textures n shii, even this ranom one 
+
+but ours look low qual ash
+
+## 2026-11-25 03:17 Claude
+
+Re:Zero script: scripts/07_restart_day.md, "In This Town, Mistakes Restart Your Day 🔁", 256 words ~59 s + 4 s silent ending. Rule + wrist counter, gags (312 / 1,050 / 4,000), plant (Mom's watch she never takes off, "one is the best number"), Tuesday Mom never comes home, tries 2 -> 99, at 100 the day stops restarting, fix: he bakes the cake himself, Wednesday. Cliffhanger shown: her wrist says 4,812, finger to lips.
+Quality: the ref is only 576x1024; resolution isn't the gap. Tested DOF/grain/bloom off + lifted grade: barely changes. The gap is the look: clean flat colours, crisp simple textures, soft bright light vs our busy photo textures, blurry low-res catalog shirt prints, dark contrasty grade, heavy DOF. Plan: a clean look preset for the next video, tested on one still vs the ref before rendering. research/look_quality_gap_2026-11-25.md.

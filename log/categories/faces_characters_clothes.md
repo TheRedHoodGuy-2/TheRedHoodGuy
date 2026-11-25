@@ -140,3 +140,7 @@ hip as butt EXAMPLE : myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: [-0.
 hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: [-0.783, 0, -0.112] }, legL: { r: [-1.568, 0, 0.094], o: [-0.022, -0.02, 0.044] }, legR: { r: [-1.568, 0, -0.094], o: [-0.022, 0.018, 0.044] }, root: { x: 0.022, y: 0.237, z: -0.044 }},   // face: 'neutral'
 
 *(7 images attached)*
+
+- **2026-11-25 03:17** (2026-11-19_to_25_sunset-tag.md): (image of a crisp Roblox character + b3474d0f-Download_1.mp4) i like rezero, also notice this these uploaded vids i see even gneefs have this HIGH ASF quality look like shapr textures n shii, even this ranom one 
+
+but ours look low qual ash

@@ -68,3 +68,7 @@ hand up: OBSERVE THE POSE: myPose: { armL: { r: [-0.002, 0.024, 3.032], o: [0.35
 - **2026-11-12 11:45** (explainer-kit_old_chats.md): create a file for github Potential vids, when i wanna make a new vid and looking for ideas it should look there and bring those ideas there first and if any is done it should mark it as done 
 
 add brainfreeze, the comeback one, the word looking wrong, the time crawl they are solid ideas, we're doing blank in test rn
+
+- **2026-11-25 03:17** (2026-11-19_to_25_sunset-tag.md): (image of a crisp Roblox character + b3474d0f-Download_1.mp4) i like rezero, also notice this these uploaded vids i see even gneefs have this HIGH ASF quality look like shapr textures n shii, even this ranom one 
+
+but ours look low qual ash
