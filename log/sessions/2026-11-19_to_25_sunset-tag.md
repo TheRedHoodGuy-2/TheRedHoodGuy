@@ -666,3 +666,35 @@ In this town, clapping is illegal. You see, one clap and the clap cops come. The
 Logic check is unchanged: snapping is legal, the pink car is the only link, and nothing contradicts.
 
 Say go and I'll write RULES_CHECK and the shot list.
+
+---
+
+## 2026-11-25 11:12 Xavier
+
+What does the story do? Like he called the cops. Why then go upstairs to say that cops? And then why does he now shove the lamp over to help? What's going on? I don't get the point of the what's going on.
+
+## 2026-11-25 11:12 Claude
+
+You're right. The kid had no goal. He calls the cops, then runs upstairs to warn Dad, then knocks over a lamp for no reason. The scene had no clear want, so it was flailing.
+
+**The fix: the kid wants to undo his call.**
+
+Call scene: the dispatcher says, "Clapping is one year in jail. Units are on the way." Now the kid has a clear want. He called to be a good citizen and just learned it sends Dad to jail.
+
+**Voice, from the call on (~110 words):**
+So I called the cops. "Clapping is one year in jail," the lady said. "Wait, cancel!" I said. "Too late. Units are on the way." I ran upstairs. "Dad! They're coming!" The clapping stopped. "Go to your room," Dad said. His voice was weird. The sirens got closer. I ran back down and blocked the door with the couch. "My dad's sleeping!" I yelled. The cop just kicked it. Dad stood in his robe at the top of the stairs. "Officer, it's just me." Behind the cop, the front door opened. Mom walked in with her suitcase. "Why is Mrs. Pam's car outside?"
+
+**Why this works:**
+- The kid wants to save Dad, and he fails with each try: the cancel, the warning, the couch.
+- Dad's side is separate. His panic is for his own reasons, so the kid's goal and Dad's goal run in parallel. We see Dad shove something and the closet click, but the kid only sees "weird voice".
+- Every action has a reason now. No lamp, no random knocking.
+- The irony is the hook. He's trying to save Dad while Dad is the one in trouble.
+- The ending is cleaner: the couch fails, the cop wins, and Mom walks in.
+
+**Revised beats 5-7:**
+- 14-18 s: "Clapping is one year in jail." "Wait, cancel!" The dispatcher says too late.
+- 18-26 s: I run upstairs and warn Dad. Dad shoves something under the bed and the closet clicks. My view stays on Dad's face.
+- 26-34 s: I drag the couch to block the door. The cop kicks it open anyway.
+- 34-42 s: Dad at the top of the stairs in his robe, Mom's entrance, her line, cut.
+
+Logic check: every action has a reason now, and nothing else changed. Say go and I'll write RULES_CHECK and the shot list.

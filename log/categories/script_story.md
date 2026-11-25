@@ -112,3 +112,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 10:55** (2026-11-19_to_25_sunset-tag.md): This is so ass... look at the tag script... do it about adults. Examples: kids look like dads but I look like the mailman; clapping is banned, I hear clapping in dad's room and call the cops.
 
 - **2026-11-25 10:59** (2026-11-19_to_25_sunset-tag.md): do clapping but dont copy my flow do something different with our retention shii ofc
+
+- **2026-11-25 11:12** (2026-11-19_to_25_sunset-tag.md): What does the story do? Like he called the cops. Why then go upstairs to say that cops? And then why does he now shove the lamp over to help? What's going on? I don't get the point of the what's going on.
