@@ -228,3 +228,5 @@ add brainfreeze, the comeback one, the word looking wrong, the time crawl they a
 - **2026-11-25 11:55** (2026-11-19_to_25_sunset-tag.md): replace fingers with jazz hands, learn how to pose ffs and animate or ask for an example, replace couch with chair under knob, make sets we dont have then dont be a pussy, but ya you can replace with bday party and jazz hands 
 
 next time dont make scripts that would be hard to animate, lms the new sscript now
+
+- **2026-11-25 12:03** (2026-11-19_to_25_sunset-tag.md): alr apply EVRYTHING weve looked into, bro i dont wanna fucking hear i forgot, or i didnt, or i skipped, BRO I DONT WANT THAT BS, employ EXTREME scrutiny on EACH frame in the not only the general frame but also the fucking content, when i get that review video i dont wanna get mad about small bs like "why is he clipping" "why does the car move backwards" "why is her eye facing this way" i ODNT want that

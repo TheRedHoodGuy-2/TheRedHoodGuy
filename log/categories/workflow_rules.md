@@ -198,3 +198,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-25 10:48** (2026-11-19_to_25_sunset-tag.md): i hope as per our agreement youve been loging the chats and researches
 
 - **2026-11-25 10:52** (2026-11-19_to_25_sunset-tag.md): i hope as per our agreement youve been loging the chats and researches
+
+- **2026-11-25 12:03** (2026-11-19_to_25_sunset-tag.md): alr apply EVRYTHING weve looked into, bro i dont wanna fucking hear i forgot, or i didnt, or i skipped, BRO I DONT WANT THAT BS, employ EXTREME scrutiny on EACH frame in the not only the general frame but also the fucking content, when i get that review video i dont wanna get mad about small bs like "why is he clipping" "why does the car move backwards" "why is her eye facing this way" i ODNT want that

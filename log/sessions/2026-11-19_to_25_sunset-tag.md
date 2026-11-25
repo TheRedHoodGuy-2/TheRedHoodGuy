@@ -780,3 +780,13 @@ In this town, clapping is illegal. You see, if you hear a clap, you call the cla
 Noted on hard scripts: the animatable check now runs before you see a script.
 
 Say go and I'll write RULES_CHECK and the shot list.
+
+---
+
+## 2026-11-25 12:03 Xavier
+
+alr apply EVRYTHING weve looked into, bro i dont wanna fucking hear i forgot, or i didnt, or i skipped, BRO I DONT WANT THAT BS, employ EXTREME scrutiny on EACH frame in the not only the general frame but also the fucking content, when i get that review video i dont wanna get mad about small bs like "why is he clipping" "why does the car move backwards" "why is her eye facing this way" i ODNT want that
+
+## 2026-11-25 12:03 Claude
+
+Go received. Here's the order. Every step is checked by me before you see anything: 1. Read every doc the rulebook lists for a new video, then fill RULES_CHECK for each location: house, street, stadium. 2. Voice, word timings, mouth flaps. 3. Build what's missing: Dad's bedroom, the birthday setup, the stadium, the van with the ear, the cars, the cop, the props. 4. Check every shot with stills at start, middle and end, plus the clip, walk, light and motion gates. 5. Pose sheet to you. 6. One cheap review video, sent only after I've gone through EVERY frame for clipping, wrong-way props and cars, eyes, hands, and story logic. Cost: this is a big one, several hours of build plus renders. The stadium and the van are the heaviest parts. The one thing I need from you: Dad becomes permanent cast. I'll build 3 Dad options from the bank and send you one sheet to pick from. Everything else I'll keep moving on.
