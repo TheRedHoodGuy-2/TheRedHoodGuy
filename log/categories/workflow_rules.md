@@ -186,3 +186,7 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 but ours look low qual ash
 
 - **2026-11-25 03:44** (2026-11-19_to_25_sunset-tag.md): No. I mean, yes, you can increase the textures of the other stuff, the polygon and stuff. But all our own textures have to be upscaled... in a video, when you've made the test video and I've confirmed everything, take all the textures from that video and upscale them like crazy. Render at 1440 and don't scale it down. TikTok quality checker said our video was 1024p... increase the bit rate (currently ~678 kbps) to about 10 or 15. I approve the script, I like it. Let's try this. Do not forget all our tips.
+
+- **2026-11-25 06:55** (2026-11-19_to_25_sunset-tag.md): W]]]HY TF IS A LW]OW]] QUAL LOW]]] FPS LOW]]] RENDER TAKING THIS LONG
+
+sont go rendering for another hour ro , on a precheck vid

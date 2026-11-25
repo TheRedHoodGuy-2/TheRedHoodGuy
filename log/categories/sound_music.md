@@ -216,3 +216,7 @@ but ours look low qual ash
 - **2026-11-25 04:24** (2026-11-19_to_25_sunset-tag.md): swear, let me have the final audio, reducend the long ahh puase
 
 - **2026-11-25 04:28** (2026-11-19_to_25_sunset-tag.md): alr proceed, hold off on bg audio tho
+
+- **2026-11-25 06:55** (2026-11-19_to_25_sunset-tag.md): W]]]HY TF IS A LW]OW]] QUAL LOW]]] FPS LOW]]] RENDER TAKING THIS LONG
+
+sont go rendering for another hour ro , on a precheck vid

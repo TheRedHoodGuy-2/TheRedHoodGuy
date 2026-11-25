@@ -361,3 +361,15 @@ Voice locked (69.6 s). No music this time. Building the sets and props now.
 ## 2026-11-25 05:05 Claude
 
 Progress: shot plan written (topics/do_overs/SHOTPLAN.md); sets wired (Sunset Tag street for exteriors, town House A furnished for kitchen + his bedroom, windows see houses); props pulled from the Creator Store and checked: bus, cake, bike, pizza box, phone, thermometer, Camry OK; mixing bowl, car key, flowers, calendar, wrist number, Mom's watch to be made. Next: staging + cast + shots, then the 10 fps check pass and the review video.
+
+---
+
+## 2026-11-25 06:55 Xavier
+
+W]]]HY TF IS A LW]OW]] QUAL LOW]]] FPS LOW]]] RENDER TAKING THIS LONG
+
+sont go rendering for another hour ro , on a precheck vid
+
+## 2026-11-25 06:55 Claude
+
+Slow because the check render still ran the full pipeline (whole town, PBR, shadows, DOF, bloom, SMAA) on 2 CPU cores, and every 10-min chunk rebuilds the scene first: ~2 s a frame, ~35 min a pass. Added an lq mode (no shadows/post, Lambert): only ~1.5x faster because the scene itself is the cost. No more full re-renders on prechecks: sent out/do_overs_review.mp4 built from frames I already had. Fixes already in code since those frames (not in the video): phone screen ring, hug angle, finale shh angle, the 19.8 / 37.0 / 49.8 / 58.2 junk frames, cry close-up, xclose crop, wake-up gap. Known open: the lifeguard girl may be missing at 11-12 s; dark Mom face at the end is the lq look only.
