@@ -50,6 +50,30 @@ P.lookAround = { ...P.carry, head: [-.5, .05, -.1] };
 P.sitBed = { ...P.sitGround, armL: [.3, -.9, -.3], armR: [-.32, -.9, -.3], root: { y: -.51, rx: -.05 } };
 P.bedLook = { ...P.sitBed, armL: fa('armL', [-.05, .75, .42], [.42, .55, .1], P.sitBed.root), head: [0, .4, -.1] };
 P.bedWrist = P.bedLook;
+P.nbWrist = { ...P.wristLook, head: [.1, .5, -.1] };
+P.momHandHead = { ...P.relaxed, armR: limbTo('armR', {}, [-.05, 1.86, .8]), head: [-.15, .2, .08] };
+P.boyUnderHand = { ...P.relaxed, head: [0, .25, 0] };
+P.sickBed = { ...P.sitBed, armR: fa('armR', [.0, .5, .3], [-.4, .6, .05], P.sitBed.root), head: [.35, .15, .1] };
+P.kneelCry = { ...P.kneel, head: [0, .15, .05] };
+P.doorBlock = { ...P.stand, armL: { r: [.01, 0, .9], o: [.05, -.03, 0] }, armR: { r: [.01, 0, -.9], o: [-.05, -.03, 0] }, head: [0, -.12, 0], root: { rx: -.06 } };
+export { P };
+// every acted pose in story order: [label, cast key, pose, face, seat ('' | 'seat' | 'bed')] -> tools/posesheet.py
+export const POSE_SHEET = [
+  ['01 Biker riding', 'swapA', 'bike', 'excited', 'seat'], ['02 Biker falls', 'swapA', 'fallSide', 'shocked', ''], ['03 Biker checks wrist (36)', 'swapA', 'wristLook', 'happy', ''],
+  ['04 Neighbour: 60 + F test', 'm002', 'nbWrist', 'sad', ''], ['05 Pizza guy carrying', 'm061', 'carry', 'nervous', ''], ['06 Pizza guy lost', 'm061', 'lookAround', 'nervous', ''],
+  ['07 Guy kneels, asks her out', 'm026', 'kneel', 'happy', ''], ['08 She walks off', 'f027', 'relaxed', 'annoyed', ''], ['09 Guy after the no (3 left)', 'm026', 'sad', 'sad', ''],
+  ['10 Old man, 0, lying still', 'm087', 'lieBack', 'sleepy', 'bed'], ['11 Boy sitting up in bed', 'boy', 'sitBed', 'happy', 'bed'], ['12 Boy looks at his 100', 'boy', 'bedLook', 'happy', 'bed'],
+  ['13 Mom straps her watch', 'mom', 'watchFix', 'neutral', ''], ['14 Mom turns to him', 'mom', 'relaxed', 'happy', ''], ['15 Mom: hand on his head', 'mom', 'momHandHead', 'happy', ''],
+  ['16 Boy under her hand', 'boy', 'boyUnderHand', 'proud', ''], ['17 Boy reads the calendar', 'boy', 'relaxed', 'smug', ''], ['18 Boy waves her off', 'boy', 'wave', 'happy', ''],
+  ['19 Boy waits at the window', 'boy', 'sad', 'sad', ''], ['20 Boy jolts up in bed', 'boy', 'sitBed', 'shocked', 'bed'], ['21 Boy takes her keys', 'boy', 'reach', 'smug', ''],
+  ['22 Mom at the bus stop', 'mom', 'relaxed', 'happy', ''], ['23 Boy fakes sick', 'boy', 'sickBed', 'sad', 'bed'], ['24 Mom at the bedside', 'mom', 'relaxed', 'nervous', ''],
+  ['25 Boy begs on his knees', 'boy', 'kneel', 'scared', ''], ['26 Boy cries', 'boy', 'kneelCry', 'crying', ''], ['27 Mom: I have to go', 'mom', 'shrug', 'sad', ''],
+  ['28 Boy locks the door', 'boy', 'lock', 'angry', ''], ['29 Boy blocks the door', 'boy', 'doorBlock', 'angry', ''], ['30 Boy: rewind (scared)', 'boy', 'relaxed', 'scared', ''],
+  ['31 Boy: re-f***ing-wind', 'boy', 'proud', 'furious', ''], ['32 Boy checks wrist: 100', 'boy', 'wristLook', 'confused', ''], ['33 Fist pump', 'boy', 'fistPump', 'excited', ''],
+  ['34 Boy stares at empty box', 'boy', 'sad', 'sad', ''], ['35 Mom picks up her keys', 'mom', 'reach', 'thinking', ''], ['36 Boy cracks eggs', 'boy', 'crack', 'determined', ''],
+  ['37 Mom laughs at the cake', 'mom', 'relaxed', 'laugh', ''], ['38 Hug (boy)', 'boy', 'hug', 'happy', ''], ['39 Hug (mom)', 'mom', 'hug', 'happy', ''],
+  ['40 Mom wipes the island', 'mom', 'sinkWash', 'neutral', ''], ['41 Mom: shh (wrist 1)', 'mom', 'shh', 'smug', ''],
+];
 
 export async function build({ scene, W: w, H: h, opts = {} }) {
   const { buildSuburb } = await import('../engine/sets/suburb.js'); await buildSuburb(scene);
@@ -157,7 +181,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.biker.extra = (t, a) => { const x = bikeX(Math.min(t, 4)); a.a.root.position.x = x; a.a.root.position.z = 1.6; bike.position.x = x; bike.rotation.z = t >= 2.3 && t < 2.9 ? lerp(0, 1.4, sm((t - 2.3) / .25)) : 0; };
   A.biker.key(3.95, { pose: 'wristLook', dur: .4 }).key(2.3, { pose: 'fallSide', dur: .2 }).key(2.9, { pose: pedal, dur: .05 }).face(2.3, 'shocked').face(3.2, 'happy');
   // 7.0-8.9 neighbour on his walk with an F test, 60 left
-  A.nb.show(7.0, 8.9).key(7.0, { pose: 'sad', at: [-4, -6.4], ry: 0 }).key(7.4, { pose: { ...P.wristLook, head: [.1, .5, -.1] }, dur: .5 }).face(7, 'sad');
+  A.nb.show(7.0, 8.9).key(7.0, { pose: 'sad', at: [-4, -6.4], ry: 0 }).key(7.4, { pose: 'nbWrist', dur: .5 }).face(7, 'sad');
   // 8.9-10.7 pizza guy lost, turning round with the box, 10 left
   A.pizza.show(8.9, 10.7).key(8.9, { pose: 'carry', at: [4, 4.6], ry: .4 }).key(9.4, { pose: 'lookAround', ry: -.5, dur: .5 }).key(10.1, { pose: 'carry', ry: .7, dur: .5 }).face(8.9, 'nervous');
   // 10.7-12.9 the guy asking out the girl: she walks off, 3 left
@@ -170,8 +194,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // 17.5-23.5 kitchen: Mom straps her watch at the island, turns to him, says the line, hand on his head
   const MOM_K = [3230.2, -229.1], BOY_K = [3229.35, -229.05];
   A.mom.show(17.5, 23.5).key(17.5, { pose: 'watchFix', at: MOM_K, ry: 0 }).key(19.7, { pose: 'relaxed', ry: -1.51, dur: .6 })
-    .key(20.6, { pose: { ...P.relaxed, armR: limbTo('armR', {}, [-.05, 1.86, .8]), head: [-.15, .2, .08] }, dur: .5 }).face(17.5, 'neutral').face(20.0, 'happy').talk(20.06, 22.9);
-  A.boy.show(17.5, 23.5).key(17.5, { pose: 'relaxed', at: BOY_K, ry: 1.63 }).key(20.7, { pose: { ...P.relaxed, head: [0, .25, 0] }, dur: .4 }).face(17.5, 'happy').face(21.5, 'proud');
+    .key(20.6, { pose: 'momHandHead', dur: .5 }).face(17.5, 'neutral').face(20.0, 'happy').talk(20.06, 22.9);
+  A.boy.show(17.5, 23.5).key(17.5, { pose: 'relaxed', at: BOY_K, ry: 1.63 }).key(20.7, { pose: 'boyUnderHand', dur: .4 }).face(17.5, 'happy').face(21.5, 'proud');
   // 23.5-25.0 Tuesday: calendar insert, then the boy's face as he reads it
   A.boy.show(23.5, 25.0).key(23.5, { pose: 'relaxed', at: [3229.6, -226.6], ry: -2.42 }).face(23.5, 'neutral').face(24.4, 'smug');
   // 25.0-27.5 Mom drives off at sunset; the boy waves from the walk
@@ -185,7 +209,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // 31.8-33.8 Mom at the bus stop, the bus pulls in
   A.mom.show(31.8, 33.8).key(31.8, { pose: 'relaxed', at: [8, 4.5], ry: -N / 2 }).face(31.8, 'happy');
   // 34.3-35.5 he fakes sick in bed, Mom at the bedside
-  A.boy.show(33.8, 35.5).key(33.8, { pose: 'lieBack', at: [BED.x0 + 2.5, BED.z], ry: N / 2, y: BED.top }).face(33.8, 'determined').key(34.3, { pose: { ...P.sitBed, armR: fa('armR', [.0, .5, .3], [-.4, .6, .05], P.sitBed.root), head: [.35, .15, .1] }, at: [BED.x0 + .45, BED.z], ry: N / 2, y: BED.top }).face(34.3, 'sad');
+  A.boy.show(33.8, 35.5).key(33.8, { pose: 'lieBack', at: [BED.x0 + 2.5, BED.z], ry: N / 2, y: BED.top }).face(33.8, 'determined').key(34.3, { pose: 'sickBed', at: [BED.x0 + .45, BED.z], ry: N / 2, y: BED.top }).face(34.3, 'sad');
   A.mom.show(34.3, 35.5).key(34.3, { pose: 'relaxed', at: [3230.6, -228.4], ry: -2.4, y: BED.y }).face(34.3, 'nervous');
   // 35.5-36.8 lunch: Mom heads out through the kitchen toward the front door
   A.mom.show(35.5, 36.8).face(35.5, 'happy'); A.mom.run(35.5, [[3231.5, -226.2], [3228.4, -226.4]], { step: .6, T: .45 });
@@ -193,8 +217,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const MOM_B = [3229.3, -226.2], BOY_B = [3230.0, -226.4];
   A.mom.show(36.8, 40.2).key(37.3, { pose: 'relaxed', at: MOM_B, ry: 1.85 }).key(38.9, { pose: 'shrug', dur: .4 }).face(37.3, 'nervous').face(38.9, 'sad');
   A.boy.show(36.8, 40.2).key(36.8, { pose: 'relaxed', at: BOY_B, ry: -1.3 }).face(36.8, 'determined').key(37.3, { pose: 'kneel', dur: .35 }).face(37.3, 'scared');
-  A.boy.key(38.1, { pose: { ...P.kneel, head: [0, .15, .05] }, dur: .25 }).face(38.1, 'crying');
-  A.boy.key(38.8, { pose: 'lock', at: [DOOR[0] + .35, DOOR[1] + .62], ry: N, dur: .05 }).key(39.45, { pose: { ...P.stand, armL: { r: [.01, 0, .9], o: [.05, -.03, 0] }, armR: { r: [.01, 0, -.9], o: [-.05, -.03, 0] }, head: [0, -.12, 0], root: { rx: -.06 } }, at: [DOOR[0] + .35, DOOR[1] + .3], ry: 0, turn: .35, dur: .35 }).face(38.8, 'angry');
+  A.boy.key(38.1, { pose: 'kneelCry', dur: .25 }).face(38.1, 'crying');
+  A.boy.key(38.8, { pose: 'lock', at: [DOOR[0] + .35, DOOR[1] + .62], ry: N, dur: .05 }).key(39.45, { pose: 'doorBlock', at: [DOOR[0] + .35, DOOR[1] + .3], ry: 0, turn: .35, dur: .35 }).face(38.8, 'angry');
   // 40.2-42.7 rewind x3
   A.boy.show(40.2, 42.7).key(40.2, { pose: 'relaxed', at: BOY_B, ry: -1.3 }).key(41.5, { pose: 'proud', dur: .25, style: 'snap' }).face(40.2, 'scared').face(41.5, 'furious');
   // 45.0-49.8 wrist check: 100; he grins, fist pump (back to the island, facing the dining room)

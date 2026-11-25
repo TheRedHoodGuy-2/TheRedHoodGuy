@@ -320,3 +320,10 @@ defend every pixel of it, it does not get sent.
   1024 px; 56 at 256 px (body normal maps, hair maps); Poly Haven loaded at 1K and shrunk to 512; anisotropy 1-8.
 - Scripts: every number must stay consistent with the rule (no 4,000 tries when the max is 100).
 - 03:44: finals at 1440x2560 not downscaled, ~15 Mbps; upscale every texture of a video after the review OK. "Do not forget all our tips."
+
+## 2026-11-25 06:56 Do-Overs: no render-to-debug, pose sheet first
+- "Why do you have to render a full video, then check it, then fix?" Check with STILLS while building; a video render is
+  only the final review step, lowest quality + fastest (lq, 180x320, 6 fps).
+- Before ANY render: show the pose library (every pose used, story order, labelled) so he can repose the bad ones.
+- "This render looks so trash, so undercooked. The animation is ass." The video was sent with known broken shots.
+- "new video" in a new chat must run THIS workflow (TheRedHoodGuy v2), not the explainer-kit v1 one.

@@ -164,6 +164,12 @@ every message of his and every reply -> session log.
   = +z; check every facing in a still before rendering. Flat shadows (shadowOf) use OPAQUE ink.
 
 ## 11. Pipeline + gates (all must PASS before anything is sent)
+ORDER (Xavier 2026-11-25 06:56, after Do-Overs wasted an hour on full check renders): NEVER use a video render to find
+mistakes. Build shot by shot and check with single stills (tools/stills_at.mjs, ~5 s a still: start / middle / end of
+every shot) until the whole video holds up in stills. Then the POSE SHEET (python3 tools/posesheet.py <topic>, every acted
+pose in story order from POSE_SHEET in the scene file, ~1 min) goes to Xavier BEFORE any video render; he reposes the bad
+ones. Only then ONE review video at the lowest quality and fastest speed (lq:1, 180x320, 6 fps), sent as soon as it exists.
+Re-renders after notes touch only the changed shots.
 1. Script approved -> voice (tools/tts_gemini.py) -> words.json -> flap.json -> lines.json.
 2. RULES_CHECK.md filled for every location (sections 6-10) BEFORE scene code.
 3. Shot list written with engine/shots.js; `validate()` empty; stills at start / middle / end of EVERY shot looked at
