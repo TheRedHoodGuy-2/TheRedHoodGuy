@@ -573,3 +573,13 @@ nahh new script idea
 ## 2026-11-25 10:53 Claude
 
 Pitched 'Say Mine First' (ice cream cone, Benny, Mia claims boy). Beat list + logic check + comment bait.
+
+---
+
+## 2026-11-25 10:55 Xavier
+
+This is so ass... look at the tag script... do it about adults. Examples: kids look like dads but I look like the mailman; clapping is banned, I hear clapping in dad's room and call the cops.
+
+## 2026-11-25 10:55 Claude
+
+Read Tag Swap voice text. Wrote 'Every Kid Looks Like Their Dad' (mailman lookalike, Look-Alike Day, 2 dads claim kid). PG, implied only, adult characters.
