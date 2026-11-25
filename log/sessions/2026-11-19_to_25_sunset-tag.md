@@ -830,3 +830,13 @@ those pauses i mentioned, the new ones could be a bit shorter
 ## 2026-11-25 12:27 Claude
 
 Sent v3: the three pauses at 0.44 s. 44.7 s.
+
+---
+
+## 2026-11-25 12:29 Xavier
+
+approevd v3
+
+## 2026-11-25 12:29 Claude
+
+(voice v3 locked: topics/clap_cops/voice/voice.wav, words.json, flap.json rebuilt)
