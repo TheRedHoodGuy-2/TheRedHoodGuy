@@ -34,7 +34,7 @@ every message of his and every reply -> session log.
 - Never push to GitHub without his OK (an "overnight / push it" OK covers that run). Fetch / rebase before pushing.
 - Secrets: Roblox cookie at ~/.rbx_cookie, Gemini key at /home/claude/explainer-kit/secrets/gemini_key, Fish key when
   sent: never printed, logged, committed or put in memory. Never use the main-account password he once pasted. Never share his email.
-- SFX: real recordings only (library/sfx_catalog.json Mixkit, Freesound CC0), never synthesized, mixed by tools/sfxmix.py from topics/<t>/sfx/cues.json. ONLY sounds something on screen makes (steps, slaps, falls, skids, the swap poof); no gasps/laughs/voices nobody on screen makes, no musical stings/whooshes/power-ups unless the story needs one; never spam the ending (Xavier 2026-11-25).
+- SFX: real recordings only (library/sfx_catalog.json Mixkit, Freesound CC0), never synthesized, mixed by tools/sfxmix.py from topics/<t>/sfx/cues.json. ONLY sounds something on screen makes (steps, slaps, falls, skids, the swap poof); no gasps/voices nobody on screen makes, no record scratches / drones / stings stacked on the ending. Liked (2026-11-25 01:30): giggles from on-screen laughers, a few whooshes, ticking for a countdown, heartbeat for tension, swap sparkles in moderation, a meme 'bruh' on a deadpan joke. Moderate, never spammed.
 - Music: the track Xavier sends, ~10 dB under the voice with sidechain ducking; whole mix loudnorm -14 LUFS. Captions + title are a separate layer (tools/captions.py, burnt after render).
 - No vignette, no cloth folds / crease maps, no impact freezes / hit-stops, no bloom wash, no speckle noise.
 - Clipping: near zero. Mild clipping is not acceptable.
