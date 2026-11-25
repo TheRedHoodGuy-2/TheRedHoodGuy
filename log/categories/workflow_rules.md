@@ -184,3 +184,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 03:17** (2026-11-19_to_25_sunset-tag.md): (image of a crisp Roblox character + b3474d0f-Download_1.mp4) i like rezero, also notice this these uploaded vids i see even gneefs have this HIGH ASF quality look like shapr textures n shii, even this ranom one 
 
 but ours look low qual ash
+
+- **2026-11-25 03:44** (2026-11-19_to_25_sunset-tag.md): No. I mean, yes, you can increase the textures of the other stuff, the polygon and stuff. But all our own textures have to be upscaled... in a video, when you've made the test video and I've confirmed everything, take all the textures from that video and upscale them like crazy. Render at 1440 and don't scale it down. TikTok quality checker said our video was 1024p... increase the bit rate (currently ~678 kbps) to about 10 or 15. I approve the script, I like it. Let's try this. Do not forget all our tips.

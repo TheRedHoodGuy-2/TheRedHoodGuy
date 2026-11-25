@@ -291,3 +291,13 @@ I don't mean like those things that you turned off here... (full message) They m
 
 Script v2 (scripts/07_do_overs.md, "In This Town, You Get 100 Do-Overs ⏪"): everyone starts with 100, the wrist counts DOWN, at zero you don't wake up; gags 60 left / 10 left / 3 left; Mom's watch + "the people who love you most never tell you what they spent"; Tuesday loop, his wrist never drops; 60 Tuesdays, he bakes the cake, Wednesday; shown ending: Mom's wrist says 1, finger to lips. 255 words ~58 s + 4 s.
 Textures audit: 237 textures, none above 1024 px, 56 at 256 px, Poly Haven shrunk to 512, anisotropy 1-8. We already render 1080x1920. Plan: canvas-made textures regenerated at 2-4x, Poly Haven 2K/4K, catalog clothing + hair + faces AI-upscaled 4x (Real-ESRGAN, CPU), anisotropy 16 everywhere, PNG frames, supersample 1440x2560 -> 1080x1920. Cost: a few hours of work, renders ~2x slower. Proof still vs current before applying.
+
+---
+
+## 2026-11-25 03:44 Xavier
+
+No. I mean, yes, you can increase the textures of the other stuff, the polygon and stuff. But all our own textures have to be upscaled... in a video, when you've made the test video and I've confirmed everything, take all the textures from that video and upscale them like crazy. Render at 1440 and don't scale it down. TikTok quality checker said our video was 1024p... increase the bit rate (currently ~678 kbps) to about 10 or 15. I approve the script, I like it. Let's try this. Do not forget all our tips.
+
+## 2026-11-25 03:44 Claude
+
+Script approved and locked (topics/do_overs/). Finals: render 1440x2560, deliver at 1440x2560, ~15 Mbps. Textures: after the review OK, every texture in the video upscaled 4x before the final. Our Sunset Tag file is already ~16-20 Mbps; the 678 kbps / 1024p reading is TikTok's own re-compressed copy, so a higher-res, higher-bitrate upload still helps but TikTok will re-encode. Next: the voice take (the Fish Audio boy narrator, like Sunset Tag) while I build the house, kitchen, street, car, wrist-counter prop, watch, cake; then the 10 fps review video for you to rate.
