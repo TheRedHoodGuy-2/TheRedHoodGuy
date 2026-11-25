@@ -634,3 +634,35 @@ In this town, clapping is illegal. You see, one clap and the clap cops come. The
 - "Mom knew"
 
 Say go and I'll write RULES_CHECK and the shot list.
+
+---
+
+## 2026-11-25 11:05 Xavier
+
+After the gag, yeah, cannot be like it cannot make the viewer interested. Like when you go from that at football games, everyone snaps. When you enter my teacher gives a standing ovation, I feel like people start to drop the video. It sounds like rain. People start to drop the video. When I go to mom went to Aunt Linda's for the weekend, people will start to drop the video. So after it sounds like rain, why don't you start to build tension? You say on Friday night, mom went to Aunt Linda's for the weekend, but dad stayed home. He said, I'm just walking out. He said, you get it, you're already building the tension rather than letting it drag along. You get so I don't drop the video. On Friday night, mom went to Aunt Lita's for the weekend, but dad stayed home. I'm just walking out, he said. But then I heard it. Clap, clap, clap from that room. Like, you get, those gags you are using are places where people can drop the video or people might drop the video. So we want to prevent that by building up immediately after the gag.
+
+## 2026-11-25 11:05 Claude
+
+Agreed. The gags run 3 to 12 s now, three one-liners with no setup, and the tension starts at 12 s. The teacher ovation and the rain line are cut, since they're the slow ones.
+
+**Voice (~175 words, ~42 s):**
+In this town, clapping is illegal. You see, one clap and the clap cops come. They have a van with a giant ear. At weddings, everybody wiggles their fingers. At football games, everybody snaps. Friday night, Mom went to Aunt Linda's for the weekend, but Dad stayed home. "I'm just working out," he said. Then I heard it. Clap. Clap. Clap clap clap. From Dad's room. "Dad's breaking the law," I said. So I called the cops. Three minutes, they said. I ran upstairs. "Dad! Cops!" The clapping stopped. Ten seconds. Dad shoved something under the bed. The closet door clicked shut. I knocked the lamp over. Nothing helped. The cop kicked the door open. Dad stood there in his robe. "Officer, it's just me." Behind the cop, the front door opened. Mom walked in with her suitcase. "Why is Mrs. Pam's car outside?"
+
+**Beats:**
+1. 0-1.5 s: cold open, the cop kicks Dad's door and Dad freezes in his robe.
+2. 1.5-4 s: rule line, then the clap cop van with the giant ear.
+3. 4-8 s: wiggling fingers at a wedding, then a snapping football crowd. The pink car sits in the background of the football shot.
+4. 8-14 s: "Friday night, Mom went to Aunt Linda's... Dad stayed home. 'I'm just working out.'" Tension starts here.
+5. 14-20 s: the clapping from his room, and I call the cops with a countdown.
+6. 20-34 s: the run up, the clapping stops, the shove, the closet click, the lamp, the sirens.
+7. 34-42 s: the door kick, Dad in his robe, Mom with her suitcase, her line, cut.
+
+**What changed:**
+- The gags are 3 beats at about 1.5 s each, with no extra jokes.
+- There's no dead air between the last gag and the tension.
+- Mom's trip and Dad's "working out" now play as one tense moment.
+- It ends around 42 s, so the loop back to the cold open is tighter.
+
+Logic check is unchanged: snapping is legal, the pink car is the only link, and nothing contradicts.
+
+Say go and I'll write RULES_CHECK and the shot list.
