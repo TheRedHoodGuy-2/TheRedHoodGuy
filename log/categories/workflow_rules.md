@@ -214,3 +214,5 @@ sont go rendering for another hour ro , on a precheck vid
 [18:18] you dont need me yeh??? i need to sleep\
 [22:06] bro how many chunks leftttt omgg whats taking foreverrrr
 [22:07] wht frame check after render??? why not prior??
+
+- **2026-11-25 23:01** (2026-11-19_to_25_sunset-tag.md): First of all, I have a question. When I tell you that something is wrong with the video now, you are going to have to go and re-render the entire thing all over again from scratch. But I have a question. Why can't you render each frame and keep it as a JPG or a PNG or whatever? And then when you have rendered all the frames, you now put them together in a video. So when I tell you that a frame is wrong or something is wrong, you just go to where that frame is and edit the thing that is wrong there or the corresponding frames, and then render those ones and combine those ones that into a video rather than having to now go and rework the entire video. Don't you think? Am I making any sense, or does it doesn't work that way?

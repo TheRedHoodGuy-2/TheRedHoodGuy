@@ -898,3 +898,13 @@ New rule: CLIPSCAN PASS is a gate before any video.
 Delivered: clap_cops_FINAL_music.mp4 + clap_cops_FINAL_no_music.mp4 (1080x1920, 30 fps, title + captions burnt, SFX from the real bank, loudnorm -14).
 Frame check of all 1410 frames: no broken / black / glitch frames. Clip scan passed at 24 fps before render.
 Notes: title emoji dropped from the burnt title (caption font can't draw it, came out as garbage); use "Clapping is a CRIME here 👏" as the upload title. 2K Poly Haven maps crashed the renderer (black frames), so those stay 1K; clothing textures were AI-upscaled. Lookmeter: warm reads high (red hoodie in most close-ups), dark / top pass. Snaps in the stands are silent until you send a snap sound. Weak spots I'd still fix: the chair wedge is shot from behind on a dark door.
+
+---
+
+## 2026-11-25 23:01 Xavier
+
+First of all, I have a question. When I tell you that something is wrong with the video now, you are going to have to go and re-render the entire thing all over again from scratch. But I have a question. Why can't you render each frame and keep it as a JPG or a PNG or whatever? And then when you have rendered all the frames, you now put them together in a video. So when I tell you that a frame is wrong or something is wrong, you just go to where that frame is and edit the thing that is wrong there or the corresponding frames, and then render those ones and combine those ones that into a video rather than having to now go and rework the entire video. Don't you think? Am I making any sense, or does it doesn't work that way?
+
+## 2026-11-25 23:01 Claude
+
+You're making sense, and that's already how it works. All 1,410 frames are kept as JPGs. A fix = change the scene, delete only the affected frames, re-render those (~7 s each), re-encode (~1 min), re-burn captions (~2 min). Caveat: a change that touches something visible in many shots (moving a set piece, a key whose motion carries into later shots) means re-rendering all the frames it touches, never the whole video unless it's everywhere. Only cost: disk; the frames take 560 MB and the workspace is nearly full.
