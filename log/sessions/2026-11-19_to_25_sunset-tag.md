@@ -483,3 +483,13 @@ Viewed all 19 sheets of the Hawks 96M video; full dissection saved in research/d
 ## 2026-11-25 11:40 Claude
 
 Viewed all 16 sheets of Hawks 79M "What parents see vs What i see"; full dissection saved.
+
+---
+
+## 2026-11-25 12:30 Xavier
+
+(10:01) do all the rest you need to
+
+## 2026-11-25 12:30 Claude
+
+Dissected Cody Previous legends (full), Emperor (8/13), Sheriff (8/11); wrote ANIM_SUMMARY.md; story videos pending.
