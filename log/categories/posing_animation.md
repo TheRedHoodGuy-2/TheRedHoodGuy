@@ -216,3 +216,5 @@ add brainfreeze, the comeback one, the word looking wrong, the time crawl they a
 - **2026-11-25 09:40** (2026-11-19_to_25_sunset-tag.md): (09:17) Xavier sent 10 uploaded storytime vids + 15 story links + 14 anim links; HQ channels = SensBlox, GreenBroRants, Gneef; asked if channel names -> top 7 download works; wants higher quality (Blender ok for finals, one video a day), strict frame scrutiny, anim dissection must classify what each character is doing per frame.
 
 - **2026-11-25 10:05** (2026-11-19_to_25_sunset-tag.md): (09:36) Xavier: stick to cloud (no Blender); 25% weekly used. go study anim vids; can you connect YT/TikTok/FB analytics; where did you download vids.
+
+- **2026-11-25 10:39** (2026-11-19_to_25_sunset-tag.md): quick test, hand over a new script
