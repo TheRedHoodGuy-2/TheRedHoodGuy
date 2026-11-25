@@ -226,3 +226,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-25 08:47** (2026-11-19_to_25_sunset-tag.md): Our last video, the gender swap one, got people talking in the comments ... cheeky boy because in the last frame he was laughing when his bro became a girl. People asking what if you were transgender, a boy turning into a girl ... We want videos that get people to comment. Consider this when making scripts. What can we add to make people talk? What concept can we make that people are sure to talk? quick question, if i provide links, can you use ytdlp to download?
 
 - **2026-11-25 10:05** (2026-11-19_to_25_sunset-tag.md): (09:36) Xavier: stick to cloud (no Blender); 25% weekly used. go study anim vids; can you connect YT/TikTok/FB analytics; where did you download vids.
+
+- **2026-11-25 10:59** (2026-11-19_to_25_sunset-tag.md): do clapping but dont copy my flow do something different with our retention shii ofc

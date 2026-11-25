@@ -110,3 +110,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 10:53** (2026-11-19_to_25_sunset-tag.md): nahh new script idea
 
 - **2026-11-25 10:55** (2026-11-19_to_25_sunset-tag.md): This is so ass... look at the tag script... do it about adults. Examples: kids look like dads but I look like the mailman; clapping is banned, I hear clapping in dad's room and call the cops.
+
+- **2026-11-25 10:59** (2026-11-19_to_25_sunset-tag.md): do clapping but dont copy my flow do something different with our retention shii ofc

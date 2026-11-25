@@ -583,3 +583,13 @@ This is so ass... look at the tag script... do it about adults. Examples: kids l
 ## 2026-11-25 10:55 Claude
 
 Read Tag Swap voice text. Wrote 'Every Kid Looks Like Their Dad' (mailman lookalike, Look-Alike Day, 2 dads claim kid). PG, implied only, adult characters.
+
+---
+
+## 2026-11-25 10:59 Xavier
+
+do clapping but dont copy my flow do something different with our retention shii ofc
+
+## 2026-11-25 10:59 Claude
+
+Wrote 'Clapping Is Illegal, I Called The Cops': cold open on door kick, snapping loophole, Mom away, Mrs. Pam voice twist, clock, Mom walks in at end. Awaiting go.
