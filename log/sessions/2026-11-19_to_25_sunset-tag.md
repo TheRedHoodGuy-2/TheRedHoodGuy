@@ -252,3 +252,18 @@ I pressed play.
 where..." CUT to black mid-word.
 
 Retention: hook line 1 (stranger + "Mom, I am outside"), a scare every few seconds (peephole, chair, knock at 19%), reveal at 47-58% (photo, porch light off, he is not at her door), backstory + "No. He did." at 85%, clock 4 a.m. -> 5:17, cut on the voice memo (part 2 bait). Needs a female narrator voice in Fish Audio; the girl main is not chosen yet.
+
+---
+
+## 2026-11-25 03:11 Xavier
+
+nahh can we do another in this town vid, buhh like from a popular anime, we take the concept of a popular suiting anime and use it
+
+## 2026-11-25 03:11 Claude
+
+Yes. We take the anime's CONCEPT only (ideas are free), never its names, characters or scenes. Four that fit our format (visual rule, kid narrator, a funny side and a scary side):
+1. SOLO LEVELING -> "In this town, everyone's level floats above their head." Gags: the mailman Lv 40 from dog fights, grandma Lv 99. I'm stuck at Level 1. Crisis: something Lv 500 moves in next door. Plant: I level up by doing something weird every night. Most Gneef-like (a number on everyone), my pick.
+2. MOB PSYCHO 100 -> "In this town, a meter over your head fills when you get mad. At 100%, something happens." Gags: angry drivers at 90%, teachers counting to ten. My little sister has never passed 3%. Crisis: a bully pushes her to 99%.
+3. RE:ZERO -> "In this town, when you mess up, the whole day restarts, but only you remember." Gags: perfect test scores, a guy on his 400th try asking a girl out. Crisis: I'm stuck in a day where Mom never comes home.
+4. NARUTO (clones) -> "In this town, every kid can make one copy of themselves." Gags: clones doing homework, chores, detention. My copy never listens to me. Crisis: my copy wants to keep my life.
+Pick one (or name another anime) and I write the full script.

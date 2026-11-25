@@ -202,3 +202,5 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 - **2026-11-12 11:45** (explainer-kit_old_chats.md): create a file for github Potential vids, when i wanna make a new vid and looking for ideas it should look there and bring those ideas there first and if any is done it should mark it as done 
 
 add brainfreeze, the comeback one, the word looking wrong, the time crawl they are solid ideas, we're doing blank in test rn
+
+- **2026-11-25 03:11** (2026-11-19_to_25_sunset-tag.md): nahh can we do another in this town vid, buhh like from a popular anime, we take the concept of a popular suiting anime and use it
