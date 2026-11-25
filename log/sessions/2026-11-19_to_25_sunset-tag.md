@@ -790,3 +790,13 @@ alr apply EVRYTHING weve looked into, bro i dont wanna fucking hear i forgot, or
 ## 2026-11-25 12:03 Claude
 
 Go received. Here's the order. Every step is checked by me before you see anything: 1. Read every doc the rulebook lists for a new video, then fill RULES_CHECK for each location: house, street, stadium. 2. Voice, word timings, mouth flaps. 3. Build what's missing: Dad's bedroom, the birthday setup, the stadium, the van with the ear, the cars, the cop, the props. 4. Check every shot with stills at start, middle and end, plus the clip, walk, light and motion gates. 5. Pose sheet to you. 6. One cheap review video, sent only after I've gone through EVERY frame for clipping, wrong-way props and cars, eyes, hands, and story logic. Cost: this is a big one, several hours of build plus renders. The stadium and the van are the heaviest parts. The one thing I need from you: Dad becomes permanent cast. I'll build 3 Dad options from the bank and send you one sheet to pick from. Everything else I'll keep moving on.
+
+---
+
+## 2026-11-25 12:16 Xavier
+
+[voice file: Roblox-2026-11-25-12-07-deadpan-absurd-storytelling-tone-In-this-town.mp3] maybe ending can be mrs pam sneaking out? or hiding? idk man ima go sleep suprise me, the pauses are kinda long, shorten a bi
+
+## 2026-11-25 12:16 Claude
+
+(working) Saved his take, tightened pauses (49.4 s -> 44.2 s), transcribed, flap built. Ending: Mrs. Pam sneaking out to her car, freezing in the siren light (shown, never named on screen). Dad picked by Claude since he is asleep: m060 Zion (cast.json 'dad').

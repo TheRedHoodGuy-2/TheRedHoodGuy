@@ -118,3 +118,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-25 11:55** (2026-11-19_to_25_sunset-tag.md): replace fingers with jazz hands, learn how to pose ffs and animate or ask for an example, replace couch with chair under knob, make sets we dont have then dont be a pussy, but ya you can replace with bday party and jazz hands 
 
 next time dont make scripts that would be hard to animate, lms the new sscript now
+
+- **2026-11-25 12:16** (2026-11-19_to_25_sunset-tag.md): [voice file: Roblox-2026-11-25-12-07-deadpan-absurd-storytelling-tone-In-this-town.mp3] maybe ending can be mrs pam sneaking out? or hiding? idk man ima go sleep suprise me, the pauses are kinda long, shorten a bi
