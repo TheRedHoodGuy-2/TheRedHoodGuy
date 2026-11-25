@@ -820,3 +820,13 @@ between "snaps" and "friday" night, "cops" and "clapping is one"... 'robe" and "
 ## 2026-11-25 12:25 Claude
 
 Sent v2: those 3 pauses back to his take's length (0.72 / 0.56 / 0.62 s), others still tight. 45.4 s.
+
+---
+
+## 2026-11-25 12:27 Xavier
+
+those pauses i mentioned, the new ones could be a bit shorter
+
+## 2026-11-25 12:27 Claude
+
+Sent v3: the three pauses at 0.44 s. 44.7 s.
