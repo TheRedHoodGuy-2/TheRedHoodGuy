@@ -49,4 +49,4 @@ I grabbed Mom's arm.
 She looked right through me.
 Mia smiled, and leaned in close.
 "Mom," she whispered, "I love you."
-And my shadow lifted its foot.
+[NOT SAID: we SEE his shadow lift its foot for the tenth step, cut mid-step]
