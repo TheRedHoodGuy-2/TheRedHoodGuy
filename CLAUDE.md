@@ -34,7 +34,8 @@ every message of his and every reply -> session log.
 - Never push to GitHub without his OK (an "overnight / push it" OK covers that run). Fetch / rebase before pushing.
 - Secrets: Roblox cookie at ~/.rbx_cookie, Gemini key at /home/claude/explainer-kit/secrets/gemini_key, Fish key when
   sent: never printed, logged, committed or put in memory. Never use the main-account password he once pasted. Never share his email.
-- No music (he adds it). SFX only from the real bank (library/sfx_catalog.json), never synthesized.
+- SFX: real recordings only (library/sfx_catalog.json Mixkit, Freesound CC0), never synthesized, mixed by tools/sfxmix.py from topics/<t>/sfx/cues.json. ONLY sounds something on screen makes (steps, slaps, falls, skids, the swap poof); no gasps/laughs/voices nobody on screen makes, no musical stings/whooshes/power-ups unless the story needs one; never spam the ending (Xavier 2026-11-25).
+- Music: the track Xavier sends, ~10 dB under the voice with sidechain ducking; whole mix loudnorm -14 LUFS. Captions + title are a separate layer (tools/captions.py, burnt after render).
 - No vignette, no cloth folds / crease maps, no impact freezes / hit-stops, no bloom wash, no speckle noise.
 - Clipping: near zero. Mild clipping is not acceptable.
 - Models are real: imported from a proper source (Roblox catalog / Creator Store, Poly Haven) or modelled after
@@ -141,6 +142,7 @@ every message of his and every reply -> session log.
   real seat (raycast the chair). The chair moves back before someone stands.
 - No default reactions (both hands up + shocked face, jumping, T-pose recoil). Adults react like adults. A shock is
   springy for a beat, then the body moves on.
+- NO STILL FRAMES (Xavier 2026-11-25): a shot is never 'camera arrives, person does one thing, then freezes while the camera pushes'. Every shot has continuous action start to end; cut ON action and let the next shot continue the motion; give people secondary actions / reactions so the story flows between shots instead of a string of frozen vignettes. Check: in every shot, something besides the camera moves in the last half.
 - Holds are never frozen: drift toward the next pose + breathing / sway idle. Eased moves ('back' default, 'snap' only
   for impacts). Overlap: hips, torso, head, arms 2-4 frames apart.
 - Hands ON what they hold the whole time; hand props sized to the R6 hand block (never tiny); props face the right way.

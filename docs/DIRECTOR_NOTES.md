@@ -298,3 +298,8 @@ defend every pixel of it, it does not get sent.
 - Captions are a SEPARATE layer, never baked into the 3D render: `python3 tools/captions.py <topic> [--title "..."] --burn` (styles at the top of the .ass; restyle + re-burn in ~2 min). Always deliver clean + captioned.
 - Title card on frame 0 is optional (Xavier reconsidering): it is its own style/event, so a version with and without is one command.
 - Motion blur is possible in three.js (sub-frame accumulation); Blender only if he gets an NVIDIA GPU machine.
+
+## 2026-11-25 01:22 (Sunset Tag SFX + flow)
+- SFX = ONLY sounds that something ON SCREEN makes (footsteps, slaps/taps, falls, skates, skids, a hand clasp, the swap poof the story needs). No gasps / laughs / voices unless a character on screen does it; no musical stings, whooshes, power-ups, record scratches, heartbeats, drones unless the video truly needs one. Never spam them at the end. Less is more.
+- Background music must be clearly audible: ~10 dB under the voice, ducked while speaking; whole mix loudness-normalised to -14 LUFS (Shorts).
+- FLOW (big one): no still frames. Shots must not be "camera goes to person, they do one thing, then they freeze while the camera pushes in". Action keeps going through every shot and across cuts (cut ON action, the next shot continues the motion), people keep doing things (secondary actions, reactions, walking on, looking around), the story flows from one shot to the next instead of each shot being its own frozen vignette.
