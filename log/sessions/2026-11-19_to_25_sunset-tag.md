@@ -869,3 +869,16 @@ js render man
 ## 2026-11-25 16:02 Claude
 
 Rendered and sent clap_cops_review_voice.mp4 (180x320, 6 fps, voice). Known weak spots: the chair wedge reads from behind on a dark door, the siren shot ends dark. Tell me what to change; only those shots get touched.
+
+---
+
+## 2026-11-25 17:50 Xavier
+
+videos frame by frame, you see so many frames where the hand clips into something or doesn't grab something well. We want to avoid that. We want to avoid that very much. In our previous repo, we never had this clipping problem. We had the problem, but we fixed it. I don't remember how we fixed it. Please go and check that other repo and come here and apply that knowledge. Never let anything clip. We do not want clipping.
+
+## 2026-11-25 17:50 Claude
+
+Done. Review v2 sent (clap_cops_review_v2.mp4). Clip scan passes on every frame at 24 fps.
+Old repo: no magic tool, the fix was checking every frame and fixing by staging (chairs moved back, clearance, rerouted walks). Built tools/clipscan.mjs: every frame, every visible body part vs the set, people vs people, props vs the set, held props vs the palm. First scan: 139 problems. Now 0.
+Fixed: phone floated 50 cm from the hand (now always in the palm); hands 17 cm off the chair (hands now on the backrest); boy sank into the sofa; feet into floors (engine floor clamp); dash through the armchair and partition wall (armchair removed, path rerouted); stair climb matched to the real treads (two at a time) with a cut on action; bed slid 40 cm so Dad fits; console table moved so people fit the door; Mom's arms in for the 1.30 m doorway; boy holds the chair against the door instead of standing through it; kicked chair no longer hits the rail; crowd spaced.
+New rule: CLIPSCAN PASS is a gate before any video.
