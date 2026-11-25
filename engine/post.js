@@ -140,6 +140,7 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
     if (P.aperture > 0) {   // gather at half size (4x fewer pixels), then blend over the sharp frame by each pixel's own blur amount
       dofMat.uniforms.src.value = src.texture; dofMat.uniforms.px.value.set(2 / W, 2 / H); dofMat.uniforms.maxB.value = P.maxBlur / 2; dofMat.uniforms.ap.value = P.aperture / 2; quad(r, dofMat, rtDof);
       const dst = src === rtA ? rtB : rtA; dofMix.uniforms.src.value = src.texture; quad(r, dofMix, dst); src = dst; } lap('dof');
+    gradeMat.uniforms.exposure.value = P.exposure; gradeMat.uniforms.contrast.value = P.contrast; gradeMat.uniforms.sat.value = P.saturation;   // scenes change these per frame (time of day, rewinds)
     gradeMat.uniforms.src.value = src.texture; gradeMat.uniforms.seed.value = (gradeMat.uniforms.seed.value + 17.13) % 1000; quad(r, gradeMat, rtLDR); lap('grade');   // bloomTint warm = halation
     smaa.render(r, null, rtLDR); lap('smaa'); if (T === false) sync();
   };

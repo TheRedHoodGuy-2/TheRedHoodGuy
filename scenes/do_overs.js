@@ -34,7 +34,7 @@ const P = {
 const fa = (part, hand, elbow, root = {}) => limbTo(part, root, hand, elbow);
 P.wristLook = { ...P.stand, armL: fa('armL', [-.05, 1.25, .42], [.42, 1.0, .1]), head: [0, .45, -.15], root: { rx: .05 } };
 P.watchFix = { ...P.relaxed, armL: fa('armL', [-.02, .8, .38], [.4, .88, .02]), armR: fa('armR', [.06, .83, .4], [-.4, .9, .06]), head: [0, .5, .05] };
-P.fistPump = { ...P.proud, armR: fa('armR', [-.25, 1.45, .3], [-.42, 1.0, .12]), head: [-.1, -.2, .1] };
+P.fistPump = { ...P.proud, armR: fa('armR', [-.28, 1.12, .28], [-.45, .92, -.05]), head: [-.1, -.25, .12], root: { rx: -.08, rz: -.05 } };
 P.handHead = { ...P.relaxed, armR: limbTo('armR', {}, [-.35, 1.62, .55]), head: [-.15, .1, .08] };
 P.hug = { ...P.stand, armL: fa('armL', [-.2, 1.0, .45], [.4, 1.05, .2]), armR: fa('armR', [.2, 1.0, .45], [-.4, 1.05, .2]), head: [.2, .1, .1], root: { rx: .12 } };
 P.crack = { ...P.relaxed, armL: fa('armL', [.05, 1.05, .45], [.4, .98, .12]), armR: fa('armR', [-.05, 1.12, .48], [-.4, .98, .12]), head: [0, .4, 0], root: { rx: .1 } };
@@ -69,10 +69,10 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // ---------- light ----------
   const LOOK = dayLook(scene, { sunAz: 160, sunEl: 45, sun: 3.3, fill: .9 }), post = LOOK.post;
   const TIMES = {
-    morning: { az: 150, el: 35, col: '#fff1dc', int: 3.2, fill: .95, hs: '#b5cff0', hg: '#62704a', top: '#3d7bd8', hor: '#d6e9fb', exp: 1.25 },
-    day: { az: 200, el: 55, col: '#fffaf0', int: 3.4, fill: .9, hs: '#a9cbf2', hg: '#5f6e40', top: '#2f74d6', hor: '#cfe6fb', exp: 1.3 },
-    sunset: { az: 100, el: 8, col: '#ffc79a', int: 2.8, fill: .9, hs: '#a7b9de', hg: '#5a5040', top: '#4a6fc0', hor: '#f4c294', exp: 1.3 },
-    night: { az: 120, el: 30, col: '#9fb6ff', int: .55, fill: 1.1, hs: '#4a5a8a', hg: '#2a2c36', top: '#0e1630', hor: '#2b3a66', exp: 1.7 },
+    morning: { az: 150, el: 35, col: '#fff1dc', int: 3.2, fill: .95, hs: '#b5cff0', hg: '#62704a', top: '#3d7bd8', hor: '#d6e9fb', exp: 1.2 },
+    day: { az: 200, el: 55, col: '#fffaf0', int: 3.4, fill: .9, hs: '#a9cbf2', hg: '#5f6e40', top: '#2f74d6', hor: '#cfe6fb', exp: 1.2 },
+    sunset: { az: 100, el: 8, col: '#ffc79a', int: 2.8, fill: .9, hs: '#a7b9de', hg: '#5a5040', top: '#4a6fc0', hor: '#f4c294', exp: 1.2 },
+    night: { az: 120, el: 30, col: '#9fb6ff', int: .55, fill: 1.1, hs: '#4a5a8a', hg: '#2a2c36', top: '#0e1630', hor: '#2b3a66', exp: 1.35 },
   };
   const tod = t => t < 7 ? 'morning' : t < 25 ? 'day' : t < 27.5 ? 'sunset' : t < 28.6 ? 'night' : t < 31.8 ? 'morning' : t < 42.7 ? 'day' : t < 45 ? 'sunset' : t < 49.8 ? 'day' : t < 66.6 ? 'night' : 'morning';
   let skyKey = '';
@@ -101,7 +101,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     const face = new THREE.Mesh(new THREE.CylinderGeometry(.4, .4, .12, 40), steel); face.rotation.x = Math.PI / 2; face.position.z = .62; g.add(face);
     const dial = new THREE.Mesh(new THREE.CircleGeometry(.33, 40), new THREE.MeshStandardMaterial({ color: '#f4efe6', roughness: .4 })); dial.position.z = .69; g.add(dial); return g; };
   const watch = mkWatch(); watch.position.set(0, -.8, 0); A.mom.a.rig.parts.armL.add(watch);
-  const watchOff = mkWatch(); watchOff.scale.setScalar(STUD); watchOff.rotation.x = -Math.PI / 2; watchOff.position.set(K.sink[0] - .55, K.counter + .02, -230.4); scene.add(watchOff);
+  const watchOff = mkWatch(); watchOff.scale.setScalar(STUD); watchOff.rotation.x = -Math.PI / 2; watchOff.position.set(3231.35, K.top + .02, -228.3); scene.add(watchOff);
 
   // ---------- props ----------
   const rbx = async (id, at, o = {}) => { const m = await loadRbx(id, o); m.position.set(...at); m.rotation.y = o.ry || 0; scene.add(m); return m; };
@@ -110,6 +110,24 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const bike = await rbx(91358100215341, [0, 0, 1.6], { ry: Math.PI / 2 });
   const pizzaBox = await rbx(3028085134, [0, 0, 0], { scale: .45 }); A.pizza.a.root.add(pizzaBox); pizzaBox.position.set(0, .9, .62);
   const phone = await rbx(9403575706, [K.island[0] - .55, K.top + .01, K.island[1] + .15], { scale: .28 });
+  // car keys: ring + two keys + fob (metres)
+  const mkKeys = () => { const g = new THREE.Group(), steel = new THREE.MeshStandardMaterial({ color: '#c8ccd2', metalness: .9, roughness: .3 }), blk = new THREE.MeshStandardMaterial({ color: '#16171a', roughness: .5 });
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(.02, .003, 8, 24), steel); ring.rotation.x = Math.PI / 2; g.add(ring);
+    for (const a of [.4, -.5]) { const k = new THREE.Mesh(new THREE.BoxGeometry(.016, .003, .055), steel); k.position.set(Math.sin(a) * .045, 0, Math.cos(a) * .045); k.rotation.y = a; g.add(k); }
+    const fob = new THREE.Mesh(new THREE.BoxGeometry(.03, .013, .055), blk); fob.position.set(0, .002, -.05); g.add(fob); return g; };
+  const keysIsland = mkKeys(); keysIsland.position.set(3231.1, 1.03, -228.35); scene.add(keysIsland);
+  const keysBoy = mkKeys(); keysBoy.scale.setScalar(1 / STUD * 1.4); keysBoy.position.set(0, -1.08, .1); A.boy.a.rig.parts.armR.add(keysBoy);
+  const keysMom = mkKeys(); keysMom.scale.setScalar(1 / STUD * 1.4); keysMom.position.set(0, -1.08, .1); A.mom.a.rig.parts.armR.add(keysMom);
+  const egg = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 14), new THREE.MeshStandardMaterial({ color: '#f3ead8', roughness: .5 })); egg.scale.set(.065, .085, .065).multiplyScalar(1 / STUD); egg.position.set(0, -1.12, .05); A.boy.a.rig.parts.armR.add(egg);
+  // phone: lying flat, with a screen that lights up when it rings
+  { phone.updateMatrixWorld(true); const b0 = new THREE.Box3().setFromObject(phone).getSize(new THREE.Vector3()); if (b0.z <= b0.x && b0.z <= b0.y) phone.rotation.x = -Math.PI / 2; else if (b0.x <= b0.y) phone.rotation.set(-Math.PI / 2, 0, 0), phone.rotation.order = 'YXZ', phone.rotation.y = Math.PI / 2, phone.rotation.x = -Math.PI / 2; if (opts.dbg) console.error('PHONE', b0.toArray()); } phone.updateMatrixWorld(true); const pb = new THREE.Box3().setFromObject(phone), psz = pb.getSize(new THREE.Vector3());
+  const scv = document.createElement('canvas'); scv.width = 256; scv.height = 512; { const g = scv.getContext('2d'); const gr = g.createLinearGradient(0, 0, 0, 512); gr.addColorStop(0, '#1d3b2a'); gr.addColorStop(1, '#0b1410'); g.fillStyle = gr; g.fillRect(0, 0, 256, 512);
+    g.fillStyle = '#fff'; g.textAlign = 'center'; g.font = 'bold 30px Poppins, sans-serif'; g.fillText('Incoming call', 128, 120); g.font = 'bold 40px Poppins, sans-serif'; g.fillText('UNKNOWN', 128, 180);
+    g.fillStyle = '#e03b3b'; g.beginPath(); g.arc(70, 430, 34, 0, 7); g.fill(); g.fillStyle = '#2fbf5b'; g.beginPath(); g.arc(186, 430, 34, 0, 7); g.fill(); }
+  const scTex = new THREE.CanvasTexture(scv); scTex.colorSpace = THREE.SRGBColorSpace;
+  const screen = new THREE.Mesh(new THREE.PlaneGeometry(Math.min(psz.x, psz.z * .5) * .9, Math.min(psz.z, psz.x * 2) * .9), new THREE.MeshBasicMaterial({ map: scTex, toneMapped: false }));
+  screen.rotation.x = -Math.PI / 2; screen.position.set((pb.min.x + pb.max.x) / 2, pb.max.y + .002, (pb.min.z + pb.max.z) / 2); scene.add(screen);
+  const phoneBase = phone.position.clone(), screenBase = screen.position.clone();
   // the empty cake box: a white bakery box, lid open (folded card)
   const box = new THREE.Group(); { const card = new THREE.MeshStandardMaterial({ color: '#f5f1ea', roughness: .8 }); const b = new THREE.Mesh(new THREE.BoxGeometry(.36, .14, .36), card); b.position.y = .07; box.add(b);
     const lid = new THREE.Mesh(new THREE.BoxGeometry(.36, .006, .36), card); lid.position.set(0, .3, -.24); lid.rotation.x = -1.2; box.add(lid); box.position.set(K.island[0] - .2, K.top, K.island[1]); scene.add(box); }
@@ -134,11 +152,12 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const N = Math.PI;   // ry: 0 faces +z (south), PI faces -z (north), N/2 faces +x
   // 0-4.0 the rule: a kid bikes down the street, clips the kerb, falls; the street rewinds; he rides through clean
   const bikeX = t => t < 2.3 ? lerp(-9, 1, t / 2.3) : t < 2.9 ? 1 : t < 3.5 ? lerp(1, -3, sm((t - 2.9) / .6)) : lerp(-3, 1.5, (t - 3.5) / .5);
-  A.biker.show(-1, 7.0).key(-1, { pose: 'bike', at: [-9, 1.6], ry: N / 2 });
+  const pedal = t => ({ ...P.bike, legL: { r: [-1.2 + .35 * Math.sin(t * 9), 0, .1] }, legR: { r: [-1.2 - .35 * Math.sin(t * 9), 0, -.1] } });
+  A.biker.show(-1, 7.0).key(-1, { pose: pedal, at: [-9, 1.6], ry: N / 2 });
   A.biker.extra = (t, a) => { const x = bikeX(Math.min(t, 4)); a.a.root.position.x = x; a.a.root.position.z = 1.6; bike.position.x = x; bike.rotation.z = t >= 2.3 && t < 2.9 ? lerp(0, 1.4, sm((t - 2.3) / .25)) : 0; };
-  A.biker.key(3.95, { pose: 'wristLook', dur: .4 }).key(2.3, { pose: 'fallSide', dur: .2 }).key(2.9, { pose: 'bike', dur: .05 }).face(2.3, 'shocked').face(3.2, 'happy');
+  A.biker.key(3.95, { pose: 'wristLook', dur: .4 }).key(2.3, { pose: 'fallSide', dur: .2 }).key(2.9, { pose: pedal, dur: .05 }).face(2.3, 'shocked').face(3.2, 'happy');
   // 7.0-8.9 neighbour on his walk with an F test, 60 left
-  A.nb.show(7.0, 8.9).key(7.0, { pose: 'sad', at: [-4, -6.4], ry: 0 }).key(7.5, { pose: 'shrug', dur: .4 }).face(7, 'sad');
+  A.nb.show(7.0, 8.9).key(7.0, { pose: 'sad', at: [-4, -6.4], ry: 0 }).key(7.4, { pose: { ...P.wristLook, head: [.1, .5, -.1] }, dur: .5 }).face(7, 'sad');
   // 8.9-10.7 pizza guy lost, turning round with the box, 10 left
   A.pizza.show(8.9, 10.7).key(8.9, { pose: 'carry', at: [4, 4.6], ry: .4 }).key(9.4, { pose: 'lookAround', ry: -.5, dur: .5 }).key(10.1, { pose: 'carry', ry: .7, dur: .5 }).face(8.9, 'nervous');
   // 10.7-12.9 the guy asking out the girl: she walks off, 3 left
@@ -162,7 +181,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // 29.0-30.7 7 a.m.: he jolts up in bed
   A.boy.show(29.0, 30.7).key(29.0, { pose: 'lieBack', at: [BED.x0 + 2.5, BED.z], ry: N / 2, y: BED.top }).key(29.6, { pose: 'sitBed', at: [BED.x0 + .45, BED.z], y: BED.top, dur: .3, style: 'snap' }).face(29.0, 'sleepy').face(29.6, 'shocked');
   // 30.7-31.8 he hides her car keys (reaching across the island, eyes on the hall)
-  A.boy.show(30.7, 31.8).key(30.7, { pose: 'reach', at: [3230.9, -229.1], ry: 0 }).face(30.7, 'smug');
+  A.boy.show(30.7, 31.8).key(30.7, { dur: .01, pose: 'reach', at: [3230.9, -229.1], ry: 0 }).face(30.7, 'smug');
   // 31.8-33.8 Mom at the bus stop, the bus pulls in
   A.mom.show(31.8, 33.8).key(31.8, { pose: 'relaxed', at: [8, 4.5], ry: -N / 2 }).face(31.8, 'happy');
   // 34.3-35.5 he fakes sick in bed, Mom at the bedside
@@ -174,14 +193,14 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const MOM_B = [3229.3, -226.2], BOY_B = [3230.0, -226.4];
   A.mom.show(36.8, 40.2).key(37.3, { pose: 'relaxed', at: MOM_B, ry: 1.85 }).key(38.9, { pose: 'shrug', dur: .4 }).face(37.3, 'nervous').face(38.9, 'sad');
   A.boy.show(36.8, 40.2).key(36.8, { pose: 'relaxed', at: BOY_B, ry: -1.3 }).face(36.8, 'determined').key(37.3, { pose: 'kneel', dur: .35 }).face(37.3, 'scared');
-  A.boy.key(38.1, { pose: 'cry', dur: .25 }).face(38.1, 'crying');
+  A.boy.key(38.1, { pose: { ...P.kneel, head: [0, .15, .05] }, dur: .25 }).face(38.1, 'crying');
   A.boy.key(38.8, { pose: 'lock', at: [DOOR[0] + .35, DOOR[1] + .62], ry: N, dur: .05 }).key(39.45, { pose: { ...P.stand, armL: { r: [.01, 0, .9], o: [.05, -.03, 0] }, armR: { r: [.01, 0, -.9], o: [-.05, -.03, 0] }, head: [0, -.12, 0], root: { rx: -.06 } }, at: [DOOR[0] + .35, DOOR[1] + .3], ry: 0, turn: .35, dur: .35 }).face(38.8, 'angry');
   // 40.2-42.7 rewind x3
   A.boy.show(40.2, 42.7).key(40.2, { pose: 'relaxed', at: BOY_B, ry: -1.3 }).key(41.5, { pose: 'proud', dur: .25, style: 'snap' }).face(40.2, 'scared').face(41.5, 'furious');
   // 45.0-49.8 wrist check: 100; he grins, fist pump (back to the island, facing the dining room)
-  A.boy.show(45.0, 49.8).key(45.0, { pose: 'wristLook', at: [3230.52, -226.75], ry: 0 }).key(47.8, { pose: 'fistPump', dur: .3 }).face(45.0, 'confused').face(47.6, 'excited');
+  A.boy.show(45.0, 49.8).key(44.6, { pose: 'wristLook', at: [3230.52, -226.75], ry: 0 }).key(47.8, { pose: 'fistPump', dur: .3 }).face(45.0, 'confused').face(47.6, 'excited');
   // 49.8-52.6 sixty Tuesdays later: night, he stares at the empty cake box
-  A.boy.show(49.8, 52.6).key(49.8, { pose: 'sad', at: [K.island[0] - .2, -226.75], ry: N }).face(49.8, 'sad');
+  A.boy.show(49.8, 52.6).key(49.8, { dur: .01, pose: 'sad', at: [K.island[0] - .2, -226.75], ry: N }).face(49.8, 'sad');
   // 52.6-54.3 Mom picking up her keys, eyes on the box
   A.mom.show(52.6, 54.3).key(52.6, { pose: 'reach', at: [K.island[0] - .3, -229.05], ry: 0 }).face(52.6, 'thinking');
   // 54.3-62.6 he bakes: cracks eggs, flour everywhere
@@ -192,9 +211,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.boy.show(64.6, 66.6).key(64.6, { pose: 'hug', at: [3229.95, -226.3], ry: N / 2 }).face(64.6, 'happy');
   A.mom.key(64.6, { pose: 'hug', at: [3230.45, -226.3], ry: -N / 2, dur: .3 });
   // 66.6-69.6 Wednesday morning: he wakes up
-  A.boy.show(66.6, 69.6).key(66.6, { pose: 'lieBack', at: [BED.x0 + 2.5, BED.z], ry: N / 2, y: BED.top }).key(67.6, { pose: 'sitBed', at: [BED.x0 + .45, BED.z], y: BED.top, dur: .6, ease: 'io' }).face(66.6, 'sleepy').face(68.0, 'happy');
+  A.boy.show(66.6, 69.6).key(66.6, { pose: 'lieBack', at: [BED.x0 + 2.5, BED.z], ry: N / 2, y: BED.top }).key(67.6, { pose: 'sitBed', at: [BED.x0 + .45, BED.z], y: BED.top, dur: .15, ease: 'io' }).face(66.6, 'sleepy').face(68.0, 'happy');
   // 69.6-73.8 the end: Mom at the sink, watch off on the counter, her wrist says 1, finger to lips
-  A.mom.show(69.6, 73.9).key(69.6, { pose: 'sinkWash', at: [K.sink[0], -229.15], ry: N }).key(72.3, { pose: 'shh', ry: N + 1.2, turn: .7, dur: .6 }).face(69.6, 'neutral').face(72.4, 'smug');
+  A.mom.show(69.6, 73.9).key(69.6, { pose: 'sinkWash', at: [3230.55, -229.0], ry: 0 }).key(72.3, { pose: 'shh', dur: .6 }).face(69.6, 'neutral').face(72.4, 'smug');
   A.boy.blinks([16.0, 21.0, 30.0, 46.0, 51.0, 56.0, 61.0, 68.5]); A.mom.blinks([18.5, 22.0, 60.5, 71.0]);
 
   // per-frame props (pure function of t)
@@ -203,7 +222,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     bus.visible = t >= 31.8 && t < 33.8; bus.position.x = lerp(30, 9.5, sm((t - 31.8) / 1.2));
     bike.visible = t < 4.0; pizzaBox.visible = t >= 8.9 && t < 10.7;
     box.visible = t >= 49.8 && t < 54.3; bowl.visible = t >= 54.3 && t < 60; lopsided.visible = t >= 60 && t < 66.6; phone.visible = (t >= 42.7 && t < 45) || (t >= 62.6 && t < 64.6);
-    phone.position.y = K.top + .01 + (t >= 42.7 && t < 45 ? Math.abs(Math.sin(t * 60)) * .006 : 0);
+    const ring = t >= 42.7 && t < 45 && Math.sin(t * 9) > -.3, jz = ring ? Math.sin(t * 95) * .05 : 0; phone.rotation.z = jz; phone.position.copy(phoneBase); screen.position.copy(screenBase); screen.rotation.z = jz; screen.visible = phone.visible && t < 45;
+    keysIsland.visible = t < 30.95 || (t >= 49.8 && t < 52.95); keysBoy.visible = t >= 30.95 && t < 31.8; keysMom.visible = t >= 52.95 && t < 54.3; egg.visible = t >= 54.3 && t < 55.9;
     flour.m.visible = t >= 55.9 && t < 58.2; flour.set(t);
     watch.visible = t < 69.6; watchOff.visible = t >= 69.6;
     W.biker.set(t < 2.9 ? 37 : 36);
@@ -212,46 +232,46 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // ---------- shots ----------
   const SH = [
     { t: 0, dur: 2.3, who: 'biker', size: 'full', angle: 'eye', az: 60, move: 'track', speed: 1.2 },
-    { t: 2.3, dur: 0.6, who: 'biker', size: 'full', angle: 'low', az: 30, move: 'punch', speed: 2.2 },
+    { t: 2.3, dur: 0.6, who: 'biker', size: 'full', angle: 'low', az: 30, move: 'punch', speed: 2.2, cam: { p0: [3.7, 1.0, 4.5], p1: [3.2, .85, 4.1], l0: [1, .45, 1.6], fov: 38 } },
     { t: 2.9, dur: 1.1, who: 'biker', size: 'wide', angle: 'high', az: 40, move: 'pull', speed: 3, rewind: true },
     { t: 4.0, dur: 3.0, who: 'biker', size: 'xclose', angle: 'eye', az: 20, move: 'push', speed: .6, wrist: true, hold: 3.95 },
     { t: 7.0, dur: 1.9, who: 'nb', size: 'medium', angle: 'eye', az: 15, move: 'truckL', speed: 1.4 },
     { t: 8.9, dur: 1.8, who: 'pizza', size: 'full', angle: 'low', az: 30, move: 'orbitR', speed: .7 },
-    { t: 10.7, dur: 2.2, who: 'suitor', size: 'wide', angle: 'eye', az: 35, move: 'pull', speed: 1.8 },
-    { t: 12.9, dur: 2.2, who: 'old', size: 'medium', angle: 'high', az: 120, move: 'push', speed: .5, cam: { p0: [3223.6, 6.6, -227.3], p1: [3223.2, 6.4, -227.6], l0: [3222.6, 5.0, -229.06], fov: 40 } },
+    { t: 10.7, dur: 2.2, who: 'suitor', size: 'wide', angle: 'eye', az: 35, move: 'pull', speed: 1.8, cam: { p0: [12.4, 1.3, -2.9], p1: [13.0, 1.25, -3.3], l0: [12.9, .9, -6.2], fov: 40 } },
+    { t: 12.9, dur: 2.2, who: 'old', size: 'medium', angle: 'high', az: 120, move: 'push', speed: .5, cam: { p0: [3224.9, 6.5, -227.0], p1: [3224.5, 6.35, -227.3], l0: [3222.6, 5.0, -229.06], fov: 44 } },
     { t: 15.1, dur: 1.1, who: 'boy', size: 'full', angle: 'eye', az: 10, move: 'truckR', speed: 1.1, cam: { p0: [3232.7, 5.75, -228.7], p1: [3232.6, 5.75, -229.4], l0: [3229.6, 5.45, -230.05], fov: 38 } },
     { t: 16.2, dur: 1.3, who: 'boy', size: 'xclose', angle: 'eye', az: 15, move: 'push', speed: 1.6, wrist: true },
-    { t: 17.5, dur: 2.5, who: 'mom', size: 'medium', angle: 'eye', az: 20, move: 'orbitL', speed: .8 },
-    { t: 20.0, dur: 3.5, who: 'mom', size: 'close', angle: 'low', az: 35, move: 'push', speed: .45, cam: { p0: [3228.2, 1.45, -226.5], p1: [3228.45, 1.5, -227.0], l0: [3229.75, 1.6, -229.05], fov: 34 } },
+    { t: 17.5, dur: 2.5, who: 'mom', size: 'medium', angle: 'eye', az: 20, move: 'orbitL', speed: .8, cam: { p0: [3231.6, 1.6, -226.4], p1: [3231.0, 1.6, -226.2], l0: [3230.2, 1.45, -229.1], fov: 32 } },
+    { t: 20.0, dur: 3.5, who: 'mom', size: 'close', angle: 'low', az: 35, move: 'push', speed: .45, cam: { p0: [3229.0, 1.5, -226.3], p1: [3229.2, 1.5, -226.8], l0: [3229.95, 1.6, -229.1], fov: 30 } },
     { t: 23.5, dur: 1.5, who: 'boy', size: 'close', angle: 'eye', az: -20, move: 'punch', speed: 1.8, cal: true },
     { t: 25.0, dur: 2.5, who: 'boy', size: 'wide', angle: 'eye', az: 40, move: 'pull', speed: 1.2 },
     { t: 27.5, dur: 1.0, who: 'boy', size: 'medium', angle: 'eye', az: 160, move: 'push', speed: .4 },
-    { t: 28.5, dur: 0.5, who: 'boy', size: 'close', angle: 'high', az: 20, move: 'punch', speed: 2.6, rewind: true },
+    { t: 28.5, dur: 0.5, who: 'boy', size: 'close', angle: 'high', az: 20, move: 'punch', speed: 2.6, rewind: true, cam: { p0: [3231.7, 1.8, -227.4], p1: [3231.55, 1.72, -228.0], l0: [3231.3, 1.6, -229.35], fov: 34 } },
     { t: 29.0, dur: 1.7, who: 'boy', size: 'medium', angle: 'high', az: 30, move: 'pull', speed: 2.0, cam: { p0: [3230.6, 6.7, -227.7], p1: [3230.3, 6.45, -228.1], l0: [3229.7, 5.1, -230.0], fov: 40 } },
-    { t: 30.7, dur: 1.1, who: 'boy', size: 'medium', angle: 'low', az: -30, move: 'orbitR', speed: 1.2 },
+    { t: 30.7, dur: 1.1, who: 'boy', size: 'medium', angle: 'low', az: -30, move: 'orbitR', speed: 1.2, cam: { p0: [3232.0, 1.5, -226.3], p1: [3231.3, 1.45, -226.45], l0: [3231.0, 1.2, -228.5], fov: 34 } },
     { t: 31.8, dur: 2.0, who: 'mom', size: 'wide', angle: 'eye', az: -50, move: 'truckL', speed: .8 },
-    { t: 33.8, dur: 0.5, who: 'boy', size: 'close', angle: 'eye', az: 0, move: 'punch', speed: 2.6, rewind: true, cam: { p0: [3230.7, 6.5, -228.7], p1: [3230.4, 6.2, -229.0], l0: [3229.7, 5.05, -230.05], fov: 34 } },
+    { t: 33.8, dur: 0.5, who: 'boy', size: 'close', angle: 'eye', az: 0, move: 'punch', speed: 2.6, rewind: true, cam: { p0: [3231.0, 6.3, -228.6], p1: [3230.7, 6.15, -228.9], l0: [3229.7, 5.05, -230.05], fov: 40 } },
     { t: 34.3, dur: 1.2, who: 'boy', size: 'medium', angle: 'high', az: 40, move: 'push', speed: 1.0, cam: { p0: [3232.0, 6.0, -227.8], p1: [3231.7, 5.9, -228.2], l0: [3229.7, 5.45, -230.0], fov: 36 } },
     { t: 35.5, dur: 1.3, who: 'mom', size: 'full', angle: 'eye', az: 30, move: 'track', speed: .6 },
-    { t: 36.8, dur: 0.5, who: 'boy', size: 'close', angle: 'low', az: 20, move: 'punch', speed: 2.6, rewind: true },
+    { t: 36.8, dur: 0.5, who: 'boy', size: 'close', angle: 'low', az: 20, move: 'punch', speed: 2.6, rewind: true, cam: { p0: [3228.6, 1.55, -225.6], p1: [3228.85, 1.55, -225.85], l0: [3230.0, 1.55, -226.4], fov: 32 } },
     { t: 37.3, dur: 0.8, who: 'boy', size: 'medium', angle: 'high', az: -40, move: 'pull', speed: 1.4, cam: { p0: [3229.2, 2.1, -224.9], p1: [3228.9, 2.25, -224.4], l0: [3229.7, .95, -226.3], fov: 36 } },
-    { t: 38.1, dur: 0.7, who: 'boy', size: 'xclose', angle: 'eye', az: 10, move: 'push', speed: .8, cam: { p0: [3228.7, 1.3, -225.8], p1: [3228.95, 1.32, -226.0], l0: [3230.0, 1.4, -226.4], fov: 30 } },
+    { t: 38.1, dur: 0.7, who: 'boy', size: 'xclose', angle: 'eye', az: 10, move: 'push', speed: .8, cam: { p0: [3228.8, 1.15, -225.8], p1: [3229.05, 1.17, -226.0], l0: [3230.0, 1.15, -226.4], fov: 32 } },
     { t: 38.8, dur: 1.4, who: 'boy', size: 'close', angle: 'eye', az: 30, move: 'orbitL', speed: 1.6, cam: { p0: [3221.0, 1.55, -229.0], p1: [3221.05, 1.5, -229.5], l0: [3221.05, 1.35, -231.1], fov: 40 } },
     { t: 40.2, dur: 0.6, who: 'boy', size: 'close', angle: 'low', az: -10, move: 'punch', speed: 2.2, rewind: true, cam: { p0: [3228.4, 1.35, -225.6], p1: [3228.9, 1.4, -225.9], l0: [3230.0, 1.6, -226.4], fov: 32 } },
-    { t: 40.8, dur: 0.7, who: 'boy', size: 'xclose', angle: 'eye', az: 25, move: 'pull', speed: 3.0, rewind: true, cam: { p0: [3229.2, 1.7, -226.9], p1: [3228.7, 1.75, -227.2], l0: [3230.0, 1.65, -226.4], fov: 30 } },
+    { t: 40.8, dur: 0.7, who: 'boy', size: 'xclose', angle: 'eye', az: 25, move: 'pull', speed: 3.0, rewind: true, cam: { p0: [3229.0, 1.5, -227.0], p1: [3228.7, 1.55, -227.2], l0: [3230.0, 1.45, -226.4], fov: 36 } },
     { t: 41.5, dur: 1.2, who: 'boy', size: 'wide', angle: 'top', az: 0, move: 'craneUp', speed: 1.5, rewind: true },
     { t: 42.7, dur: 2.3, who: 'boy', size: 'feet', angle: 'eye', az: 0, move: 'push', speed: .5, phoneShot: true },
     { t: 45.0, dur: 2.8, who: 'boy', size: 'xclose', angle: 'eye', az: 10, move: 'truckR', speed: 1.0, wrist: true },
     { t: 47.8, dur: 2.0, who: 'boy', size: 'medium', angle: 'low', az: 20, move: 'push', speed: 1.4 },
-    { t: 49.8, dur: 2.8, who: 'boy', size: 'close', angle: 'high', az: -30, move: 'pull', speed: .7 },
+    { t: 49.8, dur: 2.8, who: 'boy', size: 'close', angle: 'high', az: -30, move: 'pull', speed: .7, cam: { p0: [3231.5, 1.5, -229.45], p1: [3231.25, 1.45, -229.2], l0: [3230.35, 1.25, -227.3], fov: 36 } },
     { t: 52.6, dur: 1.7, who: 'mom', size: 'medium', angle: 'eye', az: 30, move: 'orbitR', speed: 1.1 },
-    { t: 54.3, dur: 1.6, who: 'boy', size: 'close', angle: 'high', az: 20, move: 'push', speed: 1.6 },
+    { t: 54.3, dur: 1.6, who: 'boy', size: 'close', angle: 'high', az: 20, move: 'push', speed: 1.6, cam: { p0: [3231.6, 1.7, -229.4], p1: [3231.35, 1.6, -229.15], l0: [3230.6, 1.15, -227.3], fov: 36 } },
     { t: 55.9, dur: 2.3, who: 'boy', size: 'wide', angle: 'low', az: -20, move: 'craneUp', speed: .9, cam: { p0: [3232.4, 1.7, -229.7], p1: [3232.1, 2.05, -229.5], l0: [3230.7, 1.35, -227.1], fov: 36 } },
-    { t: 58.2, dur: 1.8, who: 'mom', size: 'medium', angle: 'eye', az: 20, move: 'truckL', speed: .5 },
-    { t: 60.0, dur: 2.6, who: 'mom', size: 'close', angle: 'low', az: -50, move: 'push', speed: 1.2 },
+    { t: 58.2, dur: 1.8, who: 'mom', size: 'medium', angle: 'eye', az: 20, move: 'truckL', speed: .5, cam: { p0: [3231.6, 1.6, -226.4], p1: [3231.0, 1.6, -226.3], l0: [3230.8, 1.45, -229.05], fov: 32 } },
+    { t: 60.0, dur: 2.6, who: 'mom', size: 'close', angle: 'low', az: -50, move: 'push', speed: 1.2, cam: { p0: [3229.3, 1.65, -226.0], p1: [3229.55, 1.65, -226.5], l0: [3230.6, 1.35, -228.6], fov: 34 } },
     { t: 62.6, dur: 2.0, who: 'boy', size: 'feet', angle: 'high', az: 0, move: 'pull', speed: .6, phoneShot: true },
-    { t: 64.6, dur: 2.0, who: 'boy', size: 'medium', angle: 'eye', az: 60, move: 'orbitL', speed: 1.0, cam: { p0: [3229.4, 1.55, -223.4], p1: [3230.9, 1.5, -223.9], l0: [3230.2, 1.35, -226.3], fov: 34 } },
-    { t: 66.6, dur: 3.0, who: 'boy', size: 'full', angle: 'high', az: 20, move: 'push', speed: 1.5, cam: { p0: [3231.0, 6.7, -227.5], p1: [3230.5, 6.3, -228.0], l0: [3229.7, 5.15, -230.0], fov: 40 } },
+    { t: 64.6, dur: 2.0, who: 'boy', size: 'medium', angle: 'eye', az: 60, move: 'orbitL', speed: 1.0, cam: { p0: [3229.9, 1.6, -223.7], p1: [3230.3, 1.55, -224.2], l0: [3230.2, 1.5, -226.3], fov: 32 } },
+    { t: 66.6, dur: 3.0, who: 'boy', size: 'full', angle: 'high', az: 20, move: 'push', speed: 1.5, cam: { p0: [3232.4, 6.3, -228.6], p1: [3231.6, 6.0, -229.1], l0: [3229.7, 5.15, -230.05], l1: [3229.55, 5.7, -230.05], fov: 40 } },
     { t: 69.6, dur: 4.2, who: 'mom', size: 'medium', angle: 'eye', az: -40, move: 'craneDown', speed: .6, finale: true },
   ];
   const bad = validate(SH); if (bad.length) console.error('SHOTS', bad.join('; '));
@@ -276,10 +296,10 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
         cam.position.set(...C.p0.map((v, n) => lerp(v, C.p1[n], k))); cam.position.x += hh(1.3, 1); cam.position.y += hh(1.1, 2); cam.position.z += hh(1.2, 3);
         const L = C.l1 ? C.l0.map((v, n) => lerp(v, C.l1[n], k)) : C.l0; cam.fov = C.fov || 34; cam.updateProjectionMatrix(); cam.lookAt(L[0] + hh(1.5, 4), L[1] + hh(1.4, 5), L[2]); }
       if (s.cal && u < .45) { cam.position.set(3227.98 + lerp(1.3, .95, u / .45), 1.62, -228.55); cam.fov = 30; cam.updateProjectionMatrix(); cam.lookAt(3227.98, 1.6, -228.6); }
-      if (s.phoneShot) { const p0 = phone.position; cam.position.set(p0.x + lerp(.55, .4, u), p0.y + .35, p0.z + .35); cam.fov = 32; cam.updateProjectionMatrix(); cam.lookAt(p0.x, p0.y + .02, p0.z); }
+      if (s.phoneShot) { const p0 = screenBase; cam.position.set(p0.x + lerp(.6, .3, u), p0.y + lerp(.45, .3, u), p0.z + lerp(.4, .25, u)); cam.fov = 32; cam.updateProjectionMatrix(); cam.lookAt(p0.x, p0.y + .02, p0.z); }
       if (s.finale) { const pl = W.mom.m; pl.getWorldPosition(wp); const hd = A.mom.a.root.position;
-        let fv = 32; if (u < .6) { const k = sm(u / .6); cam.position.set(lerp(3229.0, wp.x - .75, k), lerp(1.9, wp.y + .4, k), lerp(-226.5, wp.z + .8, k)); cam.lookAt(lerp(hd.x, wp.x, k), lerp(1.2, wp.y, k), lerp(hd.z, wp.z, k)); }
-        else { const k = sm((u - .6) / .4); cam.position.set(wp.x - .75 - k * .9, wp.y + .4 + k * .4, wp.z + .8 + k * .7); cam.lookAt(lerp(wp.x, hd.x, k), lerp(wp.y, hd.y + 1.55, k), lerp(wp.z, hd.z, k)); }
+        let fv = 32; if (u < .6) { const k = sm(u / .6); cam.position.set(lerp(3230.85, wp.x + .1, k), lerp(1.75, wp.y + .38, k), lerp(-226.0, wp.z + .75, k)); cam.lookAt(lerp(hd.x, wp.x, k), lerp(1.35, wp.y, k), lerp(hd.z, wp.z, k)); }
+        else { const k = sm((u - .6) / .4); cam.position.set(lerp(wp.x + .1, 3230.95, k), lerp(wp.y + .38, 1.95, k), lerp(wp.z + .75, -227.05, k)); cam.lookAt(lerp(wp.x, hd.x, k), lerp(wp.y, hd.y + 1.55, k), lerp(wp.z, hd.z, k)); }
         cam.fov = fv; cam.updateProjectionMatrix(); }
     }
     if (!s.wrist) cam.up.set(0, 1, 0);
