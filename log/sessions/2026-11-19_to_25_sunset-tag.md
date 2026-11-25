@@ -523,3 +523,13 @@ trash, these arent the kinda coments im looking for these are as and typically w
 ## 2026-11-25 10:41 Claude
 
 Pulled real comments (vidIQ Gneef x2, Windsor TikTok). Findings: loopholes, exempt character, lookalikes, pedants. His TikTok had 0/0/2 comments. Rewrote script with loophole + Uncle Ray exempt character. Saved research/comments_real_2026-11-25.md.
+
+---
+
+## 2026-11-25 10:44 Xavier
+
+ion like the script tho, make a sus one
+
+## 2026-11-25 10:44 Claude
+
+Wrote golden spoon script (Grandma sus) with beat list and comment predictions.
