@@ -453,3 +453,23 @@ All 29 links downloaded to Videos\redhood_refs\story (15) and \anim (14), 1080 w
 ## 2026-11-25 10:05 Claude
 
 Dissect tool run on all 14 anim videos (metrics + sheets). Looked at 3 sheets of Cheater as a method check. Connectors: Windsor.ai (YT/TikTok/FB organic) and vidIQ (needs connecting). Videos: laptop Videos\redhood_refs\story/anim, copies in cloud workspace.
+
+---
+
+## 2026-11-25 10:30 Xavier
+
+(09:49) Xavier: wants frames VIEWED for anim AND storytime: pick channel, top 1-3 vids, study all.
+
+## 2026-11-25 10:30 Claude
+
+Top 3 per channel picked + downloaded (Hawks, Cody, GreenBro, Gneef, SensBloxx). 6 anim dissected (86 sheets). Viewed 3 sheets of Hawks 96M video, notes saved. Cost warning given before continuing.
+
+---
+
+## 2026-11-25 11:05 Xavier
+
+(09:58) go
+
+## 2026-11-25 11:05 Claude
+
+Viewed all 19 sheets of the Hawks 96M video; full dissection saved in research/dissect/hawks_won_and_lost_P6/NOTES.md.
