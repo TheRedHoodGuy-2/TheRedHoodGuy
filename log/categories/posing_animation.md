@@ -204,3 +204,5 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 add brainfreeze, the comeback one, the word looking wrong, the time crawl they are solid ideas, we're doing blank in test rn
 
 - **2026-11-25 03:11** (2026-11-19_to_25_sunset-tag.md): nahh can we do another in this town vid, buhh like from a popular anime, we take the concept of a popular suiting anime and use it
+
+- **2026-11-25 07:05** (2026-11-19_to_25_sunset-tag.md): I think you're understanding something. This is so undone. ... Why do you have to render a full video, then check it, then fix? Bro, how did you do the first one? Do it like that. ... when you're done and you think everything's okay and you're ready, then render it with the lowest quality at the fastest speed you can. ... Before you even render, show me a pose library ... all the poses that were used in a video ... so I can fix the ones that I don't like. ... make this into a skill ... me saying new video should not follow version 1, should follow our current new version.

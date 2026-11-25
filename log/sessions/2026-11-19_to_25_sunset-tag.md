@@ -373,3 +373,13 @@ sont go rendering for another hour ro , on a precheck vid
 ## 2026-11-25 06:55 Claude
 
 Slow because the check render still ran the full pipeline (whole town, PBR, shadows, DOF, bloom, SMAA) on 2 CPU cores, and every 10-min chunk rebuilds the scene first: ~2 s a frame, ~35 min a pass. Added an lq mode (no shadows/post, Lambert): only ~1.5x faster because the scene itself is the cost. No more full re-renders on prechecks: sent out/do_overs_review.mp4 built from frames I already had. Fixes already in code since those frames (not in the video): phone screen ring, hug angle, finale shh angle, the 19.8 / 37.0 / 49.8 / 58.2 junk frames, cry close-up, xclose crop, wake-up gap. Known open: the lifeguard girl may be missing at 11-12 s; dark Mom face at the end is the lq look only.
+
+---
+
+## 2026-11-25 07:05 Xavier
+
+I think you're understanding something. This is so undone. ... Why do you have to render a full video, then check it, then fix? Bro, how did you do the first one? Do it like that. ... when you're done and you think everything's okay and you're ready, then render it with the lowest quality at the fastest speed you can. ... Before you even render, show me a pose library ... all the poses that were used in a video ... so I can fix the ones that I don't like. ... make this into a skill ... me saying new video should not follow version 1, should follow our current new version.
+
+## 2026-11-25 07:05 Claude
+
+You're right. For Sunset Tag I checked stills shot by shot and rendered once; this time I used full renders to debug, which is backwards. Rule written into CLAUDE.md section 11 + DIRECTOR_NOTES: stills while building, pose sheet before any render, then ONE lowest-quality render (lq, 180x320, 6 fps). Built tools/posesheet.py (all 41 poses, ~1 min) and sent out/do_overs_poses.jpg. My own verdict: most are bad (forearm blocks crossing chest/face: 03 04 12 13 15 21 28 32 33 36 40 41; stiff symmetric arms-out: 08 14 17 22 24 25 26 31 37; 15 puts the hand on her own head). Proposed skill redhood-new-video so "new video" runs v2. Waiting for his reposes.
