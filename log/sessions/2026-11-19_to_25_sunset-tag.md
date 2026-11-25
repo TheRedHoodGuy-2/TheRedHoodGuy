@@ -403,3 +403,13 @@ Concept, bro. You're disappointing me. ... research about videos, shorts, YouTub
 ## 2026-11-25 07:55 Claude
 
 Verdict: more videos won't fix the bike, the car or the bed; those are my checking failures. What would help: 5-10 mp4s of top niche shorts (YouTube/TikTok block my downloads) and his YouTube Studio / TikTok retention graphs. Proposed: frame-0 mid-disaster hook that rewinds, 1.5 s loop ending, per-shot collision and direction checks.
+
+---
+
+## 2026-11-25 08:40 Xavier
+
+[3 YouTube Studio exports: Content, Traffic source, Audience by watch behavior 2026-10-27 to 11-24] Before I start pouring in videos ... Metrics. Two classes of videos. Animations: real animators' Roblox videos (not AI, not storytime): study the animation, the posing ... create detailed metrics such that if I told you to remake that video you would make the exact same thing frame for frame ... dissect frame by frame up to the last one without skipping a single frame. Second class: our niche storytime ones: script, camera, frame, view, whatever. Extremely detailed metrics for both. The three things I sent you now, you are not using yet, add it to everything we're going to do now.
+
+## 2026-11-25 08:40 Claude
+
+Built: docs/DISSECT_ANIMATION.md (A0-A10: identity, shot table, action phases with frame numbers antic/action/contact/overshoot/follow/settle/hold, spacing, arcs, overlap offsets, key poses as our pose code, face track, locomotion, FX, per-frame log, numbers, remake spec, score), docs/DISSECT_STORYTIME.md (B0-B14: performance + title, script with structure timestamps + open loops + reason-to-stay timeline, hook frames 0-3 s, ending/loop last 3 s, shot table with narration vs image, camera/edit numbers, text, sound, acting, look, pacing map, retention link to our analytics, remake spec, per-frame log, score). tools/dissect.py: every frame extracted + tiled in order, cuts, stepping, camera vs character motion, still frames, every word timed (49 s for an 85 s video). Analytics unpacked to research/analytics/ with the hook/loop columns mapped (stayed-to-watch, avg % viewed), not analysed yet. Ready for the videos.
