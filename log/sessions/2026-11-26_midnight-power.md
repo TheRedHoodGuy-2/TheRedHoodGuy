@@ -263,3 +263,45 @@ The shadow one, your script telling is kind of weird. You have to fix that later
 ## 2026-11-26 08:43 Claude
 
 Fixed. Line 2: "You see, the truth brings it one step back. But at ten steps, it's gone. And so are you." Line 5: "...We still set him a plate. His fork still moves." [empty chair, fork lifting by itself]. Shadow Steps v2.2 approved. Next = voice: switch to Sonnet. Your own take or Gemini TTS (Puck)? Then words.json + flap.json. After voice, back to Opus for RULES_CHECK + shot design.
+
+---
+
+## 2026-11-26 08:52 Xavier
+
+Wait, I think I have an idea. In this world, mom's always right. Mom is always right. But instead, the narrator makes a mistake and says, Mom is always tight. And then corrects himself immediately. Mom's always tight. I mean, right. Mom's always right. You get? People will catch it on there and stay in the video. Now, make a script following that.
+
+## 2026-11-26 08:52 Claude
+
+Slip idea kept; 'tight' swapped for 'wrong' (kid narrator, no sexual line). Script:
+# Mom Is Always Right v1 (2026-11-26, NOT approved). Xavier's slip idea; "tight" swapped for "wrong" (no sexual line from the kid narrator).
+Title: Mom Is Always Right 👩
+1  In this town, Mom is always wrong. I mean, right. Mom is always right.  (the slip = the bait; paid off in the last line)
+2  You see, whatever a mom says comes true.
+3  Jayden's mom said if he kept making that face, it'd stay that way.  [Jayden's school photo, face stuck]
+4  My mom said carrots help you see in the dark.  [me reading under the blanket, eyes glowing]
+5  So in our house, Dad never argues.
+6  And Mom never takes anything back. Only Grandma can change her mind.  (both plants)
+7  Then Saturday, Dad forgot their anniversary.  [Dad holding a gas-station flower]
+8  "You never listen," Mom said. "You might as well disappear."
+9  Dad's feet went see-through.
+10 "Mom, take it back!" I yelled.
+11 "I'm not wrong," she said. She shut her bedroom door.
+12 4:00. Dad's legs were gone. He floated around the kitchen.
+13 I slid a sorry card under Mom's door. It slid back out.
+14 6:00. Only Dad's head was left. He was still saying sorry.
+15 Then I remembered. Grandma is a mom too.  [old photo: Grandma holding baby Mom]
+16 I called her and held the phone to Mom's door.
+17 "Your husband is right there," Grandma said. "And you're being silly."
+18 POP. Dad was back, flower and all.
+19 And Mom came out with a lampshade on her head.
+20 Mom still says she was right.
+21 Mom is always wrong. I mean, right.  [last frame: my smug look, Mom glaring behind me, lampshade still on]
+~185 words, ~45 s.
+READ-BACK: every effect = a mom's words coming true (Jayden's face, my eyes, Dad fading, Dad back, Mom silly). Dad never argues
+because Mom's words win (5). Mom won't retract (6 -> 11, 13). Grandma outranks Mom (6) and is a mom (15) -> her words fix it (17).
+"Silly" is Grandma's words coming true too. Fade clock: feet (9), legs 4:00 (12), head only 6:00 (14). Slip line 1 = last line (loop).
+Want: get Dad back. Attempts: yell, sorry card, Grandma (works).
+Comments: "HE SAID WRONG" (slip), "what if you don't have a mom" (loophole), "just get Mom to say 'Dad's here'" (loophole),
+"Grandma is the final boss", "dads never win".
+Builds: fade-out by body part (hide R6 parts in order + dissolve), floating Dad / Dad's head, glowing eyes, stuck face (sprite),
+card, phone, gas-station flower, lampshade, old photo. Sets: house (kitchen, hallway + Mom's door, bedroom), all existing.

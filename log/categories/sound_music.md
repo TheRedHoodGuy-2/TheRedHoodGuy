@@ -243,3 +243,5 @@ sont go rendering for another hour ro , on a precheck vid
 
 - **2026-11-26 04:08** (2026-11-19_to_25_sunset-tag.md): (03:50) voice quieter after my CapCut edit, delete and fix or leave?
 (03:56) the video IS on my YouTube... look at analytics, when did videos pop off, tell me when to post this one on YouTube and TikTok
+
+- **2026-11-26 08:52** (2026-11-26_midnight-power.md): Wait, I think I have an idea. In this world, mom's always right. Mom is always right. But instead, the narrator makes a mistake and says, Mom is always tight. And then corrects himself immediately. Mom's always tight. I mean, right. Mom's always right. You get? People will catch it on there and stay in the video. Now, make a script following that.
