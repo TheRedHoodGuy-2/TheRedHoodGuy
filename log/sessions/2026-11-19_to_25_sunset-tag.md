@@ -1005,3 +1005,14 @@ nahh alr alr lets drop the sus stuf, lets do one exciting one very weird rule an
 ## 2026-11-26 04:00 Claude
 
 Pitched Midnight Power: superpower = what you're doing at midnight on your 12th birthday; plan to jump/fly; Mia's camera flash makes him blink at midnight -> he teleports every blink. topics/midnight_power/SCRIPT.md
+
+---
+
+## 2026-11-26 04:08 Xavier
+
+(03:50) voice quieter after my CapCut edit, delete and fix or leave?
+(03:56) the video IS on my YouTube... look at analytics, when did videos pop off, tell me when to post this one on YouTube and TikTok
+
+## 2026-11-26 04:08 Claude
+
+Admitted: Gender Swap is on YT (29.6k), analytics lag hid it. Post times: YouTube ~02:00 Lagos (8 PM ET), TikTok 7-8 PM Lagos (follower peak). research/analytics/2026-11-26/POST_TIMES.md

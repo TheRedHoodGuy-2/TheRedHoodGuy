@@ -240,3 +240,6 @@ sont go rendering for another hour ro , on a precheck vid
 [18:18] you dont need me yeh??? i need to sleep\
 [22:06] bro how many chunks leftttt omgg whats taking foreverrrr
 [22:07] wht frame check after render??? why not prior??
+
+- **2026-11-26 04:08** (2026-11-19_to_25_sunset-tag.md): (03:50) voice quieter after my CapCut edit, delete and fix or leave?
+(03:56) the video IS on my YouTube... look at analytics, when did videos pop off, tell me when to post this one on YouTube and TikTok
