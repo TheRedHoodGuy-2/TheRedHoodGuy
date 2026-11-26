@@ -179,3 +179,5 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 
 - **2026-11-27 00:30** (2026-11-19_to_25_sunset-tag.md): (00:25) his Milo unlucky-town script: rework your own version, shorter; scene list before animating
 (00:29) write the script properly no, shots let me go fetch the audio
+
+- **2026-11-27 00:52** (2026-11-27_lucky-me.md): New video: Lucky Me. Read CLAUDE.md fully, then docs/STUDIO_LOG.md, DIRECTOR_NOTES, research/analytics/2026-11-26/RETENTION_DROPS.md, and topics/lucky_me/ (SCRIPT.md + voice/words.json; the take is approved). Start a new session log. Tell me which model to use at each step. First: the full scene list (every shot, timing from words.json, location, camera, action, background clues for the Jaden twist) and the list of new sets, models and cast. Show me before building anything.
