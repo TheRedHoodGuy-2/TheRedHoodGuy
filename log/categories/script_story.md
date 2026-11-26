@@ -125,3 +125,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [23:38] Is still floating on his hand... Why is Mrs. Palm floating above the ground in the last few frames? and all cars move backwards
 [23:40] and she doesnt looks sneaky, learn this walk cycle use it for mrs palm ... https://www.youtube.com/shorts/1Ebe8EHIHE4 but instead let her hands be together, like shes touching her fingers or sumn
 [23:49] i liked this and why is she smiling
+
+- **2026-11-26 02:22** (2026-11-19_to_25_sunset-tag.md): onto the next vid, first off, notice all the iterations of the first script before we arrived at the final?? what did you learn

@@ -921,3 +921,13 @@ You're making sense, and that's already how it works. All 1,410 frames are kept 
 ## 2026-11-26 02:03 Claude
 
 v2 delivered (both versions). Fixed: door bars split from the frame mesh and swing with the leaf; van + Mom's car + pink car nose first; phone gripped and visible past the fist; Pam on her own ground (was 45 cm up), ref walk with hands together (the pose he liked), scared face, walks toward a front camera, freeze facing us. Only ~930 affected frames re-rendered; frame-checked; clip scan PASS.
+
+---
+
+## 2026-11-26 02:22 Xavier
+
+onto the next vid, first off, notice all the iterations of the first script before we arrived at the final?? what did you learn
+
+## 2026-11-26 02:22 Claude
+
+Lessons: every revision was a check I could have run (lane, own flow, insinuate, no drop-off, want, rule holes, physical logic, plant placement, animatable). Wrote them as a pre-flight list in RULES_CHECK_TEMPLATE; every script passes it before he sees it.
