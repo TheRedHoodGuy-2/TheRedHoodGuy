@@ -253,3 +253,13 @@ Title: Every Lie Moves Your Shadow 👣
 28 We still have each other's shadows. So now, Mia never lies.  [dinner: Mia opens her mouth, looks at my shadow, closes it]
 29 Me? I lie a little. It's good for her.  [last frame: my cheeky grin, her shadow-me twitching a step]
 ~285 words, ~66 s.
+
+---
+
+## 2026-11-26 08:43 Xavier
+
+The shadow one, your script telling is kind of weird. You have to fix that later. In this town, every line makes your shadow take one step away from you. You see the truth, blah blah blah blah blah blah blah. Then nobody can see you. Our neighbor says, "Yeah, it makes sense." Up until Grandpa. Grandpa told Grandma her Miss Love was amazing. Every Sunday we set him a plate. There's no way for the user to know that the grandpa has disappeared. There's no way for them to know that. Secondly, um, all right, it's good enough. After you fix those, it's good enough. What do we do next?
+
+## 2026-11-26 08:43 Claude
+
+Fixed. Line 2: "You see, the truth brings it one step back. But at ten steps, it's gone. And so are you." Line 5: "...We still set him a plate. His fork still moves." [empty chair, fork lifting by itself]. Shadow Steps v2.2 approved. Next = voice: switch to Sonnet. Your own take or Gemini TTS (Puck)? Then words.json + flap.json. After voice, back to Opus for RULES_CHECK + shot design.
