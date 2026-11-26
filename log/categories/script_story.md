@@ -150,3 +150,5 @@ llet me see the script
 (question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next
 
 - **2026-11-26 08:33** (2026-11-26_midnight-power.md): Let's remove sneeze swap. Let's do in this world whatever is on your hand by midnight changes the color of your arm of your hand till next day or something. I don't know. Like I want to insinuate without ever insinuating, without ever saying anything about it. Gooning, right? But I don't want to say anything about. I want the audience to bring it up by themselves. So, secondly, also give me the shadows swap script. I want to measure which one I want to do now.
+
+- **2026-11-26 08:37** (2026-11-26_midnight-power.md): Not only is the guard too long, like grandpa fall asleep holding the remote, then coach, then Mrs. Dale, then grandma and grandpa, then Pam. It's too fucking long, bro. Not only is it too long, it's contradict. How has grandpa's hand been black since 2015? Yet grandpa and grandma hold hand every night and their hands just swap colors. Can you read your fucking script after sending it to me? What the fuck?

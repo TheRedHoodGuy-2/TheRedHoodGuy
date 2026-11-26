@@ -183,3 +183,73 @@ Title: Every Lie Moves Your Shadow 👣
 mailman gag replaced; payoff instead of cliffhanger. Want: be seen again. Attempts: deny, then lie (works).
 Comments: "cheeky boy" (last line), "Grandpa's plate", "the neighbor's hair", "how did they swap shadows" (loophole, never answered), "Mia is the villain".
 Builds: almost none: shadows system exists (shadowOf), see-through fade, vase, cookie jar, house + classroom + street exist.
+
+---
+
+## 2026-11-26 08:37 Xavier
+
+Not only is the guard too long, like grandpa fall asleep holding the remote, then coach, then Mrs. Dale, then grandma and grandpa, then Pam. It's too fucking long, bro. Not only is it too long, it's contradict. How has grandpa's hand been black since 2015? Yet grandpa and grandma hold hand every night and their hands just swap colors. Can you read your fucking script after sending it to me? What the fuck?
+
+## 2026-11-26 08:37 Claude
+
+Admitted both. Midnight Hands v2 + Shadow Steps v2.1 (read back, 3 more contradictions found in Shadow and fixed):
+# Midnight Hands v2 (2026-11-26 08:4x, fixes: 2 gags not 5; Grandpa remote vs hand-holding contradiction removed; Mia's grab logic made consistent)
+Title: Your Midnight Hand Tells On You 🖐️
+1  In this town, whatever's in your hand at midnight turns your hand that colour for a whole day.
+2  You see, every morning, everybody knows what you did last night.  [street of coloured hands; pink car parked next door = Mrs. Pam, visual plant only]
+3  Grandpa falls asleep holding the remote. His hand's been black since 2015.
+4  Coach eats Cheetos at midnight. He says it's a tan.
+5  Mom and Dad hold hands every night, so their hands always stay normal.  (the clue for the fix AND the ending)
+6  But my little sister Mia grabs anything you put in her hand. And drops whatever she had.  [baby Mia: drops the rattle, grabs Dad's tie]
+7  Friday was the night before her ballet show. She was the white swan.
+8  11:50. She was asleep, holding Dad's black marker.
+9  Black hand. White swan.
+10 11:52. I pulled. She didn't let go.
+11 11:55. I tickled her. She kicked me in the face.
+12 11:57. I gave her the teddy. She dropped the marker and grabbed it.
+13 A brown hand. Still not a white swan.
+14 11:58. Then I thought about Mom and Dad.
+15 11:59. I put my hand in hers. She dropped the teddy and grabbed me.
+16 Midnight.  [her hand glows, stays skin]
+17 Next day, she danced the white swan.
+18 At breakfast, Mom's hand was white. Pillow white.
+19 Then Dad reached for the toast. His hand was pink.
+20 [no voice] Mom stares at it. Dad puts it in his pocket. Through the window: the pink car next door. Cut.
+~190 words, ~48 s.
+READ-BACK (every line vs line 1): Grandpa = remote every night, never holds Grandma's hand (no Grandma line now). Coach = Cheetos.
+Mom + Dad = each other's hands -> normal, so Mom white = she held the pillow = Dad wasn't there; Dad pink = held something pink.
+Mia: grabs + drops (6) so marker -> teddy (12) -> my hand (15) all follow. My hand in hers = skin on skin, siblings: both normal.
+Why not my hand at 11:52? I only think of it at 11:58 from Mom and Dad (14). Colour lasts "a whole day", show is the next day: covered.
+Comments: "DAD 💀", "pillow white", "what if you hold your own hand" (loophole), "Grandpa since 2015", "Coach's tan".
+---
+# Shadow Steps v2.1 (08:4x read-back: teacher gag cut, 2 gags; one lie can't fade her, so 3 lies + she stops smiling) (2026-11-26 remake: payoff ending, rule logic; NOT approved). v1 = lines.json (cliffhanger, logic hole).
+Title: Every Lie Moves Your Shadow 👣
+1  In this town, every lie makes your shadow take one step away from you.
+2  You see, the truth brings it one step back. But ten steps, and it's gone for good. Then nobody can see you.
+4  Our neighbor says his hair is real. His shadow is nine steps behind him.
+5  And Grandpa told Grandma her meatloaf was amazing. Every Sunday. We still set him a plate.
+6  But I never lie. Not once.
+7  My shadow still walks three steps behind me. I thought I was just slow.  (plant)
+8  My little sister Mia lies all day. To Mom. To teachers. To the dog.
+9  And her shadow never moves. So Mom thinks Mia is perfect.
+10 Me? I never take off my red hoodie. Mia never takes out her ponytail.  (plant)
+11 Then, Tuesday. Grandma's vase hit the floor.
+12 Mia pointed right at me. "He did it," she said.
+13 My shadow took a step. Four.  [step counter]
+14 "I didn't!" I yelled. Mom didn't even look at me.
+15 "He ate the last cookie too," Mia said. Five.
+16 "And he said you look old, Mom." Six. "And he broke the TV." Seven.
+17 My hands were going see-through.
+18 I looked at my shadow. It had a ponytail.
+19 I looked at Mia's. It had a hood.
+20 We'd swapped shadows. Every lie Mia told walked hers away from me.
+21 Mia smiled.
+22 So I did something I'd never done. I lied.
+23 "Mom, Mia drew on your car," I said. "And she flushed your ring. And she hates your cooking."
+24 The hood shadow stepped away from Mia. One, two, three. Mia stopped smiling.
+25 "Okay! I broke the vase!" Mia screamed.
+26 Step back. "I ate the cookie!" Step back. "I've lied since I was three!" Step, step, step.
+27 Mom finally looked at me.
+28 We still have each other's shadows. So now, Mia never lies.  [dinner: Mia opens her mouth, looks at my shadow, closes it]
+29 Me? I lie a little. It's good for her.  [last frame: my cheeky grin, her shadow-me twitching a step]
+~285 words, ~66 s.
