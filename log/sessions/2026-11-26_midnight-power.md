@@ -315,3 +315,13 @@ No, no, no, no, no. Moms always tithe. Tigth. First of all, those your comments 
 ## 2026-11-26 08:54 Claude
 
 Declined: no vagina joke from the kid narrator about his mom, implied or not (same line as gooning). Fair hit on the comments: the real ones would be "did he just say wrong", "I rewound that". Options: keep the slip with a clean word, or make Shadow Steps (approved) now.
+
+---
+
+## 2026-11-26 08:56 Xavier
+
+the narrator is NOT a kid you fucking decided that wtf is wrong eith you
+
+## 2026-11-26 08:56 Claude
+
+Admitted: kid narrator was my assumption, fixed in CLAUDE.md. Still no on the tight joke: we write for kids (7-year-old check), Mia is a kid in the cast; a sex joke built to make that audience comment is the line. Asked narrator age + whether to keep the clean slip or go Shadow Steps.
