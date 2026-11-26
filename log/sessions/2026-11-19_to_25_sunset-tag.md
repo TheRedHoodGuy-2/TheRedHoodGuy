@@ -954,3 +954,13 @@ ok so whats our next "sus" script
 ## 2026-11-26 03:22 Claude
 
 Pitched Match Day v1 (every kid looks like their dad; mailman lookalike; Match Day clock; three failed attempts; teacher 'Oh! He matches!' cut on Dad). topics/match_day/SCRIPT.md
+
+---
+
+## 2026-11-26 03:40 Xavier
+
+i like it, letsss keep it for now, not gone, go to my youtube and ttk pull analytics, look at retention and pick where it dropped, lets analyse why before we make the script
+
+## 2026-11-26 03:40 Claude
+
+Pulled YT + TikTok retention. Drops: exposition (Gender Swap 3-9s 2.4-2.7%/s, brain freeze 12-18s 5.5%/s), vague withheld line (practiced one thing 2.1%/s), passive openers (8-10%/s first 3s). Holds: countdown clock 0.8%/s. research/analytics/2026-11-26/RETENTION_DROPS.md

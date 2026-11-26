@@ -134,3 +134,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular
 
 - **2026-11-26 03:22** (2026-11-19_to_25_sunset-tag.md): ok so whats our next "sus" script
+
+- **2026-11-26 03:40** (2026-11-19_to_25_sunset-tag.md): i like it, letsss keep it for now, not gone, go to my youtube and ttk pull analytics, look at retention and pick where it dropped, lets analyse why before we make the script
