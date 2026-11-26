@@ -106,3 +106,80 @@ nose clips, pepper jar, cereal, eggs, toilet, homework, TV with a weather screen
 bathroom), front yard + window, street bench. Hardest beats: my body acting like a cat (all fours, toilet), cat leaping onto a face.
 
 Shadow Steps queued as the next remake.
+
+---
+
+## 2026-11-26 08:33 Xavier
+
+Let's remove sneeze swap. Let's do in this world whatever is on your hand by midnight changes the color of your arm of your hand till next day or something. I don't know. Like I want to insinuate without ever insinuating, without ever saying anything about it. Gooning, right? But I don't want to say anything about. I want the audience to bring it up by themselves. So, secondly, also give me the shadows swap script. I want to measure which one I want to do now.
+
+## 2026-11-26 08:33 Claude
+
+Declined the gooning angle (kid cast, young audience); kept the hand rule with the Mrs. Pam pink-hand adult insinuation instead. Both scripts:
+# Midnight Hands v1 (2026-11-26, NOT approved). Gooning angle declined (kid cast + young audience); adult sus = the Mrs. Pam pink hand, never said.
+Title: Your Midnight Hand Tells On You 🖐️
+1  In this town, whatever's in your hand at midnight turns your hand that colour for a whole day.
+2  You see, every morning, everybody knows what you did last night.
+3  Grandpa falls asleep holding the remote. His hand's been black since 2015.
+4  Coach eats Cheetos at midnight. He says it's a tan.
+5  Mr. Dale held a glass of water. Now he waves with nothing.  [empty sleeve waving]
+6  And Grandma and Grandpa hold hands every night. Their hands just swap colours.  (the clue)
+7  Mrs. Pam paints everything pink. Her car. Her nails. Her phone.  (adult plant)
+8  But my problem was my little sister, Mia.
+9  Mia grabs anything you put in her hand. She's done it since she was a baby.  [baby Mia gripping Dad's tie]
+10 Friday was the night before her ballet show. She was the white swan.
+11 11:50. I checked on her. She was asleep, holding Dad's black marker.
+12 Black hand. White swan.
+13 11:52. I pulled. She didn't let go.
+14 11:55. I tickled her. She kicked me in the face.
+15 11:57. I held out her teddy. She grabbed it with her other hand. Still holding the marker.
+16 11:58. Then I thought about Grandma and Grandpa.
+17 Whatever's in your hand. It doesn't have to be a thing.
+18 11:59. I pulled out the marker and put my hand in hers.
+19 Ten seconds. She squeezed.
+20 Midnight.  [both hands glow]
+21 In the morning, her hand was my colour, and mine was hers. Same as always.
+22 That night, she danced the white swan. One hand was a little teddy-bear brown.
+23 At breakfast, Mom's hand was white. Pillow white.
+24 Then Dad reached for the toast. His hand was pink.
+25 [no voice] Mom stares at it. Dad puts it in his pocket. Through the window behind them: Mrs. Pam's pink car. Cut.
+~240 words, ~62 s. Rule check: every colour = what was in the hand at midnight. Want: save Mia's show. Attempts: pull, tickle, teddy, my hand (works).
+Plants: hand-holding swaps colour (6), Mia grabs anything (9), Mrs. Pam pink (7). Comments: "DAD 💀", "pillow white", "Mom slept holding
+the pillow??", "what if you hold your own hand" (loophole), "Grandpa since 2015", "Coach's tan".
+Builds: hand-colour material swap per actor, glow FX, marker, remote, Cheetos bag, glass, teddy, tutu/stage (new set: recital stage),
+invisible-hand sleeve, pink car (exists, Clap Cops), house (bedroom, kitchen).
+# Shadow Steps v2 (2026-11-26 remake: payoff ending, rule logic; NOT approved). v1 = lines.json (cliffhanger, logic hole).
+Title: Every Lie Moves Your Shadow 👣
+1  In this town, every lie makes your shadow take one step away from you.
+2  You see, the truth brings it one step back. But ten steps, and it's gone for good. Then nobody can see you.
+3  My teacher's shadow sits two desks behind her.
+4  Our neighbor says his hair is real. His shadow lives at the end of the street.
+5  And Grandpa once told Grandma her meatloaf was amazing. We still set him a plate. Just in case.
+6  But I never lie. Not once.
+7  My shadow still walks three steps behind me. I thought I was just slow.  (plant)
+8  My little sister Mia lies all day. To Mom. To teachers. To the dog.
+9  And her shadow never moves. So Mom thinks Mia is perfect.
+10 Me? I never take off my red hoodie. Mia never takes out her ponytail.  (plant)
+11 Then, Tuesday. Grandma's vase hit the floor.
+12 Mia pointed right at me. "He did it," she said.
+13 My shadow took a step. Four.  [step counter]
+14 "I didn't!" I yelled. Mom didn't even look at me.
+15 "He ate the last cookie too," Mia said. Five.
+16 "And he said you look old, Mom." Six. Seven.
+17 My hands were going see-through.
+18 I looked at my shadow. It had a ponytail.
+19 I looked at Mia's. It had a hood.
+20 We'd swapped shadows. Every lie Mia told walked hers away from me.
+21 Eight. Mia smiled.
+22 So I did something I'd never done. I lied.
+23 "Mom, Mia drew on your car," I said.
+24 The hood shadow stepped away from Mia. Her hands started fading.
+25 "Okay! I broke the vase!" Mia screamed.
+26 Step back. "I ate the cookie!" Step back. "I've lied since I was three!" Step, step, step.
+27 Mom finally looked at me.
+28 We still have each other's shadows. So now, Mia never lies.  [dinner: Mia opens her mouth, looks at my shadow, closes it]
+29 Me? I lie a little. It's good for her.  [last frame: my cheeky grin, her shadow-me twitching a step]
+~280 words, ~68 s. Fixes vs v1: truth rule added; v1's hole (Mia lies all day but my shadow stayed put) closed by the 3-steps-behind plant;
+mailman gag replaced; payoff instead of cliffhanger. Want: be seen again. Attempts: deny, then lie (works).
+Comments: "cheeky boy" (last line), "Grandpa's plate", "the neighbor's hair", "how did they swap shadows" (loophole, never answered), "Mia is the villain".
+Builds: almost none: shadows system exists (shadowOf), see-through fade, vase, cookie jar, house + classroom + street exist.

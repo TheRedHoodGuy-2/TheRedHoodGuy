@@ -148,3 +148,5 @@ llet me see the script
 
 - **2026-11-26 08:05** (2026-11-26_midnight-power.md): nah next script idea
 (question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next
+
+- **2026-11-26 08:33** (2026-11-26_midnight-power.md): Let's remove sneeze swap. Let's do in this world whatever is on your hand by midnight changes the color of your arm of your hand till next day or something. I don't know. Like I want to insinuate without ever insinuating, without ever saying anything about it. Gooning, right? But I don't want to say anything about. I want the audience to bring it up by themselves. So, secondly, also give me the shadows swap script. I want to measure which one I want to do now.
