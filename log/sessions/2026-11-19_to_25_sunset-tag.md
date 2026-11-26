@@ -944,3 +944,13 @@ Lessons: every revision was a check I could have run (lane, own flow, insinuate,
 ## 2026-11-26 02:55 Claude
 
 Took in the retention video (transcript): composing (hook promises payoff, tension, payoff delivers), editing (pace, music per section), leverage (comment bait, related link; skip the fake-comment trick). Saved research/retention_composing_2026-11-26.md. Thumbnail v1 sent (pink crimped foil with ring, suspicious side-eye face). Asked which eyes to fix.
+
+---
+
+## 2026-11-26 03:22 Xavier
+
+ok so whats our next "sus" script
+
+## 2026-11-26 03:22 Claude
+
+Pitched Match Day v1 (every kid looks like their dad; mailman lookalike; Match Day clock; three failed attempts; teacher 'Oh! He matches!' cut on Dad). topics/match_day/SCRIPT.md

@@ -132,3 +132,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
 [02:47] those eyes needfixing as well btw
 [02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular
+
+- **2026-11-26 03:22** (2026-11-19_to_25_sunset-tag.md): ok so whats our next "sus" script
