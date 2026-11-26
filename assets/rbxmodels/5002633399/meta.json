@@ -1,0 +1,28 @@
+{
+ "id": 5002633399,
+ "name": "Model",
+ "size_m": [
+  0.87,
+  0.797,
+  0.87
+ ],
+ "materials": [
+  "mat~Concrete~edeaea",
+  "mat~Concrete~ff5959",
+  "mat~Fabric~635f62",
+  "mat~Glass~ff0000~t1",
+  "mat~Neon~f5cd30",
+  "mat~Pebble~f3bd7f",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~ffffcc",
+  "mat~Sand~d3be96",
+  "mat~Sand~f1e7c7",
+  "mat~Sand~f8f8f8"
+ ],
+ "parts": 87,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 9,
+ "warnings": []
+}

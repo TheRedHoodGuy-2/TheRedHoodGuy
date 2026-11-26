@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/U9_B-OCRcm0__You_won_and_lost_at_the_same_time_RobloxAnimation_shorts.mp4",
+ "name": "hawks_won_and_lost_U9",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 1200,
+ "seconds": 20.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 9,
+ "sheets": 20,
+ "cuts_per_10s": 4.0,
+ "shot_len_s": {
+  "mean": 2.22,
+  "median": 0.3,
+  "min": 0.25,
+  "max": 12.517
+ },
+ "first_cut_frame": 34,
+ "still_pct": 10.9,
+ "dup_pct": 6.8,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

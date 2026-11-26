@@ -1,0 +1,20 @@
+{
+ "id": 10189656177,
+ "name": "StadiumLight",
+ "size_m": [
+  4.585,
+  9.473,
+  6.101
+ ],
+ "materials": [
+  "mat~Concrete~635f62",
+  "mat~Concrete~a3a2a5",
+  "mat~SmoothPlastic~fdea8d"
+ ],
+ "parts": 27,
+ "skipped_invisible": 2,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 18,
+ "warnings": []
+}

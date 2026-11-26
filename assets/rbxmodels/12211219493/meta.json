@@ -1,0 +1,38 @@
+{
+ "id": 12211219493,
+ "name": "SUV",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~DiamondPlate~635f62",
+  "mat~DiamondPlate~635f62~t5",
+  "mat~DiamondPlate~cdcdcd",
+  "mat~DiamondPlate~dfdfde",
+  "mat~DiamondPlate~edeaea~t5",
+  "mat~Neon~a3a2a5",
+  "mat~Neon~a80000",
+  "mat~Plastic~3c3c3c",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~aa0000",
+  "mat~SmoothPlastic~232324",
+  "mat~SmoothPlastic~3c3c3c",
+  "mat~SmoothPlastic~3e3e3e",
+  "mat~SmoothPlastic~555456~t5",
+  "mat~SmoothPlastic~5b5b69",
+  "mat~SmoothPlastic~605f61",
+  "mat~SmoothPlastic~9ea0a5",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~a3a2a5~t6",
+  "mat~SmoothPlastic~cecece",
+  "mat~SmoothPlastic~e4e3e6",
+  "mat~SmoothPlastic~e7e7ec"
+ ],
+ "parts": 63,
+ "skipped_invisible": 13,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

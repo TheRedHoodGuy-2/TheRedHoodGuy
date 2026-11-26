@@ -1,0 +1,20 @@
+{
+ "id": 133007182022247,
+ "name": "Stylized Thermometer",
+ "size_m": [
+  0.095,
+  0.483,
+  0.024
+ ],
+ "materials": [
+  "mat~Glass~d8f2fa~t6",
+  "mat~Metal~bac9d0",
+  "mat~SmoothPlastic~304b61",
+  "mat~SmoothPlastic~ed4948"
+ ],
+ "parts": 29,
+ "skipped_invisible": 0,
+ "unions_skipped": 20,
+ "decals": 0,
+ "warnings": []
+}

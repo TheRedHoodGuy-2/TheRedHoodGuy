@@ -1,0 +1,18 @@
+{
+ "id": 4818983600,
+ "name": "Part",
+ "size_m": [
+  0.086,
+  0.152,
+  0.189
+ ],
+ "materials": [
+  "mat~Grass~ffcc99",
+  "mat~SmoothPlastic~ffcc99"
+ ],
+ "parts": 2,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

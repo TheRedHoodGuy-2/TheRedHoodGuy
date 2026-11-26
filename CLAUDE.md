@@ -20,7 +20,26 @@ are copied into `legacy/explainer-kit/`: reference only; our own engine and flow
   experiments on his money. Say the rough cost before any long step.
 - Never make him find a mistake Claude could have found. He has said "look at the frames yourself" more than ten times.
 
+## 1b. COST, MODELS, TOKENS (Xavier 2026-11-26: "I don't want to make videos and spend my weekly tokens in one day")
+Same-or-better results, fewer tokens. Every optimization below is allowed ONLY if the output is the same or better.
+- MODEL CALL BEFORE EVERY TASK: before starting any task, say in one line which model he should set and why. Mid-task, the
+  moment a stage fits another model better, STOP and tell him to switch. Default map:
+  Opus = scripts, story / comment bait, posing + acting decisions, shot design, the final frame-check judgment, new systems.
+  Sonnet = building from an approved plan, rendering, re-rendering after fixes, audio / captions / muxing, file and log work,
+  pulling analytics, routine tool fixes. Haiku = trivial lookups / file moves only. Never assume; ask him to switch.
+- NEW CHAT PER VIDEO (the old chat re-sends its whole history every message). Everything carries over through the repo:
+  this file, docs/STUDIO_LOG.md (where we are), docs/DIRECTOR_NOTES.md, log/. Push the repo before he leaves a chat.
+- RENDERS: one background job, no polling loops (no 10-min check-ins: each costs tokens). Wait for its completion
+  notice; check once. Re-render only the frames a fix touches (frames are kept as JPGs).
+- IMAGES are the most expensive thing to read. Automatic checks first (clipscan, dark / flash / frozen-frame detection,
+  walk check, lookmeter); then LOOK only at what they flag + start / middle / end stills of each shot, at the smallest size
+  that shows the problem. Full every-frame sheets only on the final pass, at 6x4 per sheet max, downscaled.
+- No re-reading files already read in this chat; no dumping long tool output (pipe through head / grep); short replies.
+- Batch: ask for all his notes in one message; fix them in one pass; one re-render.
+
 ## 2. Start of every chat (in this order)
+000. NEW CHAT = NEW SESSION FILE: create `log/sessions/<YYYY-MM-DD>_<video-or-topic>.md` and log EVERY turn of this chat
+    there (his message + your reply, verbatim) with tools/logturn.py, however long the chat gets (Xavier 2026-11-26).
 00. THE LOG (Xavier 2026-11-25: "compacting should not be the end of me"): read `log/INDEX.md`, EVERY file in
     `log/categories/` (all his notes by topic, from both repos) and the tail of the newest `log/sessions/` file.
     END OF EVERY TURN, no exceptions: write his message + your full reply verbatim to two files and run
@@ -59,6 +78,20 @@ every message of his and every reply -> session log.
   NOT SAID (cut the last line; we watch it happen; cut mid-action).
 - Every sentence must be ONE drawable picture. The 7-YEAR-OLD CHECK on every few-second block: would a 7-year-old
   still be watching? If not, rewrite that block. Every 2-5 s a reason to stay (gag, open question, countdown, reveal).
+- COMMENT BAIT (Xavier 2026-11-25 08:44, from Tag Swap's comments: "cheeky boy" because he laughed in the last frame
+  while his bro became a girl; people debating "what if you were trans / a boy turning into a girl"): every script must
+  give people something to TALK about: a debatable rule or a "what would YOU do" choice, a character moment viewers
+  have an opinion on (cheeky, unfair, wholesome, sus), a last frame that invites a reaction, an open question in the
+  ending. Before approval, list the 2-3 comments the script is designed to start.
+- REAL COMMENTS (Xavier 2026-11-25 10:41, research/comments_real_2026-11-25.md): bait = what real viewers comment on: an
+  unaddressed loophole in the rule, one exempt character, a lookalike, a pedant detail. Never AI-style "what would YOU do" prompts.
+- INSINUATE, NEVER STATE (11:02): adult sus = one plant + one line at the end; never named, shown or heard. Never with kid characters.
+- NO DROP-OFF AFTER THE GAGS (11:05): one-liner gags (~1.5 s each, 2-3), tension starts in the very next sentence.
+- EVERY ACTION HAS A WANT (11:12): in the crisis the narrator wants one thing and every action is an attempt at it.
+- ANIMATABLE (11:44 + 11:55): run this check BEFORE Xavier sees a script; never send beats our engine does badly
+  (on-screen stair climbs, pushing big furniture, long contact chains). Never call a gesture impossible on R6: pose it
+  (jazz hands = arms up / out + shimmer; snap = forearm flick + real snap SFX) or ask him for a pose example. New sets
+  are fine: BUILD them, never swap a location to dodge a build. List every new set / model / cast member.
 - The script goes to Xavier as a beat list; nothing is built until he approves it.
 
 ## 5. Voice, lip sync, faces
@@ -174,7 +207,8 @@ Re-renders after notes touch only the changed shots.
 2. RULES_CHECK.md filled for every location (sections 6-10) BEFORE scene code.
 3. Shot list written with engine/shots.js; `validate()` empty; stills at start / middle / end of EVERY shot looked at
    (subject readable, nothing blocking, face lit, no void behind).
-4. Gates: walk check (if anyone walks), clip check (tools/clipcheck.js on contact poses), lookmeter, shot validate.
+4. Gates: walk check (if anyone walks), CLIPSCAN (`node tools/clipscan.mjs <scene> 24`: every frame, bodies / props / grips,
+   must print CLIPSCAN PASS; Xavier 2026-11-25 "never let anything clip"), lookmeter, shot validate.
 5. REVIEW GATE (Xavier 2026-11-25): after the frame-checked 10 fps check pass, SEND him that cheap low-res, low-fps review video
    (with voice) to rate, and wait for his OK. Only then the final. A 'final straight' request is a one-off, not the default.
 6. Render (tools/render.mjs, --t0 for per-location segments; 30 fps finals; segments concatenated with -c copy, voice

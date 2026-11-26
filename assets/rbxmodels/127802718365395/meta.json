@@ -1,0 +1,18 @@
+{
+ "id": 127802718365395,
+ "name": "LeftUpperArm",
+ "size_m": [
+  0.499,
+  2.45,
+  1.224
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~a3a2a5"
+ ],
+ "parts": 34,
+ "skipped_invisible": 5,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/a3R0iKvt-u4__I_can_see_you.._IB_-_darent_z_codystoobig_roblox_robloxani.mp4",
+ "name": "anim_a3R0iKvt_u4__I_can_see_you___IB___darent",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 370,
+ "seconds": 6.17,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 23,
+ "sheets": 7,
+ "cuts_per_10s": 35.68,
+ "shot_len_s": {
+  "mean": 0.27,
+  "median": 0.03,
+  "min": 0.017,
+  "max": 1.183
+ },
+ "first_cut_frame": 1,
+ "still_pct": 7.8,
+ "dup_pct": 5.7,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

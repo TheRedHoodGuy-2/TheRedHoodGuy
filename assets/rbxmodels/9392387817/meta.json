@@ -1,0 +1,19 @@
+{
+ "id": 9392387817,
+ "name": "Suitcase",
+ "size_m": [
+  0.507,
+  1.171,
+  0.815
+ ],
+ "materials": [
+  "mat~Plastic~111111",
+  "mat~Plastic~5a4c42",
+  "mat~SmoothPlastic~cacbd1"
+ ],
+ "parts": 3,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

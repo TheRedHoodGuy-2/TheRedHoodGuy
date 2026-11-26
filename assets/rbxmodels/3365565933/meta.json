@@ -1,0 +1,21 @@
+{
+ "id": 3365565933,
+ "name": "bleachers",
+ "size_m": [
+  40.773,
+  8.514,
+  14.79
+ ],
+ "materials": [
+  "mat~Concrete~5b5d69",
+  "mat~Concrete~cacbd1",
+  "mat~DiamondPlate~f8f8f8",
+  "mat~Metal~5b5d69",
+  "mat~Metal~f8f8f8"
+ ],
+ "parts": 1419,
+ "skipped_invisible": 28,
+ "unions_skipped": 0,
+ "decals": 20,
+ "warnings": []
+}

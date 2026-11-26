@@ -1,0 +1,33 @@
+{
+ "id": 15233606123,
+ "name": "2023 Honda Civic Sedan",
+ "size_m": [
+  6.825,
+  2.119,
+  3.001
+ ],
+ "materials": [
+  "mat~Metal~1f1f1f",
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t6",
+  "mat~SmoothPlastic~111111~t9",
+  "mat~SmoothPlastic~313131",
+  "mat~SmoothPlastic~562424",
+  "mat~SmoothPlastic~610000~t7",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~750000",
+  "mat~SmoothPlastic~970000",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~c4281c",
+  "mat~SmoothPlastic~cacbd1",
+  "mat~SmoothPlastic~e7e7ec",
+  "mat~SmoothPlastic~edeaea"
+ ],
+ "parts": 106,
+ "skipped_invisible": 143,
+ "unions_skipped": 0,
+ "decals": 28,
+ "warnings": []
+}

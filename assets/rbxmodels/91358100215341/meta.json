@@ -1,0 +1,19 @@
+{
+ "id": 91358100215341,
+ "name": "Bicycle",
+ "size_m": [
+  0.951,
+  1.344,
+  2.147
+ ],
+ "materials": [
+  "mat~SmoothPlastic~1b2a35",
+  "mat~SmoothPlastic~8f0c0b",
+  "mat~SmoothPlastic~aaaaaa"
+ ],
+ "parts": 3,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": 10166894958,
+ "name": "Car",
+ "size_m": [
+  3.128,
+  2.346,
+  7.752
+ ],
+ "materials": [
+  "mat~DiamondPlate~1b2a35",
+  "mat~Plastic~111111",
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~1b2a35",
+  "mat~SmoothPlastic~a34b4b",
+  "mat~SmoothPlastic~c4281c",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~f8f8f8~t6"
+ ],
+ "parts": 87,
+ "skipped_invisible": 13,
+ "unions_skipped": 4,
+ "decals": 6,
+ "unions": 10,
+ "warnings": [
+  "union asset 10166894428: no MeshData inside",
+  "union asset 10166894428: no MeshData inside",
+  "union asset 10166894667: no MeshData inside",
+  "union asset 10166894667: no MeshData inside"
+ ]
+}

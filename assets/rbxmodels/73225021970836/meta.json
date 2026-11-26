@@ -1,0 +1,18 @@
+{
+ "id": 73225021970836,
+ "name": "Stylized Mixing Bowl",
+ "size_m": [
+  0.543,
+  0.051,
+  0.543
+ ],
+ "materials": [
+  "mat~SmoothPlastic~ed997f",
+  "mat~SmoothPlastic~fff2d7"
+ ],
+ "parts": 36,
+ "skipped_invisible": 0,
+ "unions_skipped": 16,
+ "decals": 0,
+ "warnings": []
+}

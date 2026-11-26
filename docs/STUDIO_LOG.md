@@ -279,3 +279,18 @@ Next phase: 7 faces / face animation / lip sync.
   Cliffhanger shown, not said: his shadow lifts its foot at the door, cut mid-step.
   5_E / 5_F talking-mouth sheets in the bank (assets/faces/ai/05_intimidating/E.png F.png -> sprites E01-16 F01-16),
   used by every custom face's talk flap, picked by emotion row. Fixed: suburb door matrix bug, face cache key.
+- 2026-11-26 HANDOFF (end of the Clap Cops chat; next chat starts a new video):
+  DONE: Clap Cops final (out/ is not in git): 1080x1920 30 fps, music + no-music versions, thumbnail (pink foil packet, Dad
+  side-eye, scenes/clap_cops.js opts.thumb). Xavier deleted the uploads to fix the voice level in CapCut (main video 0 dB,
+  music -15/-18 dB, his SFX -6..-10 dB); he will send the export to check, then post: TikTok ~7:30 PM Lagos, YouTube ~2 AM
+  Lagos (research/analytics/2026-11-26/POST_TIMES.md).
+  NEW TOOLS: tools/clipscan.mjs (every-frame clip gate), tools/upscale4x.py (Real-ESRGAN CPU; textures served via HITEX=1,
+  2K Poly Haven maps break the renderer: keep 1K), engine/act.js floor clamp + per-actor A.ground, walk style.tilt / down /
+  lift, hingeDoor splits door bars from frame meshes.
+  RESEARCH: research/retention_composing_2026-11-26.md, research/analytics/2026-11-26/RETENTION_DROPS.md (exposition +
+  vague lines leak, on-screen clocks hold, cut on the payoff), POST_TIMES.md. Script pre-flight in RULES_CHECK_TEMPLATE.
+  SCRIPTS ON THE SHELF (none approved): topics/match_day (v3 sus), topics/search_history (v2 sus), topics/do_overs_67 (v2 sus),
+  topics/midnight_power (v1, the last pitch: superpower = what you're doing at midnight, blink-teleport twist). Xavier
+  dropped the sus angle at 03:44 for "one exciting weird rule + twist that people want to stay for". Lesson: retention is not
+  fewer words (DIRECTOR_NOTES 03:32).
+  PENDING: he sends a finger-snap SFX; mailman restyle needs his OK if Match Day is ever made.

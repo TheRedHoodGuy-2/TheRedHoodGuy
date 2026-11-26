@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/fwGW0Cp0Kuo__Sheriff_in_MM2_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "cody_sheriff_mm2",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 654,
+ "seconds": 10.9,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 47,
+ "sheets": 11,
+ "cuts_per_10s": 42.2,
+ "shot_len_s": {
+  "mean": 0.23,
+  "median": 0.03,
+  "min": 0.017,
+  "max": 2.033
+ },
+ "first_cut_frame": 1,
+ "still_pct": 13.1,
+ "dup_pct": 3.4,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

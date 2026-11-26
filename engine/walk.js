@@ -58,7 +58,7 @@ export function walkPlan({ path, t0 = 0, step = .6, T = .5, L = .68, footD = .34
       armL: armPart(aL, .02), armR: armPart(aR, -.02),
       head: [-twist * .8, -lean * .6 + .015 * Math.sin(2 * Math.PI * q.u), 0],   // eyes stay on the path
       // the lean pivots at the feet, so the root steps back by L sin(lean) to keep the hip over its spot
-      root: { x: dx, y: q.h - L * Math.cos(lean), z: -L * Math.sin(lean), rx: lean, ry: twist, rz: -sgn * .028 * swingK },
+      root: { x: dx, y: q.h - L * Math.cos(lean), z: -L * Math.sin(lean), rx: lean, ry: twist, rz: -sgn * (style.tilt ?? .028) * swingK },   // tilt over the planted leg (style.tilt ~.09 = the 5 deg ref walk)
     };
     return { x: p.x, z: p.z, heading: p.heading, pose, walking: tt > 0 && tt < dur, step: q.j, u: q.u, side: q.side, foot: F[q.j] };
   };

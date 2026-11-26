@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/P6-hv5859H8__You_won_and_lost_at_the_same_time_RobloxAnimation_shorts.mp4",
+ "name": "hawks_won_and_lost_P6",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 1089,
+ "seconds": 18.15,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 10,
+ "sheets": 19,
+ "cuts_per_10s": 4.96,
+ "shot_len_s": {
+  "mean": 1.81,
+  "median": 1.92,
+  "min": 1.0,
+  "max": 2.733
+ },
+ "first_cut_frame": 60,
+ "still_pct": 1.7,
+ "dup_pct": 0.2,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

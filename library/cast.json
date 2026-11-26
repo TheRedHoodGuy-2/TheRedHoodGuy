@@ -113,5 +113,29 @@
    8966711821
   ],
   "faceSet": "ai:05_intimidating"
+ },
+ "dad": {
+  "base": "m060",
+  "name": "Dad (Zion)",
+  "note": "Permanent Dad, chosen by Claude 2026-11-25 (Xavier asleep, 'surprise me'); first seen in Clap Cops"
+ },
+ "dad_robe": {
+  "base": "m060",
+  "shirtTex": "assets/roblox/127302724868422/texture.png",
+  "pantsTex": "assets/clothing/clap_cops/robe_pants.png",
+  "name": "Dad in his bathrobe",
+  "note": "Bath Robe (+) 127302724868422; long robe so legs = robe cloth"
+ },
+ "clapcop": {
+  "base": "m022",
+  "shirtTex": "assets/roblox/1879540681/texture.png",
+  "pants": 4944607821,
+  "name": "clap cop",
+  "note": "Cop Uniform 1879540681 + Police Pants 4944607821"
+ },
+ "mrs_pam": {
+  "base": "f021",
+  "name": "Mrs. Pam",
+  "note": "never shown clearly until the last shot (Clap Cops)"
  }
 }

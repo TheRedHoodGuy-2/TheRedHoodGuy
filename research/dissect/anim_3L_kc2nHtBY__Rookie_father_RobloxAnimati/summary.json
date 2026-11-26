@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/3L-kc2nHtBY__Rookie_father_RobloxAnimation_shorts_short_memes_roblox.mp4",
+ "name": "anim_3L_kc2nHtBY__Rookie_father_RobloxAnimati",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 950,
+ "seconds": 15.83,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 12,
+ "sheets": 16,
+ "cuts_per_10s": 6.95,
+ "shot_len_s": {
+  "mean": 1.32,
+  "median": 1.39,
+  "min": 0.017,
+  "max": 2.7
+ },
+ "first_cut_frame": 132,
+ "still_pct": 3.6,
+ "dup_pct": 1.5,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

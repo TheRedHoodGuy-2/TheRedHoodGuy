@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/ApsdmQKqSbU__What_parents_see_vs_What_i_see_RobloxAnimation_shorts_sho.mp4",
+ "name": "hawks_parents_see_Aps",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 950,
+ "seconds": 15.83,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 16,
+ "sheets": 16,
+ "cuts_per_10s": 9.47,
+ "shot_len_s": {
+  "mean": 0.99,
+  "median": 0.74,
+  "min": 0.017,
+  "max": 4.083
+ },
+ "first_cut_frame": 76,
+ "still_pct": 2.7,
+ "dup_pct": 0.7,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

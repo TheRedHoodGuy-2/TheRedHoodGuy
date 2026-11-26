@@ -51,3 +51,4 @@ Videos sorted by stayed-to-watch (raw table, no conclusions drawn yet):
 | bro kept going... 😂 #animatedcartoon #animate #funnyanimation #funny # | Aug 17, 2023 | 22 |  |  |  |
 | Mr. Phil has zero Chill #animatedcartoon #animate #funnyanimation #sho | Aug 13, 2023 | 7 |  |  |  |
 | The Accent (An actual Short)... #animationmeme #animation #meme | Aug 30, 2023 | 16 |  |  |  |
+- 2026-11-26/RETENTION_DROPS.md: where viewers leave (exposition, vague lines, passive openers) and what holds (on-screen clocks)

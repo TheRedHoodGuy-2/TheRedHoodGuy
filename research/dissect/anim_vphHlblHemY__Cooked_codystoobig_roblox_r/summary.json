@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/vphHlblHemY__Cooked_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "anim_vphHlblHemY__Cooked_codystoobig_roblox_r",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 416,
+ "seconds": 6.93,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 15,
+ "sheets": 7,
+ "cuts_per_10s": 20.19,
+ "shot_len_s": {
+  "mean": 0.46,
+  "median": 0.08,
+  "min": 0.033,
+  "max": 2.15
+ },
+ "first_cut_frame": 7,
+ "still_pct": 36.3,
+ "dup_pct": 30.8,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

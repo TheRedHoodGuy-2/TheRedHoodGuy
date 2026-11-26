@@ -598,5 +598,265 @@
   ],
   "parts": 2,
   "unions_skipped": 0
+ },
+ "3138879863": {
+  "name": "2014GilligLowFloor",
+  "size_m": [
+   15.523,
+   4.409,
+   3.353
+  ],
+  "parts": 589,
+  "unions_skipped": 0
+ },
+ "104162493233376": {
+  "name": "Public Bus",
+  "size_m": [
+   2.872,
+   2.431,
+   8.276
+  ],
+  "parts": 23,
+  "unions_skipped": 28
+ },
+ "18786135816": {
+  "name": "tsnit buz",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 565,
+  "unions_skipped": 1
+ },
+ "5002633399": {
+  "name": "Model",
+  "size_m": [
+   0.87,
+   0.797,
+   0.87
+  ],
+  "parts": 87,
+  "unions_skipped": 0
+ },
+ "73225021970836": {
+  "name": "Stylized Mixing Bowl",
+  "size_m": [
+   0.543,
+   0.051,
+   0.543
+  ],
+  "parts": 36,
+  "unions_skipped": 16
+ },
+ "9403575706": {
+  "name": "Smartphone",
+  "size_m": [
+   0.052,
+   0.651,
+   0.381
+  ],
+  "parts": 2,
+  "unions_skipped": 0
+ },
+ "136564074799261": {
+  "name": "key",
+  "size_m": [
+   1.416,
+   0.895,
+   3.159
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "91358100215341": {
+  "name": "Bicycle",
+  "size_m": [
+   0.951,
+   1.344,
+   2.147
+  ],
+  "parts": 3,
+  "unions_skipped": 0
+ },
+ "3028085134": {
+  "name": "Model",
+  "size_m": [
+   1.007,
+   0.986,
+   0.956
+  ],
+  "parts": 8,
+  "unions_skipped": 0
+ },
+ "10363832519": {
+  "name": "Model",
+  "size_m": [
+   0.537,
+   0.572,
+   0.393
+  ],
+  "parts": 1,
+  "unions_skipped": 0
+ },
+ "133007182022247": {
+  "name": "Stylized Thermometer",
+  "size_m": [
+   0.095,
+   0.483,
+   0.024
+  ],
+  "parts": 29,
+  "unions_skipped": 20
+ },
+ "6048783847": {
+  "name": "Chevrolet Van",
+  "size_m": [
+   2.929,
+   2.507,
+   6.489
+  ],
+  "parts": 53,
+  "unions_skipped": 0
+ },
+ "130404752041921": {
+  "name": "Stylized Prosthetic Ear",
+  "size_m": [
+   0.15,
+   0.267,
+   0.089
+  ],
+  "parts": 41,
+  "unions_skipped": 9
+ },
+ "4818983600": {
+  "name": "Part",
+  "size_m": [
+   0.086,
+   0.152,
+   0.189
+  ],
+  "parts": 2,
+  "unions_skipped": 0
+ },
+ "9392387817": {
+  "name": "Suitcase",
+  "size_m": [
+   0.507,
+   1.171,
+   0.815
+  ],
+  "parts": 3,
+  "unions_skipped": 0
+ },
+ "3365565933": {
+  "name": "bleachers",
+  "size_m": [
+   40.773,
+   8.514,
+   14.79
+  ],
+  "parts": 1419,
+  "unions_skipped": 0
+ },
+ "10359794065": {
+  "name": "Model",
+  "size_m": [
+   7.863,
+   6.262,
+   26.618
+  ],
+  "parts": 158,
+  "unions_skipped": 0
+ },
+ "2392872297": {
+  "name": "Stadium Light",
+  "size_m": [
+   6.12,
+   26.201,
+   2.264
+  ],
+  "parts": 27,
+  "unions_skipped": 0
+ },
+ "10189656177": {
+  "name": "StadiumLight",
+  "size_m": [
+   4.585,
+   9.473,
+   6.101
+  ],
+  "parts": 27,
+  "unions_skipped": 0
+ },
+ "12211219493": {
+  "name": "SUV",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 63,
+  "unions_skipped": 0
+ },
+ "15233606123": {
+  "name": "2023 Honda Civic Sedan",
+  "size_m": [
+   6.825,
+   2.119,
+   3.001
+  ],
+  "parts": 106,
+  "unions_skipped": 0
+ },
+ "93841601556179": {
+  "name": "2008 Toyota Yaris Sedan",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 125,
+  "unions_skipped": 5
+ },
+ "10166894958": {
+  "name": "Car",
+  "size_m": [
+   3.128,
+   2.346,
+   7.752
+  ],
+  "parts": 87,
+  "unions_skipped": 4
+ },
+ "877596416": {
+  "name": "Handle",
+  "size_m": [
+   0.471,
+   0.212,
+   0.429
+  ],
+  "parts": 1,
+  "unions_skipped": 0
+ },
+ "12550113641": {
+  "name": "Ears",
+  "size_m": [
+   0.502,
+   0.143,
+   0.076
+  ],
+  "parts": 1,
+  "unions_skipped": 0
+ },
+ "127802718365395": {
+  "name": "LeftUpperArm",
+  "size_m": [
+   0.499,
+   2.45,
+   1.224
+  ],
+  "parts": 34,
+  "unions_skipped": 0
  }
 }

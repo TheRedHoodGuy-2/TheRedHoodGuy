@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/cZEXg5sXu48__When_the_toilet_is_too_far_RobloxAnimation_shorts_short.mp4",
+ "name": "anim_cZEXg5sXu48__When_the_toilet_is_too_far_",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 950,
+ "seconds": 15.83,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 13,
+ "sheets": 16,
+ "cuts_per_10s": 7.58,
+ "shot_len_s": {
+  "mean": 1.22,
+  "median": 1.25,
+  "min": 0.05,
+  "max": 2.0
+ },
+ "first_cut_frame": 49,
+ "still_pct": 0.2,
+ "dup_pct": 0.1,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

@@ -1,0 +1,19 @@
+{
+ "id": 130404752041921,
+ "name": "Stylized Prosthetic Ear",
+ "size_m": [
+  0.15,
+  0.267,
+  0.089
+ ],
+ "materials": [
+  "mat~Metal~a9adb0",
+  "mat~SmoothPlastic~eab095",
+  "mat~SmoothPlastic~f1bea3"
+ ],
+ "parts": 41,
+ "skipped_invisible": 0,
+ "unions_skipped": 9,
+ "decals": 0,
+ "warnings": []
+}

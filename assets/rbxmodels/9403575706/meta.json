@@ -1,0 +1,19 @@
+{
+ "id": 9403575706,
+ "name": "Smartphone",
+ "size_m": [
+  0.052,
+  0.651,
+  0.381
+ ],
+ "materials": [
+  "mat~Plastic~111111",
+  "mat~Plastic~9fa1ac"
+ ],
+ "parts": 2,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 1,
+ "warnings": []
+}

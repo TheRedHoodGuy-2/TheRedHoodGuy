@@ -32,3 +32,13 @@ library engine/poses.js). Pose code drops straight into engine/poses.js.
 
 ## New lessons
 (none yet: the first pose Xavier gives in the new studio goes here with its before/after)
+
+11. CLIMBING STAIRS (Xavier 2026-11-25 13:30, his pose code + screenshot, Clap Cops "I ran upstairs"):
+    { armL: { r: [0.399, 0.43, -0.039], o: [0.051, 0, 0] }, armR: { r: [-0.247, 0.414, 0.038], o: [0, 0, 0.037] },
+      legL: { r: [-0.319, -0.347, -0.075], o: [-0.009, 0.361, 0.345] }, legR: { r: [0.14, -0.321, 0.064], o: [-0.028, -0.041, -0.191] },
+      root: { x: -0.033, y: 0.302, z: 0.301, rx: 0.082, ry: -2.79, rz: 0.017 } }
+    WHY it works: the leg on the higher step slides UP into the hip (o.y +.36) and FORWARD (o.z +.35) so its top reads as a
+    bent knee planted on the step; the back leg stays straight and slides BACK (o.z -.19), pushing off the lower step; the
+    root rises by the step (y +.3) and moves forward (z +.3); the torso tips slightly into the climb (rx +.08); arms swing
+    opposite the legs (up-leg side arm back, other arm forward). Stair climbs CAN be shown on screen: alternate this pose
+    and its mirror per stride, root height following the treads. (ry -2.79 is only his editor's view turn.)

@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/QBV7126pRnc__Cheater_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "anim_QBV7126pRnc__Cheater_codystoobig_roblox_",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 422,
+ "seconds": 7.03,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 13,
+ "sheets": 8,
+ "cuts_per_10s": 17.06,
+ "shot_len_s": {
+  "mean": 0.54,
+  "median": 0.12,
+  "min": 0.017,
+  "max": 2.7
+ },
+ "first_cut_frame": 5,
+ "still_pct": 64.0,
+ "dup_pct": 31.8,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

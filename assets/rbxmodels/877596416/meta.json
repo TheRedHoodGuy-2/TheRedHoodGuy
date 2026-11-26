@@ -1,0 +1,17 @@
+{
+ "id": 877596416,
+ "name": "Handle",
+ "size_m": [
+  0.471,
+  0.212,
+  0.429
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 1,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

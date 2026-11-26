@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/HziwR2HgJkI__How_grandpa_meet_grandma_RobloxAnimation_shorts_short_me.mp4",
+ "name": "anim_HziwR2HgJkI__How_grandpa_meet_grandma_Ro",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 1221,
+ "seconds": 20.35,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 42,
+ "sheets": 21,
+ "cuts_per_10s": 20.15,
+ "shot_len_s": {
+  "mean": 0.48,
+  "median": 0.15,
+  "min": 0.017,
+  "max": 2.417
+ },
+ "first_cut_frame": 64,
+ "still_pct": 12.9,
+ "dup_pct": 8.6,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

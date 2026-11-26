@@ -1,0 +1,17 @@
+{
+ "id": 12550113641,
+ "name": "Ears",
+ "size_m": [
+  0.502,
+  0.143,
+  0.076
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 1,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

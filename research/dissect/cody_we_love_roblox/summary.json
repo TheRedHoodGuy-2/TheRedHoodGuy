@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/5ITVG2q2MyM__We_love_Roblox_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "cody_we_love_roblox",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 436,
+ "seconds": 7.27,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 26,
+ "sheets": 8,
+ "cuts_per_10s": 34.4,
+ "shot_len_s": {
+  "mean": 0.28,
+  "median": 0.03,
+  "min": 0.017,
+  "max": 1.017
+ },
+ "first_cut_frame": 2,
+ "still_pct": 22.7,
+ "dup_pct": 20.4,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

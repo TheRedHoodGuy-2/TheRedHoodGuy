@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/piTqdmrAWr4__How_dad_meet_mom_RobloxAnimation_shorts_short_memes_rob.mp4",
+ "name": "anim_piTqdmrAWr4__How_dad_meet_mom_RobloxAnim",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 1635,
+ "seconds": 27.25,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 44,
+ "sheets": 28,
+ "cuts_per_10s": 15.78,
+ "shot_len_s": {
+  "mean": 0.62,
+  "median": 0.57,
+  "min": 0.017,
+  "max": 1.967
+ },
+ "first_cut_frame": 62,
+ "still_pct": 14.7,
+ "dup_pct": 13.2,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

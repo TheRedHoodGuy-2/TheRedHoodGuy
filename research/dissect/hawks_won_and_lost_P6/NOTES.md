@@ -1,0 +1,20 @@
+# Hawks RBX "You won and lost at the same time" (P6-hv5859H8), 18.2 s, 96M views. FULL: all 1089 frames viewed (19 sheets), 60 fps true animation (0.2% dup)
+Story in pictures: kid in propeller cap sits on couch, farts a green cloud; family (girl w/ hair bun, grandma, black-hoodie guy, old man) bursts through the door and charges at him; he runs, they chase down a long hallway; kid laughs straight into the lens; he slams the bathroom door, curls up in the dark bathroom, lights off. Title = hide and seek: he WON (nobody finds him) and LOST (gas/chase).
+## Shot table (frames, what each character is doing, camera)
+1 f0-59 (1.0 s) couch, kid: arms start flung wide, folds in (arms cross chest, knees pull up, cap dips), green gas blooms. Camera tilt down 12.9 %/s. Frame 0 is already mid-gag, but the story is not clear yet (hook = curiosity + motion).
+2 f60-223 (2.7 s) wide room, push 8.8 %/s: door swings open (slow start, accelerating = weight); girl behind it is already in motion (arms driving, hair bun bobbing); boy crouches left. Reveal by door movement, no cut.
+3 f224-358 (2.25 s) roll/handheld on girl in the doorway: she lunges FORWARD INTO a fall (arms out, hair swings) then tumbles with grandma (light blue pyjamas) piling in = pile-up/slapstick.
+4 f359-509 (2.5 s) pull back down the hallway: bacon-hair guy (black) + old man (plaid) sprint toward camera, faces screaming (angry/wide mouth), arms pumping, leaning into the run; kid enters at the left edge in foreground (parallax layer), door swings past camera. Camera pulls back FASTER than they run: stays ahead of them.
+5 f510-619 (1.8 s) behind the two chasers (their backs), camera push; kid's propeller cap rises from the bottom into frame and he passes OVER camera (cap -> torso -> jeans) = whoosh that hands us to shot 6.
+6 f620-679 (1.0 s) fast push 81 %/s: the two chasers framed small, kid flying through frame top = giant-scale overhead; chasers' mouths open wide.
+7 f680-748 (1.15 s) tilt up: girl's hair bun/grandma head fill the frame from behind (foreground), kid + chasers far in the background hallway: depth layers.
+8 f749-829 (1.35 s) top-down on the kid on the bed (gas explodes over the bed, thick green volume, fading to haze): the SFX-less fart payoff is shown BIG and slow after the chase = rhythm change.
+9 f830-949 (2.0 s) camera low looking UP at the laughing kid (huge face, mouth wide, eyes squinting, cap with green trim); behind him the chase. Push 17.8 %/s and he is a close-up the whole time. His face goes through laugh -> chin, and he runs OVER camera again. Then bathroom door swings in from the right, slams to fill the frame (f900-949 door fills the frame, handle visible).
+10 f950-1088 (2.3 s) dark bathroom, camera high looking down: kid curls on the floor by the toilet, cap tumbling; lights out; sits there. Hold 2.3 s but he sways/breathes; camera tilts up slowly. Last shot is the ONLY slow one and the quiet punchline. Ends in the dark, no resolution.
+## Measured/seen
+- Cuts: 9 in 18 s (one per 2 s). Longest 2.7 s. Camera speeds 4-20 %/s, one 81 %/s blast. 0% still frames except the last shot (2%).
+- Caption "You won and lost at the same time" top-center-left, white with black outline, ~ 5% screen height, constant from frame 0 to the end (never changes).
+- Character acting: every character has a LEAN into the action, arms out of sync (never mirrored), heads thrown, faces in extreme emotions (wide screaming, laughing 2/3 of the face). Faces are the SIMPLE Roblox decal style, big mouths for emotion.
+- Camera tricks to copy: (a) camera pulls back faster than chasers run; (b) character crosses OVER the lens to hand off between shots; (c) low-angle giant close-up on the laughing face; (d) dark ending with light change = the hide.
+- Palette: warm wooden house, light yellow walls, lots of direct warm light; bathroom drops to cold blue-black (contrast ending).
+- Textures ARE low (plain painted walls, wood floor image) but the lighting is soft/GI-ish, with real shadows and a volume green gas. For us: light + gas FX + camera >> texture resolution.

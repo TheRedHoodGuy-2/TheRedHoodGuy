@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/folp12_EZ34__Emperor_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "cody_emperor",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 748,
+ "seconds": 12.47,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 14,
+ "sheets": 13,
+ "cuts_per_10s": 10.43,
+ "shot_len_s": {
+  "mean": 0.89,
+  "median": 0.22,
+  "min": 0.017,
+  "max": 2.767
+ },
+ "first_cut_frame": 1,
+ "still_pct": 44.3,
+ "dup_pct": 23.4,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

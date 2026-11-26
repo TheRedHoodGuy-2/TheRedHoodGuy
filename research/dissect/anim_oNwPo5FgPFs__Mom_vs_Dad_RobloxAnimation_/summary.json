@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/oNwPo5FgPFs__Mom_vs_Dad_RobloxAnimation_shorts_short_memes_roblox.mp4",
+ "name": "anim_oNwPo5FgPFs__Mom_vs_Dad_RobloxAnimation_",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 990,
+ "seconds": 16.5,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 23,
+ "sheets": 17,
+ "cuts_per_10s": 13.33,
+ "shot_len_s": {
+  "mean": 0.72,
+  "median": 0.58,
+  "min": 0.017,
+  "max": 1.933
+ },
+ "first_cut_frame": 66,
+ "still_pct": 2.8,
+ "dup_pct": 0.3,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

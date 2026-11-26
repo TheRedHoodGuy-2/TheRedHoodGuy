@@ -24,6 +24,7 @@ const cellOf = e => { const i = Math.max(0, EMOTIONS.indexOf(e)); return (i < 16
 const ROW = { neutral: ['E', 0], bored: ['E', 0], determined: ['E', 0], happy: ['E', 1], laugh: ['E', 1], excited: ['E', 1], proud: ['E', 1], sad: ['E', 2], crying: ['E', 2],
   angry: ['E', 3], furious: ['E', 3], annoyed: ['E', 3], smug: ['F', 0], evil: ['F', 0], suspicious: ['F', 0], scared: ['F', 1], nervous: ['F', 1], terrified: ['F', 1], shocked: ['F', 2], surprised: ['F', 2] };
 
+const _v = new THREE.Vector3();
 export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {}) {
   const actors = [], fxs = [];
   const S = { actors, POSES };
@@ -38,7 +39,7 @@ export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {})
       for (let i = 1; i <= 16; i++) u.push(`${M}/E${String(i).padStart(2, '0')}.png`, `${M}/F${String(i).padStart(2, '0')}.png`); A.st = st; await a.preloadFace(u); }
     A.show = (t0, t1) => { A.spans.push([t0, t1]); return A; };
     A.key = (t, k) => { A.keys.push({ t, ...k }); A.keys.sort((x, y) => x.t - y.t); return A; };
-    A.run = (t, path, r = {}) => { const L = a.rig.pivot('legL').y; const plan = walkPlan({ path, t0: t, step: r.step ?? .6, T: r.T ?? .5, L, arm: r.arm ?? .85, style: r.style || {}, lead: r.lead || 'L' });
+    A.run = (t, path, r = {}) => { const L = a.rig.pivot('legL').y; const plan = walkPlan({ path, t0: t, step: r.step ?? .6, T: r.T ?? .5, L, arm: r.arm ?? .85, style: r.style || {}, lead: r.lead || 'L', ...(r.down != null ? { down: r.down } : {}), ...(r.lift != null ? { lift: r.lift } : {}) });
       A.runs.push({ plan, hold: r.hold ?? 99, after: r.after }); return plan; };
     A.face = (t, emo) => { A.faceK.push([t, emo]); A.faceK.sort((x, y) => x[0] - y[0]); return A; };
     A.talk = (s, e) => { A.talks.push([s, e]); return A; };
@@ -80,10 +81,16 @@ export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {})
       // breathing / sway on holds (never frozen)
       if (!walking) { c = { ...c, root: { ...c.root, rz: c.root.rz + Math.sin(t * 1.3 + actors.indexOf(A) * 1.7) * .012, y: c.root.y + Math.sin(t * 2.1 + actors.indexOf(A)) * .004 }, head: c.head.map((v, i) => i === 0 ? v + Math.sin(t * .7 + 1) * .03 : v) }; }
       const pose = toPose(c); A.a.rig.pose(pose);
-      const r = pose.root, gy = ground(at[0], at[1]) + A.lift + (P.y || 0), cs = Math.cos(ry), sn = Math.sin(ry);
+      const r = pose.root, gy = (A.ground || ground)(at[0], at[1]) + A.lift + (P.y || 0), cs = Math.cos(ry), sn = Math.sin(ry);
       A.a.root.position.set(at[0] + cs * r.x + sn * r.z, gy + r.y, at[1] - sn * r.x + cs * r.z); A.a.root.rotation.y = ry + (r.ry || 0);
       if (walking) footLock(A.a, walking, gy, A.memo); else A.memo.key = null;
-      if (A.extra) A.extra(t, A);
+      const y0 = A.a.root.position.y; if (A.extra) A.extra(t, A);
+      // FLOOR CLAMP (Xavier 2026-11-25 "never let anything clip"): no foot / knee ever goes below the floor it stands on.
+      // Lowest corner of the leg blocks vs the floor height (+ whatever the extra hook lifted); lift the whole body, never lower it.
+      if (!walking && !A.noClamp) { const fl = gy + (A.a.root.position.y - y0); let lo = Infinity; A.a.root.updateMatrixWorld(true);
+        for (const k of ['legL', 'legR', 'torso', 'armL', 'armR']) { const p = A.a.rig.parts[k], g = p && (p.geometry ? p : p.children.find(c => c.geometry)); if (!g) continue; if (!g.geometry.boundingBox) g.geometry.computeBoundingBox(); const b = g.geometry.boundingBox;
+          for (let i = 0; i < 8; i++) { _v.set(i & 1 ? b.max.x : b.min.x, i & 2 ? b.max.y : b.min.y, i & 4 ? b.max.z : b.min.z).applyMatrix4(g.matrixWorld); if (_v.y < lo) lo = _v.y; } }
+        if (lo < fl - .004) { A.a.root.position.y += fl - lo; A.a.root.updateMatrixWorld(true); } }
       faceUpdate(A, t);
     }
     for (const f of fxs) { const u = (t - f.t + .18) / f.dur; f.G.visible = u > 0 && u < 1; if (!f.G.visible) continue;

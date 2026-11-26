@@ -1,0 +1,17 @@
+{
+ "id": 136564074799261,
+ "name": "key",
+ "size_m": [
+  1.416,
+  0.895,
+  3.159
+ ],
+ "materials": [
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 8,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

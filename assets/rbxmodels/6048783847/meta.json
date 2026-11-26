@@ -1,0 +1,27 @@
+{
+ "id": 6048783847,
+ "name": "Chevrolet Van",
+ "size_m": [
+  2.929,
+  2.507,
+  6.489
+ ],
+ "materials": [
+  "mat~Concrete~111111",
+  "mat~Metal~111111",
+  "mat~Metal~635f62",
+  "mat~Metal~cdcdcd",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t5",
+  "mat~SmoothPlastic~323232",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~ff0000",
+  "mat~SmoothPlastic~ffff00"
+ ],
+ "parts": 53,
+ "skipped_invisible": 5,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

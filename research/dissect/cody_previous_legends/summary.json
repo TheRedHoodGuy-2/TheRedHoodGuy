@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/TaOmbKKBetY__Previous_legends_codystoobig_roblox_robloxanimation_shor.mp4",
+ "name": "cody_previous_legends",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 420,
+ "seconds": 7.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 12,
+ "sheets": 7,
+ "cuts_per_10s": 15.71,
+ "shot_len_s": {
+  "mean": 0.58,
+  "median": 0.36,
+  "min": 0.017,
+  "max": 1.9
+ },
+ "first_cut_frame": 67,
+ "still_pct": 51.2,
+ "dup_pct": 45.0,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

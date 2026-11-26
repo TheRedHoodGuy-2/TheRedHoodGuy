@@ -1,0 +1,45 @@
+{
+ "id": 93841601556179,
+ "name": "2008 Toyota Yaris Sedan",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~DiamondPlate~a3a2a5",
+  "mat~Fabric~111111",
+  "mat~Metal~f8f8f8",
+  "mat~Neon~506d54",
+  "mat~Neon~970000",
+  "mat~Neon~a3a2a5",
+  "mat~Neon~da8541",
+  "mat~Neon~ff5959",
+  "mat~Pebble~a3a2a5",
+  "mat~Plastic~111111",
+  "mat~Plastic~750000",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~f8f8f8",
+  "mat~SmoothPlastic~000000",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t4",
+  "mat~SmoothPlastic~1b2a35~t5",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~6a3909",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~f5cd30~t6",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 125,
+ "skipped_invisible": 77,
+ "unions_skipped": 5,
+ "decals": 0,
+ "unions": 4,
+ "warnings": [
+  "union: CSG v5: unexpected layout nv=-436129530 stride=-1654610233",
+  "union: CSG v5: unexpected layout nv=958476901 stride=1046521667",
+  "union: CSG v5: unexpected layout nv=958476901 stride=1046521667",
+  "union: CSG v5: unexpected layout nv=958476901 stride=1046521667",
+  "union: CSG v5: unexpected layout nv=958476901 stride=1046521667"
+ ]
+}

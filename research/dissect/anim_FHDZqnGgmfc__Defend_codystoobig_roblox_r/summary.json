@@ -1,0 +1,27 @@
+{
+ "video": "/mnt/user-data/uploads/Videos/redhood_refs/anim/FHDZqnGgmfc__Defend_codystoobig_roblox_robloxanimation_shorts.mp4",
+ "name": "anim_FHDZqnGgmfc__Defend_codystoobig_roblox_r",
+ "cls": "anim",
+ "fps": 60.0,
+ "frames": 420,
+ "seconds": 7.0,
+ "size": [
+  1080,
+  1920
+ ],
+ "shots": 36,
+ "sheets": 7,
+ "cuts_per_10s": 50.0,
+ "shot_len_s": {
+  "mean": 0.19,
+  "median": 0.02,
+  "min": 0.017,
+  "max": 1.667
+ },
+ "first_cut_frame": 2,
+ "still_pct": 22.1,
+ "dup_pct": 20.2,
+ "words": 0,
+ "wpm": null,
+ "first_word_s": null
+}

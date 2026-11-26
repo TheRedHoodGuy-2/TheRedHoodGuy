@@ -12,7 +12,9 @@ export async function openPage({ width = 540, height = 960, dsf = 1 } = {}) {
   await page.route('**/*', r => {
     const u = r.request().url();
     const m = u.match(/three@0\.170\.0\/(build|examples)\/(.*)$/); if (m) return r.fulfill({ path: path.join(ROOT, 'node_modules/three', m[1], m[2]), contentType: 'text/javascript' });
-    if (u.startsWith('http://local/')) { const f = path.join(ROOT, decodeURIComponent(u.slice(13).split('?')[0])); if (!fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); return r.fulfill({ path: f, contentType: CT[path.extname(f)] || 'application/octet-stream' }); }
+    if (u.startsWith('http://local/')) { const f = path.join(ROOT, decodeURIComponent(u.slice(13).split('?')[0]));
+      if (/\.(png|jpe?g|webp)$/i.test(f)) { if (process.env.LOGTEX) fs.appendFileSync(process.env.LOGTEX, path.relative(ROOT, f) + '\n'); if (process.env.HITEX) { const same = path.join(ROOT, 'assets_up4', path.relative(ROOT, f)), up = same.replace(/\.(jpe?g|webp)$/i, '.png'); if (fs.existsSync(same)) return r.fulfill({ path: same, contentType: CT[path.extname(f)] || 'image/jpeg' }); if (fs.existsSync(up)) return r.fulfill({ path: up, contentType: 'image/png' }); } }   // final renders: the 4x upscaled copy (DECISIONS 2026-11-25 03:44)
+      if (!fs.existsSync(f)) return r.fulfill({ status: 404, body: '' }); return r.fulfill({ path: f, contentType: CT[path.extname(f)] || 'application/octet-stream' }); }
     return r.abort();
   });
   return { browser, page };

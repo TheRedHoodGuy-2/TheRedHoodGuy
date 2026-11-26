@@ -343,3 +343,69 @@ defend every pixel of it, it does not get sent.
 - Ending too long and silent: end brief, on something that just happens, so it loops into the start.
 - Frame 0 had the biker riding the bike BACKWARD; the car drives THROUGH the boy; he clips into the bed. Check every frame
   for direction, collisions and clipping before sending.
+
+## 2026-11-25 08:44 comments
+- COMMENT BAIT (Xavier 2026-11-25 08:44, from Tag Swap's comments: "cheeky boy" because he laughed in the last frame
+  while his bro became a girl; people debating "what if you were trans / a boy turning into a girl"): every script must
+  give people something to TALK about: a debatable rule or a "what would YOU do" choice, a character moment viewers
+  have an opinion on (cheeky, unfair, wholesome, sus), a last frame that invites a reaction, an open question in the
+  ending. Before approval, list the 2-3 comments the script is designed to start.
+
+## 2026-11-25 09:17 Reference batch + quality bar
+- HQ channels (study world building, textures, small details like kids shaking legs while eating): SensBlox, GreenBroRants, Gneef. LQ but learn pacing/retention/actioning: PurpleHat (shrink video).
+- Next videos: HIGH quality textures + realistic lighting; every visible flaw (face edges, white rims from removed bg) is fixed, frames scrutinised hard. Plan: Three.js test for review, then Blender on his PC for the final (7 h render OK if it means one video a day). Details to come.
+- Anim dissection must also CLASSIFY what each character is doing every frame (running, eating, sitting...) and the pose-to-pose of it.
+- Refs on laptop: Videos\redhood_refs\story (15), \anim (14); anim channels Hawks RBX, CodysTooBig.
+
+## 2026-11-25 10:41-10:48 Comment bait + script errors
+- Xavier: my comment-bait ("is a white lie worth it?") was "trash, what AI would say". Real comments = loopholes in the rule, an exempt character at the end, lookalikes, pedants (research/comments_real_2026-11-25.md). Design bait from those. Update CLAUDE.md section 4 COMMENT BAIT accordingly.
+- Xavier: script logic was inconsistent (one golden spoon per family but Dad holds it AND Grandma holds it since 1987). Read the script back for contradictions before sending.
+- Xavier asked for innuendo ("people have dirty minds") bait. Declined: cast are kids. Cheeky/mischief sus is fine.
+- Xavier doesn't like the lie-shrink script; spoon script needs a fix (one town spoon).
+
+## 2026-11-25 11:02-11:44 Clap Cops script notes
+- 11:02 INSINUATE, DON'T STATE: never name, show or let us hear the affair (no Mrs. Pam voice, no "that was Mrs. Pam"). One plant (her pink car at our house) + one line at the end (Mom: "Why is Mrs. Pam's car outside?"). The viewer fills the gap.
+- 11:05 NO DROP-OFF AFTER THE GAGS: gags are where people swipe. One-liners (~1.5 s, 2-3 max), tension starts in the very next sentence ("Friday night, Mom went to Aunt Linda's for the weekend, but Dad stayed home").
+- 11:12 EVERY ACTION NEEDS A WANT: he could not tell why the kid ran to warn Dad or knocked a lamp over. The narrator wants one thing in the crisis (undo his call) and every action is an attempt at it. Read the script back asking "why does he do this?" for every line.
+- 11:44 Xavier fears scripts we can't animate well. Before sending a script, check every beat against R6 + our engine: no fingers (no finger wiggles; snaps only wide, sold by the sound), no on-screen stair climbs (cut on action), max one new set, few contact actions (no couch pushing), every new model and cast member named up front.
+
+## 2026-11-25 11:55 Jazz hands, build the sets, animatable scripts (supersedes "max one new set" from 11:44)
+- "learn how to pose ffs and animate or ask for an example": never call an R6 gesture impossible. Pose it (jazz hands = arms up / out + shimmer; snap = forearm flick + real snap SFX) or ask Xavier for a pose example.
+- "make sets we dont have then dont be a pussy": BUILD missing sets; never swap a location to dodge a build. (He allowed wedding -> birthday party this once.)
+- "next time dont make scripts that would be hard to animate": the animatable check runs BEFORE he sees a script.
+- Clap Cops v5: jazz hands at the birthday, chair under the knob, football stays and the stadium gets built.
+
+## 2026-11-25 12:03-12:29 Clap Cops build
+- 12:03 "apply EVERYTHING ... EXTREME scrutiny on EACH frame, not only the general frame but also the content": no clipping, no car driving backwards, no eyes looking the wrong way, every frame checked before the review video.
+- 12:16 Ending idea: Mrs. Pam sneaking out / hiding (Claude chose: she tiptoes to her pink car and freezes in the siren light; never named on screen). He went to sleep: "surprise me". Pauses in his take too long: tighten.
+- 12:25/12:27 Pauses at scene turns (snaps->Friday, cops->Clapping, robe->Officer) must stay longer than the rest (~0.44 s); never cut every pause to the same length.
+- 2026-11-25 15:15: "stop rendering the full review video and check all the frames first". NEVER render a video to find
+  mistakes: stills at start / mid / end of EVERY shot (tools/stills_at.mjs, one run at a time) until all pass, then the pose
+  sheet, then ONE lq review video that goes straight to him. Two full renders were wasted breaking this on Clap Cops.
+- 2026-11-25 13:30: his climb-stairs pose (POSE_LESSONS 11): stair climbs can be shown on screen with it.
+- 2026-11-25 13:36: Dad can be in boxers if there's no robe (a robe was found: dad_robe).
+- 2026-11-25 16:34: "NEVER let anything clip. We do not want clipping." Old repo fix (explainer-kit REVIEW_NOTES PROPS +
+  CONTACT, qa.mjs) = check EVERY frame, not picked stills, and fix by STAGING: give bodies clearance, move furniture back,
+  re-route walks, re-angle. Now automated: `node tools/clipscan.mjs <scene> 24` must print CLIPSCAN PASS before any video
+  (WORLD = body in the set, CAST = people through each other, PROP = prop in the set, GRIP = held prop > 7 cm from the palm).
+  R6 is 1.36 m wide with arms: doorways / landings / bedside strips narrower than that need the set moved or the arms tucked
+  (rig space: armL sits at -x, armR at +x). engine/act.js floor clamp: no foot / knee ever goes below the floor.
+- 2026-11-25 23:04-23:49 (Clap Cops final notes): door glazing bars baked into the FRAME mesh stayed put while the leaf
+  opened (hingeDoor now splits bar triangles off the frame); every car drove backwards (check every vehicle's nose vs its
+  travel direction in a still); the phone was buried in the fist (props must stick out past the hand block, sized to read);
+  Mrs Pam floated 45 cm (side yard lower than the street datum: actors get their own raycast ground, never an extra-hook y
+  offset); Pam's sneak = the ref walk youtube.com/shorts/1Ebe8EHIHE4 (big stride, hip twist, side tilt, bob, lean) with
+  hands together at the chest, SCARED face (a sneaking adult caught is never smiling); she walks TOWARD the camera.
+- Fixes re-render only the affected frames (frames are kept as JPGs; delete the touched ranges, render.mjs fills them).
+- 2026-11-26 02:19 "notice all the iterations of the first script?": Clap Cops went v0 (kid errand, rejected) -> v1 kids/dads -> v2
+  clapping -> v3 insinuate -> v4 no drop-off -> v5 want + animatable. Every revision was a check I could have run myself.
+  Now a pre-flight list in docs/RULES_CHECK_TEMPLATE.md that every script passes BEFORE he sees it.
+- 2026-11-26 03:32 Retention rewrite of Gender Swap rejected: "you're just shortening words". Retention is NOT fewer words.
+  Keep "In this town", keep full clear sentences and cause -> effect (practiced FALLING is the plant that pays off), no
+  telegraph fragments ("Me? Kayla. Three summers."). Fix leaks by making every line a picture that raises or answers a
+  question, not by cutting the logic.
+- 2026-11-26 03:40 "none of them are sus enough to incite drama and imagination and let the comments insinuate". What made
+  Clap Cops work: the RULE ITSELF is a double meaning (clapping), the kid narrator takes it literally, adults decode it.
+  Sus scripts need: (1) a double-meaning engine in the rule, (2) 3+ pausable clues viewers assemble themselves, (3) the
+  secret never shown in full (cut off, blurred, interrupted), (4) a last frame that opens a NEW question, (5) running lore
+  (Mrs. Pam's pink car, the mailman) so comments connect videos. Sus stays between adults; kids only narrate innocently.

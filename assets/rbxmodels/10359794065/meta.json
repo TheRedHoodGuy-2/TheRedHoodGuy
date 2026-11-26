@@ -1,0 +1,18 @@
+{
+ "id": 10359794065,
+ "name": "Model",
+ "size_m": [
+  7.863,
+  6.262,
+  26.618
+ ],
+ "materials": [
+  "mat~DiamondPlate~635f62",
+  "mat~DiamondPlate~a3a2a5"
+ ],
+ "parts": 158,
+ "skipped_invisible": 86,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

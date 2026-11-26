@@ -32,6 +32,7 @@ if (spec.time) {   // per-stage timing over N frames; then the cost of the shado
   renderer.shadowMap.autoUpdate = true; t = performance.now(); for (let i = 0; i < N; i++) post.render(false); T.frame_full = +((performance.now() - t) / N).toFixed(0);
   window.timing = T;
 }
+window.__S = S; window.__THREE = THREE;
 window.tLoad = performance.now();
 // video mode: tools/render.mjs calls renderFrame(t) for each frame it still needs
 // a scene with a camera rig (engine/camera.js) gets dissolves: the outgoing shot is drawn too and blended in

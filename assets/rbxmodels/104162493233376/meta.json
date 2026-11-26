@@ -1,0 +1,21 @@
+{
+ "id": 104162493233376,
+ "name": "Public Bus",
+ "size_m": [
+  2.872,
+  2.431,
+  8.276
+ ],
+ "materials": [
+  "mat~Metal~abb9bd",
+  "mat~Neon~e8ce68",
+  "mat~SmoothPlastic~159b9b",
+  "mat~SmoothPlastic~25282d",
+  "mat~SmoothPlastic~edf1e9"
+ ],
+ "parts": 23,
+ "skipped_invisible": 6,
+ "unions_skipped": 28,
+ "decals": 0,
+ "warnings": []
+}

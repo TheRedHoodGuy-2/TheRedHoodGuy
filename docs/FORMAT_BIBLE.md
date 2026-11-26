@@ -78,3 +78,10 @@ We copy the FORMULA. We never reuse their premises, scripts, character names or 
 [ ] "But I" by 30%. [ ] The plant is shown before the crisis. [ ] Crisis by 40%, with a clock.
 [ ] The fix uses the plant AND the rule's own wording. [ ] Ends on a loved one, then the world changes.
 [ ] Median sentence 6 words; no sentence over 20. [ ] Every sentence is one drawable shot. [ ] 320 to 410 words.
+
+## Comment bait (2026-11-25)
+- COMMENT BAIT (Xavier 2026-11-25 08:44, from Tag Swap's comments: "cheeky boy" because he laughed in the last frame
+  while his bro became a girl; people debating "what if you were trans / a boy turning into a girl"): every script must
+  give people something to TALK about: a debatable rule or a "what would YOU do" choice, a character moment viewers
+  have an opinion on (cheeky, unfair, wholesome, sus), a last frame that invites a reaction, an open question in the
+  ending. Before approval, list the 2-3 comments the script is designed to start.
