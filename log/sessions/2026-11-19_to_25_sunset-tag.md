@@ -985,3 +985,13 @@ Explained the Gender Swap retention rewrite beat by beat, then showed the full v
 ## 2026-11-26 03:45 Claude
 
 Three scripts: Match Day v2, Search History v1, 67 Do-Overs v1 (full sentences, every line a picture, one-line rule over a visual gag, on-screen clocks, cut on payoff, cold open = last shot).
+
+---
+
+## 2026-11-26 03:55 Xavier
+
+none of them are sus enough to incite dramam and imagination and let the comments insinuate
+
+## 2026-11-26 03:55 Claude
+
+Diagnosis: no double-meaning engine, too few clues, secrets resolved instead of left open. Rewrote all three (Match Day v3, Search History v2, 67 Do-Overs v2) with clue trails, cut-off reveals, Mrs. Pam / mailman lore.
