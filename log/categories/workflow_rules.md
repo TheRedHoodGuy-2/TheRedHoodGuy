@@ -225,3 +225,6 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-26 07:28** (2026-11-26_midnight-power.md): New video. Read CLAUDE.md fully, then docs/STUDIO_LOG.md (last entry is the handoff), DIRECTOR_NOTES, the retention research, and topics/midnight_power/SCRIPT.md. Start a new session log. Tell me which model to use at each step. First: improve Midnight Power with our retention rules, or pitch something better, and show me the script.
 
 - **2026-11-26 07:57** (2026-11-26_midnight-power.md): This is trash. Can you not see how those other videos I sent to you were? All those other in this town videos. They were exciting to watch. They had a good ending, they had a good payoff, they had a good gag. Come on, what the fuck is this? Every time you say mailman and then the script starts to like fuck itself up. You say something and then you start going weird on it. You said at midnight it becomes superpower. Then what's the mailman running late at midnight for? Like what the fuck are you doing?
+
+- **2026-11-26 08:05** (2026-11-26_midnight-power.md): nah next script idea
+(question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next

@@ -53,3 +53,56 @@ This is trash. Can you not see how those other videos I sent to you were? All th
 ## 2026-11-26 07:57 Claude
 
 (Model: Opus, still the script gate.) You're right. v2 failed on four counts: mailman gag broke the rule; no threat, no loved one in danger; ended on a cliffhanger when every reference ends on a payoff; twist was random, not a trick viewers could solve. Rewrote as Midnight Power v3 (topics/midnight_power/SCRIPT.md): Jayden eating, Grandma dancing, Dad asleep -> snores blow cars; family sleeps strapped down; no bird flies near the house; narrator plans to fly, loudest slurper; birthday 11:50 Mia unstraps, Dad's snore blows her out the window; clock 11:52/55/58; flying blocked by the rule; "Dad blows things away. I pull things in."; slurps at midnight, Mia + the neighbor's cat fly back; "Flying is overrated"; slurps the roof back on nightly; last frame Mia in his cape wanting to fly. ~280 words, ~70 s. Comments listed. Build list: grocery aisle, night town aerial with clouds, separable roof; models stop sign, bed straps, bird, cat, milkshake+straw, cookie jar, cape, pyjamas; night lighting; hardest beat = catching Mia. Notes added to DIRECTOR_NOTES + CLAUDE.md (gags obey the rule's exact wording; payoff endings replace the cliffhanger default). OK it or send all notes in one message.
+
+---
+
+## 2026-11-26 08:05 Xavier
+
+nah next script idea
+(question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next
+
+## 2026-11-26 08:05 Claude
+
+# Sneeze Swap v1 (2026-11-26, NOT approved)
+Title: Sneeze And You Swap Bodies 🤧
+1  In this town, when you sneeze, you swap bodies with whoever's closest.  [bench: man sneezes, POOF, granny now manspreads, he clutches her purse]
+2  You see, if you don't swap back by sunset, it's forever.  [sun touching the rooftops]
+3  So pepper is illegal.  [cop tipping pepper shakers into a bin]
+4  In spring, everyone wears a nose clip.  [whole street in nose clips]
+5  Grandma sneezed at a daycare. Now she's two, and she's still mad.  [baby in Grandma's glasses, scowling in a crib]
+6  Coach sneezed next to his goldfish. That was 2009.  [goldfish with a tiny whistle]
+7  But I'm allergic to cats.
+8  And last week, my little sister Mia got one. Meatball.  [Mia holds up a fat orange cat, I back away]
+9  So I wear my nose clip at home. Mia thinks it's hilarious.
+10 Dad has a secret too. He hides pepper behind the cereal.  [shh, sprinkle on his eggs]
+11 Then, Saturday. I fell asleep on the couch. My nose clip slipped off.
+12 Mia put Meatball on my chest.
+13 ACHOO. POOF. I was a cat.  [paws, fur]
+14 And Meatball was me. He screamed and ran, right into Mom.  [my body on all fours]
+15 "Where's your nose clip?" Mom said. She clipped it on him.
+16 Then she put me outside.
+17 The TV said sunset was at 6:12.  [through the window; clock 4:05]
+18 4:30. I meowed at the window. Inside, Meatball drank from the toilet. In my body.
+19 5:15. He ate my homework.
+20 5:40. Mia opened the door and stared at me. "Why are you sitting like that?" she said.  [cat sitting up like a person]
+21 6:05. I ran inside. Meatball was on the couch, nose clip on.
+22 Then I remembered. I'm allergic to cats. And now, I was the cat.
+23 6:10. I jumped onto my own face and knocked the clip off.
+24 ACHOO. POOF. I was me again.
+25 6:11. Dad came home with eggs. He reached behind the cereal.
+26 Meatball rubbed against his leg.
+27 "Dad, wait!" I yelled.
+28 ACHOO. POOF.
+29 6:12. The sun went down.
+30 Dad's been the cat for a month now. Meatball goes to his job. He just got promoted.  [last frame: Meatball-Dad leaving in a tie with a briefcase, Dad-cat glaring from the windowsill]
+~300 words, ~72 s.
+Rule check: every swap = sneezer + closest person/animal; every "forever" is past a sunset (Grandma, Coach 2009, Dad 6:12). No mailman.
+Want: get my body back before 6:12. Attempts: meow at Mom, wait at the window, Mia lets me in, the allergy + knock the clip off (works).
+Plants before the crisis: the allergy (7), the nose clip (4, 9), Dad's pepper (10). Fix = allergy + clip + "closest". Button = the pepper + sunset.
+Comments built for: "what if you sneeze alone" (loophole, never answered); "Mia knew" (her stare); "Coach in the bowl since 2009";
+"the cat got promoted 💀"; "Dad's pepper finally got him".
+Builds: cat (Meatball) model + poses (sitting up like a person, leap), baby body (child base not built yet), crib, goldfish + bowl,
+nose clips, pepper jar, cereal, eggs, toilet, homework, TV with a weather screen, swap POOF (Tag Swap). Sets: house (couch, kitchen,
+bathroom), front yard + window, street bench. Hardest beats: my body acting like a cat (all fours, toilet), cat leaping onto a face.
+
+Shadow Steps queued as the next remake.

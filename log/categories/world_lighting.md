@@ -88,3 +88,6 @@ here yu can take heavy inspo from these models on how we can make our suburban m
 also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here gets stored in a log on our repo that you read EVERY TIME, ike EVERYTHING what i say, your response etc if it can even be catalogud in categores as well as the full raw complete shii every 5 messages or sun or every message, ion want compacting to be the end of me
 
 - **2026-11-25 03:25** (2026-11-19_to_25_sunset-tag.md): I don't mean like those things that you turned off here... (full message) They must be 1080p. Upgrade every texture from face to clothing to 1080p / 2560 / 4K so our textures are crisp. Sharp textures, top quality, not copying his look. Script: inconsistency (max 100 vs 4,000 / 1,050 / 312). Twist: he was borrowing his mom's resets, counting down instead of up, at zero you die, make it tragic.
+
+- **2026-11-26 08:05** (2026-11-26_midnight-power.md): nah next script idea
+(question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next
