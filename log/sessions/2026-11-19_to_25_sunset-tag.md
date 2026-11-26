@@ -995,3 +995,13 @@ none of them are sus enough to incite dramam and imagination and let the comment
 ## 2026-11-26 03:55 Claude
 
 Diagnosis: no double-meaning engine, too few clues, secrets resolved instead of left open. Rewrote all three (Match Day v3, Search History v2, 67 Do-Overs v2) with clue trails, cut-off reveals, Mrs. Pam / mailman lore.
+
+---
+
+## 2026-11-26 04:00 Xavier
+
+nahh alr alr lets drop the sus stuf, lets do one exciting one very weird rule and twist that people wanna stay
+
+## 2026-11-26 04:00 Claude
+
+Pitched Midnight Power: superpower = what you're doing at midnight on your 12th birthday; plan to jump/fly; Mia's camera flash makes him blink at midnight -> he teleports every blink. topics/midnight_power/SCRIPT.md
