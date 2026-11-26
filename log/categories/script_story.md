@@ -139,3 +139,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 
 - **2026-11-26 03:31** (2026-11-19_to_25_sunset-tag.md): so using all weve gathered about retention how would you have done that script dofferently
 llet me see the script
+
+- **2026-11-26 03:45** (2026-11-19_to_25_sunset-tag.md): (03:32) not good enough, you're just shortening words... try our retention stuff on the father script, plus a new one: in this town your last search history hovers over your head for 4 hours, and another: in this town you get 67 do-overs, when you hit zero something funny

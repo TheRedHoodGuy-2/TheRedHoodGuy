@@ -975,3 +975,13 @@ llet me see the script
 ## 2026-11-26 03:31 Claude
 
 Explained the Gender Swap retention rewrite beat by beat, then showed the full v2 script (topics/sunset_tag/SCRIPT_v2_retention.md, ~48 s).
+
+---
+
+## 2026-11-26 03:45 Xavier
+
+(03:32) not good enough, you're just shortening words... try our retention stuff on the father script, plus a new one: in this town your last search history hovers over your head for 4 hours, and another: in this town you get 67 do-overs, when you hit zero something funny
+
+## 2026-11-26 03:45 Claude
+
+Three scripts: Match Day v2, Search History v1, 67 Do-Overs v1 (full sentences, every line a picture, one-line rule over a visual gag, on-screen clocks, cut on payoff, cold open = last shot).
