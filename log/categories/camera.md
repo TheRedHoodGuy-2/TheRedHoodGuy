@@ -163,3 +163,8 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 [22:07] wht frame check after render??? why not prior??
 
 - **2026-11-25 23:01** (2026-11-19_to_25_sunset-tag.md): First of all, I have a question. When I tell you that something is wrong with the video now, you are going to have to go and re-render the entire thing all over again from scratch. But I have a question. Why can't you render each frame and keep it as a JPG or a PNG or whatever? And then when you have rendered all the frames, you now put them together in a video. So when I tell you that a frame is wrong or something is wrong, you just go to where that frame is and edit the thing that is wrong there or the corresponding frames, and then render those ones and combine those ones that into a video rather than having to now go and rework the entire video. Don't you think? Am I making any sense, or does it doesn't work that way?
+
+- **2026-11-26 02:03** (2026-11-19_to_25_sunset-tag.md): [23:04] door lines stuck when it opens; cop car drives backwards; no visible phone. is it going to take another 3 hours?
+[23:38] Is still floating on his hand... Why is Mrs. Palm floating above the ground in the last few frames? and all cars move backwards
+[23:40] and she doesnt looks sneaky, learn this walk cycle use it for mrs palm ... https://www.youtube.com/shorts/1Ebe8EHIHE4 but instead let her hands be together, like shes touching her fingers or sumn
+[23:49] i liked this and why is she smiling

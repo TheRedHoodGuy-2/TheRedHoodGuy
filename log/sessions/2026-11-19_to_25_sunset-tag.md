@@ -908,3 +908,16 @@ First of all, I have a question. When I tell you that something is wrong with th
 ## 2026-11-25 23:01 Claude
 
 You're making sense, and that's already how it works. All 1,410 frames are kept as JPGs. A fix = change the scene, delete only the affected frames, re-render those (~7 s each), re-encode (~1 min), re-burn captions (~2 min). Caveat: a change that touches something visible in many shots (moving a set piece, a key whose motion carries into later shots) means re-rendering all the frames it touches, never the whole video unless it's everywhere. Only cost: disk; the frames take 560 MB and the workspace is nearly full.
+
+---
+
+## 2026-11-26 02:03 Xavier
+
+[23:04] door lines stuck when it opens; cop car drives backwards; no visible phone. is it going to take another 3 hours?
+[23:38] Is still floating on his hand... Why is Mrs. Palm floating above the ground in the last few frames? and all cars move backwards
+[23:40] and she doesnt looks sneaky, learn this walk cycle use it for mrs palm ... https://www.youtube.com/shorts/1Ebe8EHIHE4 but instead let her hands be together, like shes touching her fingers or sumn
+[23:49] i liked this and why is she smiling
+
+## 2026-11-26 02:03 Claude
+
+v2 delivered (both versions). Fixed: door bars split from the frame mesh and swing with the leaf; van + Mom's car + pink car nose first; phone gripped and visible past the fist; Pam on her own ground (was 45 cm up), ref walk with hands together (the pose he liked), scared face, walks toward a front camera, freeze facing us. Only ~930 affected frames re-rendered; frame-checked; clip scan PASS.

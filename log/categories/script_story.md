@@ -120,3 +120,8 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 next time dont make scripts that would be hard to animate, lms the new sscript now
 
 - **2026-11-25 12:16** (2026-11-19_to_25_sunset-tag.md): [voice file: Roblox-2026-11-25-12-07-deadpan-absurd-storytelling-tone-In-this-town.mp3] maybe ending can be mrs pam sneaking out? or hiding? idk man ima go sleep suprise me, the pauses are kinda long, shorten a bi
+
+- **2026-11-26 02:03** (2026-11-19_to_25_sunset-tag.md): [23:04] door lines stuck when it opens; cop car drives backwards; no visible phone. is it going to take another 3 hours?
+[23:38] Is still floating on his hand... Why is Mrs. Palm floating above the ground in the last few frames? and all cars move backwards
+[23:40] and she doesnt looks sneaky, learn this walk cycle use it for mrs palm ... https://www.youtube.com/shorts/1Ebe8EHIHE4 but instead let her hands be together, like shes touching her fingers or sumn
+[23:49] i liked this and why is she smiling
