@@ -43,3 +43,13 @@ Honest risks:
 Builds: new sets = school roof at night, night bus (interior + model), teacher's kitchen. Reused = bedroom, street, classroom. New models = dog, cape, pyjamas, old camera + flash, clock, flight-plan paper, sandwich, pot, moth. Cast all existing + dog + a bank bus driver. Hard beats with a pose plan: car-door chomp (split door mesh, two-hand hold), dog jump (rigid arc + bounce), mid-air jump (your fall-code style), mailman streak (afterimages). Night look: only dayLook / roomLook exist, so night grading needs checking.
 
 OK it, or send notes (all in one message).
+
+---
+
+## 2026-11-26 07:57 Xavier
+
+This is trash. Can you not see how those other videos I sent to you were? All those other in this town videos. They were exciting to watch. They had a good ending, they had a good payoff, they had a good gag. Come on, what the fuck is this? Every time you say mailman and then the script starts to like fuck itself up. You say something and then you start going weird on it. You said at midnight it becomes superpower. Then what's the mailman running late at midnight for? Like what the fuck are you doing?
+
+## 2026-11-26 07:57 Claude
+
+(Model: Opus, still the script gate.) You're right. v2 failed on four counts: mailman gag broke the rule; no threat, no loved one in danger; ended on a cliffhanger when every reference ends on a payoff; twist was random, not a trick viewers could solve. Rewrote as Midnight Power v3 (topics/midnight_power/SCRIPT.md): Jayden eating, Grandma dancing, Dad asleep -> snores blow cars; family sleeps strapped down; no bird flies near the house; narrator plans to fly, loudest slurper; birthday 11:50 Mia unstraps, Dad's snore blows her out the window; clock 11:52/55/58; flying blocked by the rule; "Dad blows things away. I pull things in."; slurps at midnight, Mia + the neighbor's cat fly back; "Flying is overrated"; slurps the roof back on nightly; last frame Mia in his cape wanting to fly. ~280 words, ~70 s. Comments listed. Build list: grocery aisle, night town aerial with clouds, separable roof; models stop sign, bed straps, bird, cat, milkshake+straw, cookie jar, cape, pyjamas; night lighting; hardest beat = catching Mia. Notes added to DIRECTOR_NOTES + CLAUDE.md (gags obey the rule's exact wording; payoff endings replace the cliffhanger default). OK it or send all notes in one message.
