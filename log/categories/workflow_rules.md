@@ -230,3 +230,5 @@ sont go rendering for another hour ro , on a precheck vid
 (question resent) answer: i like sneeze swap, and remember the shadow one too? -> Remake it next
 
 - **2026-11-26 08:52** (2026-11-26_midnight-power.md): Wait, I think I have an idea. In this world, mom's always right. Mom is always right. But instead, the narrator makes a mistake and says, Mom is always tight. And then corrects himself immediately. Mom's always tight. I mean, right. Mom's always right. You get? People will catch it on there and stay in the video. Now, make a script following that.
+
+- **2026-11-26 08:54** (2026-11-26_midnight-power.md): No, no, no, no, no. Moms always tithe. Tigth. First of all, those your comments are trash. Those are not what the comments I'm looking for. They're not even the kind of comments that'll be there. In this town, moms always tithe, insinuating that vagina or whatever. But he'll say moms always tithe and right. Moms always right. He'll say tithe, then you say right, and they correct himself. Moms always right. In this town, Mom is always tight- right,... Mom is always right.

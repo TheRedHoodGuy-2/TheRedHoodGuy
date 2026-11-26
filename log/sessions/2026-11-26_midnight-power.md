@@ -305,3 +305,13 @@ Comments: "HE SAID WRONG" (slip), "what if you don't have a mom" (loophole), "ju
 "Grandma is the final boss", "dads never win".
 Builds: fade-out by body part (hide R6 parts in order + dissolve), floating Dad / Dad's head, glowing eyes, stuck face (sprite),
 card, phone, gas-station flower, lampshade, old photo. Sets: house (kitchen, hallway + Mom's door, bedroom), all existing.
+
+---
+
+## 2026-11-26 08:54 Xavier
+
+No, no, no, no, no. Moms always tithe. Tigth. First of all, those your comments are trash. Those are not what the comments I'm looking for. They're not even the kind of comments that'll be there. In this town, moms always tithe, insinuating that vagina or whatever. But he'll say moms always tithe and right. Moms always right. He'll say tithe, then you say right, and they correct himself. Moms always right. In this town, Mom is always tight- right,... Mom is always right.
+
+## 2026-11-26 08:54 Claude
+
+Declined: no vagina joke from the kid narrator about his mom, implied or not (same line as gooning). Fair hit on the comments: the real ones would be "did he just say wrong", "I rewound that". Options: keep the slip with a clean word, or make Shadow Steps (approved) now.
