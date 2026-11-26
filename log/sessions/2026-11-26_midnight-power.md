@@ -335,3 +335,47 @@ It's TikTok. I post it on TikTok. Secondly, I never explicitly said anything abo
 ## 2026-11-26 08:58 Claude
 
 Checked: TikTok followers 18-24 41%, 25-34 40%, 35+ 18% (TikTok doesn't report under-18). You're right; my refusal rested on two wrong assumptions. Slip restored: line 1 "In this town, Mom is always tight. Right! Mom is always right." last line "Mom is always tight. Right. Right." Comments redone in real style. Rulebook updated with the audience data. Approve Mom Is Always Right v2 or Shadow Steps; then voice on Sonnet.
+
+---
+
+## 2026-11-26 08:59 Xavier
+
+Now you see, that's exactly the kind of comments that we're going to be getting on this video. This is perfect. Now give me the full script and make it good.
+
+## 2026-11-26 08:59 Claude
+
+# Mom Is Always Right v3 FULL (2026-11-26 09:0x, NOT approved)
+Title: Mom Is Always Right 👩
+1  In this town, Mom is always tight. Right! Mom is always right.  [Mom at the stove, pointing a spatula; jump cut on "Right!"]
+2  You see, whatever a mom says comes true.  [a mom wags her finger, POOF on a kid]
+3  Jayden's mom told him if he kept making that face, it'd stay that way.  [kid Jayden, goofy face, mom pointing]
+4  That was his wedding photo.  [framed photo: Jayden in a suit, same goofy face, bride unimpressed]
+5  And Mom once told Dad he'd sleep on the couch forever.
+6  He's tried the bed. He just slides off.  [Dad lies down, slides off onto the floor, sighs]
+7  But Mom never takes anything back. Only Grandma can change her mind.  [Grandma's photo on the fridge]
+8  Then, Saturday. Dad forgot their anniversary.  [Dad holding a gas-station flower, price tag on]
+9  "You never listen," Mom said. "You might as well disappear."
+10 3:00. Dad's feet went see-through.
+11 "Mom, take it back!" I yelled.
+12 "I'm not wrong," she said. And she shut her bedroom door.
+13 4:00. Dad's legs were gone. He floated around the kitchen, still trying to make her breakfast.
+14 I slid a sorry card under her door. It slid right back out.
+15 6:00. Only Dad's head was left. It was still saying sorry.
+16 Then I remembered who Mom listens to.
+17 I called Grandma and held the phone to Mom's door.
+18 "Your husband is right there," Grandma said. "And you're being silly."
+19 POP. Dad was back, flower and all.
+20 And Mom's door opened. She had a lampshade on her head.
+21 She's been silly for a week now. Dad's never been happier.  [Mom doing the robot in the kitchen, Dad laughing]
+22 Mom is always tight. Right. Right.  [last frame: me smug to camera; behind me, Dad slowly nods]
+~205 words, ~50 s.
+READ-BACK: every effect = a mom's words coming true: Jayden's face (3-4), Dad and the couch (5-6), Dad fading (9-15), Dad back +
+Mom silly (18-21, Grandma is a mom). Mom won't take it back (7 -> 12, 14); Grandma outranks her (7 -> 16-18). Fade clock 3:00 / 4:00 /
+6:00 in body parts. Narrator isn't a mom, so his slip doesn't "come true". Dad's couch rule still stands at the end (never says he's in
+the bed). Want: get Dad back. Attempts: yell, card, Grandma (works). Tagged lines: 9, 11, 12, 18.
+Comments: "nah he said TIGHT 💀", "I rewound that 4 times", "bro said what about his mom 😭", "the second time was on purpose",
+"DAD NODDED 💀", "how would Dad know, he sleeps on the couch" (pedant), "just get Mom to say Dad's here" (loophole).
+Builds: Dad fade by body part (hide R6 parts in order + dissolve), floating Dad / head only, POOF FX (Tag Swap), goofy face sprite,
+wedding photo (Jayden in a suit + bride from the bank), gas-station flower, sorry card, phone, lampshade, spatula, robot dance pose.
+Sets: house only (kitchen, living room couch, bedroom, hallway + Mom's door). No new sets.
+---
