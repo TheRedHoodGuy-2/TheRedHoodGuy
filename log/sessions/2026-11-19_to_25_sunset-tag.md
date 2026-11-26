@@ -964,3 +964,14 @@ i like it, letsss keep it for now, not gone, go to my youtube and ttk pull analy
 ## 2026-11-26 03:40 Claude
 
 Pulled YT + TikTok retention. Drops: exposition (Gender Swap 3-9s 2.4-2.7%/s, brain freeze 12-18s 5.5%/s), vague withheld line (practiced one thing 2.1%/s), passive openers (8-10%/s first 3s). Holds: countdown clock 0.8%/s. research/analytics/2026-11-26/RETENTION_DROPS.md
+
+---
+
+## 2026-11-26 03:31 Xavier
+
+so using all weve gathered about retention how would you have done that script dofferently
+llet me see the script
+
+## 2026-11-26 03:31 Claude
+
+Explained the Gender Swap retention rewrite beat by beat, then showed the full v2 script (topics/sunset_tag/SCRIPT_v2_retention.md, ~48 s).
