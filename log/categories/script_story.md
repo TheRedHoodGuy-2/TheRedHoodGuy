@@ -168,3 +168,5 @@ llet me see the script
 (00:29) write the script properly no, shots let me go fetch the audio
 
 - **2026-11-27 00:52** (2026-11-27_lucky-me.md): New video: Lucky Me. Read CLAUDE.md fully, then docs/STUDIO_LOG.md, DIRECTOR_NOTES, research/analytics/2026-11-26/RETENTION_DROPS.md, and topics/lucky_me/ (SCRIPT.md + voice/words.json; the take is approved). Start a new session log. Tell me which model to use at each step. First: the full scene list (every shot, timing from words.json, location, camera, action, background clues for the Jaden twist) and the list of new sets, models and cast. Show me before building anything.
+
+- **2026-11-27 00:59** (2026-11-27_lucky-me.md): I love you. Like I never asked you for lore, but you making that mailman on skates lore, bro. I love you. In fact, no, I approved the whole script.
