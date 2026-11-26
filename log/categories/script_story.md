@@ -141,3 +141,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 llet me see the script
 
 - **2026-11-26 03:45** (2026-11-19_to_25_sunset-tag.md): (03:32) not good enough, you're just shortening words... try our retention stuff on the father script, plus a new one: in this town your last search history hovers over your head for 4 hours, and another: in this town you get 67 do-overs, when you hit zero something funny
+
+- **2026-11-26 07:28** (2026-11-26_midnight-power.md): New video. Read CLAUDE.md fully, then docs/STUDIO_LOG.md (last entry is the handoff), DIRECTOR_NOTES, the retention research, and topics/midnight_power/SCRIPT.md. Start a new session log. Tell me which model to use at each step. First: improve Midnight Power with our retention rules, or pitch something better, and show me the script.

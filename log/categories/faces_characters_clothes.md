@@ -168,3 +168,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 
 - **2026-11-26 07:30** (2026-11-19_to_25_sunset-tag.md): (07:17) any way to pair you with codex / make you understand my usage, choose models, delegate efficiently?
 (07:24) make a rule book that works; before every task tell me what model to set; tell me to switch when needed; save every new video chat to the chat log; optimize renders/images as long as results are same or better; I have 70% weekly left; create what's needed to migrate to a new chat, then new video
+
+- **2026-11-26 07:28** (2026-11-26_midnight-power.md): New video. Read CLAUDE.md fully, then docs/STUDIO_LOG.md (last entry is the handoff), DIRECTOR_NOTES, the retention research, and topics/midnight_power/SCRIPT.md. Start a new session log. Tell me which model to use at each step. First: improve Midnight Power with our retention rules, or pitch something better, and show me the script.
