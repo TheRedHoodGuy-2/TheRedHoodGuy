@@ -165,3 +165,6 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
 [02:47] those eyes needfixing as well btw
 [02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular
+
+- **2026-11-26 07:30** (2026-11-19_to_25_sunset-tag.md): (07:17) any way to pair you with codex / make you understand my usage, choose models, delegate efficiently?
+(07:24) make a rule book that works; before every task tell me what model to set; tell me to switch when needed; save every new video chat to the chat log; optimize renders/images as long as results are same or better; I have 70% weekly left; create what's needed to migrate to a new chat, then new video

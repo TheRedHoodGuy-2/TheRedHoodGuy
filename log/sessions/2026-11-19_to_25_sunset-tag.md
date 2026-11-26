@@ -1016,3 +1016,14 @@ Pitched Midnight Power: superpower = what you're doing at midnight on your 12th 
 ## 2026-11-26 04:08 Claude
 
 Admitted: Gender Swap is on YT (29.6k), analytics lag hid it. Post times: YouTube ~02:00 Lagos (8 PM ET), TikTok 7-8 PM Lagos (follower peak). research/analytics/2026-11-26/POST_TIMES.md
+
+---
+
+## 2026-11-26 07:30 Xavier
+
+(07:17) any way to pair you with codex / make you understand my usage, choose models, delegate efficiently?
+(07:24) make a rule book that works; before every task tell me what model to set; tell me to switch when needed; save every new video chat to the chat log; optimize renders/images as long as results are same or better; I have 70% weekly left; create what's needed to migrate to a new chat, then new video
+
+## 2026-11-26 07:30 Claude
+
+Added CLAUDE.md section 1b (model call before every task, switch prompts, new chat per video, background renders, auto-checks before images, batching) + 000 new session file per chat; STUDIO_LOG handoff; pushed repo (remote moved to TheRedHoodGuy-2/TheRedHoodGuy). Gave him the new-chat opener; next task (script) = Opus.
