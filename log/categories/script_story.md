@@ -162,3 +162,5 @@ llet me see the script
 - **2026-11-26 08:58** (2026-11-26_midnight-power.md): It's TikTok. I post it on TikTok. Secondly, I never explicitly said anything about a vagina. It's just a slip of tongue that the narrator makes. Thirdly, no 7-year-old is watching my video. You can see that from the fucking analytics. If you check it, my age this thing is 18 to 30 something. Check it your fucking self, bro, and stop pissing me off. ... I didn't set my channel to be child friendly. ... Mom's always tight. Finish. Nobody said anything about the fucking vagina.
 
 - **2026-11-26 08:59** (2026-11-26_midnight-power.md): Now you see, that's exactly the kind of comments that we're going to be getting on this video. This is perfect. Now give me the full script and make it good.
+
+- **2026-11-26 09:03** (2026-11-26_midnight-power.md): terrible story

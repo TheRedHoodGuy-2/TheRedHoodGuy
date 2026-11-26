@@ -379,3 +379,44 @@ Builds: Dad fade by body part (hide R6 parts in order + dissolve), floating Dad 
 wedding photo (Jayden in a suit + bride from the bank), gas-station flower, sorry card, phone, lampshade, spatula, robot dance pose.
 Sets: house only (kitchen, living room couch, bedroom, hallway + Mom's door). No new sets.
 ---
+
+---
+
+## 2026-11-26 09:03 Xavier
+
+terrible story
+
+## 2026-11-26 09:03 Claude
+
+# Mom Is Always Right v4 (2026-11-26 09:0x, after "terrible story": Grandma phone call = cheap fix, narrator passive. NOT approved)
+Title: Mom Is Always Right 👩
+1  In this town, Mom is always tight. Right! Mom is always right.
+2  You see, whatever a mom says comes true.
+3  Jayden's mom said if he kept making that face, it'd stay that way. That was his wedding photo.
+4  Mom once told Dad he'd sleep on the couch forever. He's tried the bed. He just slides off.
+5  And when I lose something, Mom yells, "It's right where you left it!" POOF. There it is.  [my shoe pops onto the stairs]  (PLANT)
+6  But Mom never takes anything back. Ever.
+7  Then, Saturday. Dad forgot their anniversary.  [gas-station flower, price tag on]
+8  "You never listen," Mom said. "You might as well disappear."
+9  Dad's feet went see-through. If he faded all the way, he was gone for good.
+10 "Mom, take it back!" I yelled.
+11 "I'm not wrong," she said. And she shut her bedroom door.
+12 4:00. Dad's legs were gone. He floated around the kitchen, still making her breakfast.
+13 I slid a sorry card under her door. It slid right back out.
+14 6:00. Only Dad's head was left. It was still saying sorry.
+15 I ran upstairs and tripped over my shoe. Right where I left it.  (the realization, shown)
+16 I knocked on Mom's door. "Mom," I said. "Where's Dad?"
+17 "Right where you left him!" she yelled.
+18 POOF. Dad was back in the kitchen. Flower and all.
+19 Mom came out. She'd said it. And Mom never takes anything back.
+20 She looked at the flower. Then she took it.
+21 Mom is always tight. Right. Right.  [last frame: me smug to camera; behind me, Dad on the couch slowly nods]
+~215 words, ~52 s.
+READ-BACK: every effect = a mom's words coming true (Jayden's face, the couch, lost things popping back, Dad fading, Dad back).
+The fix is MY move using line 5 (her catchphrase) and line 6 (she can't take it back, which now works for us). I left Dad in the
+kitchen (12-14) when I ran upstairs (15), so "right where you left him" = the kitchen. Couch curse never broken (21: couch).
+Fade clock 3 stages. Want: get Dad back. Attempts: yell, card, trick her (works). Grandma cut. Tagged lines: 8, 10, 11, 16, 17.
+Comments: "nah he said TIGHT 💀", "I rewound that 4 times", "bro said what about his mom 😭", "the second time was on purpose",
+"DAD NODDED 💀", "how would Dad know, he sleeps on the couch", "what if he left him in the bathroom" (loophole).
+Builds: Dad fade by body part, head-only Dad, POOF (Tag Swap), shoe pop, goofy face sprite, wedding photo, flower, card. House only.
+---
