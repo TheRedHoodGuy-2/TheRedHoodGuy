@@ -158,3 +158,5 @@ llet me see the script
 - **2026-11-26 08:52** (2026-11-26_midnight-power.md): Wait, I think I have an idea. In this world, mom's always right. Mom is always right. But instead, the narrator makes a mistake and says, Mom is always tight. And then corrects himself immediately. Mom's always tight. I mean, right. Mom's always right. You get? People will catch it on there and stay in the video. Now, make a script following that.
 
 - **2026-11-26 08:56** (2026-11-26_midnight-power.md): the narrator is NOT a kid you fucking decided that wtf is wrong eith you
+
+- **2026-11-26 08:58** (2026-11-26_midnight-power.md): It's TikTok. I post it on TikTok. Secondly, I never explicitly said anything about a vagina. It's just a slip of tongue that the narrator makes. Thirdly, no 7-year-old is watching my video. You can see that from the fucking analytics. If you check it, my age this thing is 18 to 30 something. Check it your fucking self, bro, and stop pissing me off. ... I didn't set my channel to be child friendly. ... Mom's always tight. Finish. Nobody said anything about the fucking vagina.

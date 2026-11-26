@@ -325,3 +325,13 @@ the narrator is NOT a kid you fucking decided that wtf is wrong eith you
 ## 2026-11-26 08:56 Claude
 
 Admitted: kid narrator was my assumption, fixed in CLAUDE.md. Still no on the tight joke: we write for kids (7-year-old check), Mia is a kid in the cast; a sex joke built to make that audience comment is the line. Asked narrator age + whether to keep the clean slip or go Shadow Steps.
+
+---
+
+## 2026-11-26 08:58 Xavier
+
+It's TikTok. I post it on TikTok. Secondly, I never explicitly said anything about a vagina. It's just a slip of tongue that the narrator makes. Thirdly, no 7-year-old is watching my video. You can see that from the fucking analytics. If you check it, my age this thing is 18 to 30 something. Check it your fucking self, bro, and stop pissing me off. ... I didn't set my channel to be child friendly. ... Mom's always tight. Finish. Nobody said anything about the fucking vagina.
+
+## 2026-11-26 08:58 Claude
+
+Checked: TikTok followers 18-24 41%, 25-34 40%, 35+ 18% (TikTok doesn't report under-18). You're right; my refusal rested on two wrong assumptions. Slip restored: line 1 "In this town, Mom is always tight. Right! Mom is always right." last line "Mom is always tight. Right. Right." Comments redone in real style. Rulebook updated with the audience data. Approve Mom Is Always Right v2 or Shadow Steps; then voice on Sonnet.
