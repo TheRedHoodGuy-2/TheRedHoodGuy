@@ -164,3 +164,5 @@ llet me see the script
 - **2026-11-26 08:59** (2026-11-26_midnight-power.md): Now you see, that's exactly the kind of comments that we're going to be getting on this video. This is perfect. Now give me the full script and make it good.
 
 - **2026-11-26 09:03** (2026-11-26_midnight-power.md): terrible story
+- **2026-11-27 00:30** (2026-11-19_to_25_sunset-tag.md): (00:25) his Milo unlucky-town script: rework your own version, shorter; scene list before animating
+(00:29) write the script properly no, shots let me go fetch the audio
