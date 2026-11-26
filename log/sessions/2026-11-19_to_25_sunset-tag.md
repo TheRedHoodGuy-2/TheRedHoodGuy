@@ -931,3 +931,16 @@ onto the next vid, first off, notice all the iterations of the first script befo
 ## 2026-11-26 02:22 Claude
 
 Lessons: every revision was a check I could have run (lane, own flow, insinuate, no drop-off, want, rule holes, physical logic, plant placement, animatable). Wrote them as a pre-flight list in RULES_CHECK_TEMPLATE; every script passes it before he sees it.
+
+---
+
+## 2026-11-26 02:55 Xavier
+
+[02:25] (video) i like this, youre learning, here learn more about retention from this, then we talk more
+[02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
+[02:47] those eyes needfixing as well btw
+[02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular
+
+## 2026-11-26 02:55 Claude
+
+Took in the retention video (transcript): composing (hook promises payoff, tension, payoff delivers), editing (pace, music per section), leverage (comment bait, related link; skip the fake-comment trick). Saved research/retention_composing_2026-11-26.md. Thumbnail v1 sent (pink crimped foil with ring, suspicious side-eye face). Asked which eyes to fix.

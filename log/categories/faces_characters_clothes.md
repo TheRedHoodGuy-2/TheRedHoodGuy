@@ -160,3 +160,8 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 - **2026-11-25 15:35** (2026-11-19_to_25_sunset-tag.md): [13:30] myPose: { armL: { r: [0.399, 0.43, -0.039], o: [0.051, 0, 0] }, armR: { r: [-0.247, 0.414, 0.038], o: [0, 0, 0.037] }, legL: { r: [-0.319, -0.347, -0.075], o: [-0.009, 0.361, 0.345] }, legR: { r: [0.14, -0.321, 0.064], o: [-0.028, -0.041, -0.191] }, root: { x: -0.033, y: 0.302, z: 0.301, rx: 0.082, ry: -2.79, rz: 0.017 }}, // face: 'neutral' climb stairs example
 [13:36] the dad can be on boxers if theres no robe
 [15:15] Nigger, my fucking nigger, can you like stop fucking rendering the full review video and check all the frames first and ensure that everything is okay before rendering the fucking video? Because you are rendering and then checking the frames and then rendering again. What kind of redundant stupid thing are you doing, bro? Didn't he talk about this shit? Isn't that what you're doing right now? Because tell me why I just saw the code saying something about rendering stuff, and then back to I'm now seeing you checking frames again. Aren't you supposed to check every single frame and ensure that everything looks right before rendering? I'm so lost right now.
+
+- **2026-11-26 02:55** (2026-11-19_to_25_sunset-tag.md): [02:25] (video) i like this, youre learning, here learn more about retention from this, then we talk more
+[02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
+[02:47] those eyes needfixing as well btw
+[02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular

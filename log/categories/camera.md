@@ -168,3 +168,8 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 [23:38] Is still floating on his hand... Why is Mrs. Palm floating above the ground in the last few frames? and all cars move backwards
 [23:40] and she doesnt looks sneaky, learn this walk cycle use it for mrs palm ... https://www.youtube.com/shorts/1Ebe8EHIHE4 but instead let her hands be together, like shes touching her fingers or sumn
 [23:49] i liked this and why is she smiling
+
+- **2026-11-26 02:55** (2026-11-19_to_25_sunset-tag.md): [02:25] (video) i like this, youre learning, here learn more about retention from this, then we talk more
+[02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
+[02:47] those eyes needfixing as well btw
+[02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular

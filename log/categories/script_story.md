@@ -127,3 +127,8 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [23:49] i liked this and why is she smiling
 
 - **2026-11-26 02:22** (2026-11-19_to_25_sunset-tag.md): onto the next vid, first off, notice all the iterations of the first script before we arrived at the final?? what did you learn
+
+- **2026-11-26 02:55** (2026-11-19_to_25_sunset-tag.md): [02:25] (video) i like this, youre learning, here learn more about retention from this, then we talk more
+[02:27] not frames, myabe some part idk but its mostly hwat hes saying i want you to take in, ps i wanna mkae a thumbnail for this vid, put the dad in a sus pose hiding sumn sus, like the shape of a condome or sumn
+[02:47] those eyes needfixing as well btw
+[02:47] make the foil pink, with jagged edges like its shrinkwraped on something circular
