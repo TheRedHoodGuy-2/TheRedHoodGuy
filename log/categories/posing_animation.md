@@ -261,3 +261,6 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 (00:29) write the script properly no, shots let me go fetch the audio
 
 - **2026-11-27 00:52** (2026-11-27_lucky-me.md): New video: Lucky Me. Read CLAUDE.md fully, then docs/STUDIO_LOG.md, DIRECTOR_NOTES, research/analytics/2026-11-26/RETENTION_DROPS.md, and topics/lucky_me/ (SCRIPT.md + voice/words.json; the take is approved). Start a new session log. Tell me which model to use at each step. First: the full scene list (every shot, timing from words.json, location, camera, action, background clues for the Jaden twist) and the list of new sets, models and cast. Show me before building anything.
+
+- **2026-11-27 01:28** (2026-11-27_lucky-me.md): Get the cookie. I should go to what website and do what to get the cookie.
+[cookie value provided and saved to ~/.rbx_cookie]
