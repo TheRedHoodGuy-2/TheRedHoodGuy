@@ -21,7 +21,7 @@ low = X.lower()
 for c, rx in CATS.items():
     if re.search(rx, low):
         with open(f'log/categories/{c}.md', 'a') as f: f.write(f'\n- **{when}** ({os.path.basename(log)}): {X}\n')
-idx = ['# LOG INDEX (read at the start of every chat: categories first, then the newest session)', '',
+idx = ['# LOG INDEX (docs/BRAIN.md says which category to read for the task; grep the rest)', '',
        'Raw: every Xavier message and every Claude reply, verbatim, per session in log/sessions/.',
        'Categories: every Xavier message filed by topic (one message can sit in several).', '', '## Categories']
 for p in sorted(glob.glob('log/categories/*.md')): idx.append(f'- {p} ({sum(1 for l in open(p) if l.startswith("- **"))} notes)')

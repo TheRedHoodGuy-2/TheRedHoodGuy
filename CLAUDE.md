@@ -40,19 +40,19 @@ Same-or-better results, fewer tokens. Every optimization below is allowed ONLY i
 ## 2. Start of every chat (in this order)
 000. NEW CHAT = NEW SESSION FILE: create `log/sessions/<YYYY-MM-DD>_<video-or-topic>.md` and log EVERY turn of this chat
     there (his message + your reply, verbatim) with tools/logturn.py, however long the chat gets (Xavier 2026-11-26).
-00. THE LOG (Xavier 2026-11-25: "compacting should not be the end of me"): read `log/INDEX.md`, EVERY file in
-    `log/categories/` (all his notes by topic, from both repos) and the tail of the newest `log/sessions/` file.
-    END OF EVERY TURN, no exceptions: write his message + your full reply verbatim to two files and run
+00. THE BRAIN (Xavier 2026-11-27): read `docs/BRAIN.md`, then ONLY what it lists under ALWAYS + the task pack(s) for
+    this chat, in full, plus that pack's log category. Its QUALITY GUARD is binding: DIRECTOR_NOTES in full on every video
+    chat, grep log/ + docs/ before any decision he may have ruled on, open any file you are unsure about, open the new
+    pack when the task changes. (Replaces "read every log category + every research file", ~150k tokens a chat.)
+    THE LOG (Xavier 2026-11-25: "compacting should not be the end of me"). END OF EVERY TURN, no exceptions: write his
+    message + your full reply verbatim to two files and run
     `python3 tools/logturn.py log/sessions/<current>.md "<YYYY-MM-DD HH:MM>" x.txt reply.txt` (appends, files the
     message into categories, rebuilds the index, commits + pushes log/). The raw cloud transcript is not on disk, so
     this is the only record. If a compaction summary is all you have, backfill from the claude.ai chat history.
-0. If `docs/OVERNIGHT_PLAN.md` has unticked boxes, resume there. Then `docs/STUDIO_LOG.md` (where we are).
-1. This file, then `PLAN.md`, `docs/DECISIONS.md`, `docs/DIRECTOR_NOTES.md` (every mistake he flagged), newest `log/sessions/`.
-2. Before a video: `docs/FORMAT_BIBLE.md`, `docs/CONTENT_ENGINE.md`, `docs/ANIMATION.md`, `docs/POSE_LESSONS.md`,
-   `docs/FRAME_CHECK.md`, `research/look_study_2026-11-18.md`, `research/cinematography.md`, `research/gneef_camera.md`,
-   `research/gneef_first_look.md`, `research/scripting_retention.md`, `research/walk.md`, `research/lipsync.md`,
-   `research/legacy_explainer/` (REVIEW_NOTES + CLAUDE_animation_rules + body mechanics + pacing).
-During a chat: new note -> DIRECTOR_NOTES (same turn); research -> `research/` + index; settled choice -> DECISIONS;
+0. If `docs/OVERNIGHT_PLAN.md` has unticked boxes, resume there. Then `docs/STUDIO_LOG.md` section 0 (where we are).
+1. Video chats: `docs/DIRECTOR_NOTES.md` in full, `docs/DECISIONS.md`, the topic folder, tail of the newest `log/sessions/`.
+2. The task pack from docs/BRAIN.md (script / shots / world / characters / posing / voice / sound / render / dissect).
+During a chat: new note -> DIRECTOR_NOTES (same turn); research -> `research/` + index + a line in docs/BRAIN.md; settled choice -> DECISIONS;
 every message of his and every reply -> session log.
 
 ## 3. Hard rules (never broken)

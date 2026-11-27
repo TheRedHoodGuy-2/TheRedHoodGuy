@@ -409,3 +409,7 @@ defend every pixel of it, it does not get sent.
   Sus scripts need: (1) a double-meaning engine in the rule, (2) 3+ pausable clues viewers assemble themselves, (3) the
   secret never shown in full (cut off, blurred, interrupted), (4) a last frame that opens a NEW question, (5) running lore
   (Mrs. Pam's pink car, the mailman) so comments connect videos. Sus stays between adults; kids only narrate innocently.
+
+## 2026-11-27 21:45 Brain, not Obsidian
+- Token savings come from STRUCTURE (index + task packs), not from the app. GitHub stays; Obsidian = viewer only.
+- "Promise it won't make results choppier": the QUALITY GUARD in docs/BRAIN.md is binding. Never skip a pack file to save tokens.

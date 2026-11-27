@@ -91,3 +91,8 @@ Measured in the cloud workspace (2 CPU cores, no GPU), Blender 5.3 via `pip inst
   -b:v 15M -maxrate 20M -bufsize 30M) so TikTok / YouTube start from the best file.
 - TEXTURES: after he confirms the review video, every texture used in THAT video is upscaled hard (AI 4x, Real-ESRGAN)
   before the final render; Poly Haven pulled at 2K/4K; engine-drawn canvases regenerated at 2-4x.
+
+## 2026-11-27 The BRAIN replaces read-everything
+docs/BRAIN.md is the index: every chat reads CLAUDE.md + BRAIN + its ALWAYS list + the task pack in full, not all ~600 KB.
+GitHub stays the source of truth (cloud chats clone it); Obsidian is only a viewer on Xavier's side, read-only.
+Quality guard in BRAIN.md is binding (DIRECTOR_NOTES always, grep before decisions, open when unsure).

@@ -17,3 +17,6 @@ research/dissect/*/audio.wav
 # keep the small, irreplaceable audio (Xavier 2026-11-27)
 !topics/*/voice/voice.wav
 !topics/*/sfx/src/*.wav
+
+# Xavier opens the repo as an Obsidian vault; his app settings stay local
+.obsidian/
