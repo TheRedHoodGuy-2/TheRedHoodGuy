@@ -1,4 +1,4 @@
-# LOG INDEX (read at the start of every chat: categories first, then the newest session)
+# LOG INDEX (docs/BRAIN.md says which category to read for the task; grep the rest)
 
 Raw: every Xavier message and every Claude reply, verbatim, per session in log/sessions/.
 Categories: every Xavier message filed by topic (one message can sit in several).
@@ -8,9 +8,9 @@ Categories: every Xavier message filed by topic (one message can sit in several)
 - log/categories/captions_titles.md (34 notes)
 - log/categories/faces_characters_clothes.md (43 notes)
 - log/categories/posing_animation.md (76 notes)
-- log/categories/script_story.md (61 notes)
+- log/categories/script_story.md (62 notes)
 - log/categories/sound_music.md (75 notes)
-- log/categories/workflow_rules.md (67 notes)
+- log/categories/workflow_rules.md (68 notes)
 - log/categories/world_lighting.md (32 notes)
 
 ## Sessions
