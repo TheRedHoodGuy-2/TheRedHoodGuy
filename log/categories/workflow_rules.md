@@ -238,3 +238,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 00:52** (2026-11-27_lucky-me.md): New video: Lucky Me. Read CLAUDE.md fully, then docs/STUDIO_LOG.md, DIRECTOR_NOTES, research/analytics/2026-11-26/RETENTION_DROPS.md, and topics/lucky_me/ (SCRIPT.md + voice/words.json; the take is approved). Start a new session log. Tell me which model to use at each step. First: the full scene list (every shot, timing from words.json, location, camera, action, background clues for the Jaden twist) and the list of new sets, models and cast. Show me before building anything.
 
 - **2026-11-27 00:59** (2026-11-27_lucky-me.md): I love you. Like I never asked you for lore, but you making that mailman on skates lore, bro. I love you. In fact, no, I approved the whole script.
+
+- **2026-11-27 02:46** (2026-11-27_lucky-me.md): Make the poses. Everything seems all right. Give me the render, the review video. also fix all that needs to be fixed. And I approved poses. They look very decent, I guess. So fix all the fixes. I have 91% weekly limits left, by the way. I don't know if that's going to cover the rest of the final video and the review video.
