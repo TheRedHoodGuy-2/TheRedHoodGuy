@@ -274,3 +274,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 22:40** (2026-11-27_lucky-me.md): (20:37) Final render: apply the right textures (texture stuff you do for finals), fix the lighting inside the house where mom talks to him, put my channel picture where the R is on the subscribe card, then render the final. (21:00) Background audio: use our regular one, don't switch. (22:16) Worried the exit code 1 errors cancel the render. (22:21) sent the music mp3.
 
 - **2026-11-27 23:15** (2026-11-27_lucky-me.md): (23:01) Go over the entire chat, push everything needed so the next video is as good or better: captions, subscribe prompts, everything. Subscribe prompt is not always Jaden; keep this pose for now; build a pose + camera library for the subscribe prompt (each pose has its own camera); next time I send pose-editor code + screenshot.
+
+- **2026-11-27 23:35** (2026-11-27_lucky-me.md): (23:16) our saturation thing too? pushed?? this video looks a lot nice

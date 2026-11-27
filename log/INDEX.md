@@ -10,7 +10,7 @@ Categories: every Xavier message filed by topic (one message can sit in several)
 - log/categories/posing_animation.md (77 notes)
 - log/categories/script_story.md (64 notes)
 - log/categories/sound_music.md (79 notes)
-- log/categories/workflow_rules.md (70 notes)
+- log/categories/workflow_rules.md (71 notes)
 - log/categories/world_lighting.md (33 notes)
 
 ## Sessions
