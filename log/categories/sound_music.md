@@ -288,3 +288,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 22:40** (2026-11-27_lucky-me.md): (20:37) Final render: apply the right textures (texture stuff you do for finals), fix the lighting inside the house where mom talks to him, put my channel picture where the R is on the subscribe card, then render the final. (21:00) Background audio: use our regular one, don't switch. (22:16) Worried the exit code 1 errors cancel the render. (22:21) sent the music mp3.
 
 - **2026-11-27 22:58** (2026-11-27_lucky-me.md): (22:44-22:49) keep 15 with index at front if 8 reduces quality; try 12mbps; sent bruh sound, hope you renamed and uploaded all sounds and context; try 10mbps
+
+- **2026-11-27 23:20** (2026-11-27_lucky-me.md): (23:04) Take the 10 Mbps video, thumbnail = frame at 0:49. (sent movie_1_3.mp3 bruh again)
