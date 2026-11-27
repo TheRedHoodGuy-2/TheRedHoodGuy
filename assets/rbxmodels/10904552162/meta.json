@@ -1,0 +1,18 @@
+{
+ "id": 10904552162,
+ "name": "SnackVendingMachine",
+ "size_m": [
+  1.141,
+  2.629,
+  1.315
+ ],
+ "materials": [
+  "mat~Glass~a3a2a5~t4",
+  "mat~Plastic~a3a2a5"
+ ],
+ "parts": 5,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

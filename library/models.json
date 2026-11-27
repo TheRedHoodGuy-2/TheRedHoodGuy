@@ -858,5 +858,195 @@
   ],
   "parts": 34,
   "unions_skipped": 0
+ },
+ "6433323089": {
+  "name": "Sports Car (blue)",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 143,
+  "unions_skipped": 0
+ },
+ "2424091690": {
+  "name": "Dassault Falcon 7X",
+  "size_m": [
+   28.414,
+   9.2,
+   26.002
+  ],
+  "parts": 246,
+  "unions_skipped": 46
+ },
+ "6810376207": {
+  "name": "2021 Koenigsegg Jesko // Rosh",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 77,
+  "unions_skipped": 0
+ },
+ "10904552162": {
+  "name": "SnackVendingMachine",
+  "size_m": [
+   1.141,
+   2.629,
+   1.315
+  ],
+  "parts": 5,
+  "unions_skipped": 0
+ },
+ "10289332763": {
+  "name": "Bloxy Cola Vending Machine [Open Pls!]",
+  "size_m": [
+   1.397,
+   2.38,
+   1.606
+  ],
+  "parts": 24,
+  "unions_skipped": 2
+ },
+ "11299751051": {
+  "name": "Slushie Machine",
+  "size_m": [
+   1.429,
+   1.771,
+   2.223
+  ],
+  "parts": 52,
+  "unions_skipped": 0
+ },
+ "504039052": {
+  "name": "Model",
+  "size_m": [
+   1.301,
+   0.884,
+   0.952
+  ],
+  "parts": 14,
+  "unions_skipped": 0
+ },
+ "134989489039266": {
+  "name": "Stylized Retail Counter",
+  "size_m": [
+   2.355,
+   1.564,
+   0.875
+  ],
+  "parts": 28,
+  "unions_skipped": 23
+ },
+ "131299267832544": {
+  "name": "CornerStore",
+  "size_m": [
+   11.689,
+   6.271,
+   13.864
+  ],
+  "parts": 221,
+  "unions_skipped": 1
+ },
+ "110914919": {
+  "name": "Model",
+  "size_m": [
+   4.08,
+   4.487,
+   2.55
+  ],
+  "parts": 20,
+  "unions_skipped": 0
+ },
+ "8573316692": {
+  "name": "Drift Car",
+  "size_m": [
+   2.678,
+   1.993,
+   6.34
+  ],
+  "parts": 89,
+  "unions_skipped": 0
+ },
+ "15500402955": {
+  "name": "Chevrolet Corvette C8 Z51 // Rosh",
+  "size_m": [
+   NaN,
+   NaN,
+   NaN
+  ],
+  "parts": 105,
+  "unions_skipped": 0
+ },
+ "74634314507210": {
+  "name": "Stylized Vending Kiosk",
+  "size_m": [
+   1.462,
+   2.033,
+   0.935
+  ],
+  "parts": 12,
+  "unions_skipped": 38
+ },
+ "2037619935": {
+  "name": "Slurpee Machine",
+  "size_m": [
+   0.951,
+   3.428,
+   1.253
+  ],
+  "parts": 60,
+  "unions_skipped": 0
+ },
+ "104560670058776": {
+  "name": "Stylized Mini-Market",
+  "size_m": [
+   4.216,
+   3.23,
+   3.629
+  ],
+  "parts": 54,
+  "unions_skipped": 2
+ },
+ "9851465121": {
+  "name": "Meshes/InflatableDonut1",
+  "size_m": [
+   3.685,
+   1.022,
+   3.776
+  ],
+  "parts": 1,
+  "unions_skipped": 0
+ },
+ "77725787315339": {
+  "name": "Stylized Display Rack",
+  "size_m": [
+   1.435,
+   2.037,
+   0.592
+  ],
+  "parts": 24,
+  "unions_skipped": 26
+ },
+ "93471449866653": {
+  "name": "Stylized Store Display",
+  "size_m": [
+   1.496,
+   1.665,
+   0.659
+  ],
+  "parts": 34,
+  "unions_skipped": 17
+ },
+ "136834561290893": {
+  "name": "Supermarket Shelf",
+  "size_m": [
+   0.93,
+   0.451,
+   0.201
+  ],
+  "parts": 1,
+  "unions_skipped": 0
  }
 }

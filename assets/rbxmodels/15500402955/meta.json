@@ -1,0 +1,40 @@
+{
+ "id": 15500402955,
+ "name": "Chevrolet Corvette C8 Z51 // Rosh",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~Glass~002060",
+  "mat~Glass~9fa1ac",
+  "mat~Glass~a3a2a5",
+  "mat~Metal~111111",
+  "mat~Metal~2d2d2d",
+  "mat~Metal~69665c",
+  "mat~Metal~a3a2a5",
+  "mat~Neon~0010b0",
+  "mat~Neon~002060",
+  "mat~Neon~a3a2a5",
+  "mat~Neon~c4281c",
+  "mat~Neon~da8541",
+  "mat~Neon~f8f8f8",
+  "mat~Plastic~a3a2a5",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t5",
+  "mat~SmoothPlastic~111111~t6",
+  "mat~SmoothPlastic~111111~t7",
+  "mat~SmoothPlastic~583f22",
+  "mat~SmoothPlastic~750000",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~a3a2a5~t1",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~Wood~a3a2a5"
+ ],
+ "parts": 105,
+ "skipped_invisible": 15,
+ "unions_skipped": 0,
+ "decals": 30,
+ "warnings": []
+}

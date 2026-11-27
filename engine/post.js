@@ -125,6 +125,9 @@ export function makePost(renderer, scene, camera, W, H, o = {}) {
     const px = new Uint8Array(4), sync = () => gl.readPixels(0, 0, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px);   // readPixels really waits; gl.finish does not under SwiftShader
     const lap = k => { if (!T) return; sync(); const t = performance.now(); T[k] = (T[k] || 0) + t - t0; t0 = t; };
     r.toneMapping = THREE.NoToneMapping;
+    // FIX 2026-11-27: P is a COPY of the scene's post object, so per-shot refocus (S.post.focus) never reached the shader --
+    // every frame was focused where frame 0 was (close-ups like the Lucky Me ticket rendered as mush). Read the live values.
+    for (const k in o) P[k] = o[k];   // every grade value is live (exposure flashes, per-shot grade changes), not only focus
     dofMat.uniforms.focus.value = dofMix.uniforms.focus.value = P.focus;   // a scene may refocus per shot (S.post.focus)
     r.setRenderTarget(rtScene); r.render(scene, camera); lap('scene');
     camera.updateMatrixWorld();

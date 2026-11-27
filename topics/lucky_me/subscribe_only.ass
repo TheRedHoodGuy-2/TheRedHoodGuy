@@ -1,0 +1,16 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,FredokaSB,124,&H00FFFFFF,&H00FFFFFF,&H001B1B1B,&H78000000,0,0,0,0,100,100,0,0,1,6,2,5,0,0,0,1
+Style: Title,FredokaSB,104,&H001FD2FF,&H001FD2FF,&H001B1B1B,&H78000000,0,0,0,0,100,100,0,0,1,6,2,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 5,0:00:50.80,0:00:52.62,Title,,0,0,0,,{\an5\pos(540,1500)\fscx60\fscy60\t(0,120,\fscx112\fscy112)\t(120,240,\fscx100\fscy100)}SUBSCRIBE\NFOR MORE

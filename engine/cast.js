@@ -34,7 +34,7 @@ export async function shadowOf(key, { kind = 'floor' } = {}) {
 // FOOTWEAR SPLIT (2026-11-19): a catalog skate / shoe pair made for layered feet is split down the middle and each half
 // rides on its own R6 leg block, so it swings with the leg (the layered fit stretched it over the whole legs).
 // Returns the height the wheels add (lift the actor's root by it so the wheels sit on the ground).
-export async function wearFeet(actor, id, { sink = .12 } = {}) {
+export async function wearFeet(actor, id, { sink = .12, meshesOut = null } = {}) {
   const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
   const base = new URL(`assets/roblox/${id}/`, document.baseURI).href, meta = await (await fetch(base + 'meta.json')).json(), p = meta.parts[0];
   const g = await new GLTFLoader().loadAsync(base + p.file); let mesh = null; g.scene.traverse(o => { if (o.isMesh && !mesh) mesh = o; });
@@ -48,9 +48,23 @@ export async function wearFeet(actor, id, { sink = .12 } = {}) {
     for (const k of Object.keys(src)) { const a = src[k], arr = new Float32Array(keep.length * 3 * a.itemSize); keep.forEach((t, i) => { for (let j = 0; j < 3 * a.itemSize; j++) arr[i * 3 * a.itemSize + j] = a.array[t * a.itemSize + j]; }); half.setAttribute(k, new THREE.BufferAttribute(arr, a.itemSize)); }
     half.translate(-side * .5, -cy, 0); half.scale(1.5, 1.3, 1.5);   // each skate centred under its own leg, sized to the R6 foot block (they are made for slim R15 feet)
     const m = new THREE.Mesh(half, mat); m.castShadow = true; m.position.set(0, -1 - h / 2 + sink, 0);   // studs, leg-part local: boot round the foot, wheels below
-    actor.rig.parts[leg].add(m);
+    actor.rig.parts[leg].add(m); if (meshesOut) meshesOut.push(m);
   }
   return (h - sink) * .34 - .02;
+}
+
+// LIMB MOUNT (2026-11-27): a small modern layered accessory (arm cast, sling) is built for the R15 skinning rig and,
+// nominally attached via BodyFrontAttachment, drapes wrong through our cage-fit welder (lands on the belly, not the
+// limb it's shaped for). Mounted here as a single whole mesh directly on one rig part instead, like wearFeet's splits.
+export async function wearLimb(actor, id, part, { pos = [0, 0, 0], rot = [0, 0, 0], scale = 1 } = {}) {
+  const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
+  const base = new URL(`assets/roblox/${id}/`, document.baseURI).href, meta = await (await fetch(base + 'meta.json')).json(), p = meta.parts[0];
+  const g = await new GLTFLoader().loadAsync(base + p.file); let mesh = null; g.scene.traverse(o => { if (o.isMesh && !mesh) mesh = o; });
+  const tex = await new THREE.TextureLoader().loadAsync(base + (p.texture || 'texture.png')); tex.colorSpace = THREE.SRGBColorSpace; tex.flipY = false;
+  const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: .6, side: THREE.DoubleSide }), geo = mesh.geometry.toNonIndexed(); geo.computeVertexNormals();
+  const [lo, hi] = p.bounds, cy = (lo[1] + hi[1]) / 2; geo.translate(0, -cy, 0);
+  const m = new THREE.Mesh(geo, mat); m.castShadow = true; m.position.set(...pos); m.rotation.set(...rot); m.scale.setScalar(scale);
+  actor.rig.parts[part].add(m); return m;
 }
 
 // ALTIWYRE FACE (Xavier 2026-11-19: the boy wears an AltiWyre-pack face, not our AI faces). library/alti_face.json maps

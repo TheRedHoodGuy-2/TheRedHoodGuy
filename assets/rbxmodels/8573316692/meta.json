@@ -1,0 +1,42 @@
+{
+ "id": 8573316692,
+ "name": "Drift Car",
+ "size_m": [
+  2.678,
+  1.993,
+  6.34
+ ],
+ "materials": [
+  "mat~Foil~111111",
+  "mat~Metal~111111",
+  "mat~Metal~750000",
+  "mat~Neon~9fa1ac",
+  "mat~Neon~c4281c",
+  "mat~Pebble~a3a2a5",
+  "mat~SmoothPlastic~000000",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t5",
+  "mat~SmoothPlastic~161616",
+  "mat~SmoothPlastic~1b2a35",
+  "mat~SmoothPlastic~1e1e1e",
+  "mat~SmoothPlastic~282828",
+  "mat~SmoothPlastic~3a1818",
+  "mat~SmoothPlastic~635f62",
+  "mat~SmoothPlastic~69665c",
+  "mat~SmoothPlastic~750000",
+  "mat~SmoothPlastic~7e0000",
+  "mat~SmoothPlastic~8f4c2a",
+  "mat~SmoothPlastic~9fa1ac",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~SmoothPlastic~da8541",
+  "mat~SmoothPlastic~f8f8f8",
+  "mat~SmoothPlastic~f8f8f8~t7"
+ ],
+ "parts": 89,
+ "skipped_invisible": 18,
+ "unions_skipped": 0,
+ "decals": 12,
+ "unions": 3,
+ "warnings": []
+}

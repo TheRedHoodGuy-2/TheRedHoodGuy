@@ -1,0 +1,40 @@
+{
+ "id": 6810376207,
+ "name": "2021 Koenigsegg Jesko // Rosh",
+ "size_m": [
+  NaN,
+  NaN,
+  NaN
+ ],
+ "materials": [
+  "mat~Cobblestone~a3a2a5",
+  "mat~Glass~970000~t4",
+  "mat~Glass~a3a2a5",
+  "mat~Glass~cdcdcd",
+  "mat~Glass~efb838",
+  "mat~Glass~f8f8f8~t7",
+  "mat~Glass~f8f8f8~t8",
+  "mat~Glass~ff0000",
+  "mat~Neon~efb838",
+  "mat~Pebble~a3a2a5",
+  "mat~Pebble~e7e7ec",
+  "mat~Plastic~111111",
+  "mat~Plastic~970000",
+  "mat~Plastic~a3a2a5",
+  "mat~Slate~111111",
+  "mat~Slate~9fa1ac",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~111111~t8",
+  "mat~SmoothPlastic~a3a2a5",
+  "mat~SmoothPlastic~cdcdcd",
+  "mat~SmoothPlastic~cdffff~t3",
+  "mat~SmoothPlastic~e7e7ec",
+  "mat~SmoothPlastic~efb838",
+  "mat~SmoothPlastic~f8f8f8"
+ ],
+ "parts": 77,
+ "skipped_invisible": 17,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

@@ -13,7 +13,7 @@ const scene = new THREE.Scene();
 const mod = await import(`./scenes/${spec.scene}.js`), S = await mod.build({ scene, renderer, W, H, opts: spec.opts || {} });
 await new Promise(r => setTimeout(r, spec.wait ?? 2500));   // textures
 // lq (check renders only): no shadows, no reflection probe, flat Lambert, no DOF / bloom / god rays (~2-3x faster)
-if (spec.lq) { spec.matTest = 'lambert'; spec.probe = false; renderer.shadowMap.enabled = false; Object.assign(S.post, { aperture: 0, bloom: 0, volume: 0 }); }
+if (spec.lq) { spec.matTest = 'lambert'; spec.probe = false; /* shadows stay ON in previews (Xavier 2026-11-27: without them everyone read as floating) */ Object.assign(S.post, { aperture: 0, bloom: 0, volume: 0 }); }
 if (spec.matTest) scene.traverse(o => { if (!o.isMesh) return; const m = o.material; if (!m || !m.isMeshStandardMaterial) return;   // speed test only: what do materials cost
   if (spec.matTest === 'standard' && m.isMeshPhysicalMaterial) o.material = new THREE.MeshStandardMaterial({ map: m.map, normalMap: m.normalMap, roughnessMap: m.roughnessMap, color: m.color, roughness: m.roughness, side: m.side });
   if (spec.matTest === 'lambert') o.material = new THREE.MeshLambertMaterial({ map: m.map, color: m.color, side: m.side }); });

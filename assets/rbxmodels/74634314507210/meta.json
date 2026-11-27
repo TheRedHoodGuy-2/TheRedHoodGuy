@@ -1,0 +1,21 @@
+{
+ "id": 74634314507210,
+ "name": "Stylized Vending Kiosk",
+ "size_m": [
+  1.462,
+  2.033,
+  0.935
+ ],
+ "materials": [
+  "mat~Metal~a5b7be",
+  "mat~SmoothPlastic~11606b",
+  "mat~SmoothPlastic~182b38",
+  "mat~SmoothPlastic~ffad42",
+  "mat~SmoothPlastic~fff2d5"
+ ],
+ "parts": 12,
+ "skipped_invisible": 0,
+ "unions_skipped": 38,
+ "decals": 0,
+ "warnings": []
+}

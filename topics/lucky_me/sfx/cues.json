@@ -1,0 +1,464 @@
+[
+ [
+  0.42,
+  "mk_759.mp3",
+  0.55,
+  1.2,
+  "pot shatters on his head"
+ ],
+ [
+  0.42,
+  "mk_2150.mp3",
+  0.35,
+  0.4,
+  "pot bonk"
+ ],
+ [
+  1.95,
+  "x_kaching.mp3",
+  0.35,
+  1.2,
+  "kaching: the richer you get"
+ ],
+ [
+  2.96,
+  "mk_2101.mp3",
+  0.38,
+  0.8,
+  "skate wheels rolling"
+ ],
+ [
+  3.72,
+  "mk_2182.mp3",
+  0.45,
+  0.3,
+  "wheels catch the kerb"
+ ],
+ [
+  3.72,
+  "x_man_scream.mp3",
+  0.42,
+  0.7,
+  "mailman screams into the hedge"
+ ],
+ [
+  4.06,
+  "mk_751.mp3",
+  0.6,
+  1.0,
+  "crash into the hedge"
+ ],
+ [
+  4.32,
+  "x_kaching.mp3",
+  0.28,
+  1.0,
+  "kaching: cash out of the hedge"
+ ],
+ [
+  5.2,
+  "mk_1300.mp3",
+  0.45,
+  1.0,
+  "bolt 1"
+ ],
+ [
+  5.2,
+  "x_indian_scream.mp3",
+  0.28,
+  1.6,
+  "neighbour screams (bolt 1)"
+ ],
+ [
+  5.75,
+  "mk_1279.mp3",
+  0.45,
+  0.7,
+  "bolt 2"
+ ],
+ [
+  6.3,
+  "mk_2601.mp3",
+  0.45,
+  1.0,
+  "bolt 3 zap"
+ ],
+ [
+  7.0,
+  "evil_cat_laugh.mp3",
+  0.27,
+  1.4,
+  "heh heh: he owns a mansion"
+ ],
+ [
+  9.35,
+  "mk_1576.mp3",
+  0.45,
+  0.6,
+  "jet dives"
+ ],
+ [
+  9.85,
+  "mk_1180.mp3",
+  0.55,
+  1.3,
+  "jet hits the pool"
+ ],
+ [
+  9.85,
+  "mk_1311.mp3",
+  0.35,
+  1.2,
+  "splash"
+ ],
+ [
+  9.9,
+  "x_bruh.mp3",
+  0.5,
+  0.8,
+  "bruh: jet in his pool"
+ ],
+ [
+  11.36,
+  "x_kaching.mp3",
+  0.38,
+  1.4,
+  "kaching: fifty million"
+ ],
+ [
+  14.68,
+  "mk_2888.mp3",
+  0.4,
+  0.5,
+  "slips on the peel"
+ ],
+ [
+  14.9,
+  "mk_2498.mp3",
+  0.5,
+  0.5,
+  "lands on his butt"
+ ],
+ [
+  14.9,
+  "x_oof.mp3",
+  0.45,
+  0.7,
+  "oof: Jaden slips"
+ ],
+ [
+  14.92,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 1"
+ ],
+ [
+  15.95,
+  "mk_3215.mp3",
+  0.45,
+  0.75,
+  "sprinkler in his face"
+ ],
+ [
+  15.98,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 2"
+ ],
+ [
+  16.17,
+  "mk_2167.mp3",
+  0.3,
+  0.25,
+  "hands slap over his face"
+ ],
+ [
+  17.5,
+  "mk_2091.mp3",
+  0.55,
+  0.4,
+  "ball hits his head"
+ ],
+ [
+  17.5,
+  "x_oof.mp3",
+  0.45,
+  0.7,
+  "oof: ball"
+ ],
+ [
+  17.52,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 3"
+ ],
+ [
+  17.72,
+  "mk_2089.mp3",
+  0.3,
+  1.0,
+  "ball bounces away"
+ ],
+ [
+  19.8,
+  "mk_2380.mp3",
+  0.25,
+  0.5,
+  "letter paper"
+ ],
+ [
+  24.86,
+  "x_hmm.mp3",
+  0.5,
+  0.9,
+  "hmm: thinking"
+ ],
+ [
+  25.74,
+  "mk_2390.mp3",
+  0.3,
+  4.4,
+  "storm rain"
+ ],
+ [
+  28.15,
+  "x_huh.mp3",
+  0.55,
+  0.4,
+  "huh: the rain stopped"
+ ],
+ [
+  30.4,
+  "mk_17.mp3",
+  0.22,
+  1.3,
+  "birds chirp as the rain stops"
+ ],
+ [
+  30.75,
+  "mk_1279.mp3",
+  0.42,
+  0.7,
+  "thunder: bolt hits Jaden"
+ ],
+ [
+  30.75,
+  "x_mario_coin.mp3",
+  0.28,
+  0.6,
+  "coin (bolt on Jaden)"
+ ],
+ [
+  30.8,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 4"
+ ],
+ [
+  32.55,
+  "mk_2163.mp3",
+  0.35,
+  0.35,
+  "kick"
+ ],
+ [
+  32.6,
+  "mk_2980.mp3",
+  0.5,
+  0.7,
+  "kick hits the machine"
+ ],
+ [
+  32.65,
+  "mk_1844.mp3",
+  0.3,
+  0.8,
+  "machine rattles"
+ ],
+ [
+  34.5,
+  "mk_389.mp3",
+  0.4,
+  0.3,
+  "can 1"
+ ],
+ [
+  34.64,
+  "mk_389.mp3",
+  0.38,
+  0.3,
+  "can 2"
+ ],
+ [
+  34.78,
+  "mk_389.mp3",
+  0.4,
+  0.3,
+  "can 3"
+ ],
+ [
+  34.92,
+  "mk_389.mp3",
+  0.38,
+  0.3,
+  "can 4"
+ ],
+ [
+  35.0,
+  "mk_1844.mp3",
+  0.32,
+  0.3,
+  "machine shakes"
+ ],
+ [
+  35.45,
+  "mk_2149.mp3",
+  0.4,
+  0.3,
+  "can hits Jaden"
+ ],
+ [
+  35.45,
+  "x_oof.mp3",
+  0.45,
+  0.7,
+  "oof: soda can"
+ ],
+ [
+  35.47,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 5"
+ ],
+ [
+  36.15,
+  "mk_1993.mp3",
+  0.25,
+  0.5,
+  "coins on the counter"
+ ],
+ [
+  36.5,
+  "mk_2384.mp3",
+  0.3,
+  0.3,
+  "ticket torn off"
+ ],
+ [
+  37.9,
+  "mk_2369.mp3",
+  0.45,
+  1.15,
+  "scratching"
+ ],
+ [
+  39.1,
+  "mk_2833.mp3",
+  0.35,
+  0.5,
+  "slushie blasts Jaden"
+ ],
+ [
+  40.8,
+  "x_bruh.mp3",
+  0.5,
+  0.8,
+  "bruh"
+ ],
+ [
+  42.72,
+  "mk_1059.mp3",
+  0.4,
+  1.6,
+  "clock ticking"
+ ],
+ [
+  44.4,
+  "mk_197.mp3",
+  0.55,
+  1.1,
+  "three knocks"
+ ],
+ [
+  45.72,
+  "mk_1538.mp3",
+  0.45,
+  1.3,
+  "car speeds in"
+ ],
+ [
+  46.6,
+  "fs_492071_5186268.mp3",
+  0.4,
+  0.6,
+  "car skids to the kerb"
+ ],
+ [
+  47.15,
+  "mk_1564.mp3",
+  0.35,
+  0.5,
+  "car door"
+ ],
+ [
+  47.94,
+  "mk_2380.mp3",
+  0.3,
+  0.4,
+  "fans the cash"
+ ],
+ [
+  48.24,
+  "x_kaching.mp3",
+  0.35,
+  1.0,
+  "kaching: money"
+ ],
+ [
+  49.0,
+  "mk_1300.mp3",
+  0.6,
+  1.5,
+  "bolt hits the car"
+ ],
+ [
+  49.0,
+  "x_mario_coin.mp3",
+  0.3,
+  0.7,
+  "coin (bolt on the car)"
+ ],
+ [
+  49.05,
+  "mk_1562.mp3",
+  0.55,
+  1.5,
+  "car explodes"
+ ],
+ [
+  49.05,
+  "x_ching_small.mp3",
+  0.3,
+  1.4,
+  "Jaden counter 7"
+ ],
+ [
+  49.1,
+  "mk_1331.mp3",
+  0.25,
+  3.5,
+  "car burning"
+ ],
+ [
+  49.62,
+  "x_kaching.mp3",
+  0.35,
+  1.2,
+  "kaching: cash out of the wreck"
+ ]
+]

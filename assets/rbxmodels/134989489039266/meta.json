@@ -1,0 +1,24 @@
+{
+ "id": 134989489039266,
+ "name": "Stylized Retail Counter",
+ "size_m": [
+  2.355,
+  1.564,
+  0.875
+ ],
+ "materials": [
+  "mat~Metal~cda76d",
+  "mat~Neon~75d8db",
+  "mat~SmoothPlastic~23696d",
+  "mat~SmoothPlastic~242b31",
+  "mat~SmoothPlastic~303b45",
+  "mat~SmoothPlastic~328f91",
+  "mat~SmoothPlastic~f6ebdd",
+  "mat~SmoothPlastic~ffffff"
+ ],
+ "parts": 28,
+ "skipped_invisible": 0,
+ "unions_skipped": 23,
+ "decals": 0,
+ "warnings": []
+}

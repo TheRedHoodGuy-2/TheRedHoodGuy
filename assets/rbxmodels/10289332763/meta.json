@@ -1,0 +1,26 @@
+{
+ "id": 10289332763,
+ "name": "Bloxy Cola Vending Machine [Open Pls!]",
+ "size_m": [
+  1.397,
+  2.38,
+  1.606
+ ],
+ "materials": [
+  "mat~Metal~111111",
+  "mat~Metal~343434",
+  "mat~Metal~635f62",
+  "mat~Metal~bebebe",
+  "mat~Plastic~7b7a7c~t5",
+  "mat~Plastic~cdcdcd"
+ ],
+ "parts": 24,
+ "skipped_invisible": 2,
+ "unions_skipped": 2,
+ "decals": 1,
+ "unions": 9,
+ "warnings": [
+  "union asset 10289360524: no MeshData inside",
+  "union asset 10289360582: no MeshData inside"
+ ]
+}

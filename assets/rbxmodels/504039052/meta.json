@@ -1,0 +1,20 @@
+{
+ "id": 504039052,
+ "name": "Model",
+ "size_m": [
+  1.301,
+  0.884,
+  0.952
+ ],
+ "materials": [
+  "mat~Slate~a3a2a5",
+  "mat~Wood~a3a2a5",
+  "mat~Wood~a3a2a5~t7"
+ ],
+ "parts": 14,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "unions": 1,
+ "warnings": []
+}

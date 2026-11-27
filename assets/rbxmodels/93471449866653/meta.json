@@ -1,0 +1,24 @@
+{
+ "id": 93471449866653,
+ "name": "Stylized Store Display",
+ "size_m": [
+  1.496,
+  1.665,
+  0.659
+ ],
+ "materials": [
+  "mat~Metal~d9af58",
+  "mat~SmoothPlastic~258c89",
+  "mat~SmoothPlastic~75b8d5",
+  "mat~SmoothPlastic~b69ad6",
+  "mat~SmoothPlastic~b9ddd0",
+  "mat~SmoothPlastic~f17e73",
+  "mat~SmoothPlastic~fff1d8",
+  "mat~Wood~d7aa76"
+ ],
+ "parts": 34,
+ "skipped_invisible": 0,
+ "unions_skipped": 17,
+ "decals": 0,
+ "warnings": []
+}

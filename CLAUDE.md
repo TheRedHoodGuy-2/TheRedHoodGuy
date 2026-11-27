@@ -59,8 +59,9 @@ every message of his and every reply -> session log.
 - Never push to GitHub without his OK (an "overnight / push it" OK covers that run). Fetch / rebase before pushing.
 - Secrets: Roblox cookie at ~/.rbx_cookie, Gemini key at /home/claude/explainer-kit/secrets/gemini_key, Fish key when
   sent: never printed, logged, committed or put in memory. Never use the main-account password he once pasted. Never share his email.
+- His meme SFX pack + where each goes: library/sfx_xavier/README.md.
 - SFX: real recordings only (library/sfx_catalog.json Mixkit, Freesound CC0), never synthesized, mixed by tools/sfxmix.py from topics/<t>/sfx/cues.json. ONLY sounds something on screen makes (steps, slaps, falls, skids, the swap poof); no gasps/voices nobody on screen makes, no record scratches / drones / stings stacked on the ending. Liked (2026-11-25 01:30): giggles from on-screen laughers, a few whooshes, ticking for a countdown, heartbeat for tension, swap sparkles in moderation, a meme 'bruh' on a deadpan joke. Moderate, never spammed.
-- Music: the track Xavier sends, ~10 dB under the voice with sidechain ducking; whole mix loudnorm -14 LUFS. Captions + title are a separate layer (tools/captions.py, burnt after render).
+- Music: library/music/regular_bg_temporex_numbers.mp3 (the regular track, never switch unless he says; Xavier 2026-11-27 21:00) or the track Xavier sends, ~10 dB under the voice with sidechain ducking; whole mix loudnorm -14 LUFS. Captions + title are a separate layer (tools/captions.py, burnt after render).
 - No vignette, no cloth folds / crease maps, no impact freezes / hit-stops, no bloom wash, no speckle noise.
 - Clipping: near zero. Mild clipping is not acceptable.
 - Models are real: imported from a proper source (Roblox catalog / Creator Store, Poly Haven) or modelled after
@@ -92,6 +93,8 @@ every message of his and every reply -> session log.
   (on-screen stair climbs, pushing big furniture, long contact chains). Never call a gesture impossible on R6: pose it
   (jazz hands = arms up / out + shimmer; snap = forearm flick + real snap SFX) or ask him for a pose example. New sets
   are fine: BUILD them, never swap a location to dodge a build. List every new set / model / cast member.
+- LORE CAMEOS (Xavier 2026-11-27 00:59, loved the mailman on skates): every video gets at least one recurring-cast
+  callback (mailman on skates, Mrs. Pam's pink car) as a gag or background detail, never explained.
 - The script goes to Xavier as a beat list; nothing is built until he approves it.
 
 ## 5. Voice, lip sync, faces
@@ -188,6 +191,9 @@ every message of his and every reply -> session log.
   real seat (raycast the chair). The chair moves back before someone stands.
 - No default reactions (both hands up + shocked face, jumping, T-pose recoil). Adults react like adults. A shock is
   springy for a beat, then the body moves on.
+- EMOTIONS MATCH THE MOMENT (Xavier 2026-11-27 19:30): before every face key ask what the character feels about what is
+  happening RIGHT NOW. Worried about overdue rent = nervous / sad, never a smile. A smile / smug only when the story gives
+  them a reason to be pleased. Audit every face key against its line before any review render.
 - NO STILL FRAMES (Xavier 2026-11-25): a shot is never 'camera arrives, person does one thing, then freezes while the camera pushes'. Every shot has continuous action start to end; cut ON action and let the next shot continue the motion; give people secondary actions / reactions so the story flows between shots instead of a string of frozen vignettes. Check: in every shot, something besides the camera moves in the last half.
 - Holds are never frozen: drift toward the next pose + breathing / sway idle. Eased moves ('back' default, 'snap' only
   for impacts). Overlap: hips, torso, head, arms 2-4 frames apart.
@@ -231,3 +237,17 @@ shots.js, camera.js, sets/ (suburb, town, classroom, house, roomkit), build.js (
 tools/: render.mjs, still.mjs, shot.mjs, flap.py, tts_gemini.py, lookmeter.py, cammotion.py, clipcheck.js, rbxm.py,
 roblox/fetch.py (catalog items), facesprites.py, eyerig2.py. library/: cast.json, characters.json, sfx_catalog.json.
 Everything renders in the cloud workspace (Three.js, SwiftShader, 2 cores). Nothing runs on Xavier's laptop.
+
+## 13. Readability (Xavier 2026-11-27 Lucky Me notes)
+- First 2 s = a MID-ACTION hit with its real SFX (the Police video's door kick is the model). First 5 s: action into action.
+- Every claim the narrator makes is SHOWN at once (richer -> cash poof + SFX; rich man -> gold, money). Every action reads; cause before effect; never cut before a strike / fall lands. SFX on every action.
+
+## 14. Every video ends with the SUBSCRIBE PROMPT (Xavier 2026-11-27)
+- ~2.3 s selfie POV: that video's lore character (Lucky Me: Jaden) in Xavier's selfie pose (scenes/lucky_me.js P.selfie +
+  P.selfieWave: phone arm up at the lens, free hand doing a loose yo/sup wave), camera just past the raised hand looking
+  down at him, a backdrop from that video (Lucky Me: his burning car), saying the recorded "subscribe for more" line with
+  lip sync. No text on screen. Nothing in his free hand.
+- Subscribe card (Xavier 20:24): YouTube dark card at y ~1250-1430 (above Shorts UI, under nothing), button tapped -> Subscribed (topics/<t>/subscribe_ui.json in/tap/out).
+- Captions = style v2 (tools/captions_v2.py): one word at a time, small, white bold, dark outline, centred a bit below mid.
+- Pop gate: node tools/popcheck.mjs <scene> <dur> must print nothing (no actor vanishing / jumping off a cut).
+- Final renders only after Xavier OKs the review video. Never speculative.

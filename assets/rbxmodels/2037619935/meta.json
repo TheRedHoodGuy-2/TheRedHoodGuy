@@ -1,0 +1,28 @@
+{
+ "id": 2037619935,
+ "name": "Slurpee Machine",
+ "size_m": [
+  0.951,
+  3.428,
+  1.253
+ ],
+ "materials": [
+  "mat~Metal~0989cf",
+  "mat~Metal~0989cf~t5",
+  "mat~Metal~1b2a35",
+  "mat~Metal~635f62",
+  "mat~Metal~9fa1ac",
+  "mat~Metal~a3a2a5",
+  "mat~Metal~f8f8f8",
+  "mat~Metal~ff5959",
+  "mat~Metal~ff5959~t5",
+  "mat~Neon~f8f8f8",
+  "mat~Plastic~1b2a35",
+  "mat~Plastic~635f62"
+ ],
+ "parts": 60,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

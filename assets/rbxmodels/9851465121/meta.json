@@ -1,0 +1,17 @@
+{
+ "id": 9851465121,
+ "name": "Meshes/InflatableDonut1",
+ "size_m": [
+  3.685,
+  1.022,
+  3.776
+ ],
+ "materials": [
+  "mat~SmoothPlastic~a62205"
+ ],
+ "parts": 1,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 0,
+ "warnings": []
+}

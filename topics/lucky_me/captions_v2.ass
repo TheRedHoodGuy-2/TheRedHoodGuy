@@ -1,0 +1,281 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Word,Montserrat Black,140,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,8,4,5,0,0,0,1
+Style: Pill,Poppins,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: CLabel,Poppins,54,&H00FFFFFF,&H00FFFFFF,&H00120E7A,&H00000000,-1,0,0,0,100,100,1,0,1,4,0,5,0,0,0,1
+Style: CNum,Poppins,84,&H00120E7A,&H00120E7A,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Plus,Poppins,92,&H001FD2FF,&H001FD2FF,&H00120E7A,&H00000000,-1,0,0,0,100,100,0,0,1,5,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 2,0:00:00.00,0:00:00.30,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IN
+Dialogue: 2,0:00:00.30,0:00:00.44,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THIS
+Dialogue: 2,0:00:00.44,0:00:00.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TOWN
+Dialogue: 2,0:00:00.96,0:00:01.02,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:01.02,0:00:01.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}UNLUCKIER
+Dialogue: 2,0:00:01.42,0:00:01.56,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}YOU
+Dialogue: 2,0:00:01.56,0:00:01.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ARE
+Dialogue: 2,0:00:01.96,0:00:02.06,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:02.06,0:00:02.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RICHER
+Dialogue: 2,0:00:02.22,0:00:02.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}YOU
+Dialogue: 2,0:00:02.42,0:00:02.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}GET
+Dialogue: 2,0:00:02.96,0:00:03.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}YOU
+Dialogue: 2,0:00:03.04,0:00:03.50,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}SEE
+Dialogue: 2,0:00:03.50,0:00:03.76,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}EVERY
+Dialogue: 2,0:00:03.76,0:00:04.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BAD
+Dialogue: 2,0:00:04.04,0:00:04.26,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THING
+Dialogue: 2,0:00:04.26,0:00:04.88,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}PAYS
+Dialogue: 2,0:00:05.02,0:00:05.14,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MY
+Dialogue: 2,0:00:05.14,0:00:05.30,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEIGHBOR
+Dialogue: 2,0:00:05.30,0:00:05.50,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}GOT
+Dialogue: 2,0:00:05.50,0:00:05.64,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HIT
+Dialogue: 2,0:00:05.64,0:00:05.78,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BY
+Dialogue: 2,0:00:05.78,0:00:06.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}LIGHTNING
+Dialogue: 2,0:00:06.00,0:00:06.28,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THREE
+Dialogue: 2,0:00:06.28,0:00:06.92,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TIMES
+Dialogue: 2,0:00:06.92,0:00:07.08,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NOW
+Dialogue: 2,0:00:07.08,0:00:07.20,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HE
+Dialogue: 2,0:00:07.20,0:00:07.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OWNS
+Dialogue: 2,0:00:07.40,0:00:07.60,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}A
+Dialogue: 2,0:00:07.60,0:00:08.20,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MANSION
+Dialogue: 2,0:00:08.28,0:00:08.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:08.42,0:00:08.56,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RICHEST
+Dialogue: 2,0:00:08.56,0:00:08.78,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MAN
+Dialogue: 2,0:00:08.78,0:00:08.94,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IN
+Dialogue: 2,0:00:08.94,0:00:09.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TOWN
+Dialogue: 2,0:00:09.40,0:00:09.58,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HIS
+Dialogue: 2,0:00:09.58,0:00:09.84,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}JET
+Dialogue: 2,0:00:09.84,0:00:10.14,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}CRASHED
+Dialogue: 2,0:00:10.14,0:00:10.30,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}INTO
+Dialogue: 2,0:00:10.30,0:00:10.44,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HIS
+Dialogue: 2,0:00:10.44,0:00:10.66,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OWN
+Dialogue: 2,0:00:10.66,0:00:11.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}POOL
+Dialogue: 2,0:00:11.36,0:00:11.50,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FIFTY
+Dialogue: 2,0:00:11.50,0:00:12.20,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MILLION
+Dialogue: 2,0:00:12.40,0:00:12.50,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BUT
+Dialogue: 2,0:00:12.50,0:00:12.68,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I'VE
+Dialogue: 2,0:00:12.68,0:00:12.86,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEVER
+Dialogue: 2,0:00:12.86,0:00:13.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BEEN
+Dialogue: 2,0:00:13.00,0:00:13.58,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}UNLUCKY
+Dialogue: 2,0:00:13.58,0:00:13.74,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NOT
+Dialogue: 2,0:00:13.74,0:00:14.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ONCE
+Dialogue: 2,0:00:14.58,0:00:14.70,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MY
+Dialogue: 2,0:00:14.70,0:00:14.90,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BEST
+Dialogue: 2,0:00:14.90,0:00:15.10,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FRIEND
+Dialogue: 2,0:00:15.10,0:00:15.36,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}JADEN
+Dialogue: 2,0:00:15.36,0:00:15.60,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IS
+Dialogue: 2,0:00:15.60,0:00:15.74,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:15.74,0:00:16.28,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}UNLUCKIEST
+Dialogue: 2,0:00:16.28,0:00:16.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}KID
+Dialogue: 2,0:00:16.48,0:00:17.08,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ALIVE
+Dialogue: 2,0:00:17.08,0:00:17.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}AND
+Dialogue: 2,0:00:17.22,0:00:17.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HE'S
+Dialogue: 2,0:00:17.48,0:00:17.70,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ALWAYS
+Dialogue: 2,0:00:17.70,0:00:18.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RIGHT
+Dialogue: 2,0:00:18.00,0:00:18.18,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEXT
+Dialogue: 2,0:00:18.18,0:00:18.34,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TO
+Dialogue: 2,0:00:18.34,0:00:18.82,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ME
+Dialogue: 2,0:00:18.86,0:00:19.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THEN
+Dialogue: 2,0:00:19.04,0:00:19.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MOM
+Dialogue: 2,0:00:19.22,0:00:19.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}SAT
+Dialogue: 2,0:00:19.42,0:00:19.54,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ME
+Dialogue: 2,0:00:19.54,0:00:20.08,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}DOWN
+Dialogue: 2,0:00:20.22,0:00:20.36,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IF
+Dialogue: 2,0:00:20.36,0:00:20.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}WE
+Dialogue: 2,0:00:20.48,0:00:20.64,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}DON'T
+Dialogue: 2,0:00:20.64,0:00:20.84,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}PAY
+Dialogue: 2,0:00:20.84,0:00:21.02,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RENT
+Dialogue: 2,0:00:21.02,0:00:21.18,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BY
+Dialogue: 2,0:00:21.18,0:00:21.74,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FRIDAY
+Dialogue: 2,0:00:21.74,0:00:21.86,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}WE
+Dialogue: 2,0:00:21.86,0:00:22.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}LOSE
+Dialogue: 2,0:00:22.04,0:00:22.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:22.22,0:00:22.74,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HOUSE
+Dialogue: 2,0:00:22.94,0:00:23.10,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:23.10,0:00:23.28,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEEDED
+Dialogue: 2,0:00:23.28,0:00:23.58,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ONE
+Dialogue: 2,0:00:23.58,0:00:23.86,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BAD
+Dialogue: 2,0:00:23.86,0:00:24.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THING
+Dialogue: 2,0:00:24.04,0:00:24.18,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TO
+Dialogue: 2,0:00:24.18,0:00:24.36,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}HAPPEN
+Dialogue: 2,0:00:24.36,0:00:24.52,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TO
+Dialogue: 2,0:00:24.52,0:00:24.82,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ME
+Dialogue: 2,0:00:24.82,0:00:24.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}JUST
+Dialogue: 2,0:00:24.96,0:00:25.60,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ONE
+Dialogue: 2,0:00:25.74,0:00:26.34,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MONDAY
+Dialogue: 2,0:00:26.36,0:00:26.46,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:26.46,0:00:26.64,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}STOOD
+Dialogue: 2,0:00:26.64,0:00:26.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OUTSIDE
+Dialogue: 2,0:00:26.96,0:00:27.14,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IN
+Dialogue: 2,0:00:27.14,0:00:27.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}A
+Dialogue: 2,0:00:27.22,0:00:28.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THUNDERSTORM
+Dialogue: 2,0:00:28.04,0:00:28.14,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:28.14,0:00:28.32,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RAIN
+Dialogue: 2,0:00:28.32,0:00:28.68,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}STOPPED
+Dialogue: 2,0:00:28.68,0:00:29.16,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RIGHT
+Dialogue: 2,0:00:29.16,0:00:29.56,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OVER
+Dialogue: 2,0:00:29.56,0:00:30.18,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}ME
+Dialogue: 2,0:00:30.36,0:00:30.36,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}A
+Dialogue: 2,0:00:30.36,0:00:30.62,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}RAINBOW
+Dialogue: 2,0:00:30.62,0:00:30.90,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}CAME
+Dialogue: 2,0:00:30.90,0:00:31.52,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OUT
+Dialogue: 2,0:00:31.70,0:00:32.10,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TUESDAY
+Dialogue: 2,0:00:32.20,0:00:32.24,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:32.24,0:00:32.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}KICKED
+Dialogue: 2,0:00:32.42,0:00:32.58,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:32.58,0:00:32.76,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}VENDING
+Dialogue: 2,0:00:32.76,0:00:33.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MACHINE
+Dialogue: 2,0:00:33.04,0:00:33.18,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THAT
+Dialogue: 2,0:00:33.18,0:00:33.36,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}EATS
+Dialogue: 2,0:00:33.36,0:00:33.92,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}EVERYONE'S
+Dialogue: 2,0:00:33.92,0:00:34.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MONEY
+Dialogue: 2,0:00:34.50,0:00:34.68,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FIVE
+Dialogue: 2,0:00:34.68,0:00:34.96,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FREE
+Dialogue: 2,0:00:34.96,0:00:35.34,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}SODAS
+Dialogue: 2,0:00:35.34,0:00:35.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FELL
+Dialogue: 2,0:00:35.48,0:00:36.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}OUT
+Dialogue: 2,0:00:36.10,0:00:36.72,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}WEDNESDAY
+Dialogue: 2,0:00:36.78,0:00:36.84,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:36.84,0:00:36.98,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BOUGHT
+Dialogue: 2,0:00:36.98,0:00:37.12,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}A
+Dialogue: 2,0:00:37.12,0:00:37.32,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}LOTTERY
+Dialogue: 2,0:00:37.32,0:00:37.90,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TICKET
+Dialogue: 2,0:00:37.94,0:00:38.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:38.00,0:00:38.22,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}WANTED
+Dialogue: 2,0:00:38.22,0:00:38.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}TO
+Dialogue: 2,0:00:38.42,0:00:38.92,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}LOSE
+Dialogue: 2,0:00:39.08,0:00:39.20,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}I
+Dialogue: 2,0:00:39.20,0:00:39.42,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}WON
+Dialogue: 2,0:00:39.42,0:00:39.58,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:39.58,0:00:39.88,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FLIPPING
+Dialogue: 2,0:00:39.88,0:00:40.76,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}JACKPOT
+Dialogue: 2,0:00:40.76,0:00:40.90,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BUT
+Dialogue: 2,0:00:40.90,0:00:41.10,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}KIDS
+Dialogue: 2,0:00:41.10,0:00:41.50,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}CAN'T
+Dialogue: 2,0:00:41.50,0:00:41.64,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FREAKING
+Dialogue: 2,0:00:41.64,0:00:41.98,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}CASH
+Dialogue: 2,0:00:41.98,0:00:42.54,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IT
+Dialogue: 2,0:00:42.72,0:00:43.20,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}FRIDAY
+Dialogue: 2,0:00:43.46,0:00:43.52,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}4
+Dialogue: 2,0:00:43.52,0:00:44.12,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}59
+Dialogue: 2,0:00:44.34,0:00:44.44,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THE
+Dialogue: 2,0:00:44.44,0:00:44.78,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}LANDLORD
+Dialogue: 2,0:00:44.78,0:00:45.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}KNOCKED
+Dialogue: 2,0:00:45.72,0:00:45.84,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}THEN
+Dialogue: 2,0:00:45.84,0:00:46.08,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}JADEN
+Dialogue: 2,0:00:46.08,0:00:46.26,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}PULLED
+Dialogue: 2,0:00:46.26,0:00:46.40,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}UP
+Dialogue: 2,0:00:46.40,0:00:46.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}IN
+Dialogue: 2,0:00:46.48,0:00:46.60,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}A
+Dialogue: 2,0:00:46.60,0:00:46.80,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BRAND
+Dialogue: 2,0:00:46.80,0:00:47.00,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEW
+Dialogue: 2,0:00:47.00,0:00:47.26,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}SPORTS
+Dialogue: 2,0:00:47.26,0:00:47.88,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}CAR
+Dialogue: 2,0:00:47.94,0:00:48.04,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}NEED
+Dialogue: 2,0:00:48.04,0:00:48.24,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}SOME
+Dialogue: 2,0:00:48.24,0:00:48.48,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}MONEY
+Dialogue: 2,0:00:48.48,0:00:48.92,Word,,0,0,0,,{\an5\move(540,1374,540,1340,0,110)\fscx45\fscy45\t(0,90,\fscx126\fscy126)\t(90,160,\fscx92\fscy92)\t(160,230,\fscx100\fscy100)}BRO
+Dialogue: 0,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H2C26E8&\bord0\shad0}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:14.62,0:00:14.92,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:14.62,0:00:14.92,CLabel,,0,0,0,,{\an5\move(470,-8,470,252,0,260)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:14.62,0:00:14.92,CNum,,0,0,0,,{\an5\move(782,-7,782,253,0,260)}0
+Dialogue: 0,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:14.92,0:00:15.98,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:14.92,0:00:15.98,CLabel,,0,0,0,,{\an5\pos(470,252)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:14.92,0:00:15.98,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)}1
+Dialogue: 7,0:00:14.92,0:00:15.77,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 0,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:15.98,0:00:17.52,Pill,,0,0,0,,{\pos(0,0)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:15.98,0:00:17.52,CLabel,,0,0,0,,{\an5\pos(470,252)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:15.98,0:00:17.52,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)}2
+Dialogue: 7,0:00:15.98,0:00:16.83,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 0,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:17.52,0:00:18.84,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:17.52,0:00:18.84,CLabel,,0,0,0,,{\an5\pos(470,252)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:17.52,0:00:18.84,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)\fad(0,180)}3
+Dialogue: 7,0:00:17.52,0:00:18.37,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 0,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H2C26E8&\bord0\shad0}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:30.40,0:00:30.80,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:30.40,0:00:30.80,CLabel,,0,0,0,,{\an5\move(470,-8,470,252,0,260)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:30.40,0:00:30.80,CNum,,0,0,0,,{\an5\move(782,-7,782,253,0,260)}3
+Dialogue: 0,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:30.80,0:00:31.68,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:30.80,0:00:31.68,CLabel,,0,0,0,,{\an5\pos(470,252)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:30.80,0:00:31.68,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)\fad(0,180)}4
+Dialogue: 7,0:00:30.80,0:00:31.65,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 0,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H2C26E8&\bord0\shad0}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:35.12,0:00:35.47,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:35.12,0:00:35.47,CLabel,,0,0,0,,{\an5\move(470,-8,470,252,0,260)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:35.12,0:00:35.47,CNum,,0,0,0,,{\an5\move(782,-7,782,253,0,260)}4
+Dialogue: 0,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:35.47,0:00:36.08,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:35.47,0:00:36.08,CLabel,,0,0,0,,{\an5\pos(470,252)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:35.47,0:00:36.08,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)\fad(0,180)}5
+Dialogue: 7,0:00:35.47,0:00:36.32,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 0,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H2C26E8&\bord0\shad0}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:47.22,0:00:49.05,Pill,,0,0,0,,{\move(0,-260,0,0,0,260)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:47.22,0:00:49.05,CLabel,,0,0,0,,{\an5\move(470,-8,470,252,0,260)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:47.22,0:00:49.05,CNum,,0,0,0,,{\an5\move(782,-7,782,253,0,260)}5
+Dialogue: 0,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H0A0518&\1a&H40&\bord0\shad0}{\p1}m 266 200 l 826 200 b 848.0 200 866 218.0 866 240 l 866 284 b 866 306.0 848.0 324 826 324 l 266 324 b 244.0 324 226 306.0 226 284 l 226 240 b 226 218.0 244.0 200 266 200{\p0}
+Dialogue: 1,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 260 180 l 820 180 b 846.4 180 868 201.6 868 228 l 868 272 b 868 298.4 846.4 320 820 320 l 260 320 b 233.6 320 212 298.4 212 272 l 212 228 b 212 201.6 233.6 180 260 180{\p0}
+Dialogue: 2,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H2C26E8&\bord0\shad0\t(0,60,\1c&HFFFFFF&)\t(60,280,\1c&H2C26E8&)}{\p1}m 260 188 l 820 188 b 842.0 188 860 206.0 860 228 l 860 272 b 860 294.0 842.0 312 820 312 l 260 312 b 238.0 312 220 294.0 220 272 l 220 228 b 220 206.0 238.0 188 260 188{\p0}
+Dialogue: 3,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&HFFFFFF&\1a&HC0&\bord0\shad0}{\p1}m 251 198 l 701 198 b 709.25 198 716 204.75 716 213 l 716 213 b 716 221.25 709.25 228 701 228 l 251 228 b 242.75 228 236 221.25 236 213 l 236 213 b 236 204.75 242.75 198 251 198{\p0}
+Dialogue: 3,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H120E7A&\bord0\shad0}{\p1}m 782 192 b 813.9 192 840 218.1 840 250 b 840 281.9 813.9 308 782 308 b 750.1 308 724 281.9 724 250 b 724 218.1 750.1 192 782 192{\p0}
+Dialogue: 4,0:00:49.05,0:00:50.60,Pill,,0,0,0,,{\pos(0,0)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)\1c&H1FD2FF&\bord0\shad0}{\p1}m 782 200 b 809.5 200 832 222.5 832 250 b 832 277.5 809.5 300 782 300 b 754.5 300 732 277.5 732 250 b 732 222.5 754.5 200 782 200{\p0}
+Dialogue: 5,0:00:49.05,0:00:50.60,CLabel,,0,0,0,,{\an5\pos(470,252)\fad(0,180)\org(540,250)\t(0,70,\frz-8)\t(70,170,\frz6)\t(170,300,\frz0)}JADEN'S BAD LUCK
+Dialogue: 6,0:00:49.05,0:00:50.60,CNum,,0,0,0,,{\an5\move(782,180,782,253,0,150)\fscx175\fscy175\t(0,150,\fscx90\fscy90)\t(150,260,\fscx100\fscy100)\fad(0,180)}6
+Dialogue: 7,0:00:49.05,0:00:49.90,Plus,,0,0,0,,{\an5\move(910,250,920,130,0,850)\fscx60\fscy60\t(0,140,\fscx120\fscy120)\t(140,260,\fscx100\fscy100)\fad(0,380)}+1
+Dialogue: 20,0:00:50.78,0:00:52.85,Pill,,0,0,0,,{\an7\move(0,40,0,0,0,220)\fad(200,160)\bord0\shad0\1c&H000000&\1a&HA0&\blur6\p1}m 170 1260 l 922 1260 b 946.2 1260 966 1279.8 966 1304 l 966 1392 b 966 1416.2 946.2 1436 922 1436 l 170 1436 b 145.8 1436 126 1416.2 126 1392 l 126 1304 b 126 1279.8 145.8 1260 170 1260{\p0}
+Dialogue: 21,0:00:50.78,0:00:52.85,Pill,,0,0,0,,{\an7\move(0,40,0,0,0,220)\fad(200,160)\bord0\shad0\1c&H1A1A1A&\1a&H10&\p1}m 164 1250 l 916 1250 b 940.2 1250 960 1269.8 960 1294 l 960 1382 b 960 1406.2 940.2 1426 916 1426 l 164 1426 b 139.8 1426 120 1406.2 120 1382 l 120 1294 b 120 1269.8 139.8 1250 164 1250{\p0}
+Dialogue: 22,0:00:50.78,0:00:52.85,Pill,,0,0,0,,{\an7\move(0,40,0,0,0,220)\fad(200,160)\bord0\shad0\1c&H2A1FD6&\p1}m 212 1282 b 242.8 1282 268 1307.2 268 1338 b 268 1368.8 242.8 1394 212 1394 b 181.2 1394 156 1368.8 156 1338 b 156 1307.2 181.2 1282 212 1282{\p0}
+Dialogue: 23,0:00:50.78,0:00:52.85,Pill,,0,0,0,,{\an4\move(290,1356,290,1316,0,220)\fad(200,160)\fnPoppins\b1\fs50\1c&HFFFFFF&\bord0\shad0}TheRedHoodGuy
+Dialogue: 23,0:00:50.78,0:00:52.85,Pill,,0,0,0,,{\an4\move(292,1404,292,1364,0,220)\fad(200,160)\fnPoppins\b1\fs34\1c&HAAAAAA&\bord0\shad0}@theredhoodguy
+Dialogue: 22,0:00:50.78,0:00:51.83,Pill,,0,0,0,,{\an5\move(791,1378,791,1338,0,220)\fad(200,0)\bord0\shad0\1c&H3300FF&\t(969,1049,\fscx93\fscy93)\p1}m 46 0 l 224 0 b 249.3 0 270 20.7 270 46 l 270 50 b 270 75.3 249.3 96 224 96 l 46 96 b 20.7 96 0 75.3 0 50 l 0 46 b 0 20.7 20.7 0 46 0{\p0}
+Dialogue: 23,0:00:50.78,0:00:51.83,Pill,,0,0,0,,{\an5\move(791,1378,791,1338,0,220)\fad(200,0)\fnPoppins\b1\fs44\1c&HFFFFFF&\bord0\shad0}Subscribe
+Dialogue: 22,0:00:51.83,0:00:52.85,Pill,,0,0,0,,{\an5\pos(791,1338)\fad(0,160)\bord0\shad0\1c&H3A3A3A&\fscx93\fscy93\t(0,140,\fscx103\fscy103)\t(140,240,\fscx100\fscy100)\p1}m 46 0 l 224 0 b 249.3 0 270 20.7 270 46 l 270 50 b 270 75.3 249.3 96 224 96 l 46 96 b 20.7 96 0 75.3 0 50 l 0 46 b 0 20.7 20.7 0 46 0{\p0}
+Dialogue: 23,0:00:51.83,0:00:52.85,Pill,,0,0,0,,{\an5\pos(791,1338)\fad(0,160)\fnPoppins\b1\fs40\1c&HF1F1F1&\bord0\shad0}Subscribed ✓
+Dialogue: 25,0:00:51.33,0:00:51.97,Pill,,0,0,0,,{\an7\move(190,170,0,0,0,330)\fad(120,160)\bord3\3c&H555555&\shad0\1c&HFFFFFF&\1a&H30&\p1}m 831 1326 b 847.5 1326 861 1339.5 861 1356 b 861 1372.5 847.5 1386 831 1386 b 814.5 1386 801 1372.5 801 1356 b 801 1339.5 814.5 1326 831 1326{\p0}
+Dialogue: 24,0:00:51.75,0:00:52.20,Pill,,0,0,0,,{\an7\org(831,1356)\bord0\shad0\1c&HFFFFFF&\1a&H60&\fscx40\fscy40\t(0,450,\fscx260\fscy260\1a&HFF&)\p1}m 831 1316 b 853.0 1316 871 1334.0 871 1356 b 871 1378.0 853.0 1396 831 1396 b 809.0 1396 791 1378.0 791 1356 b 791 1334.0 809.0 1316 831 1316{\p0}

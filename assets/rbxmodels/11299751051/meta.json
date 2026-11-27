@@ -1,0 +1,24 @@
+{
+ "id": 11299751051,
+ "name": "Slushie Machine",
+ "size_m": [
+  1.429,
+  1.771,
+  2.223
+ ],
+ "materials": [
+  "mat~Concrete~0960c3",
+  "mat~Concrete~750000",
+  "mat~Concrete~ffb000",
+  "mat~DiamondPlate~635f62",
+  "mat~DiamondPlate~a3a2a5",
+  "mat~Glass~a3a2a5~t8",
+  "mat~Plastic~635f62"
+ ],
+ "parts": 52,
+ "skipped_invisible": 0,
+ "unions_skipped": 0,
+ "decals": 6,
+ "unions": 9,
+ "warnings": []
+}

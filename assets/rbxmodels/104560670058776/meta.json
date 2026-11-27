@@ -1,0 +1,27 @@
+{
+ "id": 104560670058776,
+ "name": "Stylized Mini-Market",
+ "size_m": [
+  4.216,
+  3.23,
+  3.629
+ ],
+ "materials": [
+  "mat~Concrete~555d59",
+  "mat~Concrete~b8b7a9",
+  "mat~Glass~89c6d0~t3",
+  "mat~Metal~b5c3c4",
+  "mat~SmoothPlastic~297650",
+  "mat~SmoothPlastic~70a64c",
+  "mat~SmoothPlastic~dc5143",
+  "mat~SmoothPlastic~e7eddb",
+  "mat~SmoothPlastic~efc84e",
+  "mat~SmoothPlastic~f2dfb4",
+  "mat~SmoothPlastic~faf3df"
+ ],
+ "parts": 54,
+ "skipped_invisible": 0,
+ "unions_skipped": 2,
+ "decals": 0,
+ "warnings": []
+}

@@ -19,4 +19,4 @@ export async function openPage({ width = 540, height = 960, dsf = 1 } = {}) {
   });
   return { browser, page };
 }
-export async function load(page, rel) { await page.goto('http://local/' + rel); await page.waitForFunction(() => window.ready === true, null, { timeout: 180000 }); }
+export async function load(page, rel) { await page.goto('http://local/' + rel); await page.waitForFunction(() => window.ready === true, null, { timeout: +(process.env.LOAD_MS || 180000) }); }

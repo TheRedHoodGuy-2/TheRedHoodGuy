@@ -413,3 +413,92 @@ defend every pixel of it, it does not get sent.
 ## 2026-11-27 21:45 Brain, not Obsidian
 - Token savings come from STRUCTURE (index + task packs), not from the app. GitHub stays; Obsidian = viewer only.
 - "Promise it won't make results choppier": the QUALITY GUARD in docs/BRAIN.md is binding. Never skip a pack file to save tokens.
+## 2026-11-27 00:59 Lucky Me shot list approved whole
+- All 38 shots approved, including the Jaden clue design and the bolt-hits-the-car ending. The mailman-on-skates cameo got
+  "I love you": LORE CAMEOS land. Every video gets at least one recurring-cast callback (mailman on skates, Mrs. Pam's pink
+  car, ...) as a gag or a background detail, never explained.
+
+## 2026-11-27 02:46 Lucky Me pose sheet approved
+- All 37 poses approved ("very decent"). Go ahead: fix every open item (Jaden's escalating outfit clues, charred neighbor,
+  landlord knock shot, slip framing, full-quality light checks), then the lq review video.
+
+## 2026-11-27 17:28 Lucky Me rev2 notes (Xavier) -- NOT yet fixed, budget out; do these first next chat
+- HOOK = MID-ACTION in the first 2 s (Police video held people because the cop kicked the door open at frame 1). Vase must hit his head AND SHATTER, with a real glass-break SFX. First 5 s = action leading into action.
+- "The richer you get": SHOW richer at once: cash poof + money SFX, obvious.
+- Mailman: reads as frozen -> frozen -> in a bush. Skates NOT visible on his feet. Must be obvious he was skating and crashed into the hedge (visible skating, visible fall).
+- SFX are NOT optional on this video: every action gets its real sound.
+- "Richest man in town": must SELL rich (gold, gold car, money), not just a pool. "50 million" = money poof (he likes the money FX) + SFX.
+- Banana peel: hidden in/near the house, not readable. Camera must clearly catch Jaden slipping on it. The shot after it makes no sense to him.
+- "He's always right next to me": the object hitting his head + money must be clear what and why.
+- Vending machine: 4 sodas fall out, machine shakes, the 5th SHOOTS out and hits Jaden's head (cause before effect).
+- Lottery ticket looks bad (blue/brown): get a high-grade, colourful ticket design.
+- "Friday 4:59": unexplained grey circle on a brown thing (the clock prop). Flagged twice. Claude wrongly blamed the lotto roll; it is THIS shot.
+- Lightning ("need some money, bro"): he likes the beat, but the cut comes before the strike lands. Must be obvious what got struck (car burns/explodes or Jaden hit), THEN cut.
+- RULE (general): every action must read on screen; a cause is shown before its effect.
+
+## 2026-11-27 18:19 Lucky Me rev3 notes (Xavier)
+- Mailman skates looked wrong/unnatural: use the skates exactly as in the previous video (they were good). LOOK at the frame before sending.
+- Rainbow beat: Jaden's bad luck must be SHOWN: as the rainbow comes out, lightning strikes JADEN (in frame). Birds chirp when the rain stops / rainbow.
+- Friday 4:59 clock: works, but should look better.
+- Banana walk: peel, Jaden, the boy all look like they FLOAT above the ground; the mailman skating also floats. Contacts must read (shadows, feet on ground).
+- Mansion balcony: nobody can tell who that is. Make it obvious (same charred neighbour, now rich).
+- Sprinkler: water reads as "circles". Make real-looking water; Jaden visibly WET. Beat: he falls, water pours on him, camera on his face as he puts a hand over his face ("bro"), he stands, THEN the money. Intentional.
+- Final notice letter should look realistic/better.
+- "I needed one bad thing": pan across his back is good; the front shot had a rectangle covering half the screen. Do: pan across his back, cut to a sharp pan across his FRONT, him seated in a thinking pose (back arched, elbows down, hands together, chin on hands).
+- Vending: Jaden disappears for a frame when the can hits.
+- Lottery ticket store shot: camera clips into the wall on the right, then something cuts in from the left: glitchy.
+- SFX: DON'T overdo it. Too many pops/boings ("poke poke poke"). Only the basic real ones; tell Xavier where to add more and he'll find them. He liked the "bruh".
+- NEW: SUBSCRIBE PROMPT at the end of every video: the video's lore character (here Jaden) in a SELFIE POV (camera = his phone, arm up toward the lens, phone not seen), short text "Subscribe for more".
+
+## 2026-11-27 19:02 Lucky Me rev4 notes (Xavier)
+- HATES the payout "drum hit" sound (Casino jackpot alarm, mk_1991): removed. Wants a "ka-ching"/catching sound instead (he can add it). Each lightning hit on the neighbour = boom + ka-ching.
+- Mailman STILL floats above the road; banana-walk Jaden + boy still float. (Checked: the road / path surfaces are not at y=0. Ground every actor on the real surface under them, by raycast.)
+- The thinker pose was terrible (hand behind his back) and the lighting looked bad. Use his pose code ("sit") as given. ALWAYS check a pose from the shot's camera before sending.
+- Thunder on Jaden at the rainbow: keep, but remove its sound (he adds it).
+- "SUBSCRIBE FOR MORE" was cut off at the sides: CHECK TEXT FRAMES BEFORE RENDERING. Fit inside the safe area.
+- Subscribe selfie: use his "sub" pose + his camera angle (high, front, slightly to Jaden's right, close). Use ANGLES: a pose that looks wrong from the front can look right from the shot's angle.
+
+## 2026-11-27 19:16 (Xavier, angry, rightly)
+- NEVER start the final render before he has OK'd the review video. No speculative finals. (Rule already existed; broken twice today.)
+- The pool vanished under grass after the town lift: every global change gets a full stills sweep of EVERY location before sending.
+- Word captions: he hates them. No burnt word captions on this video. Keep only the subscribe text.
+- Subscribe shot must match HIS screenshot (camera high, in front, off his right shoulder; both hands visible), Jaden NOT clipping into the car, fire must look like real flames (not glowing balls).
+
+## 2026-11-27 19:30 Lucky Me rev6 notes (Xavier): "now it looks okay"
+- Remove the "SUBSCRIBE FOR MORE" caption; our caption style is bad; he'll send a friend's reference for a NEW caption style.
+- EMOTIONS: always the right emotion for the moment (the boy smiled while worrying about overdue rent). Rule added to CLAUDE.md sec 10.
+- Selfie: the object in Jaden's free hand (his Friday arm cast) read as a mystery thing: removed for the selfie; free hand does a loose yo/sup wave.
+- He recorded Jaden's line "subscribe for more you guys" (topics/lucky_me/voice/jaden_subscribe.mp3): Jaden says it on the outro, lip-synced.
+
+## 2026-11-27 19:56 Lucky Me rev7 notes (Xavier): "I like everything"
+- Jaden + boy vanished at the end of the rain scene: keys that move an actor to the next location fired a few hundredths
+  BEFORE the cut. Fixed all 5; new gate tools/popcheck.mjs <scene> <dur> (every frame, must print nothing).
+- He wants the FULL finished video (no CapCut): his SFX (kaching for riches, small ching per Jaden counter tick, man scream
+  for the mailman, Indian scream restarting on each neighbour bolt, mario coin on every bolt, the Sunset Tag heh-heh laugh on
+  "owns a mansion", bruh on the jet crash, oof when Jaden falls / ball / soda, Roblox hmm while thinking, huh when the rain
+  stops, kaching on "money"), VINE BOOM on Jaden's first 3 bad things (file not on disk: asked him to resend), and two
+  background tracks (one switching to another mid-video: he will send them).
+- CAPTION STYLE v2 (friend's reference): one word at a time, white bold, dark outline, small, centred a bit below mid.
+  tools/captions_v2.py. Optional 2D counter pill at the top (Jaden's bad-luck counter: shows only while he's on screen,
+  pops + small ching on every bad thing).
+- LOOK: wants a bright SUNNY day, energetic colour, not grey/depressing. Lucky Me grade: exposure 1.36, saturation 1.34,
+  low shadow tint, sun 4.0, fill 1.25. (post.js now reads every grade value live.)
+- THE SUBSCRIBE PROMPT IS NOW THE DEFAULT: the selfie pose (P.selfie / selfieWave, his pose code) + the camera just past
+  the raised phone hand, looking down; the video's lore character does it in front of a backdrop from that video, saying
+  his recorded line. Reuse every video.
+
+## 2026-11-27 20:10 rev8 notes (Xavier)
+- Removed the AC-smash sounds under "never been unlucky". Small ching was being cut off (now plays its full length).
+- Counter was BORING: rebuilt as an eye-catching game-UI badge (red pill, yellow rim, drop shadow, gold coin number):
+  slides in, wobbles + flashes on every hit, number drops in with overshoot, "+1" floats off. Shows ONLY while Jaden is the
+  point of the shot (removed from the jackpot, which is the boy's moment; counter now 6 ticks).
+- Neighbour scream: once, on the first bolt only, quieter. Hmm only when we see his face (24.86).
+- Rainbow: thunder sound back on the bolt hitting Jaden; dark smoke plumes off him (big enough to read in the wide).
+
+## 2026-11-27 20:24 (Lucky Me rev10 notes)
+- Friday beat: "Friday" = landlord marching to the door, "4:59" = clock zoom, "the landlord" = mom + son shocked, then the knock. Every word of a time / place line gets its own matching picture.
+- Brightness okay now; final render gets our full realistic lighting + cinematic look.
+- Captions still too small: bigger (140) and bouncier pop (45% -> 126% -> 92% -> 100% + rise).
+- Subscribe outro: clean YouTube-style card at the bottom (above the Shorts UI zone, never behind captions), Subscribe button gets tapped and flips to Subscribed. Default for every video.
+
+- 2026-11-27 22:38: final would not play (15 Mbps, no faststart). Finals ship at 8-10 Mbps, -movflags +faststart, level 4.1.

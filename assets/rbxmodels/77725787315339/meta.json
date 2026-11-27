@@ -1,0 +1,21 @@
+{
+ "id": 77725787315339,
+ "name": "Stylized Display Rack",
+ "size_m": [
+  1.435,
+  2.037,
+  0.592
+ ],
+ "materials": [
+  "mat~Metal~e7b653",
+  "mat~SmoothPlastic~20595d",
+  "mat~SmoothPlastic~287f83",
+  "mat~SmoothPlastic~f3e8d0",
+  "mat~Wood~d4ac79"
+ ],
+ "parts": 24,
+ "skipped_invisible": 0,
+ "unions_skipped": 26,
+ "decals": 0,
+ "warnings": []
+}

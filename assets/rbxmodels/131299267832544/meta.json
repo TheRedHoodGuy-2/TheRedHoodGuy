@@ -1,0 +1,43 @@
+{
+ "id": 131299267832544,
+ "name": "CornerStore",
+ "size_m": [
+  11.689,
+  6.271,
+  13.864
+ ],
+ "materials": [
+  "mat~Brick~a3a2a5~t8",
+  "mat~Concrete~396b23",
+  "mat~Concrete~729169",
+  "mat~Concrete~868587",
+  "mat~Concrete~908f91",
+  "mat~Concrete~9fa1ac",
+  "mat~Concrete~a3a2a5",
+  "mat~Concrete~c4281c",
+  "mat~Concrete~f8d96d",
+  "mat~Concrete~ffb000",
+  "mat~Glass~970000",
+  "mat~Glass~c2caf8~t3",
+  "mat~Glass~e6e4e7~t3",
+  "mat~Metal~4b974b",
+  "mat~Metal~635f62",
+  "mat~Metal~a3a2a5",
+  "mat~Metal~cacbd1",
+  "mat~Neon~fff7c9~t3",
+  "mat~Neon~ffffb2~t3",
+  "mat~Pebble~a3a2a5~t7",
+  "mat~Plastic~635f62",
+  "mat~Plastic~a3a2a5",
+  "mat~Plastic~e7e7ec",
+  "mat~Plastic~f8f8f8~t5",
+  "mat~SmoothPlastic~00ff00",
+  "mat~SmoothPlastic~111111",
+  "mat~SmoothPlastic~1b2a35"
+ ],
+ "parts": 221,
+ "skipped_invisible": 11,
+ "unions_skipped": 1,
+ "decals": 10,
+ "warnings": []
+}
