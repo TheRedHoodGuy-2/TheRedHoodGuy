@@ -101,3 +101,4 @@ Quality guard in BRAIN.md is binding (DIRECTOR_NOTES always, grep before decisio
 - 2026-11-27: final = 1080x1920 30 fps (~3.9 s/frame, ~1.7 h for 53 s), delivered at 10-12 Mbps + faststart.
 - 2026-11-27: post.js reads the live post object each frame (was a copy, so per-shot exposure / DOF never applied).
 - 2026-11-27: town.js sits at GRADE -0.45; scenes lift T.root +.45 and raycast the ground (ground()) for every actor / prop.
+- 2026-11-27 23:16: the Lucky Me sunny grade is the channel look -> engine/look.js SUNNY, default for every new video.

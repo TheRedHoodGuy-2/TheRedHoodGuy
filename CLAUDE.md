@@ -148,6 +148,8 @@ every message of his and every reply -> session log.
   go wrong, soft warm when safe). Indoors warm, outdoors cool sky + warm sun; every place its own colour.
 - Sun placement: choose it so the main camera directions see the LIT side of faces (3/4 front key), never a whole
   video of backlit dark faces. Faces never black, never flat.
+- CHANNEL LOOK = SUNNY in engine/look.js (Lucky Me grade: saturation 1.34, contrast 1.1, warm gain, bright blue sky, sun 4.0
+  el 52, exterior exposure 1.36; Xavier 2026-11-27 'this video looks a lot nice'). Default for every new video unless he says.
 - Grade (GRADE in look.js): darker than our old videos, true blacks, richer warm colour, highlights rolled off white.
 - Gate: `python3 tools/lookmeter.py <frames|video>` vs Gneef (brightness .31, sat .57, black .00, top .76, warm .04).
   Read the numbers with judgement (a red hoodie filling a close-up pushes warm / sat), but bright / black / top must pass.

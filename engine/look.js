@@ -17,6 +17,15 @@ export const GRADE = {   // look study targets: Gneef brightness .31, saturation
           lift: [.004, .008, .02], gain: [1.05, 1.0, .95], bloom: .3, bloomRadius: .6, bloomThreshold: 1.35, bloomCap: 2.4, bloomTint: '#ffb391', grain: .025, ca: .004, volume: 0 },
 };
 
+// THE CHANNEL LOOK (Xavier 2026-11-27 23:16, Lucky Me: "this video looks a lot nice"). Default for every exterior from now on.
+// Use: Object.assign(post, SUNNY.post); paintSky(LOOK.sky, ...SUNNY.sky); LOOK.setSun(az, SUNNY.sun.el, SUNNY.sun);
+// exposure: exterior 1.36, interior 1.3 (couch-room style warm window key: exposure 1.05 + SpotLight '#ffe8cc' 11), storm 1.05.
+export const SUNNY = {
+  post: { saturation: 1.34, contrast: 1.1, tintAmt: .12, gain: [1.06, 1.02, .96] },
+  sky: ['#2a7ae8', '#d8eeff'],
+  sun: { el: 52, color: '#fff4dc', intensity: 4.0, fill: 1.25 },
+  exposure: { exterior: 1.36, interior: 1.3, storm: 1.05 },
+};
 export function paintSky(sky, top, horizon, glow = null, glowDir = null) {   // recolour the dome (time of day); glow = warm patch round the sun
   const p = sky.geometry.attributes.position, c = sky.geometry.attributes.color, a = new THREE.Color(top), b = new THREE.Color(horizon), g = glow ? new THREE.Color(glow) : null, v = new THREE.Vector3(), col = new THREE.Color();
   for (let i = 0; i < p.count; i++) { v.fromBufferAttribute(p, i).normalize(); const k = Math.max(0, v.y); col.copy(b).lerp(a, Math.pow(k, .55));
