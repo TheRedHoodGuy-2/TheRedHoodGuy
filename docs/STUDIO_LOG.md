@@ -294,3 +294,4 @@ Next phase: 7 faces / face animation / lip sync.
   dropped the sus angle at 03:44 for "one exciting weird rule + twist that people want to stay for". Lesson: retention is not
   fewer words (DIRECTOR_NOTES 03:32).
   PENDING: he sends a finger-snap SFX; mailman restyle needs his OK if Match Day is ever made.
+- 2026-11-27 Asset audit: all code, scenes, docs, research, analytics, scripts, logs and mp3 SFX were already in git. Added the gitignored irreplaceable audio (every voice.wav, the .wav SFX sources) + topics/clap_cops/thumb.jpg. Not in git by design: assets/roblox/ (11 GB catalog cache, re-fetch with tools/roblox/fetch.py + models.py by the ids in library/cast.json and the scene files), out/ (renders; finals delivered to Xavier).
