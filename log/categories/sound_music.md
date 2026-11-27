@@ -286,3 +286,5 @@ sont go rendering for another hour ro , on a precheck vid
 
 - **2026-11-27 22:18** (2026-11-27_lucky-me.md): Give me the MP3 background music I gave to you. When I want to start making working on the script, I'll let you know so you can help me out.
 - **2026-11-27 22:40** (2026-11-27_lucky-me.md): (20:37) Final render: apply the right textures (texture stuff you do for finals), fix the lighting inside the house where mom talks to him, put my channel picture where the R is on the subscribe card, then render the final. (21:00) Background audio: use our regular one, don't switch. (22:16) Worried the exit code 1 errors cancel the render. (22:21) sent the music mp3.
+
+- **2026-11-27 22:58** (2026-11-27_lucky-me.md): (22:44-22:49) keep 15 with index at front if 8 reduces quality; try 12mbps; sent bruh sound, hope you renamed and uploaded all sounds and context; try 10mbps
