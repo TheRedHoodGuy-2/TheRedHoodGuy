@@ -4,14 +4,14 @@ Raw: every Xavier message and every Claude reply, verbatim, per session in log/s
 Categories: every Xavier message filed by topic (one message can sit in several).
 
 ## Categories
-- log/categories/camera.md (37 notes)
-- log/categories/captions_titles.md (28 notes)
+- log/categories/camera.md (38 notes)
+- log/categories/captions_titles.md (29 notes)
 - log/categories/faces_characters_clothes.md (40 notes)
-- log/categories/posing_animation.md (68 notes)
-- log/categories/script_story.md (58 notes)
-- log/categories/sound_music.md (64 notes)
-- log/categories/workflow_rules.md (58 notes)
-- log/categories/world_lighting.md (27 notes)
+- log/categories/posing_animation.md (69 notes)
+- log/categories/script_story.md (59 notes)
+- log/categories/sound_music.md (65 notes)
+- log/categories/workflow_rules.md (59 notes)
+- log/categories/world_lighting.md (28 notes)
 
 ## Sessions
 - log/sessions/2026-11-16_fresh-start.md
