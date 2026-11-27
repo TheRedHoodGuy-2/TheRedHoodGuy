@@ -283,3 +283,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 21:36** (2026-11-27_lucky-me.md): if we moved the workflow from githbu to obsidian would it be better and more efficient? could you set it up and those brains i used to see online
 
 - **2026-11-27 21:41** (2026-11-27_lucky-me.md): And instead, uh, so there's no online version of Obsidian or something that we can be using. Or you're right, you're very very right. I thought because people say Obsidian is a more efficient way to save on tokens because you don't have to like because Claude doesn't have to read a lot of files anymore. This is now it's efficient. It's more efficient to read files when it's on Obsidian or when it's through Obsidian. But I understand your cloud concern. What if I was going to if every time I wanted to make a video, I do it from my desktop? Would Obsidian be more efficient then? And I am now on Claude Max. I don't think switching to Sonnet is an option anymore for now.
+
+- **2026-11-27 22:18** (2026-11-27_lucky-me.md): Give me the MP3 background music I gave to you. When I want to start making working on the script, I'll let you know so you can help me out.
