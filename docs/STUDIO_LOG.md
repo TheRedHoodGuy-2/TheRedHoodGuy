@@ -295,3 +295,12 @@ Next phase: 7 faces / face animation / lip sync.
   fewer words (DIRECTOR_NOTES 03:32).
   PENDING: he sends a finger-snap SFX; mailman restyle needs his OK if Match Day is ever made.
 - 2026-11-27 Asset audit: all code, scenes, docs, research, analytics, scripts, logs and mp3 SFX were already in git. Added the gitignored irreplaceable audio (every voice.wav, the .wav SFX sources) + topics/clap_cops/thumb.jpg. Not in git by design: assets/roblox/ (11 GB catalog cache, re-fetch with tools/roblox/fetch.py + models.py by the ids in library/cast.json and the scene files), out/ (renders; finals delivered to Xavier).
+- 2026-11-27 HANDOFF (end of the Lucky Me chat; next chat starts a new video):
+  DONE: Lucky Me final out/lucky_me_FINAL_10M.mp4 / _12M.mp4 (out/ not in git). Title "Luck Moves to Your Neighbour 🍀".
+  NEW: captions v2 (bouncy one-word, Montserrat Black 140) + animated bad-luck counter (topics/lucky_me/jaden_counter.json),
+  subscribe prompt (library/subscribe_prompts.json pose+camera library; card + avatar), engine/luckfx.js (poof, cashRain,
+  shatter, bolt, fire, smoke, spray), engine/props/skates.js (mailman), engine/designs/luckprops.js, tools/popcheck.mjs,
+  tools/render_chunks.sh, tools/musicmix.sh, tools/finalize.sh, library/sfx_xavier/ (his meme SFX + README of where each
+  goes), library/music/ (regular track), library/brand/channel_avatar.jpg, research/caption_reference_2026-11-27.mp4.
+  OPEN: vine boom SFX never received (ask for it). Subscribe character changes per video; pose stays selfie_wave_v1 until
+  he sends a new pose + screenshot.

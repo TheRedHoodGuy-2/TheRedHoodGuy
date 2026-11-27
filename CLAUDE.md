@@ -243,11 +243,17 @@ Everything renders in the cloud workspace (Three.js, SwiftShader, 2 cores). Noth
 - Every claim the narrator makes is SHOWN at once (richer -> cash poof + SFX; rich man -> gold, money). Every action reads; cause before effect; never cut before a strike / fall lands. SFX on every action.
 
 ## 14. Every video ends with the SUBSCRIBE PROMPT (Xavier 2026-11-27)
+- POSE + CAMERA LIBRARY: library/subscribe_prompts.json (each pose has its own camera). Use its 'current' entry until Xavier sends a
+  new pose (pose-editor code + a screenshot of the framing): add it as a new entry, solve the camera to match the screenshot.
+  The CHARACTER changes per video (that video's lore character + a backdrop from that video); Jaden was only Lucky Me.
 - ~2.3 s selfie POV: that video's lore character (Lucky Me: Jaden) in Xavier's selfie pose (scenes/lucky_me.js P.selfie +
   P.selfieWave: phone arm up at the lens, free hand doing a loose yo/sup wave), camera just past the raised hand looking
   down at him, a backdrop from that video (Lucky Me: his burning car), saying the recorded "subscribe for more" line with
   lip sync. No text on screen. Nothing in his free hand.
 - Subscribe card (Xavier 20:24): YouTube dark card at y ~1250-1430 (above Shorts UI, under nothing), button tapped -> Subscribed (topics/<t>/subscribe_ui.json in/tap/out).
-- Captions = style v2 (tools/captions_v2.py): one word at a time, small, white bold, dark outline, centred a bit below mid.
+- Captions = style v2 (tools/captions_v2.py <topic> --counter topics/<t>/<counter>.json): one word at a time, Montserrat Black 140,
+  uppercase, white, outline 8, bouncy pop (45->126->92->100% + rise), y 1340. Optional top counter (label + events + windows json).
+- FINAL STEPS: tools/render_chunks.sh (resumable 1080x1920 30 fps, ~3.9 s/frame) -> tools/musicmix.sh (regular track -17 dB,
+  ducked, loudnorm -14) -> tools/finalize.sh (burn captions + avatar, 10-12 Mbps, +faststart; 15 Mbps would not play on his laptop).
 - Pop gate: node tools/popcheck.mjs <scene> <dur> must print nothing (no actor vanishing / jumping off a cut).
 - Final renders only after Xavier OKs the review video. Never speculative.

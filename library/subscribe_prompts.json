@@ -1,0 +1,94 @@
+{
+ "_how": "Subscribe-prompt pose + camera library (Xavier 2026-11-27 23:01). Each entry = one pose AND the camera that goes with it. The character is NOT always Jaden: each video uses its own lore character + a backdrop from that video. New entries: Xavier sends pose-editor code + a screenshot of the framing; add it here with the camera solved to match the screenshot. Default = the entry named in 'current'.",
+ "current": "selfie_wave_v1",
+ "poses": {
+  "selfie_wave_v1": {
+   "from": "Lucky Me (2026-11-27), Jaden in front of his burning car",
+   "pose": {
+    "armL": {
+     "r": [
+      -1.596,
+      -0.38,
+      -1.234
+     ],
+     "o": [
+      0.129,
+      -0.065,
+      0.136
+     ]
+    },
+    "armR": {
+     "r": [
+      -2.315,
+      -0.59,
+      -0.426
+     ],
+     "o": [
+      -0.422,
+      0.804,
+      0.559
+     ]
+    },
+    "legL": {
+     "r": [
+      0.345,
+      0.019,
+      0.253
+     ],
+     "o": [
+      0.092,
+      0.028,
+      -0.05
+     ]
+    },
+    "legR": {
+     "r": [
+      0.262,
+      0.056,
+      -0.1
+     ],
+     "o": [
+      -0.027,
+      -0.046,
+      -0.055
+     ]
+    },
+    "head": {
+     "r": [
+      -0.307,
+      -0.57,
+      -0.078
+     ]
+    },
+    "root": {
+     "x": -0.204,
+     "y": 0.071,
+     "z": 0.178,
+     "rx": -0.268,
+     "ry": 0.014,
+     "rz": -0.212
+    }
+   },
+   "anim": "free hand (armL) loose yo/sup wave: k=sin(t*7.5), k2=sin(t*7.5+.7); armL.r = [-1.596-.25*k2, -0.38+.15*k, -1.234+.42*k]",
+   "actor_facing_ry": 0,
+   "camera": {
+    "p_rel": [
+     -0.72,
+     "abs y 2.87 (ground 0)",
+     0.5
+    ],
+    "look_rel": [
+     0.3,
+     "abs y 1.45",
+     -0.33
+    ],
+    "fov": 60,
+    "handheld": "sin wobble amplitude .01 on p.x / p.y / look.x",
+    "note": "camera just past his raised right hand (the phone), looking down at him"
+   },
+   "duration_s": 2.28,
+   "line": "subscribe for more you guys (recorded line, lip-synced with talk())",
+   "ui": "subscribe card via tools/captions_v2.py + topics/<t>/subscribe_ui.json {in,tap,out}; avatar library/brand/channel_avatar.jpg overlaid by tools/finalize.sh"
+  }
+ }
+}
