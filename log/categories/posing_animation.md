@@ -274,3 +274,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 [mid-turn] pay extra money right now so that this video can be completed today. How much in extra credits can I pay for to use Opus 5.5? Like if I'm going to pay for usage credits, I guess. How much in naira usage credits can somebody pay for? Can I pay for to finish this video from review to complaints to fixing to final render?
 
 - **2026-11-27 08:55** (2026-11-27_lucky-me.md): With the last 2% usage I have this week, give me ALL you researched and know about retention scripts making hooks action leading etc EVERYTHING you have, I wanna see if I can train chat gpt on script makeing
+
+- **2026-11-27 17:28** (2026-11-27_lucky-me.md): [2026-11-27 17:28 rev2 notes: full list saved verbatim-in-substance to docs/DIRECTOR_NOTES.md under '2026-11-27 17:28 Lucky Me rev2 notes'; hook mid-action vase shatter+SFX, richer poof, mailman skates/crash readable, SFX everywhere, rich man gold, 50M poof, banana peel visible+camera, always-next-to-me clarity, vending 4+1 shoot, new lotto ticket, Friday 4:59 clock circle, lightning must land before cut]

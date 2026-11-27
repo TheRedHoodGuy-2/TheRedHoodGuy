@@ -172,3 +172,5 @@ llet me see the script
 - **2026-11-27 00:59** (2026-11-27_lucky-me.md): I love you. Like I never asked you for lore, but you making that mailman on skates lore, bro. I love you. In fact, no, I approved the whole script.
 
 - **2026-11-27 08:55** (2026-11-27_lucky-me.md): With the last 2% usage I have this week, give me ALL you researched and know about retention scripts making hooks action leading etc EVERYTHING you have, I wanna see if I can train chat gpt on script makeing
+
+- **2026-11-27 17:28** (2026-11-27_lucky-me.md): [2026-11-27 17:28 rev2 notes: full list saved verbatim-in-substance to docs/DIRECTOR_NOTES.md under '2026-11-27 17:28 Lucky Me rev2 notes'; hook mid-action vase shatter+SFX, richer poof, mailman skates/crash readable, SFX everywhere, rich man gold, 50M poof, banana peel visible+camera, always-next-to-me clarity, vending 4+1 shoot, new lotto ticket, Friday 4:59 clock circle, lightning must land before cut]
