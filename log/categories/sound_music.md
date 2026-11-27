@@ -290,3 +290,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 22:58** (2026-11-27_lucky-me.md): (22:44-22:49) keep 15 with index at front if 8 reduces quality; try 12mbps; sent bruh sound, hope you renamed and uploaded all sounds and context; try 10mbps
 
 - **2026-11-27 23:20** (2026-11-27_lucky-me.md): (23:04) Take the 10 Mbps video, thumbnail = frame at 0:49. (sent movie_1_3.mp3 bruh again)
+
+- **2026-11-27 23:59** (2026-11-27_lucky-me.md): (23:55) [revised Dana swap script, now school kids: bus students, class party, school choir, twins in class, bestie Dana, "stated innocent want, loud on purpose" note, speaker, 3-2-1, swap, "I had twenty-four hours" smirk loop] strip the scenes, just gimme the script and how to start the new chat
