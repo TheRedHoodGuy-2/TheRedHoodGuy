@@ -279,3 +279,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 20:40** (2026-11-27_lucky-me.md): (20:24) Friday beat: when it says Friday show the landlord going towards the house door, at 4:59 the clock zoom, at "the landlord" mom and son shocked, then landlord outside. Brightness I think it's okay; in the final apply our normal realistic lighting and cinematic looks. Captions still small, compare Gneef's and the reference I sent, make ours a bit bigger and bouncier. When Jaden says subscribe for more, do a decent UI subscribe button at the bottom (not below YouTube safe zone, not behind captions), maybe being clicked. Put it on the render video so I can see, then I tell you if you can go for the final.
 
 - **2026-11-27 21:40** (2026-11-19_to_25_sunset-tag.md): (21:28) did you upload our sounds, assets, charts, notes to GitHub? comprehensive look?
+
+- **2026-11-27 21:36** (2026-11-27_lucky-me.md): if we moved the workflow from githbu to obsidian would it be better and more efficient? could you set it up and those brains i used to see online
