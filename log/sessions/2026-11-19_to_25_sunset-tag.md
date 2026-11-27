@@ -1066,3 +1066,13 @@ JADEN: "Need some money, bro?"
 ## 2026-11-27 00:55 Claude
 
 Voice in: topics/lucky_me/voice (49.2 s, longest pause 0.62 s, ad-libs kept: five sodas, flipping / freaking jackpot line; script file updated). words.json + flap.json made (Rhubarb not installed here: no M/B/P closures yet). Pushed. Next: new chat on Opus for the scene list.
+
+---
+
+## 2026-11-27 21:40 Xavier
+
+(21:28) did you upload our sounds, assets, charts, notes to GitHub? comprehensive look?
+
+## 2026-11-27 21:40 Claude
+
+Audit: code/docs/notes/research/analytics/scripts/logs/mp3 SFX were already pushed. Gap: *.wav was gitignored (voices, bruh / thud / ceiling-clap SFX) + thumbnail: now pushed. assets/roblox (11 GB cache) and out/ renders not in git by design. Asked about finals archive.
