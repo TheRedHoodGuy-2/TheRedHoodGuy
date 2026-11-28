@@ -282,3 +282,10 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-28 01:24** (2026-11-27_lucky-me.md): (01:16) You gave them the age. Grade 12 kids are 18, 19, super seniors 20. I never said they are kids. They are all 18, high schoolers in grade 12. My viewer base is 17 to 40.
 
 - **2026-11-28 02:25** (2026-11-27_lucky-me.md): (02:14) Furious: models, clothing, faces, textures, hair not on GitHub; Fable needed the Roblox cookie again for the boy's hoodie. GitHub must be the full backup so any chat works from it alone. Upload everything useful, and give me a prompt for my other chats to do the same.
+
+- **2026-11-28 02:17** (2026-11-27_lucky-me.md): GitHub is our full backup (rulebook sec 3). Before anything else:
+1. git fetch + rebase on origin/main.
+2. Run `git status --short --ignored` and commit EVERY useful file that is untracked or ignored: Roblox items in assets/roblox, faces, textures, hair, models, fonts, voice takes (wav/mp3), SFX sources and packs, music, reference files, scene files, tools. Only out/, frames*/, node_modules/ and __pycache__/ stay out.
+3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
+4. Any file over 95 MB: tell me instead of pushing it.
+5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.

@@ -302,3 +302,10 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 - **2026-11-27 23:59** (2026-11-27_lucky-me.md): (23:55) [revised Dana swap script, now school kids: bus students, class party, school choir, twins in class, bestie Dana, "stated innocent want, loud on purpose" note, speaker, 3-2-1, swap, "I had twenty-four hours" smirk loop] strip the scenes, just gimme the script and how to start the new chat
 
 - **2026-11-28 01:20** (2026-11-27_lucky-me.md): (01:14) Sent voice take (Dana / time-for-a-watch script). Direction: Dana's female voice for "Time for you to get a watch, buddy"; comic split screen (Dana top, him bottom, black line, comic dots) on the second ask; mid-swap on "No. What the fuck did you do?"; POV from her body looking at his hands on "I had 24 hours and a list of things to do with my new body", camera pulls out on "my new body"; subscribe = Dana's body "Be a good boy and subscribe for mommy", him crying on the floor behind; choir poofs one by one. lets plan some shots
+
+- **2026-11-28 02:17** (2026-11-27_lucky-me.md): GitHub is our full backup (rulebook sec 3). Before anything else:
+1. git fetch + rebase on origin/main.
+2. Run `git status --short --ignored` and commit EVERY useful file that is untracked or ignored: Roblox items in assets/roblox, faces, textures, hair, models, fonts, voice takes (wav/mp3), SFX sources and packs, music, reference files, scene files, tools. Only out/, frames*/, node_modules/ and __pycache__/ stay out.
+3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
+4. Any file over 95 MB: tell me instead of pushing it.
+5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.

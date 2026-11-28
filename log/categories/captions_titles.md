@@ -107,3 +107,10 @@ but ours look low qual ash
 - **2026-11-27 23:50** (2026-11-27_lucky-me.md): (23:44) ok i wanna work on the next... [Dana swap script: cold open bus pair sing together POOF; rule "if two people say the same words at the same time, they swap lives for 24 hours"; gags (birthday, church choir, twins); Dana never swapped, thinks before every word; perfect life (drives, pool, no chores) marked "the stated innocent want"; her song plant; Friday he tapes a speaker under the bus-stop bench; 3-2-1; they sing, POOF; Dana in his body "SWAP BACK. RIGHT NOW."; "I had twenty-four hours." her body, his smirk at camera, loops into the bus pair] how do i go about it
 
 - **2026-11-28 02:25** (2026-11-27_lucky-me.md): (02:14) Furious: models, clothing, faces, textures, hair not on GitHub; Fable needed the Roblox cookie again for the boy's hoodie. GitHub must be the full backup so any chat works from it alone. Upload everything useful, and give me a prompt for my other chats to do the same.
+
+- **2026-11-28 02:17** (2026-11-27_lucky-me.md): GitHub is our full backup (rulebook sec 3). Before anything else:
+1. git fetch + rebase on origin/main.
+2. Run `git status --short --ignored` and commit EVERY useful file that is untracked or ignored: Roblox items in assets/roblox, faces, textures, hair, models, fonts, voice takes (wav/mp3), SFX sources and packs, music, reference files, scene files, tools. Only out/, frames*/, node_modules/ and __pycache__/ stay out.
+3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
+4. Any file over 95 MB: tell me instead of pushing it.
+5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.

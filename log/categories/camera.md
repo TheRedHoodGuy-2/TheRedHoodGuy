@@ -223,3 +223,10 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 - **2026-11-28 01:45** (2026-11-27_lucky-me.md): (01:27) the ending as a new version, not a replacement. I'm on opus 5.5 high, ensure the shots are top notch, change anything in scenes or shots if you want, fire away
 
 - **2026-11-28 02:40** (2026-11-28_new-body.md): /redhood-new-video New Body. Shots approved in topics/new_body/SHOTS.md (v2 upgrades included), voice in topics/new_body/voice. Build it with stills. New subscribe version rackfocus_crier_v1. The shots may or may not be mid and in this one camera work carries a lot.
+
+- **2026-11-28 02:17** (2026-11-27_lucky-me.md): GitHub is our full backup (rulebook sec 3). Before anything else:
+1. git fetch + rebase on origin/main.
+2. Run `git status --short --ignored` and commit EVERY useful file that is untracked or ignored: Roblox items in assets/roblox, faces, textures, hair, models, fonts, voice takes (wav/mp3), SFX sources and packs, music, reference files, scene files, tools. Only out/, frames*/, node_modules/ and __pycache__/ stay out.
+3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
+4. Any file over 95 MB: tell me instead of pushing it.
+5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.
