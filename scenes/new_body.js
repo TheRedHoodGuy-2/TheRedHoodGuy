@@ -339,18 +339,23 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 10 (Xavier 04:44): NOT a comic. Just how it goes every day: a classmate taps his wrist, "time?", Dana answers on autopilot.
   // The comic split is saved for the ONE special moment (39.12). ---
-  // Xavier 05:04: the classmate who asks Dana the time = MR. BACON (a subscriber's cameo): printed on his tee, front
-  { const tex = new THREE.CanvasTexture((() => { const c = document.createElement('canvas'); c.width = 512; c.height = 256; const g = c.getContext('2d');
-      g.clearRect(0, 0, 512, 256);
-      // a strip of bacon: wavy rashers, dark red meat + cream fat
-      g.save(); g.translate(256, 70); for (const [col, w, dy] of [['#7a1f14', 26, -14], ['#f3d9b5', 12, 0], ['#a3301e', 22, 12]]) { g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.beginPath();
-        for (let x = -150; x <= 150; x += 6) { const y = dy + Math.sin(x / 22) * 12; x === -150 ? g.moveTo(x, y) : g.lineTo(x, y); } g.stroke(); } g.restore();
-      g.font = '900 92px Montserrat, Arial Black, sans-serif'; g.textAlign = 'center'; g.lineJoin = 'round';
-      g.strokeStyle = '#2a120c'; g.lineWidth = 14; g.strokeText('MR. BACON', 256, 205); g.fillStyle = '#ffd04a'; g.fillText('MR. BACON', 256, 205);
-      return c; })());
-    tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
-    const tee = new THREE.Mesh(new THREE.PlaneGeometry(1.5, .75), new THREE.MeshStandardMaterial({ map: tex, transparent: true, roughness: .85, polygonOffset: true, polygonOffsetFactor: -2 }));
-    tee.position.set(0, .05, -1.0); tee.rotation.y = Math.PI; A.kid9.a.rig.parts.torso.add(tee); }
+  // Xavier 05:04 + 05:12: the classmate who asks Dana the time = MR. BACON (a subscriber's cameo). PRINTED INTO HIS SHIRT
+  // (painted on the torso texture's FRONT face, found from the geometry's own UVs), so it sits flat and centred on the chest
+  // like a real Roblox shirt graphic: no floating plane.
+  { const T = A.kid9.a.rig.parts.torso; let mesh = null; T.traverse(m => { if (!mesh && m.isMesh && m.material?.map?.image && m.geometry?.attributes?.normal) mesh = m; });
+    if (mesh) { const gm = mesh.geometry, nA = gm.attributes.normal, uA = gm.attributes.uv; let u0 = 1, u1 = 0, v0 = 1, v1 = 0;
+      for (let k = 0; k < nA.count; k++) if (nA.getZ(k) < -.9) { u0 = Math.min(u0, uA.getX(k)); u1 = Math.max(u1, uA.getX(k)); v0 = Math.min(v0, uA.getY(k)); v1 = Math.max(v1, uA.getY(k)); }
+      const img = mesh.material.map.image, W = img.width, H = img.height, c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d'); g.drawImage(img, 0, 0);
+      const flip = mesh.material.map.flipY !== false, x0 = u0 * W, x1 = u1 * W, y0 = (flip ? 1 - v1 : v0) * H, y1 = (flip ? 1 - v0 : v1) * H, fw = x1 - x0, fh = y1 - y0;
+      g.save(); g.translate(x0 + fw / 2, y0 + fh * .52); const S = fw / 512;
+      // the bacon rasher
+      for (const [col, w, dy] of [['#7a1f14', 26, -14], ['#f3d9b5', 12, 0], ['#a3301e', 22, 12]]) { g.strokeStyle = col; g.lineWidth = w * S; g.lineCap = 'round'; g.beginPath();
+        for (let x = -150; x <= 150; x += 6) { const y = (dy + Math.sin(x / 22) * 12 - 70) * S; x === -150 ? g.moveTo(x * S, y) : g.lineTo(x * S, y); } g.stroke(); }
+      g.font = `900 ${Math.round(84 * S)}px Montserrat, Arial Black, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
+      g.strokeStyle = '#2a120c'; g.lineWidth = 14 * S; g.strokeText('MR. BACON', 0, 50 * S); g.fillStyle = '#ffd04a'; g.fillText('MR. BACON', 0, 50 * S); g.restore();
+      const tex = new THREE.CanvasTexture(c); tex.colorSpace = mesh.material.map.colorSpace; tex.flipY = mesh.material.map.flipY; tex.anisotropy = 4;
+      mesh.material = mesh.material.clone(); mesh.material.map = tex; mesh.material.needsUpdate = true;
+      console.log('BACON uv', u0.toFixed(3), u1.toFixed(3), v0.toFixed(3), v1.toFixed(3), W, H); } else console.log('BACON: no torso mesh'); }
   const BOYC = [HALL.x - .55, HALL.z - 3.2];   // where the boy stands for the 39.12 comic panel
   const ASK = [DL[0] - .62, DL[1] - .98];   // in front of her, along her facing
   A.dana.show(27.54, 32.7); A.kid9.show(27.54, 32.7);
@@ -557,7 +562,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const shakeAt = t => { for (const [a, b, k] of [[0.0, .35, .02], [11.34, 11.6, .02], [40.3, 40.6, .035], [40.84, 41.2, .03]]) if (t >= a && t < b) return k * (1 - (t - a) / (b - a)); return 0; };
 
   // rack focus (shot 17): focus on Dana's face for the line, then over ~.6 s onto the crier; aperture stays on
-  const update = t => {
+  let update = t => {
     const s = SH.slice().reverse().find(q => t >= q.t) || SH[0], u = cl((t - s.t) / s.dur);
     S.update(t); props(t); light(t, s);
     const o = globalThis.VIEW || opts;
@@ -617,6 +622,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
           if (bump > 0) { ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(255,255,255,${(bump * .85).toFixed(2)})`; ctx.fillRect(0, 0, W, H); } }
         ctx.restore(); } };
   };
+  // opts.only = 'actorKey': hide every other actor (close-up checks of a costume / print, Xavier 05:12 'make sure it looks proper')
+  if (opts.only) { const u0 = update; update = t => { u0(t); for (const [k, a] of Object.entries(A)) if (k !== opts.only) a.a.root.visible = false; }; }
   update(opts.t ?? 0);
   return { camera: cam, sun: LOOK.sun, post, update, split, dbg: { A, comic, CAM, cam, bus, C, HAq: HA, HBq: HB } };
 }
