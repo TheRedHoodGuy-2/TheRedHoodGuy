@@ -199,3 +199,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 
 - **2026-11-28 08:37** (2026-11-28_new-body.md): 08:26 quick question you understood the swap yes?? boy a has blue fit, girl b has red, on swap boy a still has blue fit but girl bs hair and face and body but still in the original position where he was as a boy to show a swap happened, and vice versa to the girl, same for same gender, that's what you did right?
 08:37 the concept is so that people can clearly see a swap happened, the example in that wtf scene would be the red hood guy now having Danas face and her hair and body but his same outfit, and she now having his face and hair but her same fit, this is the global concept... but here's the twist: when dana and trig swap, keep their faces the same (trig keeps his face, dana keeps hers) for a stronger tell, then in the ending/sub part swap the faces to complete the transformation. Also the 3d hoodie don't have a female form, so use a 2d one for the swap; after trig and dana swap ditch the 3d hoodie so the body change is obvious.
+
+- **2026-11-28 08:52** (2026-11-28_new-body.md): 08:52 also swap hair colors
