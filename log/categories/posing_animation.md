@@ -309,3 +309,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
 4. Any file over 95 MB: tell me instead of pushing it.
 5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.
+
+- **2026-11-28 04:10** (2026-11-27_lucky-me.md): (02:20-02:42) YOU work on the next video; fix the skill (new chat built grey bodies, didn't understand). Comic split: vertical, two panels like his refs (side by side but vertical), action/feeling like the JJK painted one, masked separate camera shots of the same environment, top camera on her, bottom on him. Effects slightly realistic, not rubbish sphere particles. Sent a hand sketch: slanted gutter, faces top-right / bottom-left.

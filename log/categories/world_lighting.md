@@ -124,3 +124,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-28 01:24** (2026-11-27_lucky-me.md): (01:16) You gave them the age. Grade 12 kids are 18, 19, super seniors 20. I never said they are kids. They are all 18, high schoolers in grade 12. My viewer base is 17 to 40.
 
 - **2026-11-28 02:40** (2026-11-28_new-body.md): /redhood-new-video New Body. Shots approved in topics/new_body/SHOTS.md (v2 upgrades included), voice in topics/new_body/voice. Build it with stills. New subscribe version rackfocus_crier_v1. The shots may or may not be mid and in this one camera work carries a lot.
+
+- **2026-11-28 04:10** (2026-11-27_lucky-me.md): (02:20-02:42) YOU work on the next video; fix the skill (new chat built grey bodies, didn't understand). Comic split: vertical, two panels like his refs (side by side but vertical), action/feeling like the JJK painted one, masked separate camera shots of the same environment, top camera on her, bottom on him. Effects slightly realistic, not rubbish sphere particles. Sent a hand sketch: slanted gutter, faces top-right / bottom-left.
