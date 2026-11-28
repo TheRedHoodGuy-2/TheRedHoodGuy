@@ -137,5 +137,27 @@
   "base": "f021",
   "name": "Mrs. Pam",
   "note": "never shown clearly until the last shot (Clap Cops)"
+ },
+ "dana": {
+  "base": "f006",
+  "name": "Dana (the boy's bestie / homegirl)",
+  "note": "New Body (2026-11-28): preppy, perfect life, thinks before every word. Recurring."
+ },
+ "dana_dad": {
+  "base": "m047",
+  "name": "Dana's dad"
+ },
+ "principal": {
+  "base": "m048",
+  "name": "the school principal",
+  "note": "office suit base; first seen in New Body (choir chain-poof)"
+ },
+ "twinA": {
+  "base": "m014",
+  "name": "the twins (identical, same base twice)"
+ },
+ "twinB": {
+  "base": "m014",
+  "name": "the twins (identical, same base twice)"
  }
 }

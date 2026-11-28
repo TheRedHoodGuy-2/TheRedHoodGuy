@@ -1,0 +1,9 @@
+{
+ "_doc": "Spoken lines (who flaps when). Everything else in take.mp3 is narration: nobody on screen flaps.",
+ "lines": [
+  { "s": 30.42, "e": 31.94, "who": "dana", "text": "Time for you to get a watch, buddy.", "emo": "deadpan / resigned (her tic, not a joke to her)" },
+  { "s": 39.12, "e": 40.28, "who": "dana+boy", "text": "Time for you to get a watch?", "emo": "dana resigned; boy mock-innocent (both flap: the trigger)" },
+  { "s": 40.84, "e": 42.74, "who": "boy_body (Dana inside)", "text": "No. What the fuck did you do?", "emo": "scared -> angry, arms flailing" },
+  { "s": 47.12, "e": 48.42, "who": "dana_body (him inside)", "text": "Be a good boy, and subscribe.", "emo": "smug, to the lens" }
+ ]
+}
