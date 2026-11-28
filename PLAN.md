@@ -52,3 +52,7 @@ Scripts waiting for approval (2026-11-16): `scripts/01_gravity_noon.md`, `02_clo
    Then ~200 named characters, each with a personality and a fixed outfit, kept in a character bank and reused.
    Also fix: 3D sleeves not lined up with the arms (clipping), the hem strip.
 7. Scripts / format: Xavier explains the new niche and retention strategy last.
+
+## FUTURE GOALS (when Xavier has a PC + Blender, working locally)
+- [ ] 3D DYNAMIC HEADS (Xavier 2026-11-28): import Roblox Dynamic Heads (e.g. Mr. Bacon Man's "Scarred Cold Stare Emo" 92857720575200)
+      properly in Blender (mesh + face rig), so subscriber cameos can keep their real 3D head. Until then: our 2D faceSets only.

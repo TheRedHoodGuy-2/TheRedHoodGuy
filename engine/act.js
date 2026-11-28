@@ -106,7 +106,7 @@ export function stage(scene, { POSES = {}, ground = () => 0, flap = null } = {})
     const D = `assets/faces/sprites/${A.st}`, M = 'assets/faces/sprites/05_intimidating', E = cellOf(emo), [sh, row] = ROW[emo] || ['E', 0], mdy = A.st === '05_intimidating' ? 0 : -18;
     const eyes = blink ? `${D}/D03.png` : `${D}/${E}e.png`;
     const layers = st ? [eyes, { u: `${M}/${sh}${String(row * 4 + 1 + st).padStart(2, '0')}.png`, dy: mdy }] : blink ? [eyes, { u: `${M}/${sh}${String(row * 4 + 1).padStart(2, '0')}.png`, dy: mdy }] : [`${D}/${E}.png`];
-    A.a.faceNow(layers, AI_PLACE[A.st] || {});
+    A.a.faceNow(layers, { ...(AI_PLACE[A.st] || {}), ...(A.a.char.facePlace || {}) });   // cast.json facePlace overrides (e.g. a lower face under long bangs)
   }
   return S;
 }
