@@ -2,17 +2,14 @@ node_modules/
 out/
 frames*/
 *.wav
-tools/models/
+tools/models/kokoro.onnx
 tools/laptop/bench_*.png
 tools/laptop/bench_log.txt
 reference/**/*.mp4
 reference/**/*.webm
 __pycache__/
 # /assets/roblox/ is COMMITTED (Xavier 2026-11-28: GitHub is the backup; never depend on Roblox staying up)
-topics/*/music/*.wav
 research/dissect/*/frames/
-research/dissect/*/sheets/
-research/dissect/*/audio.wav
 
 # keep the small, irreplaceable audio (Xavier 2026-11-27)
 !topics/*/voice/voice.wav
@@ -23,3 +20,6 @@ research/dissect/*/audio.wav
 # all voice takes + sfx sources/packs are irreplaceable: commit them (Xavier 2026-11-28)
 !topics/*/voice/*.wav
 !topics/*/sfx/pack/*.wav
+# GitHub is the full backup (Xavier 2026-11-28): every wav under topics/ and dissect audio is kept
+!topics/**/*.wav
+!research/dissect/*/audio.wav
