@@ -56,6 +56,10 @@ During a chat: new note -> DIRECTOR_NOTES (same turn); research -> `research/` +
 every message of his and every reply -> session log.
 
 ## 3. Hard rules (never broken)
+- GITHUB IS THE BACKUP (Xavier 2026-11-28, furious): every asset the work uses (Roblox clothing / hair / accessories / models in
+  assets/roblox, faces, textures, fonts, voice takes, SFX, music, references) is COMMITTED the same turn it is fetched or made.
+  A new chat must build any video from the repo alone, with no Roblox cookie and no re-download. Before ending any chat:
+  `git status --short --ignored` and commit anything useful that is untracked or ignored (only out/, frames, node_modules stay out).
 - Never push to GitHub without his OK (an "overnight / push it" OK covers that run). Fetch / rebase before pushing.
 - Secrets: Roblox cookie at ~/.rbx_cookie, Gemini key at /home/claude/explainer-kit/secrets/gemini_key, Fish key when
   sent: never printed, logged, committed or put in memory. Never use the main-account password he once pasted. Never share his email.

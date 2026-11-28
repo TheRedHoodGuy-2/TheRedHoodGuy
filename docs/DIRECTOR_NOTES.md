@@ -502,3 +502,4 @@ defend every pixel of it, it does not get sent.
 - Subscribe outro: clean YouTube-style card at the bottom (above the Shorts UI zone, never behind captions), Subscribe button gets tapped and flips to Subscribed. Default for every video.
 
 - 2026-11-27 22:38: final would not play (15 Mbps, no faststart). Finals ship at 8-10 Mbps, -movflags +faststart, level 4.1.
+- 2026-11-28 02:14: assets/roblox (incl. the boy's hoodie) was gitignored, so Fable needed the cookie again. GitHub = full backup; commit every asset the same turn.
