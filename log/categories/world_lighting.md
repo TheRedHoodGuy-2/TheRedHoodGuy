@@ -122,3 +122,5 @@ also make sure ALLLLLLLLLLLLLLLLLLLLLL like EVERY SINGLE THING weve chatted here
 - **2026-11-27 22:40** (2026-11-27_lucky-me.md): (20:37) Final render: apply the right textures (texture stuff you do for finals), fix the lighting inside the house where mom talks to him, put my channel picture where the R is on the subscribe card, then render the final. (21:00) Background audio: use our regular one, don't switch. (22:16) Worried the exit code 1 errors cancel the render. (22:21) sent the music mp3.
 
 - **2026-11-28 01:24** (2026-11-27_lucky-me.md): (01:16) You gave them the age. Grade 12 kids are 18, 19, super seniors 20. I never said they are kids. They are all 18, high schoolers in grade 12. My viewer base is 17 to 40.
+
+- **2026-11-28 02:40** (2026-11-28_new-body.md): /redhood-new-video New Body. Shots approved in topics/new_body/SHOTS.md (v2 upgrades included), voice in topics/new_body/voice. Build it with stills. New subscribe version rackfocus_crier_v1. The shots may or may not be mid and in this one camera work carries a lot.

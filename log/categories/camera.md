@@ -221,3 +221,5 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 - **2026-11-28 01:35** (2026-11-27_lucky-me.md): (01:22) Cut out the mommy part yourself. Make the ending longish: camera on her while she says be a good boy and subscribe, crier in background visible but out of focus; when she's done, focus shifts to the crier, she blurs, small silence, video ends. Cut the mommy part and get started.
 
 - **2026-11-28 01:45** (2026-11-27_lucky-me.md): (01:27) the ending as a new version, not a replacement. I'm on opus 5.5 high, ensure the shots are top notch, change anything in scenes or shots if you want, fire away
+
+- **2026-11-28 02:40** (2026-11-28_new-body.md): /redhood-new-video New Body. Shots approved in topics/new_body/SHOTS.md (v2 upgrades included), voice in topics/new_body/voice. Build it with stills. New subscribe version rackfocus_crier_v1. The shots may or may not be mid and in this one camera work carries a lot.
