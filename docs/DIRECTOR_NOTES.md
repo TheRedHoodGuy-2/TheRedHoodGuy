@@ -503,3 +503,5 @@ defend every pixel of it, it does not get sent.
 
 - 2026-11-27 22:38: final would not play (15 Mbps, no faststart). Finals ship at 8-10 Mbps, -movflags +faststart, level 4.1.
 - 2026-11-28 02:14: assets/roblox (incl. the boy's hoodie) was gitignored, so Fable needed the cookie again. GitHub = full backup; commit every asset the same turn.
+- 2026-11-28 02:39 (New Body): comic split = two SEPARATE camera shots stacked vertically, slanted gutter (his sketch: low-left to high-right), her top-right looking left, him bottom-left looking right, masked (never in each other's frame), JJK-style energy (colour wash + streaks on the empty side). Effects slightly REALISTIC (real smoke, not sprite balls / tiny particle dots).
+- 2026-11-28 04:44: comic split ONCE only (the special trigger moment); the everyday 'ask Dana the time' is a regular shot. Ending: his selfie pose -> air kiss -> his myPose (phone swing reveals the crier).
