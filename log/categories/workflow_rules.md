@@ -289,3 +289,7 @@ sont go rendering for another hour ro , on a precheck vid
 3. If .gitignore blocks something useful, fix .gitignore. Never commit ~/.rbx_cookie, API keys or anything secret: check before pushing.
 4. Any file over 95 MB: tell me instead of pushing it.
 5. Push, then confirm with a fresh clone that the files are there, and tell me what you added.
+
+- **2026-11-28 10:50** (2026-11-28_new-body.md): 10:31 notes (bus camera + full bus, choir 2D counter, no-chores blue screen, hated screaming mouth, hair colours, subscribe pose/screenshot + myPose code, crier into the hallway + better animation; show bus stills only for approval, then full render; 2D animations can carry the video; SFX after full render)
+10:47 sets look empty/unrealistic: did we lose the world from the "Roblox video workflow overhaul" chat? POV = she is holding a camera, not a hand in front of the camera.
+10:50 hand is invisible, don't fuck up the last part; subscribe part = Dana's complete model, Trig's model for the crying.
