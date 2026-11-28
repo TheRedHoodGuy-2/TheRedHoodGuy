@@ -313,3 +313,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 - **2026-11-28 04:10** (2026-11-27_lucky-me.md): (02:20-02:42) YOU work on the next video; fix the skill (new chat built grey bodies, didn't understand). Comic split: vertical, two panels like his refs (side by side but vertical), action/feeling like the JJK painted one, masked separate camera shots of the same environment, top camera on her, bottom on him. Effects slightly realistic, not rubbish sphere particles. Sent a hand sketch: slanted gutter, faces top-right / bottom-left.
 
 - **2026-11-28 05:05** (2026-11-27_lucky-me.md): (04:44-04:50) ending pose + air kiss + crier at X; only one comic; myPose code. Mr Bacon Man cameo + reply.
+
+- **2026-11-28 05:40** (2026-11-27_lucky-me.md): (05:12) Mr. Bacon print not placed properly, weird. Put him standing, make sure it's centred on his chest, check before using.
