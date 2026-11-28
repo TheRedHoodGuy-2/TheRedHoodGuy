@@ -339,15 +339,27 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 10 (Xavier 04:44): NOT a comic. Just how it goes every day: a classmate taps his wrist, "time?", Dana answers on autopilot.
   // The comic split is saved for the ONE special moment (39.12). ---
+  // Xavier 05:04: the classmate who asks Dana the time = MR. BACON (a subscriber's cameo): printed on his tee, front
+  { const tex = new THREE.CanvasTexture((() => { const c = document.createElement('canvas'); c.width = 512; c.height = 256; const g = c.getContext('2d');
+      g.clearRect(0, 0, 512, 256);
+      // a strip of bacon: wavy rashers, dark red meat + cream fat
+      g.save(); g.translate(256, 70); for (const [col, w, dy] of [['#7a1f14', 26, -14], ['#f3d9b5', 12, 0], ['#a3301e', 22, 12]]) { g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.beginPath();
+        for (let x = -150; x <= 150; x += 6) { const y = dy + Math.sin(x / 22) * 12; x === -150 ? g.moveTo(x, y) : g.lineTo(x, y); } g.stroke(); } g.restore();
+      g.font = '900 92px Montserrat, Arial Black, sans-serif'; g.textAlign = 'center'; g.lineJoin = 'round';
+      g.strokeStyle = '#2a120c'; g.lineWidth = 14; g.strokeText('MR. BACON', 256, 205); g.fillStyle = '#ffd04a'; g.fillText('MR. BACON', 256, 205);
+      return c; })());
+    tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+    const tee = new THREE.Mesh(new THREE.PlaneGeometry(1.5, .75), new THREE.MeshStandardMaterial({ map: tex, transparent: true, roughness: .85, polygonOffset: true, polygonOffsetFactor: -2 }));
+    tee.position.set(0, .05, -1.0); tee.rotation.y = Math.PI; A.kid9.a.rig.parts.torso.add(tee); }
   const BOYC = [HALL.x - .55, HALL.z - 3.2];   // where the boy stands for the 39.12 comic panel
   const ASK = [DL[0] - .62, DL[1] - .98];   // in front of her, along her facing
-  A.dana.show(27.54, 32.7); A.kid3.show(27.54, 32.7);
+  A.dana.show(27.54, 32.7); A.kid9.show(27.54, 32.7);
   A.dana.key(27.5, { pose: 'danaAnswer', at: DL, ry: DRY, y: 0 });
-  A.kid3.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
-  A.kid3.run(27.55, [[ASK[0] - .3, ASK[1] - .9], ASK], { step: .62, T: .36, arm: .5 });
-  A.kid3.key(28.45, { pose: 'wristTap', dur: .25 }).key(28.9, { pose: 'wristTapB', dur: .2, ease: 'io' }).key(29.3, { pose: 'wristTap', dur: .2, ease: 'io' }).key(30.4, { pose: 'relaxed', dur: .4 });
+  A.kid9.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
+  A.kid9.run(27.55, [[ASK[0] - .3, ASK[1] - .9], ASK], { step: .62, T: .36, arm: .5 });
+  A.kid9.key(28.3, { pose: 'wristTap', dur: .25 }).key(28.65, { pose: 'wristTapB', dur: .18, ease: 'io' }).key(28.95, { pose: 'wristTap', dur: .18, ease: 'io' }).key(29.3, { pose: 'relaxed', dur: .3 });   // taps, then drops the arm so MR. BACON on his tee reads
   A.dana.talk(30.42, 31.94);
-  A.dana.face(27.5, 'bored').face(32.0, 'nervous'); A.kid3.face(27.5, 'happy').face(30.6, 'shocked');
+  A.dana.face(27.5, 'bored').face(32.0, 'nervous'); A.kid9.face(27.5, 'happy').face(30.6, 'shocked');
 
   // --- 11: Dana resigned shrug (hallway) ---
   A.dana.show(32.7, 34.58);
@@ -518,7 +530,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // 9: tight push on her face, eyes slide
     danaTense: u => front(A.dana, { d: lerp(1.3, 1.05, u), side: .25, h: .0, lh: -.05, fov: 30 }),
     // 10 + 14: the comic rig's own camera
-    askTime: u => { const k = sm(u); return front(A.dana, { d: lerp(2.3, 2.0, k), side: lerp(-1.0, -.85, k), h: .05, lh: -.25, fov: 42 }); },   // her + the classmate tapping his wrist, from her front-left
+    askTime: u => { const k = sm(u); return front(A.kid9, { d: lerp(1.6, 1.4, k), side: lerp(-.7, -.6, k), h: .1, lh: -.5, fov: 56 }); },   // over Dana's shoulder onto MR. BACON tapping his wrist (his tee reads)   // her + the classmate tapping his wrist, from her front-left
     danaReply: u => front(A.dana, { d: lerp(1.25, 1.05, u), side: -.18, h: -.12, lh: -.02, fov: 34 }),   // on her answer, slightly low, push
     comic2: u => comic.cam(u),
     // 11: pull back from her shrug
