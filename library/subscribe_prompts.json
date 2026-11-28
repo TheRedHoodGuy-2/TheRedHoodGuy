@@ -89,6 +89,17 @@
    "duration_s": 2.28,
    "line": "subscribe for more you guys (recorded line, lip-synced with talk())",
    "ui": "subscribe card via tools/captions_v2.py + topics/<t>/subscribe_ui.json {in,tap,out}; avatar library/brand/channel_avatar.jpg overlaid by tools/finalize.sh"
+  },
+  "rackfocus_crier_v1": {
+   "from": "New Body (2026-11-28). In-story ending used as the subscribe prompt; added as a new version, selfie_wave_v1 stays the default.",
+   "pose": "TO POSE: swapped character (Dana's body, him inside) standing close to camera, smug, talking to lens; the victim (his old body, Dana inside) on the floor behind, curled up, crying with shoulder shakes.",
+   "camera": {
+    "setup": "medium close on the talker, 35-40 fov, victim 2.5-3.5 m behind and visible over her shoulder",
+    "focus": "DOF on talker for the line, then rack focus to the victim over ~0.6 s when the line ends; talker goes soft",
+    "hold_after_line_s": 2.0
+   },
+   "line": "Be a good boy, and subscribe.",
+   "ui": "subscribe card as usual"
   }
  }
 }
