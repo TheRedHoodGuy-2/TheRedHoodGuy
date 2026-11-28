@@ -20,3 +20,6 @@ research/dissect/*/audio.wav
 
 # Xavier opens the repo as an Obsidian vault; his app settings stay local
 .obsidian/
+# all voice takes + sfx sources/packs are irreplaceable: commit them (Xavier 2026-11-28)
+!topics/*/voice/*.wav
+!topics/*/sfx/pack/*.wav
