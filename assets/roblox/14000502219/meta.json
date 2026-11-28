@@ -1,0 +1,55 @@
+{
+ "id": 14000502219,
+ "class": "Accessory",
+ "name": "White Cast",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 321,
+   "tris": 282,
+   "attachments": [
+    {
+     "name": "BodyFrontAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -0.422,
+     -0.597,
+     -0.315
+    ],
+    [
+     0.422,
+     0.597,
+     0.315
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

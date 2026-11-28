@@ -1,0 +1,55 @@
+{
+ "id": 80634712857825,
+ "class": "Accessory",
+ "name": "Accessory (Left White Arm Cast 3.0)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 1033,
+   "tris": 1540,
+   "attachments": [
+    {
+     "name": "BodyFrontAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -0.505,
+     -0.62,
+     -0.489
+    ],
+    [
+     0.505,
+     0.62,
+     0.489
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

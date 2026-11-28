@@ -1,0 +1,55 @@
+{
+ "id": 91631221833009,
+ "class": "Accessory",
+ "name": "Accessory (HoodieSUP)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 2444,
+   "tris": 3966,
+   "attachments": [
+    {
+     "name": "BodyFrontAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -2.062,
+     -1.229,
+     -0.842
+    ],
+    [
+     2.062,
+     1.229,
+     0.842
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

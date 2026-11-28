@@ -1,0 +1,55 @@
+{
+ "id": 99244850581488,
+ "class": "Accessory",
+ "name": "Accessory (shoes)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 2316,
+   "tris": 2680,
+   "attachments": [
+    {
+     "name": "WaistCenterAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -0.743,
+     -0.376,
+     -0.57
+    ],
+    [
+     0.743,
+     0.376,
+     0.57
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

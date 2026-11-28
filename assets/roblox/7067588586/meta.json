@@ -1,0 +1,59 @@
+{
+ "id": 7067588586,
+ "class": "Accessory",
+ "name": "Black Fluffy Messy Boy Hair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 2975,
+   "tris": 2717,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.000701904296875,
+      0.2552657127380371,
+      0.052288055419921875
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.772,
+     -0.608,
+     -0.891
+    ],
+    [
+     0.772,
+     0.608,
+     0.891
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

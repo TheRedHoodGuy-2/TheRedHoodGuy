@@ -1,0 +1,55 @@
+{
+ "id": 15913837,
+ "class": "Accessory",
+ "name": "Kent",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 546,
+   "tris": 182,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      8.65838956e-09,
+      0.150000095,
+      -0.00227224431
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.685,
+     -0.729,
+     -0.732
+    ],
+    [
+     0.721,
+     0.455,
+     0.709
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

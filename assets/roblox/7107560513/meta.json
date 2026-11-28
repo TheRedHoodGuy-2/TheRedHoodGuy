@@ -1,0 +1,59 @@
+{
+ "id": 7107560513,
+ "class": "Accessory",
+ "name": "Black Messy Side Swoop",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3074,
+   "tris": 2857,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.0156402587890625,
+      0.1696178913116455,
+      0.07300949096679688
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.799,
+     -0.692,
+     -0.911
+    ],
+    [
+     0.799,
+     0.692,
+     0.911
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

@@ -1,0 +1,55 @@
+{
+ "id": 97024899582812,
+ "class": "Accessory",
+ "name": "Accessory (.)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 822,
+   "tris": 1072,
+   "attachments": [
+    {
+     "name": "WaistCenterAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -0.887,
+     -0.606,
+     -0.389
+    ],
+    [
+     0.887,
+     0.606,
+     0.389
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

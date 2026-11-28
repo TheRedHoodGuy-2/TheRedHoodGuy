@@ -1,0 +1,55 @@
+{
+ "id": 108102350658567,
+ "class": "Accessory",
+ "name": "Accessory (Arm Cast New)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 186,
+   "tris": 243,
+   "attachments": [
+    {
+     "name": "BodyFrontAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -0.409,
+     -0.574,
+     -0.314
+    ],
+    [
+     0.409,
+     0.574,
+     0.314
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}
