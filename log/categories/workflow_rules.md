@@ -278,3 +278,5 @@ sont go rendering for another hour ro , on a precheck vid
 - **2026-11-27 23:35** (2026-11-27_lucky-me.md): (23:16) our saturation thing too? pushed?? this video looks a lot nice
 
 - **2026-11-27 23:50** (2026-11-27_lucky-me.md): (23:44) ok i wanna work on the next... [Dana swap script: cold open bus pair sing together POOF; rule "if two people say the same words at the same time, they swap lives for 24 hours"; gags (birthday, church choir, twins); Dana never swapped, thinks before every word; perfect life (drives, pool, no chores) marked "the stated innocent want"; her song plant; Friday he tapes a speaker under the bus-stop bench; 3-2-1; they sing, POOF; Dana in his body "SWAP BACK. RIGHT NOW."; "I had twenty-four hours." her body, his smirk at camera, loops into the bus pair] how do i go about it
+
+- **2026-11-28 01:24** (2026-11-27_lucky-me.md): (01:16) You gave them the age. Grade 12 kids are 18, 19, super seniors 20. I never said they are kids. They are all 18, high schoolers in grade 12. My viewer base is 17 to 40.
