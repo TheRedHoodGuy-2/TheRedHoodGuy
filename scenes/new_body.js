@@ -81,6 +81,13 @@ P.povHandL = { ...P.povIdle, armL: fa('armL', [0.2, 1.28, 0.66], [0.42, 1.1, 0.2
 P.povHandLR = { ...P.povIdle, armL: fa('armL', [0.26, 1.16, 0.6], [0.42, 1.1, 0.25]), armR: fa('armR', [-0.16, 1.3, 0.66], [-0.42, 1.1, 0.25]), head: { r: [0.1, -0.12, 0] } };   // left drops a little, right comes up low-right   // both hands up, eyes to the right one
 P.smugNew = { legL: { r: [-0.08, 0, 0.14], o: [0.02, 0, 0.04] }, legR: { r: [0.06, 0, -0.06] }, armL: fa('armL', [0.36, 0.9, -0.04], [0.62, 1.08, -0.12]), armR: { r: [0.1, 0, -0.12] }, head: { r: [-0.15, -0.2, -0.08] }, root: { rz: 0.05 } };   // hand on hip, chin up (his smug, now in her body)
 P.talkToLens = { ...P.smugNew, armR: { r: [-0.35, 0, -0.2], o: [0, 0.02, 0.04] }, head: { r: [-0.1, 0.05, -0.05] } };
+// Xavier 04:44 ending: his selfie pose (pose-editor screenshot): right arm up at the lens, left fist at the mouth; then the AIR KISS:
+// the left hand leaves the lips and opens out toward the lens. Built on P.selfie (the selfie_wave_v1 body), facing ry 0 = the lens.
+P.selfieKissIdle = { armL: { r: [-1.596, -0.38, -1.234], o: [0.129, -0.065, 0.136] }, armR: { r: [-2.315, -0.59, -0.426], o: [-0.422, 0.804, 0.559] }, legL: { r: [0.345, 0.019, 0.253], o: [0.092, 0.028, -0.05] }, legR: { r: [0.262, 0.056, -0.1], o: [-0.027, -0.046, -0.055] }, head: { r: [-0.307, -0.57, -0.078] }, root: { x: -0.204, y: 0.071, z: 0.178, rx: -0.268, ry: 0.014, rz: -0.212 } };
+P.selfieKissLips = { ...P.selfieKissIdle, armL: fa('armL', [-0.02, 1.47, 0.26], [0.3, 1.12, 0.32], P.selfieKissIdle.root), head: { r: [-0.25, -0.5, -0.1] } };
+P.selfieKissOut = { ...P.selfieKissIdle, armL: fa('armL', [0.22, 1.62, 0.78], [0.36, 1.3, 0.42], P.selfieKissIdle.root), head: { r: [-0.36, -0.55, -0.16] } };
+// Xavier 04:50 'myPose': after the kiss she swings the phone arm out so the selfie camera finds the crying boy behind her
+P.myPose = { armL: { r: [-1.571, -0.689, -1.502], o: [0.063, -0.065, 0.057] }, armR: { r: [-1.885, -0.346, -0.052], o: [-0.285, 0.334, 1.477] }, legL: { r: [0.363, -0.015, 0.261], o: [0.094, 0.008, -0.031] }, legR: { r: [0.238, 0.167, 0.325], o: [-0.025, -0.083, -0.038] }, head: { r: [-0.064, -0.264, -0.016] }, root: { x: -0.198, y: 0.092, z: 0.119, rx: -0.203, ry: 0.054, rz: -0.22 } };
 P.crierCurl = t => { const s = Math.sin(t * 5.2), b = Math.max(0, Math.sin(t * 5.2 + .6)); return { legL: { r: [-1.35, 0.2, 0.15], o: [0.03, 0.08, 0.1] }, legR: { r: [-1.1, -0.15, -0.2], o: [-0.05, 0.06, 0.12] }, armL: fa('armL', [0.2, 1.3, 0.35], [0.42, 1.0, 0.1], { y: -0.5, rx: 0.5 }), armR: fa('armR', [-0.18, 1.26, 0.38], [-0.42, 1.0, 0.1], { y: -0.5, rx: 0.5 }), head: { r: [0.6 + 0.04 * s, 0.1, 0.06] }, root: { y: -0.5, rx: 0.5, rz: 0.03 * s, x: 0.01 * b } }; };   // on the floor, knees up, hands over his face, shoulders SHAKING (never frozen)
 export { P };
 
@@ -121,7 +128,8 @@ const SH = [
   { t: 23.28, dur: 1.02, id: 'quietHall', who: 'dana', size: 'wide', angle: 'eye', move: 'push', speed: 1.1 },
   { t: 24.30, dur: 1.52, id: 'pancakes', who: 'dana', size: 'xclose', angle: 'high', move: 'punch', speed: 2.2 },
   { t: 25.82, dur: 1.72, id: 'danaTense', who: 'dana', size: 'close', angle: 'eye', move: 'push', speed: 0.7 },
-  { t: 27.54, dur: 5.16, id: 'comic1', who: 'dana', size: 'wide', angle: 'eye', move: 'hold', speed: 0.3 },
+  { t: 27.54, dur: 2.85, id: 'askTime', who: 'dana', size: 'medium', angle: 'eye', move: 'push', speed: 1.2 },
+  { t: 30.39, dur: 2.31, id: 'danaReply', who: 'dana', size: 'close', angle: 'low', move: 'push', speed: 0.7 },
   { t: 32.70, dur: 1.88, id: 'danaShrug', who: 'dana', size: 'medium', angle: 'eye', move: 'pull', speed: 1.6 },
   { t: 34.58, dur: 2.34, id: 'deskList', who: 'boy', size: 'close', angle: 'high', move: 'push', speed: 1.2 },
   { t: 36.92, dur: 2.20, id: 'hallAsk', who: 'boy', size: 'full', angle: 'eye', move: 'track', speed: 1.8 },
@@ -329,14 +337,17 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.dana.key(25.78, { pose: 'danaProud', at: DL, ry: DRY, dur: .01 }).key(26.3, { pose: 'danaTense', dur: .5, ease: 'io' });
   A.dana.face(25.78, 'smug').face(26.4, 'nervous');
 
-  // --- 10: COMIC SPLIT 1 (27.54): panels slam in; Dana TOP answers 30.42-31.94 (her voice), boy BOTTOM mimes the ask ---
-  const BOYC = [HALL.x - .55, HALL.z - 3.2];   // the comic panels are two separate camera shots in the same hallway: her at her locker, him down the corridor
-  A.dana.show(27.54, 32.7); A.boy.show(27.54, 32.7); 
-  A.dana.key(27.5, { pose: 'danaAnswer', at: DL, ry: DRY, y: 0 });   // y set per-frame below (panels move)
-  A.boy.key(27.5, { pose: 'wristTap', at: BOYC, ry: 0, y: 0 })
-    .key(28.6, { pose: 'wristTapB', dur: .2, ease: 'io' }).key(29.1, { pose: 'wristTap', dur: .2, ease: 'io' }).key(29.6, { pose: 'wristTapB', dur: .2, ease: 'io' }).key(30.3, { pose: 'mockInnocent', dur: .3 });
+  // --- 10 (Xavier 04:44): NOT a comic. Just how it goes every day: a classmate taps his wrist, "time?", Dana answers on autopilot.
+  // The comic split is saved for the ONE special moment (39.12). ---
+  const BOYC = [HALL.x - .55, HALL.z - 3.2];   // where the boy stands for the 39.12 comic panel
+  const ASK = [DL[0] - .62, DL[1] - .98];   // in front of her, along her facing
+  A.dana.show(27.54, 32.7); A.kid3.show(27.54, 32.7);
+  A.dana.key(27.5, { pose: 'danaAnswer', at: DL, ry: DRY, y: 0 });
+  A.kid3.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
+  A.kid3.run(27.55, [[ASK[0] - .3, ASK[1] - .9], ASK], { step: .62, T: .36, arm: .5 });
+  A.kid3.key(28.45, { pose: 'wristTap', dur: .25 }).key(28.9, { pose: 'wristTapB', dur: .2, ease: 'io' }).key(29.3, { pose: 'wristTap', dur: .2, ease: 'io' }).key(30.4, { pose: 'relaxed', dur: .4 });
   A.dana.talk(30.42, 31.94);
-  A.dana.face(27.5, 'bored'); A.boy.face(27.5, 'happy').face(30.3, 'smug');
+  A.dana.face(27.5, 'bored').face(32.0, 'nervous'); A.kid3.face(27.5, 'happy').face(30.6, 'shocked');
 
   // --- 11: Dana resigned shrug (hallway) ---
   A.dana.show(32.7, 34.58);
@@ -388,9 +399,18 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.dana.face(46.0, 'smug');
 
   // --- 17: THE ENDING (rackfocus_crier_v1): her body talks to the lens; his body curled CRYING on the floor behind; rack focus; silence ---
-  A.dana.key(47.05, { pose: 'talkToLens', at: [SWP[0] + .75, SWP[1] + .9], ry: -.1, turn: .35, dur: .3 });   // turns to the lens (+z)
-  A.dana.talk(47.12, 48.42);
-  A.boy.key(46.9, { pose: t => P.crierCurl(t), at: [SWP[0] - .95, SWP[1] - 1.6], ry: .45, dur: .5, glide: .5 });   // over her left shoulder in the frame, never hidden behind her   // sunk to the floor further down the corridor, facing us, head in his hands
+  // Xavier 04:44: HIS selfie pose (screenshot), the selfie camera, then the air kiss; the crier sunk on the floor at his X:
+  // behind her, screen-right, a few metres down the corridor. ERY turns the whole selfie set-up so that 'behind her' = down the corridor (-z).
+  const ERY = 1.27, EP = [HALL.x + .15, SWP[1] + 1.2], loc = (x, z) => [EP[0] + x * Math.cos(ERY) + z * Math.sin(ERY), EP[1] - x * Math.sin(ERY) + z * Math.cos(ERY)];
+  const CRY = loc(2.16, -.84);   // his X: screen-right of her, a couple of metres back, fully in frame
+  A.dana.key(47.05, { pose: 'selfieKissIdle', at: EP, ry: ERY, turn: .3, dur: .3 })
+    .key(48.0, { pose: 'selfieKissIdle', dur: .3 })
+    .key(48.6, { pose: 'selfieKissLips', dur: .22 })
+    .key(48.98, { pose: 'selfieKissOut', dur: .2, style: 'snap' })
+    .key(49.3, { pose: 'myPose', dur: .45 });   // swings the phone round to show him
+    A.dana.talk(47.12, 48.42);
+  A.boy.key(46.9, { pose: t => P.crierCurl(t), at: CRY, ry: ERY - .35, dur: .5, glide: .5 });   // curled on the floor, crying toward us
+  A.dana.face(48.6, 'smug').face(48.95, 'happy').face(49.3, 'neutral');
   A.boy.face(46.9, 'crying');
 
   // ---------- per-frame props ----------
@@ -451,7 +471,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     comic: rig(CSPL.x, 23.5, CSPL.z + 4, CSPL.x, 20, CSPL.z, { c: '#ffffff', i: 16 }),
   };
   const fill2 = new THREE.PointLight('#cfe0ff', 0, 18, 1.4); scene.add(fill2);   // soft cool fill that rides with the active rig
-  const RIGBY = { bedroom: 'bedroom', party: 'class', twins: 'class', taped: 'class', choir: 'stage', danaLocker: 'hallway', danaTense: 'hallway', danaShrug: 'hallway', hallAsk: 'hallway', midSwap: 'hallway', povHands: 'hallway', pullOut: 'hallway', ending: 'hallway', danaTable: 'houseB', pancakes: 'houseB', quietHall: 'houseB', dishes: 'kitchen', deskList: 'desk', comic1: 'hallway', comic2: 'hallway' };
+  const RIGBY = { bedroom: 'bedroom', party: 'class', twins: 'class', taped: 'class', choir: 'stage', danaLocker: 'hallway', danaTense: 'hallway', danaShrug: 'hallway', hallAsk: 'hallway', midSwap: 'hallway', povHands: 'hallway', pullOut: 'hallway', ending: 'hallway', danaTable: 'houseB', pancakes: 'houseB', quietHall: 'houseB', dishes: 'kitchen', deskList: 'desk', askTime: 'hallway', danaReply: 'hallway', comic2: 'hallway' };
   const light = (t, s) => {
     const want = RIGBY[s.id];
     for (const [k, r] of Object.entries(RIGS)) r.k.intensity = (k === want) ? r.i : 0;
@@ -498,7 +518,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // 9: tight push on her face, eyes slide
     danaTense: u => front(A.dana, { d: lerp(1.3, 1.05, u), side: .25, h: .0, lh: -.05, fov: 30 }),
     // 10 + 14: the comic rig's own camera
-    comic1: u => comic.cam(u), comic2: u => comic.cam(u),
+    askTime: u => { const k = sm(u); return front(A.dana, { d: lerp(2.3, 2.0, k), side: lerp(-1.0, -.85, k), h: .05, lh: -.25, fov: 42 }); },   // her + the classmate tapping his wrist, from her front-left
+    danaReply: u => front(A.dana, { d: lerp(1.25, 1.05, u), side: -.18, h: -.12, lh: -.02, fov: 34 }),   // on her answer, slightly low, push
+    comic2: u => comic.cam(u),
     // 11: pull back from her shrug
     danaShrug: u => front(A.dana, { d: lerp(1.6, 2.4, u), side: -.3, h: .02, lh: -.3, fov: 38 }),
     // 12: over his shoulder down onto the list, push
@@ -516,7 +538,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // 16b: fast pull OUT of the POV to a 3/4 medium on her smug body
     pullOut: u => { const k = sm(u); return front(A.dana, { d: lerp(.3, 2.1, k), side: lerp(0, .3, k), h: lerp(.02, .05, k), lh: lerp(-.05, -.3, k), fov: lerp(58, 40, k) }); },   // fast OUT of her eyes, back along her look, to a 3/4 medium on her smug new body
     // 17: the rack-focus ending: medium-close on her, the crier visible over her shoulder; camera drifts in the silence
-    ending: u => { const t = 47.12 + u * 3.78, a = headW(A.dana), b = headW(A.boy), m = a.clone().lerp(b, .35); return { p: [a.x + .25 + Math.sin(t * .9) * .03, a.y + .12, a.z + 3.1 - u * .3], l: [a.x - .55, a.y - .3, a.z - .9], fov: 42 }; },   // her face near-left, the crier on the floor over her shoulder; the focus racks to him after the line
+    ending: u => { const t = 47.12 + u * 3.78, P0 = A.dana.a.root.position, L = (x, y, z) => { const q = loc(x, z); return [q[0] + (P0.x - EP[0]), y, q[1] + (P0.z - EP[1])]; }, w = Math.sin(t * 1.3) * .02, k = sm(cl((t - 49.3) / .5)), b = headW(A.boy);
+      const p0 = L(-.72 + w, 2.87, .5), l0 = L(.3, 1.45 + w, -.33), p1 = L(-.35, 2.35, 1.15);   // the phone swings out with her arm: the lens pulls back + turns onto him
+      return { p: [lerp(p0[0], p1[0], k), lerp(p0[1], p1[1], k), lerp(p0[2], p1[2], k)], l: [lerp(l0[0], b.x, k * .75), lerp(l0[1], b.y - .2, k * .75), lerp(l0[2], b.z, k * .75)], fov: lerp(60, 50, k) }; },   // selfie_wave_v1 camera, then her myPose swing reveals the crier
   };
   const shakeAt = t => { for (const [a, b, k] of [[0.0, .35, .02], [11.34, 11.6, .02], [40.3, 40.6, .035], [40.84, 41.2, .03]]) if (t >= a && t < b) return k * (1 - (t - a) / (b - a)); return 0; };
 
@@ -530,7 +554,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
       cam.position.set(C2.p[0] + hh(1.3, 1), C2.p[1] + hh(1.1, 2), C2.p[2] + hh(1.2, 3)); cam.fov = C2.fov; cam.lookAt(C2.l[0] + hh(1.5, 4), C2.l[1] + hh(1.4, 5), C2.l[2]);
       const sk = shakeAt(t); if (sk) { cam.rotateX(Math.sin(t * 61) * sk); cam.rotateZ(Math.sin(t * 47) * sk); }
       // focus: at the look point; shot 17 racks from her face to the crier after the line ends (48.42 -> 49.0)
-      if (s.id === 'ending') { const rk = sm(cl((t - 48.45) / .6)); const a = headW(A.dana), b = headW(A.boy);
+      if (s.id === 'ending') { const rk = sm(cl((t - 49.45) / .55));   /* the focus racks to him as the phone finds him */ const a = headW(A.dana), b = headW(A.boy);
         post.focus = cam.position.distanceTo(a.clone().lerp(b, rk)); }
       else post.focus = cam.position.distanceTo(new THREE.Vector3(...C2.l));
     }
@@ -543,7 +567,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // left, looking right, speed lines on the right. Masked: never in each other's frame. Top slams in from the right, bottom
   // from the left. comic2: both say it; the gutter CRACKS (40.3), white flash, the panels trade places.
   const GL = .60, GR = .40, gutY = x => GL + (GR - GL) * x;
-  const COMIC = t => (t >= 27.54 && t < 32.7) ? { t0: 27.54 } : (t >= 39.12 && t < 40.84) ? { t0: 39.12, crack: 40.3, swap: 40.36 } : null;
+  const COMIC = t => (t >= 39.12 && t < 40.84) ? { t0: 39.12, crack: 40.3, swap: 40.36 } : null;   // ONE comic only: the special moment (Xavier 04:44)
   const panelCam = (a, side, sx, sy, d, fov) => () => { for (const o of [A.dana, A.boy]) o.a.root.visible = o === a;   /* masked: the other one is never in this panel */ const C2 = front(a, { d, side, h: .02, lh: -.06, fov }); cam.position.set(...C2.p); cam.fov = fov; cam.lookAt(...C2.l);
     cam.setViewOffset(w, h, -(sx - .5) * w, -(sy - .5) * h, w, h); cam.updateProjectionMatrix(); cam.updateMatrixWorld(true); post.focus = cam.position.distanceTo(headW(a)); post.aperture = .012; };
   const streaks = (ctx, W, H, t, x0, x1, y0, y1, col, seed) => { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.lineCap = 'butt';
