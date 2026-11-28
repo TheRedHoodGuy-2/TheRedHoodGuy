@@ -1099,3 +1099,14 @@ theres still a noticeble gap
 ## 2026-11-12 19:55 Claude
 
 (old explainer-kit chat; reply not kept here)
+
+---
+
+## 2026-11-28 07:42 Xavier
+
+Question. I want to switch my Mac and my Windows are on the same laptop, and I want to switch over to my Mac and open Claude on browser or something. Will that stop the progress of what's going on?
+
+## 2026-11-28 07:42 Claude
+
+No, it won't. Everything renders in the cloud workspace, nothing runs on your laptop. Reboot into the Mac, open claude.ai in the browser, open this same chat, and the work will have kept going. Just don't start a NEW chat for this; reopen this one.
+Status: full shot replan nearly done. Minis gag (restaged in the dining room, two shrunken brothers chasing round the table), thought roulette, X freezes + grayscale, pancake lathe rebuild (pour jug cut: read as a rod), TIME? bubbles, POV (normalized look weights, hands at chest height near lens), myPose ending with kneel-then-flail crier all verified in stills. Found and logged an engine bug: DOF focuses on the SH row's 'who'; a parked 'who' washes the whole frame milky (CLAUDE.md 8c). popcheck: only the intended in-poof trades flag. Clipscan round 1: 83 spans; fixed the big ones (grandma sat inside the kid, minis through the table, crier floor glide, jab reach, bus duet arms). Re-running clipscan, then the lq review render (rev2) with rebuilt SFX cues (30) + music mix. Pose sheet (46 poses) sent.
