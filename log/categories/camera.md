@@ -219,3 +219,5 @@ hip side as butt EXAMPLE: myPose: { armL: { r: [-0.783, 0, 0.112] }, armR: { r: 
 - **2026-11-28 01:30** (2026-11-27_lucky-me.md): (01:18-01:19) "There's literally nothing bad, he used her body to say subscribe." "then cut out the to mommy." "Cut that part of the audio yourself. Make the subscribe scene long-ish: camera on her while she says it, him crying in the background out of focus; when she's done, focus shifts to him crying while she blurs; small silence, video ends."
 
 - **2026-11-28 01:35** (2026-11-27_lucky-me.md): (01:22) Cut out the mommy part yourself. Make the ending longish: camera on her while she says be a good boy and subscribe, crier in background visible but out of focus; when she's done, focus shifts to the crier, she blurs, small silence, video ends. Cut the mommy part and get started.
+
+- **2026-11-28 01:45** (2026-11-27_lucky-me.md): (01:27) the ending as a new version, not a replacement. I'm on opus 5.5 high, ensure the shots are top notch, change anything in scenes or shots if you want, fire away
