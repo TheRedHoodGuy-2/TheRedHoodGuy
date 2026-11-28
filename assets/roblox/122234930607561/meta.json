@@ -1,0 +1,55 @@
+{
+ "id": 122234930607561,
+ "class": "Accessory",
+ "name": "Accessory (G3_Apr_62_(Nm)_Black)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 2784,
+   "tris": 3905,
+   "attachments": [
+    {
+     "name": "BodyFrontAttachment",
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": true,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": null,
+   "bounds": [
+    [
+     -2.181,
+     -1.311,
+     -0.963
+    ],
+    [
+     2.181,
+     1.311,
+     0.963
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

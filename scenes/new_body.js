@@ -94,7 +94,7 @@ export { P };
 export const POSE_SHEET = [
   ['01 Bus kid L: singing, leaning in', 'swapA', 'busSingL', 'happy', 'seat'], ['02 Bus kid R: singing, leaning in', 'swapB', 'busSingR', 'happy', 'seat'],
   ['03 Bus kid L: stares at his new hands', 'swapA', 'busHandsL', 'shocked', 'seat'], ['04 Bus kid R: stares at her new hands', 'swapB', 'busHandsR', 'shocked', 'seat'],
-  ['05 Kid frozen under the duvet', 'swapA', 'bedFrozen', 'shocked', 'bed'], ['06 Wrong grandma: forehead kiss lean', 'f025', 'grandmaLean', 'happy', ''],
+  ['05 Kid bolt upright in the wrong bed', 'swapA', 'bedSitUp', 'shocked', 'bed'], ['06 Wrong grandma: forehead kiss lean', 'f025', 'grandmaLean', 'happy', ''],
   ['07 Party kid: solo verse', 'm026', 'soloSing', 'nervous', ''], ['08 Party kid: waiting his turn', 'm001', 'awkwardStand', 'bored', ''], ['09 Birthday kid over the cake', 'f007', 'cakeLean', 'sad', ''],
   ['10 Choir kid mid-anthem', 'f001', 'choirSing', 'happy', 'riser'], ['11 Principal: watching proud', 'principal', 'principalWatch', 'happy', ''], ['12 Principal: facepalm', 'principal', 'facepalm', 'annoyed', ''],
   ['13 Teacher points at twin A', 'teacher', 'teachPoint', 'annoyed', ''], ['14 Teacher points at twin B', 'teacher', 'teachPointB', 'angry', ''], ['15 Teacher gives up, sits', 'teacher', 'teachGiveUp', 'bored', 'seat'],
@@ -104,13 +104,13 @@ export const POSE_SHEET = [
   ['22 Dana: taped, perfectly still', 'dana', 'danaStill', 'neutral', 'seat'],
   ['23 Dana at breakfast, content', 'dana', 'danaBreakfast', 'happy', 'seat'], ['24 Dad doing the dishes', 'dana_dad', 'dadDishes', 'happy', ''],
   ['25 Dana: the tension (eyes slide)', 'dana', 'danaTense', 'nervous', ''],
-  ['26 Dana answers (comic panel)', 'dana', 'danaAnswer', 'bored', ''], ['27 Dana: resigned shrug', 'dana', 'danaShrug', 'sad', ''],
+  ['26 Dana answers the time (autopilot)', 'dana', 'danaAnswer', 'bored', ''], ['26b Mr. Bacon Man taps his wrist (the ask)', 'bacon', 'wristTap', 'happy', ''], ['27 Dana: resigned shrug', 'dana', 'danaShrug', 'sad', ''],
   ['28 Boy writing the list', 'boy', 'writeList', 'determined', 'seat'], ['29 Boy: list, look up (idea)', 'boy', 'writeLook', 'smug', 'seat'],
   ['30 Boy taps his bare wrist (the ask)', 'boy', 'wristTap', 'happy', ''], ['31 Boy: mock innocent', 'boy', 'mockInnocent', 'smug', ''],
   ['32 Mid-swap: boy flails', 'boy', 'midSwapBoy', 'shocked', ''], ['33 Mid-swap: Dana flails', 'dana', 'midSwapDana', 'shocked', ''],
   ['34 His body (Dana inside): yelling', 'boy', 'yellFlail', 'angry', ''],
   ['35 POV: left hand up', 'dana', 'povHandL', 'neutral', ''], ['36 POV: both hands up', 'dana', 'povHandLR', 'neutral', ''],
-  ['37 Her body (him inside): smug', 'dana', 'smugNew', 'smug', ''], ['38 Her body: talks to the lens', 'dana', 'talkToLens', 'smug', ''],
+  ['37 Her body (him inside): smug', 'dana', 'smugNew', 'smug', ''], ['38 Ending: your selfie pose', 'dana', 'selfieKissIdle', 'smug', ''], ['38b Ending: kiss at the lips', 'dana', 'selfieKissLips', 'smug', ''], ['38c Ending: the air kiss out', 'dana', 'selfieKissOut', 'happy', ''], ['38d Ending: your myPose (phone swings to him)', 'dana', 'myPose', 'neutral', ''],
   ['39 The crier (his body, Dana inside)', 'boy', 'crierCurl', 'crying', 'floor'],
 ];
 
@@ -232,6 +232,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   await mk('teacher', 'teacher', { emo: 'annoyed' }); await mk('principal', 'principal', { emo: 'happy' });
   await mk('twinA', 'twinA'); await mk('twinB', 'twinB');
   await mk('dana_dad', 'dana_dad', { emo: 'happy' });
+  await mk('bacon', 'bacon');   // subscriber cameo (Xavier 05:27)
   const BANK = ['m026', 'm001', 'f001', 'f007', 'f002', 'm002', 'f003', 'm027', 'f004', 'm003', 'f013', 'm028'];   // 0-5 = classroom kids too; 6-11 only fill the choir
   const kids = []; for (let i = 0; i < 12; i++) kids.push(await mk('kid' + i, BANK[i]));
   A.kidSolo = A.kid0;
@@ -339,32 +340,16 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 10 (Xavier 04:44): NOT a comic. Just how it goes every day: a classmate taps his wrist, "time?", Dana answers on autopilot.
   // The comic split is saved for the ONE special moment (39.12). ---
-  // Xavier 05:04 + 05:12: the classmate who asks Dana the time = MR. BACON (a subscriber's cameo). PRINTED INTO HIS SHIRT
-  // (painted on the torso texture's FRONT face, found from the geometry's own UVs), so it sits flat and centred on the chest
-  // like a real Roblox shirt graphic: no floating plane.
-  { const T = A.kid9.a.rig.parts.torso; let mesh = null; T.traverse(m => { if (!mesh && m.isMesh && m.material?.map?.image && m.geometry?.attributes?.normal) mesh = m; });
-    if (mesh) { const gm = mesh.geometry, nA = gm.attributes.normal, uA = gm.attributes.uv; let u0 = 1, u1 = 0, v0 = 1, v1 = 0;
-      for (let k = 0; k < nA.count; k++) if (nA.getZ(k) < -.9) { u0 = Math.min(u0, uA.getX(k)); u1 = Math.max(u1, uA.getX(k)); v0 = Math.min(v0, uA.getY(k)); v1 = Math.max(v1, uA.getY(k)); }
-      const img = mesh.material.map.image, W = img.width, H = img.height, c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d'); g.drawImage(img, 0, 0);
-      const flip = mesh.material.map.flipY !== false, x0 = u0 * W, x1 = u1 * W, y0 = (flip ? 1 - v1 : v0) * H, y1 = (flip ? 1 - v0 : v1) * H, fw = x1 - x0, fh = y1 - y0;
-      g.save(); g.translate(x0 + fw / 2, y0 + fh * .52); const S = fw / 512;
-      // the bacon rasher
-      for (const [col, w, dy] of [['#7a1f14', 26, -14], ['#f3d9b5', 12, 0], ['#a3301e', 22, 12]]) { g.strokeStyle = col; g.lineWidth = w * S; g.lineCap = 'round'; g.beginPath();
-        for (let x = -150; x <= 150; x += 6) { const y = (dy + Math.sin(x / 22) * 12 - 70) * S; x === -150 ? g.moveTo(x * S, y) : g.lineTo(x * S, y); } g.stroke(); }
-      g.font = `900 ${Math.round(84 * S)}px Montserrat, Arial Black, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
-      g.strokeStyle = '#2a120c'; g.lineWidth = 14 * S; g.strokeText('MR. BACON', 0, 50 * S); g.fillStyle = '#ffd04a'; g.fillText('MR. BACON', 0, 50 * S); g.restore();
-      const tex = new THREE.CanvasTexture(c); tex.colorSpace = mesh.material.map.colorSpace; tex.flipY = mesh.material.map.flipY; tex.anisotropy = 4;
-      mesh.material = mesh.material.clone(); mesh.material.map = tex; mesh.material.needsUpdate = true;
-      console.log('BACON uv', u0.toFixed(3), u1.toFixed(3), v0.toFixed(3), v1.toFixed(3), W, H); } else console.log('BACON: no torso mesh'); }
+  // Xavier 05:27: the classmate who asks Dana the time = MR. BACON MAN, a subscriber, in his REAL avatar (cast 'bacon'); no printed tee any more
   const BOYC = [HALL.x - .55, HALL.z - 3.2];   // where the boy stands for the 39.12 comic panel
   const ASK = [DL[0] - .62, DL[1] - .98];   // in front of her, along her facing
-  A.dana.show(27.54, 32.7); A.kid9.show(27.54, 32.7);
+  A.dana.show(27.54, 32.7); A.bacon.show(27.54, 32.7);
   A.dana.key(27.5, { pose: 'danaAnswer', at: DL, ry: DRY, y: 0 });
-  A.kid9.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
-  A.kid9.run(27.55, [[ASK[0] - .3, ASK[1] - .9], ASK], { step: .62, T: .36, arm: .5 });
-  A.kid9.key(28.3, { pose: 'wristTap', dur: .25 }).key(28.65, { pose: 'wristTapB', dur: .18, ease: 'io' }).key(28.95, { pose: 'wristTap', dur: .18, ease: 'io' }).key(29.3, { pose: 'relaxed', dur: .3 });   // taps, then drops the arm so MR. BACON on his tee reads
+  A.bacon.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
+  A.bacon.run(27.55, [[ASK[0] - .3, ASK[1] - .9], ASK], { step: .62, T: .36, arm: .5 });
+  A.bacon.key(28.3, { pose: 'wristTap', dur: .25 }).key(28.65, { pose: 'wristTapB', dur: .18, ease: 'io' }).key(28.95, { pose: 'wristTap', dur: .18, ease: 'io' }).key(29.3, { pose: 'relaxed', dur: .3 });   // taps, then drops the arm so MR. BACON on his tee reads
   A.dana.talk(30.42, 31.94);
-  A.dana.face(27.5, 'bored').face(32.0, 'nervous'); A.kid9.face(27.5, 'happy').face(30.6, 'shocked');
+  A.dana.face(27.5, 'bored').face(32.0, 'nervous'); A.bacon.face(27.5, 'happy').face(30.6, 'shocked');
 
   // --- 11: Dana resigned shrug (hallway) ---
   A.dana.show(32.7, 34.58);
@@ -535,7 +520,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // 9: tight push on her face, eyes slide
     danaTense: u => front(A.dana, { d: lerp(1.3, 1.05, u), side: .25, h: .0, lh: -.05, fov: 30 }),
     // 10 + 14: the comic rig's own camera
-    askTime: u => { const k = sm(u); return front(A.kid9, { d: lerp(1.6, 1.4, k), side: lerp(-.7, -.6, k), h: .1, lh: -.5, fov: 56 }); },   // over Dana's shoulder onto MR. BACON tapping his wrist (his tee reads)   // her + the classmate tapping his wrist, from her front-left
+    askTime: u => { const k = sm(u); return front(A.bacon, { d: lerp(1.6, 1.4, k), side: lerp(-.7, -.6, k), h: .1, lh: -.5, fov: 56 }); },   // over Dana's shoulder onto MR. BACON tapping his wrist (his tee reads)   // her + the classmate tapping his wrist, from her front-left
     danaReply: u => front(A.dana, { d: lerp(1.25, 1.05, u), side: -.18, h: -.12, lh: -.02, fov: 34 }),   // on her answer, slightly low, push
     comic2: u => comic.cam(u),
     // 11: pull back from her shrug

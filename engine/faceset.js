@@ -40,6 +40,7 @@ export function faceSpec(set, emo = 'neutral', vis = null, sex = 'm') {
     let parts = L.slice(); if (vis && vis !== 'rest') { const m = CV[A ? 'A' : 'B'][vis]; parts = parts.filter(p => !mouthSet.has(p)); if (m != null) parts.push(m); }
     return { faceSprite: { layers: parts.map(i => `${PK}/classic/${CLS ? CLS[i].id : i}.png`), place: {} }, _classicIdx: parts };
   }
+  if (fam === 'img') return { faceSprite: { layers: [`assets/faces/${st}`], place: { k: .96, dy: -.06 } } };   // one custom face for every emotion (cameos, e.g. 'img:custom/bacon_cold_stare.png')
   if (fam === 'static') return { faceImg: `assets/faces/classic_full/${st}` };
   return {};
 }

@@ -159,5 +159,28 @@
  "twinB": {
   "base": "m014",
   "name": "the twins (identical, same base twice)"
+ },
+ "bacon": {
+  "base": "m003",
+  "name": "Mr. Bacon Man (subscriber cameo, Roblox mrbaconmancs1 / 4519947761)",
+  "skin": "#c7ac78",
+  "hair": [
+   73081416565777
+  ],
+  "shirt": 9340370817,
+  "pants": 12494045607,
+  "wear": [
+   [
+    122234930607561
+   ],
+   [
+    17803581539
+   ]
+  ],
+  "accessories": [
+   7331733228
+  ],
+  "faceSet": "img:custom/bacon_cold_stare.png",
+  "note": "His real avatar (Xavier 2026-11-28 05:27): COOL shirt + pants, Cool Black Hoodie Chain (3D), Baggy Black Jeans Blocky (3D), street hair with cap + airpods, silver chain. Removed on his ask (05:27-05:28): Dual Star Party Hats, Ace's Up Cardback, Galaxy Dragon Heads, Galaxy Dual Shard Swords. His Dynamic Head is a 3D head (we never use those): cold-stare 2D face instead. Skin = BrickColor 352 Burlap. Face: his Dynamic Head's cold-stare eyes + scar rebuilt as a flat face (assets/faces/custom/bacon_cold_stare.png)."
  }
 }
