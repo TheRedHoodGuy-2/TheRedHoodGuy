@@ -250,6 +250,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
           if (at) { root.position.set(at[0], ground(at[0], at[1]) + (y > 50 ? 0 : y), at[1]); root.rotation.y = ry; } if (this.extra) this.extra(t, this); } };
       list.push(D); return D; } }; })() : stage(scene, { POSES: P, ground, flap });
   const A = {}, mk = async (n, key, o = {}) => (A[n] = await S.actor(key, o));
+  // NO PURE WHITES in set dressing (lookmeter high3 blowouts 2026-11-28): clamp untextured near-white set materials once
+  { const seen = new Set(); scene.traverse(o => { if (!o.isMesh || !o.material || !o.material.color || o.material.map || seen.has(o.material)) return;
+    seen.add(o.material); const c = o.material.color, l = .299 * c.r + .587 * c.g + .114 * c.b; if (l > .86) c.multiplyScalar(.84); }); }
   await mk('boy', 'boy'); await mk('dana', 'dana', { emo: 'smug' });
   await mk('swapA', 'swapA', { emo: 'happy' }); await mk('swapB', 'swapB', { emo: 'happy' });
   // THE SWAP RULE (Xavier 08:37): position + FIT stay; hair + face + body trade. Hybrid actors appear at the poof.
@@ -301,14 +304,15 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.grandma.show(4.6, 7.8);
   // she SITS on the bed edge beside him (standing she is shorter than the seated kid: the kiss landed on his chest, probed 6.1)
   A.grandma.noClamp = true;
-  const gSit = { legL: { r: [-0.32, 0.05, 0.1], o: [0.02, 0.0, 0.16] }, legR: { r: [-0.24, -0.05, -0.12], o: [-0.04, 0.0, 0.18] }, armL: { r: [0.15, 0, 0.2] }, armR: fa('armR', [-0.3, 0.72, 0.42], [-0.42, 0.75, 0.15]), head: { r: [0.18, -0.25, 0] }, root: { y: -0.06 } };
-  A.grandma.key(4.5, { pose: gSit, at: [bed2[0] + .95, bed2[1] + 1.12], ry: N - .35, y: .86 })
+  const gSit = { legL: { r: [-0.32, 0.05, 0.1], o: [0.02, 0.0, 0.16] }, legR: { r: [-0.24, -0.05, -0.12], o: [-0.04, 0.0, 0.34] }, armL: { r: [0.15, 0, 0.2] }, armR: fa('armR', [-0.3, 0.72, 0.42], [-0.42, 0.75, 0.15]), head: { r: [0.18, -0.25, 0] }, root: { y: -0.06 } };
+  A.grandma.key(4.5, { pose: gSit, at: [bed2[0] + .95, bed2[1] + 1.3], ry: N - .35, y: .86 })
     .key(5.3, { pose: { ...gSit, root: { rx: 0.4, z: 0.3, y: -0.06 }, head: { r: [0.42, -0.3, 0] }, armR: fa('armR', [-0.35, 0.6, 0.55], [-0.45, 0.7, 0.2], { rx: 0.4 }) }, dur: .5, ease: 'io' })   // hand to his shoulder, starts the lean
-    .key(6.0, { pose: { ...gSit, root: { rx: 0.58, z: 0.4, y: -0.08 }, head: { r: [0.48, -0.35, 0] }, armR: fa('armR', [-0.38, 0.5, 0.55], [-0.45, 0.65, 0.2], { rx: 0.58 }) }, dur: .35, ease: 'io' })   // the KISS: face down onto his forehead
+    .key(6.0, { pose: { ...gSit, root: { rx: 0.5, z: 0.42, y: -0.08 }, head: { r: [0.66, -0.35, 0], o: [0, -0.03, 0.1] }, armR: fa('armR', [-0.38, 0.5, 0.5], [-0.45, 0.65, 0.2], { rx: 0.5 }) }, dur: .35, ease: 'io' })   // the KISS: face down onto his forehead
     .key(7.0, { pose: gSit, dur: .45, ease: 'io' });
-  A.swapA.key(5.6, { pose: { ...P.bedSitUp, armL: { r: [-0.55, 0, -0.3], o: [0, 0, -.02] } }, dur: .3, ease: 'io' })
-    .key(6.0, { pose: { ...P.bedSitUp, armL: { r: [-0.7, 0, -0.35], o: [0, 0, -.02] }, head: { r: [-0.3, 0.02, 0.04] }, root: { y: -.51, rx: -.14 } }, dur: .3, ease: 'io' })
-    .key(6.9, { pose: 'bedSitUp', dur: .4 });
+  A.swapA.key(5.15, { pose: { ...P.bedSitUp, armL: { r: [0.2, 0, 0.5], o: [-0.1, 0, 0] } }, dur: .3, ease: 'io' })
+    .key(6.0, { pose: { ...P.bedSitUp, armL: { r: [0.25, 0, 0.55], o: [-0.12, 0, 0] }, head: { r: [-0.3, 0.02, 0.04] }, root: { y: -.51, rx: -.18, z: -.1 } }, dur: .3, ease: 'io' })
+    .key(6.6, { pose: { ...P.bedSitUp, armL: { r: [0.25, 0, 0.55], o: [-0.12, 0, 0] }, root: { y: -.51, rx: -.2, z: -.22 } }, dur: .3, ease: 'io' })
+    .key(7.3, { pose: 'bedSitUp', dur: .4 });   // scoots back out of it, then settles
   A.grandma.face(4.5, 'happy');
 
   // --- 3: CLASS PARTY: cake on a front desk, kids sing ONE AT A TIME (awkward), birthday kid deflates ---
@@ -318,9 +322,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const PK = [[clsW(-.6, -4.35), .15], [clsW(.7, -4.55), -.12], [clsW(.05, -3.62), 0]];   // kid0 left, kid1 right, birthday kid at the cake
   A.kid0.show(7.8, 9.06); A.kid1.show(7.8, 9.06); A.kid2.show(7.8, 9.98); A.kid0P.show(9.06, 9.98); A.kid1P.show(9.06, 9.98);
   A.kid0.key(7.7, { pose: 'soloSing', at: PK[0][0], ry: PK[0][1] });
-  A.kid0P.key(9.06, { pose: 'soloSing', at: PK[0][0], ry: PK[0][1], dur: .01 }).key(9.15, { pose: 'awkwardStand', dur: .25 }).key(9.5, { pose: { ...P.awkwardStand, head: { r: [0.5, 0.1, 0] } }, dur: .3 });
+  A.kid0P.key(9.06, { pose: 'soloSing', at: PK[0][0], ry: PK[0][1], dur: .01 }).key(9.15, { pose: { ...P.awkwardStand, armL: { r: [0.1, 0, 0.1] } }, dur: .25 }).key(9.5, { pose: { ...P.awkwardStand, armL: { r: [0.1, 0, 0.1] }, head: { r: [0.5, 0.1, 0] } }, dur: .3 });
   A.kid1.key(7.7, { pose: 'awkwardStand', at: PK[1][0], ry: PK[1][1] }).key(8.5, { pose: 'soloSing', dur: .25 });
-  A.kid1P.key(9.06, { pose: 'soloSing', at: PK[1][0], ry: PK[1][1], dur: .01 }).key(9.15, { pose: 'awkwardStand', dur: .25 }).key(9.55, { pose: { ...P.awkwardStand, head: { r: [0.5, -0.15, 0] } }, dur: .3 });
+  A.kid1P.key(9.06, { pose: 'soloSing', at: PK[1][0], ry: PK[1][1], dur: .01 }).key(9.15, { pose: { ...P.awkwardStand, armR: { r: [0.1, 0, -0.1] } }, dur: .25 }).key(9.55, { pose: { ...P.awkwardStand, head: { r: [0.5, -0.15, 0] } }, dur: .3 });
   A.kid2.key(7.7, { pose: 'cakeLean', at: PK[2][0], ry: PK[2][1] }).key(9.2, { pose: { ...P.cakeLean, head: { r: [0.45, 0, 0.05] } }, dur: .4 });
   fx.poof(9.05, [PK[0][0][0], 1.35, PK[0][0][1]], { size: .7, n: 12 }); fx.poof(9.05, [PK[1][0][0], 1.35, PK[1][0][1]], { size: .7, n: 12 });
   A.kid0.face(7.7, 'nervous'); A.kid1.face(7.7, 'excited'); A.kid0P.face(9.0, 'shocked'); A.kid1P.face(9.0, 'shocked'); A.kid2.face(7.7, 'sad');
@@ -400,7 +404,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // the two mini "little brothers" (shrunken base bodies) chasing each other in Dana's hall: FROZEN + X + grayscale at 23.85
   await mk('miniA', 'm005'); await mk('miniB', 'm010');
-  const HWx = roomW(HB, 'dining', 1.1, 0.62);   // lane in front of the table (table z 127.95.., lane ~127.1-127.7)   // the dining room floor: renders clean, unlike the deep back hall
+  const HWx = roomW(HB, 'dining', 1.1, 0.48);   // lane in front of the table (table z 127.95.., lane ~127.1-127.7)   // the dining room floor: renders clean, unlike the deep back hall
   for (const [n, off, ph] of [['miniA', 0, 0], ['miniB', .95, 2.1]]) { const a2 = A[n]; a2.a.root.scale.setScalar(.72); a2.noClamp = true; a2.show(23.28, 24.3);
     a2.extra = (t, aa) => { const u = (t - 23.28) / 1.0, x = HWx[0] + .3 + ((u * 1.08 + off) % 2.1), R = aa.a.root; R.position.set(x, .06 + Math.abs(Math.sin(t * 9 + ph)) * .1, HWx[1] + Math.sin(x * 1.7 + ph) * .22); R.rotation.y = N / 2 + Math.sin(t * 3 + ph) * .2; };
     a2.key(23.2, { pose: t2 => ({ legL: { r: [.6 * Math.sin(t2 * 11 + ph), 0, .06] }, legR: { r: [-.6 * Math.sin(t2 * 11 + ph), 0, -.06] }, armL: { r: [-.5 * Math.sin(t2 * 11 + ph) - .3, 0, .2] }, armR: { r: [.5 * Math.sin(t2 * 11 + ph) - .3, 0, -.2] }, head: { r: [0, Math.sin(t2 * 2) * .2, 0] }, root: { rx: .18 } }), at: [HWx[0] + .4, HWx[1]] }); a2.face(23.2, ph ? 'furious' : 'laugh'); }
@@ -465,7 +469,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 15: MID-SWAP (hallway): both in the swirl cloud; cut to his body yelling with Dana's voice ---
   const SWP = [HALL.x - .15, DL[1] - .3];   // the middle of the corridor, a step from her locker
-  A.trigPost1.show(40.84, 47.08); A.trigPost2.show(47.08, 50.9); A.danaPost1.show(40.84, 47.1); A.danaPost2.show(47.1, 50.9);
+  A.trigPost1.show(40.84, 47.12); A.trigPost2.show(47.12, 50.9); A.danaPost1.show(40.84, 47.12); A.danaPost2.show(47.12, 50.9);
   A.trigPost1.key(40.8, { pose: 'midSwapBoy', at: [SWP[0] - .62, SWP[1]], ry: N / 2 - .25, y: 0, dur: .01 })
     .key(41.15, { pose: 'patChest', dur: .3, ease: 'io' })   // Dana (inside his body) pats the strange chest, horrified
     .key(41.55, { pose: { ...P.patChest, armL: fa('armL', [0.14, 1.45, 0.25], [0.42, 1.1, 0.08]), head: { r: [0.15, -0.05, 0] } }, dur: .25, ease: 'io' })   // hands to the face
@@ -483,7 +487,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     .key(45.05, { pose: 'povHandLR', dur: .35, ease: 'io' })
     .key(45.55, { pose: { ...P.povHandLR, armR: fa('armR', [-0.16, 1.14, 0.56], [-0.38, 0.92, 0.27]) }, dur: .3, ease: 'io' })   // the right palm TURNS in front of the eyes
     .key(45.95, { pose: 'smugNew', dur: .35 });
-  A.trigPost1.key(43.3, { pose: t => P.yellFlail(t * .7), at: [HALL.x - 1.3, SWP[1] - 1.6], dur: .4, glide: .4 }).key(45.9, { pose: { ...P.yellFlail(0), armL: { r: [-0.6, 0, 0.4] }, armR: { r: [-0.5, 0, -0.45] }, head: { r: [0.2, 0.2, 0.1] } }, dur: .4 });
+  A.trigPost1.key(43.3, { pose: t => P.yellFlail(t * .7), at: [HALL.x - .9, SWP[1] - 1.5], dur: .4, glide: .4 }).key(45.9, { pose: { ...P.yellFlail(0), armL: { r: [-0.6, 0, 0.4] }, armR: { r: [-0.5, 0, -0.45] }, head: { r: [0.2, 0.2, 0.1] } }, dur: .4 });
   A.danaPost1.face(46.0, 'smug'); A.trigPost1.talk(43.3, 46.26);
 
   // --- 17: THE ENDING (rackfocus_crier_v1): her body talks to the lens; his body curled CRYING on the floor behind; rack focus; silence ---
@@ -494,16 +498,15 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const kissLips = { ...P.myPose, armL: fa('armL', [-0.02, 1.47, 0.26], [0.3, 1.12, 0.32], P.myPose.root), head: { r: [-0.2, -0.4, -0.05] } };
   const kissOut = { ...P.myPose, armL: fa('armL', [0.22, 1.62, 0.78], [0.36, 1.3, 0.42], P.myPose.root), head: { r: [-0.3, -0.45, -0.1] } };
   const myPoseIdle = t => ({ ...P.myPose, root: { ...P.myPose.root, rz: P.myPose.root.rz + Math.sin(t * 1.8) * .013 }, head: { r: [-0.064 + Math.sin(t * 1.3) * .02, -0.264, -0.016] } });
-  A.danaPost2.key(47.1, { pose: 'smugNew', at: EP, ry: ERY, dur: .01 }).key(47.14, { pose: t => myPoseIdle(t), dur: .25 })   // HIS myPose for the whole line (Xavier 06:24), breathing
+  A.danaPost2.key(47.12, { pose: 'smugNew', at: EP, ry: ERY, dur: .01 }).key(47.16, { pose: t => myPoseIdle(t), dur: .25 })   // HIS myPose for the whole line (Xavier 06:24), breathing
     .key(48.5, { pose: kissLips, dur: .22, ease: 'io' })
     .key(48.88, { pose: kissOut, dur: .18, style: 'snap' })   // mwah, out to the lens
     .key(49.35, { pose: t => myPoseIdle(t), dur: .4 });
   A.danaPost2.talk(47.12, 48.42);
-  A.trigPost1.key(46.9, { pose: t => P.kneelCryAnim(t), at: CRY, ry: ERY - .3, dur: .01 });   // kneeling, hands over the face, rocking
-  A.trigPost2.key(47.08, { pose: t => P.kneelCryAnim(t), at: CRY, ry: ERY - .3, dur: .01 })
+  A.trigPost2.key(47.12, { pose: t => P.kneelCryAnim(t), at: CRY, ry: ERY - .3, dur: .01 })
     .key(49.0, { pose: 'lieCry', dur: .45, ease: 'io' })
     .key(49.5, { pose: t => P.lieCryAnim(t), dur: .2 });   // full toddler tantrum: banging the fist, kicking
-  A.danaPost2.face(47.1, 'smug').face(48.9, 'happy').face(49.4, 'smug');
+  A.danaPost2.face(47.12, 'smug').face(48.9, 'happy').face(49.4, 'smug');
   A.trigPost1.face(46.8, 'crying'); A.trigPost2.face(47.0, 'crying');
 
   // ---------- per-frame props ----------
@@ -570,7 +573,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     if (want) { const r = RIGS[want]; fill2.intensity = .7; fill2.position.copy(r.k.target.position).add(new THREE.Vector3(-2, 1.8, 2)); } else fill2.intensity = 0;
     const night = s.id === 'deskList';   // Thursday NIGHT at the desk
     LOOK.setSun(150, 52, night ? { color: '#2a3a5c', intensity: .25, fill: .25 } : { color: '#fff4dc', intensity: 4.0, fill: 1.25 });
-    post.exposure = s.id === 'busPoof' ? 1.3 : night ? 1.18 : want ? 1.22 : 1.36;
+    const EXPO = { bedroom: 1.02, hallway: 1.05, class: 1.12, stage: 1.14, houseB: 1.1, kitchen: 1.1, desk: 1.14 };
+    post.gain = want ? [1.0, .96, .9] : [1.06, 1.02, .96];   // interiors: roll the whites (lookmeter high3)
+    post.exposure = s.id === 'busPoof' ? 1.24 : night ? 1.18 : want ? (EXPO[want] ?? 1.18) : 1.36;   // whites were blowing high3 .97 vs .76 (lookmeter 2026-11-28)
     post.saturation = inX(t) ? .07 : 1.34; post.contrast = 1.1;
   };
 
