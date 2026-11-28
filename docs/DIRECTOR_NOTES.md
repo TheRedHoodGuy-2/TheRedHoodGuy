@@ -506,3 +506,24 @@ defend every pixel of it, it does not get sent.
 - 2026-11-28 02:39 (New Body): comic split = two SEPARATE camera shots stacked vertically, slanted gutter (his sketch: low-left to high-right), her top-right looking left, him bottom-left looking right, masked (never in each other's frame), JJK-style energy (colour wash + streaks on the empty side). Effects slightly REALISTIC (real smoke, not sprite balls / tiny particle dots).
 - 2026-11-28 04:44: comic split ONCE only (the special trigger moment); the everyday 'ask Dana the time' is a regular shot. Ending: his selfie pose -> air kiss -> his myPose (phone swing reveals the crier).
 - 2026-11-28 05:12: prints / logos on clothes = painted INTO the shirt texture (front face via UVs), never a floating plane. Check it standing, front + 3/4, isolated (opts.only), before showing him.
+
+## 2026-11-28 06:24 (New Body rev1: full shot replan, Fable pass)
+- THE MUTE TEST: every shot must tell the story and stay engaging with the audio OFF. Replan any shot that fails it.
+- Shots were "ass": hard to follow, similar faces, camera not focused on the subject. Camera must be ON the subject; distinct characters per scene.
+- BANNED: the huge wide-open oval mouth on the boy (the 'shocked/scared' A-cell). He hates it. Yelling = angry/furious gritted cells.
+- SWAPS MUST BE VISIBLE: when two people swap, SHOW the trade (the two appearances trade places in the poof, like red shirt <-> blue shirt). Every swap beat: bus pair, birthday pair, choir chain, background pairs.
+- Bedroom: audience must SEE the kiss (profile, contact, animated lean), not "grandma kissing the bed".
+- Birthday: the CAKE must be visible; show the swap happen.
+- Twins: teacher yells at twin A (focus), poof on the twins, the OTHER one laughs soft-focus, teacher facepalm/slump.
+- 2D ELEMENTS ARE WELCOME: thought bubble with a slot-machine word roulette + "?", bouncing red X stamps with the scene freezing + draining to grayscale behind them, "TIME?" speech bubbles, music notes. Keep them lively.
+- Models: compare EVERY modeled prop to a real reference photo before use. The pancake stack looked like jelly: pancakes = proper 3D circles, layered, top one half-off / drooping, syrup + butter.
+- Mr. Bacon: give him business even without a voice line (walk up, point at bare wrist, head tilt + "TIME?" bubble).
+- POV: research-based recipe in research/pov_shots.md (orient first, eye level, tilt down own body, LARGE hands near a wide lens, breath bob).
+- Ending: her pose = his myPose for the subscribe line; the crier VISIBLE in the background spot he marked (screen right), cycling kneeling-cry (hands to face) -> lying toddler-tantrum flail (his two pose codes).
+- His shot ideas = inspiration for engagement level, not a literal checklist; do not stretch past the audio.
+
+## 2026-11-28 08:26 + 08:37 (New Body, the swap definition)
+- THE SWAP VISUAL (global): boy A keeps his fit and position; his hair/face/body become girl B's, and vice versa. Same for same-gender pairs. People must clearly SEE a swap happened.
+- MAINS TWIST (New Body): at the WTF swap Trig and Dana trade hair + body but KEEP their own faces (stronger tell). The faces swap later, at/after the subscribe part, completing the transformation.
+- The 3D hoodie has no female form: post-swap Trig's position wears a 2D red hoodie (classic shirt 10540221408). Ditch the 3D hoodie after the main swap.
+- The narrator's name is Trig.

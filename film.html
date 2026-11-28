@@ -58,7 +58,11 @@ window.renderFrame = t => {
     sp.overlay?.(mixCx, c.width, c.height);
     return mixCv.toDataURL('image/jpeg', .93);
   }
-  S.before?.(); post.render(false); return renderer.domElement.toDataURL('image/jpeg', .93);
+  S.before?.(); post.render(false);
+  // 2D story layer (thought bubbles, X stamps, TIME? bubbles, notes): S.paint2d(t) -> painter(ctx, W, H) | null, drawn over the graded frame
+  const p2 = S.paint2d?.(t);
+  if (p2) { const c = renderer.domElement; mixCv.width = c.width; mixCv.height = c.height; mixCx.drawImage(c, 0, 0); p2(mixCx, c.width, c.height); return mixCv.toDataURL('image/jpeg', .93); }
+  return renderer.domElement.toDataURL('image/jpeg', .93);
 };
 window.__dbg = { scene, S, THREE }; window.ready = true;
 </script>

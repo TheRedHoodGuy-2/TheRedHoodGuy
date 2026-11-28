@@ -158,6 +158,18 @@ every message of his and every reply -> session log.
 - Gate: `python3 tools/lookmeter.py <frames|video>` vs Gneef (brightness .31, sat .57, black .00, top .76, warm .04).
   Read the numbers with judgement (a red hoodie filling a close-up pushes warm / sat), but bright / black / top must pass.
 
+## 8b. THE MUTE TEST (Xavier 2026-11-28, after New Body rev1)
+- Every shot must tell its story and hold attention with the SOUND OFF. If a muted viewer cannot tell what is happening, replan the shot.
+- SWAPS ARE SHOWN (corrected, Xavier 08:26 + 08:37): position and FIT stay; hair + face + body (skin) trade. Built as
+  hybrid cast entries (base = the clothes side, head fields from the partner) swapped in at the poof via show() windows.
+  Never trade positions. Mains can lag the FACE swap for a later beat to strengthen the tell (New Body: faces complete
+  at the subscribe part; the boy's 3D hoodie has no female form, so post-swap he wears the 2D red hoodie 10540221408).
+- 2D story elements are part of the kit (tools: scene paint2d): thought bubbles (slot-machine word roulette + ?), bouncing red X + freeze + grayscale for "no X", "TIME?" speech bubbles, music notes. Lively, not spammed.
+- Camera is ON the subject; no two same-looking bank characters in one frame (twins excepted: that IS the joke).
+- Props are modeled against a real reference photo and compared before use (the jelly pancake rule).
+- POV recipe: research/pov_shots.md (orient first, eye height, tilt down the body, LARGE hands near a wide lens, breath bob).
+- BANNED on the boy: the giant open-oval mouth cell ('shocked'/'scared' A-cells). His yells use angry/furious gritted cells.
+
 ## 9. Camera (engine/camera.js cameraRig + engine/shots.js grammar; research/gneef_camera.md)
 - Gneef measured: ~45% push-ins at speeds from 3 to 19 %/s, ~40% holds where the CHARACTER does the moving, fast
   pull-outs, quick pans (0.13-0.2 frame widths / s), tilts / cranes. Cuts every ~1.5 s (first shot ~1.9 s, 7 cuts in
@@ -263,3 +275,7 @@ Everything renders in the cloud workspace (Three.js, SwiftShader, 2 cores). Noth
   ducked, loudnorm -14) -> tools/finalize.sh (burn captions + avatar, 10-12 Mbps, +faststart; 15 Mbps would not play on his laptop).
 - Pop gate: node tools/popcheck.mjs <scene> <dur> must print nothing (no actor vanishing / jumping off a cut).
 - Final renders only after Xavier OKs the review video. Never speculative.
+
+## 8c. SH `who` = an actor IN the shot (found 2026-11-28, the minis wash)
+- LOOK.follow focuses DOF on the SH row's `who` root every frame. A `who` who is hidden/parked elsewhere sets focus
+  kilometres off and the WHOLE frame renders as milky wash. Any uniformly-blurred shot: check `who` first.

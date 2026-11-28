@@ -1,198 +1,212 @@
 [
- [
-  0.0,
-  "mk_3082.mp3",
-  0.5,
-  1.2,
-  "bus swap poof (on screen frame 0)"
- ],
- [
-  6.0,
-  "mk_2194.mp3",
-  0.3,
-  0.8,
-  "grandma forehead kiss"
- ],
- [
-  10.12,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.24,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.36,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.48,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.62,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.74,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.86,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  10.98,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  11.1,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  11.22,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  11.34,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  11.46,
-  "mk_3005.mp3",
-  0.32,
-  0.45,
-  "choir kid poofs (chain)"
- ],
- [
-  13.56,
-  "mk_3082.mp3",
-  0.35,
-  1.0,
-  "twins swap poof"
- ],
- [
-  13.62,
-  "mk_3005.mp3",
-  0.25,
-  0.4,
-  "twin B pop"
- ],
- [
-  15.62,
-  "mk_364.mp3",
-  0.1,
-  3.4,
-  "hallway chatter"
- ],
- [
-  19.06,
-  "mk_2264.mp3",
-  0.22,
-  1.9,
-  "class shouting answers"
- ],
- [
-  22.45,
-  "mk_1819.mp3",
-  0.22,
-  1.3,
-  "dad at the sink"
- ],
- [
-  27.54,
-  "mk_364.mp3",
-  0.1,
-  5.1,
-  "hallway chatter"
- ],
- [
-  34.6,
-  "mk_2369.mp3",
-  0.4,
-  1.3,
-  "pencil on the list"
- ],
- [
-  36.92,
-  "mk_364.mp3",
-  0.1,
-  2.2,
-  "hallway chatter"
- ],
- [
-  39.12,
-  "mk_1490.mp3",
-  0.35,
-  0.5,
-  "comic panels slam in"
- ],
- [
-  40.3,
-  "mk_677.mp3",
-  0.45,
-  1.0,
-  "gutter cracks"
- ],
- [
-  40.36,
-  "mk_3082.mp3",
-  0.5,
-  1.2,
-  "the swap poof"
- ],
- [
-  40.84,
-  "mk_869.mp3",
-  0.35,
-  1.2,
-  "mid-swap sparkle whirl"
- ],
- [
-  48.98,
-  "mk_2194.mp3",
-  0.4,
-  0.8,
-  "her air kiss"
- ],
- [
-  49.3,
-  "mk_1490.mp3",
-  0.18,
-  0.5,
-  "phone swings round to him"
- ]
+[
+1.02,
+"mk_3082.mp3",
+0.5,
+1.2,
+"bus swap poof (the duet pair trades)"
+],
+[
+6.0,
+"mk_2194.mp3",
+0.3,
+0.8,
+"grandma forehead kiss"
+],
+[
+9.05,
+"mk_3082.mp3",
+0.4,
+1.1,
+"party swap poof (singer trades at the cake)"
+],
+[
+10.12,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+10.4,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+10.66,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+10.9,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+11.12,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+11.34,
+"mk_3005.mp3",
+0.32,
+0.45,
+"choir pair-trade pops"
+],
+[
+13.0,
+"mk_3082.mp3",
+0.35,
+1.0,
+"twins swap poof"
+],
+[
+13.06,
+"mk_3005.mp3",
+0.25,
+0.4,
+"twin B pop"
+],
+[
+15.62,
+"mk_364.mp3",
+0.1,
+3.4,
+"hallway chatter"
+],
+[
+17.08,
+"mk_3005.mp3",
+0.25,
+0.5,
+"background kids trade at the lockers"
+],
+[
+19.06,
+"mk_2264.mp3",
+0.22,
+1.9,
+"class shouting answers"
+],
+[
+22.45,
+"mk_1819.mp3",
+0.22,
+1.3,
+"dad at the sink"
+],
+[
+22.87,
+"mk_1143.mp3",
+0.4,
+0.4,
+"red X stamps over the dishes"
+],
+[
+23.3,
+"mk_531.mp3",
+0.2,
+0.9,
+"mini brothers scurry (steps)"
+],
+[
+23.87,
+"mk_1143.mp3",
+0.4,
+0.4,
+"red X stamps over the brothers"
+],
+[
+27.54,
+"mk_364.mp3",
+0.1,
+1.0,
+"hallway chatter"
+],
+[
+28.52,
+"mk_3005.mp3",
+0.22,
+0.35,
+"TIME? bubble pops in (Mr. Bacon)"
+],
+[
+32.8,
+"mk_3005.mp3",
+0.2,
+0.3,
+"TIME? bubble (ask 2)"
+],
+[
+33.72,
+"mk_3005.mp3",
+0.2,
+0.3,
+"TIME? bubble (ask 3)"
+],
+[
+34.6,
+"mk_2369.mp3",
+0.4,
+1.3,
+"pencil on the list"
+],
+[
+36.92,
+"mk_364.mp3",
+0.1,
+2.2,
+"hallway chatter"
+],
+[
+38.37,
+"mk_3005.mp3",
+0.22,
+0.35,
+"TIME? bubble pops in (the boy)"
+],
+[
+39.12,
+"mk_1490.mp3",
+0.35,
+0.5,
+"comic panels slam in"
+],
+[
+40.3,
+"mk_677.mp3",
+0.45,
+1.0,
+"gutter cracks"
+],
+[
+40.36,
+"mk_3082.mp3",
+0.5,
+1.2,
+"the swap poof"
+],
+[
+40.84,
+"mk_869.mp3",
+0.35,
+1.2,
+"mid-swap sparkle whirl"
+],
+[
+48.98,
+"mk_2194.mp3",
+0.4,
+0.8,
+"her air kiss"
+]
 ]

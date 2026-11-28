@@ -186,5 +186,249 @@
    "k": 0.9,
    "dy": 0.03
   }
+ },
+ "swapA2": {
+  "base": "m013",
+  "name": "bus kid L post-swap (his fit, her head/body)",
+  "skin": "#dca67c",
+  "hair": [
+   114211163917185
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "sex": "f",
+  "accessories": []
+ },
+ "swapB2": {
+  "base": "f020",
+  "name": "bus kid R post-swap (her fit, his head/body)",
+  "skin": "#dca67c",
+  "hair": [
+   8966711821
+  ],
+  "faceSet": "ai:11_silly_derpy",
+  "sex": "m",
+  "accessories": []
+ },
+ "kid0P": {
+  "base": "m026",
+  "name": "party singer post-swap",
+  "skin": "#f6dcc8",
+  "hair": [
+   6323887109
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": [
+   301820310
+  ]
+ },
+ "kid1P": {
+  "base": "m001",
+  "name": "party joiner post-swap",
+  "skin": "#ecc3a3",
+  "hair": [
+   17176557559
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": []
+ },
+ "kid02": {
+  "base": "m026",
+  "name": "choir kid 0 post-swap",
+  "skin": "#f6dcc8",
+  "hair": [
+   6323887109
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": [
+   301820310
+  ]
+ },
+ "kid12": {
+  "base": "m001",
+  "name": "choir kid 1 post-swap",
+  "skin": "#ecc3a3",
+  "hair": [
+   17176557559
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": []
+ },
+ "kid22": {
+  "base": "f001",
+  "name": "choir kid 2 post-swap",
+  "skin": "#b67a53",
+  "hair": [
+   12727863138
+  ],
+  "faceSet": "ai:16_shy_moe_smirk",
+  "sex": "f",
+  "accessories": []
+ },
+ "kid32": {
+  "base": "f007",
+  "name": "choir kid 3 post-swap",
+  "skin": "#ecc3a3",
+  "hair": [
+   122988594975561
+  ],
+  "faceSet": "ai:16_shy_moe_smirk",
+  "sex": "f",
+  "accessories": []
+ },
+ "kid42": {
+  "base": "f002",
+  "name": "choir kid 4 post-swap",
+  "skin": "#a8714f",
+  "hair": [
+   7222634196
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": []
+ },
+ "kid52": {
+  "base": "m002",
+  "name": "choir kid 5 post-swap",
+  "skin": "#9a6444",
+  "hair": [
+   7668491285
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "sex": "f",
+  "accessories": [
+   11884330
+  ]
+ },
+ "kid62": {
+  "base": "f003",
+  "name": "choir kid 6 post-swap",
+  "skin": "#f6dcc8",
+  "hair": [
+   117086356051576
+  ],
+  "faceSet": "kit:classic",
+  "sex": "m",
+  "accessories": [
+   301820310
+  ]
+ },
+ "kid72": {
+  "base": "m027",
+  "name": "choir kid 7 post-swap",
+  "skin": "#cf9668",
+  "hair": [
+   104164430679537
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "sex": "f",
+  "accessories": []
+ },
+ "kid82": {
+  "base": "f004",
+  "name": "choir kid 8 post-swap",
+  "skin": "#cf9668",
+  "hair": [
+   11506610371
+  ],
+  "faceSet": "ai:05_intimidating",
+  "sex": "m",
+  "accessories": [
+   7856863608
+  ]
+ },
+ "kid92": {
+  "base": "m003",
+  "name": "choir kid 9 post-swap",
+  "skin": "#9a6444",
+  "hair": [
+   6346367086
+  ],
+  "faceSet": "classicB",
+  "sex": "f",
+  "accessories": []
+ },
+ "kid102": {
+  "base": "f013",
+  "name": "choir kid 10 post-swap",
+  "skin": "#b67a53",
+  "hair": [
+   17496829224
+  ],
+  "faceSet": "ai:11_silly_derpy",
+  "sex": "m",
+  "accessories": []
+ },
+ "kid112": {
+  "base": "m028",
+  "name": "choir kid 11 post-swap",
+  "skin": "#9a6444",
+  "hair": [
+   9932882251
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "sex": "f",
+  "accessories": []
+ },
+ "kid3L": {
+  "base": "f007",
+  "name": "locker kid post-swap A",
+  "skin": "#9a6444",
+  "hair": [
+   7668491285
+  ],
+  "faceSet": "ai:13_sleepy_chibi_doll",
+  "sex": "f",
+  "accessories": [
+   11884330
+  ]
+ },
+ "kid4L": {
+  "base": "f002",
+  "name": "locker kid post-swap B",
+  "skin": "#b67a53",
+  "hair": [
+   12727863138
+  ],
+  "faceSet": "ai:16_shy_moe_smirk",
+  "sex": "f",
+  "accessories": []
+ },
+ "trigPost1": {
+  "base": "f006",
+  "shirt": 10540221408,
+  "pants": 139566330228696,
+  "wear": [],
+  "accessories": [],
+  "faceSet": "alti:boy",
+  "name": "Trig position post-WTF: his fit (2D red hoodie), her hair+body, HIS face"
+ },
+ "trigPost2": {
+  "base": "f006",
+  "shirt": 10540221408,
+  "pants": 139566330228696,
+  "wear": [],
+  "accessories": [],
+  "name": "Trig position at the sub part: faces completed (her face too)"
+ },
+ "danaPost1": {
+  "base": "f006",
+  "skin": "#f0c09e",
+  "hair": [
+   7067588586
+  ],
+  "name": "Dana position post-WTF: her fit, his hair+body, HER face"
+ },
+ "danaPost2": {
+  "base": "f006",
+  "skin": "#f0c09e",
+  "hair": [
+   7067588586
+  ],
+  "faceSet": "alti:boy",
+  "name": "Dana position at the sub part: his face completes it"
  }
 }
