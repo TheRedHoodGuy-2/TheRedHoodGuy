@@ -422,7 +422,8 @@
   "wear": [],
   "accessories": [],
   "faceSet": "alti:boy",
-  "name": "Trig position post-WTF: his fit (2D red hoodie), her hair+body, HIS face"
+  "name": "Trig position post-WTF: his fit (2D red hoodie), her hair+body, HIS face",
+  "hairTint": "#26262a"
  },
  "trigPost2": {
   "base": "f006",
@@ -430,7 +431,8 @@
   "pants": 139566330228696,
   "wear": [],
   "accessories": [],
-  "name": "Trig position at the sub part: faces completed (her face too)"
+  "name": "Trig position at the sub part: faces completed (her face too)",
+  "hairTint": "#26262a"
  },
  "danaPost1": {
   "base": "f006",
@@ -438,7 +440,8 @@
   "hair": [
    7067588586
   ],
-  "name": "Dana position post-WTF: her fit, his hair+body, HER face"
+  "name": "Dana position post-WTF: her fit, his hair+body, HER face",
+  "hairTint": "#a8693a"
  },
  "danaPost2": {
   "base": "f006",
@@ -447,6 +450,7 @@
    7067588586
   ],
   "faceSet": "alti:boy",
-  "name": "Dana position at the sub part: his face completes it"
+  "name": "Dana position at the sub part: his face completes it",
+  "hairTint": "#a8693a"
  }
 }

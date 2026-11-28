@@ -91,8 +91,8 @@ P.myPose = { armL: { r: [-1.571, -0.689, -1.502], o: [0.063, -0.065, 0.057] }, a
 // Xavier 06:24: the crier = HIS two pose codes. Kneeling (hands over the face) -> collapses to a lying toddler-tantrum flail.
 P.kneelCry = { armL: { r: [2.965, 0.391, 0.676], o: [0, 0, 0.33] }, armR: { r: [2.8, -0.473, -0.693], o: [0, 0, 0.353] }, legL: { r: [2.157, -0.001, -0.052], o: [-0.03, 0.057, -0.237] }, legR: { r: [2.184, -0.04, -0.115], o: [-0.029, 0.073, -0.219] }, head: { r: [-0.213, 0, 0] }, root: { x: 0.044, y: 0.14, z: 0.495, rx: -0.545, ry: -0.061, rz: 0.078 } };
 P.lieCry = { armL: { r: [2.074, 0.036, 0.623], o: [0, 0, -0.3] }, armR: { r: [-2.844, -0.568, 0.195], o: [-0.116, 0, 0.094] }, legL: { r: [0.18, 0.17, 0.121], o: [0.037, -0.044, -0.035] }, legR: { r: [0.697, 0.068, -0.091], o: [-0.005, -0.051, -0.134] }, head: { r: [-0.213, 0, 0] }, root: { x: 0.006, y: 0.442, z: -0.466, rx: 1.372, ry: -0.909, rz: -0.869 } };
-P.kneelCryAnim = t => { const k = Math.sin(t * 4.6); return { ...P.kneelCry, head: { r: [-0.213 + .05 * k, 0, .03 * k] }, root: { ...P.kneelCry.root, rx: -0.545 + .05 * k, rz: 0.078 + .02 * Math.sin(t * 4.6 + 1) } }; };   // rocking sobs
-P.lieCryAnim = t => { const k = Math.sin(t * 6.5), k2 = Math.sin(t * 6.5 + 1.4); return { ...P.lieCry, armL: { r: [2.074 + .55 * Math.max(0, k), 0.036, 0.623], o: [0, 0, -0.3] }, legR: { r: [0.697 + .4 * Math.max(0, k2), 0.068, -0.091], o: [-0.005, -0.051, -0.134] }, head: { r: [-0.213 + .06 * k, .08 * k2, 0] } }; };   // banging the fist + kicking: the trashy-kid tantrum
+P.kneelCryAnim = t => { const sob = Math.pow(Math.abs(Math.sin(t * 5.3)), 3), rock = Math.sin(t * 3.1), no = Math.sin(t * 4.4); return { ...P.kneelCry, armL: { r: [2.965 - .14 * sob, 0.391 + .06 * no, 0.676], o: [0, .02 * sob, 0.33] }, armR: { r: [2.8 - .14 * sob, -0.473 + .06 * no, -0.693], o: [0, .02 * sob, 0.353] }, head: { r: [-0.213 - .12 * sob, .28 * no, .06 * no] }, root: { ...P.kneelCry.root, y: 0.14 + .035 * sob, rx: -0.545 + .12 * rock - .08 * sob, rz: 0.078 + .05 * no } }; };   // heaving sobs: shoulders jerk up on every sob, head shakes no-no-no, the whole body rocks
+P.lieCryAnim = t => { const a = Math.sin(t * 7.2), b = Math.sin(t * 7.2 + Math.PI), c = Math.sin(t * 5.6 + .8), d = Math.sin(t * 5.6 + 2.4); return { ...P.lieCry, armL: { r: [2.074 + .75 * Math.max(0, a), 0.036, 0.623], o: [0, 0, -0.3] }, armR: { r: [-2.844 - .6 * Math.max(0, b), -0.568, 0.195], o: [-0.116, 0, 0.094] }, legL: { r: [0.18 + .65 * Math.max(0, c), 0.17, 0.121], o: [0.037, -0.044, -0.035] }, legR: { r: [0.697 + .65 * Math.max(0, d), 0.068, -0.091], o: [-0.005, -0.051, -0.134] }, head: { r: [-0.213 + .1 * a, .3 * Math.sin(t * 3.3), 0] }, root: { ...P.lieCry.root, rz: -0.869 + .07 * Math.sin(t * 3.3) } }; };   // full tantrum: both fists bang the floor in turn, both legs kick, head rolls
 P.thinkChin = { ...sit, armR: fa('armR', [-0.08, 1.22, 0.34], [-0.42, 0.92, 0.14], sit.root), armL: { r: [-0.6, 0, 0.12], o: [0, -0.02, 0.06] }, head: { r: [-0.16, -0.08, 0.04] }, root: { ...sit.root, rx: 0.03 } };   // chin on the fist, filtering her words
 P.patChest = { legL: { r: [-0.05, 0, 0.12] }, legR: { r: [0.07, 0, -0.06] }, armL: fa('armL', [0.12, 1.05, 0.28], [0.42, 0.9, 0.08]), armR: fa('armR', [-0.1, 0.92, 0.3], [-0.42, 0.85, 0.08]), head: { r: [0.45, -0.1, 0] }, root: { rx: 0.1 } };   // hands patting the (new) chest, head down at it
 P.pointYell = t => { const k = Math.sin(t * 7); return { legL: { r: [-0.14, 0, 0.22] }, legR: { r: [0.18, 0, -0.1] }, armR: fa('armR', [-0.2, 1.3, 0.85], [-0.42, 1.05, 0.3]), armL: { r: [0.35, 0, 0.3], o: [0, 0, 0.04] }, head: { r: [-0.15 + .04 * k, -0.05, 0.05] }, root: { rx: -0.14, rz: 0.03 * k } }; };   // one arm JABBING at her: "YOU did this" (reads muted; no flail spam)
@@ -119,15 +119,17 @@ export const POSE_SHEET = [
   ['32 Mid-swap: boy flails', 'trigPost1', 'midSwapBoy', 'angry', ''], ['33 Mid-swap: Dana flails', 'danaPost1', 'midSwapDana', 'shocked', ''],
   ['34 His body (Dana inside): yelling', 'trigPost1', 'yellFlail', 'angry', ''],
   ['35 POV: left hand up', 'danaPost1', 'povHandL', 'neutral', ''], ['36 POV: both hands up', 'danaPost1', 'povHandLR', 'neutral', ''],
-  ['37 Her body (him inside): smug', 'danaPost1', 'smugNew', 'smug', ''], ['41 Ending: your myPose', 'danaPost2', 'myPose', 'smug', ''], ['42 Ending: kiss at the lips', 'dana', 'selfieKissLips', 'smug', ''], ['43 Ending: the air kiss out', 'dana', 'selfieKissOut', 'happy', ''], ['44 Ending: your myPose (phone swings to him)', 'dana', 'myPose', 'neutral', ''],
-  ['39 The crier: kneeling, hands over the face', 'trigPost2', 'kneelCry', 'crying', 'floor'], ['39b The crier: toddler tantrum flail', 'trigPost2', 'lieCry', 'crying', 'floor'],
+  ['37 Her body (him inside): smug', 'danaPost1', 'smugNew', 'smug', ''], ['41 Ending: your myPose', 'dana', 'myPose', 'smug', ''], ['42 Ending: kiss at the lips', 'dana', 'selfieKissLips', 'smug', ''], ['43 Ending: the air kiss out', 'dana', 'selfieKissOut', 'happy', ''], ['44 Ending: your myPose (phone swings to him)', 'dana', 'myPose', 'neutral', ''],
+  ['39 The crier: kneeling, hands over the face', 'boy', 'kneelCry', 'crying', 'floor'], ['39b The crier: toddler tantrum flail', 'boy', 'lieCry', 'crying', 'floor'],
   ['43 Dana thinking (chin on fist)', 'dana', 'thinkChin', 'neutral', 'seat'], ['44 Boy-body pats the strange chest', 'trigPost1', 'patChest', 'angry', ''],
   ['45 Boy-body jabs at her', 'trigPost1', 'pointYell', 'angry', ''],
 ];
 
 // ---------------- the shot list (times = voice/words.json; labels for validate()) ----------------
 const SH = [
-  { t: 0.00, dur: 4.60, id: 'busPoof', who: 'swapA', size: 'medium', angle: 'eye', move: 'push', speed: 1.8 },
+  { t: 0.00, dur: 1.90, id: 'busPoof', who: 'swapA', size: 'wide', angle: 'eye', move: 'push', speed: 1.8 },
+  { t: 1.90, dur: 1.35, id: 'busA', who: 'swapA2', size: 'close', angle: 'high', move: 'truckL', speed: 1.2 },
+  { t: 3.25, dur: 1.35, id: 'busB', who: 'swapB2', size: 'medium', angle: 'eye', move: 'pull', speed: 2.4 },
   { t: 4.60, dur: 3.20, id: 'bedroom', who: 'swapA', size: 'full', angle: 'high', move: 'craneDown', speed: 1.0 },
   { t: 7.80, dur: 2.18, id: 'party', who: 'kidSolo', size: 'wide', angle: 'eye', move: 'truckL', speed: 1.4 },
   { t: 9.98, dur: 1.98, id: 'choir', who: 'principal', size: 'wide', angle: 'low', move: 'truckR', speed: 2.2 },
@@ -149,7 +151,7 @@ const SH = [
   { t: 40.84, dur: 2.46, id: 'midSwap', who: 'trigPost1', size: 'medium', angle: 'low', move: 'orbitR', speed: 1.5 },
   { t: 43.30, dur: 2.70, id: 'povHands', who: 'danaPost1', size: 'close', angle: 'eye', move: 'hold', speed: 0.3 },
   { t: 46.00, dur: 1.12, id: 'pullOut', who: 'danaPost1', size: 'medium', angle: 'eye', move: 'pull', speed: 2.8 },
-  { t: 47.12, dur: 3.78, id: 'ending', who: 'danaPost2', size: 'close', angle: 'eye', move: 'push', speed: 0.5 },
+  { t: 47.12, dur: 3.78, id: 'ending', who: 'dana', size: 'close', angle: 'eye', move: 'push', speed: 0.5 },
 ];
 export const SHOTS = SH;
 
@@ -175,6 +177,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const bus = busInterior({ rows: 5 }); bus.position.set(BUS.x, ground(BUS.x, BUS.z) + .55, BUS.z); bus.rotation.y = BUS.ry; scene.add(bus);  // bus floor ~.55 over the road (real school bus floor height)
   scene.updateMatrixWorld(true);
   const busLocal = (lx, ly, lz) => bus.localToWorld(new THREE.Vector3(lx, ly, lz));
+  // the bus ceiling / walls were taking the GREEN grass bounce (hemi ground colour) and read as a green slab (Xavier 10:31): a warm interior glow
+  { const seen = new Set(); bus.traverse(o => { if (!o.isMesh || !o.material || seen.has(o.material) || !o.material.color || o.material.map) return; seen.add(o.material);
+    const c = o.material.color, l = .299 * c.r + .587 * c.g + .114 * c.b; if (l > .6 && o.material.emissive) { o.material.emissive.set('#d9cdb4'); o.material.emissiveIntensity = .32; } }); }
 
   const HA = await buildHouse(scene, 'A', { floors: ['up'], origin: [HUP[0], -4.38, HUP[2]] });   // 'his' room floor lands at y 0
   await furnishHouse(scene, HA, ['his', 'parents']);
@@ -260,8 +265,8 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   await mk('kid0P', 'kid0P', { emo: 'shocked' }); await mk('kid1P', 'kid1P', { emo: 'shocked' });
   await mk('kid3L', 'kid3L'); await mk('kid4L', 'kid4L');
   // mains (the twist): at the WTF only hair+body trade, faces stay; faces complete at the sub part; 2D red hoodie post-swap
-  await mk('trigPost1', 'trigPost1'); await mk('trigPost2', 'trigPost2', { emo: 'crying' });
-  await mk('danaPost1', 'danaPost1', { emo: 'shocked' }); await mk('danaPost2', 'danaPost2', { emo: 'smug' });
+  await mk('trigPost1', 'trigPost1');
+  await mk('danaPost1', 'danaPost1', { emo: 'shocked' });
   await mk('grandma', 'f025', { emo: 'happy' });
   await mk('teacher', 'teacher', { emo: 'annoyed' }); await mk('principal', 'principal', { emo: 'happy' });
   await mk('twinA', 'twinA'); await mk('twinB', 'twinB');
@@ -273,22 +278,35 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.kidSolo = A.kid0;
 
   // ======================= STAGING =======================
-  // --- 1: THE BUS. Frame 0 = inside the POOF; it clears by ~.8 s; both kids stare at their new hands; mailman cameo passes the window ---
-  const BZ = -bus.userData.L / 2 + 1.6 + 2 * 1.55;   // 3rd row
-  const seatL = busLocal(-2.38, .69, BZ + .08), seatR = busLocal(-.68, .69, BZ + .08);   // (they face +x: the backrest is the bench's -x edge, clipscan 2026-11-28)   // same bench, window kid + aisle kid, 1.2 m apart (inner arms posed up/forward so they don't meet)
+  // --- 1: THE BUS (Xavier 10:31 rev: camera must SEE them + a FULL bus). The pair sit in the FRONT row so the camera has the
+  // clear 3 m to the bulkhead to pull back into; every row behind them is full of kids who turn at the poof.
+  // Shots: 0-1.9 the two-shot (duet -> poof -> trade), 1.9-3.25 close on the aisle kid, 3.25-4.6 close on the window kid.
+  const BZ = -bus.userData.L / 2 + 1.6 + 4 * 1.55;   // FRONT row (row 4)
+  const seatL = busLocal(-2.08, .69, BZ + .08), seatR = busLocal(-.82, .69, BZ + .08);   // window kid / aisle kid on the -x bench (spans -2.6..-.4)
   A.swapA.show(0, 1.03); A.swapB.show(0, 1.03); A.swapA2.show(1.03, 4.60); A.swapB2.show(1.03, 4.60);
   const yS = seatL.y - ground(seatL.x, seatL.z);
   A.swapA.key(-1, { pose: 'busSingL', at: [seatR.x, seatR.z], ry: BUS.ry, y: yS });
   A.swapB.key(-1, { pose: 'busSingR', at: [seatL.x, seatL.z], ry: BUS.ry, y: yS });
   // THE SWAP (Xavier 08:37): seats + fits stay; in the poofs each kid's hair/face/body becomes the OTHER's (hybrid actors)
   A.swapA2.key(1.03, { pose: 'busHandsR', at: [seatR.x, seatR.z], ry: BUS.ry, y: yS, dur: .01 })
-    .key(2.6, { pose: { ...P.busHandsR, head: { r: [0.25, -0.55, -0.1] } }, dur: .35 }).key(3.3, { pose: 'busHandsR', dur: .3 });
+    .key(2.3, { pose: { ...P.busHandsR, head: { r: [0.3, -0.45, -0.1] } }, dur: .35 }).key(2.95, { pose: { ...P.busHandsR, head: { r: [-0.05, -0.55, -0.05] } }, dur: .3 })   // looks at his hands, then over at his seatmate
+    .key(3.6, { pose: 'busHandsR', dur: .3 });
   A.swapB2.key(1.03, { pose: 'busHandsL', at: [seatL.x, seatL.z], ry: BUS.ry, y: yS, dur: .01 })
-    .key(2.75, { pose: { ...P.busHandsL, head: { r: [0.22, 0.5, 0.1] } }, dur: .35 }).key(3.45, { pose: 'busHandsL', dur: .3 });
+    .key(2.0, { pose: { ...P.busHandsL, head: { r: [0.15, 0.4, 0.1] } }, dur: .35 }).key(3.6, { pose: { ...P.busHandsL, head: { r: [0.42, 0.05, 0.05] } }, dur: .35 })   // stares at the new hands, then at the hair falling past them
+    .key(4.2, { pose: { ...P.busHandsL, head: { r: [0.0, 0.5, 0.1] } }, dur: .3 });
   A.swapA.face(-1, 'happy'); A.swapB.face(-1, 'happy');
-  A.swapA2.face(1.0, 'shocked').face(3.6, 'scared'); A.swapB2.face(1.0, 'shocked').face(3.7, 'scared');
+  A.swapA2.face(1.0, 'shocked').face(3.0, 'scared'); A.swapB2.face(1.0, 'shocked').face(3.7, 'scared');
   A.swapA.noClamp = A.swapB.noClamp = A.swapA2.noClamp = A.swapB2.noClamp = true;   // seated above the road: the clamp would yank them to the asphalt
   fx.poof(1.0, [seatL.x, seatL.y + .6, seatL.z], { size: 1.1, dur: 1.1, n: 18 }); fx.poof(1.0, [seatR.x, seatR.y + .6, seatR.z], { size: 1.1, dur: 1.1, n: 18 });
+  // the FULL bus: 11 kids in the rows behind + across the aisle. Chatting / looking out before; all turn to the poof after.
+  const PASS = [['m004', -2.0, 3, -.15], ['f014', -.95, 3, .2], ['m006', 1.0, 3, .25], ['f016', 2.05, 3, -.1],
+    ['m014', -2.0, 2, .3], ['f017', 1.55, 2, -.2], ['m029', -.95, 1, 0], ['f018', 2.0, 1, .15], ['m017', 1.0, 1, -.3], ['m031', -1.6, 0, .1], ['f008x', 1.4, 4, -.25]];
+  for (let k = 0; k < PASS.length; k++) { const [id, lx, row, h0] = PASS[k], nm = 'bus' + k, base = id === 'f008x' ? 'f011' : id;
+    await mk(nm, base, { emo: k % 3 ? 'happy' : 'neutral' }); const a = A[nm], sp = busLocal(lx, .69, -bus.userData.L / 2 + 1.6 + row * 1.55 + .08);
+    a.show(0, 4.6); a.noClamp = true; const ph = k * 1.7, lean = lx < 0 ? -1 : 1;
+    const look = t => t < 1.0 ? h0 + .25 * Math.sin(t * 2.2 + ph) : (row === 4 ? -0.9 : -.35 * lean) + .05 * Math.sin(t * 3 + ph);   // after the poof: everyone looks at the front-row pair
+    a.key(-1, { pose: t => ({ ...sit, head: { r: [t < 1.0 ? .05 : -.08, look(t), 0] }, root: { ...sit.root, rz: t < 1.0 ? .03 * Math.sin(t * 1.6 + ph) : .08 * lean, z: t < 1.0 ? 0 : .06 } }), at: [sp.x, sp.z], ry: BUS.ry, y: yS });
+    a.face(-1, k % 3 ? 'happy' : 'neutral').face(1.05 + (k % 4) * .06, k % 2 ? 'shocked' : 'surprised'); }
   // mailman on skates glides past outside the window (lore cameo, through the glass behind them)
   await mk('mailman', 'mailman_skates', { emo: 'happy' }); A.mailman.noClamp = true; A.mailman.show(1.2, 4.1);
   A.mailman.extra = (t, a) => { const u = cl((t - 1.2) / 2.6); const R = a.a.root; const x0 = BUS.x - 6, x1 = BUS.x + 7;   // passes along the sidewalk beyond the far window
@@ -469,7 +487,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 15: MID-SWAP (hallway): both in the swirl cloud; cut to his body yelling with Dana's voice ---
   const SWP = [HALL.x - .15, DL[1] - .3];   // the middle of the corridor, a step from her locker
-  A.trigPost1.show(40.84, 47.12); A.trigPost2.show(47.12, 50.9); A.danaPost1.show(40.84, 47.12); A.danaPost2.show(47.12, 50.9);
+  A.trigPost1.show(40.84, 47.12); A.boy.show(47.12, 50.9); A.danaPost1.show(40.84, 47.12); A.dana.show(47.12, 50.9);
   A.trigPost1.key(40.8, { pose: 'midSwapBoy', at: [SWP[0] - .62, SWP[1]], ry: N / 2 - .25, y: 0, dur: .01 })
     .key(41.15, { pose: 'patChest', dur: .3, ease: 'io' })   // Dana (inside his body) pats the strange chest, horrified
     .key(41.55, { pose: { ...P.patChest, armL: fa('armL', [0.14, 1.45, 0.25], [0.42, 1.1, 0.08]), head: { r: [0.15, -0.05, 0] } }, dur: .25, ease: 'io' })   // hands to the face
@@ -493,21 +511,21 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // --- 17: THE ENDING (rackfocus_crier_v1): her body talks to the lens; his body curled CRYING on the floor behind; rack focus; silence ---
   // Xavier 04:44: HIS selfie pose (screenshot), the selfie camera, then the air kiss; the crier sunk on the floor at his X:
   // behind her, screen-right, a few metres down the corridor. ERY turns the whole selfie set-up so that 'behind her' = down the corridor (-z).
-  const ERY = 1.27, EP = [HALL.x + .15, SWP[1] + 1.2], loc = (x, z) => [EP[0] + x * Math.cos(ERY) + z * Math.sin(ERY), EP[1] - x * Math.sin(ERY) + z * Math.cos(ERY)];
-  const CRY = loc(2.16, -.84);   // his X: screen-right of her, a couple of metres back, fully in frame
+  const ERY = 0, EP = [HALL.x - .65, SWP[1] + 1.2], loc = (x, z) => [EP[0] + x * Math.cos(ERY) + z * Math.sin(ERY), EP[1] - x * Math.sin(ERY) + z * Math.cos(ERY)];
+  const CRY = loc(1.55, -3.4);   // out in the corridor (clear of the lockers), screen-right of her head (his arrow)   // his arrow (10:31): behind her, screen-right, out in the corridor   // his X: screen-right of her, a couple of metres back, fully in frame
   const kissLips = { ...P.myPose, armL: fa('armL', [-0.02, 1.47, 0.26], [0.3, 1.12, 0.32], P.myPose.root), head: { r: [-0.2, -0.4, -0.05] } };
   const kissOut = { ...P.myPose, armL: fa('armL', [0.22, 1.62, 0.78], [0.36, 1.3, 0.42], P.myPose.root), head: { r: [-0.3, -0.45, -0.1] } };
   const myPoseIdle = t => ({ ...P.myPose, root: { ...P.myPose.root, rz: P.myPose.root.rz + Math.sin(t * 1.8) * .013 }, head: { r: [-0.064 + Math.sin(t * 1.3) * .02, -0.264, -0.016] } });
-  A.danaPost2.key(47.12, { pose: 'smugNew', at: EP, ry: ERY, dur: .01 }).key(47.16, { pose: t => myPoseIdle(t), dur: .25 })   // HIS myPose for the whole line (Xavier 06:24), breathing
+  A.dana.key(47.12, { pose: 'smugNew', at: EP, ry: ERY, dur: .01 }).key(47.16, { pose: t => myPoseIdle(t), dur: .25 })   // HIS myPose for the whole line (Xavier 06:24), breathing
     .key(48.5, { pose: kissLips, dur: .22, ease: 'io' })
     .key(48.88, { pose: kissOut, dur: .18, style: 'snap' })   // mwah, out to the lens
     .key(49.35, { pose: t => myPoseIdle(t), dur: .4 });
-  A.danaPost2.talk(47.12, 48.42);
-  A.trigPost2.key(47.12, { pose: t => P.kneelCryAnim(t), at: CRY, ry: ERY - .3, dur: .01 })
+  A.dana.talk(47.12, 48.42);
+  A.boy.key(47.12, { pose: t => P.kneelCryAnim(t), at: CRY, ry: ERY - .5, dur: .01 })
     .key(49.0, { pose: 'lieCry', dur: .45, ease: 'io' })
     .key(49.5, { pose: t => P.lieCryAnim(t), dur: .2 });   // full toddler tantrum: banging the fist, kicking
-  A.danaPost2.face(47.12, 'smug').face(48.9, 'happy').face(49.4, 'smug');
-  A.trigPost1.face(46.8, 'crying'); A.trigPost2.face(47.0, 'crying');
+  A.dana.face(47.12, 'smug').face(48.9, 'happy').face(49.4, 'smug');
+  A.trigPost1.face(46.8, 'crying'); A.boy.face(47.0, 'crying');
 
   // ---------- per-frame props ----------
   const headW = a => a.a.rig.parts.head.getWorldPosition(new THREE.Vector3());
@@ -575,7 +593,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     LOOK.setSun(150, 52, night ? { color: '#2a3a5c', intensity: .25, fill: .25 } : { color: '#fff4dc', intensity: 4.0, fill: 1.25 });
     const EXPO = { bedroom: 1.02, hallway: 1.05, class: 1.12, stage: 1.14, houseB: 1.1, kitchen: 1.1, desk: 1.14 };
     post.gain = want ? [1.0, .96, .9] : [1.06, 1.02, .96];   // interiors: roll the whites (lookmeter high3)
-    post.exposure = s.id === 'busPoof' ? 1.24 : night ? 1.18 : want ? (EXPO[want] ?? 1.18) : 1.36;   // whites were blowing high3 .97 vs .76 (lookmeter 2026-11-28)
+    post.exposure = s.id.startsWith('bus') ? 1.2 : night ? 1.18 : want ? (EXPO[want] ?? 1.18) : 1.36;   // whites were blowing high3 .97 vs .76 (lookmeter 2026-11-28)
     post.saturation = inX(t) ? .07 : 1.34; post.contrast = 1.1;
   };
 
@@ -615,6 +633,16 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     ctx.lineWidth = w2; ctx.strokeStyle = '#e2362c';
     for (const sgn of [1, -1]) { ctx.beginPath(); ctx.moveTo(-L2, -L2 * sgn); ctx.lineTo(L2, L2 * sgn); ctx.stroke(); }
     ctx.restore(); };
+  // CHOIR SWAP COUNTER (Xavier 10:31): every kid that swaps ticks the tally up, 1 -> 12, popping bigger and hotter each time
+  const CNT = []; for (const t0 of [10.12, 10.40, 10.66, 10.90, 11.12, 11.34]) CNT.push(t0, t0 + .07);
+  const drawCounter = (ctx, W, H, t) => { const n = CNT.filter(q => t >= q).length; if (!n) return; const last = CNT[n - 1], k = (t - last) / .22, sN = W / 540;
+    const e = k < 1 ? 1 + .55 * Math.sin(Math.min(1, k) * Math.PI) * (1 - k * .3) : 1, base = 1 + n * .035, sc = base * e;
+    const heat = (n - 1) / 11, col = heat < .5 ? `rgb(255,${Math.round(255 - 60 * heat * 2)},${Math.round(255 - 255 * heat * 2)})` : `rgb(255,${Math.round(195 - 150 * (heat - .5) * 2)},0)`;
+    ctx.save(); ctx.translate(W * .5, H * .17); ctx.rotate((n % 2 ? -1 : 1) * .06 * Math.max(0, 1 - k)); ctx.scale(sc, sc);
+    ctx.font = `900 ${Math.round(118 * sN)}px Montserrat, Arial Black, sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+    ctx.lineWidth = 16 * sN; ctx.strokeStyle = '#14161c'; ctx.strokeText(String(n), 0, 0); ctx.fillStyle = col; ctx.fillText(String(n), 0, 0);
+    ctx.font = `900 ${Math.round(30 * sN)}px Montserrat, Arial Black, sans-serif`; ctx.lineWidth = 8 * sN; ctx.strokeText('SWAPPED', 0, 70 * sN); ctx.fillStyle = '#ffffff'; ctx.fillText('SWAPPED', 0, 70 * sN);
+    ctx.restore(); };
   const paint2d = t => {
     const items = [];
     if (t >= .15 && t < 1.02) { const q1 = overHead(A.swapA, .42), q2 = overHead(A.swapB, .5); if (q1[2]) items.push(c => drawNote(c.ctx, c.W, c.H, q1[0], q1[1], t * 2)); if (q2[2]) items.push(c => drawNote(c.ctx, c.W, c.H, q2[0], q2[1], t * 2 + 2.2)); }
@@ -625,6 +653,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     const bubbleWins = [[28.5, 30.3, 'bacon', 'TIME?'], [38.35, 39.08, 'boy', 'TIME?'], [32.78, 33.56, 'kid5', 'TIME?'], [33.7, 34.5, 'kid7', 'TIME?']];
     for (const [a2, b2, who, txt] of bubbleWins) if (t >= a2 && t < b2 && A[who].a.root.visible) { const q = overHead(A[who], .55); if (q[2]) items.push(c => drawBubble(c.ctx, c.W, c.H, cl(q[0], .18, .82), Math.max(.14, q[1]), txt, (t - a2) / (b2 - a2))); }
     for (const [a2, b2] of XW) if (t >= a2 && t < b2) items.push(c => drawX(c.ctx, c.W, c.H, (t - a2) / (b2 - a2)));
+    if (t >= 10.1 && t < 11.96) items.push(c => drawCounter(c.ctx, c.W, c.H, t));
     if (!items.length) return null;
     return (ctx, W, H) => { const c = { ctx, W, H }; for (const f of items) f(c); };
   };
@@ -644,7 +673,10 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // from the aisle a row ahead, above the seat backs: starts INSIDE the cloud (close), pulls back as it clears, then pushes in on their faces
     // from the aisle, level with their row: the two kids line up along the lens (aisle kid near, window kid behind him),
     // the window + the street beyond them. Starts INSIDE the cloud, pulls back as it clears, then pushes in.
-    busPoof: u => { const tt = u * 4.6, m = midHead(A.swapA, A.swapB), k = sm(cl((tt - 1.05) / 1.1)), d = sm(cl((tt - 2.4) / 2.0)); return { p: [m.x + lerp(2.25, 2.6, k) - .3 * d, m.y + lerp(.05, .16, k), m.z - lerp(.85, .6, k) + .3 * d], l: [m.x, m.y - lerp(.05, .24, k), m.z + .12], fov: lerp(44, 48, k) }; },   // the DUET first (notes over their heads), poof at 1.02, then in low onto the traded pair staring at their hands
+    // bus (Xavier 10:31): camera at the front bulkhead looking back down the bus: both kids whole in frame, the full bus behind them
+    busPoof: u => { const zk = (-bus.userData.L / 2 + 1.6 + 4 * 1.55 + .08), m = midHead(A.swapA2.a.root.visible ? A.swapA2 : A.swapA, A.swapB2.a.root.visible ? A.swapB2 : A.swapB), k = sm(u), p = busLocal(lerp(-1.1, -1.3, k), lerp(2.62, 2.5, k), zk + lerp(3.05, 2.55, k)); return { p: p.toArray(), l: [m.x, m.y - .32, m.z], fov: 50 }; },   // high from the bulkhead: both kids chest-up, every row of the bus above their heads
+    busA: u => { const zk = (-bus.userData.L / 2 + 1.6 + 4 * 1.55 + .08), hd = headW(A.swapA2), p = busLocal(lerp(-.35, -.62, u), 2.12, zk + 2.25); return { p: p.toArray(), l: [hd.x, hd.y - .26, hd.z], fov: 42 }; },   // close: the boy with HER hair, staring at his hands
+    busB: u => { const zk = (-bus.userData.L / 2 + 1.6 + 4 * 1.55 + .08), hd = headW(A.swapB2), e = sm(u), p = busLocal(lerp(-1.85, -1.55, e), lerp(1.95, 2.25, e), zk + lerp(1.75, 2.75, e)); return { p: p.toArray(), l: [hd.x + lerp(0, .35, e), hd.y - .35, hd.z - lerp(0, .6, e)], fov: 46 }; },   // the girl with HIS hair; pulls out to reveal the whole bus staring
     // 2: crane down from over the bed: grandma leaning in, the kid rigid
     bedroom: u => { const k = sm(u); return { p: [8554.75 + .3 * k, 2.0 - .12 * k, 1.5], l: [8557.3, 1.68, 2.45], fov: 43 }; },   // two-shot from the foot corner: his face frontal left, grandma seated on the edge leaning down onto his forehead right
     // 3: truck across the party: cake front-left, the solo singer mid, the rest awkward
@@ -659,7 +691,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     taped: u => { const dd = clsW(DS.x, DS.z), k = sm(u); return { p: [dd[0] - .1, lerp(1.5, 1.46, k), dd[1] - lerp(2.6, 2.15, k)], l: [dd[0] + .02, 1.38, dd[1] + .1], fov: 42 }; },   // level, her centered under the roulette bubble
     // 8: her life, three pushes + the syrup insert
     danaTable: u => front(A.dana, { d: lerp(2.0, 1.6, u), side: .3, h: .12, lh: -.2, fov: 38 }),
-    dishes: u => front(A.dana_dad, { d: lerp(2.2, 1.8, u), side: lerp(.75, .55, u), h: .05, lh: -.3, fov: 42 }),
+    dishes: u => { const dp = A.dana_dad.a.root.position; return { p: [dp.x + lerp(.45, .2, u), 1.72, dp.z - 1.4], l: [dp.x, 1.12, dp.z - .1], fov: 62 }; },   // from the window over the sink: dad's happy face, his hands + the plates in the foreground (old camera sat OUTSIDE the wall = the blank 'blue screen', Xavier 10:31)
     quietHall: u => { const mA = A.miniA.a.root.position, mB = A.miniB.a.root.position, fx = (mA.x + mB.x) / 2, fz = (mA.z + mB.z) / 2, cc = roomW(HB, 'dining', 5.0, 1.3); return { p: [cc[0] - lerp(0, .2, u), 1.2, cc[1] - lerp(.1, .25, u)], l: [fx, .55, fz], fov: 48 }; },   // low across the open dining floor onto the two minis scrapping; freezes under the X
     pancakes: u => { const P0 = pan.position, a = lerp(-.55, .02, u), k = sm(cl((u - .58) / .3)); const F = front(A.dana, { d: 1.0, side: -.12, h: .0, lh: -.05, fov: 38 }); const p0 = [P0.x + Math.sin(a) * .62, P0.y + .34, P0.z - Math.cos(a) * .62], l0 = [P0.x, P0.y + .13, P0.z]; return { p: [lerp(p0[0], F.p[0], k), lerp(p0[1], F.p[1], k), lerp(p0[2], F.p[2], k)], l: [lerp(l0[0], F.l[0], k), lerp(l0[1], F.l[1], k), lerp(l0[2], F.l[2], k)], fov: lerp(30, 38, k) }; },   // the hero stack, rising over it to her happy face
     // 9: tight push on her face, eyes slide
@@ -689,7 +721,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // 16b: fast pull OUT of the POV to a 3/4 medium on her smug body
     pullOut: u => { const k = sm(u); return front(A.danaPost1, { d: lerp(.3, 2.1, k), side: lerp(0, .3, k), h: lerp(.02, .05, k), lh: lerp(-.05, -.3, k), fov: lerp(58, 40, k) }); },   // fast OUT of her eyes, back along her look, to a 3/4 medium on her smug new body
     // 17: the rack-focus ending: medium-close on her, the crier visible over her shoulder; camera drifts in the silence
-    ending: u => { const t = 47.12 + u * 3.78, P0 = A.danaPost2.a.root.position, L = (x, y, z) => { const q = loc(x, z); return [q[0] + (P0.x - EP[0]), y, q[1] + (P0.z - EP[1])]; }, w2 = Math.sin(t * 1.3) * .02, k = sm(u) * .22; return { p: L(-.72 + w2, 2.87 - k * .3, .5 - k), l: L(.3, 1.45 + w2, -.33), fov: 60 }; },   // his approved selfie framing held: her in myPose, the crier at his X screen-right; slow push, then the rack focus
+    ending: u => { const t = 47.12 + u * 3.78, P0 = A.dana.a.root.position, L = (x, y, z) => { const q = loc(x, z); return [q[0] + (P0.x - EP[0]), y, q[1] + (P0.z - EP[1])]; }, w2 = Math.sin(t * 1.3) * .012, b = Math.sin(t * 1.9) * .008, k = sm(u) * .12; const EC = opts.endc || [-.03, 2.25, 1.62, .02, 1.55, -.3, 74], f = sm(cl((t - 49.3) / .7)), P1 = L(EC[0] + w2 + .45 * f, EC[1] + b - k * .2 - .15 * f, EC[2] - k), L1 = L(EC[3], EC[4] + b, EC[5]), CT = [CRY[0], .55, CRY[1]]; return { p: P1, l: [lerp(L1[0], CT[0], .62 * f), lerp(L1[1], CT[1], .62 * f), lerp(L1[2], CT[2], .62 * f)], fov: EC[6] - 8 * f }; },   // after the kiss she swings the phone round so the lens FINDS him (Xavier 04:50)   // HIS screenshot (10:31) solved: lens just inside the raised phone arm (it runs down screen-left), looking back down at her; the crier screen-right. (was: the lens = her phone, just past the raised right hand (it fills screen-left), looking back down at her face; the corridor + the crier behind her, screen-right
   };
   const shakeAt = t => { for (const [a, b, k] of [[0.0, .35, .02], [11.34, 11.6, .02], [40.3, 40.6, .035], [40.84, 41.2, .03]]) if (t >= a && t < b) return k * (1 - (t - a) / (b - a)); return 0; };
 
@@ -705,7 +737,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
       cam.position.set(C2.p[0] + hh(1.3, 1), C2.p[1] + hh(1.1, 2), C2.p[2] + hh(1.2, 3)); cam.fov = C2.fov; cam.lookAt(C2.l[0] + hh(1.5, 4), C2.l[1] + hh(1.4, 5), C2.l[2]);
       const sk = shakeAt(t); if (sk) { cam.rotateX(Math.sin(t * 61) * sk); cam.rotateZ(Math.sin(t * 47) * sk); }
       // focus: at the look point; shot 17 racks from her face to the crier after the line ends (48.42 -> 49.0)
-      if (s.id === 'ending') { const rk = sm(cl((t - 49.45) / .55));   /* the focus racks to him as the phone finds him */ const a = headW(A.danaPost2), b = headW(A.trigPost2);
+      if (s.id === 'ending') { const rk = sm(cl((t - 49.45) / .55));   /* the focus racks to him as the phone finds him */ const a = headW(A.dana), b = headW(A.boy);
         post.focus = cam.position.distanceTo(a.clone().lerp(b, rk)); }
       else post.focus = cam.position.distanceTo(new THREE.Vector3(...C2.l));
     }

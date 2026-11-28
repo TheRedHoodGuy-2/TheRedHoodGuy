@@ -527,3 +527,13 @@ defend every pixel of it, it does not get sent.
 - MAINS TWIST (New Body): at the WTF swap Trig and Dana trade hair + body but KEEP their own faces (stronger tell). The faces swap later, at/after the subscribe part, completing the transformation.
 - The 3D hoodie has no female form: post-swap Trig's position wears a 2D red hoodie (classic shirt 10540221408). Ditch the 3D hoodie after the main swap.
 - The narrator's name is Trig.
+
+## 2026-11-28 10:31 / 10:47 / 10:50 (New Body rev2 notes)
+- Bus: camera must SEE the kids and the swap, never the gap between them; pull the camera back as far as needed (no clipping). A bus has more than two people: fill it.
+- Choir: 2D swap counter 1 -> 12 popping with each swap (booms rising in tone: SFX pass after the full render).
+- "No chores" showed a blank screen (camera outside the kitchen wall): never.
+- HATED: the boy's box/screaming mouth (alti 103371234480503). Angry = clenched-teeth bar now.
+- Hair colour stays with the person: the new girl (his spot) has HIS black, the new boy (her spot) has HER brown.
+- Subscribe ending: follow his myPose + screenshot EXACTLY: she is HOLDING the phone (arm runs down screen-left), never a hand in front of the lens. Use Dana's complete original model for the selfie and Trig's complete original model as the crier, out in the corridor (not pressed into lockers), animated sobbing.
+- 2D animations can carry a video; camera work is what people see. Bus stills get approved before the full render; SFX after the full render.
+- 10:47: the world (OSM town, furnished houses, classroom v1) still exists; the school sets for New Body sat OUTSIDE the town so windows showed bare lawn. Rule: school sets go inside the town so every window sees it.

@@ -49,8 +49,8 @@ export function busInterior({ rows = 5 } = {}) {
   const BW = 2.2;
   const seat = (x, z) => { const b = new THREE.Group();
     b.add(B(BW, .14, .62, green, 0, .62, 0, .04));                          // cushion
-    b.add(B(BW, .95, .14, green, 0, 1.12, -.26, .05));                      // high back
-    b.add(B(BW, .07, .16, greenDark, 0, 1.62, -.25, .03));                  // top rail
+    b.add(B(BW, .62, .14, green, 0, .96, -.26, .05));                       // back: shoulder height of a seated kid (real school bus), so every row's heads read
+    b.add(B(BW, .07, .16, greenDark, 0, 1.29, -.25, .03));                  // top rail
     b.add(B(.07, .55, .07, steel, -BW / 2 + .2, .28, .1)); b.add(B(.07, .55, .07, steel, BW / 2 - .2, .28, .1));
     b.add(B(BW, .09, .55, greenDark, 0, .5, 0, .03));                       // frame under the cushion
     b.position.set(x, 0, z); return b; };

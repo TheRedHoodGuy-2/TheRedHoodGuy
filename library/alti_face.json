@@ -67,16 +67,26 @@
   "angry": [
    "packs/alti_split/132291071282220_e.png",
    "packs/alti/6376404121.png",
-   "packs/alti_split/103371234480503_m.png"
+   "packs/alti_split/10151317201_m.png"
   ],
   "lookUp": [
    "packs/alti_split/10151062442_e.png",
    "packs/alti_split/10151317201_m.png"
+  ],
+  "furious": [
+   "packs/alti_split/132291071282220_e.png",
+   "packs/alti/6376404121.png",
+   "packs/alti_split/10151317201_m.png"
+  ],
+  "crying": [
+   "packs/alti/10150915673.png",
+   "packs/alti/6376350182.png"
   ]
  },
  "talk": {
   "1": "packs/alti_split/10151317201_m.png",
   "2": "packs/alti_split/78381074807715_m.png"
  },
- "blink": "packs/alti/6383716102.png"
+ "blink": "packs/alti/6383716102.png",
+ "_banned_mouths": "103371234480503_m (box scream) + 132291071282220_m (wedge) on the boy: Xavier hates them (2026-11-28)"
 }
