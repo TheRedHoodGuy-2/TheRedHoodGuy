@@ -1,0 +1,59 @@
+{
+ "id": 4875448562,
+ "class": "Accessory",
+ "name": "BlondeShortPartedHair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "3.00",
+   "verts": 2035,
+   "tris": 1468,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.019999999552965164,
+      0.3566667437553406,
+      -0.052000001072883606
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.879,
+     -0.635,
+     -0.746
+    ],
+    [
+     0.879,
+     0.635,
+     0.751
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

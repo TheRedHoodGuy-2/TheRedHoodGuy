@@ -1,0 +1,59 @@
+{
+ "id": 124334807330180,
+ "class": "Accessory",
+ "name": "Accessory (Messy Low Ponytail in Brown)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 7955,
+   "tris": 3340,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.039454489946365356,
+      1.3271045684814453,
+      -0.053700968623161316
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.747,
+     -1.596,
+     -0.706
+    ],
+    [
+     0.747,
+     1.596,
+     0.706
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

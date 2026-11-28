@@ -47,6 +47,17 @@ window.renderFrame = t => {
     S.rig.apply(S.camera, t); S.before?.(); post.render(false); mixCx.globalAlpha = info.mix.k; mixCx.drawImage(c, 0, 0);
     return mixCv.toDataURL('image/jpeg', .93);
   }
+  // SPLIT SCREEN (New Body comic panels, Xavier 2026-11-28): S.split(t) -> { views: [{ setup(), clip: [[x,y],..] in 0..1, dx, dy }], overlay(ctx, W, H) }
+  // each view is a separate camera shot of the world, drawn through its own clip polygon (masked: never in each other's frame)
+  const sp = S.split ? S.split(t) : null;
+  if (sp) {
+    const c = renderer.domElement; mixCv.width = c.width; mixCv.height = c.height; mixCx.fillStyle = '#000'; mixCx.fillRect(0, 0, c.width, c.height);
+    for (const v of sp.views) { v.setup(); renderer.shadowMap.needsUpdate = true; S.before?.(); post.render(false);
+      mixCx.save(); mixCx.beginPath(); v.clip.forEach(([x, y], i) => mixCx[i ? 'lineTo' : 'moveTo'](x * c.width, y * c.height)); mixCx.closePath(); mixCx.clip();
+      mixCx.drawImage(c, (v.dx || 0) * c.width, (v.dy || 0) * c.height); v.paint?.(mixCx, c.width, c.height); mixCx.restore(); }
+    sp.overlay?.(mixCx, c.width, c.height);
+    return mixCv.toDataURL('image/jpeg', .93);
+  }
   S.before?.(); post.render(false); return renderer.domElement.toDataURL('image/jpeg', .93);
 };
 window.__dbg = { scene, S, THREE }; window.ready = true;

@@ -1,0 +1,59 @@
+{
+ "id": 117086356051576,
+ "class": "Accessory",
+ "name": "Accessory (WavesAccessory)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3712,
+   "tris": 3975,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.009368896484375,
+      0.33699989318847656,
+      -0.058624267578125
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      -8.742277657347586e-08,
+      0.0,
+      1.0,
+      0.0,
+      8.742277657347586e-08,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.699,
+     -0.652,
+     -0.762
+    ],
+    [
+     0.699,
+     0.652,
+     0.762
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

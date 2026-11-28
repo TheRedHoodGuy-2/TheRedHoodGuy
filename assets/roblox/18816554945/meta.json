@@ -1,0 +1,59 @@
+{
+ "id": 18816554945,
+ "class": "Accessory",
+ "name": "Accessory (Black Curly 2 Strand Twists)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 8017,
+   "tris": 4000,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.004001617431640625,
+      0.5185565948486328,
+      0.08102798461914062
+     ],
+     "rot": [
+      -1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.882,
+     -0.769,
+     -0.767
+    ],
+    [
+     0.882,
+     0.769,
+     0.767
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

@@ -1,0 +1,59 @@
+{
+ "id": 16266640100,
+ "class": "Accessory",
+ "name": "Accessory (NeckHeadphones)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 6345,
+   "tris": 3536,
+   "attachments": [
+    {
+     "name": "NeckAttachment",
+     "pos": [
+      0.0,
+      0.10432243347167969,
+      0.3259773254394531
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.673,
+     -0.277,
+     -0.671
+    ],
+    [
+     0.673,
+     0.277,
+     0.671
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

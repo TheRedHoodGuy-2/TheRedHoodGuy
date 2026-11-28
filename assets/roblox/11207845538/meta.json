@@ -1,0 +1,59 @@
+{
+ "id": 11207845538,
+ "class": "Accessory",
+ "name": "Afro Taper",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 557,
+   "tris": 852,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.00177001953125,
+      0.1542494297027588,
+      -0.1539764404296875
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.941,
+     -0.802,
+     -0.976
+    ],
+    [
+     0.941,
+     0.802,
+     0.976
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

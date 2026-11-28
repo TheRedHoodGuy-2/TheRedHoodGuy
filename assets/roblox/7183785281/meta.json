@@ -1,0 +1,59 @@
+{
+ "id": 7183785281,
+ "class": "Accessory",
+ "name": "Black Messy Manga Hair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3043,
+   "tris": 2769,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0009613037109375,
+      0.3395111560821533,
+      -0.0036373138427734375
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.861,
+     -0.642,
+     -0.818
+    ],
+    [
+     0.861,
+     0.642,
+     0.818
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

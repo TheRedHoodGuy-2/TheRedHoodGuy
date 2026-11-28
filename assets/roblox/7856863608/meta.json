@@ -1,0 +1,59 @@
+{
+ "id": 7856863608,
+ "class": "Accessory",
+ "name": "Neck",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3684,
+   "tris": 2124,
+   "attachments": [
+    {
+     "name": "NeckAttachment",
+     "pos": [
+      0.0,
+      0.12897443771362305,
+      0.1650066375732422
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.72,
+     -0.332,
+     -0.821
+    ],
+    [
+     0.72,
+     0.332,
+     0.821
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

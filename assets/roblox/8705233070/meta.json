@@ -1,0 +1,59 @@
+{
+ "id": 8705233070,
+ "class": "Accessory",
+ "name": "Sleek Afro Pigtails",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 4177,
+   "tris": 2286,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      1.016127586364746,
+      -0.07124748826026917
+     ],
+     "rot": [
+      1.0,
+      0.0,
+      -8.742277657347586e-08,
+      0.0,
+      1.0,
+      0.0,
+      8.742277657347586e-08,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.282,
+     -1.426,
+     -0.878
+    ],
+    [
+     1.282,
+     1.426,
+     0.878
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

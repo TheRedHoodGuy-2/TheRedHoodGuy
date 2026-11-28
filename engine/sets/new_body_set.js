@@ -135,41 +135,47 @@ export async function schoolHallway({ len = 16 } = {}) {
 // volume (in front of the backdrop). API: place at [x, z]; cam() gives the straight-on camera; set(t) runs
 // slam-in / drift / crack / swap, driven by times passed in.
 export function comicSplit({ x = 9500, z = 0, topColor = '#ffd36b', botColor = '#6bb9ff' } = {}) {
+  // v2 (2026-11-28, Xavier: "Dana at the top and him at the bottom, like a comic, fast pace, black line in the centre, comic
+  // dots"): a REAL split screen built in depth so each half holds one face chest-up. Camera straight on at D 2.0, fov 58.
+  // Layers front to back: black bar (depth 1.4) > BOTTOM actor (depth 1.55) > bottom backdrop (1.85, covers the lower half
+  // only, so it hides the top actor's legs) > TOP actor (2.0) > top backdrop (3.2). Backdrops are unlit halftone panels.
   const g = new THREE.Group(); g.name = 'comic split'; g.position.set(x, 0, z);
-  const PW = 4.6, PH = 3.6;                                                 // one panel's visible size at the camera
-  const half = (c, c2) => canvasTex(512, 512, (ctx, w, h) => { ctx.fillStyle = c; ctx.fillRect(0, 0, w, h); ctx.fillStyle = c2;
-    for (let yy = 0; yy < 20; yy++) for (let xx = 0; xx < 20; xx++) { const r = 4 + 4 * ((xx + yy) % 2); ctx.beginPath(); ctx.arc(xx * 26 + (yy % 2) * 13, yy * 26, r * .55, 0, 7); ctx.fill(); } }, [2.2, 2.2]);
-  const mkPanel = c => { const p = new THREE.Group();
-    const back = new THREE.Mesh(new THREE.PlaneGeometry(PW * 1.9, PH * 1.35), new THREE.MeshBasicMaterial({ map: half(c[0], c[1]) })); back.position.z = -2.2; p.add(back);
-    const fl = new THREE.Mesh(new THREE.BoxGeometry(PW * 2, .08, 5), new THREE.MeshStandardMaterial({ color: c[0], roughness: .9 })); fl.position.set(0, -.04, -.4); fl.receiveShadow = true; p.add(fl);
-    return p; };
-  const top = mkPanel([topColor, '#e8a93c']), bot = mkPanel([botColor, '#3c7fd0']);
-  const bar = new THREE.Mesh(new THREE.BoxGeometry(PW * 2.4, .34, .25), new THREE.MeshStandardMaterial({ color: '#0c0c0e', roughness: .5 }));
-  const crackTex = canvasTex(512, 64, (ctx, w, h) => { ctx.fillStyle = '#0c0c0e'; ctx.fillRect(0, 0, w, h); ctx.strokeStyle = '#f6f1e4'; ctx.lineWidth = 5; ctx.beginPath(); let yy = h / 2; ctx.moveTo(0, yy); for (let xx = 0; xx <= w; xx += 24) { yy = h / 2 + (Math.sin(xx * .7) * 14 + ((xx * 13) % 17) - 8); ctx.lineTo(xx, yy); } ctx.stroke(); });
-  const crack = new THREE.Mesh(new THREE.PlaneGeometry(PW * 2.4, .34), new THREE.MeshBasicMaterial({ map: crackTex, transparent: true })); crack.position.z = .14; crack.visible = false; bar.add(crack);
-  g.add(top, bot, bar);
-  // layout: the camera is at zc looking at the bar; panels sit above/below. Actor spots returned in world space.
-  const GAP = 2.05;                                                          // panel centre offset from the bar
-  const camD = 6.2;
+  const D = 2.0, FOV = 58, tn = Math.tan(FOV * Math.PI / 360);
+  const dots = (c, c2, seed) => canvasTex(512, 512, (ctx, w, h) => { ctx.fillStyle = c; ctx.fillRect(0, 0, w, h); ctx.fillStyle = c2;
+    for (let yy = 0; yy < 22; yy++) for (let xx = 0; xx < 22; xx++) { const r = 5 + 5 * Math.abs(Math.sin((xx * .7 + yy * .4) + seed)); ctx.beginPath(); ctx.arc(xx * 24 + (yy % 2) * 12, yy * 24, r * .5, 0, 7); ctx.fill(); }
+    // speed lines from the corners (comic energy)
+    ctx.strokeStyle = 'rgba(255,255,255,.35)'; ctx.lineWidth = 6; for (let k = 0; k < 14; k++) { const a = k / 14 * Math.PI * 2 + seed; ctx.beginPath(); ctx.moveTo(w / 2 + Math.cos(a) * 170, h / 2 + Math.sin(a) * 170); ctx.lineTo(w / 2 + Math.cos(a) * 420, h / 2 + Math.sin(a) * 420); ctx.stroke(); } }, [1.6, 1.6]);
+  const texA = dots(topColor, '#f0a83a', 0), texB = dots(botColor, '#3f86d8', 1.7);
+  const back = (depth, up) => { const hh = depth * tn, ww = hh * 2 * 9 / 16 * 1.25; const m = new THREE.Mesh(new THREE.PlaneGeometry(ww, hh * 1.3), new THREE.MeshBasicMaterial({ map: texA }));
+    m.position.set(0, up ? hh * .65 : -hh * .65, D - depth); g.add(m); return m; };
+  const topBack = back(3.2, true), botBack = back(1.85, false), TB0 = topBack.position.y, BB0 = botBack.position.y; botBack.material = new THREE.MeshBasicMaterial({ map: texB });
+  const ink = new THREE.MeshBasicMaterial({ color: '#0b0b0d' });
+  const bar = new THREE.Mesh(new THREE.BoxGeometry(1.6, .05, .02), ink); bar.position.set(0, 0, D - 1.4); g.add(bar);
+  const crackTex = canvasTex(512, 64, (ctx, w, h) => { ctx.fillStyle = '#0b0b0d'; ctx.fillRect(0, 0, w, h); ctx.strokeStyle = '#fff6dc'; ctx.lineWidth = 7; ctx.beginPath(); let yy = h / 2; ctx.moveTo(0, yy); for (let xx = 0; xx <= w; xx += 32) { yy = h / 2 + (xx / 32 % 2 ? -18 : 18); ctx.lineTo(xx, yy); } ctx.stroke(); });
+  const crack = new THREE.Mesh(new THREE.PlaneGeometry(1.6, .05), new THREE.MeshBasicMaterial({ map: crackTex })); crack.position.set(0, 0, .011); crack.visible = false; bar.add(crack);
+  // a thin white comic border round each half (reads as panels)
+  const border = new THREE.MeshBasicMaterial({ color: '#fbfaf4' });
+  for (const sy of [1, -1]) { const ed = new THREE.Mesh(new THREE.BoxGeometry(1.6, .012, .01), border); ed.position.set(0, sy * .028, D - 1.41); g.add(ed); }
+  const lerp2 = (a, b, k) => a + (b - a) * k, cl = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+  let st = { top: 0, bot: 0, swapped: false };
   const api = {
-    g, PW, PH,
-    topSpot: () => new THREE.Vector3(x, GAP - PH / 2 + .35, z - .5),        // feet y for the top panel's floor
-    botSpot: () => new THREE.Vector3(x, -GAP - PH / 2 + .35, z - .5),
-    cam: u => ({ p: [x, g.position.y, z + camD - u * .15], l: [x, g.position.y, z], fov: 58 }),   // straight on, the slightest drift in
-    // t-driven layout: slam (panels fly in from above/below), hold with dot drift, crack, swap (panels trade places)
+    g, D,
+    // feet position for whoever is in the TOP / BOTTOM slot (world space, before the slam offset)
+    slot: which => which === 'top' ? new THREE.Vector3(x, g.position.y + .64 - 1.56 + st.top, z) : new THREE.Vector3(x, g.position.y - .36 - 1.56 + st.bot * .78, z + (D - 1.55)),
+    cam: u => ({ p: [x, g.position.y, z + D], l: [x, g.position.y, z], fov: FOV }),
+    swapped: () => st.swapped,
     set: (t, { slamT = 0, crackT = 1e9, swapT = 1e9 } = {}) => {
-      const cl = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
-      const sl = cl((t - slamT) / .28); const ov = 1 + .18 * Math.sin(Math.min(1, sl) * Math.PI);  // overshoot
-      let ty = (1 - sl) * 7 + GAP * ov, by = -(1 - sl) * 7 - GAP * ov;
-      const sw = cl((t - swapT) / .5), e = sw * sw * (3 - 2 * sw);
-      if (sw > 0) { ty = lerp2(GAP, -GAP, e); by = lerp2(-GAP, GAP, e); }   // the panels trade places (Dana's slides down, his up)
-      top.position.y = ty; bot.position.y = by;
-      top.children[0].material.map.offset.x = t * .015; bot.children[0].material.map.offset.x = -t * .015;  // dots drift
-      crack.visible = t >= crackT; bar.position.y = 0;
-      const shk = t >= crackT && t < crackT + .25 ? Math.sin(t * 70) * .05 * (1 - (t - crackT) / .25) : 0; bar.position.x = shk;
+      const sl = cl((t - slamT) / .26), ov = Math.sin(sl * Math.PI) * .08;
+      st.top = (1 - sl) * 2.2 + ov; st.bot = -(1 - sl) * 2.2 - ov;   // slam in: top from above, bottom from below, overshoot
+      st.swapped = t >= swapT;
+      if (st.swapped) { const k = cl((t - swapT) / .3), b = Math.sin(k * Math.PI) * .1 * (1 - k); st.top += (1 - k) * -.5 + b; st.bot += (1 - k) * .5 - b; }   // after the swap: each slides in from the other side
+      topBack.material.map = st.swapped ? texB : texA; botBack.material.map = st.swapped ? texA : texB;
+      texA.offset.set(t * .02, t * .01); texB.offset.set(-t * .02, t * .012);
+      topBack.position.y = TB0 + st.top * 1.6; botBack.position.y = BB0 + st.bot * .925;
+      crack.visible = t >= crackT;
+      bar.position.x = t >= crackT && t < crackT + .25 ? Math.sin(t * 70) * .012 * (1 - (t - crackT) / .25) : 0;
     },
   };
-  const lerp2 = (a, b, k) => a + (b - a) * k;
   return api;
 }
 
@@ -177,27 +183,52 @@ export function comicSplit({ x = 9500, z = 0, topColor = '#ffd36b', botColor = '
 // The town's swap effect: a burst of soft white puffs + tiny glitter sprites that spins up and fades over ~.8 s.
 // Pure function of t (safe for out-of-order frames). spiral: puffs orbit while they rise (the mid-swap big one).
 export function swapFX(scene) {
-  const puffTex = canvasTex(128, 128, (g, w, h) => { const r = g.createRadialGradient(64, 64, 4, 64, 64, 62);
-    r.addColorStop(0, 'rgba(255,255,255,1)'); r.addColorStop(.55, 'rgba(255,255,255,.85)'); r.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
-  const sparkTex = canvasTex(64, 64, (g, w, h) => { g.strokeStyle = '#fff'; g.lineWidth = 6; g.lineCap = 'round';
-    g.beginPath(); g.moveTo(32, 6); g.lineTo(32, 58); g.moveTo(6, 32); g.lineTo(58, 32); g.stroke(); });
+  // v2 (Xavier 2026-11-28 02:39: "slightly realistic, not rubbish balls of tiny particles"): a real smoke burst.
+  // Volumetric-looking puffs from fractal noise (6 variants, each a lit cloud: bright top-left, cool shaded underside,
+  // wispy torn edges), billowing out + up with drag, each puff rotating slowly and thinning as it grows; a short hot
+  // core flash at the start; a few tiny real glints (soft star + bloom halo), not cartoon crosses.
+  const noise = (() => { const P = new Uint8Array(512); for (let i = 0; i < 256; i++) P[i] = i; for (let i = 255; i > 0; i--) { const j = Math.floor((Math.sin(i * 12.9898) * 43758.5453 % 1 + 1) % 1 * (i + 1)); [P[i], P[j]] = [P[j], P[i]]; } for (let i = 0; i < 256; i++) P[i + 256] = P[i];
+    const f = t => t * t * (3 - 2 * t), gr = (h, x, y) => ((h & 1) ? x : -x) + ((h & 2) ? y : -y);
+    return (x, y) => { const X = Math.floor(x) & 255, Y = Math.floor(y) & 255; x -= Math.floor(x); y -= Math.floor(y); const u = f(x), v = f(y);
+      const a = P[X] + Y, b = P[X + 1] + Y; const l = (q, w, k) => q + (w - q) * k;
+      return l(l(gr(P[a], x, y), gr(P[b], x - 1, y), u), l(gr(P[a + 1], x, y - 1), gr(P[b + 1], x - 1, y - 1), u), v); }; })();
+  const smokeTex = seed => canvasTex(160, 160, (g, w, h) => { const im = g.createImageData(w, h), d = im.data;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const nx = x / w - .5, ny = y / h - .5, r = Math.hypot(nx, ny) * 2;
+      let n = 0, a = 1, fq = 3; for (let o = 0; o < 5; o++) { n += noise(nx * fq + seed * 7.3, ny * fq + seed * 3.1) * a; a *= .5; fq *= 2.1; }
+      const dens = Math.max(0, Math.min(1, (1 - r * (1.05 - .35 * n)) * 1.6 + n * .55));
+      const light = .78 + .22 * Math.max(-1, Math.min(1, (-nx - ny) * 1.6 + n * .8));   // lit from the top-left, shaded underside
+      const k = (y * w + x) * 4; d[k] = 250 * light; d[k + 1] = 248 * light; d[k + 2] = 252 * light * (1.02 - .04 * ny); d[k + 3] = 255 * Math.pow(dens, 1.4); }
+    g.putImageData(im, 0, 0); });
+  const SM = [0, 1, 2, 3, 4, 5].map(smokeTex);
+  const glintTex = canvasTex(64, 64, (g, w, h) => { const r = g.createRadialGradient(32, 32, 0, 32, 32, 30); r.addColorStop(0, 'rgba(255,255,255,1)'); r.addColorStop(.15, 'rgba(255,250,230,.7)'); r.addColorStop(1, 'rgba(255,240,210,0)');
+    g.fillStyle = r; g.fillRect(0, 0, w, h); g.globalCompositeOperation = 'lighter'; for (const [dx, dy] of [[1, 0], [0, 1]]) { const l = g.createLinearGradient(32 - dx * 30, 32 - dy * 30, 32 + dx * 30, 32 + dy * 30); l.addColorStop(0, 'rgba(255,255,255,0)'); l.addColorStop(.5, 'rgba(255,255,255,.9)'); l.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = l; if (dx) g.fillRect(2, 31, 60, 2); else g.fillRect(31, 2, 2, 60); } });
+  const coreTex = canvasTex(64, 64, (g, w, h) => { const r = g.createRadialGradient(32, 32, 0, 32, 32, 32); r.addColorStop(0, 'rgba(255,255,255,1)'); r.addColorStop(.4, 'rgba(255,248,235,.55)'); r.addColorStop(1, 'rgba(255,240,220,0)'); g.fillStyle = r; g.fillRect(0, 0, w, h); });
   const root = new THREE.Group(); scene.add(root); const bursts = [];
-  const poof = (t0, at, { size = 1, dur = .85, spiral = 0, n = 18 } = {}) => {
-    const G = new THREE.Group(); G.visible = false; root.add(G); const parts = [];
-    for (let i = 0; i < n; i++) { const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: puffTex, transparent: true, depthWrite: false })); G.add(m);
-      const a = i / n * Math.PI * 2 + Math.sin(i * 7.1), h = .15 + (i * .618 % 1) * 1.5 * size; parts.push({ m, a, d: .4 + (i * .37 % 1) * .8, h, s: (.3 + (i * .53 % 1) * .35) * size, k: 'p' }); }
-    for (let i = 0; i < Math.round(n * .7); i++) { const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: sparkTex, transparent: true, depthWrite: false, color: '#fff6d8' })); G.add(m);
-      const a = i * 2.39996, h = .3 + (i * .71 % 1) * 1.7 * size; parts.push({ m, a, d: .5 + (i * .29 % 1) * 1.1, h, s: .07 + (i * .41 % 1) * .06, k: 's' }); }
+  const rnd = i => (Math.sin(i * 127.1 + 311.7) * 43758.5453 % 1 + 1) % 1;
+  const poof = (t0, at, { size = 1, dur = 1.1, spiral = 0, n = 18 } = {}) => {
+    const G = new THREE.Group(); G.visible = false; root.add(G); const parts = []; const N = Math.round(n * 1.4);
+    const ro = m => { m.renderOrder = 5; return m; };   // after the face decals (renderOrder 2, no depth write): smoke in front of a face must cover it
+    for (let i = 0; i < N; i++) { const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: SM[i % 6], transparent: true, depthWrite: false, rotation: rnd(i) * 6.28 })); G.add(ro(m));
+      const th = rnd(i + 3) * 6.283, ph = Math.acos(1 - 2 * rnd(i + 7)) * .85;   // directions over a sphere, biased up
+      parts.push({ m, k: 'p', dir: new THREE.Vector3(Math.sin(ph) * Math.cos(th), Math.cos(ph) * .7 + .15, Math.sin(ph) * Math.sin(th)), sp: (.55 + rnd(i + 11) * .7) * size, s0: (.25 + rnd(i + 13) * .2) * size, s1: (.8 + rnd(i + 17) * .7) * size, rot: (rnd(i + 19) - .5) * 1.4, lag: rnd(i + 23) * .08, sh: .82 + rnd(i + 29) * .18 }); }
+    const core = ro(new THREE.Sprite(new THREE.SpriteMaterial({ map: coreTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }))); G.add(core); parts.push({ m: core, k: 'c' });
+    for (let i = 0; i < 7; i++) { const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: glintTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, color: '#fff3d6' })); G.add(ro(m));
+      parts.push({ m, k: 'g', dir: new THREE.Vector3(rnd(i + 41) - .5, rnd(i + 43) * .8 + .2, rnd(i + 47) - .5).normalize(), sp: (.9 + rnd(i + 53) * .8) * size, s: (.06 + rnd(i + 59) * .06) * size, ph: rnd(i + 61) }); }
     bursts.push({ G, parts, t0, at, dur, spiral, size });
   };
   const update = t => { for (const b of bursts) { const u = (t - b.t0) / b.dur;
     if (u < 0 || u > 1) { b.G.visible = false; continue; }
     b.G.visible = true; const at = typeof b.at === 'function' ? b.at(t) : b.at; b.G.position.set(at[0], at[1], at[2]);
-    const e = 1 - (1 - u) ** 3;
-    for (const p of b.parts) { const ang = p.a + b.spiral * u * 6;
-      p.m.position.set(Math.cos(ang) * p.d * e * b.size, p.h * e - .2 * u * u, Math.sin(ang) * p.d * e * b.size);
-      const sc = p.k === 'p' ? p.s * (0.6 + .9 * e) : p.s * (1 - .3 * u); p.m.scale.set(sc, sc, 1);
-      p.m.material.opacity = p.k === 'p' ? (u < .12 ? u / .12 : 1 - (u - .12) / .88) : Math.max(0, 1 - u * 1.3) * (.6 + .4 * Math.sin(t * 40 + p.a * 9));
-      if (p.k === 's') p.m.material.rotation = ang * 2; } } };
+    for (const p of b.parts) {
+      if (p.k === 'c') { const k = Math.max(0, 1 - u / .18); p.m.scale.setScalar((.3 + 1.6 * (1 - k)) * b.size); p.m.material.opacity = k * .9; continue; }
+      if (p.k === 'g') { const e = 1 - Math.exp(-u * 4); p.m.position.copy(p.dir).multiplyScalar(p.sp * e); p.m.position.y -= .25 * u * u;
+        p.m.scale.setScalar(p.s * (1 + .5 * Math.sin(t * 30 + p.ph * 20))); p.m.material.opacity = Math.max(0, 1 - u * 1.4) * (.55 + .45 * Math.sin(t * 23 + p.ph * 40)); continue; }
+      const uu = Math.max(0, u - p.lag) / (1 - p.lag), e = 1 - Math.exp(-uu * 5);   // fast burst, strong drag (real smoke slows hard)
+      const sw = b.spiral * uu * 5, c = Math.cos(sw), s = Math.sin(sw);
+      p.m.position.set((p.dir.x * c - p.dir.z * s) * p.sp * e, p.dir.y * p.sp * e + .35 * uu * uu * b.size, (p.dir.x * s + p.dir.z * c) * p.sp * e);   // billow, then rise
+      const sc = p.s0 + (p.s1 - p.s0) * (1 - Math.exp(-uu * 3)); p.m.scale.setScalar(sc);
+      p.m.material.rotation += 0; p.m.material.rotation = p.rot * uu + p.dir.x * 3;
+      p.m.material.color.setScalar(p.sh);
+      p.m.material.opacity = (uu < .08 ? uu / .08 : 1) * Math.pow(1 - uu, 1.6) * .95; } } };
   return { poof, update, root };
 }

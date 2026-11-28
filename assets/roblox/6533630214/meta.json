@@ -1,0 +1,59 @@
+{
+ "id": 6533630214,
+ "class": "Accessory",
+ "name": "Black Messy Middle Part",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3200,
+   "tris": 2692,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.01386260986328125,
+      0.3064920902252197,
+      -0.010448455810546875
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.761,
+     -0.576,
+     -0.816
+    ],
+    [
+     0.761,
+     0.576,
+     0.816
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

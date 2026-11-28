@@ -1,0 +1,59 @@
+{
+ "id": 139799065975836,
+ "class": "Accessory",
+ "name": "Accessory (Messy bun)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "7.00",
+   "verts": 4269,
+   "tris": 3959,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.06304931640625,
+      0.5651497840881348,
+      0.307708740234375
+     ],
+     "rot": [
+      -1.0,
+      6.244991278626705e-17,
+      0.0,
+      6.244991278626705e-17,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -1.081,
+     -1.532,
+     -0.967
+    ],
+    [
+     1.081,
+     1.532,
+     0.967
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

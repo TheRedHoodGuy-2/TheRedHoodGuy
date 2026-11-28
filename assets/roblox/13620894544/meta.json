@@ -1,0 +1,59 @@
+{
+ "id": 13620894544,
+ "class": "Accessory",
+ "name": "Barrel Twists Dreads",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 3402,
+   "tris": 3968,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0,
+      0.35077595710754395,
+      -0.08001708984375
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.673,
+     -0.553,
+     -0.697
+    ],
+    [
+     0.673,
+     0.553,
+     0.697
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

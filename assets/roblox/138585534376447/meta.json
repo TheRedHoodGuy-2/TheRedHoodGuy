@@ -1,0 +1,59 @@
+{
+ "id": 138585534376447,
+ "class": "Accessory",
+ "name": "Accessory (Meshes/Curly hair (10))",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 5700,
+   "tris": 2100,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0007984936237335205,
+      0.20984840393066406,
+      -0.03786399960517883
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.697,
+     -0.59,
+     -0.671
+    ],
+    [
+     0.697,
+     0.59,
+     0.671
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

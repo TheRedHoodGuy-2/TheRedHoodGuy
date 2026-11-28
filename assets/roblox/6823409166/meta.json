@@ -1,0 +1,59 @@
+{
+ "id": 6823409166,
+ "class": "Accessory",
+ "name": "Brown Messy Boy Hair",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 2951,
+   "tris": 2687,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      0.0009613037109375,
+      0.2681097984313965,
+      -0.024410247802734375
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.827,
+     -0.641,
+     -0.79
+    ],
+    [
+     0.827,
+     0.641,
+     0.79
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}

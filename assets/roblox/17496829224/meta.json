@@ -1,0 +1,59 @@
+{
+ "id": 17496829224,
+ "class": "Accessory",
+ "name": "Accessory (Meshes/TROYDREADSDAccessory)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 7732,
+   "tris": 3776,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -1.52587890625e-05,
+      0.36248779296875,
+      0.1798095703125
+     ],
+     "rot": [
+      -1.0,
+      0.0,
+      8.742277657347586e-08,
+      0.0,
+      1.0,
+      0.0,
+      -8.742277657347586e-08,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.697,
+     -1.006,
+     -0.829
+    ],
+    [
+     0.697,
+     1.006,
+     0.829
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

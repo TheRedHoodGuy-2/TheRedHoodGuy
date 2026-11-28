@@ -1,0 +1,59 @@
+{
+ "id": 111789066063145,
+ "class": "Accessory",
+ "name": "Accessory (Tedd Locs)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 11446,
+   "tris": 3998,
+   "attachments": [
+    {
+     "name": "HairAttachment",
+     "pos": [
+      -0.0229949951171875,
+      0.5184874534606934,
+      0.33028411865234375
+     ],
+     "rot": [
+      -1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.736,
+     -0.926,
+     -0.974
+    ],
+    [
+     0.736,
+     0.926,
+     0.974
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

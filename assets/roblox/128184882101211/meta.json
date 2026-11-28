@@ -1,0 +1,11 @@
+{
+ "id": 128184882101211,
+ "class": "Shirt",
+ "name": "Shirt",
+ "parts": [],
+ "texture": "texture.png",
+ "size": [
+  585,
+  559
+ ]
+}

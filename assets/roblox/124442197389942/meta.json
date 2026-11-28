@@ -1,0 +1,59 @@
+{
+ "id": 124442197389942,
+ "class": "Accessory",
+ "name": "Accessory (Meshes/EAAEAccessory)",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "4.01",
+   "verts": 7575,
+   "tris": 3954,
+   "attachments": [
+    {
+     "name": "NeckAttachment",
+     "pos": [
+      0.0,
+      0.1445479393005371,
+      0.04766654968261719
+     ],
+     "rot": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   ],
+   "layered": false,
+   "color": [
+    163,
+    162,
+    165
+   ],
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.757,
+     -0.371,
+     -0.769
+    ],
+    [
+     0.757,
+     0.371,
+     0.769
+    ]
+   ]
+  }
+ ],
+ "accessoryType": 0
+}

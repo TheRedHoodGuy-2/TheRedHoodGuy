@@ -1,0 +1,55 @@
+{
+ "id": 11884330,
+ "class": "Accessory",
+ "name": "Nerd Glasses",
+ "parts": [
+  {
+   "file": "model.glb",
+   "texture": "texture.png",
+   "meshVersion": "1.00",
+   "verts": 912,
+   "tris": 304,
+   "attachments": [
+    {
+     "name": "FaceFrontAttachment",
+     "pos": [
+      3.93538357e-09,
+      -0.199999809,
+      -0.350272298
+     ],
+     "rot": [
+      1.0,
+      7.87137555e-09,
+      -3.26223034e-24,
+      -7.87137555e-09,
+      1.0,
+      -4.1444221e-16,
+      0.0,
+      4.1444221e-16,
+      1.0
+     ]
+    }
+   ],
+   "layered": false,
+   "color": null,
+   "vertexColor": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "bounds": [
+    [
+     -0.612,
+     -0.171,
+     -0.448
+    ],
+    [
+     0.612,
+     0.168,
+     0.448
+    ]
+   ]
+  }
+ ],
+ "accessoryType": null
+}
