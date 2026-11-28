@@ -27,7 +27,7 @@ const res = await page.evaluate(async ([fps, a0, a1]) => {
   for (let t = +a0; t <= Math.min(+a1, dur); t += 1 / fps) {
     S.update(t); root.updateMatrixWorld(true); const cam = S.camera; cam.updateMatrixWorld(true); const fr = new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(cam.projectionMatrix, cam.matrixWorldInverse));
     const live = Object.entries(A).filter(([n, a]) => vis(a.a.root));
-    for (const w of world) { w.b.copy(w.m.geometry.boundingBox).applyMatrix4(w.m.matrixWorld); w.m.__wb = w.b; }
+    for (const w of world) { if (!w.m.geometry.boundingBox) w.m.geometry.computeBoundingBox(); w.b.copy(w.m.geometry.boundingBox).applyMatrix4(w.m.matrixWorld); w.m.__wb = w.b; }
     const partBoxes = [];
     for (const [n, a] of live) for (const k of PARTS) { const p = a.a.rig.parts[k]; if (!p || !vis(p)) continue; const B = boxOf(p); if (!B) continue;
       const wb = B.bb.clone().applyMatrix4(B.g.matrixWorld); if (!fr.intersectsBox(wb)) continue; partBoxes.push({ n, k, B, wb, inv: B.g.matrixWorld.clone().invert() }); }

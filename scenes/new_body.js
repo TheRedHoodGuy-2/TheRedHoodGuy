@@ -32,8 +32,8 @@ const P = {
 const sit = { legL: { r: [-0.093, 0.057, 0.063], o: [0.028, 0.061, 0.309] }, legR: { r: [-0.023, 0.092, -0.169], o: [-0.056, 0.044, 0.336] }, root: { x: 0.017, y: -0.06, z: -0.033 } };   // Xavier's hip-as-butt sit
 P.busSingL = { ...sit, armL: { r: [-0.5, 0, 0.38], o: [0, 0, 0.06] }, armR: { r: [-0.25, 0, -0.1] }, head: { r: [-0.18, 0.28, 0.3] }, root: { ...sit.root, rz: 0.12 } };       // leans RIGHT toward his seatmate, one arm half up vibing
 P.busSingR = { ...sit, armR: { r: [-0.72, 0, -0.45], o: [0, 0.03, 0.08] }, armL: { r: [0.1, 0, 0.08] }, head: { r: [-0.12, -0.3, -0.26] }, root: { ...sit.root, rz: -0.1 } };  // leans LEFT, arm higher (never mirrored)
-P.busHandsL = { ...sit, armL: fa('armL', [0.26, 0.74, 0.5], [0.42, 0.85, 0.3], sit.root), armR: fa('armR', [-0.24, 0.66, 0.48], [-0.42, 0.8, 0.3], sit.root), head: { r: [0.38, 0.1, 0.05] }, root: { ...sit.root, rx: 0.08 } };   // hands low over the lap, palms up, staring down at them (face stays visible)   // both hands up in front, staring DOWN at them
-P.busHandsR = { ...sit, armL: fa('armL', [0.22, 0.66, 0.52], [0.42, 0.78, 0.3], sit.root), armR: fa('armR', [-0.28, 0.8, 0.46], [-0.42, 0.85, 0.3], sit.root), head: { r: [0.36, -0.15, -0.08] }, root: { ...sit.root, rx: 0.06, rz: -0.06 } };
+P.busHandsL = { ...sit, armL: fa('armL', [0.26, 0.74, 0.5], [0.42, 0.85, 0.3], sit.root), armR: fa('armR', [-0.24, 0.66, 0.48], [-0.42, 0.8, 0.3], sit.root), head: { r: [0.38, -0.1, -0.05] }, root: { ...sit.root, rx: 0.08 } };   // hands low over the lap, palms up, staring down at them (face stays visible)   // both hands up in front, staring DOWN at them
+P.busHandsR = { ...sit, armL: fa('armL', [0.22, 0.66, 0.52], [0.42, 0.78, 0.3], sit.root), armR: fa('armR', [-0.28, 0.8, 0.46], [-0.42, 0.85, 0.3], sit.root), head: { r: [0.36, 0.15, 0.08] }, root: { ...sit.root, rx: 0.06, rz: 0.06 } };
 // --- bedroom: kid frozen under the duvet, grandma leaning over the bed for the forehead kiss
 P.bedSitUp = { legL: { r: [-1.5708, 0, .08] }, legR: { r: [-1.52, 0, -.1], o: [0, .02, .03] }, armL: { r: [.25, 0, .35], o: [0, 0, -.04] }, armR: { r: [.3, 0, -.3], o: [0, 0, -.04] }, head: { r: [-.1, .25, 0] }, root: { y: -.51, rx: -.05 } };   // bolt upright in the wrong bed, legs under the duvet, hands on it
 P.bedFrozen = { legL: { r: [-1.52, 0, 0.06] }, legR: { r: [-1.45, 0, -0.1], o: [0, 0.02, 0.04] }, armL: { r: [-0.2, 0, 0.3], o: [0, 0, 0.05] }, armR: { r: [-0.15, 0, -0.28], o: [0, 0, 0.05] }, head: { r: [-0.25, 0.1, 0] }, root: { y: -0.45, rx: -1.35 } };   // on his back, stiff, arms pinned at his sides over the duvet
@@ -104,13 +104,13 @@ export const POSE_SHEET = [
   ['22 Dana: taped, perfectly still', 'dana', 'danaStill', 'neutral', 'seat'],
   ['23 Dana at breakfast, content', 'dana', 'danaBreakfast', 'happy', 'seat'], ['24 Dad doing the dishes', 'dana_dad', 'dadDishes', 'happy', ''],
   ['25 Dana: the tension (eyes slide)', 'dana', 'danaTense', 'nervous', ''],
-  ['26 Dana answers the time (autopilot)', 'dana', 'danaAnswer', 'bored', ''], ['26b Mr. Bacon Man taps his wrist (the ask)', 'bacon', 'wristTap', 'happy', ''], ['27 Dana: resigned shrug', 'dana', 'danaShrug', 'sad', ''],
+  ['26 Dana answers the time (autopilot)', 'dana', 'danaAnswer', 'bored', ''], ['40 Mr. Bacon Man taps his wrist (the ask)', 'bacon', 'wristTap', 'happy', ''], ['27 Dana: resigned shrug', 'dana', 'danaShrug', 'sad', ''],
   ['28 Boy writing the list', 'boy', 'writeList', 'determined', 'seat'], ['29 Boy: list, look up (idea)', 'boy', 'writeLook', 'smug', 'seat'],
   ['30 Boy taps his bare wrist (the ask)', 'boy', 'wristTap', 'happy', ''], ['31 Boy: mock innocent', 'boy', 'mockInnocent', 'smug', ''],
   ['32 Mid-swap: boy flails', 'boy', 'midSwapBoy', 'shocked', ''], ['33 Mid-swap: Dana flails', 'dana', 'midSwapDana', 'shocked', ''],
   ['34 His body (Dana inside): yelling', 'boy', 'yellFlail', 'angry', ''],
   ['35 POV: left hand up', 'dana', 'povHandL', 'neutral', ''], ['36 POV: both hands up', 'dana', 'povHandLR', 'neutral', ''],
-  ['37 Her body (him inside): smug', 'dana', 'smugNew', 'smug', ''], ['38 Ending: your selfie pose', 'dana', 'selfieKissIdle', 'smug', ''], ['38b Ending: kiss at the lips', 'dana', 'selfieKissLips', 'smug', ''], ['38c Ending: the air kiss out', 'dana', 'selfieKissOut', 'happy', ''], ['38d Ending: your myPose (phone swings to him)', 'dana', 'myPose', 'neutral', ''],
+  ['37 Her body (him inside): smug', 'dana', 'smugNew', 'smug', ''], ['41 Ending: your selfie pose', 'dana', 'selfieKissIdle', 'smug', ''], ['42 Ending: kiss at the lips', 'dana', 'selfieKissLips', 'smug', ''], ['43 Ending: the air kiss out', 'dana', 'selfieKissOut', 'happy', ''], ['44 Ending: your myPose (phone swings to him)', 'dana', 'myPose', 'neutral', ''],
   ['39 The crier (his body, Dana inside)', 'boy', 'crierCurl', 'crying', 'floor'],
 ];
 
@@ -240,12 +240,12 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // ======================= STAGING =======================
   // --- 1: THE BUS. Frame 0 = inside the POOF; it clears by ~.8 s; both kids stare at their new hands; mailman cameo passes the window ---
   const BZ = -bus.userData.L / 2 + 1.6 + 2 * 1.55;   // 3rd row
-  const seatL = busLocal(-2.15, .69, BZ + .08), seatR = busLocal(-.95, .69, BZ + .08);   // same bench, window kid + aisle kid, 1.2 m apart (inner arms posed up/forward so they don't meet)
+  const seatL = busLocal(-2.28, .69, BZ + .08), seatR = busLocal(-.78, .69, BZ + .08);   // (they face +x: the backrest is the bench's -x edge, clipscan 2026-11-28)   // same bench, window kid + aisle kid, 1.2 m apart (inner arms posed up/forward so they don't meet)
   A.swapA.show(0, 4.60); A.swapB.show(0, 4.60);
-  A.swapA.key(-1, { pose: 'busSingL', at: [seatL.x, seatL.z], ry: BUS.ry + N, y: seatL.y - ground(seatL.x, seatL.z) });
-  A.swapA.key(0.55, { pose: 'busHandsL', dur: .4 }).key(2.6, { pose: { ...P.busHandsL, head: { r: [0.25, 0.55, 0.1] } }, dur: .35 }).key(3.3, { pose: 'busHandsL', dur: .3 });   // look at the other kid, back to the hands
-  A.swapB.key(-1, { pose: 'busSingR', at: [seatR.x, seatR.z], ry: BUS.ry + N, y: seatR.y - ground(seatR.x, seatR.z) });
-  A.swapB.key(0.62, { pose: 'busHandsR', dur: .4 }).key(2.75, { pose: { ...P.busHandsR, head: { r: [0.22, -0.5, -0.1] } }, dur: .35 }).key(3.45, { pose: 'busHandsR', dur: .3 });
+  A.swapA.key(-1, { pose: 'busSingL', at: [seatR.x, seatR.z], ry: BUS.ry, y: seatL.y - ground(seatL.x, seatL.z) });
+  A.swapA.key(0.55, { pose: 'busHandsL', dur: .4 }).key(2.6, { pose: { ...P.busHandsL, head: { r: [0.25, -0.55, -0.1] } }, dur: .35 }).key(3.3, { pose: 'busHandsL', dur: .3 });   // look at the other kid, back to the hands
+  A.swapB.key(-1, { pose: 'busSingR', at: [seatL.x, seatL.z], ry: BUS.ry, y: seatR.y - ground(seatR.x, seatR.z) });
+  A.swapB.key(0.62, { pose: 'busHandsR', dur: .4 }).key(2.75, { pose: { ...P.busHandsR, head: { r: [0.22, 0.5, 0.1] } }, dur: .35 }).key(3.45, { pose: 'busHandsR', dur: .3 });
   A.swapA.face(-1, 'happy').face(0.55, 'shocked').face(3.6, 'scared');
   A.swapB.face(-1, 'happy').face(0.62, 'shocked').face(3.7, 'scared');
   A.swapA.noClamp = true; A.swapB.noClamp = true;   // seated above the road: the clamp would yank them to the asphalt
@@ -261,10 +261,10 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   const BED2 = [8556.25, 2.3]   /* parents' bed centre (probed: x 8554.6-8557.9, headboard -x; z 1.26-3.34) */;
   const bed2 = BED2, bedY = 0;
   A.swapA.show(4.6, 7.8);
-  A.swapA.key(4.55, { pose: 'bedSitUp', at: [bed2[0] + .95, bed2[1] - .15], ry: -N / 2, y: .86 });   // sat bolt upright in the wrong bed (mattress top .86, probed)   // on the bed (furnish puts the guest bed along the wall; verified in stills)
+  A.swapA.key(4.60, { pose: 'bedSitUp', at: [bed2[0] + .95, bed2[1] - .15], ry: -N / 2, y: .86 });   // sat bolt upright in the wrong bed (mattress top .86, probed)   // on the bed (furnish puts the guest bed along the wall; verified in stills)
   A.swapA.face(4.55, 'shocked');
   A.grandma.show(4.6, 7.8);
-  A.grandma.key(4.5, { pose: 'relaxed', at: [bed2[0] + .85, bed2[1] + 1.5], ry: N, y: bedY })
+  A.grandma.key(4.5, { pose: 'relaxed', at: [bed2[0] + .85, bed2[1] + 1.86], ry: N, y: bedY })
     .key(5.4, { pose: 'grandmaLean', dur: .6, ease: 'io' }).key(6.9, { pose: { ...P.grandmaLean, head: { r: [0.35, 0.05, 0.08] } }, dur: .4 });
   A.grandma.face(4.5, 'happy');
 
@@ -279,16 +279,16 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
 
   // --- 4: THE CHOIR: chain poof left -> right on the risers, last one takes the principal; facepalm on "anthem" ---
   // 12 singers, two risers, staggered; the swap chain sweeps left -> right along the front row then the back row, one poof per kid
-  const CH = []; for (let i = 0; i < 12; i++) { const back = i >= 6, r = back ? audU.riser2 : audU.riser1, j = i % 6; CH.push({ x: AUD[0] - 3.1 + j * 1.15 + (back ? .55 : 0), z: AUD[2] + r.z, y: r.y }); }
+  const CH = []; for (let i = 0; i < 12; i++) { const back = i >= 6, r = back ? audU.riser2 : audU.riser1, j = i % 6; CH.push({ x: AUD[0] - 3.9 + j * 1.5 + (back ? .75 : 0), z: AUD[2] + r.z + (back ? .32 : 0), y: r.y }); }   // 1.5 apart (an R6 is 1.36 wide) so arms never meet; back row clear of the curtain
   const POOFT = [10.12, 10.24, 10.36, 10.48, 10.62, 10.74, 10.86, 10.98, 11.10, 11.22, 11.34, 11.46];   // on the syllables of "found out during the anthem", faster and faster
   for (let i = 0; i < 12; i++) { const a = A['kid' + i]; a.show(9.98, 11.96); a.noClamp = true;
-    a.key(9.9, { pose: P.choirSing(i), at: [CH[i].x, CH[i].z], ry: 0, y: CH[i].y }); a.face(9.9, 'happy');
+    a.key(9.98, { pose: P.choirSing(i), at: [CH[i].x, CH[i].z], ry: 0, y: CH[i].y }); a.face(9.9, 'happy');
     // after its poof the kid is someone else: stops singing, looks down at itself, then at the neighbour (the swap reads on every body)
-    a.key(POOFT[i] + .12, { pose: { ...P.choirSing(i), armL: { r: [-0.5, 0, 0.5], o: [0, .03, .06] }, armR: { r: [-0.45, 0, -0.5], o: [0, .03, .06] }, head: { r: [0.45, (i % 2 ? .3 : -.3), 0] } }, dur: .18, style: 'snap' });
+    a.key(POOFT[i] + .12, { pose: { ...P.choirSing(i), armL: { r: [-0.5, 0, 0.18], o: [0, .03, .06] }, armR: { r: [-0.45, 0, -0.18], o: [0, .03, .06] }, head: { r: [0.45, (i % 2 ? .3 : -.3), 0] } }, dur: .18, style: 'snap' });
     a.face(POOFT[i] + .1, 'shocked');
     fx.poof(POOFT[i], [CH[i].x, CH[i].y + 1.15, CH[i].z], { size: .62, n: 12, dur: .9 }); }
   A.principal.show(9.98, 11.96); A.principal.noClamp = true;
-  A.principal.key(9.9, { pose: 'principalWatch', at: [AUD[0] + 3.4, AUD[2] + 2.4], ry: -.4, y: audU.deckY })
+  A.principal.key(9.98, { pose: 'principalWatch', at: [AUD[0] + 3.4, AUD[2] + 2.4], ry: -.4, y: audU.deckY })
     .key(11.34, { pose: 'facepalm', dur: .18, style: 'snap' });
   A.principal.face(9.9, 'happy').face(11.34, 'annoyed');
   fx.poof(11.46, [AUD[0] + 3.4, audU.deckY + 1.5, AUD[2] + 2.4], { size: .9, n: 16 });   // the last swap takes HIM
@@ -305,44 +305,46 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.twinA.face(11.9, 'happy'); A.twinB.face(11.9, 'happy');
 
   // --- 6: DANA at her locker (hallway), arms crossed, proud ---
-  const DL = [HALL.x + .9, HALL.z + 1.0], DRY = -N / 2 - 1.0;   // Dana's locker spot; she stands angled down the corridor (so a camera inside the 3.6 m hall sees her face)
+  const DL = [HALL.x + .55, HALL.z + 1.0], DRY = -N / 2 - 1.0;   // Dana's locker spot; she stands angled down the corridor (so a camera inside the 3.6 m hall sees her face)
   A.dana.show(15.62, 20.96);
   A.dana.key(15.55, { pose: 'danaLocker', at: DL, ry: DRY }).key(17.4, { pose: 'danaProud', dur: .4 });
   A.dana.face(15.55, 'smug');
   // two background kids drift past (crowds never freeze)
-  A.kid3.show(15.62, 19.06); A.kid3.run(15.7, [[HALL.x - .8, HALL.z - .5], [HALL.x - .8, HALL.z - 6.8]], { step: .7, T: .42, arm: .6 });   // walks away down the corridor, behind her
-  A.kid4.show(15.62, 19.06); A.kid4.run(16.2, [[HALL.x - .2, HALL.z - 7.2], [HALL.x - .4, HALL.z - 2.2]], { step: .68, T: .44, arm: .6 });   // walks toward us, far side
+  A.kid3.show(15.62, 19.06); A.kid3.run(15.62, [[HALL.x - .8, HALL.z - .5], [HALL.x - .8, HALL.z - 6.8]], { step: .7, T: .42, arm: .6 });   // walks away down the corridor, behind her
+  A.kid4.show(15.62, 19.06); A.kid4.run(15.62, [[HALL.x - .2, HALL.z - 7.2], [HALL.x - .4, HALL.z - 2.2]], { step: .68, T: .44, arm: .6 });   // walks toward us, far side
 
   // --- 7: classroom screaming answers; Dana sits dead still, tape on her mouth ---
   const DS = C.seats[7];   // Dana's desk (2nd row)
-  A.dana.key(19.0, { pose: 'danaStill', at: clsW(DS.x, DS.z), ry: 0, y: 0, dur: .01 });
+  A.dana.key(19.06, { pose: 'danaStill', at: clsW(DS.x, DS.z), ry: 0, y: 0, dur: .01 });
   A.kid0.show(19.06, 20.96); A.kid1.show(19.06, 20.96); A.kid5.show(19.06, 20.96);
-  A.kid0.key(19.0, { pose: 'shoutA', at: clsW(DS.x - 2.6, DS.z + .3), ry: .2 }).key(19.9, { pose: { ...P.shoutA, armR: { r: [2.7, -0.5, 0.4], o: [-0.06, 0.22, 0] } }, dur: .3, ease: 'io' });
-  A.kid1.key(19.0, { pose: 'shoutB', at: clsW(DS.x + 2.4, DS.z - .9), ry: -.3 }).key(20.1, { pose: { ...P.shoutB, head: { r: [-0.5, 0, -0.1] } }, dur: .3, ease: 'io' });
-  A.kid5.key(19.0, { pose: 'shoutC', at: clsW(DS.x - 1.3, DS.z - 1.6), ry: .1, y: 0 });
+  A.kid0.key(19.06, { pose: 'shoutA', at: clsW(DS.x - 2.6, DS.z + .3), ry: .2 }).key(19.9, { pose: { ...P.shoutA, armR: { r: [2.7, -0.5, 0.4], o: [-0.06, 0.22, 0] } }, dur: .3, ease: 'io' });
+  A.kid1.key(19.06, { pose: 'shoutB', at: clsW(DS.x + 2.4, DS.z - .9), ry: -.3 }).key(20.1, { pose: { ...P.shoutB, head: { r: [-0.5, 0, -0.1] } }, dur: .3, ease: 'io' });
+  A.kid5.key(19.06, { pose: 'shoutC', at: clsW(DS.x - 1.3, DS.z - 1.6), ry: .1, y: 0 });
   A.kid0.face(19.0, 'excited'); A.kid1.face(19.0, 'excited'); A.kid5.face(19.0, 'excited'); A.dana.face(19.0, 'neutral');
 
   // --- 8: DANA'S LIFE (House B): breakfast table / dad at the sink / the empty quiet hall / pancakes insert ---
   const KT = [8652.8, 124.52];   // the middle island stool (probed): she faces the island (-z)
   const SINK = [8653.6, 121.75];  // in front of the kitchen run (north wall), facing it
   A.dana.show(20.96, 22.46).show(24.3, 25.82);
-  A.dana.key(20.9, { pose: 'danaBreakfast', at: KT, ry: N, y: .25 });   // stool seat .92 vs chair .68
+  A.dana.key(20.96, { pose: 'danaBreakfast', at: KT, ry: N, y: .28 });   // stool seat .92 vs chair .68
   A.dana_dad.show(22.46, 23.28);
-  A.dana_dad.key(22.4, { pose: 'dadDishes', at: SINK, ry: N });
-  A.dana.key(24.25, { pose: 'danaBreakfast', at: KT, ry: N, y: .25 });   // back at the table for the pancake insert (her fork hand)
+  A.dana_dad.key(22.4, { pose: 'dadDishes', at: [SINK[0], SINK[1] + .16], ry: N });
+  A.dana.key(24.25, { pose: 'danaBreakfast', at: KT, ry: N, y: .28 });   // back at the table for the pancake insert (her fork hand)
   A.dana.face(20.9, 'happy');
   A.dana_dad.face(22.4, 'happy');
 
   // --- 9: the tension: Dana close-up at the locker, eyes slide ---
   A.dana.show(25.82, 27.54);
-  A.dana.key(25.78, { pose: 'danaProud', at: DL, ry: DRY, dur: .01 }).key(26.3, { pose: 'danaTense', dur: .5, ease: 'io' });
+  A.dana.key(25.82, { pose: 'danaProud', at: DL, ry: DRY, dur: .01 }).key(26.3, { pose: 'danaTense', dur: .5, ease: 'io' });
   A.dana.face(25.78, 'smug').face(26.4, 'nervous');
 
   // --- 10 (Xavier 04:44): NOT a comic. Just how it goes every day: a classmate taps his wrist, "time?", Dana answers on autopilot.
   // The comic split is saved for the ONE special moment (39.12). ---
   // Xavier 05:27: the classmate who asks Dana the time = MR. BACON MAN, a subscriber, in his REAL avatar (cast 'bacon'); no printed tee any more
+  // his gaming chair is furnished facing AWAY from the desk (clipscan: he sat inside its back): turn it round to face the desk
+  scene.traverse(o => { if (o.name === 'gaming chair') { const p = new THREE.Vector3(); o.getWorldPosition(p); if (Math.abs(p.x - 8565.05) < .3 && Math.abs(p.z - 2.97) < .3) o.rotation.y += Math.PI; } });
   const BOYC = [HALL.x - .55, HALL.z - 3.2];   // where the boy stands for the 39.12 comic panel
-  const ASK = [DL[0] - .62, DL[1] - .98];   // in front of her, along her facing
+  const ASK = [DL[0] - .7, DL[1] - 1.12];   // in front of her, along her facing
   A.dana.show(27.54, 32.7); A.bacon.show(27.54, 32.7);
   A.dana.key(27.5, { pose: 'danaAnswer', at: DL, ry: DRY, y: 0 });
   A.bacon.key(27.5, { pose: 'relaxed', at: [ASK[0] - .3, ASK[1] - .9], ry: Math.atan2(DL[0] - ASK[0], DL[1] - ASK[1]) });
@@ -357,9 +359,9 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.dana.face(32.65, 'sad');
 
   // --- 12: THURSDAY NIGHT: the boy at his desk writing the list; insert of the paper ---
-  const DESK = [8565.05, 2.97], deskY2 = 0, LISTP = [8565.0, 1.07, 3.62];   // his gaming chair (probed: chair 8565.05/2.97 facing +z, desk at z 4.02)
+  const DESK = [8565.05, 3.05], deskY2 = 0, LISTP = [8565.0, 1.07, 3.62];   // his gaming chair (probed: chair 8565.05/2.97 facing +z, desk at z 4.02)
   A.boy.show(34.58, 36.92); A.boy.noClamp = false;
-  A.boy.key(34.5, { pose: 'writeList', at: DESK, ry: 0, y: .06 })
+  A.boy.key(34.5, { pose: 'writeList', at: DESK, ry: 0, y: .16 })
     .key(35.3, { pose: { ...P.writeList, armR: fa('armR', [-0.22, 0.6, 0.5], [-0.42, 0.7, 0.2], sit.root) }, dur: .25, ease: 'io' })
     .key(35.9, { pose: 'writeList', dur: .25, ease: 'io' }).key(36.4, { pose: 'writeLook', dur: .3 });
   A.boy.face(34.5, 'determined').face(36.4, 'smug');
@@ -367,7 +369,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // --- 13: FRIDAY: he walks up to Dana in the hallway and asks (wrist tap) ---
   A.boy.show(36.92, 39.12); A.dana.show(36.92, 39.12);
   A.dana.key(36.88, { pose: 'danaLocker', at: DL, ry: DRY, y: 0, dur: .01 });
-  A.boy.run(36.95, [[HALL.x - .7, HALL.z - 3.6], [DL[0] - 1.35, DL[1] - .35]], { step: .72, T: .36, arm: .6 });
+  A.boy.run(36.92, [[HALL.x - .7, HALL.z - 3.6], [DL[0] - 1.35, DL[1] - .35]], { step: .72, T: .36, arm: .6 });
   A.boy.key(38.35, { pose: 'wristTap', ry: N / 2 - .5, turn: .3, dur: .3 });
   A.boy.face(36.9, 'happy'); A.dana.face(36.9, 'smug').face(38.4, 'bored');
 
@@ -392,12 +394,12 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   fx.poof(40.84, [SWP[0] + .3, 1.3, SWP[1]], { size: 1.6, dur: 1.4, spiral: 1, n: 30 });
 
   // --- 16: POV from Dana's body: left hand up, look; right hand joins; back to the yelling boy-body; pull OUT on "my new body" ---
-  A.dana.key(43.25, { pose: 'povIdle', ry: -2.1, turn: .3, dur: .2 })   /* faces the boy-body across the corridor (atan2 of the gap) */              // she (he) faces the boy-body across the corridor
+  A.dana.key(43.25, { pose: 'povIdle', ry: -2.15, turn: .3, dur: .2 })   /* faces the boy-body across the corridor (atan2 of the gap) */              // she (he) faces the boy-body across the corridor
     .key(43.7, { pose: 'povHandL', dur: .35, ease: 'io' })
     .key(44.7, { pose: 'povHandLR', dur: .35, ease: 'io' })
     .key(45.5, { pose: 'povIdle', dur: .3 })
     .key(46.0, { pose: 'smugNew', dur: .35 });
-  A.boy.key(43.3, { pose: t => P.yellFlail(t * .7), at: [HALL.x - 1.15, SWP[1] - .9], dur: .4, glide: .4 }).key(45.9, { pose: { ...P.yellFlail(0), armL: { r: [-0.6, 0, 0.4] }, armR: { r: [-0.5, 0, -0.45] }, head: { r: [0.2, 0.2, 0.1] } }, dur: .4 });
+  A.boy.key(43.3, { pose: t => P.yellFlail(t * .7), at: [HALL.x - .92, SWP[1] - .9], dur: .4, glide: .4 }).key(45.9, { pose: { ...P.yellFlail(0), armL: { r: [-0.6, 0, 0.4] }, armR: { r: [-0.5, 0, -0.45] }, head: { r: [0.2, 0.2, 0.1] } }, dur: .4 });
   A.dana.face(46.0, 'smug');
 
   // --- 17: THE ENDING (rackfocus_crier_v1): her body talks to the lens; his body curled CRYING on the floor behind; rack focus; silence ---
@@ -405,7 +407,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // behind her, screen-right, a few metres down the corridor. ERY turns the whole selfie set-up so that 'behind her' = down the corridor (-z).
   const ERY = 1.27, EP = [HALL.x + .15, SWP[1] + 1.2], loc = (x, z) => [EP[0] + x * Math.cos(ERY) + z * Math.sin(ERY), EP[1] - x * Math.sin(ERY) + z * Math.cos(ERY)];
   const CRY = loc(2.16, -.84);   // his X: screen-right of her, a couple of metres back, fully in frame
-  A.dana.key(47.05, { pose: 'selfieKissIdle', at: EP, ry: ERY, turn: .3, dur: .3 })
+  A.dana.key(47.12, { pose: 'selfieKissIdle', at: EP, ry: ERY, dur: .01 })   /* on the cut, never sliding in the pull-out */
     .key(48.0, { pose: 'selfieKissIdle', dur: .3 })
     .key(48.6, { pose: 'selfieKissLips', dur: .22 })
     .key(48.98, { pose: 'selfieKissOut', dur: .2, style: 'snap' })
@@ -499,7 +501,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
     // from the aisle a row ahead, above the seat backs: starts INSIDE the cloud (close), pulls back as it clears, then pushes in on their faces
     // from the aisle, level with their row: the two kids line up along the lens (aisle kid near, window kid behind him),
     // the window + the street beyond them. Starts INSIDE the cloud, pulls back as it clears, then pushes in.
-    busPoof: u => { const tt = u * 4.6, k = sm(cl((tt - .05) / .9)), d = sm(cl((tt - 1.6) / 3.0)), m = midHead(A.swapA, A.swapB); return { p: [m.x - lerp(.9, 2.3, k) + .35 * d, m.y - lerp(.1, .3, k), m.z - lerp(.8, 1.9, k) + .3 * d], l: [m.x, m.y - .25, m.z + .15], fov: lerp(52, 42, k) }; },   // a row ahead, from the aisle, a touch under their eyes: both faces 3/4, hands in their laps
+    busPoof: u => { const tt = u * 4.6, k = sm(cl((tt - .05) / .9)), d = sm(cl((tt - 1.6) / 3.0)), m = midHead(A.swapA, A.swapB); return { p: [m.x + lerp(1.0, 2.7, k) - .35 * d, m.y + lerp(.05, .12, k), m.z - lerp(.8, 1.9, k) + .3 * d], l: [m.x, m.y - .25, m.z + .15], fov: lerp(54, 50, k) }; },   // a row ahead, from the aisle, a touch under their eyes: both faces 3/4, hands in their laps
     // 2: crane down from over the bed: grandma leaning in, the kid rigid
     bedroom: u => { const k = sm(u), a = headW(A.swapA); return { p: [a.x - lerp(2.9, 2.3, k), a.y + lerp(.55, .25, k), a.z - lerp(1.1, .8, k)], l: [a.x - .1, a.y - .2, a.z + .3], fov: 40 }; },   // from the foot of the bed: him sat bolt upright against the pillows facing us, grandma leaning in
     // 3: truck across the party: cake front-left, the solo singer mid, the rest awkward
@@ -610,5 +612,5 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // opts.only = 'actorKey': hide every other actor (close-up checks of a costume / print, Xavier 05:12 'make sure it looks proper')
   if (opts.only) { const u0 = update; update = t => { u0(t); for (const [k, a] of Object.entries(A)) if (k !== opts.only) a.a.root.visible = false; }; }
   update(opts.t ?? 0);
-  return { camera: cam, sun: LOOK.sun, post, update, split, dbg: { A, comic, CAM, cam, bus, C, HAq: HA, HBq: HB } };
+  return { camera: cam, sun: LOOK.sun, post, update, split, dbg: { A, comic, CAM, cam, bus, C, HAq: HA, HBq: HB, town: A.boy.a.root } };
 }
