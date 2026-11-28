@@ -282,7 +282,7 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   // clear 3 m to the bulkhead to pull back into; every row behind them is full of kids who turn at the poof.
   // Shots: 0-1.9 the two-shot (duet -> poof -> trade), 1.9-3.25 close on the aisle kid, 3.25-4.6 close on the window kid.
   const BZ = -bus.userData.L / 2 + 1.6 + 4 * 1.55;   // FRONT row (row 4)
-  const seatL = busLocal(-2.08, .69, BZ + .08), seatR = busLocal(-.82, .69, BZ + .08);   // window kid / aisle kid on the -x bench (spans -2.6..-.4)
+  const seatL = busLocal(-2.28, .69, BZ + .08), seatR = busLocal(-.74, .69, BZ + .08);   // 1.54 apart: the duet arms never meet (clipscan 2026-11-28)   // window kid / aisle kid on the -x bench (spans -2.6..-.4)
   A.swapA.show(0, 1.03); A.swapB.show(0, 1.03); A.swapA2.show(1.03, 4.60); A.swapB2.show(1.03, 4.60);
   const yS = seatL.y - ground(seatL.x, seatL.z);
   A.swapA.key(-1, { pose: 'busSingL', at: [seatR.x, seatR.z], ry: BUS.ry, y: yS });
@@ -299,11 +299,11 @@ export async function build({ scene, W: w, H: h, opts = {} }) {
   A.swapA.noClamp = A.swapB.noClamp = A.swapA2.noClamp = A.swapB2.noClamp = true;   // seated above the road: the clamp would yank them to the asphalt
   fx.poof(1.0, [seatL.x, seatL.y + .6, seatL.z], { size: 1.1, dur: 1.1, n: 18 }); fx.poof(1.0, [seatR.x, seatR.y + .6, seatR.z], { size: 1.1, dur: 1.1, n: 18 });
   // the FULL bus: 11 kids in the rows behind + across the aisle. Chatting / looking out before; all turn to the poof after.
-  const PASS = [['m004', -2.0, 3, -.15], ['f014', -.95, 3, .2], ['m006', 1.0, 3, .25], ['f016', 2.05, 3, -.1],
-    ['m014', -2.0, 2, .3], ['f017', 1.55, 2, -.2], ['m029', -.95, 1, 0], ['f018', 2.0, 1, .15], ['m017', 1.0, 1, -.3], ['m031', -1.6, 0, .1], ['f008x', 1.4, 4, -.25]];
+  const PASS = [['m004', -2.27, 3, -.15], ['f014', -.75, 3, .2], ['m006', .75, 3, .25], ['f016', 2.27, 3, -.1],   // two per bench at 1.52 m: R6 arms are 1.36 wide
+    ['m014', -1.75, 2, .3], ['f017', 1.55, 2, -.2], ['m029', -.75, 1, 0], ['f018', 2.27, 1, .15], ['m017', .75, 1, -.3], ['m031', -1.6, 0, .1], ['f008x', 1.4, 4, -.25]];
   for (let k = 0; k < PASS.length; k++) { const [id, lx, row, h0] = PASS[k], nm = 'bus' + k, base = id === 'f008x' ? 'f011' : id;
     await mk(nm, base, { emo: k % 3 ? 'happy' : 'neutral' }); const a = A[nm], sp = busLocal(lx, .69, -bus.userData.L / 2 + 1.6 + row * 1.55 + .08);
-    a.show(0, 4.6); a.noClamp = true; const ph = k * 1.7, lean = lx < 0 ? -1 : 1;
+    a.show(0, 4.6); a.noClamp = true; const ph = k * 1.7, lean = Math.abs(lx) < 1 ? 0 : lx < 0 ? -1 : 1;   // aisle kids stay upright: two leaning aisle kids met across the aisle (clipscan)
     const look = t => t < 1.0 ? h0 + .25 * Math.sin(t * 2.2 + ph) : (row === 4 ? -0.9 : -.35 * lean) + .05 * Math.sin(t * 3 + ph);   // after the poof: everyone looks at the front-row pair
     a.key(-1, { pose: t => ({ ...sit, head: { r: [t < 1.0 ? .05 : -.08, look(t), 0] }, root: { ...sit.root, rz: t < 1.0 ? .03 * Math.sin(t * 1.6 + ph) : .08 * lean, z: t < 1.0 ? 0 : .06 } }), at: [sp.x, sp.z], ry: BUS.ry, y: yS });
     a.face(-1, k % 3 ? 'happy' : 'neutral').face(1.05 + (k % 4) * .06, k % 2 ? 'shocked' : 'surprised'); }
