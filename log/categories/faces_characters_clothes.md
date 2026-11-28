@@ -194,3 +194,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 - **2026-11-28 05:20** (2026-11-27_lucky-me.md): (05:04) can't get his Roblox char quickly; write bacon / Mr. Bacon on the asker's shirt, let me see.
 
 - **2026-11-28 06:10** (2026-11-27_lucky-me.md): (05:27-05:28) His profile mrbaconmancs1; take his currently-wearing trousers, hair+cap+headphones, hoodie, silver chain onto our R6; remove cardback, dragons, sword; no Mr Bacon print; do something with the face.
+
+- **2026-11-28 06:40** (2026-11-27_lucky-me.md): (05:32) fit on our base body; face weird, use the previous Mr Bacon face; 3D dynamic heads -> goals for when he has Blender/PC. (answer) A: 3D hoodie+jeans on our base model.
