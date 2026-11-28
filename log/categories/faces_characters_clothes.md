@@ -192,3 +192,5 @@ next time dont make scripts that would be hard to animate, lms the new sscript n
 - **2026-11-28 04:10** (2026-11-27_lucky-me.md): (02:20-02:42) YOU work on the next video; fix the skill (new chat built grey bodies, didn't understand). Comic split: vertical, two panels like his refs (side by side but vertical), action/feeling like the JJK painted one, masked separate camera shots of the same environment, top camera on her, bottom on him. Effects slightly realistic, not rubbish sphere particles. Sent a hand sketch: slanted gutter, faces top-right / bottom-left.
 
 - **2026-11-28 05:20** (2026-11-27_lucky-me.md): (05:04) can't get his Roblox char quickly; write bacon / Mr. Bacon on the asker's shirt, let me see.
+
+- **2026-11-28 06:10** (2026-11-27_lucky-me.md): (05:27-05:28) His profile mrbaconmancs1; take his currently-wearing trousers, hair+cap+headphones, hoodie, silver chain onto our R6; remove cardback, dragons, sword; no Mr Bacon print; do something with the face.
